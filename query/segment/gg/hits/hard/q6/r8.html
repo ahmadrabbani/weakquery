@@ -1,0 +1,1132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link href="/images/_defaults.css" rel="stylesheet" type="text/css" />
+	<link href="/images/_layout_v2.css" rel="stylesheet" type="text/css" />
+
+<link href="/images/_layout_sky.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]><style type="text/css">@import url("/images/_defaults_ie6.css");</style><![endif]--> 
+	<script type="text/javascript">
+function isCheckedOnOff(InputName)
+{
+	if(document.getElementById(InputName).checked == true)
+		document.getElementById(InputName).checked = false;
+	else
+		document.getElementById(InputName).checked = true;
+}
+
+function openCloseTabs(element){
+	if(document.getElementById(element).style.display == 'none'){
+		document.getElementById(element).style.display = 'block';
+	}else{
+		document.getElementById(element).style.display = 'none';
+	}
+}
+function PopWindow(mypage, myname, w, h, scroll) 
+	{
+	var winl = (screen.width - w) / 2;
+	var wint = (screen.height - h) / 2;
+	/* winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars='+scroll+',resizable,status' */
+winprops = 'height='+h+',width='+w+',top='+120+',left='+winl+',scrollbars='+scroll+',resizable,status=no,toolbar=no,menubar=no';
+
+win = window.open(mypage, myname, winprops)
+/* if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); } */
+}
+</script>
+
+
+
+
+<script type="text/javascript">
+	function hideTabContent(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).style.display = 'none';
+			}
+		}
+	}
+	function showTabContent(tab,tabId,element,id){
+		hideTabContent(element);
+		changeTabBack(tab);
+		if(document.getElementById(element+'_'+id) != null){
+			document.getElementById(element+'_'+id).style.display = 'block';
+		}
+		if(document.getElementById(tab+'_'+tabId) != null){
+			document.getElementById(tab+'_'+tabId).style.backgroundImage = 'url(/images/tab_selected_back.jpg)';
+			document.getElementById(tab+'_'+tabId).style.color = '#407740';
+			document.getElementById(tab+'_'+tabId).style.fontWeight = 'bold';
+		}
+	}
+	function changeTabBack(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).style.backgroundImage = 'url(/images/tab_unselected_back.jpg)';
+				document.getElementById(element+'_'+x).style.color = '#666666';
+				document.getElementById(element+'_'+x).style.fontWeight = 'normal';
+			}
+		}
+	}
+	
+	
+	
+	
+	function hideTabContentCal(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).style.display = 'none';
+			}
+		}
+	}
+	function showTabContentCal(tab,tabId,element,id){
+		hideTabContentCal(element);
+		changeTabBackCal(tab);
+		if(document.getElementById(element+'_'+id) != null){
+			document.getElementById(element+'_'+id).style.display = 'block';
+		}
+		if(document.getElementById(tab+'_'+tabId) != null){
+			document.getElementById(tab+'_'+tabId).className = 'selectedtabCal';
+		}
+	}
+	function changeTabBackCal(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).className = 'unselectedtabCal';
+			}
+		}
+	}
+	
+	
+	function hideTabContentblogs(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).style.display = 'none';
+			}
+		}
+	}
+	function showTabContentblogs(tab,tabId,element,id){
+		hideTabContentblogs(element);
+		changeTabBackblogs(tab);
+		if(document.getElementById(element+'_'+id) != null){
+			document.getElementById(element+'_'+id).style.display = 'block';
+		}
+		if(document.getElementById(tab+'_'+tabId) != null){
+			document.getElementById(tab+'_'+tabId).className = 'selectedtabblogs';
+		}
+	}
+	function changeTabBackblogs(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).className = 'unselectedtabblogs';
+			}
+		}
+	}
+function toggle(div_id) {
+	var el = document.getElementById(div_id);
+	if ( el.style.display == 'none' ) {	el.style.display = 'block';}
+	else {el.style.display = 'none';}
+}
+function blanket_size(popUpDivVar) {
+	if (typeof window.innerWidth != 'undefined') {
+		viewportheight = window.innerHeight;
+	} else {
+		viewportheight = document.documentElement.clientHeight;
+	}
+	if ((viewportheight > document.body.parentNode.scrollHeight) && (viewportheight > document.body.parentNode.clientHeight)) {
+		blanket_height = viewportheight;
+	} else {
+		if (document.body.parentNode.clientHeight > document.body.parentNode.scrollHeight) {
+			blanket_height = document.body.parentNode.clientHeight;
+		} else {
+			blanket_height = document.body.parentNode.scrollHeight;
+		}
+	}
+	var blanket = document.getElementById('blanket');
+	blanket.style.height = blanket_height + 'px';
+	var popUpDiv = document.getElementById(popUpDivVar);
+	popUpDiv_height=blanket_height/2-150;
+	popUpDiv.style.top = 10 + '%';
+}
+function window_pos(popUpDivVar) {
+	if (typeof window.innerWidth != 'undefined') {
+		viewportwidth = window.innerHeight;
+	} else {
+		viewportwidth = document.documentElement.clientHeight;
+	}
+	if ((viewportwidth > document.body.parentNode.scrollWidth) && (viewportwidth > document.body.parentNode.clientWidth)) {
+		window_width = viewportwidth;
+	} else {
+		if (document.body.parentNode.clientWidth > document.body.parentNode.scrollWidth) {
+			window_width = document.body.parentNode.clientWidth;
+		} else {
+			window_width = document.body.parentNode.scrollWidth;
+		}
+	}
+	var popUpDiv = document.getElementById(popUpDivVar);
+	window_width=window_width/2-150;
+	popUpDiv.style.left = 20 + '%';
+}
+function popup(windowname) {
+	blanket_size(windowname);
+	window_pos(windowname);
+	toggle('blanket');
+	toggle(windowname);		
+}
+</script>
+
+<title>Lifestyles - TheAlpenaNews.com | News, Sports, Jobs, Michigan, Community Information - The Alpena News</title><meta name="description" content="Lifestyles information from  The Alpena News. The Alpena News and thealpenanews.com are the main source for news for Alpena, Presque Isle, Alcona and Montmorency counties in Michigan" />
+
+<meta name="keywords" content="News, newspaper, Alpena News, Alpena, Presque Isle, Alcona, Montmorency Counties, Besser Museum, Thunder Bay, Alpena Light, Michigan Lighthouses, Great Lakes Lore Museum, Presque Isle County Historical Museum, Lafarge, Besser, Alpena Regional Medical Cent" />
+
+
+	
+	<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+	</script>
+	<script type="text/javascript">
+	  GS_googleAddAdSenseService("ca-pub-0279219903859783");
+	  GS_googleEnableAllServices();
+	</script>
+	
+	<script type="text/javascript">
+		GA_googleAddAttr("SiteID", "ANAM");
+	</script>
+	
+	<script type="text/javascript">
+		GA_googleAddAttr("MSection", "community");
+	</script>
+	
+	
+		<script type="text/javascript">
+			GA_googleAddAttr("SubSection", "lifestyles");
+		</script>
+	
+				<script type="text/javascript">
+					GA_googleAddAttr("SLevel_1", "community");
+				</script>
+			
+				<script type="text/javascript">
+					GA_googleAddAttr("SLevel_2", "lifestyles");
+				</script>
+			
+	<script type="text/javascript">
+		GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x94_0x0");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x95_74x60");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x40_234x60");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x41_234x60");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x42_234x60");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_Top_728x90");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_Middle_300x250");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_Left_160x600");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_Bottom_728x90");
+
+	</script>
+	<script type="text/javascript">
+	  GA_googleFetchAds();
+	</script>
+
+
+</head>
+<body>
+<div id="blanket" style="display:none;"></div>
+<div id="hdr">
+	<div id="hdrNav">
+		<div id="hdrNavL">Mobile: <a href="http://mobile.thealpenanews.com" title="Mobile Version">mobile.thealpenanews.com</a></div>
+		<div id="hdrNavR">
+	<span id="visitorNav">
+		<a href="https://www.thealpenanews.com/page/memberscreate.create/sign-in.html" title="Sign In">Sign In</a> | 
+		<a href="https://www.thealpenanews.com/page/memberscreate.create/create-an-account.html" title="Create an Account for The Alpena News">Create an Account</a> | 
+	</span>
+	<span id="memberNav">
+		Welcome, <strong id="displayUsername"></strong>. <a href="https://www.thealpenanews.com/page/memberssecure.home/" title="My Account">My Account</a> | 
+		<a href="https://www.thealpenanews.com/page/memberslogin.actLogout/" title="Logout">Logout</a> | 
+	</span>
+	
+	<a href="https://secure.oweb.net/onisubscriptions/subscriptions/subscriptions.asp?publicationID=46" title="Subscribe to The Alpena News">Subscribe</a> | <a href="http://24.213.59.98/vnr/index.asp?publicationid=46" title="Submit News to The Alpena News">Submit News</a> | 
+<a href="http://www.thealpenanews.com">Home</a>
+<a href="/page/syndrss.front/headline.xml" title="RSS Feed"><img src="/images/rss.gif" border="0" class="imgMiddle" alt="RSS" /></a>
+
+<script type="text/javascript">
+	var searchTerm = "DNAME=" ;
+	if (document.cookie.length > 0) { 
+		offset = document.cookie.indexOf(searchTerm);
+		if (offset != -1) {
+			offset += searchTerm.length;
+			var stopTerm = ';';
+			var stopPoint = document.cookie.indexOf(stopTerm, offset);
+			if ( stopPoint == -1 ) {
+				stopPoint = document.cookie.length;
+			}
+			var accountUsername = document.cookie.substring(offset,stopPoint);
+			/* additional check for cookie difference between browsers */
+			if ( unescape(document.cookie.substring(offset,offset+1)) != ';' ) {
+				showMember(accountUsername);
+			} else {
+				showGuest();
+			}
+		} else {
+			showGuest();
+		}							 
+	} else {
+		showGuest();
+	}
+	function showMember(accountUsername) {
+		document.getElementById('visitorNav').style.display = 'none';
+		document.getElementById('memberNav').style.display = '';
+		document.getElementById('displayUsername').innerHTML = accountUsername;
+	}
+	function showGuest() {
+		document.getElementById('visitorNav').style.display = '';
+		document.getElementById('memberNav').style.display = 'none';
+		document.getElementById('displayUsername').innerHTML = '';
+	}
+</script>
+</div>
+	</div>
+	<div id="hdrM">
+		<div id="hdrMLogo"><a href="http://www.thealpenanews.com" title="Home"><img src="/images/spacer.gif" border="0" width="250" height="96" /></a></div>
+		<div id="hdrMAd">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_Top_728x90");
+	</script>
+</div>
+	</div>
+</div>
+<div id="bdy">
+	<div id="bdyL"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div id="bdyC">
+		<!-- Top Nav -->
+		<div id="navTopCap"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+		<div id="navTop"><a href="/page/category.detail/nav/5009/News.html" class="">News</a>&nbsp; <a href="/page/category.detail/nav/5010/Sports.html" class="">Sports</a>&nbsp; <a href="/page/category.detail/nav/5140/Opinion.html" class="">Opinion</a>&nbsp; 
+			<a href="/page/blogs.list/" >Blogs</a>&nbsp; <a href="/page/category.detail/nav/5011/Community.html" class="">Community</a>&nbsp; <a href="/page/category.detail/nav/5019/Ads.html" class="">Ads</a>&nbsp; 
+			<a href="http://www.hot-ads.com/browse/index.cfm?SID=MI&RGID=00001000000&CID=10" >Classifieds</a>&nbsp; 
+			<a href="http://jobs.thealpenanews.com/home/" >Jobs</a>&nbsp; <a href="/page/category.detail/nav/5032/Extras.html" class="">Extras</a>&nbsp; 
+			<a href="http://cu.thealpenanews.com" >CU</a>&nbsp; <a href="/page/category.detail/nav/5000/Sections.html" class="">Sections</a>&nbsp; <a href="/page/category.detail/nav/5023/Services.html" class="">Services</a> </div>
+		
+		
+		<!-- Breaking -->
+		
+
+	<div id="breakingNewsAjax"></div>
+	<script language="javascript">
+		var xmlhttp;
+		
+		function getBreaking() {
+			xmlhttp=GetXmlHttpObject();
+			if (xmlhttp==null) {
+				  alert ("Sorry, but I couldn't create an XMLHttpRequest");
+				  return;
+			}
+			
+			var url="/cached/layout.breakingNews.html";
+			url += '?sid='+Math.random();
+
+			xmlhttp.onreadystatechange=stateChanged;
+			xmlhttp.open('GET',url,true);
+			xmlhttp.send(null);
+				
+		}
+	
+		function GetXmlHttpObject() {
+			if (window.XMLHttpRequest) {
+			  /* code for IE7+, Firefox, Chrome, Opera, Safari */
+			  return new XMLHttpRequest();
+			}
+			if (window.ActiveXObject) {
+			  /* code for IE6, IE5 */
+			  return new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			return null;
+		}
+		
+		function stateChanged() {
+			if (xmlhttp.readyState==4) {
+				if (xmlhttp.status == 200) {
+					document.getElementById('breakingNewsAjax').innerHTML = '';
+					document.getElementById('breakingNewsAjax').innerHTML=xmlhttp.responseText;
+				}
+			}
+		}
+		
+		getBreaking();
+	
+	</script>
+	
+
+<!-- Main Body -->
+<table id="mBdy" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td id="mBdyLAd" valign="top">
+			<div id="navCat">
+				<h3>Lifestyles</h3>
+				
+<ul>
+
+			<li><a href="/page/category.detail/nav/5033/Engagements.html" class="">Engagements</a></li>
+		
+			<li><a href="/page/category.detail/nav/5008/Weddings.html" class="">Weddings</a></li>
+		
+			<li><a href="/page/category.detail/nav/5001/Anniversaries.html" class="">Anniversaries</a></li>
+		
+			<li class="color_blue"><strong><a href="/page/category.detail/nav/5042/Lifestyles.html" class="">Lifestyles</a></strong></li>
+		
+		<li><a href="http://24.213.59.98/vnr/main_category.asp?categoryID=696&publicationID=46" target="_blank">SUBMIT Lifestyles</a></li>
+	
+		<li><a href="http://extras.thealpenanews.com/ads/calendar.jpg" >Calendar of Events</a></li>
+	
+			<li><a href="/page/category.detail/nav/5155/Necrology.html" class="">Necrology</a></li>
+		
+<div class="clearL"></div>
+</ul>
+
+			</div>
+			
+<div class="padBtm">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_Left_160x600");
+	</script>
+</div>
+
+		</td>
+		<td id="mBdyLC" valign="top">
+			
+<div id="navBCrumbs">
+	
+				/ <a href="/page/category.detail/nav/5011/Community.html" title="Community">Community</a>
+			
+				/ <a href="/page/category.detail/nav/5042/Lifestyles.html" title="Lifestyles">Lifestyles</a>
+			 
+	/
+</div>
+			<div id="navCatFlat"><div class="clear"></div></div>
+			
+<div class="cBdrHdrSm">
+	<div class="cBdrTLSm">&nbsp;</div>
+	<div class="cBdrTRSm">&nbsp;</div>
+	<div class="cBdrTCOSm">&nbsp;</div>
+</div>
+<div class="cBdrMainBig">
+	<a href="/page/content.detail/id/519323/JA-program-teaches-financial-responsibility.html?nav=5042" class="h1A" title="JA program teaches financial responsibility">JA program teaches financial responsibility</a>
+	<div class="contentShortL">
+	
+	<a href="/page/content.detail/id/519323/JA-program-teaches-financial-responsibility.html?nav=5042"><img src="/photos/news/md/519323_1.jpg" border="0" class="photo" /></a> 
+		<p><em class="dim">November 7, 2011</em>  In today’s troubled economy, now more than ever, raising youth to become financially responsible adults seems critical. <a href="/page/content.detail/id/519323/JA-program-teaches-financial-responsibility.html?nav=5042" class="" title="JA program teaches financial responsibility">more&nbsp;&raquo;&raquo;</a></p>
+	
+	<div class="clearL"></div>
+	</div>
+	
+</div>
+<div class="cBdrFdr">
+	<div class="cBdrBL"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBR"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBC"><img src="/images/spacer.gif" border="0" width="1" height="5" /></div>
+</div>
+			
+<div class="cBdrHdrSm">
+	<div class="cBdrTLSm">&nbsp;</div>
+	<div class="cBdrTRSm">&nbsp;</div>
+	<div class="cBdrTCOSm">&nbsp;</div>
+</div>
+<div class="cBdrMainBig">
+	<div class="navPaginate">
+		page: | <a href="/page/category.displayall/nav/5042.html?startIndex=1#ptgats" title="1 - 20">1</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=21#ptgats" title="21 - 40">2</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=41#ptgats" title="41 - 60">3</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=61#ptgats" title="61 - 80">4</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=81#ptgats" title="81 - 100">5</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=101#ptgats" title="101 - 120">6</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=121#ptgats" title="121 - 140">7</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=141#ptgats" title="141 - 160">8</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=161#ptgats" title="161 - 180">9</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=181#ptgats" title="181 - 200">10</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=201#ptgats" title="201 - 220">11</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=221#ptgats" title="221 - 240">12</a> | <a href="#" title="Search Pages" onClick="popup('popUpDiv_status_searchCat')">Search</a> | 
+	</div>
+	<div id="popUpDiv_status_searchCat" class="popUpDiv_600" style="display:none;"><div class="cBdrMainBig">
+	<div class="bBorder_e padBtm">
+		<div class="cBdrHdrR txtSmall dim"><a href="#" onClick="popup('popUpDiv_status_searchCat')" title="Close">CLOSE</a></div>
+		<div class="cBdrHdrL"><h2 class="color_blue">Search: Lifestyles</h2></div>
+	</div>
+	<form id="catSearch" action="/page/search.results" method="get">
+		<input type="hidden" name="nav" value="5042" />
+		<h5>I am looking for:</h5>
+		<div>
+			<input name="keywords" id="siteSearchBox" value="" autocomplete="off" type="text" size="18" maxlength="128" />
+				<strong class="dim txtSmaller">between</strong>
+			<input size="10" type="text" id="StartDate" name="StartDate" readonly="readonly" />
+			<a href="javascript:StartDate.popup();"><img src="/templates/calendar/img/cal.gif" width="16" height="16" border="0" alt="Click Here to Select Date"></a>
+				<strong class="dim txtSmaller">and</strong>
+			<input size="10" type="text" id="EndDate" name="EndDate" readonly="readonly" />
+			<a href="javascript:EndDate.popup();"><img src="/templates/calendar/img/cal.gif" width="16" height="16" border="0" alt="Click Here to Select Date"></a>
+			<input name="btnSiteSearch" type="submit" value="Search" class="fButton" />
+		
+		</div>
+		<input type="hidden" name="nav" value="5042" />
+	</form>
+</div><script type="text/JavaScript" src="/templates/calendar/calendar2.js"></script>
+
+<script type="text/javascript">
+	 /* create calendar object(s) just after form tag closed */
+	 /* specify form element as the only parameter (document.forms['formname'].elements['inputname']); */
+	 /* note: you can have as many calendar objects as you need for your application */
+	var StartDate = new calendar2(document.getElementById('StartDate'));
+		StartDate.year_scroll = true;
+		StartDate.time_comp = false;
+</script>
+
+
+<script type="text/javascript">
+	 /* create calendar object(s) just after form tag closed */
+	 /* specify form element as the only parameter (document.forms['formname'].elements['inputname']); */
+	 /* note: you can have as many calendar objects as you need for your application */
+	var EndDate = new calendar2(document.getElementById('EndDate'));
+		EndDate.year_scroll = true;
+		EndDate.time_comp = false;
+</script>
+</div>
+	<div class="contentList">
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/519282/Alpena-Symphony-Orchestra-to-perform.html?nav=5042" class="h3A" title="Alpena Symphony Orchestra to perform">Alpena Symphony Orchestra to perform</a>
+				<p><em class="dim">November 4, 2011</em> The Alpena Symphony Orchestra will presents its annual Autumn Serenade of chamber music this Sunday at 7 p.m. at the First United Methodist Church. <a href="/page/content.detail/id/519282/Alpena-Symphony-Orchestra-to-perform.html?nav=5042" class="" title="Alpena Symphony Orchestra to perform">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/519265/Salvation-Army-taking-applications-for-Christmas-assistance.html?nav=5042" class="h3A" title="Salvation Army taking applications for Christmas assistance">Salvation Army taking applications for Christmas assistance</a>
+				<p><em class="dim">November 2, 2011</em> The Salvation Army will be taking applications for Christmas assistance for Alpena County residents from Nov. 7-11 at the Salvation Army Corps Community Center, 722 N. Second. <a href="/page/content.detail/id/519265/Salvation-Army-taking-applications-for-Christmas-assistance.html?nav=5042" class="" title="Salvation Army taking applications for Christmas assistance">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/519115/TBT-doing--Rocky-Horror-Show-.html?nav=5042"><img src="/photos/news/md/519115_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/519115/TBT-doing--Rocky-Horror-Show-.html?nav=5042" class="h3A" title="TBT doing 'Rocky Horror Show'">TBT doing 'Rocky Horror Show'</a>
+				<p><em class="dim">October 17, 2011</em> Thunder Bay Theatre is pulling out all the stops with the cult classic, “Rocky Horror Sho. <a href="/page/content.detail/id/519115/TBT-doing--Rocky-Horror-Show-.html?nav=5042" class="" title="TBT doing 'Rocky Horror Show'">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/519065/Peace-contest-winners-announced.html?nav=5042"><img src="/photos/news/md/519065_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/519065/Peace-contest-winners-announced.html?nav=5042" class="h3A" title="Peace contest winners announced">Peace contest winners announced</a>
+				<p><em class="dim">October 12, 2011</em> By DIANE SPEER News Lifestyles Editor  Nearly 300 student entries were submitted for this year’s Peace Contest that is held in conjunction with the annual 30 Days of Peace. <a href="/page/content.detail/id/519065/Peace-contest-winners-announced.html?nav=5042" class="" title="Peace contest winners announced">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/519041/Ed-and-Rosemary-Bastow-honored-with-CHS-award.html?nav=5042"><img src="/photos/news/md/519041_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/519041/Ed-and-Rosemary-Bastow-honored-with-CHS-award.html?nav=5042" class="h3A" title="Ed and Rosemary Bastow honored with CHS award">Ed and Rosemary Bastow honored with CHS award</a>
+				<p><em class="dim">October 10, 2011</em>  An Alpena couple with a lengthy history of service to Catholic Human Services has been honored with the agency’s Florida Tellier Award. <a href="/page/content.detail/id/519041/Ed-and-Rosemary-Bastow-honored-with-CHS-award.html?nav=5042" class="" title="Ed and Rosemary Bastow honored with CHS award">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/519062/Wildfong-70th.html?nav=5042"><img src="/photos/news/md/519062_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/519062/Wildfong-70th.html?nav=5042" class="h3A" title="Wildfong 70th">Wildfong 70th</a>
+				<p><em class="dim">October 8, 2011</em>  Betty and Wilbur Wildfong of 2815 M-65-N, Curran, celebrated their 70th anniversary with an open house held Oct. 2 at the Curran Township Hall. <a href="/page/content.detail/id/519062/Wildfong-70th.html?nav=5042" class="" title="Wildfong 70th">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/519002/Think-Pink-wine-benefit-Breast-Cancer-Awareness-cause.html?nav=5042"><img src="/photos/news/md/519002_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/519002/Think-Pink-wine-benefit-Breast-Cancer-Awareness-cause.html?nav=5042" class="h3A" title="Think Pink wine benefit Breast Cancer Awareness cause">Think Pink wine benefit Breast Cancer Awareness cause</a>
+				<p><em class="dim">October 6, 2011</em> Stoney Acres Winery has joined forces with the Zonta Club of Alpena to support breast cancer awareness with the launch of their limited-edition Think Pink wine. <a href="/page/content.detail/id/519002/Think-Pink-wine-benefit-Breast-Cancer-Awareness-cause.html?nav=5042" class="" title="Think Pink wine benefit Breast Cancer Awareness cause">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/519000/Fun-fall-fest-offers-more-than-20-kinds-of-chili.html?nav=5042"><img src="/photos/news/md/519000_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/519000/Fun-fall-fest-offers-more-than-20-kinds-of-chili.html?nav=5042" class="h3A" title="Fun fall fest offers more than 20 kinds of chili">Fun fall fest offers more than 20 kinds of chili</a>
+				<p><em class="dim">October 5, 2011</em> When there’s a chill in the air, nothing warms better than a hearty bowl of chili. <a href="/page/content.detail/id/519000/Fun-fall-fest-offers-more-than-20-kinds-of-chili.html?nav=5042" class="" title="Fun fall fest offers more than 20 kinds of chili">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/519001/Miss-Sunrise-Side-Program-moved-to-Alpena.html?nav=5042" class="h3A" title="Miss Sunrise Side Program moved to Alpena">Miss Sunrise Side Program moved to Alpena</a>
+				<p><em class="dim">October 5, 2011</em> After years of being held in Alcona County, the Miss Sunrise Side Scholarship Program is moving to Alpen. <a href="/page/content.detail/id/519001/Miss-Sunrise-Side-Program-moved-to-Alpena.html?nav=5042" class="" title="Miss Sunrise Side Program moved to Alpena">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/518997/Hoes--25th.html?nav=5042"><img src="/photos/news/md/518997_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/518997/Hoes--25th.html?nav=5042" class="h3A" title="Hoes  25th">Hoes  25th</a>
+				<p><em class="dim">October 1, 2011</em>  Timothy and Susan Hoes are celebrating their 25th wedding anniversary. Mr. Hoes and the former Susan Bigelow were married Oct. 18, 1986, at St. Paul’s Episcopal Church in Lansing. <a href="/page/content.detail/id/518997/Hoes--25th.html?nav=5042" class="" title="Hoes  25th">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/518993/Lost-quilt-returned-2-1-2-years-later.html?nav=5042" class="h3A" title="Lost quilt returned 2 1/2 years later">Lost quilt returned 2 1/2 years later</a>
+				<p><em class="dim">September 30, 2011</em> Lost and found.  A special celebration quilt that went missing from Trinity Episcopal Church two and a half years ago has unexpectedly ended up back at its rightful home. <a href="/page/content.detail/id/518993/Lost-quilt-returned-2-1-2-years-later.html?nav=5042" class="" title="Lost quilt returned 2 1/2 years later">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/518913/TBT-serves-up-full-platter-of-comedy.html?nav=5042" class="h3A" title="TBT serves up full platter of comedy">TBT serves up full platter of comedy</a>
+				<p><em class="dim">September 28, 2011</em> Fans of comedy and Mafioso types will want to check out Thunder Bay Theatre’s latest offering, “Breaking Legs” by Tom Dulak, since it liberally serves up a full platter of both. <a href="/page/content.detail/id/518913/TBT-serves-up-full-platter-of-comedy.html?nav=5042" class="" title="TBT serves up full platter of comedy">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/518884/Library-offers-downloadable-books-for-Kindle-owners.html?nav=5042" class="h3A" title="Library offers downloadable books for Kindle owners">Library offers downloadable books for Kindle owners</a>
+				<p><em class="dim">September 26, 2011</em> Kindle owners can now download compatible eBooks from the Alpena County Library. Information on downloading can be found at www.alpenalibrary.org. A valid library card is needed to use this service. <a href="/page/content.detail/id/518884/Library-offers-downloadable-books-for-Kindle-owners.html?nav=5042" class="" title="Library offers downloadable books for Kindle owners">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/518885/Churches-keep-quilting-for-a-cause.html?nav=5042"><img src="/photos/news/md/518885_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/518885/Churches-keep-quilting-for-a-cause.html?nav=5042" class="h3A" title="Churches keep quilting for a cause">Churches keep quilting for a cause</a>
+				<p><em class="dim">September 24, 2011</em> No one seems to recall exactly how long the women at two local Lutheran churches have been gathering together on a weekly basis to make quilts in support of world mission relief. <a href="/page/content.detail/id/518885/Churches-keep-quilting-for-a-cause.html?nav=5042" class="" title="Churches keep quilting for a cause">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/518886/30-Days-of-Peace-activities-continue.html?nav=5042"><img src="/photos/news/md/518886_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/518886/30-Days-of-Peace-activities-continue.html?nav=5042" class="h3A" title="30 Days of Peace activities continue">30 Days of Peace activities continue</a>
+				<p><em class="dim">September 23, 2011</em> By DIANE SPEER News Lifestyles Editor Efforts by the Alpena Coalition for Peace to put a spotlight on the need for peace continue in the week ahead. <a href="/page/content.detail/id/518886/30-Days-of-Peace-activities-continue.html?nav=5042" class="" title="30 Days of Peace activities continue">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/518808/Plans-finalized-for-Zonta-Walks-for-Women.html?nav=5042"><img src="/photos/news/md/518808_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/518808/Plans-finalized-for-Zonta-Walks-for-Women.html?nav=5042" class="h3A" title="Plans finalized for Zonta Walks for Women">Plans finalized for Zonta Walks for Women</a>
+				<p><em class="dim">September 19, 2011</em> October is National Breast Cancer Awareness Month and members of the Zonta Club of Alpena are finalizing details for their 5th annual Zonta Walks for Women Walk/5K Run. The event will be held Oc. <a href="/page/content.detail/id/518808/Plans-finalized-for-Zonta-Walks-for-Women.html?nav=5042" class="" title="Plans finalized for Zonta Walks for Women">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/518809/Mob-comedy-opens-fall-TBT-season.html?nav=5042" class="h3A" title="Mob comedy opens fall TBT season">Mob comedy opens fall TBT season</a>
+				<p><em class="dim">September 19, 2011</em> What’s a naive, straight-laced professor to do when he needs financial backing for a play he’s written, but has exhausted all his obvious sources of funding? Turn to the mob, albeit unwittingly. <a href="/page/content.detail/id/518809/Mob-comedy-opens-fall-TBT-season.html?nav=5042" class="" title="Mob comedy opens fall TBT season">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/518776/Another-week-of-activities-planned-in-the-name-of-peace.html?nav=5042"><img src="/photos/news/md/518776_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/518776/Another-week-of-activities-planned-in-the-name-of-peace.html?nav=5042" class="h3A" title="Another week of activities planned in the name of peace">Another week of activities planned in the name of peace</a>
+				<p><em class="dim">September 16, 2011</em> The Alpena Coalition for Peace continues its 30 Days of Peace observance with a varied roster of activities  over the next few week. <a href="/page/content.detail/id/518776/Another-week-of-activities-planned-in-the-name-of-peace.html?nav=5042" class="" title="Another week of activities planned in the name of peace">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/518766/Former-resident-publishes-Christian-work-of-fiction.html?nav=5042"><img src="/photos/news/md/518766_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/518766/Former-resident-publishes-Christian-work-of-fiction.html?nav=5042" class="h3A" title="Former resident publishes Christian work of fiction">Former resident publishes Christian work of fiction</a>
+				<p><em class="dim">September 15, 2011</em>  Like many people across the nation, former Alpena resident Leon Abbe felt the direct consequences of a bleak economy. <a href="/page/content.detail/id/518766/Former-resident-publishes-Christian-work-of-fiction.html?nav=5042" class="" title="Former resident publishes Christian work of fiction">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/518722/Spotlight-Series-season-opens-with-Ray-Kamalay.html?nav=5042" class="h3A" title="Spotlight Series season opens with Ray Kamalay">Spotlight Series season opens with Ray Kamalay</a>
+				<p><em class="dim">September 12, 2011</em> The Alpena Community College Spotlight Series opens its 2011-12 season with a premiere event on Sept. <a href="/page/content.detail/id/518722/Spotlight-Series-season-opens-with-Ray-Kamalay.html?nav=5042" class="" title="Spotlight Series season opens with Ray Kamalay">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+	</div>
+	<div class="navPaginate">
+		page: | <a href="/page/category.displayall/nav/5042.html?startIndex=1#ptgats" title="1 - 20">1</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=21#ptgats" title="21 - 40">2</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=41#ptgats" title="41 - 60">3</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=61#ptgats" title="61 - 80">4</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=81#ptgats" title="81 - 100">5</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=101#ptgats" title="101 - 120">6</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=121#ptgats" title="121 - 140">7</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=141#ptgats" title="141 - 160">8</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=161#ptgats" title="161 - 180">9</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=181#ptgats" title="181 - 200">10</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=201#ptgats" title="201 - 220">11</a> | <a href="/page/category.displayall/nav/5042.html?startIndex=221#ptgats" title="221 - 240">12</a> | <a href="#" title="Search Pages" onClick="popup('popUpDiv_status_searchCat')">Search</a> | 
+	</div>
+</div>
+<div class="cBdrFdr">
+	<div class="cBdrBL"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBR"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBC"><img src="/images/spacer.gif" border="0" width="1" height="5" /></div>
+</div>
+
+			
+		</td>
+		<td id="mBdyRC" valign="top">
+			<div id="weatherMag">
+	<div id="weatherMagL">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x95_74x60");
+	</script>
+</div>
+	<div id="weatherMagR"><div id="wx_module">
+   <a href="http://www.weather.com/weather/local/USMI0022">Alpena Weather Forecast, MI</a>
+</div>
+
+<script type="text/javascript">
+
+   /* The location ID [wx_locID] may be changed as needed.  However, please update */
+   /* the link and text in the above wx_module to reflect any changes made. */
+   var wx_locID = 'USMI0022';
+
+   /* Please do not change the configuration value [wx_config] manually - your module */
+   /* will no longer function if you do.  If at any time you wish to modify this */
+   /* configuration please use the graphical configuration tool found at */
+   /* https://registration.weather.com/ursa/wow/step2 */
+   var wx_config='SZ=teaser*lnk=http|www.thealpenanews.com/page/weather.lg/*PID=1031326525*DN=www.thealpenanews.com*MD5=4a20cac7c3830bff11eb2a056639626a';
+
+   document.write('<scr'+'ipt src="'+document.location.protocol+'//wow.weather.com/weather/wow/module/'+wx_locID+'?config='+wx_config+'&proto='+document.location.protocol+'&target=wx_module"></scr'+'ipt>');
+</script> </div>
+	<div class="clear"></div>
+</div>
+			
+			
+
+
+
+<script type="text/javascript">
+
+	var xmlhttpSearch = false;
+	var headingsArray = new Array();
+	var headingsIDArray = new Array();
+
+	
+	function getSearchXML() {
+		xmlhttpSearch=GetXmlHttpObjectSearch();
+		if (xmlhttpSearch==null) {
+			  alert ("Sorry, but I couldn't create an XMLHttpRequest");
+		}
+	
+		if (xmlhttpSearch) {
+			xmlhttpSearch.onreadystatechange = setheadingsArray;
+			xmlhttpSearch.open("GET", "/shared/localSearch/headings.xml", true);
+			xmlhttpSearch.send(null);
+		}
+		else {
+			alert("Sorry, but I couldn't create an XMLHttpRequest");
+		}
+	
+		function GetXmlHttpObjectSearch() {
+			if (window.XMLHttpRequest) {
+			  /* code for IE7+, Firefox, Chrome, Opera, Safari */
+			  return new XMLHttpRequest();
+			}
+			if (window.ActiveXObject) {
+			  /* code for IE6, IE5 */
+			  return new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			return null;
+		}
+	}
+
+	function setheadingsArray() {
+		if (xmlhttpSearch.readyState == 4) {
+			if (xmlhttpSearch.status == 200) {
+				if (xmlhttpSearch.responseXML) {
+					var allHeadingss = xmlhttpSearch.responseXML.getElementsByTagName("item");
+					for (var i=0; i<allHeadingss.length; i++) {
+						headingsArray[i] = allHeadingss[i].getElementsByTagName("headingName")[0].firstChild;
+						headingsIDArray[i] = allHeadingss[i].getElementsByTagName("localSearchHeadingID")[0].firstChild;
+					}
+					searchBoxSuggest();
+				}
+			}
+		}
+	}
+
+	function searchBoxSuggest() {
+		if ( !headingsArray.length ) {
+			getSearchXML();
+		}
+		var str = document.getElementById("searchBox").value;
+		if (str != "") {
+			document.getElementById("popupsSearch").innerHTML = "";
+			document.getElementById("popupsSearch").style.display = '';
+		
+			for (var i=0; i<headingsArray.length; i++) {
+				var thisHeading = headingsArray[i].nodeValue;
+		
+				if (thisHeading.toLowerCase().indexOf(str.toLowerCase()) == 0) {
+					var thisHeadingID = headingsIDArray[i].nodeValue;
+					var tempDiv = document.createElement("div");
+					var titleURL = thisHeading.replace(/\&amp;/g,'&');
+					var titleURL = titleURL.replace(/[^0-9a-zA-Z]/g,'-');
+					tempDiv.innerHTML = thisHeading;
+					tempDiv.onclick = new Function('makeSearchChoice('+thisHeadingID+',this.innerHTML)');
+					/*tempDiv.onclick = function (){var titleURL = thisCurrentHeading.replace(/\&amp;/g,'&'); var titleURL = titleURL.replace(/[^0-9a-zA-Z]/g,'-'); window.location="/page/local.headDetail/id/" + thisHeadingID + "/" + titleURL + ".html";}; */
+					tempDiv.className = "suggestionsSearch";
+					tempDiv.style.cursor = "pointer";
+					document.getElementById("popupsSearch").appendChild(tempDiv);
+					document.getElementById("popupsSearch").style.backgroundColor='#fff';
+					document.getElementById("popupsSearch").style.border="1px solid #999"; 
+					document.getElementById("popupsSearch").style.height="250px";
+				}
+			}
+			if ( document.getElementById("popupsSearch").innerHTML.length == 0 ) {
+				document.getElementById("popupsSearch").style.display = 'none';
+			}
+		} else {
+			document.getElementById("popupsSearch").innerHTML = "";
+			document.getElementById("popupsSearch").style.display = "none";
+		}
+				
+	}
+	
+	function onBlurSearchSuggestions() {
+		if ( document.activeElement != document.getElementById("popupsSearch") ) {
+			var delay = 250;
+			setTimeout('hideSearchSuggestions()', delay);
+		}
+	}
+
+	function onBlurSearchResults() {
+		if ( document.activeElement != document.getElementById("searchBox") ) {
+			var delay = 250;
+			setTimeout('hideSearchSuggestions()', delay);
+		}
+	}
+
+	function hideSearchSuggestions() {
+		document.getElementById('popupsSearch').innerHTML = "";
+		document.getElementById('popupsSearch').style.display = 'none';
+	}
+	
+	document.onclick = onBlurSearchResults;
+
+	function makeSearchChoice(chosen,urlTitle) {
+		/* added catch to remove category name from search term */
+		if ( urlTitle.toLowerCase().search('<a>') != -1 ) {
+			var endPoint = urlTitle.toLowerCase().search('<a>');
+			var urlTitle = urlTitle.substr(0, endPoint-1);
+		}
+		/*var thisDiv = (evt) ? evt.target : window.event.srcElement; */
+		document.getElementById("popupsSearch").innerHTML = "";
+		/*var titleURL = urlTitle.replace(/\&amp;/g,'&');
+		var titleURL = titleURL.replace(/[^0-9a-zA-Z]/g,'-');
+		window.location="/page/local.headDetail/id/" + chosen + "/" + titleURL + ".html";*/
+		window.location="/page/local.searchBoxCatchAutocomplete/id/" + chosen + "/text/" + urlTitle;		
+		document.getElementById("popupsSearch").style.display = "none";
+		/*document.getElementById('searchBox').value = thisDiv.innerHTML.replace(/\&amp;/g,'&'); */
+		/*document.getElementById("popupsSearch").innerHTML = ""; */
+	}
+	
+</script>
+<div id="searchHeaderClass" class="cBdrHdr cBBg_lSearch">
+	<div class="cBdrTLOn">&nbsp;</div>
+	<div class="cBdrTROn">&nbsp;</div>
+	<div class="cBdrTC"><h2 id="searchHeaderTitle" class="color_lBlue">&nbsp;</h2></div>
+</div>
+<div class="cBdrMain">
+	
+	<form id="frmSiteSearch" action="/page/search.results" method="get">
+		
+		<input type="hidden" name="nav" value="-1" />
+		<h5>I am looking for:</h5>
+		<div><input name="keywords" id="siteSearchBox" value="" autocomplete="off" type="text" size="24" maxlength="128" /> <input name="btnSiteSearch" type="submit" value="Search" class="fButton" /></div>
+		<div id="searchDateRange" class="txtSmaller" style="display:none;">
+			<strong class="dim">between:</strong><br />
+			<input size="10" type="text" id="StartDate" name="StartDate" readonly="readonly" />
+			<a href="javascript:StartDate.popup();"><img src="/templates/calendar/img/cal.gif" width="16" height="16" border="0" alt="Click Here to Select Date"></a>
+				<strong class="dim">and</strong>
+			<input size="10" type="text" id="EndDate" name="EndDate" readonly="readonly" />
+			<a href="javascript:EndDate.popup();"><img src="/templates/calendar/img/cal.gif" width="16" height="16" border="0" alt="Click Here to Select Date"></a>
+		</div>
+	</form>
+	<form id="frmWebSearch" style="display:none;" action="/page/search.resultsWeb" method="get">
+		<h5>I am looking for:</h5>
+		<div><input name="q" id="webSearchBox" value="" autocomplete="off" type="text" size="24" maxlength="128" /> <input name="btnWebSearch" type="submit" value="Search" class="fButton" /></div>
+	</form>
+
+	<form id="frmEzSearch" style="display:none;"  action="" method="get" enctype="application/x-www-form-urlencoded" name="NameSearch" target="_blank" class="odistyle28">
+		<h5>I am looking for:</h5>
+		<div><input name="name" id="ezSearchBox" value="" autocomplete="off" type="text" size="24" maxlength="128" /> <input name="btnEzSearch" type="submit" value="Search" class="fButton" /></div>
+	</form>
+
+
+
+	<div class="txtSmaller"><strong class="dim">in:</strong><br />
+		<input name="btnSearchSelect" type="radio" class="radioBtn" onclick="changeSearch('site');" id="btnSite">News, Blogs & Events 
+		<input name="btnSearchSelect" type="radio" class="radioBtn" onclick="changeSearch('web');" id="btnWeb">Web 
+		<input name="btnSearchSelect" type="radio" class="radioBtn" onclick="changeSearch('ez');" id="btnEz"><label id="btnEzLabel">EZToUse.com</label>
+	</div>
+	
+	<script type="text/javascript">
+	
+		function changeSearch(chosen) {
+			if (chosen == 'site') {
+				document.getElementById('searchHeaderClass').className = 'cBdrHdr';
+				document.getElementById('searchHeaderTitle').innerHTML = 'News, Blogs & Events';
+				document.getElementById('frmSiteSearch').style.display = '';
+				document.getElementById('frmWebSearch').style.display = 'none';
+				document.getElementById('frmEzSearch').style.display = 'none';
+				if ( document.getElementById('webSearchBox').value.length ) {
+					 document.getElementById('siteSearchBox').value =  document.getElementById('webSearchBox').value;
+					 document.getElementById('webSearchBox').value = '';
+				}
+				if ( document.getElementById('ezSearchBox').value.length ) {
+					 document.getElementById('siteSearchBox').value =  document.getElementById('ezSearchBox').value;
+					 document.getElementById('ezSearchBox').value = '';
+				}
+			}
+			if (chosen == 'web') {
+				document.getElementById('searchHeaderClass').className = 'cBdrHdr';
+				document.getElementById('searchHeaderTitle').innerHTML = 'Web Search';
+				document.getElementById('frmSiteSearch').style.display = 'none';
+				document.getElementById('frmWebSearch').style.display = '';
+				document.getElementById('frmEzSearch').style.display = 'none';
+				if ( document.getElementById('siteSearchBox').value.length ) {
+					 document.getElementById('webSearchBox').value =  document.getElementById('siteSearchBox').value;
+					 document.getElementById('siteSearchBox').value = '';
+				}
+				if ( document.getElementById('ezSearchBox').value.length ) {
+					 document.getElementById('webSearchBox').value =  document.getElementById('ezSearchBox').value;
+					 document.getElementById('ezSearchBox').value = '';
+				}
+			}
+			if (chosen == 'ez') {
+				document.getElementById('searchHeaderClass').className = 'cBdrHdr';
+				document.getElementById('searchHeaderTitle').innerHTML = 'EZToUse.com';
+				document.getElementById('frmSiteSearch').style.display = 'none';
+				document.getElementById('frmWebSearch').style.display = 'none';
+				document.getElementById('frmEzSearch').style.display = '';
+				if ( document.getElementById('siteSearchBox').value.length ) {
+					 document.getElementById('ezSearchBox').value =  document.getElementById('siteSearchBox').value;
+					 document.getElementById('siteSearchBox').value = '';
+				}
+				if ( document.getElementById('webSearchBox').value.length ) {
+					 document.getElementById('ezSearchBox').value =  document.getElementById('webSearchBox').value;
+					 document.getElementById('webSearchBox').value = '';
+				}
+			}
+		}
+		
+		if ( 0 == 0 ) {
+			changeSearch('site');
+			document.getElementById('btnSite').checked = true;
+			if ( 0 == 0 ) {
+				document.getElementById('btnEz').style.display = 'none';
+				document.getElementById('btnEzLabel').style.display = 'none';
+			}
+				
+		}
+
+		function getQuerystring(key, default_) {
+			if (default_==null) { 
+				default_=""; 
+			} 
+			var search = unescape(location.search); 
+			if (search == "") { 
+				return default_; 
+			} 
+			search = search.substr(1); 
+			var params = search.split("&"); 
+			for (var i = 0; i < params.length; i++) { 
+				var pairs = params[i].split("="); 
+				if(pairs[0] == key) { 
+					if ( pairs[0] == 'keywords' && pairs[1].length == 0 ) {
+						pairs[1] = ' ';
+					}
+					return pairs[1]; 
+				} 
+			} 
+			return default_; 
+		}	
+			
+		if (getQuerystring('keywords')) {
+			changeSearch('site');
+			document.getElementById('siteSearchBox').value = getQuerystring('keywords').replace(/\+/g," ").replace(/%2B/g," ");
+			document.getElementById('btnSite').checked = true;
+		}
+		if (getQuerystring('q')) {
+			changeSearch('web');
+			document.getElementById('webSearchBox').value = getQuerystring('q').replace(/\+/g," ").replace(/%2B/g," ");
+			document.getElementById('btnWeb').checked = true;
+		}
+		if (getQuerystring('StartDate')) {
+			document.getElementById('StartDate').value = getQuerystring('StartDate');
+		}
+		if (getQuerystring('EndDate')) {
+			document.getElementById('EndDate').value = getQuerystring('EndDate');
+		}
+		
+		var findFuseaction = "search.results" ;
+		fuseactionFound = window.location.href.indexOf(findFuseaction);
+		if (fuseactionFound != -1) {
+			document.getElementById('searchDateRange').style.display = '';
+		} else {	
+			document.getElementById('searchDateRange').style.display = 'none';
+		}
+	
+	</script>
+	
+	
+<script type="text/JavaScript" src="/templates/calendar/calendar2.js"></script>
+
+<script type="text/javascript">
+	if ( document.getElementById('StartDate') ) {
+		 /* create calendar object(s) just after form tag closed */
+		 /* specify form element as the only parameter (document.forms['formname'].elements['inputname']); */
+		 /* note: you can have as many calendar objects as you need for your application */
+		var StartDate = new calendar2(document.getElementById('StartDate'));
+			StartDate.year_scroll = true;
+			StartDate.time_comp = false;
+	}
+</script>
+
+
+<script type="text/javascript">
+	if ( document.getElementById('EndDate') ) {
+		 /* create calendar object(s) just after form tag closed */
+		 /* specify form element as the only parameter (document.forms['formname'].elements['inputname']); */
+		 /* note: you can have as many calendar objects as you need for your application */
+		var EndDate = new calendar2(document.getElementById('EndDate'));
+			EndDate.year_scroll = true;
+			EndDate.time_comp = false;
+	}
+</script>
+
+</div>
+<div class="cBdrFdr">
+	<div class="cBdrBL"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBR"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBC"><img src="/images/spacer.gif" border="0" width="1" height="5" /></div>
+</div>
+			
+			
+<div class="cBdrHdr cBBg_topJobs" onclick="parent.location.href='http://jobs.thealpenanews.com/',target='_top'" style="cursor:pointer;" title="VISIT: http://jobs.thealpenanews.com/">
+	<div class="cBdrTLOn">&nbsp;</div>
+	<div class="cBdrTROn">&nbsp;</div>
+	<div class="cBdrTC"><h2 class="color_blue">Top Jobs</h2></div>
+</div>
+<div class="cBdrMain">
+	<ul>
+		
+		<li><a class="a_6" href="http://Jobs.thealpenanews.com/Jobs/Detail.aspx?jrss=1575014-678240" title="Confidential - IRON MOUNTAIN , MI">GRANT WRITER</a></li>
+		
+	</ul>
+	<div class="viewMore"><a href="http://jobs.thealpenanews.com/" title="View All Jobs">View All Jobs »</a></div>
+</div>
+<div class="cBdrFdr">
+	<div class="cBdrBL"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBR"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBC"><img src="/images/spacer.gif" border="0" width="1" height="5" /></div>
+</div>
+			<div class="adBlock_rightRail">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_Middle_300x250");
+	</script>
+</div>
+			
+			<div class="adBlock_rightRail">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x40_234x60");
+	</script>
+</div>
+			<div class="adBlock_rightRail">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x41_234x60");
+	</script>
+</div>
+			<div class="adBlock_rightRail">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x42_234x60");
+	</script>
+</div>
+			
+			
+<div class="cBdrHdr">
+	<div class="cBdrTL">&nbsp;</div>
+	<div class="cBdrTR">&nbsp;</div>
+	<div class="cBdrTC">
+		<div>
+			<div class="cBdrHdrR txtSmall dim"><a href="http://cu.thealpenanews.com" title="View All CU Galleries">View All Galleries »</a></div>
+			<div class="cBdrHdrL"><h2 class="color_lGreen">CU Photo Galleries</h2></div>
+		</div>
+	</div>
+</div>
+<div class="cBdrMainBig">
+	
+		<div class="photoTn">
+			
+			<a href="http://cu.thealpenanews.com/galleries/298299/" title="VIEW: BC ING U gallery"><img src="http://cu.thealpenanews.com/images/22/photos/2011/11/05/thumbnail/1557470.jpg" height="50" border="0" class="photo" /></a>
+			<a href="http://cu.thealpenanews.com/galleries/298299/" title="VIEW: BC ING U gallery">BC ING U</a>
+			
+		</div>
+			
+		<div class="photoTn">
+			
+			<a href="http://cu.thealpenanews.com/galleries/298319/" title="VIEW: volleyball-rc vs. onaway gallery"><img src="http://cu.thealpenanews.com/images/22/photos/2011/11/04/thumbnail/1557453.jpg" height="50" border="0" class="photo" /></a>
+			<a href="http://cu.thealpenanews.com/galleries/298319/" title="VIEW: volleyball-rc vs. onaway gallery">volleyball-rc vs. onaway</a>
+			
+		</div>
+			
+		<div class="photoTn">
+			
+			<a href="http://cu.thealpenanews.com/galleries/298318/" title="VIEW: volleyball-alcona vs. w-p gallery"><img src="http://cu.thealpenanews.com/images/22/photos/2011/11/04/thumbnail/1557444.jpg" height="50" border="0" class="photo" /></a>
+			<a href="http://cu.thealpenanews.com/galleries/298318/" title="VIEW: volleyball-alcona vs. w-p gallery">volleyball-alcona vs. w-p</a>
+			
+		</div>
+			
+		<div class="photoTn">
+			
+			<a href="http://cu.thealpenanews.com/galleries/298316/" title="VIEW: football-hillman v rudyard gallery"><img src="http://cu.thealpenanews.com/images/22/photos/2011/10/31/thumbnail/1557413.jpg" height="50" border="0" class="photo" /></a>
+			<a href="http://cu.thealpenanews.com/galleries/298316/" title="VIEW: football-hillman v rudyard gallery">football-hillman v rudyard</a>
+			
+		</div>
+			
+	<div class="clearL"></div>
+</div>
+<div class="cBdrFdr">
+	<div class="cBdrBL">&nbsp;</div>
+	<div class="cBdrBR">&nbsp;</div>
+	<div class="cBdrBC"><img src="/images/spacer.gif" border="0" width="1" height="5" /></div>
+</div>
+		</td>
+	</tr>
+</table>	</div>
+	<div id="bdyR"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="clear"></div>
+</div>
+
+<div class="adBlock_bottom">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_Bottom_728x90");
+	</script>
+
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x94_0x0");
+	</script>
+</div>
+
+<div class="footer">
+	<h4 class="color_white">The Alpena News</h4>
+	<p>130 Park Place , Alpena, MI 49707 | 989-354-3111</p>
+	<p>&copy; 2011. All rights reserved.| <a href="/tos.html">Terms of Service and Privacy Policy</a></p>
+</div>
+</body>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-3163245-1";
+urchinTracker();
+</script>
+</html> 

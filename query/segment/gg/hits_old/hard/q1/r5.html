@@ -1,0 +1,657 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/casca_mainpage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" --> 
+<title>Canadian Contributions to Astronomy</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="scriptsStyles/master.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2">
+
+// Script Source: CodeLifter.com
+// Copyright 2003
+// Do not remove this header
+
+isIE=document.all;
+isNN=!document.all&&document.getElementById;
+isN4=document.layers;
+isHot=false;
+
+function ddInit(e){
+  topDog=isIE ? "BODY" : "HTML";
+  whichDog=isIE ? document.all.theLayer : document.getElementById("theLayer");  
+  hotDog=isIE ? event.srcElement : e.target;  
+  while (hotDog.id!="titleBar"&&hotDog.tagName!=topDog){
+    hotDog=isIE ? hotDog.parentElement : hotDog.parentNode;
+  }  
+  if (hotDog.id=="titleBar"){
+    offsetx=isIE ? event.clientX : e.clientX;
+    offsety=isIE ? event.clientY : e.clientY;
+    nowX=parseInt(whichDog.style.left);
+    nowY=parseInt(whichDog.style.top);
+    ddEnabled=true;
+    document.onmousemove=dd;
+  }
+}
+
+function dd(e){
+  if (!ddEnabled) return;
+  whichDog.style.left=isIE ? nowX+event.clientX-offsetx : nowX+e.clientX-offsetx; 
+  whichDog.style.top=isIE ? nowY+event.clientY-offsety : nowY+e.clientY-offsety;
+  return false;  
+}
+
+function ddN4(whatDog){
+  if (!isN4) return;
+  N4=eval(whatDog);
+  N4.captureEvents(Event.MOUSEDOWN|Event.MOUSEUP);
+  N4.onmousedown=function(e){
+    N4.captureEvents(Event.MOUSEMOVE);
+    N4x=e.x;
+    N4y=e.y;
+  }
+  N4.onmousemove=function(e){
+    if (isHot){
+      N4.moveBy(e.x-N4x,e.y-N4y);
+      return false;
+    }
+  }
+  N4.onmouseup=function(){
+    N4.releaseEvents(Event.MOUSEMOVE);
+  }
+}
+
+function hideMe(){
+  if (isIE||isNN) whichDog.style.visibility="hidden";
+  else if (isN4) document.theLayer.visibility="hide";
+}
+
+function showMe(){
+  if (isIE||isNN) whichDog.style.visibility="visible";
+  else if (isN4) document.theLayer.visibility="show";
+}
+
+document.onmousedown=ddInit;
+document.onmouseup=Function("ddEnabled=false");
+
+</script>
+
+<script language="JavaScript1.2" >
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+//-->//-->
+</script>
+<script language="JavaScript1.2" src="images/fireworks/mm_menu.js"></script>
+<!-- InstanceParam name="counter" type="boolean" value="false" --> 
+<script language="JavaScript">
+<!--
+
+
+function doClock(){ // By Paul Davis - www.kaosweaver.com
+  var t=new Date(),a=doClock.arguments,str="",i,a1,lang="1";
+  var month=new Array('January','Jan', 'February','Feb', 'March','Mar', 'April','Apr', 'May','May', 'June','Jun', 'July','Jul', 'August','Aug', 'September','Sep', 'October','Oct', 'November','Nov', 'December','Dec');
+  var tday= new Array('Sunday','Sun','Monday','Mon', 'Tuesday','Tue', 'Wednesday','Wed','Thursday','Thr','Friday','Fri','Saturday','Sat');
+  for(i=0;i<a.length;i++) {a1=a[i].charAt(1);switch (a[i].charAt(0)) {
+  case "M":if  ((Number(a1)==3) && ((t.getMonth()+1)<10)) str+="0";
+  str+=(Number(a1)>1)?t.getMonth()+1:month[t.getMonth()*2+Number(a1)];break;
+  case "D": if ((Number(a1)==1) && (t.getDate()<10)) str+="0";str+=t.getDate();break;
+  case "Y": str+=(a1=='0')?t.getFullYear():t.getFullYear().toString().substring(2);break;
+  case "W":str+=tday[t.getDay()*2+Number(a1)];break; default: str+=unescape(a[i]);}}return str;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+
+</head>
+
+<body onLoad="MM_preloadImages('images/fireworks/newsBar_r4_c2_f2.gif','images/cjap_plug_over.gif','images/fireworks/titleBar_r2_c2_f2.gif','images/fireworks/titleBar_r3_c11_f2.gif','images/fireworks/titleBar_r5_c13_f2.gif','images/fireworks/titleBar_r6_c4_f2.gif','images/fireworks/titleBar_r6_c6_f2.gif','images/fireworks/titleBar_r6_c8_f2.gif','images/fireworks/titleBar_r6_c10_f2.gif','images/fireworks/titleBar_r6_c15_f2.gif','images/fireworks/titleBar_r6_c17_f2.gif','images/fireworks/top_r2_c2_f2.gif')">
+<table width="753" border="0" cellspacing="0" cellpadding="0">
+  <tr class="normalpt"> 
+    <td height="18" colspan="3"><a name="top" class="date"></a></td>
+    <td height="18"> <div align="right"> 
+        <div align="right"> <span class="date">Today is:</span> 
+          <script language="JavaScript">
+   document.write("<span class=\"date\">"+doClock("W0",",%20","M0","%20","D1",",%20","Y0")+"</span>");
+</script>
+        </div>
+      </div></td>
+    <td width="14" height="18">&nbsp;</td>
+  </tr>
+  <tr class="normalpt"> 
+    <td height="101" colspan="5"><div align="right"> </div>
+      <div align="left"></div>
+      <div align="right">
+        <table border="0" cellpadding="0" cellspacing="0" width="749">
+          <!-- fwtable fwsrc="casca_titlebar.png" fwbase="titleBar" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+          <tr> 
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="139" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="79" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="2" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="60" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="3" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="70" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="3" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="60" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="3" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="37" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="23" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="3" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="90" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="3" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="90" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="3" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="66" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="14" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="1" border="0"></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="1" border="0"></td>
+          </tr>
+          <tr> 
+            <td colspan="19"><img name="titleBar_r1_c1" src="images/fireworks/titleBar_r1_c1.gif" width="749" height="2" border="0" alt=""></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="2" border="0"></td>
+          </tr>
+          <tr> 
+            <td rowspan="7"><a href="index.html"><img name="titleBar_r2_c1" src="images/fireworks/titleBar_r2_c1.gif" width="139" height="99" border="0" alt=""></a></td>
+            <td rowspan="5"><a href="#" onClick="MM_showHideLayers('theLayer','','show')" onMouseOver="MM_swapImage('titleBar_r2_c2','','images/fireworks/titleBar_r2_c2_f2.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/fireworks/titleBar_r2_c2.gif" alt="" name="titleBar_r2_c2" width="79" height="84" border="0"></a></td>
+            <td colspan="17"><img name="titleBar_r2_c3" src="images/fireworks/titleBar_r2_c3.gif" width="531" height="54" border="0" alt=""></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="54" border="0"></td>
+          </tr>
+          <tr> 
+            <td rowspan="3" colspan="8"><img name="titleBar_r3_c3" src="images/fireworks/titleBar_r3_c3.gif" width="238" height="20" border="0" alt=""></td>
+            <td colspan="7"><a href="http://www.casca.ca" target="_blank" onMouseOver="MM_swapImage('titleBar_r3_c11','','images/fireworks/titleBar_r3_c11_f2.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="titleBar_r3_c11" src="images/fireworks/titleBar_r3_c11.gif" width="278" height="12" border="0" alt=""></a></td>
+            <td rowspan="3" colspan="2"><img name="titleBar_r3_c18" src="images/fireworks/titleBar_r3_c18.gif" width="15" height="20" border="0" alt=""></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="12" border="0"></td>
+          </tr>
+          <tr> 
+            <td colspan="7"><img name="titleBar_r4_c11" src="images/fireworks/titleBar_r4_c11.gif" width="278" height="7" border="0" alt=""></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="7" border="0"></td>
+          </tr>
+          <tr> 
+            <td colspan="2"><img name="titleBar_r5_c11" src="images/fireworks/titleBar_r5_c11.gif" width="26" height="1" border="0" alt=""></td>
+            <td rowspan="3"><a href="youthorg_index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('titleBar_r5_c13','','images/fireworks/titleBar_r5_c13_f2.gif',1)"><img name="titleBar_r5_c13" src="images/fireworks/titleBar_r5_c13.gif" width="90" height="25" border="0" alt=""></a></td>
+            <td colspan="4"><img name="titleBar_r5_c14" src="images/fireworks/titleBar_r5_c14.gif" width="162" height="1" border="0" alt=""></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="1" border="0"></td>
+          </tr>
+          <tr> 
+            <td rowspan="3"><img name="titleBar_r6_c3" src="images/fireworks/titleBar_r6_c3.gif" width="2" height="25" border="0" alt=""></td>
+            <td rowspan="3"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('titleBar_r6_c4','','images/fireworks/titleBar_r6_c4_f2.gif',1)"><img name="titleBar_r6_c4" src="images/fireworks/titleBar_r6_c4.gif" width="60" height="25" border="0" alt=""></a></td>
+            <td rowspan="3"><img name="titleBar_r6_c5" src="images/fireworks/titleBar_r6_c5.gif" width="3" height="25" border="0" alt=""></td>
+            <td rowspan="3"><a href="genastro_index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('titleBar_r6_c6','','images/fireworks/titleBar_r6_c6_f2.gif',1)"><img name="titleBar_r6_c6" src="images/fireworks/titleBar_r6_c6.gif" width="70" height="25" border="0" alt=""></a></td>
+            <td rowspan="3"><img name="titleBar_r6_c7" src="images/fireworks/titleBar_r6_c7.gif" width="3" height="25" border="0" alt=""></td>
+            <td rowspan="3"><a href="teachers_index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('titleBar_r6_c8','','images/fireworks/titleBar_r6_c8_f2.gif',1)"><img name="titleBar_r6_c8" src="images/fireworks/titleBar_r6_c8.gif" width="60" height="25" border="0" alt=""></a></td>
+            <td rowspan="3"><img name="titleBar_r6_c9" src="images/fireworks/titleBar_r6_c9.gif" width="3" height="25" border="0" alt=""></td>
+            <td rowspan="3" colspan="2"><a href="students_index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('titleBar_r6_c10','','images/fireworks/titleBar_r6_c10_f2.gif',1)"><img name="titleBar_r6_c10" src="images/fireworks/titleBar_r6_c10.gif" width="60" height="25" border="0" alt=""></a></td>
+            <td rowspan="3"><img name="titleBar_r6_c12" src="images/fireworks/titleBar_r6_c12.gif" width="3" height="25" border="0" alt=""></td>
+            <td rowspan="3"><img name="titleBar_r6_c14" src="images/fireworks/titleBar_r6_c14.gif" width="3" height="25" border="0" alt=""></td>
+            <td rowspan="3"><a href="proAstro_index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('titleBar_r6_c15','','images/fireworks/titleBar_r6_c15_f2.gif',1)"><img name="titleBar_r6_c15" src="images/fireworks/titleBar_r6_c15.gif" width="90" height="25" border="0" alt=""></a></td>
+            <td rowspan="3"><img name="titleBar_r6_c16" src="images/fireworks/titleBar_r6_c16.gif" width="3" height="25" border="0" alt=""></td>
+            <td rowspan="3" colspan="2"><a href="amaAstro_index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('titleBar_r6_c17','','images/fireworks/titleBar_r6_c17_f2.gif',1)"><img name="titleBar_r6_c17" src="images/fireworks/titleBar_r6_c17.gif" width="80" height="25" border="0" alt=""></a></td>
+            <td rowspan="3"><img name="titleBar_r6_c19" src="images/fireworks/titleBar_r6_c19.gif" width="1" height="25" border="0" alt=""></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="10" border="0"></td>
+          </tr>
+          <tr> 
+            <td rowspan="2"><img name="titleBar_r7_c2" src="images/fireworks/titleBar_r7_c2.gif" width="79" height="15" border="0" alt=""></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="14" border="0"></td>
+          </tr>
+          <tr> 
+            <td><img name="titleBar_r8_c13" src="images/fireworks/titleBar_r8_c13.gif" width="90" height="1" border="0" alt=""></td>
+            <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_2" width="1" height="1" border="0"></td>
+          </tr>
+        </table>
+      </div></td>
+  </tr>
+  <tr class="normalpt"> 
+    <td width="176" align="right" valign="top"><a href="french/index.html" class="normalptNews" >en 
+      Fran&ccedil;ais</a> </td>
+    <td width="11" valign="top"><img src="images/blank_15.gif" width="15" height="15"></td>
+    <td height="18" colspan="2"> 
+    <td> 
+    <td width="1">&nbsp;</td>
+  </tr>
+  <tr class="normalpt"> 
+    <td rowspan="6" valign="top"> <table border="0" cellpadding="0" cellspacing="0" width="172">
+        <!-- fwtable fwsrc="casca_newsbar.png" fwbase="newsBar" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+        <tr> 
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="13" height="1" border="0" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="109" height="1" border="0" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="36" height="1" border="0" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="14" height="1" border="0" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="1" height="1" border="0" /></td>
+        </tr>
+        <tr> 
+          <td colspan="4"><img name="newsBar_r1_c1_2" src="images/fireworks/newsBar_r1_c1.gif" width="172" height="53" border="0" id="newsBar_r1_c1" alt="" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="1" height="53" border="0" /></td>
+        </tr>
+        <tr> 
+          <td rowspan="4"><img name="newsBar_r2_c1_2" src="images/fireworks/newsBar_r2_c1.gif" width="13" height="246" border="0" id="newsBar_r2_c1" alt="" /></td>
+          <td colspan="2" valign="top"><div align="center"><font size="1"><strong> 
+              <br>
+              <strong>September 2010</strong> </strong></font></div>
+            <hr align="center">
+            <div align="center" class="normalptNews"><img src="images/star_bullet.gif" width="12" height="12" align="absmiddle"> 
+              <a href="teachers_resources.html"> Teachers! Look here for great resources!</a></div>
+            <div align="center" class="normalptNews"> 
+              <p align="center"><img src="images/star_bullet.gif" width="12" height="12" align="absmiddle"><a href="canadian_astronomy.html">Canadian 
+                Astronomy starts here!</a></p>
+              <p><img src="images/star_bullet.gif" width="12" height="12" align="absmiddle"> 
+                <a href="genastro_observeintro.html"> Learn more about the night sky!</a></p>
+            </div></td>
+          <td rowspan="4"><img name="newsBar_r2_c4" src="images/fireworks/newsBar_r2_c4.gif" width="14" height="246" border="0" id="newsBar_r2_c4" alt="" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="1" height="195" border="0" /></td>
+        </tr>
+        <tr> 
+          <td colspan="2"><img name="newsBar_r3_c2_2" src="images/fireworks/newsBar_r3_c2.gif" width="145" height="9" border="0" id="newsBar_r3_c2" alt="" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="1" height="9" border="0" /></td>
+        </tr>
+        <tr> 
+          <td><a href="currentevents_news.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('newsBar_r4_c2','','images/fireworks/newsBar_r4_c2_f2.gif',1)"><img name="newsBar_r4_c2" src="images/fireworks/newsBar_r4_c2.gif" width="109" height="25" border="0" id="newsBar_r4_c2" alt="" /></a></td>
+          <td rowspan="2"><img name="newsBar_r4_c3" src="images/fireworks/newsBar_r4_c3.gif" width="36" height="42" border="0" id="newsBar_r4_c3" alt="" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="1" height="25" border="0" /></td>
+        </tr>
+        <tr> 
+          <td><img name="newsBar_r5_c2" src="images/fireworks/newsBar_r5_c2.gif" width="109" height="17" border="0" id="newsBar_r5_c2" alt="" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_5" width="1" height="17" border="0" /></td>
+        </tr>
+      </table>
+      <br>
+      <p align="center" class="normalptNews"><a href="cjap_index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image72','','images/cjap_plug_over.gif',1)"><img src="images/cjap_plug.gif" name="Image72" width="150" height="90" border="0"></a></p>
+      <hr> <p align="center" class="normalptNews">&nbsp;</p>
+      <table width="20" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" bgcolor="#FFFFFF"> 
+            <div align="left"><!-- InstanceBeginEditable name="counter" --><!-- InstanceEndEditable --></div></td>
+        </tr>
+      </table>
+      <h4>&nbsp;</h4></td>
+    <td valign="top">&nbsp;</td>
+    <td colspan="2" valign="top"><!-- InstanceBeginEditable name="topLinks" --><span class="h1">Canadians' 
+      Contributions to Astronomy</span><!-- InstanceEndEditable --> <hr>
+      <!-- InstanceBeginEditable name="content" --> 
+      <p><strong>Did you know that ... ?</strong></p>
+      <blockquote> 
+        <p>Astronomy -- especially the opening of the Dominion Observatory, in 
+          Ottawa, in 1902 -- was essential for the surveying and westward expansion 
+          of our country.</p>
+        <p>When the Dominion Astrophysical Observatory opened in Victoria BC in 
+          1918, its 1.83m telescope was the largest in the world; this marked 
+          the beginning of serious government investment in basic astronomical 
+          research.</p>
+        <p>When the University of Toronto's David Dunlap Observatory opened in 
+          Richmond Hill, Ontario in 1935, its 1.88m telescope was the second-largest 
+          in the world (and the Victoria telescope was third-largest); thus, university 
+          research in astronomy developed in parallel with government research.</p>
+        <p>Canadian monitoring of the radio emission from the sun at 10cm wavelength, 
+          started in 1946, is still used internationally as a measure of the &quot;activity&quot; 
+          of the sun; Arthur Covington (Ottawa) was the driving force behind this 
+          program.</p>
+        <p>The Canadian Impact Crater Program, started in 1951, established Canada 
+          as a leader in this field -- a field which is of increasing interest, 
+          since impacts can have profound effects on life on earth. This program 
+          was initiated by C.S. Beals, one of Canada's foremost astronomers.</p>
+        <p>The opening of the Dominion Radio Astrophysical Observatory in Penticton 
+          BC in 1960, and the Algonquin Radio Observatory in Algonquin Park ON 
+          in 1966, led to major scientific developments, such as the discovery 
+          of complex molecules in interstellar space.</p>
+        <p>In 1967, the Penticton and Algonquin Radio Telescopes were linked to 
+          create the first Very Long Baseline Interferometer -- providing a thousand-fold 
+          increase in the ability of radio telescopes to see fine detail.</p>
+        <p>The opening of the Observatoire de Mont M&eacute;gantic in 1978 marked 
+          the creation of the first major centre of astronomical research in French-speaking 
+          Canada. </p>
+        <p>The Canada-France-Hawaii Telescope, which saw &quot;first light&quot; 
+          in 1979, provided Canada with a share of one of the most powerful and 
+          productive telescopes in the world. Canadian astronomers developed special 
+          instruments to extend the power of this telescope, including a technique 
+          which has since been used to discover almost a hundred planets around 
+          other stars.</p>
+        <p>The Canadian Institute for Theoretical Astrophysics, opened in Toronto 
+          in 1985, is now a world leader in understanding planetary systems, stars 
+          and their life cycles, and the origin and evolution of the universe.</p>
+        <p>Canada has a share in the Gemini telescopes -- giant 8m telescopes 
+          located in Hawaii and in Chile.</p>
+        <p>The Sudbury Neutrino Observatory (SNO), located deep within a nickel 
+          mine, is the world's most powerful detector of neutrinos -- subatomic 
+          particles emitted by nuclear reactions in the sun and stars, and in 
+          supernova explosions; it recently solved the &quot;solar neutrino problem&quot; 
+          -- the apparent lack of neutrinos from the sun (it turned out that many 
+          neutrinos change form during their flight from the sun, and are not 
+          detected).</p>
+        <p>Far-Ultraviolet Spectroscopic Explorer satellite studies the universe 
+          at far-ultraviolet wavelengths; it was the first astronomical satellite 
+          in which Canada had a share.</p>
+        <p>The ODIN satellite, launched in 2001, observes the universe at sub-millimetre 
+          wavelengths; it was developed in collaboration with astronomers in Finland, 
+          France, and Sweden, and is the first satellite in which Canada played 
+          a significant role in design, construction, and operation.</p>
+        <p>In 2000, Canadian scientists recovered the Tagish Lake meteorite on 
+          a frozen lake in British Columbia; this meteorite was later found to 
+          be the most primitive meteorite ever recovered -- almost unchanged since 
+          the formation of the solar system, 4.5 billion years ago.</p>
+      </blockquote>
+      <table border="0" cellpadding="0" cellspacing="0" width="546">
+        <!-- fwtable fwsrc="Untitled" fwbase="top" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+        <tr> 
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="508" height="1" border="0"></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="35" height="1" border="0"></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="3" height="1" border="0"></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td colspan="3"><img name="top_r1_c1_2" src="images/fireworks/top_r1_c1.gif" width="546" height="1" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td rowspan="2"><a href="#top"><img name="top_r2_c1_2" src="images/fireworks/top_r2_c1.gif" width="508" height="14" border="0" alt=""></a></td>
+          <td><a href="#top" onMouseOver="MM_swapImage('top_r2_c2_22212','','images/fireworks/top_r2_c2_f2.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/fireworks/top_r2_c2.gif" alt="" name="top_r2_c2_22212" width="35" height="13" border="0" id="top_r2_c2_22"></a></td>
+          <td rowspan="2"><img name="top_r2_c3_2" src="images/fireworks/top_r2_c3.gif" width="3" height="14" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="13" border="0"></td>
+        </tr>
+        <tr> 
+          <td><img name="top_r3_c2_2" src="images/fireworks/top_r3_c2.gif" width="35" height="1" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p><strong>Individual Achievements:</strong></p>
+      <blockquote> 
+        <p><strong>Sidney van den Bergh</strong> (Herzberg Institute of Astrophysics, 
+          Victoria) is a world leader in studying the distance, classification, 
+          nature and evolution of galaxies -- the basic building blocks of the 
+          universe. </p>
+        <p><strong>Paul Boltwood</strong>, an amateur astronomer from Stittsville 
+          ON, has developed and applied sophisticated astronomical imaging techniques, 
+          making his small telescope outside Ottawa as powerful as the largest 
+          professional telescope of a generation ago; he is a winner of the international 
+          Amateur Achievement Award.</p>
+        <p><strong>Richard Bond</strong> (Canadian Institute for Theoretical Astrophysics, 
+          Toronto) is an internationally-known cosmologist who has contributed 
+          to our understanding of the universe -- especially using the cosmic 
+          microwave background radiation (the radiation left over from the Big 
+          Bang) to understand the properties of the universe.</p>
+        <p><strong>Tom Bolton</strong> (University of Toronto) co-discovered the 
+          first example of a black hole in space. David Crampton and John Hutchings 
+          (Herzberg Institute of Astrophysics, Victoria) discovered the first 
+          black hole in a galaxy other than our own.</p>
+        <p>Canadian astronomers <strong>Ermanno Borra</strong> and <strong>Paul 
+          Hickson</strong> developed a telescope with a giant rotating mirror 
+          of liquid mercury -- much cheaper than a conventional telescope of similar 
+          size. </p>
+        <p><strong>Terence Dickinson</strong> (Yarker, Ontario) has written hundreds 
+          of newspaper articles, and more than a dozen books -- including NightWatch 
+          with over 300,000 copies printed; he has won international awards, and 
+          is a Member of the Order of Canada.</p>
+        <p><strong>Martin Duncan</strong> (Queen's University, Kingston) and <strong>Scott 
+          Tremaine</strong> (now based in the US) did pioneering work on the nature, 
+          origin, and evolution of the billions of comet nuclei in the outer solar 
+          system. </p>
+        <p>Montreal astronomer <strong>Gilles Fontaine</strong> is internationally-known 
+          for his studies of white dwarfs -- burned-out stellar corpses such as 
+          our sun will be in five billion years.</p>
+        <p>Canadian-born astronomer <strong>Wendy Freedman</strong> is a leader 
+          of the Hubble Space Telescope's &quot;key project&quot; to determine 
+          the size scale and age of the universe.</p>
+        <p>Canadian astronomers <strong>Brett Gladman</strong> and <strong>J.J. 
+          Kavelaars</strong> have discovered almost half of the known satellites 
+          of Saturn.</p>
+        <p>The late <strong>Helen Sawyer Hogg</strong> (University of Toronto) 
+          was probably Canada's best-known astronomer, as a result of her internationally-recognized 
+          research on globular star clusters, her leadership in astronomical organizations, 
+          and her weekly article which appeared in Canada's largest newspaper 
+          for 40 years.</p>
+        <p>Canadian-born amateur astronomer <strong>David Levy</strong> has discovered 
+          or co-discovered over 20 comets, including Shoemaker-Levy 9 which crashed 
+          into Jupiter in 1994; he is also a prolific writer of books and articles 
+          on astronomy.</p>
+        <p>The late <strong>Andrew McKellar</strong> (Dominion Astrophysical Observatory, 
+          Victoria) was the first to measure the temperature of interstellar space 
+          -- 2.4 degrees above absolute zero; this was actually the first measurement 
+          of the temperature of the Cosmic Microwave Background Radiation.</p>
+        <p>The late <strong>Peter Millman</strong> was a world expert on meteors, 
+          using visual, radar, and spectroscopic techniques; he laid the groundwork 
+          for a whole series of important projects on meteors, meteorites, and 
+          meteorite impact craters.</p>
+        <p><strong>Jack Newton</strong>, an amateur astronomer based in British 
+          Columbia, is a world leader in astronomical imaging techniques, using 
+          both film and electronic cameras; his work has appeared in many books 
+          and articles, and he was a recipient of the international Amateur Achievement 
+          Award.</p>
+        <p> The late <strong>John S. Plaskett</strong> (Dominion Astrophysical 
+          Observatory, Victoria) discovered the most massive pair of stars known 
+          -- still known as &quot;Plaskett's Star(s)&quot;. With colleague <strong>J.A. 
+          Pearce</strong>, he made the first accurate determination of the mass, 
+          size, and rotation of our Milky Way galaxy.</p>
+        <p>Quebec-born astrophysicist <strong>Hubert Reeves</strong> has been 
+          called &quot;the Carl Sagan of the French language&quot; as a result 
+          of his highly-praised and widely-read books and articles.</p>
+        <p><strong>Ian Shelton</strong> (University of Toronto) discovered the 
+          brightest supernova in 400 years, on February 23, 1987.</p>
+        <p><strong>Don Vandenberg</strong> (University of Victoria) is the most-cited 
+          (in research papers) astronomer in Canada, as a result of his fundamental 
+          work on the structure and evolution of stars.</p>
+        <p>The late <strong>Isabel Williamson</strong>, an amateur astronomer 
+          in Montreal, nurtured and trained a whole generation of amateur astronomers 
+          in Montreal, including comet discoverer <strong>David Levy</strong>.</p>
+        <p>The <strong>Canadian Network for Observational Cosmology</strong> is 
+          a leader in determining the fundamental properties of the universe through 
+          the study of distant galaxies; other teams of Canadian astronomers have 
+          used the Cosmic Microwave Background Radiation for this same purpose.</p>
+        <p>Canadian astronomers have developed widely-used software for image 
+          analysis, notably <strong>Paul Stetson's DAOPHOT</strong>; they have 
+          also developed the <strong>Starry Night</strong> sky simulation software, 
+          which is used by amateur astronomers and students around the world.</p>
+      </blockquote>
+      <table width="475" border="0" align="center" cellpadding="0" cellspacing="0">
+        <!-- fwtable fwsrc="Untitled" fwbase="top" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+        <tr> 
+          <td width="360"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="300" height="1" border="0"></td>
+          <td width="35"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="35" height="1" border="0"></td>
+          <td width="4"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="3" height="1" border="0"></td>
+          <td width="1"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td colspan="3"><img name="top_r1_c1_2" src="images/fireworks/top_r1_c1.gif" width="300" height="1" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td rowspan="2"><a href="#top"><img name="top_r2_c1_2" src="images/fireworks/top_r2_c1.gif" width="425" height="14" border="0" alt=""></a></td>
+          <td><a href="#top" onMouseOver="MM_swapImage('top_r2_c2_2221','','images/fireworks/top_r2_c2_f2.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/fireworks/top_r2_c2.gif" alt="" name="top_r2_c2_2221" width="35" height="13" border="0" id="top_r2_c2_22"></a></td>
+          <td rowspan="2"><div align="right"><img name="top_r2_c3_2" src="images/fireworks/top_r2_c3.gif" width="3" height="14" border="0" alt=""></div></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="13" border="0"></td>
+        </tr>
+        <tr> 
+          <td><img name="top_r3_c2_2" src="images/fireworks/top_r3_c2.gif" width="35" height="1" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+      </table>
+      <p>This list does not include Canada's many contributions to space science 
+        and technology, including one of the first satellites (Alouette), the 
+        Canadarm, the International Space Station, and the Canadian astronaut 
+        program.</p>
+      <table width="475" border="0" align="center" cellpadding="0" cellspacing="0">
+        <!-- fwtable fwsrc="Untitled" fwbase="top" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+        <tr> 
+          <td width="360"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="300" height="1" border="0"></td>
+          <td width="35"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="35" height="1" border="0"></td>
+          <td width="4"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="3" height="1" border="0"></td>
+          <td width="1"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td colspan="3"><img name="top_r1_c1_2" src="images/fireworks/top_r1_c1.gif" width="300" height="1" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td rowspan="2"><a href="#top"><img name="top_r2_c1_2" src="images/fireworks/top_r2_c1.gif" width="425" height="14" border="0" alt=""></a></td>
+          <td>&nbsp;</td>
+          <td rowspan="2"><div align="right"><img name="top_r2_c3_2" src="images/fireworks/top_r2_c3.gif" width="3" height="14" border="0" alt=""></div></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="13" border="0"></td>
+        </tr>
+        <tr> 
+          <td><img name="top_r3_c2_2" src="images/fireworks/top_r3_c2.gif" width="35" height="1" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+      </table>
+      <p><strong>Related links:</strong></p>
+      <ul>
+        <li><img src="images/star_bullet.gif" width="12" height="12" align="absmiddle"> 
+          <a href="historyAstronomyCanada.html">History of Astronomy in Canada</a></li>
+        <li><img src="images/star_bullet.gif" width="12" height="12" align="absmiddle"> 
+          <a href="notableAstronomers.html">Notable Canadian Astronomers</a> </li>
+        <li><img src="images/star_bullet.gif" width="12" height="12" align="absmiddle"> 
+          <a href="month_astronomer.html">Canadian Astronomer of the Month</a> 
+        </li>
+      </ul>
+      <table width="475" border="0" align="center" cellpadding="0" cellspacing="0">
+        <!-- fwtable fwsrc="Untitled" fwbase="top" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+        <tr> 
+          <td width="360"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="300" height="1" border="0"></td>
+          <td width="35"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="35" height="1" border="0"></td>
+          <td width="4"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="3" height="1" border="0"></td>
+          <td width="1"><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td colspan="3"><img name="top_r1_c1_2" src="images/fireworks/top_r1_c1.gif" width="300" height="1" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td rowspan="2"><a href="#top"><img name="top_r2_c1_2" src="images/fireworks/top_r2_c1.gif" width="425" height="14" border="0" alt=""></a></td>
+          <td><a href="#top" onMouseOver="MM_swapImage('top_r2_c2_22211','','images/fireworks/top_r2_c2_f2.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/fireworks/top_r2_c2.gif" alt="" name="top_r2_c2_22211" width="35" height="13" border="0" id="top_r2_c2_22"></a></td>
+          <td rowspan="2"><div align="right"><img name="top_r2_c3_2" src="images/fireworks/top_r2_c3.gif" width="3" height="14" border="0" alt=""></div></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="13" border="0"></td>
+        </tr>
+        <tr> 
+          <td><img name="top_r3_c2_2" src="images/fireworks/top_r3_c2.gif" width="35" height="1" border="0" alt=""></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_6" width="1" height="1" border="0"></td>
+        </tr>
+      </table>
+      <p align="right"><em>with files from J.R. Percy(2003), <img src="images/canada_mini.gif" width="14" height="8" align="absmiddle"> 
+        <a href="http://www.astro.utoronto.ca" target="_blank">University of Toronto</a></em> 
+      </p>
+      <!-- InstanceEndEditable --></td>
+    <td height="338">&nbsp;</td>
+  </tr>
+  <tr class="normalpt"> 
+    <td rowspan="5" valign="top">&nbsp;</td>
+    <td width="98">&nbsp;</td>
+    <td width="453">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr class="normalpt"> 
+    <td colspan="3"><table width="564" border="0" align="right" cellpadding="0" cellspacing="0">
+        <!-- fwtable fwsrc="casca_feedback.png" fwbase="botLinks" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+        <tr> 
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_4" width="68" height="1" border="0" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_4" width="494" height="1" border="0" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_4" width="2" height="1" border="0" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_4" width="1" height="1" border="0" /></td>
+        </tr>
+        <tr> 
+          <td rowspan="2"><img name="botLinks_r1_c1" src="images/fireworks/botLinks_r1_c1.gif" width="68" height="30" border="0" id="botLinks_r1_c1" alt="" /></td>
+          <td valign="middle" bgcolor="#003399"> <p align="right" class="h3" style="margin:0px;"><font color="#FFFFFF"><strong>CASCA 
+              Ed. Interactive:</strong>  <a href="mailto:cascaed@astro.utoronto.ca" class="yellowlink">Email 
+              Feedback</a></font>&nbsp;&nbsp;</p></td>
+          <td rowspan="2"><img name="botLinks_r1_c3" src="images/fireworks/botLinks_r1_c3.gif" width="2" height="30" border="0" id="botLinks_r1_c3" alt="" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_4" width="1" height="29" border="0" /></td>
+        </tr>
+        <tr> 
+          <td><img name="botLinks_r2_c2" src="images/fireworks/botLinks_r2_c2.gif" width="494" height="1" border="0" id="botLinks_r2_c2" alt="" /></td>
+          <td><img src="images/fireworks/spacer.gif" alt="" name="undefined_4" width="1" height="1" border="0" /></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr class="normalpt"> 
+    <td valign="bottom">&nbsp;</td>
+    <td colspan="2"><img src="images/blank_20.gif" width="20" height="20"></td>
+  </tr>
+  <tr class="normalpt"> 
+    <td valign="bottom">&nbsp;</td>
+    <td colspan="2" align="right"> <!-- InstanceBeginEditable name="emt" --><!-- InstanceEndEditable --></td>
+  </tr>
+  <tr class="normalpt"> 
+    <td colspan="3"><div align="left"> 
+        <div id="theLayer" style="position:absolute; width:250px; left:335px; top:226px; visibility:hidden;"> 
+          <table border="1" width="250" bgcolor="#FFCC33" cellspacing="0" cellpadding="5">
+            <tr> 
+              <td width="300" align="center"><form method="get" action="http://www.google.com/search">
+
+<div style="border:1px solid black;padding:4px;width:20em;">
+  <p>Casca Education Search Tool </p>
+  <table width="100%" border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25"
+ maxlength="255" value="" />
+<input type="submit" value="Search" /></td></tr>
+<tr><td align="center" style="font-size:75%">
+<input type="checkbox"  name="sitesearch"
+ value="www.cascaeducation.ca" checked /> 
+only search CascaEducation.ca <br />
+</td></tr></table>
+  <br>  
+  <div align="center"></div>
+</div>
+
+</form>
+              <p align="right"><a href="#" onClick="MM_showHideLayers('theLayer','','hide')">Close window </a></p></td>
+            </tr>
+          </table>
+        </div>
+        <p>&nbsp;</p>
+      </div></td>
+  </tr>
+  <tr class="normalpt">
+    <td colspan="5" valign="top"><hr></td>
+  </tr>
+  <tr class="normalpt"> 
+    <td colspan="5" valign="top"><p align="center"> <a href="http://www.casca.ca" target="_blank"><img src="images/casca_small.gif" width="100" height="51" hspace="10" border="0" align="absmiddle"></a> 
+        <a href="http://www.nserc.gc.ca/" target="_blank"><img src="images/nserc.gif" width="75" height="31" hspace="10" border="0" align="absmiddle"></a> 
+        <a href="http://www.nserc.gc.ca/promoscience/" target="_blank"><img src="images/promoScience_small.gif" width="101" height="37" hspace="10" border="0" align="absmiddle"></a> 
+        <a href="http://www.gov.on.ca/" target="_blank"><img src="images/ontario.gif" width="102" height="26" hspace="10" border="0" align="absmiddle"></a></p>
+      </td>
+  </tr>
+</table>
+<p>
+  <map name="titleBar_r1_c1Map">
+    <area shape="rect" coords="162,7,265,51" href="#" onClick="MM_showHideLayers('theLayer','','show')">
+  </map>
+  <map name="titleBar_r1_c1Map2">
+    <area shape="rect" coords="156,4,266,51" href="#" onClick="MM_showHideLayers('theLayer','','show')">
+  </map>
+</p>
+<p>&nbsp;</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-816135-47");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

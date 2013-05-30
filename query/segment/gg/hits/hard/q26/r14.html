@@ -1,0 +1,405 @@
+<HTML>
+<HEAD>
+<TITLE>PRESOL | V | Operation and Maintenance of Oceanographic Vessels | 09-Jun-04 - FBO#0926</TITLE>
+<META NAME='FBONoticeType' CONTENT='PRESOL'>
+<META NAME='FBONoticeFSG' CONTENT='V'>
+<META NAME='FBONoticePubDate' CONTENT='09-Jun-2004'>
+<META NAME='Keywords' CONTENT='Operation and Maintenance of Oceanographic Vessels'>
+</HEAD>
+<!-- header2.txt -->
+<META name="KEYWORDS" Content="GOVERNMENT CONTRACTING, FEDERAL CONTRACTING, FEDBIZOPPS, FEDBIZOPS, Commerce Business Daily, cbd, facnet, procurement, bid, bids, bidding, contracting, solicitations, RFQ, RFQs, RFP, RFPs, GOVCON, GSA, SBA"> 
+
+<SCRIPT LANGUAGE='JavaScript'>
+
+
+
+function movepic(img_name,img_src)
+{
+	document[img_name].src=img_src;
+}
+
+
+/*
+ * This is the function that actually highlights a text string by
+ * adding HTML tags before and after all occurrences of the search
+ * term. You can pass your own tags if you'd like, or if the
+ * highlightStartTag or highlightEndTag parameters are omitted or
+ * are empty strings then the default <font> tags will be used.
+ */
+function doHighlight(bodyText, searchTerm, highlightStartTag, highlightEndTag) 
+{
+  // the highlightStartTag and highlightEndTag parameters are optional
+  if ((!highlightStartTag) || (!highlightEndTag)) {
+    highlightStartTag = "<font style='color:black; background-color:yellow;'>";
+    highlightEndTag = "</font>";
+  }
+  
+  // find all occurences of the search term in the given text,
+  // and add some "highlight" tags to them (we're not using a
+  // regular expression search, because we want to filter out
+  // matches that occur within HTML tags and script blocks, so
+  // we have to do a little extra validation)
+  var newText = "";
+  var i = -1;
+  var lcSearchTerm = searchTerm.toLowerCase();
+  var lcBodyText = bodyText.toLowerCase();
+    
+  while (bodyText.length > 0) {
+    i = lcBodyText.indexOf(lcSearchTerm, i+1);
+    if (i < 0) {
+      newText += bodyText;
+      bodyText = "";
+    } else {
+      // skip anything inside an HTML tag
+      if (bodyText.lastIndexOf(">", i) >= bodyText.lastIndexOf("<", i)) {
+        // skip anything inside a <script> block
+        if (lcBodyText.lastIndexOf("/script>", i) >= lcBodyText.lastIndexOf("<script", i)) {
+          newText += bodyText.substring(0, i) + highlightStartTag + bodyText.substr(i, searchTerm.length) + highlightEndTag;
+          bodyText = bodyText.substr(i + searchTerm.length);
+          lcBodyText = bodyText.toLowerCase();
+          i = -1;
+        }
+      }
+    }
+  }
+  
+  return newText;
+}
+
+
+/*
+ * This is sort of a wrapper function to the doHighlight function.
+ * It takes the searchText that you pass, optionally splits it into
+ * separate words, and transforms the text on the current web page.
+ * Only the "searchText" parameter is required; all other parameters
+ * are optional and can be omitted.
+ */
+function highlightSearchTerms(searchText, treatAsPhrase, warnOnFailure, highlightStartTag, highlightEndTag)
+{
+  // if the treatAsPhrase parameter is true, then we should search for 
+  // the entire phrase that was entered; otherwise, we will split the
+  // search string so that each word is searched for and highlighted
+  // individually
+  if (treatAsPhrase) {
+    searchArray = [searchText];
+  } else {
+    searchArray = searchText.split(" ");
+  }
+  
+  if (!document.body || typeof(document.body.innerHTML) == "undefined") {
+    if (warnOnFailure) {
+      alert("Sorry, for some reason the text of this page is unavailable. Searching will not work.");
+    }
+    return false;
+  }
+  
+  var bodyText = document.body.innerHTML;
+  for (var i = 0; i < searchArray.length; i++) {
+    bodyText = doHighlight(bodyText, searchArray[i], highlightStartTag, highlightEndTag);
+  }
+  
+  document.body.innerHTML = bodyText;
+  return true;
+}
+
+
+
+
+/*
+ * This function takes a referer/referrer string and parses it
+ * to determine if it contains any search terms. If it does, the
+ * search terms are passed to the highlightSearchTerms function
+ * so they can be highlighted on the current page.
+ */
+function highlightFBOSearchTerms()
+{
+  // This function has only been very lightly tested against
+  // typical Google search URLs. If you wanted the Google search
+  // terms to be automatically highlighted on a page, you could
+  // call the function in the onload event of your <body> tag, 
+  // like this:
+  //   <body onload='highlightGoogleSearchTerms(document.referrer);'>
+  
+  var referrer = document.URL;
+  if (!referrer) {
+    return false;
+  }
+  
+  var queryPrefix = "q=";
+  var startPos = referrer.toLowerCase().indexOf(queryPrefix);
+  if ((startPos < 0) || (startPos + queryPrefix.length == referrer.length)) {
+    return false;
+  }
+  
+  var endPos = referrer.indexOf("&", startPos);
+  if (endPos < 0) {
+    endPos = referrer.length;
+  }
+  
+  var queryString = referrer.substring(startPos + queryPrefix.length, endPos);
+  // fix the space characters
+  queryString = queryString.replace(/%20/gi, " ");
+  queryString = queryString.replace(/\+/gi, " ");
+  // remove the quotes (if you're really creative, you could search for the
+  // terms within the quotes as phrases, and everything else as single terms)
+  queryString = queryString.replace(/%22/gi, "");
+  queryString = queryString.replace(/\"/gi, "");
+  
+  return highlightSearchTerms(queryString, false);
+}
+
+
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY BGCOLOR="#FFFBF7" LINK="#0000FF" VLINK="#000080" ALINK="#FF0000" onload="highlightFBOSearchTerms();">
+
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+
+var referrer = document.URL;
+var queryPrefix = "q=";
+var startPos = referrer.toLowerCase().indexOf(queryPrefix);
+var showHeaders =  (startPos < 0) || (startPos + queryPrefix.length == referrer.length);
+
+if (showHeaders) {
+
+	document.writeln( "<TABLE BORDER='0' CELLPADDING='0' CELLSPACING='0' WIDTH='100%'>" );
+	document.writeln( "	<TR>" );
+	document.writeln( "		<TD WIDTH='15' BGCOLOR='#000000' ALIGN='RIGHT' VALIGN='BOTTOM'><img src='/images/corner_upperleft.gif' WIDTH='15' HEIGHT='15'></TD>" );
+	document.writeln( "		<TD WIDTH='150' BGCOLOR='#000000' BACKGROUND='/images/back_uppermiddle.gif' ALIGN='LEFT' VALIGN='MIDDLE'><img src='/images/clear.gif' height='15' WIDTH='5'></TD>" );
+	document.writeln( "		<TD WIDTH='100%' BGCOLOR='#000000' BACKGROUND='/images/back_uppermiddle.gif' ALIGN='CENTER' VALIGN='MIDDLE'><img src='/images/clear.gif' height='15' WIDTH='5'></TD>" );
+	document.writeln( "		<TD WIDTH='20' BGCOLOR='#000000' ALIGN='LEFT' VALIGN='BOTTOM'><img src='/images/corner_upperright.gif' WIDTH='20' HEIGHT='15'></TD>" );
+	document.writeln( "	</TR>" );
+	document.writeln( "	<TR>" );
+	document.writeln( "		<TD WIDTH='15' BGCOLOR='#000000' ALIGN='LEFT' VALIGN='TOP'><img src='/images/back_middleleft.gif' WIDTH='15' HEIGHT='10'><img src='/images/clear.gif' height='5' width='15'></TD>" );
+	document.writeln( "		<TD WIDTH='150' BGCOLOR='#000000' ALIGN='LEFT' VALIGN='MIDDLE'><img src='/images/fbostamp.gif'></TD>" );
+	document.writeln( "		<TD WIDTH='100%' BGCOLOR='#000000' ALIGN='CENTER' VALIGN='MIDDLE'>" );
+	document.writeln( "<!--Begin Ad -->" );
+	document.writeln( "	<xSCRIPT LANGUAGE='JAVASCRIPT'>" );
+	document.writeln( "	<!-- " );
+	document.writeln( "		tm = new Date();" );
+	document.writeln( "		my_random = tm.getTime() % 10000; " );
+	document.writeln( "		document.write('<IFRAME src=\"http://www.fbodaily.com/ads/getiframe1.ihtml?' + my_random +'\" scrolling=\"no\" marginwidth=0 marginheight=0 frameborder=0 vspace=0 hspace=0 width=468 height=60><A target=_top HREF=\"http://www.fbodaily.com/ads/getlink1.ihtml\"><IMG src=\"http://www.fbodaily.com/ads/getimage1.ihtml?' + my_random +'\" border=0 width=468 height=60></A></IFRAME>');" );
+	document.writeln( "" );
+	document.writeln( "	// -->" );
+	document.writeln( "	</xSCRIPT>" );
+	document.writeln( "	<xNOSCRIPT>" );
+	document.writeln( "		<xIFRAME WIDTH=468 HEIGHT=60 src='http://www.fbodaily.com/ads/getiframe1.ihtml?' scrolling='no' marginwidth=0 marginheight=0 frameborder=0 vspace=0 hspace=0>" );
+	document.writeln( "<!--		<A target=_top HREF='http://www.fbodaily.com/ads/getlink1.ihtml'><IMG src='http://www.fbodaily.com/ads/getimage1.ihtml?' border=0 width=468 height=60></A> -->" );
+	document.writeln( "		<A target=_top HREF='https://www.fbodaily.com/subscription/sub.html'><IMG src='http://www.fbodaily.com/ads/banners/banner5.gif' border=0 width=468 height=60></A>'" );
+/*	document.writeln( "		<A target=_top HREF='http://www.crashthesuperbowl.com/#/gallery/video/691/'><IMG src='http://www.fbodaily.com/ads/banners/hbnb-doritos.gif' sborder=0 width=468 height=60></A>'" ); */
+	document.writeln( "		</xIFRAME>" );
+	document.writeln( "	</xNOSCRIPT>" );
+	document.writeln( "<!--End Ad -->" );
+	document.writeln( "		</TD>" );
+	document.writeln( "		<TD WIDTH='20' BGCOLOR='#000000' BACKGROUND='/images/back_middleright.gif' ALIGN='LEFT' VALIGN='BOTTOM'><img src='/images/clear.gif' WIDTH='20' HEIGHT='15'></TD>" );
+	document.writeln( "	</TR>" );
+	document.writeln( "	<TR>" );
+	document.writeln( "		<TD ALIGN='LEFT' VALIGN='TOP' BGCOLOR='#FFFBF7'><img src='/images/corner_middleleft.gif' WIDTH='15' HEIGHT='20'></TD>" );
+	document.writeln( "		<TD WIDTH='150' BGCOLOR='#000000' BACKGROUND='/images/back_lowermiddle.gif' ALIGN='LEFT' VALIGN='MIDDLE'><img src='/images/clear.gif' height='15' WIDTH='5'></TD>" );
+	document.writeln( "		<TD WIDTH='100%' BGCOLOR='#000000' BACKGROUND='/images/back_lowermiddle.gif' ALIGN='CENTER' VALIGN='MIDDLE'><img src='/images/clear.gif' height='15' WIDTH='5'></TD>" );
+	document.writeln( "		<TD WIDTH='20' BGCOLOR='#000000' ALIGN='LEFT' VALIGN='TOP'><img src='/images/corner_lowerright.gif' WIDTH='20' HEIGHT='20'></TD>" );
+	document.writeln( "	</TR>" );
+	document.writeln( "</TABLE>" );
+	document.writeln( "<TABLE>" );
+	document.writeln( "" );
+	document.writeln( "	<TR>" );
+	document.writeln( "	<TD VALIGN='top'>" );
+	document.writeln( "		<table bgcolor=black width=160 border=0 cellspacing=1 cellpadding=0><TR><TD>" );
+	document.writeln( "		<TABLE bgcolor='white' border=0 WIDTH=100% cellspacing=0 cellpadding=4>" );
+	document.writeln( "			<TR>" );
+	document.writeln( "				<TD><FONT SIZE=-1 FACE='helvetica,arial'><BR>" );
+	document.writeln( "<B><A HREF='https://www.fbodaily.com/subscription/sub.html'><FONT COLOR='blue'>FBODaily Subscriptions</FONT></A></B>" );
+	document.writeln( "<BR>The premier <FONT style='background-color: yellow'>highlighted</FONT> keyword search service for FedBizOpps." );
+	document.writeln( "<BR>&nbsp;" );
+	document.writeln( "				</TD>" );
+	document.writeln( "			</TR>" );
+	document.writeln( "		</TABLE>" );
+	document.writeln( "		</TD></TR></TABLE>" );
+	document.writeln( "	</TD>" );
+	document.writeln( "" );
+	document.writeln( "	<TD VALIGN='middle' WIDTH='100%' COLSPAN=2>" );
+	document.writeln( "<!---------------------------------- END HEADER --------------------------->" );
+	document.writeln( "&nbsp;<BR>" );
+	document.writeln( "&nbsp;<BR>" );
+	document.writeln( "" );
+	document.writeln( "<!-- ad across top -->" );
+}
+//-->
+</SCRIPT>
+
+
+<script type="text/javascript"><!--
+if (showHeaders) {
+	google_ad_client = "pub-0072471496420888";
+	google_alternate_color = "fffbf7";
+	google_ad_width = 728;
+	google_ad_height = 90;
+	google_ad_format = "728x90_as";
+	google_ad_type = "text_image";
+	google_ad_channel ="";
+	google_color_border = "fffbf7";
+	google_color_bg = "fffbf7";
+	google_color_link = "0000FF";
+	google_color_url = "0000ff";
+	google_color_text = "000000";
+}
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<script type="text/javascript"><!--
+if (showHeaders) {
+	document.writeln( "	</TD>" );
+	document.writeln( "" );
+	document.writeln( "</TR>" );
+	document.writeln( "<TR>" );
+	document.writeln( "<TD VALIGN='TOP'>" );
+	document.writeln( "" );
+	document.writeln( "<!-- ads down left side -->" );
+	document.writeln( "<BR>&nbsp;" );
+	document.writeln( "<!-- Ad Links -->" );
+}
+//--></script>
+	
+<script type="text/javascript"><!--
+if (showHeaders) {
+	google_ad_client = "pub-0072471496420888";
+	google_alternate_color = "fffbf7";
+	google_ad_width = 160;
+	google_ad_height = 90;
+	google_ad_format = "160x90_0ads_al_s";
+	google_ad_type = "text";
+	google_ad_channel ="";
+	google_color_border = "fffbf7";
+	google_color_bg = "fffbf7";
+	google_color_link = "0000FF";
+	google_color_url = "0000ff";
+	google_color_text = "000000";
+}
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<script type="text/javascript"><!--
+if (showHeaders) {
+	document.writeln( "<BR><BR><BR>" );
+}
+//--></script>
+
+<!-- Wide Skyscraper -->
+
+<script type="text/javascript"><!--
+if (showHeaders) {
+	google_ad_client = "pub-0072471496420888";
+	google_alternate_color = "fffbf7";
+	google_ad_width = 160;
+	google_ad_height = 600;
+	google_ad_format = "160x600_as";
+	google_ad_type = "text";
+	google_ad_channel ="";
+	google_color_border = "fffbf7";
+	google_color_bg = "fffbf7";
+	google_color_link = "0000FF";
+	google_color_url = "0000ff";
+	google_color_text = "000000";
+}
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+<script type="text/javascript"><!--
+if (showHeaders) {
+	document.writeln( "</TD>" );
+	document.writeln( "<TD VALIGN='top'>" );
+	document.writeln( "<br>" );
+	/* document.writeln( "<a target=_blank HREF='http://www.crashthesuperbowl.com/#/gallery/video/691/' STYLE='float: left; margin-right: 8pt; margin-bottom: 4pt;'><IMG src='http://www.fbodaily.com/ads/banners/bag.jpg' border=0></a>" ); */
+}
+//--></script>
+
+
+<!-- end header2.txt -->
+
+<B>FBO DAILY ISSUE OF JUNE 09, 2004 FBO #0926</B><BR>
+<B>SOLICITATION NOTICE</B><BR><BR>
+<H2>V -- Operation and Maintenance of Oceanographic Vessels</H2>
+<DL>
+<DT><B>Notice Date</B>
+<DD>11/6/2003
+<BR>&nbsp;
+<DT><B>Notice Type</B>
+<DD>Solicitation Notice<BR>&nbsp;
+<DT><B>Contracting Office</B>
+<DD>Department of the Navy, Military Sealift Command, MSC HQ - Washington, 914 Charles Morris Court, SE Washington Navy Yard, Washington, DC, 20398-5540
+<BR>&nbsp;
+<DT><B>ZIP Code</B>
+<DD>20398-5540
+<BR>&nbsp;
+<DT><B>Solicitation Number</B>
+<DD>N00033-04-R-2501
+<BR>&nbsp;
+<DT><B>Response Due</B>
+<DD>1/21/2004
+<BR>&nbsp;
+<DT><B>Point of Contact</B>
+<DD>Cheryl Carpenter, Contract Specialist, Phone 202-685-5773, Fax 202-685-5225, - Frances Gapp, Procurement Officer, Phone 202-685-5782, Fax 202-685-5225,
+<BR>&nbsp;
+<DT><B>E-Mail Address</B>
+<DD><A HREF="mailto:cheryl.carpenter@navy.mil, frances.gapp@navy.mil">
+cheryl.carpenter@navy.mil, frances.gapp@navy.mil</A>
+<BR>&nbsp;
+<DT><B>Description</B>
+<DD>Military Sealift Command proposes to acquire, by negotiation, services for the worldwide operation and maintenance of seven (7) Government-owned Oceanographic vessels, which are currently operated by a Contractor. The contractor shall provide all operational crews, support personnel, equipment, provisions, and supplies required to operate and maintain the Oceanographic vessels. The initial period of performance is one year, with four one-year option periods. Contractor personnel must be U.S. citizens possessing or capable of obtaining required security clearances and licenses. All responsible offerors may submit an offer which will be considered. Once available, the solicitation will be posted to the Contracts section of the MSC Homepage: www.msc.navy.mil. It is anticipated that the RFP will be released mid-late November with responses due approximately 60 days thereafter; however, this is subject to change. All interested parties should contact Cheryl Carpenter at cheryl.carpenter@navy.mil or (202) 685-5773 for a copy of the solicitation package. NOTE: THIS NOTICE MAY HAVE POSTED ON WWW.FEDBIZOPPS.GOV ON THE DATE INDICATED IN THE NOTICE ITSELF (06-NOV-2003). IT ACTUALLY APPEARED OR REAPPEARED ON THE FEDBIZOPPS SYSTEM ON 07-JUN-2004, BUT REAPPEARED IN THE FTP FEED FOR THIS POSTING DATE. PLEASE CONTACT fbo.support@gsa.gov REGARDING THIS ISSUE.
+<BR>&nbsp;
+<DT><B>Web Link</B>
+<DD><A TARGET="outside" HREF="http://www.eps.gov/spg/DON/MSC/MSCHQ/N00033-04-R-2501/listing.html">
+Link to FedBizOpps document.</A>
+<BR>(http://www.eps.gov/spg/DON/MSC/MSCHQ/N00033-04-R-2501/listing.html)
+<BR>&nbsp;
+<DT><B>Place of Performance</B>
+<DD><I>Address:</I> Worldwide
+<BR>&nbsp;
+<DT><B>Record</B>
+<DD>SN00599733-F 20040609/040607213131 (fbodaily.com)
+<BR>&nbsp;
+<DT><B>Source</B>
+<DD><A TARGET="fedbizopps" HREF="ftp://ftp.eps.gov/FBOFeed20040607">
+FedBizOpps.gov Link to This Notice</A><BR>(may not be valid after Archive Date)
+</DL>
+<HR>
+|&nbsp;<A HREF="v-sol.htm">FSG Index</A>&nbsp;
+|&nbsp;
+<A HREF="index.htm">This Issue's Index</A>
+&nbsp;|&nbsp;
+<A HREF="http://www.fbodaily.com/today/">Today's FBO Daily Index Page</A>&nbsp;|
+<!-- footer2.txt -->
+<SCRIPT><!--
+if (showHeaders) {
+	document.writeln( "</TD>" );
+	document.writeln( "</TR>" );
+	document.writeln( "</TABLE>" );
+	document.writeln( "<A HREF='http://www.ecgrid.com'><FONT COLOR='white'>EDI VAN Interconnect</FONT></A>" );
+}
+//--></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8246679-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</BODY>
+
+</HTML>

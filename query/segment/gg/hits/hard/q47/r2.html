@@ -1,0 +1,917 @@
+<html><head><title>CensusScope -- Population by Race</title>
+
+<base href="http://www.censusscope.org/">
+
+<link rel="stylesheet" href="nnstyle.css" type="text/css">
+
+<style type="text/css">@import url(style.css);</style>
+
+<script src="guifns.js"></script>
+
+<script>var baseURL = "http://www.censusscope.org/"; var filename = "chart_race.html"; var geogLevel = "us"; var fips = new Array(); </script>
+
+</head>
+
+<body bgcolor="#FFFFFF" onLoad="memorizeTab('chart',window.location.href)"><table width="750" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3" valign="bottom" align="left"><a href="index.html"><img src="gifs/censusscope_logo.gif" border="0" height="55" width="265">
+
+</a>
+
+<br>
+
+<br>
+
+<img src="gifs/menu_charts.gif" usemap="#menumap" border="0">
+
+<map name="menumap"><area shape="rect" coords="33,0,175,19" href="javascript:recallTab('chart');" alt="Census Trend Charts">
+
+<area shape="rect" coords="176,0,245,19" href="javascript:recallTab('map');" alt="Demographic Maps">
+
+<area shape="rect" coords="247,0,333,19" href="javascript:recallTab('ranking');" alt="Rankings & Comparisons">
+
+<area shape="rect" coords="336,0,442,19" href="javascript:recallTab('segregation');" alt="Segregation Data">
+
+</map>
+
+&nbsp;<br></td>
+
+</tr>
+
+<tr><td valign="top" align="left" width="200" bgcolor="#FFFFFF"><div class="boxtop"><img src="gifs/sidebar_charts.gif">
+
+<div class="box"><table cellpadding="0" cellspacing="0"><tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_popl.html">Population Growth</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_race.html">Population by Race</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_multi.html">Multiracial Profile</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_age.html">Age Distribution</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_house.html">Household & Family Structure</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_education.html">Educational Attainment</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_language.html">Language</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_migration.html">Migration</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_nativity.html">Nativity & Citizenship  Status</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_income.html">Income</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_poverty.html">Poverty</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_ancestry.html">Ancestry & Ethnicity</a>
+
+</td>
+
+</tr>
+
+<tr><td valign="center"><img src="gifs/link_bullet.gif">
+
+</td>
+
+<td valign="top" class="smalltext"><a class="menu" href="us/chart_work.html">Industry & Occupation</a>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="boxtop"><img src="gifs/sidebar_change_location.gif">
+
+<div class="box"><form name="zoomer"><p class="smalltext">Zoom in and out of geography at levels: US, States or Metro Areas, and Counties within States.</p>
+
+<p class="smalltext">Because this chart is for the United States, you cannot <b>zoom out</b> any further:</p>
+
+<input type="button" class="zoomin" value="    ZOOM OUT    " onClick="zoomOut()" disabled>
+
+<p class="smalltext">Or, you can <b>zoom in</b> to a state or metropolitan area:</p>
+
+<input type="radio" name="geogLevel" value="metro">
+
+<span class="smalltext"><select class="zoomin" name="metro" onFocus="syncRadioMenu('metro','zoomer','geogLevel')"><option value="">Choose Metro</option><option value="40" >Abilene, TX</option>
+<option value="80" >Akron, OH</option>
+<option value="120" >Albany, GA</option>
+<option value="160" >Albany-Schenectady-T</option>
+<option value="200" >Albuquerque, NM</option>
+<option value="220" >Alexandria, LA</option>
+<option value="240" >Allentown-Bethlehem-</option>
+<option value="280" >Altoona, PA</option>
+<option value="320" >Amarillo, TX</option>
+<option value="380" >Anchorage, AK</option>
+<option value="440" >Ann Arbor, MI</option>
+<option value="450" >Anniston, AL</option>
+<option value="460" >Appleton-Oshkosh-Nee</option>
+<option value="480" >Asheville, NC</option>
+<option value="500" >Athens, GA</option>
+<option value="520" >Atlanta, GA</option>
+<option value="560" >Atlantic-Cape May, N</option>
+<option value="580" >Auburn-Opelika, AL</option>
+<option value="600" >Augusta-Aiken, GA-SC</option>
+<option value="640" >Austin-San Marcos, T</option>
+<option value="680" >Bakersfield, CA</option>
+<option value="720" >Baltimore, MD</option>
+<option value="733" >Bangor, ME</option>
+<option value="743" >Barnstable-Yarmouth,</option>
+<option value="760" >Baton Rouge, LA</option>
+<option value="840" >Beaumont-Port Arthur</option>
+<option value="860" >Bellingham, WA</option>
+<option value="870" >Benton Harbor, MI</option>
+<option value="875" >Bergen-Passaic, NJ</option>
+<option value="880" >Billings, MT</option>
+<option value="920" >Biloxi-Gulfport-Pasc</option>
+<option value="960" >Binghamton, NY</option>
+<option value="1000" >Birmingham, AL</option>
+<option value="1010" >Bismarck, ND</option>
+<option value="1020" >Bloomington, IN</option>
+<option value="1040" >Bloomington-Normal, </option>
+<option value="1080" >Boise City, ID</option>
+<option value="1123" >Boston, MA-NH</option>
+<option value="1125" >Boulder-Longmont, CO</option>
+<option value="1145" >Brazoria, TX</option>
+<option value="1150" >Bremerton, WA</option>
+<option value="1240" >Brownsville-Harlinge</option>
+<option value="1260" >Bryan-College Statio</option>
+<option value="1280" >Buffalo-Niagara Fall</option>
+<option value="1303" >Burlington, VT</option>
+<option value="1320" >Canton-Massillon, OH</option>
+<option value="1350" >Casper, WY</option>
+<option value="1360" >Cedar Rapids, IA</option>
+<option value="1400" >Champaign-Urbana, IL</option>
+<option value="1440" >Charleston-North Cha</option>
+<option value="1480" >Charleston, WV</option>
+<option value="1520" >Charlotte-Gastonia-R</option>
+<option value="1540" >Charlottesville, VA</option>
+<option value="1560" >Chattanooga, TN-GA</option>
+<option value="1580" >Cheyenne, WY</option>
+<option value="1600" >Chicago, IL</option>
+<option value="1620" >Chico-Paradise, CA</option>
+<option value="1640" >Cincinnati, OH-KY-IN</option>
+<option value="1660" >Clarksville-Hopkinsv</option>
+<option value="1680" >Cleveland-Lorain-Ely</option>
+<option value="1720" >Colorado Springs, CO</option>
+<option value="1740" >Columbia, MO</option>
+<option value="1760" >Columbia, SC</option>
+<option value="1800" >Columbus, GA-AL</option>
+<option value="1840" >Columbus, OH</option>
+<option value="1880" >Corpus Christi, TX</option>
+<option value="1890" >Corvallis, OR</option>
+<option value="1900" >Cumberland, MD-WV</option>
+<option value="1920" >Dallas, TX</option>
+<option value="1950" >Danville, VA</option>
+<option value="1960" >Davenport-Moline-Roc</option>
+<option value="2000" >Dayton-Springfield, </option>
+<option value="2020" >Daytona Beach, FL</option>
+<option value="2030" >Decatur, AL</option>
+<option value="2040" >Decatur, IL</option>
+<option value="2080" >Denver, CO</option>
+<option value="2120" >Des Moines, IA</option>
+<option value="2160" >Detroit, MI</option>
+<option value="2180" >Dothan, AL</option>
+<option value="2190" >Dover, DE</option>
+<option value="2200" >Dubuque, IA</option>
+<option value="2240" >Duluth-Superior, MN-</option>
+<option value="2281" >Dutchess County, NY</option>
+<option value="2290" >Eau Claire, WI</option>
+<option value="2320" >El Paso, TX</option>
+<option value="2330" >Elkhart-Goshen, IN</option>
+<option value="2335" >Elmira, NY</option>
+<option value="2340" >Enid, OK</option>
+<option value="2360" >Erie, PA</option>
+<option value="2400" >Eugene-Springfield, </option>
+<option value="2440" >Evansville-Henderson</option>
+<option value="2520" >Fargo-Moorhead, ND-M</option>
+<option value="2560" >Fayetteville, NC</option>
+<option value="2580" >Fayetteville-Springd</option>
+<option value="2620" >Flagstaff, AZ-UT</option>
+<option value="2640" >Flint, MI</option>
+<option value="2650" >Florence, AL</option>
+<option value="2655" >Florence, SC</option>
+<option value="2670" >Fort Collins-Lovelan</option>
+<option value="2680" >Fort Lauderdale, FL</option>
+<option value="2700" >Fort Myers-Cape Cora</option>
+<option value="2710" >Fort Pierce-Port St.</option>
+<option value="2720" >Fort Smith, AR-OK</option>
+<option value="2750" >Fort Walton Beach, F</option>
+<option value="2760" >Fort Wayne, IN</option>
+<option value="2800" >Fort Worth-Arlington</option>
+<option value="2840" >Fresno, CA</option>
+<option value="2880" >Gadsden, AL</option>
+<option value="2900" >Gainesville, FL</option>
+<option value="2920" >Galveston-Texas City</option>
+<option value="2960" >Gary, IN</option>
+<option value="2975" >Glens Falls, NY</option>
+<option value="2980" >Goldsboro, NC</option>
+<option value="2985" >Grand Forks, ND-MN</option>
+<option value="2995" >Grand Junction, CO</option>
+<option value="3000" >Grand Rapids-Muskego</option>
+<option value="3040" >Great Falls, MT</option>
+<option value="3060" >Greeley, CO</option>
+<option value="3080" >Green Bay, WI</option>
+<option value="3120" >Greensboro--Winston-</option>
+<option value="3150" >Greenville, NC</option>
+<option value="3160" >Greenville-Spartanbu</option>
+<option value="3180" >Hagerstown, MD</option>
+<option value="3200" >Hamilton-Middletown,</option>
+<option value="3240" >Harrisburg-Lebanon-C</option>
+<option value="3283" >Hartford, CT</option>
+<option value="3285" >Hattiesburg, MS</option>
+<option value="3290" >Hickory-Morganton-Le</option>
+<option value="3320" >Honolulu, HI</option>
+<option value="3350" >Houma, LA</option>
+<option value="3360" >Houston, TX</option>
+<option value="3400" >Huntington-Ashland, </option>
+<option value="3440" >Huntsville, AL</option>
+<option value="3480" >Indianapolis, IN</option>
+<option value="3500" >Iowa City, IA</option>
+<option value="3520" >Jackson, MI</option>
+<option value="3560" >Jackson, MS</option>
+<option value="3580" >Jackson, TN</option>
+<option value="3600" >Jacksonville, FL</option>
+<option value="3605" >Jacksonville, NC</option>
+<option value="3610" >Jamestown, NY</option>
+<option value="3620" >Janesville-Beloit, W</option>
+<option value="3640" >Jersey City, NJ</option>
+<option value="3660" >Johnson City-Kingspo</option>
+<option value="3680" >Johnstown, PA</option>
+<option value="3700" >Jonesboro, AR</option>
+<option value="3710" >Joplin, MO</option>
+<option value="3720" >Kalamazoo-Battle Cre</option>
+<option value="3740" >Kankakee, IL</option>
+<option value="3760" >Kansas City, MO-KS</option>
+<option value="3800" >Kenosha, WI</option>
+<option value="3810" >Killeen-Temple, TX</option>
+<option value="3840" >Knoxville, TN</option>
+<option value="3850" >Kokomo, IN</option>
+<option value="3870" >La Crosse, WI-MN</option>
+<option value="3880" >Lafayette, LA</option>
+<option value="3920" >Lafayette, IN</option>
+<option value="3960" >Lake Charles, LA</option>
+<option value="3980" >Lakeland-Winter Have</option>
+<option value="4000" >Lancaster, PA</option>
+<option value="4040" >Lansing-East Lansing</option>
+<option value="4080" >Laredo, TX</option>
+<option value="4100" >Las Cruces, NM</option>
+<option value="4120" >Las Vegas, NV-AZ</option>
+<option value="4150" >Lawrence, KS</option>
+<option value="4200" >Lawton, OK</option>
+<option value="4243" >Lewiston-Auburn, ME</option>
+<option value="4280" >Lexington, KY</option>
+<option value="4320" >Lima, OH</option>
+<option value="4360" >Lincoln, NE</option>
+<option value="4400" >Little Rock-North Li</option>
+<option value="4420" >Longview-Marshall, T</option>
+<option value="4480" >Los Angeles-Long Bea</option>
+<option value="4520" >Louisville, KY-IN</option>
+<option value="4600" >Lubbock, TX</option>
+<option value="4640" >Lynchburg, VA</option>
+<option value="4680" >Macon, GA</option>
+<option value="4720" >Madison, WI</option>
+<option value="4800" >Mansfield, OH</option>
+<option value="4880" >McAllen-Edinburg-Mis</option>
+<option value="4890" >Medford-Ashland, OR</option>
+<option value="4900" >Melbourne-Titusville</option>
+<option value="4920" >Memphis, TN-AR-MS</option>
+<option value="4940" >Merced, CA</option>
+<option value="5000" >Miami, FL</option>
+<option value="5015" >Middlesex-Somerset-H</option>
+<option value="5080" >Milwaukee-Waukesha, </option>
+<option value="5120" >Minneapolis-St. Paul</option>
+<option value="5140" >Missoula, MT</option>
+<option value="5160" >Mobile, AL</option>
+<option value="5170" >Modesto, CA</option>
+<option value="5190" >Monmouth-Ocean, NJ</option>
+<option value="5200" >Monroe, LA</option>
+<option value="5240" >Montgomery, AL</option>
+<option value="5280" >Muncie, IN</option>
+<option value="5330" >Myrtle Beach, SC</option>
+<option value="5345" >Naples, FL</option>
+<option value="5360" >Nashville, TN</option>
+<option value="5380" >Nassau-Suffolk, NY</option>
+<option value="5483" >Bridgeport, CT</option>
+<option value="5523" >New London-Norwich, </option>
+<option value="5560" >New Orleans, LA</option>
+<option value="5600" >New York, NY</option>
+<option value="5640" >Newark, NJ</option>
+<option value="5660" >Newburgh, NY-PA</option>
+<option value="5720" >Norfolk-Virginia Bea</option>
+<option value="5775" >Oakland, CA</option>
+<option value="5790" >Ocala, FL</option>
+<option value="5800" >Odessa-Midland, TX</option>
+<option value="5880" >Oklahoma City, OK</option>
+<option value="5910" >Olympia, WA</option>
+<option value="5920" >Omaha, NE-IA</option>
+<option value="5945" >Orange County, CA</option>
+<option value="5960" >Orlando, FL</option>
+<option value="5990" >Owensboro, KY</option>
+<option value="6015" >Panama City, FL</option>
+<option value="6020" >Parkersburg-Marietta</option>
+<option value="6080" >Pensacola, FL</option>
+<option value="6120" >Peoria-Pekin, IL</option>
+<option value="6160" >Philadelphia, PA-NJ</option>
+<option value="6200" >Phoenix-Mesa, AZ</option>
+<option value="6240" >Pine Bluff, AR</option>
+<option value="6280" >Pittsburgh, PA</option>
+<option value="6323" >Pittsfield, MA</option>
+<option value="6340" >Pocatello, ID</option>
+<option value="6403" >Portland, ME</option>
+<option value="6440" >Portland-Vancouver, </option>
+<option value="6483" >Providence-Fall Rive</option>
+<option value="6520" >Provo-Orem, UT</option>
+<option value="6560" >Pueblo, CO</option>
+<option value="6580" >Punta Gorda, FL</option>
+<option value="6600" >Racine, WI</option>
+<option value="6640" >Raleigh-Durham-Chape</option>
+<option value="6660" >Rapid City, SD</option>
+<option value="6680" >Reading, PA</option>
+<option value="6690" >Redding, CA</option>
+<option value="6720" >Reno, NV</option>
+<option value="6740" >Richland-Kennewick-P</option>
+<option value="6760" >Richmond-Petersburg,</option>
+<option value="6780" >Riverside-San Bernar</option>
+<option value="6800" >Roanoke, VA</option>
+<option value="6820" >Rochester, MN</option>
+<option value="6840" >Rochester, NY</option>
+<option value="6880" >Rockford, IL</option>
+<option value="6895" >Rocky Mount, NC</option>
+<option value="6920" >Sacramento, CA</option>
+<option value="6960" >Saginaw-Bay City-Mid</option>
+<option value="6980" >St. Cloud, MN</option>
+<option value="7000" >St. Joseph, MO</option>
+<option value="7040" >St. Louis, MO-IL</option>
+<option value="7080" >Salem, OR</option>
+<option value="7120" >Salinas, CA</option>
+<option value="7160" >Salt Lake City-Ogden</option>
+<option value="7200" >San Angelo, TX</option>
+<option value="7240" >San Antonio, TX</option>
+<option value="7320" >San Diego, CA</option>
+<option value="7360" >San Francisco, CA</option>
+<option value="7400" >San Jose, CA</option>
+<option value="7460" >San Luis Obispo-Atas</option>
+<option value="7480" >Santa Barbara-Santa </option>
+<option value="7485" >Santa Cruz-Watsonvil</option>
+<option value="7490" >Santa Fe, NM</option>
+<option value="7500" >Santa Rosa, CA</option>
+<option value="7510" >Sarasota-Bradenton, </option>
+<option value="7520" >Savannah, GA</option>
+<option value="7560" >Scranton--Wilkes-Bar</option>
+<option value="7600" >Seattle-Bellevue-Eve</option>
+<option value="7610" >Sharon, PA</option>
+<option value="7620" >Sheboygan, WI</option>
+<option value="7640" >Sherman-Denison, TX</option>
+<option value="7680" >Shreveport-Bossier C</option>
+<option value="7720" >Sioux City, IA-NE</option>
+<option value="7760" >Sioux Falls, SD</option>
+<option value="7800" >South Bend, IN</option>
+<option value="7840" >Spokane, WA</option>
+<option value="7880" >Springfield, IL</option>
+<option value="7920" >Springfield, MO</option>
+<option value="8003" >Springfield, MA</option>
+<option value="8050" >State College, PA</option>
+<option value="8080" >Steubenville-Weirton</option>
+<option value="8120" >Stockton-Lodi, CA</option>
+<option value="8140" >Sumter, SC</option>
+<option value="8160" >Syracuse, NY</option>
+<option value="8200" >Tacoma, WA</option>
+<option value="8240" >Tallahassee, FL</option>
+<option value="8280" >Tampa-St. Petersburg</option>
+<option value="8320" >Terre Haute, IN</option>
+<option value="8360" >Texarkana, TX-Texark</option>
+<option value="8400" >Toledo, OH</option>
+<option value="8440" >Topeka, KS</option>
+<option value="8480" >Trenton, NJ</option>
+<option value="8520" >Tucson, AZ</option>
+<option value="8560" >Tulsa, OK</option>
+<option value="8600" >Tuscaloosa, AL</option>
+<option value="8640" >Tyler, TX</option>
+<option value="8680" >Utica-Rome, NY</option>
+<option value="8720" >Vallejo-Fairfield-Na</option>
+<option value="8735" >Ventura, CA</option>
+<option value="8750" >Victoria, TX</option>
+<option value="8760" >Vineland-Millville-B</option>
+<option value="8780" >Visalia-Tulare-Porte</option>
+<option value="8800" >Waco, TX</option>
+<option value="8840" >Washington, DC-MD-VA</option>
+<option value="8920" >Waterloo-Cedar Falls</option>
+<option value="8940" >Wausau, WI</option>
+<option value="8960" >West Palm Beach-Boca</option>
+<option value="9000" >Wheeling, WV-OH</option>
+<option value="9040" >Wichita, KS</option>
+<option value="9080" >Wichita Falls, TX</option>
+<option value="9140" >Williamsport, PA</option>
+<option value="9160" >Wilmington-Newark, D</option>
+<option value="9200" >Wilmington, NC</option>
+<option value="9260" >Yakima, WA</option>
+<option value="9270" >Yolo, CA</option>
+<option value="9280" >York, PA</option>
+<option value="9320" >Youngstown-Warren, O</option>
+<option value="9340" >Yuba City, CA</option>
+<option value="9360" >Yuma, AZ</option>
+</select>
+
+</span>
+
+<br>
+
+<br>
+
+<input type="radio" name="geogLevel" value="state" checked>
+
+<span class="smalltext"><select class="zoomin" name="state" onFocus="syncRadioMenu('state','zoomer','geogLevel')"><option value="">Choose State</option><option value="1" >Alabama
+</option>
+<option value="2" >Alaska</option>
+<option value="4" >Arizona</option>
+<option value="5" >Arkansas   </option>
+<option value="6" >California</option>
+<option value="8" >Colorado</option>
+<option value="9" >Connecticut</option>
+<option value="10" >Delaware</option>
+<option value="11" >District of Columbia</option>
+<option value="12" >Florida</option>
+<option value="13" >Georgia</option>
+<option value="15" >Hawaii  </option>
+<option value="16" >Idaho  </option>
+<option value="17" >Illinois</option>
+<option value="18" >Indiana</option>
+<option value="19" >Iowa  </option>
+<option value="20" >Kansas</option>
+<option value="21" >Kentucky</option>
+<option value="22" >Louisiana</option>
+<option value="23" >Maine</option>
+<option value="24" >Maryland</option>
+<option value="25" >Massachusetts</option>
+<option value="26" >Michigan</option>
+<option value="27" >Minnesota</option>
+<option value="28" >Mississippi</option>
+<option value="29" >Missouri</option>
+<option value="30" >Montana</option>
+<option value="31" >Nebraska</option>
+<option value="32" >Nevada</option>
+<option value="33" >New Hampshire</option>
+<option value="34" >New Jersey</option>
+<option value="35" >New Mexico</option>
+<option value="36" >New York  </option>
+<option value="37" >North Carolina</option>
+<option value="38" >North Dakota</option>
+<option value="39" >Ohio</option>
+<option value="40" >Oklahoma</option>
+<option value="41" >Oregon</option>
+<option value="42" >Pennsylvania</option>
+<option value="44" >Rhode Island</option>
+<option value="45" >South Carolina</option>
+<option value="46" >South Dakota</option>
+<option value="47" >Tennessee</option>
+<option value="48" >Texas</option>
+<option value="49" >Utah  </option>
+<option value="50" >Vermont</option>
+<option value="51" >Virginia</option>
+<option value="53" >Washington</option>
+<option value="54" >West Virginia</option>
+<option value="55" >Wisconsin</option>
+<option value="56" >Wyoming</option>
+</select>
+
+</span>
+
+<br>
+
+<br>
+
+<input class="zoomin" type="button" value="  VIEW CHART  " onClick="zoomIn()">
+
+</form>
+
+</div>
+
+</div>
+
+<br><a href="http://www.ssdan.net/">
+<img src="gifs/ssdanlogo.gif" border="0" alt="Visit the SSDAN Web Site"></a>
+<br><span class="smalltext">CensusScope is a product of the Social Science Data Analysis Network.</span>
+<br>
+</td>
+
+<td width="20" align="left" valign="top"><img src="gifs/pixel.gif" width="10" height="1">
+
+</td>
+
+<td valign="top" align="left" width="530"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><h3 class="topictitle" align="left" valign="top">
+
+United States</td>
+
+<td class="placetitle" align="right" valign="top"><a href="us/print_chart_race.html">Print-Friendly Version</a>
+
+</td>
+
+</tr>
+
+</table>
+
+<h3 class="topictitle">POPULATION BY RACE</h3>
+
+<img src="us/chart_race_graph_1.gif">
+
+<p class="caption">On the 2000 Census questionnaire,<a href="javascript:popitup('race_pop.html')"> "race"</a>
+
+ and <a href="javascript:popitup('hispanic_pop.html')">"Hispanic ethnicity"</a>
+
+
+are listed as separate questions.  A person of Hispanic ethnicity is anyone who identifies with that social group, and so can be of any race.  This can make data on race and ethnicity difficult to interpret.<br>
+
+<br>
+
+
+Race data is also difficult to compare from Census to Census because categories have changed over time.  For example, the 2000 Census was the first to offer the category "Native Hawaiian or Other Pacific Islander," and those people could have responded in a number of different ways in previous years.<br>
+
+<br>
+
+
+The 2000 Census also marked the first time that respondents were allowed to select more than one racial category.  On earlier Censuses, multiracial individuals were asked to choose a single racial category, or respond as "Some Other Race."  For more information on the multiracial population in 2000, please see the <a href="us/chart_multi.html">multiracial profile.</a>
+
+<br>
+
+<br>
+
+
+If you are interested in the distribution of races in cities and across 
+metropolitan areas, you might find our section on <a href="segregation.html">segregation</a>
+
+ to be helpful.</p>
+
+<table class="datatable">
+
+     <tr class="titlerow">
+
+          <td class="titlecell" colspan="8">
+
+               Hispanic Population and Race Distribution for Non-Hispanic Population
+
+          </td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom"></td>
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom"></td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom">1980</td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom"></td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom">1990</td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom"></td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom">2000</td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom"></td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom"></td>
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom"></td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom">Number</td>
+
+          <td class="labelcell" NOWRAP align="right" style="background:#dddddd;" valign="bottom">Percent</td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom">Number</td>
+
+          <td class="labelcell" NOWRAP align="right" style="background:#dddddd;" valign="bottom">Percent</td>
+
+          <td class="labelcell" NOWRAP align="right" valign="bottom">Number</td>
+
+          <td class="labelcell" NOWRAP align="right" style="background:#dddddd;" valign="bottom">Percent</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">Total Population</td>
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">226,545,805</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">100.00%</td>
+
+          <td class="datacell" align="right" valign="bottom">248,709,873</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">100.00%</td>
+
+          <td class="datacell" align="right" valign="bottom">281,421,906</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">100.00%</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">Total Hispanics</td>
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">14,608,673</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">6.45%</td>
+
+          <td class="datacell" align="right" valign="bottom">22,354,059</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">8.99%</td>
+
+          <td class="datacell" align="right" valign="bottom">35,305,818</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">12.55%</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">White*</td>
+
+          <td class="datacell" align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">180,256,103</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">79.57%</td>
+
+          <td class="datacell" align="right" valign="bottom">188,128,296</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">75.64%</td>
+
+          <td class="datacell" align="right" valign="bottom">194,552,774</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">69.13%</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">Black*</td>
+
+          <td class="datacell" align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">26,104,285</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">11.52%</td>
+
+          <td class="datacell" align="right" valign="bottom">29,216,293</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">11.75%</td>
+
+          <td class="datacell" align="right" valign="bottom">33,947,837</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">12.06%</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">American Indian and Eskimo*</td>
+
+          <td class="datacell" align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">1,417,110</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">0.63%</td>
+
+          <td class="datacell" align="right" valign="bottom">1,793,773</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">0.72%</td>
+
+          <td class="datacell" align="right" valign="bottom">2,068,883</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">0.74%</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">Asian*</td>
+
+          <td class="datacell" align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">3,489,835</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">1.54%</td>
+
+          <td class="datacell" align="right" valign="bottom">6,968,359</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">2.80%</td>
+
+          <td class="datacell" align="right" valign="bottom">10,123,169</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">3.60%</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">Hawaiian and Pacific Islander*</td>
+
+          <td class="datacell" align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">-</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">-</td>
+
+          <td class="datacell" align="right" valign="bottom">-</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">-</td>
+
+          <td class="datacell" align="right" valign="bottom">353,509</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">0.13%</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">Other*</td>
+
+          <td class="datacell" align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">669,799</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">0.30%</td>
+
+          <td class="datacell" align="right" valign="bottom">249,093</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">0.10%</td>
+
+          <td class="datacell" align="right" valign="bottom">467,770</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">0.17%</td>
+
+     </tr>
+
+     <tr class="datarow">
+
+          <td class="labelcell" NOWRAP align="left" valign="bottom">Two or More Races*</td>
+
+          <td class="datacell" align="left" valign="bottom"></td>
+
+          <td class="datacell" align="right" valign="bottom">-</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">-</td>
+
+          <td class="datacell" align="right" valign="bottom">-</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">-</td>
+
+          <td class="datacell" align="right" valign="bottom">4,602,146</td>
+
+          <td class="datacell" align="right" style="background:#dddddd;" valign="bottom">1.64%</td>
+
+     </tr>
+
+</table>
+
+
+
+<p class="caption">* Non-Hispanic
+only; in 1980 and 1990 "Asians" includes Hawaiians and Pacific
+Islanders.</p>
+
+<p class="source"><b>Source:</b> <a href="aboutCensus2000.html">Census 2000</a> analyzed by the <a href="http://www.ssdan.net/">Social Science Data Analysis Network (SSDAN)</a>.</p> <p align=center><b><a href="">Home</a>&nbsp;|&nbsp;<a href="about.html">About</a>&nbsp;|&nbsp;<a href="help.html">Help</a>&nbsp;|&nbsp;<a href="contact.html">Contact</a>&nbsp;|&nbsp;<a href="usepolicy.html">Use Policy</a></b></p><img src="gifs/pixel.gif" width="549" height="1">
+
+</td>
+
+</tr>
+
+</table>
+
+
+<!-- begin footer_cs.html 
+-->
+<!-- begin old urchin code 
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-557710-1";
+urchinTracker();
+</script>
+-->
+
+<!-- below is NEW GA.js code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-557710-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- end footer_cs.html
+-->
+
+</body>
+
+</html>
+

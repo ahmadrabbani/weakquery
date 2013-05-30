@@ -1,0 +1,857 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+
+	<HEAD>
+<TITLE>Drug Abuse & Mental Illness (Comorbidity) - Drugs of Abuse and Related Topics - NIDA</title>
+<!-- Style2 -->
+
+<link rel="P3Pv1" href="/w3c/p3p.xml">
+<link rel="SHORTCUT ICON" href="/favicon.ico">
+<script language="JavaScript" type="text/javascript" src="/includes/browserCheck2.js"></script>
+<script language=javascript type="text/javascript" src="/includes/style_logic2.js"></script>
+<script language="JavaScript" type="text/javascript" src="/includes/images2.js"></script>
+
+<style type="text/css">
+
+
+
+#dropmenudiv{
+
+position:absolute;
+
+border:1px solid black;
+
+border-bottom-width: 0;
+
+font:normal 12px Verdana;
+
+line-height:18px;
+
+z-index:100;
+
+}
+
+
+
+#dropmenudiv a{
+
+width: 100%;
+
+display: block;
+
+text-indent: 3px;
+
+border-bottom: 1px solid black;
+
+padding: 1px 0;
+
+text-decoration: none;
+
+font-weight: none;
+
+}
+
+
+
+#dropmenudiv a:hover{ /*hover background color*/
+
+background-color: #e7e1d0;
+
+}
+
+
+
+
+
+/* DRUG PUBS BOX DIV */
+ 
+.drugpubs-box{
+border:solid 1px #000;
+width: 180px;
+background:#fff;
+color:#000;
+padding:10px;
+text-align:center;
+}
+
+
+
+/* PDF BOX DIV */
+ 
+.pdf-box{
+border:solid 1px #000;
+width: 190px;
+background:#fff;
+color:#000;
+padding:5px;
+text-align:center;
+}
+
+
+/* PDF & ESPANOL BOX DIV */
+ 
+.pdfespanol-box{
+border:solid 1px #000;
+width: 180px;
+background:#fff;
+color:#000;
+padding:10px;
+text-align:center;
+}
+
+
+/* DRUG PUBS BUTTON */
+ 
+a.squarebutton{
+background: transparent url('/images/square-blue-left.gif') no-repeat top left;
+display: block;
+
+font: 13px Arial; /* Change 12px as desired */
+line-height: 15px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 23px) */
+height: 23px; /* Height of button background height */
+padding-left: 9px; /* Width of left menu image */
+text-decoration: none;
+}
+
+a:link.squarebutton, a:visited.squarebutton, a:active.squarebutton{
+color: black; /*button text color*/
+}
+
+a.squarebutton span{
+background: transparent url('/images/square-blue-right.gif') no-repeat top right;
+font-weight: bold;
+display: block;
+padding: 4px 9px 4px 0; /*Set 9px below to match value of 'padding-left' value above*/
+}
+
+a.squarebutton:hover{ /* Hover state CSS */
+background-position: bottom left;
+}
+
+a.squarebutton:hover span{ /* Hover state CSS */
+background-position: bottom right;
+color: black;
+font-weight: bold;
+}
+
+.buttonwrapper{ /* Container you can use to surround a CSS button to clear float */
+overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+width: 100%;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+
+//Contents for menu 2
+
+var menu2=new Array()
+
+menu2[0]='<a href="/drugpages/alcohol.html">Alcohol</a>'
+
+menu2[1]='<a href="/drugpages/clubdrugs.html">Club Drugs</a>'
+
+menu2[2]='<a href="/drugpages/cocaine.html">Cocaine</a>'
+
+menu2[3]='<a href="/drugpages/heroin.html">Heroin</a>'
+
+menu2[4]='<a href="/drugpages/inhalants.html">Inhalants</a>'
+
+menu2[5]='<a href="/drugpages/acidLSD.html">LSD (Acid)</a>'
+
+menu2[6]='<a href="/drugpages/marijuana.html">Marijuana</a>'
+
+menu2[7]='<a href="/drugpages/mdma.html">MDMA (Ecstasy)</a>'
+
+menu2[8]='<a href="/drugpages/methamphetamine.html">Methamphetamine</a>'
+
+menu2[9]='<a href="/drugpages/nicotine.html">Nicotine</a>'
+
+menu2[10]='<a href="/drugpages/pcp.html">PCP (Phencyclidine)</a>'
+
+menu2[11]='<a href="/drugpages/prescription.html">Prescription Medications</a>'
+
+menu2[12]='<a href="/drugpages/steroids.html">Steroids (Anabolic)</a>'
+
+menu2[13]='<a href="/drugpages/steroids.html"><br></a>'
+
+menu2[14]='<a href="/drugpages/cj.html">Crime & Drug Abuse Treatment</a>'
+
+menu2[15]='<a href="/drugpages/druggeddriving.html">Drugged Driving</a>'
+
+menu2[16]='<a href="/drugpages/testing.html">Drug Testing</a>'
+
+menu2[17]='<a href="/drugpages/HIV.html">HIV and Drug Abuse</a>'
+
+menu2[18]='<a href="/consequences/">Medical Consequences of Drug Abuse</a>'
+
+menu2[19]='<a href="/drugpages/prevention.html">Prevention Research</a>'
+
+menu2[20]='<a href="/drugpages/PSAHome.html">Public Service Announcements</a>'
+
+menu2[21]='<a href="/drugpages/stress.html">Stress & Drug Abuse</a>'
+
+menu2[22]='<a href="/drugpages/treatment.html">Treatment Research</a>'
+
+menu2[23]='<a href="/drugpages/stats.html">Trends and Statistics</a>'
+
+		
+
+var menuwidth='235px' //default menu width
+
+var menubgcolor='#edf2eb'  //menu bgcolor
+
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+
+
+/////No further editting needed
+
+
+
+var ie4=document.all
+
+var ns6=document.getElementById&&!document.all
+
+
+
+if (ie4||ns6)
+
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+
+
+function getposOffset(what, offsettype){
+
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+
+var parentEl=what.offsetParent;
+
+while (parentEl!=null){
+
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+
+parentEl=parentEl.offsetParent;
+
+}
+
+return totaloffset;
+
+}
+
+
+
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+
+if (ie4||ns6)
+
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+
+if (menuwidth!=""){
+
+dropmenuobj.widthobj=dropmenuobj.style
+
+dropmenuobj.widthobj.width=menuwidth
+
+}
+
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+
+obj.visibility=visible
+
+else if (e.type=="click")
+
+obj.visibility=hidden
+
+}
+
+
+
+function iecompattest(){
+
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+
+}
+
+
+
+function clearbrowseredge(obj, whichedge){
+
+var edgeoffset=0
+
+if (whichedge=="rightedge"){
+
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+
+}
+
+else{
+
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+
+}
+
+}
+
+return edgeoffset
+
+}
+
+
+
+function populatemenu(what){
+
+if (ie4||ns6)
+
+dropmenuobj.innerHTML=what.join("")
+
+}
+
+
+
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+
+if (window.event) event.cancelBubble=true
+
+else if (e.stopPropagation) e.stopPropagation()
+
+clearhidemenu()
+
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+
+populatemenu(menucontents)
+
+
+if (ie4||ns6){
+
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+
+dropmenuobj.x=getposOffset(obj, "left")
+
+dropmenuobj.y=getposOffset(obj, "top")
+
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+
+}
+
+
+
+return clickreturnvalue()
+
+}
+
+
+
+function clickreturnvalue(){
+
+if (ie4||ns6) return false
+
+else return true
+
+}
+
+
+
+function contains_ns6(a, b) {
+
+while (b.parentNode)
+
+if ((b = b.parentNode) == a)
+
+return true;
+
+return false;
+
+}
+
+
+
+function dynamichide(e){
+
+if (ie4&&!dropmenuobj.contains(e.toElement))
+
+delayhidemenu()
+
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+
+delayhidemenu()
+
+}
+
+
+
+function hidemenu(e){
+
+if (typeof dropmenuobj!="undefined"){
+
+if (ie4||ns6)
+
+dropmenuobj.style.visibility="hidden"
+
+}
+
+}
+
+
+
+function delayhidemenu(){
+
+if (ie4||ns6)
+
+delayhide=setTimeout("hidemenu()",disappeardelay)
+
+}
+
+
+
+function clearhidemenu(){
+
+if (typeof delayhide!="undefined")
+
+clearTimeout(delayhide)
+
+}
+
+
+
+if (hidemenu_onclick=="yes")
+
+document.onclick=hidemenu
+
+
+
+</script>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+		<META NAME="Publisher" CONTENT="National Institute on Drug Abuse" />
+		<META NAME="Publisher-Email" CONTENT="webmaster@nida.nih.gov" />
+		<META NAME="Description" CONTENT="" />
+		<META NAME="Identifier-URL" CONTENT="http://www.nida.nih.gov/" />
+		<META NAME="Content-Language" CONTENT="en-US" />
+		<META NAME="Coverage" CONTENT="Worldwide" />
+		<meta name="keywords" content="" />
+	</HEAD>
+
+<BODY onload="preloadImages();" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" BGCOLOR=#E7E1D0>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript" src="/includes/smooth/ddsmoothmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="/includes/smooth/ddsmoothmenu.css" />
+<script type="text/javascript">
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#e7e1d0", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+</script>
+
+<CENTER>
+
+<br>
+<p style="font-size: 0px;margin:0px 0px;padding: 0px 0px;position: absolute;z-index: -2;"><a href="#skipnav" style="color:white;">Skip Navigation</a></p>
+<MAXAMINEIGNORE>
+<table width="788" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td valign="middle" bgcolor="#c4b495" width="300"><a href="http://www.nih.gov/"><img src="/1homeimages/nih_header.gif" alt="Link to  the National Institutes of Health" width="300" height="18" border="0" /></a></td>
+
+<td align="right" valign="middle" bgcolor="#c4b495"><font size="1" color="white">NIDA NEWS</font><font size="1"> </font></td>
+<td align="right" valign="middle" bgcolor="#c4b495" width="50"><a href="/nidanews.xml"><img src="/Images/rss.gif" alt="NIDA News RSS Feed" width="44" height="16" border="0" /></a><img src="/Images/spacer.gif" alt="" height="1" width="2" border="0" /></td>
+
+<td align="right" valign="middle" bgcolor="#c4b495" width="50"><a href="https://twitter.com/NIDAnews" class="exit" title="Click to go to NIDAnews on Twitter"><img src="/images/follow.gif" width="113px" height="19px" alt="Follow us on Twitter button" style="margin-left:5px;"></a></td>
+
+</tr>
+</table>
+<table width="788" border="0" cellspacing="0" cellpadding="0" bgcolor="#000066">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#223c75">
+<tr>
+<td align="left" valign="top"><a href="/index.html"><img src="/1homeimages/NIDA1.gif" alt="The Science of Drug Abuse and Addiction from the National Institute on Drug Abuse" width="341" height="70" border="0"></a></td>
+<td align="right" valign="top"><img src="/1homeimages/bannerhead6.gif" alt="Keep Your Body Healthy" width="270" height="70" border="0"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000066">
+<tr>
+<td align="left" valign="bottom" height="22" NOWRAP width="578"><a onmouseover="changeImages( /*CMP*/'nav_home_off',/*URL*/'/1homeimages/nav_home_on2.gif');return true" onfocus="changeImages( /*CMP*/'nav_home_off',/*URL*/'/1homeimages/nav_home_on2.gif');return true" onmouseout="changeImages( /*CMP*/'nav_home_off',/*URL*/'/1homeimages/nav_home_off2.gif');return true" onblur="changeImages( /*CMP*/'nav_home_off',/*URL*/'/1homeimages/nav_home_off2.gif');return true" href="/NIDAHome.html" tabindex="1"><img src="/1homeimages/nav_home_off2.gif" alt="Go to the Home page" name="nav_home_off" width="59" height="22" border="0"></a><a onmouseover="changeImages( /*CMP*/'nav_about_off',/*URL*/'/1homeimages/nav_about_on2.gif');return true" onfocus="changeImages( /*CMP*/'nav_about_off',/*URL*/'/1homeimages/nav_about_on2.gif');return true" onmouseout="changeImages( /*CMP*/'nav_about_off',/*URL*/'/1homeimages/nav_about_off2.gif');return true" onblur="changeImages( /*CMP*/'nav_about_off',/*URL*/'/1homeimages/nav_about_off2.gif');return true" href="/about/aboutnida.html" tabindex="2"><img src="/1homeimages/nav_about_off2.gif" alt="Go to the About Nida page" name="nav_about_off" width="99" height="22" border="0"></a><a onmouseover="changeImages( /*CMP*/'nav_news_off',/*URL*/'/1homeimages/nav_news_on2.gif');return true" onfocus="changeImages( /*CMP*/'nav_news_off',/*URL*/'/1homeimages/nav_news_on2.gif');return true" onmouseout="changeImages( /*CMP*/'nav_news_off',/*URL*/'/1homeimages/nav_news_off2.gif');return true" onblur="changeImages( /*CMP*/'nav_news_off',/*URL*/'/1homeimages/nav_news_off2.gif');return true" href="/NIDANews.html" tabindex="3"><img src="/1homeimages/nav_news_off2.gif" alt="Go to the News page" name="nav_news_off" width="56" height="22" border="0"></a><a onmouseover="changeImages( /*CMP*/'nav_events_off2',/*URL*/'/1homeimages/nav_events_on2.gif');return true" onfocus="changeImages( /*CMP*/'nav_events_off2',/*URL*/'/1homeimages/nav_events_on2.gif');return true" onmouseout="changeImages( /*CMP*/'nav_events_off2',/*URL*/'/1homeimages/nav_events_off2.gif');return true" onblur="changeImages( /*CMP*/'nav_events_off2',/*URL*/'/1homeimages/nav_events_off2.gif');return true" href="/NIDAevents.html" tabindex="4"><img src="/1homeimages/nav_events_off2.gif" alt="Go to the Meetings &amp; Events page" name="nav_events_off2" width="142" height="22" border="0"></a><a onmouseover="changeImages( /*CMP*/'nav_funding_off',/*URL*/'/1homeimages/nav_funding_on2.gif');return true" onfocus="changeImages( /*CMP*/'nav_funding_off',/*URL*/'/1homeimages/nav_funding_on2.gif');return true" onmouseout="changeImages( /*CMP*/'nav_funding_off',/*URL*/'/1homeimages/nav_funding_off2.gif');return true" onblur="changeImages( /*CMP*/'nav_funding_off',/*URL*/'/1homeimages/nav_funding_off2.gif');return true" href="/funding/" tabindex="5"><img src="/1homeimages/nav_funding_off2.gif" alt="Go to the Funding page" name="nav_funding_off" width="79" height="22" border="0"></a><a onmouseover="changeImages( /*CMP*/'nav_pubs_off',/*URL*/'/1homeimages/nav_pubs_on2.gif');return true" onfocus="changeImages( /*CMP*/'nav_pubs_off',/*URL*/'/1homeimages/nav_pubs_on2.gif');return true" onmouseout="changeImages( /*CMP*/'nav_pubs_off',/*URL*/'/1homeimages/nav_pubs_off2.gif');return true" onblur="changeImages( /*CMP*/'nav_pubs_off',/*URL*/'/1homeimages/nav_pubs_off2.gif');return true" href="/Pubcat/" tabindex="6"><img src="/1homeimages/nav_pubs_off2.gif" alt="Go to the Publications page" name="nav_pubs_off" width="108" height="22" border="0"></a></td>
+<form method="get" action="http://search2.google.cit.nih.gov/search" name="search" id="search">
+<td><div style="float:left; margin-left:10px; vertical-align:middle; height:22">
+<label for="searchbox" class="noDisplay">Search NIDA</label>
+<input id="searchbox" type="text" title="enter search text" name="q" size="16" maxlength="255" value="" tabindex="7"></input>
+<input type="hidden" name="site" value="NIDA"></input>
+<input type="hidden" name="client" value="NIDA_frontend"></input>
+<input type="hidden" name="proxystylesheet" value="NIDA_frontend"></input>
+<input type="hidden" name="output" value="xml_no_dtd"></input>
+<input type="hidden" name="filter" value="0"></input>
+<input type="hidden" name="getfields" value="*"></input></div>
+<div style="float:right; vertical-align:middle; height:22">
+<input type="image" src="/1homeimages/nav_search.gif" align="absmiddle" width="60" height="22" border="0"  name="btnG" id="btnG" alt="Search" ></input>
+</div></td>
+</form>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="788" border="0" cellspacing="0" cellpadding="0">
+<tr height="36">
+<td align="right" valign="top" bgcolor="#e7e1d0" width="530" height="36"><noscript><a href="/nidamed/"></noscript><a onmouseover="changeImages( /*CMP*/'b1',/*URL*/'/1homeimages/newnav/physicians_on.gif');return true" onfocus="changeImages( /*CMP*/'b1',/*URL*/'/1homeimages/newnav/physicians_on.gif');return true" onmouseout="changeImages( /*CMP*/'b1',/*URL*/'/1homeimages/newnav/physicians_off.gif');return true" onblur="changeImages( /*CMP*/'b1',/*URL*/'/1homeimages/newnav/physicians_off.gif');return true" href="/nidamed/" tabindex="8"><img src="/1homeimages/newnav/physicians_off.gif" alt="Physicians" name="b1" height="36" width="136" border="0"></a><noscript></a></noscript><noscript><a href="/researchers.html"></noscript><a onmouseover="changeImages( /*CMP*/'b2',/*URL*/'/1homeimages/newnav/researchers_on.gif');return true" onfocus="changeImages( /*CMP*/'b2',/*URL*/'/1homeimages/newnav/researchers_on.gif');return true" onmouseout="changeImages( /*CMP*/'b2',/*URL*/'/1homeimages/newnav/researchers_off.gif');return true" href="/researchers.html" onblur="changeImages( /*CMP*/'b2',/*URL*/'/1homeimages/newnav/researchers_off.gif');return true" href="/researchers.html" tabindex="9"><img src="/1homeimages/newnav/researchers_off.gif" alt="Researchers" name="b2" height="36" width="107" border="0"></a><noscript></a></noscript><noscript><a href="/parent-teacher.html"></noscript><a onmouseover="changeImages( /*CMP*/'b3',/*URL*/'/1homeimages/newnav/parents_on.gif');return true" onfocus="changeImages( /*CMP*/'b3',/*URL*/'/1homeimages/newnav/parents_on.gif');return true" onmouseout="changeImages( /*CMP*/'b3',/*URL*/'/1homeimages/newnav/parents_off.gif');return true" onblur="changeImages( /*CMP*/'b3',/*URL*/'/1homeimages/newnav/parents_off.gif');return true" href="/parent-teacher.html" href="/parent-teacher.html" tabindex="10"><img src="/1homeimages/newnav/parents_off.gif" alt="Parents/Teachers" name="b3" height="36" width="91" border="0"></a><noscript></a></noscript><noscript><a href="/students.html"></noscript><a onmouseover="changeImages( /*CMP*/'b4',/*URL*/'/1homeimages/newnav/students_on.gif');return true" onfocus="changeImages( /*CMP*/'b4',/*URL*/'/1homeimages/newnav/students_on.gif');return true" onmouseout="changeImages( /*CMP*/'b4',/*URL*/'/1homeimages/newnav/students_off.gif');return true" onblur="changeImages( /*CMP*/'b4',/*URL*/'/1homeimages/newnav/students_off.gif');return true" href="/students.html" tabindex="11"><img src="/1homeimages/newnav/students_off.gif" alt="Students/Young Adults" name="b4" height="36" width="114" border="0"></a><noscript></a></noscript><noscript><a href="/nidaespanol.html"></noscript><a onmouseover="changeImages( /*CMP*/'b5',/*URL*/'/1homeimages/newnav/espanol_on.gif');return true" onfocus="changeImages( /*CMP*/'b5',/*URL*/'/1homeimages/newnav/espanol_on.gif');return true" onmouseout="changeImages( /*CMP*/'b5',/*URL*/'/1homeimages/newnav/espanol_off.gif');return true" onblur="changeImages( /*CMP*/'b5',/*URL*/'/1homeimages/newnav/espanol_off.gif');return true" href="/nidaespanol.html" tabindex="12"><img src="/1homeimages/newnav/espanol_off.gif" alt="En Espa&ntilde;ol" name="b5" height="36" width="82" border="0"></a><noscript></a></noscript></td>
+<td align="right" valign="middle" height="36">
+<div id="smoothmenu1" class="ddsmoothmenu">
+<ul>
+<li><noscript><a href="/drugpages.html"></noscript><a href="/drugpages.html" id="rollover" tabindex="13" title="Drugs of Abuse &amp; Related Topics and down arrow"><span>Drugs of Abuse and Related Topics</span></a><noscript></a></noscript>
+  <ul>
+  <li class="title">Drugs of Abuse &ndash;</li>
+  <li><a href="/drugpages/alcohol.html">Alcohol</a></li>
+  <li><a href="/drugpages/clubdrugs.html">Club Drugs</a></li>
+  <li><a href="/drugpages/cocaine.html">Cocaine</a></li>
+  <li><a href="/drugpages/heroin.html">Heroin</a></li>
+  <li><a href="/drugpages/inhalants.html">Inhalants</a></li>
+  <li><a href="/drugpages/acidlsd.html">LSD (Acid)</a></li>
+  <li><a href="/drugpages/marijuana.html">Marijuana</a></li>
+  <li><a href="/drugpages/mdma.html">MDMA (Ecstasy)</a></li>
+  <li><a href="/drugpages/methamphetamine.html">Methamphetamine</a></li>
+  <li><a href="/drugpages/pcp.html">PCP/Phencyclidine</a></li>
+  <li><a href="/drugpages/prescription.html">Prescription Medications</a></li>
+  <li><a href="/drugpages/steroids.html">Steroids (Anabolic)</a></li>
+   <li><a href="/drugpages/nicotine.html">Tobacco Addiction</a></li>
+  <li class="title">Related Topics &ndash;</li>
+   <li><a href="/drugpages/addiction.html">Addiction Science</a></li>
+  <li><a href="/drugpages/cj.html">Crime & Drug Abuse Treatment</a></li>
+   <li><a href="/DrugPages/comorbidity.html">Drug Abuse & Mental Illness (Comorbidity)</a></li>
+   <li><a href="/drugpages/testing.html">Drug Testing</a></li>
+ <li><a href="/drugpages/druggeddriving.html">Drugged Driving</a></li>
+  <li><a href="/about/organization/healthdisparities/">Health Disparities</a></li>
+  <li><a href="/drugpages/hiv.html">HIV/AIDS and Drug Abuse</a></li>
+  <li><a href="/consequences/">Medical Consequences of Drug Abuse</a></li>
+  <li><a href="/drugpages/prevention.html">Prevention Research</a></li>
+  <li><a href="/drugpages/psahome.html">Public Service Announcements</a></li>
+  <li><a href="/drugpages/treatment.html">Treatment Research</a></li>
+  <li><a href="/drugpages/stats.html">Trends and Statistics</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<!-- disclaimer jquery file -->
+  <script type="text/javascript" src="/disclaimer/jquery-1.4.2.min.js"></script>  
+  
+   <!-- tool tip for external links -->
+   <script type="text/javascript" src="/disclaimer/jquery.qtip.js"></script>
+ 
+   <link rel="stylesheet" type="text/css" href="/disclaimer/jquery.qtip.css" media="screen" />
+  
+	  <script type="text/javascript" src="/disclaimer/superfish.js"></script>
+	<!--  <script type="text/javascript" src="/disclaimer/hoverIntent.js"></script> -->
+	<!-- custom jquery functions that must be loaded on each page -->
+     <script type="text/javascript" src="/disclaimer/functions.js"></script>
+</MAXAMINEIGNORE>
+<table width="788" border="0" cellspacing="0" cellpadding="1" bgcolor="#C4B595">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="white">
+<tr>
+<td><A Name="skipnav"></a>
+<div align="center">
+			<table width="778" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="new_breadcrumb"><a href="http://www.drugabuse.gov">NIDA Home</a> &gt; <a href="/drugpages/">Drugs of Abuse/Related Topics</A> &gt; Alcohol
+<br />
+							<br /></td>
+				</tr>
+			</table>
+			<table width="778" border="0" cellspacing="0" cellpadding="5">
+				<tr>
+					<td>
+						<h4 class="top">Drug Abuse and Mental Illness (Comorbidity)</h4>
+					</td>
+				</tr>
+			</table>
+			<table width="778" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<table width="777" border="0" cellspacing="0" cellpadding="0">
+							<tr height="1">
+								<td colspan="3" valign="top" bgcolor="black" height="1"></td>
+							</tr>
+							<tr>
+								<td valign="top">
+									
+												
+												
+												<!-- BEGIN CONTENT -->
+												<table width="100%" border="0" cellspacing="0" cellpadding="10">
+										<tr>
+											<td valign="top">
+											<p><img src="/1homeimages/nimh.jpg" alt="NIMH Logo" width="66" height="49" hspace="5" vspace="5" align="right"><b>For Additional Information on Mental Health, please visit:</b></p>
+
+<UL>
+
+	 <li><b><a href="http://www.nimh.nih.gov/">National Institute of Mental Health (NIMH)</a></b>
+<br />
+<br />
+
+</ul>
+
+<hr>
+
+
+<h4>NIDA's Featured Publications</h4>
+		<table cellpadding="5" cellspacing="1" border="0">
+			<tr>
+			<td valign="top">
+					<img border="0" src="images/tibicon.gif" width="86" height="111" alt="Topics in Brief: Comorbidity" /></td>
+				<td valign="top">
+					<a href="/tib/comorbid.html">Comorbid Drug Abuse and Mental Illness (Topics in Brief)<br /><br />
+				<a href="/tib/vet.html">Substance Abuse among the Military, Veterans, and their Families.</a> (Topics in Brief)
+
+				</td>
+			</tr>
+
+			<tr>
+			<td valign="top">
+					<img border="0" src="../1homeimages/nidainfofacts1.gif" width="80" height="44" alt="NIDA Infofacts: Marijuana" /></td>
+				<td valign="top">
+					<a href="/infofacts/comorbidity.html">NIDA Infofacts: Comorbidity: Addiction and Other Mental Disorders.</a> The latest research findings for a general audience. (Fact sheet).
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<img border="1" src="/ResearchReports/comorbidity/images/rr_comorbidity_cover.gif" width="80" height="103" alt="NIDA Research Report: Marijuana Abuse" /></td>
+				<td valign="top">
+					<a href="/ResearchReports/comorbidity/">NIDA Research Report: Comorbidity: Addiction and Other Mental Illnesses.</a> More detailed look at the latest research findings. For a general audience. (Report).<br />
+					
+					
+
+				</td>
+			</tr>
+
+		</table>
+		
+		<H4>NIDA NOTES:</H4>
+
+<ul>
+
+<li>Volume 23, No. 3 - <a href="/NIDA_notes/NNvol23N3/RIB.html">Substance Abuse Evaluated Among Women With Children</a></li>
+
+<li>Volume 23, No. 3 - <a href="/NIDA_notes/NNvol23N3/BBoard.html#Program">Program Enhances Physician Knowledge on Substance Abuse</a></li>
+
+<li>Volume 23, No. 1 - <a href="/NIDA_notes/NNvol23N1/DirRepVol23N1.html">Helping Doctors Become First Responders to Substance Abuse</a></li>
+
+<li>Volume 23, No. 1 - <a href="/NIDA_notes/NNvol23N1/RIB.html#Genetic">Genetic Overlap Between Substance Abuse and Bipolar Disorder</a></li>
+
+<li>Volume 22, No. 6 - <a href="/NIDA_notes/NNvol22N6/Recovery.html">Recovery Checkup System Helps Substance Abusers Who Have Mental Disorders</a></li>
+
+<li>Volume 22, No. 6 - <a href="/NIDA_notes/NNvol22N6/Tearoff.html">Report Discusses Co-Occurrence of Drug Abuse and Other Mental Disorders</a></li>
+
+<li>Volume 22, No. 5 - <a href="/NIDA_notes/NNvol22N5/DirRepVol22N5.html">Substance Abuse Among Troops, Veterans, and Their Families</a></li>
+
+
+<li>Volume 22, No. 3 - <a href="/NIDA_notes/NNvol22N3/Low.html">Low Dopamine Receptor Availability May Promote Cocaine Addiction</a></li>
+
+<li>Volume 22, No. 2 - <a href="/NIDA_notes/NNVol22N2/Imaging.html">Imaging Studies Elucidate Neurobiology of Cigarette Craving</a></li>
+
+<li>Volume 21, No. 4 - <a href="/NIDA_notes/NNvol21N4/gene.html#insert">Experience Restructures Chromatin
+</a></li>
+
+<li>Volume 21, No. 2 - <a href="/NIDA_notes/NNvol21N2/cocaine.html#insert">Stress Cues Also Signal Relapse Risk
+</a></li>
+
+</ul>
+<p><b>Archives</b></p>
+
+<ul>
+
+
+<li>Volume 20, No. 4 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol20N4/Studies.html">Studies Identify Factors Surrounding Rise in Abuse of Prescription Drugs by College Students
+</a></li>
+
+<li>Volume 20, No. 4 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol20N4/Combination.html">Combination Treatment for One Year Doubles Smokers' Quit Rate</a></li>
+
+<li>Volume 20, No. 2 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol20N2/BBoard.html">Trauma-Related Substance Abuse Persists After Mental Health Symptoms Abate</a></li>
+
+<li>Volume 20, No. 2 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol20N2/NIDA.html">NIDA Research Illuminates Associations Between Psychiatric Disorders and Smoking</a></li>
+
+<li>Volume 20, No. 1 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol20N1/Cocaine.html">Cocaine-Related Environmental Cues Elicit Physiological Stress Responses</a></li>
+
+<li>Volume 19, No. 3 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol19N3/Behavioral.html">Behavioral Modification Changes the Brain's Biochemical Response to Cocaine, Curbs Relapse Caused by Stress</a></li>
+
+
+<li>Volume 18, No. 5 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol18N5/Addictive.html">Addictive Drugs and Stress Trigger Similar Change in Brain Cells, Animal Study Finds
+</a></li>
+
+<li>Volume 17, No. 4 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol17N4/Depression.html">Depression, PTSD, Substance Abuse Increase in Wake of September 11 Attacks
+</a></li>
+
+
+<li>Volume 14, No. 1 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol14N1/Stress.html">Studies Link Stress and Drug Addiction</a></li>
+<li>Volume 11, No. 4 - <a href="http://archives.drugabuse.gov/NIDA_Notes/NNVol11N4/Anxiety.html">Anxiety and Stress Found to Promote Cocaine Use in Rats </a></li>
+</ul
+									
+												<!-- END CONTENT -->
+												
+												
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td bgcolor="black" width="1"></td>
+								<td valign="top" width="220" background="../1homeimages/greenstripe.gif">
+									<table width="219" border="0" cellspacing="0" cellpadding="10">
+										<tr>
+											<td width="200">
+											
+												<!-- BEGIN RT MARGIN CONTENT -->
+												
+											<!-- 	<h4>News &amp; Events</h4>
+
+												<ul>
+												
+												<li></li>
+												
+												</ul> -->
+												
+												 <div align="center"><a href="http://findtreatment.samhsa.gov"><img src="http://www.drugabuse.gov/images/treatment.gif" alt="Need a drug treatment referral call 1.800.662.4357" width="200" height="112" border="0" ></a></div>
+												<br />
+												
+												
+							
+							<h4>Other Recommended Reading</h4>
+							<ul>
+							
+								<li><a href="/about/welcome/MessageStress905.html">The Effects of Stress on Drug Abuse - Message from the NIDA Director</a></li>
+								<li><a href="/scienceofaddiction/">Drugs, Brains, and Behavior - The Science of Addiction</a></li>
+								<li><a href="http://archives.drugabuse.gov/stressanddrugabuse.html">Stress and Substance Abuse: A Special Report.</a> (Archives) Summary of research on stress and drug use, and on the relationship between stress and relapse. </li>
+
+								
+
+
+							</ul>
+							
+							 <h4>NIDA's Publication Series </h4>
+								 <ul>
+								<li><a href="/researchreports/researchindex.html">Research Reports</a></li>
+								<li><a href="/infofacts/Infofaxindex.html">InfoFacts</a> (fact sheets)</li>
+								<li><a href="/NIDA_Notes/NNIndex.html">NIDA Notes</a> (newsletter)</li>
+								<li><a href="/ascp/">Addiction Science & Clinical Practice</a> (journal for researchers & health care providers)</li>
+								<li><a href="/MOM/MOMIndex.html">Mind Over Matter: Drug info for grades 5-9</a> </li>
+								<li><a href="/tib/">Topics in Brief</a> </li>
+								</ul>
+								
+								<h4>Other Web Sites</h4>
+								<ul>
+								<li><a href="http://www.bt.cdc.gov/mentalhealth/">CDC - Federal Disaster Mental Health Resources</a>
+								<li><A HREF="http://www.nlm.nih.gov/medlineplus/substanceabuse.html">MEDLINEplus Health Information on Substance Abuse</a> - National Library of Medicine, NIH</li>
+								<li><a href="http://www.abovetheinfluence.com">www.abovetheinfluence.com</a> - Office of National Drug Control Policy </li>
+								<li><a href="http://healthfinder.gov/search/Default.aspx?sort=date%253AD%253AL%253Ad1&output=xml&ie=UTF-8&client=healthfinder2&lr=lang_en&numgm=5&site=healthfinder&filter=0&q=Drug+Abuse+and+Mental+Illness&noJsSubmit.x=0&noJsSubmit.y=0">Healthfinder.gov</a></li>
+								</ul>
+							
+												
+												<!-- END RT MARGIN CONTENT -->
+												
+												
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			</div>
+		<MAXAMINEIGNORE>
+<hr noshade size="1" color="#C4B595" width="100%">		
+<table width="776" border="0" cellspacing="0" cellpadding="0" bgcolor="white">
+<tr nowrap>
+<td align="center" valign="top"><br><a HREF="/NIDAHome.html" class="contentlinks">NIDA Home</a> | <a  HREF="/tools/NIDATOC.html" class="contentlinks">Site Map</a> | <a href="http://search2.google.cit.nih.gov/search?filter=0&access=p&getfields=*&output=xml_no_dtd&sort=date%3AD%3AL%3Ad1&site=NIDA&ie=UTF-8&client=NIDA_frontend&oe=UTF-8&proxystylesheet=NIDA_frontend&proxycustom=<ADVANCED/>" class="contentlinks">Search</a> | <a href="/tools/FAQ.html" class="contentlinks">FAQs</a> | <a href="/tools/Accessibility.html" class="contentlinks">Accessibility</a> | <a href="/tools/Privacy.html" class="contentlinks">Privacy</A> | <a href="http://www.nih.gov/icd/od/foia/index.htm" class="contentlinks">FOIA (NIH)</a> | <a href="/whatsnew/Employment/" class="contentlinks">Employment</a> | <a href="http://archives.drugabuse.gov/" class="contentlinks">Archives</a><br><br>
+
+
+
+<hr noshade size="1" color="#C4B595" width="100%">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="white">
+<tr>
+<td width=100 valign="top" align="center"><a href="http://www.nih.gov/"><img src="/Images/nihseal2.gif" border=0 width="36" height="37" alt="National Institutes of Health logo"></a>&nbsp;<a href="http://www.hhs.gov/"><img src="/Images/dhhs_sm.gif" border=0 width="36" height="37" alt="Department of Health and Human Services Logo"></a></td>
+<td><font size="1">The National Institute on Drug Abuse (NIDA) is part of the <a href="http://www.nih.gov/">National Institutes of Health (NIH)</a> , a component of the <a href="http://www.hhs.gov/">U.S. Department of Health and Human Services</a>. Questions? See our <a href="/about/AboutNIDA.html"><b>Contact Information</b></a></font>.</td>
+<td align="left" valign="top" width="155"><a href="http://www.usa.gov/"><img src="/1homeimages/usagov.gif" alt="The U.S. government's official web portal" width="129" height="37" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table></form><br>
+
+
+<!--GOOGLE ANALYTICS CODE-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16639817-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+if(!(window.jQuery)) {var s = document.createElement('script');s.setAttribute('src', 'http://teens.drugabuse.gov/js/jquery1.4.2.js');s.setAttribute('type', 'text/javascript');document.getElementsByTagName('head')[0].appendChild(s);}
+</script>
+<script type="text/javascript" src="http://www.drugabuse.gov/jscripts/link-tracking.js"></script>
+
+<!-- end Google Analytics code --> 
+
+</MAXAMINEIGNORE>	</body>
+</html>

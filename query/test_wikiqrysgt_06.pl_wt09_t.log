@@ -1,0 +1,1513 @@
+PERL PROGRAM LOG: /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl
+
+Starting test_wikiqrysgt_06.pl --- 13:28:46, 08-29-2011
+
+
+Starting Wikipedia database: en_20110526 connection13:28:46, 08-29-2011
+
+Infile  = obama family tree, 1
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:obama family tree
+
+
+Starting query segmentation --- 13:28:46, 08-29-2011
+
+
+Starting Google search --- 13:28:46, 08-29-2011
+
+Searching Google (q1=obama family tree)
+ -- extracting links & snippets
+    39 HTMLs found so far
+ -- fetch #1: http://www.time.com/time/photogallery/0,29307,1834628,00.html
+ -- fetch #2: http://genealogy.about.com/od/aframertrees/p/barack_obama.htm
+ -- fetch #3: http://www.origins.net/html-email/ON-obama-familytree.htm
+ -- fetch #4: http://blogs.abcnews.com/politicalpunch/2008/07/barack-obamas-1.html
+ -- fetch #5: http://www.wargs.com/political/obama.html
+ -- fetch #6: http://www.nytimes.com/interactive/2009/10/08/us/politics/20091008-obama-family-tree.html
+ -- fetch #7: http://newsblogs.chicagotribune.com/religion_theseeker/2008/09/a-rabbi-on-obam.html
+ -- fetch #8: http://en.rian.ru/infographics/20110804/165552927.html
+ -- fetch #9: http://www.makemyfamilytree.com/articles/barack_obama_family_tree.html
+ -- fetch #10: http://www.doctorzebra.com/prez/z_x44family_tree_g.htm
+
+Starting query segmentation ranking --- 13:28:56, 08-29-2011
+
+Enter chkWkTopic: family tree
+
+Enter calConditionalProb:4.59353697615821e-08 48 14131 2500
+
+Enter chkWkTopic: obama family
+
+Enter calConditionalProb:4.59353697615821e-08 24 14651 2500
+
+Enter chkWkTopic: obama family tree
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:family tree,obama family,obama family tree
+
+top topic:context:family tree:obama
+
+original term:obama
+
+term:obama
+
+Enter chkWkTopic: obama
+
+Enter chkWkTopic: family tree
+
+top topic:context:obama family:tree
+
+original term:tree
+
+term:tree
+
+Enter chkWkTopic: tree
+
+Enter chkWkTopic: obama family
+
+top topic:context:obama family tree:
+
+Enter chkWkTopic: obama family tree
+
+
+Produce result --- 13:28:56, 08-29-2011
+
+Original query:obama family tree
+Segmented query:"family tree:169269" obama:22562196 ||"obama family:17775180" tree:18955875 ||"obama family tree" ||::1
+
+Infile  = french lick resort and casino, 2
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:french lick resort casino
+
+
+Starting query segmentation --- 13:28:56, 08-29-2011
+
+
+Starting Google search --- 13:28:56, 08-29-2011
+
+Searching Google (q2=french lick resort and casino)
+ -- extracting links & snippets
+    34 HTMLs found so far
+ -- fetch #1: http://www.tripadvisor.com/Hotel_Review-g37130-d91236-Reviews-French_Lick_Resort-French_Lick_Indiana.html
+ -- fetch #2: http://www.tripadvisor.com/Attraction_Review-g37130-d1371634-Reviews-French_Lick_Resort_Casino-French_Lick_Indiana.html
+ -- fetch #3: http://www.golfersguide.com/golf/on-the-tee/french-lick-resort-and-casino-returns-to-glory-days.html
+ -- fetch #4: http://www.americancasinoguide.com/indiana/french-lick-resort.html
+ -- fetch #5: http://www.americancasinoguide.com/casino-profiles/casino-profile-french-lick-resort-casino-french-lick-indiana.html
+ -- fetch #6: http://hotelguides.com/indiana/french-lick-resort-casino-in-hotels.html
+ -- fetch #7: http://www.mobicasinos.com/french-lick-resort-casino-start-schooling.html
+ -- fetch #8: http://www.reviewblue.com/UnitedStates/Indiana/SouthIndiana/FrenchLickIN/AttractionReviews/29-88948-2.html
+ -- fetch #9: http://www.travelwriternews.com/story-ideas/accommodations/french_lick_resort.htm
+ -- fetch #10: http://www.pokernews.com/news/2007/06/room-review-french-lick-resort-casino-poker-room.htm
+Enter chkWkTopic: resort 
+
+Enter chkWkTopic: resort  casino
+
+Enter chkWkTopic:  casino
+
+Enter chkWkTopic:  casino
+
+Enter chkWkTopic:  casino
+
+Enter chkWkTopic:  casino
+
+Enter chkWkTopic: french lick
+
+Enter chkWkTopic:  casino
+
+Enter chkWkTopic: french lick
+
+Enter chkWkTopic: french lick
+
+Enter chkWkTopic: french lick resort
+
+Enter chkWkTopic: lick resort
+
+
+Starting query segmentation ranking --- 13:29:08, 08-29-2011
+
+Enter chkWkTopic: french lick resort
+
+Enter calConditionalProb:3.20103488973488e-14 84 6801 2500
+
+Enter chkWkTopic: lick resort
+
+Enter calConditionalProb:8.00178417021103e-10 84 6801 2500
+
+Enter chkWkTopic: lick resort  casino
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:1.28055197093971e-18 57 6801 2500
+
+Enter chkWkTopic: french lick resort  casino
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:5.1227600034481e-23 0 0 2500
+
+Enter chkWkTopic: french lick resort 
+
+Enter calConditionalProb:3.20103488973488e-14 84 6801 2500
+
+Enter chkWkTopic: resort 
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter chkWkTopic: french lick
+
+Enter wikiDisambiguation:french lick "resort " resort  casino
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Enter calConditionalProb:4.59353697615821e-08 239 6801 2500
+
+Enter chkWkTopic: lick resort 
+
+Enter calConditionalProb:8.00178417021103e-10 84 6801 2500
+
+Enter chkWkTopic:  casino
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+Enter chkWkTopic: resort  casino
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:french lick,lick resort,lick resort ,french lick resort,french lick resort ,lick resort  casino,resort , casino,resort  casino,french lick resort  casino
+
+top topic:context:french lick:"resort " resort  casino
+
+original term:"resort 
+
+term:resort 
+
+Enter chkWkTopic: resort 
+
+original term:resort  casino
+
+term:resort  casino
+
+Enter chkWkTopic: resort  casino
+
+Enter chkWkTopic: french lick
+
+top topic:context:lick resort:french  casino
+
+original term:french  casino
+
+term:french  casino
+
+Enter chkWkTopic: french  casino
+
+Enter chkWkTopic: lick resort
+
+top topic:context:lick resort :french casino
+
+original term:french casino
+
+term:french casino
+
+Enter chkWkTopic: french casino
+
+Enter chkWkTopic: lick resort 
+
+
+Produce result --- 13:29:08, 08-29-2011
+
+Original query:french lick resort  casino
+Segmented query:"french lick:1384077" resort_:471772 resort  casino||"lick resort" french  casino||"lick resort " french casino||::2
+
+Infile  = getting organized, 3
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:getting organized
+
+
+Starting query segmentation --- 13:29:08, 08-29-2011
+
+
+Starting Google search --- 13:29:08, 08-29-2011
+
+Searching Google (q3=getting organized)
+ -- extracting links & snippets
+    33 HTMLs found so far
+ -- fetch #1: http://www.stevepavlina.com/articles/getting-organized.htm
+ -- fetch #2: http://www.getorganizednow.com/cl-month.html
+ -- fetch #3: http://www.huffingtonpost.com/karim-orange/getting-rid-of-clutter_b_933690.html
+ -- fetch #4: http://www.ourclassweb.com/sites_for_teachers_getting_organized.htm
+ -- fetch #5: http://www.nlight.com/Success/Study/3organize.html
+ -- fetch #6: http://www.artbizcoach.com/go.html
+ -- fetch #7: http://www.best-of-time-management.com/organized-living.htm
+ -- fetch #8: http://www.containerstore.com/organize/index.html
+ -- fetch #9: http://googlecode.blogspot.com/2011/05/getting-organized-with-tasks-api.html
+ -- fetch #10: http://www.napo-ny.net/goMonth.shtml
+w1, w2: getting,organized
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+31 77
+
+
+Produce result --- 13:29:15, 08-29-2011
+
+Original query:getting organized
+Segmented query:"getting organized" ::3
+
+Infile  = mitchell college, 4
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mitchell college
+
+
+Starting query segmentation --- 13:29:15, 08-29-2011
+
+
+Produce result --- 13:29:15, 08-29-2011
+
+Original query:mitchell college
+Segmented query:"mitchell college:502360"::4
+
+Infile  = air travel information, 5
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:air travel information
+
+
+Starting query segmentation --- 13:29:15, 08-29-2011
+
+
+Starting Google search --- 13:29:15, 08-29-2011
+
+Searching Google (q5=air travel information)
+ -- extracting links & snippets
+    18 HTMLs found so far
+ -- fetch #1: http://www.tsa.gov/travelers/airtravel/prohibited/permitted-prohibited-items.shtm
+ -- fetch #2: http://www.usa.gov/Citizen/Topics/Travel/Air.shtml
+ -- fetch #3: http://www.united.com/page/article/0,,2131,00.html
+ -- fetch #4: http://gohawaii.about.com/od/air/Air_Travel_Guide_to_Hawaii.htm
+ -- fetch #5: http://www.harbourislandguide.com/travel.htm
+ -- fetch #6: http://controller.berkeley.edu/travel/Air/index.htm
+ -- fetch #7: http://safetravel.dot.gov/whats_new_batteries.html
+ -- fetch #8: http://traveltips.usatoday.com/air-travel-information-children-52568.html
+ -- fetch #9: http://www.yatra.com/international/US/index.html
+ -- fetch #10: http://www.ai.sri.com/natural-language/projects/arpa-sls/atis.html
+
+Starting query segmentation ranking --- 13:29:22, 08-29-2011
+
+Enter chkWkTopic: air travel
+
+Enter calConditionalProb:4.59353697615821e-08 35 4705 2500
+
+Enter chkWkTopic: travel information
+
+Enter calConditionalProb:4.59353697615821e-08 12 4615 2500
+
+Enter chkWkTopic: air travel information
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:air travel,travel information,air travel information
+
+top topic:context:air travel:information
+
+original term:information
+
+term:information
+
+Enter chkWkTopic: information
+
+Enter chkWkTopic: air travel
+
+top topic:context:travel information:air
+
+original term:air
+
+term:air
+
+Enter chkWkTopic: air
+
+Enter chkWkTopic: travel information
+
+top topic:context:air travel information:
+
+Enter chkWkTopic: air travel information
+
+
+Produce result --- 13:29:23, 08-29-2011
+
+Original query:air travel information
+Segmented query:"air travel:449952" information:18985062 ||"travel information:8624576" air:22562196 ||"air travel information" ||::5
+
+Infile  = used car parts, 6
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:used car part
+
+
+Starting query segmentation --- 13:29:23, 08-29-2011
+
+
+Starting Google search --- 13:29:23, 08-29-2011
+
+Searching Google (q6=used car parts)
+ -- extracting links & snippets
+    5 HTMLs found so far
+ -- extracting links & snippets
+    10 HTMLs found so far
+ -- extracting links & snippets
+    20 HTMLs found so far
+ -- fetch #1: http://www.car-part.com/dealersaz.shtml
+ -- fetch #2: http://www.car-part.com/recterms.htm
+ -- fetch #3: http://www.junk-yards.net/indiana.shtml
+ -- fetch #4: http://www.automotix.net/partshotline-indiana-bloomington.html
+ -- fetch #5: http://www.autoandparts.com/yardtours.html
+ -- fetch #6: http://www.autoguide.net/apf/usedpart/index.html
+ -- fetch #7: http://www.aachenauto.com/used_auto_parts.htm
+ -- fetch #8: http://search7104.used-auto-parts.biz/inventory/retail.htm
+ -- fetch #9: http://www.trustmymechanic.com/automotive/tusedxbmw/index.html
+ -- fetch #10: http://www.automobile.com/car-parts.html
+
+Starting query segmentation ranking --- 13:29:38, 08-29-2011
+
+Enter chkWkTopic: used car parts
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: car parts
+
+Enter wikiDisambiguation:car parts used
+
+Enter calConditionalProb:4.59353697615821e-08 61 29441 2500
+
+Enter chkWkTopic: used car
+
+Enter calConditionalProb:4.59353697615821e-08 59 29441 2500
+
+ranked query topics:car parts,used car,used car parts
+
+top topic:context:car parts:used
+
+original term:used
+
+term:used
+
+Enter chkWkTopic: used
+
+Enter chkWkTopic: car parts
+
+top topic:context:used car:parts
+
+original term:parts
+
+term:parts
+
+Enter chkWkTopic: parts
+
+Enter chkWkTopic: used car
+
+top topic:context:used car parts:
+
+Enter chkWkTopic: used car parts
+
+
+Produce result --- 13:29:39, 08-29-2011
+
+Original query:used car parts
+Segmented query:"car parts:22562196" used:22562196 ||"used car:5146762" parts:22562196 ||"used car parts" ||::6
+
+Infile  = cheap internet, 7
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:cheap internet
+
+
+Starting query segmentation --- 13:29:39, 08-29-2011
+
+
+Starting Google search --- 13:29:39, 08-29-2011
+
+Searching Google (q7=cheap internet)
+ -- extracting links & snippets
+    21 HTMLs found so far
+ -- fetch #1: http://www.cheapnetaccess.com/cheap-internet.html
+ -- fetch #2: http://www.mapsofworld.com/referrals/internet/internet-providers/cheap-internet-providers.html
+ -- fetch #3: http://www.cable-modem.net/cheap_broadband_cable_modem/index.html
+ -- fetch #4: http://www.miamiherald.com/2011/08/02/2342521/needy-families-offered-cheap-internet.html
+ -- fetch #5: http://www.cheap-online.net/internet-phone.html
+ -- fetch #6: http://www.nbcmiami.com/news/local/Comcast-Offering-Cheap-Internet-to-Needy-Families-126774688.html
+ -- fetch #7: http://www.ezisp.info/cheap.html
+ -- fetch #8: http://www.debthelp.tv/cheap-internet-phone-calls.htm
+ -- fetch #9: http://www.build-your-own-cheap-computer.com/computer-internet-security.html
+ -- fetch #10: http://www.easycall.net/dial-up-internet.shtml
+w1, w2: cheap,internet
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+63 246
+
+
+Produce result --- 13:29:45, 08-29-2011
+
+Original query:cheap internet
+Segmented query:"cheap internet" ::7
+
+Infile  = gmat prep classes, 8
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:gmat prep class
+
+
+Starting query segmentation --- 13:29:45, 08-29-2011
+
+
+Starting Google search --- 13:29:45, 08-29-2011
+
+Searching Google (q8=gmat prep classes)
+ -- extracting links & snippets
+    27 HTMLs found so far
+ -- fetch #1: http://www.gmat-mba-prep.com/gmat-courses.html
+ -- fetch #2: http://www.gmat-mba-prep.com/Sydney.html
+ -- fetch #3: http://gmatclub.com/forum/gmat-prep-course-reviews-discount-codes-78451.html
+ -- fetch #4: http://www.800score.com/gmat-home.html
+ -- fetch #5: http://www.800score.com/colorado.html
+ -- fetch #6: http://www.gbcwcu.org/gmatprep.html
+ -- fetch #7: http://www.daniels.du.edu/admissions/preparegmat/gmatprepcourses.html
+ -- fetch #8: http://www.csuohio.edu/ce/catalog/testprep.html
+ -- fetch #9: http://www.testmasters.com/gmat.html
+ -- fetch #10: http://www.testprepreview.com/gmat_practice.htm
+
+Starting query segmentation ranking --- 13:29:51, 08-29-2011
+
+Enter chkWkTopic: gmat prep
+
+Enter calConditionalProb:0 6 7368 2500
+
+Enter chkWkTopic: prep classes
+
+Enter calConditionalProb:8.0017247232697e-10 11 8542 2500
+
+Enter chkWkTopic: gmat prep classes
+
+Enter calConditionalProb:0 0 0 2500
+
+ranked query topics:gmat prep classes,prep classes,gmat prep
+
+top topic:context:gmat prep classes:
+
+Enter chkWkTopic: gmat prep classes
+
+top topic:context:prep classes:gmat
+
+original term:gmat
+
+term:gmat
+
+Enter chkWkTopic: gmat
+
+Enter chkWkTopic: prep classes
+
+top topic:context:gmat prep:classes
+
+original term:classes
+
+term:classes
+
+Enter chkWkTopic: classes
+
+Enter chkWkTopic: gmat prep
+
+
+Produce result --- 13:29:51, 08-29-2011
+
+Original query:gmat prep classes
+Segmented query:"gmat prep classes" ||"prep classes" gmat||"gmat prep" classes:22562196 ||::8
+
+Infile  = espn sports, 9
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:espn sport
+
+
+Starting query segmentation --- 13:29:51, 08-29-2011
+
+
+Starting Google search --- 13:29:51, 08-29-2011
+
+Searching Google (q9=espn sports)
+ -- extracting links & snippets
+    7 HTMLs found so far
+ -- extracting links & snippets
+    25 HTMLs found so far
+ -- fetch #1: http://www.washingtonpost.com/sports/from-predictions-to-highlights-sports-on-tv-has-nothing-on-hurricane-coverage/2011/08/29/gIQAD6BPnJ_story.html
+ -- fetch #2: http://www.washingtonpost.com/sports/olympic-basketball-qualifying-games-from-europe-and-americas-available-on-espn-networks/2011/08/29/gIQA2alMnJ_story.html
+ -- fetch #3: http://www.tribecafilm.com/year-round/sportsfest/12883382.html
+ -- fetch #4: http://www.tvchannelsfree.com/watch/1545/ESPN.html
+ -- fetch #5: http://android.podnova.com/software/566806.htm
+ -- fetch #6: http://www.espn1530.com/pages/lancesBlog.html
+ -- fetch #7: http://www.nytimes.com/1997/09/04/business/disney-s-espn-unit-buying-classic-sports-programmer.html
+ -- fetch #8: http://droidmill.com/espn-sports-for-android-134997.html
+ -- fetch #9: http://www.ehow.co.uk/how_8430766_contact-espn-sports-writers.html
+ -- fetch #10: http://www.brothersoft.com/games/download/espn-sports-center.html
+w1, w2: espn,sport
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+159 155
+
+
+Produce result --- 13:30:00, 08-29-2011
+
+Original query:espn sports
+Segmented query:"espn sports" ::9
+
+Infile  = arizona game and fish, 10
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:arizona game fish
+
+
+Starting query segmentation --- 13:30:00, 08-29-2011
+
+
+Starting Google search --- 13:30:00, 08-29-2011
+
+Searching Google (q10=arizona game and fish)
+ -- extracting links & snippets
+!!snippet for result 113 NOT FOUND!!
+    23 HTMLs found so far
+ -- fetch #1: http://www.azgfd.gov/eservices/draw.shtml
+ -- fetch #2: http://www.azgfd.gov/h_f/hunting_rules.shtml
+ -- fetch #3: http://www.azgfd.gov/eservices/licenses.shtml
+ -- fetch #4: http://www.azgfd.gov/inside_azgfd/agency_directory.shtml
+ -- fetch #5: http://www.azgfd.gov/h_f/hunting_fishing.shtml
+ -- fetch #6: http://www.azgfd.gov/inside_azgfd/employment.shtml
+ -- fetch #7: http://azgfd.net/artman/publish/NewsMedia/Arizona-Game-and-Fish-expresses-concerns-over-proposed-cuts-to-critical-programs-that-help-states-manage-and-conserve-wildlife.shtml
+ -- fetch #8: http://azgfd.net/artman/publish/NewsMedia/Court-reaffirms-Arizona-Game-and-Fish-held-valid-permit-in-jaguar-case.shtml
+ -- fetch #9: http://www.gf.state.az.us/h_f/fish_consumption.shtml
+ -- fetch #10: http://www.boat-ed.com/az/handbook/agency.htm
+Enter chkWkTopic:  fish
+
+Enter chkWkTopic:  fish
+
+Enter chkWkTopic: arizona game
+
+
+Starting query segmentation ranking --- 13:30:48, 08-29-2011
+
+Enter chkWkTopic: game 
+
+Enter calConditionalProb:4.59353697615821e-08 108 6986 2500
+
+Enter chkWkTopic: game  fish
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:3.20103488973488e-14 53 6986 2500
+
+Enter chkWkTopic:  fish
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:8.0017247232697e-10 157 6986 2500
+
+Enter chkWkTopic: arizona game
+
+Enter calConditionalProb:8.00178417021103e-10 46 6986 2500
+
+Enter chkWkTopic: arizona game 
+
+Enter calConditionalProb:8.00178417021103e-10 46 6986 2500
+
+Enter chkWkTopic: arizona game  fish
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:1.28055197093971e-18 0 0 2500
+
+ranked query topics: fish,game ,game  fish,arizona game,arizona game ,arizona game  fish
+
+top topic:context: fish:arizona game
+
+original term:arizona game
+
+term:arizona game
+
+Enter chkWkTopic: arizona game
+
+Enter chkWkTopic:  fish
+
+top topic:context:game :arizona fish
+
+original term:arizona fish
+
+term:arizona fish
+
+Enter chkWkTopic: arizona fish
+
+Enter chkWkTopic: game 
+
+top topic:context:game  fish:arizona
+
+original term:arizona
+
+term:arizona
+
+Enter chkWkTopic: arizona
+
+Enter chkWkTopic: game  fish
+
+
+Produce result --- 13:30:48, 08-29-2011
+
+Original query:arizona game  fish
+Segmented query:" fish" arizona game||"game :18723138" arizona fish||"game  fish" arizona:21883824 ||::10
+
+Infile  = poker tournaments, 11
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:poker tournament
+
+
+Starting query segmentation --- 13:30:48, 08-29-2011
+
+
+Produce result --- 13:30:48, 08-29-2011
+
+Original query:poker tournaments
+Segmented query:"poker tournaments:141837"::11
+
+Infile  = wedding budget calculator, 12
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:wedding budget calculator
+
+
+Starting query segmentation --- 13:30:48, 08-29-2011
+
+
+Starting Google search --- 13:30:48, 08-29-2011
+
+Searching Google (q12=wedding budget calculator)
+ -- extracting links & snippets
+    31 HTMLs found so far
+ -- fetch #1: http://www.ritzcarlton.com/en/Events/Weddings/Calculator.htm
+ -- fetch #2: http://www.eventsyourway.net/WeddingBudget.htm
+ -- fetch #3: http://www.free-online-calculator-use.com/wedding-budget-calculator.html
+ -- fetch #4: http://www.groomsonline.com/index.php/wedding-budget-calculator.html
+ -- fetch #5: http://www.weddingplannercoordinator.net/faq.html
+ -- fetch #6: http://www.weddingmanor.com/wedding_tools/wedding_budget.html
+ -- fetch #7: http://www.santa-maria-weddings.com/planning/wedding_budget_calculator.html
+ -- fetch #8: http://www.realsimple.com/holidays-entertaining/weddings/budget/wedding-cost-calculator-00000000008302/index.html
+ -- fetch #9: http://www.ehitched.com/wedding_planning/create_budget_list.htm
+!Mech->get TimeOut: Error GETing http://www.ehitched.com/wedding_planning/create_budget_list.htm: Alarm
+ at /home/hz3/workspace/epic_prog/sub/spidersub_2010.pl line 55
+ -- fetch #10: http://www.cityweddingguide.com/content/budget-calculator.html
+
+Starting query segmentation ranking --- 13:31:10, 08-29-2011
+
+Enter chkWkTopic: wedding budget calculator
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+Enter chkWkTopic: budget calculator
+
+Enter calConditionalProb:8.00178417021103e-10 44 5577 2500
+
+Enter chkWkTopic: wedding budget
+
+Enter calConditionalProb:8.00178417021103e-10 66 5251 2500
+
+ranked query topics:wedding budget,budget calculator,wedding budget calculator
+
+top topic:context:wedding budget:calculator
+
+original term:calculator
+
+term:calculator
+
+Enter chkWkTopic: calculator
+
+Enter chkWkTopic: wedding budget
+
+top topic:context:budget calculator:wedding
+
+original term:wedding
+
+term:wedding
+
+Enter chkWkTopic: wedding
+
+Enter chkWkTopic: budget calculator
+
+top topic:context:wedding budget calculator:
+
+Enter chkWkTopic: wedding budget calculator
+
+
+Produce result --- 13:31:11, 08-29-2011
+
+Original query:wedding budget calculator
+Segmented query:"wedding budget" calculator:7593 ||"budget calculator" wedding:32893 ||"wedding budget calculator" ||::12
+
+Infile  = the current, 13
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:current
+
+
+Starting query segmentation --- 13:31:11, 08-29-2011
+
+
+Produce result --- 13:31:11, 08-29-2011
+
+Original query:the current
+Segmented query:"the current:22562196"::13
+
+Infile  = rick warren, 14
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:rick warren
+
+
+Starting query segmentation --- 13:31:11, 08-29-2011
+
+
+Produce result --- 13:31:11, 08-29-2011
+
+Original query:rick warren
+Segmented query:"rick warren:735151"::14
+
+Infile  = lower heart rate, 15
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:lower heart rate
+
+
+Starting query segmentation --- 13:31:11, 08-29-2011
+
+
+Starting Google search --- 13:31:11, 08-29-2011
+
+Searching Google (q15=lower heart rate)
+ -- extracting links & snippets
+    34 HTMLs found so far
+ -- fetch #1: http://www.nemahealth.org/programs/healthcare/heart_rate_pulse.htm
+ -- fetch #2: http://www.ehow.com/how_5677967_reduce-heart-rate.html
+ -- fetch #3: http://www.heartmonitors.com/exercisetips/changing_heartrate.htm
+ -- fetch #4: http://www.heartmonitors.com/exercisetips/heart_rate_basics.htm
+ -- fetch #5: http://www.medicinenet.com/low_blood_pressure/page4.htm
+ -- fetch #6: http://www.medicinenet.com/calcium_channel_blockers/article.htm
+ -- fetch #7: http://www.naturalnews.com/028744_raisins_heart_rate.html
+ -- fetch #8: http://www.physorg.com/news202060977.html
+ -- fetch #9: http://lifestyle.iloveindia.com/lounge/how-to-lower-heart-rate-naturally-8553.html
+ -- fetch #10: http://www.exrx.net/Testing/HeartRate.html
+
+Starting query segmentation ranking --- 13:31:17, 08-29-2011
+
+Enter chkWkTopic: lower heart rate
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: heart rate
+
+Enter calConditionalProb:4.59353697615821e-08 332 11570 2500
+
+Enter chkWkTopic: lower heart
+
+Enter calConditionalProb:8.0017247232697e-10 28 11570 2500
+
+ranked query topics:heart rate,lower heart,lower heart rate
+
+top topic:context:heart rate:lower
+
+original term:lower
+
+term:lower
+
+Enter chkWkTopic: lower
+
+Enter chkWkTopic: heart rate
+
+top topic:context:lower heart:rate
+
+original term:rate
+
+term:rate
+
+Enter chkWkTopic: rate
+
+Enter chkWkTopic: lower heart
+
+top topic:context:lower heart rate:
+
+Enter chkWkTopic: lower heart rate
+
+
+Produce result --- 13:31:17, 08-29-2011
+
+Original query:lower heart rate
+Segmented query:"heart rate:304942" lower:22562196 ||"lower heart" rate:22562196 ||"lower heart rate" ||::15
+
+Infile  = ps 2 games, 16
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:game
+
+
+Starting query segmentation --- 13:31:17, 08-29-2011
+
+
+Starting Google search --- 13:31:17, 08-29-2011
+
+Searching Google (q16=ps 2 games)
+ -- extracting links & snippets
+    26 HTMLs found so far
+ -- fetch #1: http://ps2.ign.com/articles/772/772296p1.html
+ -- fetch #2: http://ps2.ign.com/index/games.html
+ -- fetch #3: http://ps3.ign.com/articles/793/793775p1.html
+ -- fetch #4: http://www.gamespot.com/ps2/index.html
+ -- fetch #5: http://www.gamespot.com/ps2/strategy/sims/index.html
+ -- fetch #6: http://www.gamespot.com/ps2/adventure/24thegame/index.html
+ -- fetch #7: http://www.gamespot.com/ps2/adventure/silenthillorigins/index.html
+ -- fetch #8: http://www.buy.com/cat/playstation-2-games-ps2-accessories-and-system/358.html
+ -- fetch #9: http://www.psxextreme.com/ps2-games.html
+ -- fetch #10: http://www.psxa2z.com/PS201L.html
+
+Starting query segmentation ranking --- 13:31:32, 08-29-2011
+
+Enter chkWkTopic: ps 2
+
+Enter calConditionalProb:8.0017247232697e-10 16624 8173 2500
+
+Enter chkWkTopic: 2 games
+
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+Enter chkWkTopic: ps 2 games
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:ps 2,2 games,ps 2 games
+
+top topic:context:ps 2:games
+
+original term:games
+
+term:games
+
+Enter chkWkTopic: games
+
+Enter chkWkTopic: ps 2
+
+top topic:context:2 games:ps
+
+original term:ps
+
+term:ps
+
+Enter chkWkTopic: ps
+
+Enter chkWkTopic: 2 games
+
+top topic:context:ps 2 games:
+
+Enter chkWkTopic: ps 2 games
+
+
+Produce result --- 13:31:32, 08-29-2011
+
+Original query:ps 2 games
+Segmented query:"ps 2" games:22562196 ||"2 games" ps:22562196 ||"ps 2 games" ||::16
+
+Infile  = diabetes education, 17
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:diabete education
+
+
+Starting query segmentation --- 13:31:32, 08-29-2011
+
+
+Produce result --- 13:31:32, 08-29-2011
+
+Original query:diabetes education
+Segmented query:"diabetes education:44677"::17
+
+Infile  = website design hosting, 18
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:website design hosting
+
+
+Starting query segmentation --- 13:31:32, 08-29-2011
+
+
+Starting Google search --- 13:31:32, 08-29-2011
+
+Searching Google (q18=website design hosting)
+ -- extracting links & snippets
+    2 HTMLs found so far
+ -- extracting links & snippets
+    5 HTMLs found so far
+ -- extracting links & snippets
+    7 HTMLs found so far
+ -- extracting links & snippets
+    10 HTMLs found so far
+ -- extracting links & snippets
+    20 HTMLs found so far
+ -- fetch #1: http://www.rezovation.com/dhp/rezovation_dhp.html
+ -- fetch #2: http://www.visibilityforversatility.com/web_design_hosting.htm
+ -- fetch #3: http://www.heritagewebdesign.com/design.html
+ -- fetch #4: http://www.capital-connection.com/marketing.html
+ -- fetch #5: http://www.thehostingnews.com/business-websites-need-seo-16136.html
+ -- fetch #6: http://www.designhosting.biz/ecommerce.html
+ -- fetch #7: http://www.allstarwebdesign.net/ref5.html
+ -- fetch #8: http://www.dallasprowebdesigners.com/website-design-hosting-solutions.html
+ -- fetch #9: http://www.acorn-is.com/services-pricing.htm
+ -- fetch #10: http://www.webdesign.org/site-maintenance/hosting-services/page-1.html
+
+Starting query segmentation ranking --- 13:31:43, 08-29-2011
+
+Enter chkWkTopic: website design hosting
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: website design
+
+Enter wikiDisambiguation:website design hosting
+
+Enter calConditionalProb:4.59353697615821e-08 26 4876 2500
+
+Enter chkWkTopic: design hosting
+
+Enter calConditionalProb:8.0017247232697e-10 23 4876 2500
+
+ranked query topics:website design,design hosting,website design hosting
+
+top topic:context:website design:hosting
+
+original term:hosting
+
+term:hosting
+
+Enter chkWkTopic: hosting
+
+Enter chkWkTopic: website design
+
+top topic:context:design hosting:website
+
+original term:website
+
+term:website
+
+Enter chkWkTopic: website
+
+Enter chkWkTopic: design hosting
+
+top topic:context:website design hosting:
+
+Enter chkWkTopic: website design hosting
+
+
+Produce result --- 13:31:43, 08-29-2011
+
+Original query:website design hosting
+Segmented query:"website design:22562196" hosting:22562196 ||"design hosting" website:33898 ||"website design hosting" ||::18
+
+Infile  = elliptical trainer, 19
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:elliptical trainer
+
+
+Starting query segmentation --- 13:31:43, 08-29-2011
+
+
+Produce result --- 13:31:43, 08-29-2011
+
+Original query:elliptical trainer
+Segmented query:"elliptical trainer:1393614"::19
+
+Infile  = cell phones, 20
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:cell phone
+
+
+Starting query segmentation --- 13:31:43, 08-29-2011
+
+
+Produce result --- 13:31:43, 08-29-2011
+
+Original query:cell phones
+Segmented query:"cell phones:22562196"::20
+
+Infile  = pampered chef, 21
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:pampered chef
+
+
+Starting query segmentation --- 13:31:43, 08-29-2011
+
+
+Produce result --- 13:31:43, 08-29-2011
+
+Original query:pampered chef
+Segmented query:"pampered chef:888155"::21
+
+Infile  = dogs for adoption, 22
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:dog adoption
+
+
+Starting query segmentation --- 13:31:43, 08-29-2011
+
+
+Starting Google search --- 13:31:43, 08-29-2011
+
+Searching Google (q22=dogs for adoption)
+ -- extracting links & snippets
+    18 HTMLs found so far
+ -- fetch #1: http://www.petfinder.com/shelters/MO256.html
+ -- fetch #2: http://www.bradenton.com/2011/08/29/3452221/manatee-animal-services-offers.html
+ -- fetch #3: http://www.petswithdisabilities.org/adopt.html
+ -- fetch #4: http://www.animalfriendsrescue.org/available/dogsavailable.html
+ -- fetch #5: http://www.huffingtonpost.com/2011/05/24/war-dog-adoption-navy-seal-cairo_n_866392.html
+ -- fetch #6: http://www.doggeek.com/Adoptions/index.shtml
+ -- fetch #7: http://www.dogs-4life.com/abused-dog-adoption.html
+ -- fetch #8: http://www.dogadoptionnetwork.org/links.html
+ -- fetch #9: http://www.awla.org/adopt-a-pet.shtml
+ -- fetch #10: http://www.anewleashonlifedogrescue.org/rehome.html
+
+Starting query segmentation ranking --- 13:31:53, 08-29-2011
+
+Enter chkWkTopic: dogs  adoption
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: dogs 
+
+Enter wikiDisambiguation:dogs  adoption
+
+Enter calConditionalProb:4.59353697615821e-08 834 18418 2500
+
+Enter chkWkTopic:  adoption
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1423.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1445.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1369.
+Enter calConditionalProb:8.0017247232697e-10 168 18418 2500
+
+ranked query topics:dogs , adoption,dogs  adoption
+
+top topic:context:dogs :adoption
+
+original term:adoption
+
+term:adoption
+
+Enter chkWkTopic: adoption
+
+Enter chkWkTopic: dogs 
+
+top topic:context: adoption:dogs
+
+original term:dogs
+
+term:dogs
+
+Enter chkWkTopic: dogs
+
+Enter chkWkTopic:  adoption
+
+top topic:context:dogs  adoption:
+
+Enter chkWkTopic: dogs  adoption
+
+
+Produce result --- 13:31:53, 08-29-2011
+
+Original query:dogs  adoption
+Segmented query:"dogs :23287" adoption:38534 ||" adoption" dogs:22562196 ||"dogs  adoption" ||::22
+
+Infile  = disneyland hotel, 23
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:disneyland hotel
+
+
+Starting query segmentation --- 13:31:53, 08-29-2011
+
+
+Produce result --- 13:31:53, 08-29-2011
+
+Original query:disneyland hotel
+Segmented query:"disneyland hotel:22562196"::23
+
+Infile  = orange county convention center, 24
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:orange county convention center
+
+
+Starting query segmentation --- 13:31:53, 08-29-2011
+
+
+Produce result --- 13:31:54, 08-29-2011
+
+Original query:orange county convention center
+Segmented query:"orange county convention center:6961997"::24
+
+Infile  = the music man, 25
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:music man
+
+
+Starting query segmentation --- 13:31:54, 08-29-2011
+
+
+Produce result --- 13:31:54, 08-29-2011
+
+Original query:the music man
+Segmented query:"the music man:97723"::25
+
+Infile  = the secret garden, 26
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:secret garden
+
+
+Starting query segmentation --- 13:31:54, 08-29-2011
+
+
+Produce result --- 13:31:54, 08-29-2011
+
+Original query:the secret garden
+Segmented query:"the secret garden:410873"::26
+
+Infile  = map of the united states, 27
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:map united state
+
+
+Starting query segmentation --- 13:31:54, 08-29-2011
+
+
+Produce result --- 13:31:54, 08-29-2011
+
+Original query:map of the united states
+Segmented query:"map of the united states:18618239"::27
+
+Infile  = solar panels, 28
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:solar panel
+
+
+Starting query segmentation --- 13:31:54, 08-29-2011
+
+
+Produce result --- 13:31:54, 08-29-2011
+
+Original query:solar panels
+Segmented query:"solar panels:22562196"::28
+
+Infile  = alexian brothers hospital, 29
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:alexian brother hospital
+
+
+Starting query segmentation --- 13:31:54, 08-29-2011
+
+
+Starting Google search --- 13:31:54, 08-29-2011
+
+Searching Google (q29=alexian brothers hospital)
+ -- extracting links & snippets
+!!snippet for result 106 NOT FOUND!!
+!!snippet for result 108 NOT FOUND!!
+    25 HTMLs found so far
+ -- fetch #1: http://www.prnewswire.com/news-releases/alexian-brothers-hospital-network-and-sanford-brown-schools-announce-new-alliance-114646859.html
+ -- fetch #2: http://www.prnewswire.com/news-releases/alexian-brothers-hospital-network-named-to-2010-list-of-top-places-to-work-112871309.html
+ -- fetch #3: http://alcoholism.about.com/od/tx_il/qt/il505.htm
+ -- fetch #4: http://www.redorbit.com/news/health/1973352/alexian_brothers_hospital_network_named_to_2010_list_of_top/index.html
+ -- fetch #5: http://planitnorthwest.nwherald.com/alexian+brothers+hospital+network.9.79294752p.home.html
+ -- fetch #6: http://www.hospital-data.com/hospitals/ALEXIAN-BROTHERS-HOSPITAL-SAN-JOSE.html
+ -- fetch #7: http://www.brainygeography.com/features/MO.hospital/alexianbrothershospital.html
+ -- fetch #8: http://www.hospitalvictims.com/Pages/Missouri_hospital_prices/St.Louis/Alexian_Brothers_Hospital_total.htm
+ -- fetch #9: http://local.meridianstar.com/alexian+brothers+hospital+network.9.53692718p.home.html
+ -- fetch #10: http://usa.indettaglio.it/eng/29/510/765623.html
+
+Starting query segmentation ranking --- 13:32:06, 08-29-2011
+
+Enter chkWkTopic: alexian brothers
+
+Enter calConditionalProb:4.59353697615821e-08 99 4173 2500
+
+Enter chkWkTopic: brothers hospital
+
+Enter calConditionalProb:8.0017247232697e-10 80 4173 2500
+
+Enter chkWkTopic: alexian brothers hospital
+
+Enter calConditionalProb:6.35125970185493e-17 0 0 2500
+
+ranked query topics:alexian brothers,brothers hospital,alexian brothers hospital
+
+top topic:context:alexian brothers:hospital
+
+original term:hospital
+
+term:hospital
+
+Enter chkWkTopic: hospital
+
+Enter chkWkTopic: alexian brothers
+
+top topic:context:brothers hospital:alexian
+
+original term:alexian
+
+term:alexian
+
+Enter chkWkTopic: alexian
+
+Enter chkWkTopic: brothers hospital
+
+top topic:context:alexian brothers hospital:
+
+Enter chkWkTopic: alexian brothers hospital
+
+
+Produce result --- 13:32:06, 08-29-2011
+
+Original query:alexian brothers hospital
+Segmented query:"alexian brothers:5198401" hospital:18994221 ||"brothers hospital" alexian:5198401 ||"alexian brothers hospital" ||::29
+
+Infile  = indexed annuity, 30
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:indexed annuity
+
+
+Starting query segmentation --- 13:32:06, 08-29-2011
+
+
+Produce result --- 13:32:06, 08-29-2011
+
+Original query:indexed annuity
+Segmented query:"indexed annuity:22046794"::30
+
+Infile  = wilson antenna, 31
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:wilson antenna
+
+
+Starting query segmentation --- 13:32:06, 08-29-2011
+
+
+Starting Google search --- 13:32:06, 08-29-2011
+
+Searching Google (q31=wilson antenna)
+ -- extracting links & snippets
+    44 HTMLs found so far
+ -- fetch #1: http://www.wearecb.com/store/wilson-antenna-m-114.html
+ -- fetch #2: http://www.walcottcb.com/flex3-wilson-flexible-fiberglass-antenna-p-542.html
+ -- fetch #3: http://www.walcottcb.com/wilson-little-wil-magnet-mount-cb-radio-antenna-p-395.html
+ -- fetch #4: http://www.alternativewireless.com/cellular-antennas/cell-phone-antennas/wilson-antennas.html
+ -- fetch #5: http://www.alternativewireless.com/cellular-antennas/directconnect-amplifiers.html
+ -- fetch #6: http://www.tessco.com/yts/partner/manufacturer_list/vendors/wilson_cellular/index.html
+ -- fetch #7: http://radioproshop.com/wilson/wilson.htm
+ -- fetch #8: http://www.overstock.com/Electronics/Wilson-Magnetic-Mount-Little-Wil-CB-Antenna/2596316/product.html
+ -- fetch #9: http://www.thenerds.net/WILSON_ELECTRONICS.Wilson_Antenna_Splitter.859959.html
+ -- fetch #10: http://www.accessorygeeks.com/antennaadapter.html
+w1, w2: wilson,antenna
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+367 502
+
+
+Produce result --- 13:32:18, 08-29-2011
+
+Original query:wilson antenna
+Segmented query:"wilson antenna" ::31
+
+Infile  = flame designs, 32
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:flame design
+
+
+Starting query segmentation --- 13:32:18, 08-29-2011
+
+
+Starting Google search --- 13:32:18, 08-29-2011
+
+Searching Google (q32=flame designs)
+ -- extracting links & snippets
+    34 HTMLs found so far
+ -- fetch #1: http://www.clipart-design.com/flame_designs_clipart_pro.htm
+ -- fetch #2: http://www.badasspaint.com/hall-of-flames.htm
+ -- fetch #3: http://azautographics.com/Flame%20Designs.htm
+ -- fetch #4: http://www.sicskinz.com/flames.html
+ -- fetch #5: http://airbrushalleyandprographics.com/page/1ogrl/Airbrush_Helmets/Flame_Designs.html
+ -- fetch #6: http://www.xitclub.com/wallpapers/36786-fire-flame-design-hq-wallpapers.html
+ -- fetch #7: http://www.hotrodders.com/forum/p-shop-some-flame-designs-my-32-a-89105.html
+ -- fetch #8: http://www.tattooblog.info/tattoo-flame-designs.html
+ -- fetch #9: http://www.forzacentral.com/forum/paintshop/5495-looking-impressive-flame-designs.html
+ -- fetch #10: http://flame-designs.com/service.html
+!Mech->get TimeOut: Error GETing http://flame-designs.com/service.html: Alarm
+ at /home/hz3/workspace/epic_prog/sub/spidersub_2010.pl line 55
+w1, w2: flame,design
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+135 117
+
+
+Produce result --- 13:32:44, 08-29-2011
+
+Original query:flame designs
+Segmented query:"flame designs" ::32
+
+Infile  = dog heat, 33
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:dog heat
+
+
+Starting query segmentation --- 13:32:44, 08-29-2011
+
+
+Starting Google search --- 13:32:44, 08-29-2011
+
+Searching Google (q33=dog heat)
+ -- extracting links & snippets
+    47 HTMLs found so far
+ -- fetch #1: http://www.dogbreedinfo.com/breedingheat.htm
+ -- fetch #2: http://www.dogbreedinfo.com/heat.htm
+ -- fetch #3: http://www.dogchatforum.com/dog_in_heat.htm
+ -- fetch #4: http://www.gifts-for-dog-lovers.com/dogs-in-heat.html
+ -- fetch #5: http://www.mytopdogs.com/dog-in-heat.shtml
+ -- fetch #6: http://www.talktothevet.com/ARTICLES/DOGS/Pdogsheatcycle.HTM
+ -- fetch #7: http://phoenix.about.com/od/animvet/a/dogsheat_2.htm
+ -- fetch #8: http://dogs.about.com/od/dogandpuppyhealth/qt/heatstroke.htm
+ -- fetch #9: http://www.usatoday.com/sports/basketball/nba/heat/2011-05-16-rebounding-game-1_N.htm
+ -- fetch #10: http://www.whole-dog-journal.com/issues/10_8/features/Canine-Heat-Stroke-Prevention_15954-1.html
+w1, w2: dog,heat
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1318.
+536 211
+
+
+Produce result --- 13:32:50, 08-29-2011
+
+Original query:dog heat
+Segmented query:"dog heat" ::33
+
+
+Processed 33 queries
+
+
+Ending test_wikiqrysgt_06.pl --- 13:32:50, 08-29-2011
+
+  CPU seconds = 38.270 (UT),  0.290 (ST)
+  REAL TIME   = 0:4:4 (hh:mn:ss)
+

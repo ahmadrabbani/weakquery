@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" >
+<head>
+    <meta charset="utf-8">
+    <title>Analysis Board, PGN Editor, Chess Diagram Tool - Chess.com</title>
+    
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="P3P" href="/p3p.xml#policy" content="CP=\"ALL DSP COR LAW CURa ADMa DEVa TAIa OUR BUS IND ONL UNI COM NAV DEM CNT\"">
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+
+
+<link href="http://cssjs.chesscomfiles.com/css/chess.v2011110802.css" type="text/css" rel="stylesheet">
+
+
+    <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53057-1']);
+    _gaq.push(['_setAllowHash', false]);
+            _gaq.push(['_setDomainName', 'www.chess.com']);
+        _gaq.push(['_trackPageview']);
+    </script>
+
+
+                <link href="http://cssjs.chesscomfiles.com/js/chess/css/chess.v2011110802.css" type="text/css" rel="stylesheet">
+            <link href="http://cssjs.chesscomfiles.com/css/play.v2011110802.css" type="text/css" rel="stylesheet">
+            <link href="http://cssjs.chesscomfiles.com/css/explore.v2011110802.css" type="text/css" rel="stylesheet">
+            <link href="http://cssjs.chesscomfiles.com/js/dojo2/dojo2.css" type="text/css" rel="stylesheet">
+            <link href="http://cssjs.chesscomfiles.com/css/playsimple.v2011110802.css" type="text/css" rel="stylesheet">
+    
+
+    
+<!--[if lt IE 7]><link href="http://cssjs.chesscomfiles.com/css/chess_ie6.css" type="text/css" rel="stylesheet"><![endif]-->
+<!--[if IE 7]><link href="http://cssjs.chesscomfiles.com/css/chess_ie7.css" type="text/css" rel="stylesheet"><![endif]-->
+
+    </head>
+<body class="dojochess">
+
+
+
+<form method="post" id="DiagramForm" action="/analysis-board-editor.html">
+
+<a name="page_top"></a>
+
+<div id="wrapper">
+
+    
+    <div id="header">
+    
+<div id="logo">
+    <h1><a href="http://www.chess.com">Chess</a></h1>
+    <span class="dotcom">.com</span> <a href="http://www.chess.com/" class="logolink"></a>
+</div>
+
+        <div id="topright">
+    <div id="rightmenu">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                        <a href="https://secure.chess.com/register.html"><strong>Register</strong></a> |
+            <a href="http://www.chess.com/help.html">Help</a> |
+            <a href="https://secure.chess.com/login.html">Login</a>
+
+            </div>
+    <div id="search">
+        <div id="search_form_trg" style="position: relative;">
+            <input type="text" name="q" id="global_search_q" maxlength="128" size="15" value="" title="Enter the terms you wish to search for." onkeypress="if(checkForEnter(this, event)) return doSearch();">
+            <input type="button" name="op" value="Search" onClick="return doSearch();">
+            <!-- <noscript><a href="/search.html">Search the Site</a> &raquo;</noscript> -->
+        </div>
+    </div>
+</div>
+<!-- /#topright --></div>
+<!-- /#header -->
+
+<div id="navholder" class="clearfix">
+    <div id="navleft"></div>
+    <div id="navright"></div>
+    <div id="nav" class="clearfix">
+        <ul id="tabs">
+            <li>
+                <a href="http://www.chess.com/play/" class="navtab ctype menuplay">Play</a>
+                <ul>
+                                            <li><a href="http://www.chess.com/echess/">Online Chess</a></li>
+                                        <li><a href="http://www.chess.com/tournaments/">Tournaments</a></li>
+                                            <li><a href="http://www.chess.com/livechess/">Live Chess</a></li>
+                                        <li><a href="http://www.chess.com/play/computer.html">Against the Computer</a></li>
+                    <li><a href="http://www.chess.com/votechess/">Vote Chess</a></li>
+                    <li><a href="#"><strong>Social Sites</strong></a></li>
+                    <li><a href="http://www.facebook.com/chessplay" target="_blank" rel="nofollow">- Play Chess on Facebook</a></li>
+                    <li><a href="http://www.google.com/ig/directory?type=gadgets&url=ig.hosted.chesscomapps.com/api/gadget_def.php" target="_blank" rel="nofollow">- Play Chess on iGoogle</a></li>
+                    <li><a href="http://www.chess.com/mobile-chess.html"><strong>Mobile</strong></a></li>
+                    <li><a href="http://www.chess.com/play/iphone.html">- Chess for iPhone</a></li>
+                    <li><a href="http://www.chess.com/play/mobile-chess.html">- Mobile Phone Chess</a></li>
+                    <li><a href="http://www.chess.com/play/android.html">- Chess for Android</a></li>
+                    <li><a href="http://www.chess.com/play/palm.html">- Chess for Palm Pre</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.chess.com/learn.html" class="navtab ctype menulearn">Learn</a>
+                <ul>
+                    <li><a href="http://www.chess.com/learn-how-to-play-chess.html"><strong>Chess Rules &amp; Basics</strong></a></li>
+                    <li><a href="http://www.chess.com/videos"><strong>Video Lessons</strong></a></li>
+                    <li><a href="http://www.chess.com/games/"><strong>Openings</strong></a></li>
+                    <li><a href="http://www.chess.com/explorer/">- Game Explorer</a></li>
+                    <li><a href="http://www.chess.com/openings/">- Book Openings</a></li>
+                    <li><a href="http://www.chess.com/tactics/"><strong>Tactics</strong></a></li>
+                    <li><a href="http://www.chess.com/tactics/">- Tactics Trainer</a></li>
+                    <li><a href="http://www.chess.com/forum/daily_puzzle.html">- Daily Puzzle</a></li>
+                    <li><a href="http://www.chess.com/chessmentor/"><strong>Strategy</strong></a></li>
+                    <li><a href="http://www.chess.com/chessmentor/">- Chess Mentor</a></li>
+                    <li><a href="http://www.chess.com/articles">- Articles</a></li>
+                    <li><a href="http://www.chess.com/computer-workout/"><strong>Computer Workout</strong></a></li>
+                    <li><a href="http://www.chess.com/coaches/"><strong>Find a Coach</strong></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.chess.com/read.html" class="navtab ctype menuread">Read</a>
+                <ul>
+                    <li><a href="http://www.chess.com/articles">Articles</a></li>
+                    <li><a href="http://www.chess.com/daily-columns.html">Daily Columns</a></li>
+                    <li><a href="http://www.chess.com/news">News</a></li>
+                    <li><a href="http://www.chess.com/blog/">Blogs</a></li>
+                    <li><a href="http://www.chess.com/chessopedia/">Chessopedia</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.chess.com/forum/" class="navtab ctype menuforum">Forums</a>
+                <ul>
+                    <li><a href="http://www.chess.com/forum/unanswered_posts.html">Unanswered Posts</a></li>
+                    <li><a href="http://www.chess.com/forum/new_posts.html">New Unread Posts</a></li>
+                    <li><a href="http://www.chess.com/forum/hot_topics.html">Today's Hot Topics</a></li>
+                    <li><a href="http://www.chess.com/forum/my_tracked_topics.html">Topics I am Tracking</a></li>
+                    <li><a href="http://www.chess.com/forum/my_posted_in_topics.html">Topics I Have Posted In</a></li>
+                    <li><a href="http://www.chess.com/forum/my_topics.html">Topics I Have Started</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.chess.com/resources.html" class="navtab ctype menuresources">Resources</a>
+                <ul>
+                    <li><a href="http://www.chess.com/analysis-board-editor.html">Analysis Board &amp; Editor</a></li>
+                    <li><a href="http://www.chess.com/equipment">Shop Online</a></li>
+                    <li><a href="http://www.chess.com/downloads">Downloads</a></li>
+                    <li><a href="http://chesscom.ourtoolbar.com/" target="_blank" rel="nofollow">Browser Toolbar</a></li>
+                    <li><a href="http://www.chess.com/widgets/">Widgets &amp; Badges</a></li>
+                    <li><a href="http://www.chess.com/site_demo_video.html">Welcome Video</a></li>
+                    <li><a href="http://www.chess.com/sitemap.html">Site Map</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.chess.com/members/"  class="navtab ctype menumembers">Members</a>
+                <ul>
+                    <li><a href="http://www.chess.com/members/">Search Members</a></li>
+                    <li><a href="http://www.chess.com/home/invite_friends.html">Invite Friends</a></li>
+                    <li><a href="http://www.chess.com/members/titled_players.html">Titled Players</a></li>
+                    <li><a href="http://www.chess.com/members/member_countries.html">Country List</a></li>
+                    <li><a href="http://www.chess.com/photos/">Photos</a></li>
+                    <li><a href="http://www.chess.com/membership.html?c=navbar"><span class="ctype cstar">Memberships</span></a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.chess.com/chessgroups" class="navtab ctype menugroups">Groups</a>
+                <ul>
+                    <li><a href="http://www.chess.com/chessgroups">All Groups &amp; Teams</a></li>
+                    <li><a href="http://www.chess.com/groups/team_match_leaderboard.html">Match Leaderboard</a></li>
+                    <li><a href="http://www.chess.com/groups/votechess_leaderboard.html">Vote Leaderboard</a></li>
+                    <li><a href="http://www.chess.com/groups/mygroups.html">My Groups &amp; Teams</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.chess.com/local.html" class="navtab ctype menulocal">Local</a>
+                <ul>
+                    <li><a href="http://www.chess.com/chess-tournaments">Tournaments</a></li>
+                    <li><a href="http://www.chess.com/clubs">Clubs</a></li>
+                    <li><a href="http://www.chess.com/coaches">Coaches</a></li>
+                    <li><a href="http://www.chess.com/map/">Maps</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.chess.com/fun.html" class="navtab ctype menufun">Fun</a>
+                <ul>
+                    <li><a href="http://www.chess.com/tv">Chess.com TV</a></li>
+                    <li><a href="http://www.chess.com/quiz/">Endless Quiz</a></li>
+                    <li><a href="http://www.chess.com/site_trophy_list.html">Trophies</a></li>
+                    <li><a href="http://www.chess.com/free-videos">Free Videos</a></li>
+                    <li><a href="http://www.chess.com/surveys">Surveys</a></li>
+                    <li><a href="http://www.chess.com/votechess/">Vote Chess</a></li>
+                    <li><a href="http://www.chesscomvideos.com/" target="_blank">Chess.com Podcast</a></li>
+                    <li><a href="http://www.chess.com/article/view/famous-chess-quotes">Chess Quotes</a></li>
+                    <li><a href="http://www.chess.com/articles/fun+trivia">Fun Articles</a></li>
+                    <li><a href="http://www.chesskid.com/" target="_blank">ChessKid.com</a></li>
+                </ul>
+            </li>
+                            <li class="lihome"><span id="myhome">&nbsp;</span></li>
+                    </ul>
+    </div>
+</div>
+<!-- /#navholder -->
+           
+
+    <div id="main" class="clearfix">
+
+        <script>
+            var Config = {
+                "application.version": 2011110802,
+                "cometd.url": "/cometd",
+                "domain.main": "http://www.chess.com",
+                "domain.static": "http://cssjs.chesscomfiles.com",
+                "domain.files": "http://files.chesscomfiles.com",
+                "domain.live": "http://live.chess.com",
+                "domain.voice": "rtmp://voice.chess.com",
+                "domain.cssjs": "http://cssjs.chesscomfiles.com",
+                "domain.images": "http://images.chesscomfiles.com",
+                "domain.avatars": "http://avatars.chesscomfiles.com"
+            };
+        </script><style type="text/css">
+/* Bringing one style rule needed from standar game editor */
+div.notationHorizontal span.focusNode, div.normal div.notationHorizontal span.focusNode {
+  background: #77FF77;
+}
+</style>
+
+  <div style="clear: both;">
+  <div style="float:left; display:inline; margin:10px 20px 10px 10px; overflow: hidden; width: 436px;">
+    <div class="bs45 bs45" style="margin: 12px auto 4px;">
+    <div class="brd">
+      <div class="loadboard45 chess_viewer" id="analysisBoard"><!--{
+            moveOutputField: "email_chess_move",
+            submitButton: "", // required if not viewOnly
+            cancelButton: "", // optional
+            autoSubmit: false,
+            colorScheme: "green",
+            pieceStyle: "book",
+            boardCoords: false,
+                        boardFlip: false,
+            analyzeMode: true,
+            viewOnly: false,
+            currentStateButton: "currentstate", // optional
+            boardSize: 45,
+            markLastMoveFrom: "#ff9", // optional
+            markLastMoveTo: "#ff3", // optional
+            markCurrentMoveFrom: "#6cf", // optional
+            markCurrentMoveTo: "#39f", // optional
+            topInfoDiv: "", // optional
+            bottomInfoDiv: "", // optional
+            forwardButton1: "forwardbutton1", // optional
+            forwardButton10: "forwardbutton10", // optional
+            forwardButtonEnd: "forwardbuttonend", // optional
+            backwardButton1: "backwardbutton1", // optional
+            backwardButton10: "backwardbutton10", // optional
+            backwardButtonBegin: "backwardbuttonbegin", // optional
+            moveListControl: "notation",
+            moveListItemClass: "gotomove",
+            moveListItemPrefix: "gotomoveid",
+            moveAnimation: true,
+            moveAnimationSpeed: "fast",
+            pgnBodyElement: "pgnStuff"
+
+      }--></div>
+      <input type="hidden" name="email_chess_move" id="email_chess_move" value="" />
+
+      <div class="loadboard53" id="divBoard" style="display: none"><!--{
+      moveOutputField: "email_chess_move",
+      submitButton: "", // required if not viewOnly
+      cancelButton: "", // optional
+      colorScheme: "green",
+      pieceStyle: "book",
+      boardCoords: false,
+            boardFlip: false,
+      boardSize: 45,
+      dragAndDrop: true,
+      viewOnly: false,
+      moveAnimation: true,
+      moveAnimationSpeed: "fast"
+      }--></div>
+    </div>
+    </div>
+  </div>
+
+  <div style="float:right; margin:10px; width:454px; height: 470px;">
+    <p class="midtabs" style="text-align: left;" id="tabList"><a href="#" onclick="javascript:return selectTab(1);" class="selected">Analysis Board</a> | <a href="#" onclick="javascript:return selectTab(2);">Position Setup</a> | <a href="#" onclick="javascript:return selectTab(3);">Game Editor</a></p>
+
+    <div id="tab1">
+
+  <div id="notation"></div>
+
+    <div style="margin: 12px 2px; font-size: 10px;">
+      <input id="backwardbuttonbegin" type="button" value="|&lt;" class="chess_gamenavbutton"> <input id="backwardbutton10" type="button" value="&lt;&lt;" class="chess_gamenavbutton"> <input id="backwardbutton1" type="button" value="&lt;" class="chess_gamenavbutton"> <input id="forwardbutton1" type="button" value="&gt;" class="chess_gamenavbutton"> <input id="forwardbutton10" type="button" value="&gt;&gt;" class="chess_gamenavbutton"> <input id="forwardbuttonend" type="button" value="&gt;|" class="chess_gamenavbutton"> &nbsp; <input type="button" class="chess_gamenavbutton" value="Initial Position" onclick="javascript:resetAnalysisBoard();"> <input type="button" class="chess_gamenavbutton" value="New Board" onclick="javascript:clearAnalysisBoard();">
+    </div>
+
+    <div style="font-size: 10px;">
+      <input type="button" class="chess_gamenavbutton" value="Paste FEN" onclick="javascript:pasteFenDialog.show();">
+      <input type="button" class="chess_gamenavbutton" value="Paste PGN" onclick="javascript:pastePgnDialog.show();">
+    </div>
+
+    <div style="margin-top: 4px;">
+      <input id="inputBoardFlip1" type="checkbox" onclick="javascript:analysisFlipBoard();"> Flip Board <input id="inputBoardCoords1" type="checkbox" onclick="javascript:analysisSwitchCoords();"> Show coordinates
+      <input id="legalMoves" type="checkbox" onclick="javascript:switchLegalMoves();"> Enforce Legal Moves
+    </div>
+
+    </div>
+
+
+  <div id="tab2" style="display: none;">
+    <div id="divNewPieces" style="border: 1px solid #fc0; background-color: #ffc; width: 185px; margin: 4px 0 10px;">
+
+    </div>
+
+    <div style="margin-top: 8px; font-size: 10px;" >
+    <input id="buttonResetBoard" type="button" class="chess_gamenavbutton" value="Reset Board">
+    <input id="buttonClearBoard" type="button" class="chess_gamenavbutton" value="Clear Board">
+    <input type="button" class="chess_gamenavbutton" value="Paste FEN" onclick="javascript:pasteFenDialog.show()">
+    </div>
+
+    <div style="margin-top: 8px; font-size: 10px;">
+    <input id="" type="button" class="chess_gamenavbutton" value="Copy FEN to Clipboard" onclick="javascript:showFenString()">
+    </div>
+
+    <div style="margin-top: 4px;">
+    <input id="inputBoardFlip2" type="checkbox"> Flip Board <input id="inputBoardCoords2" type="checkbox"> Show coordinates
+    </div>
+
+    <table border="0" cellpadding="6px" cellspacing="0">
+    <tr>
+      <td valign="top"><strong>Side to Move:</strong><br>
+      <input class="inputSideToMove" name="radiogroup5" value="1" type="radio"> White<br>
+      <input class="inputSideToMove" name="radiogroup5" value="2" type="radio"> Black</td>
+
+      <td valign="top"><strong>Castling Allowed:</strong><br>
+      <input class="inputCastling" value="wk" type="checkbox"> White (0-0)<br>
+      <input class="inputCastling" value="wq" type="checkbox"> White (0-0-0)</td>
+
+      <td valign="top"><br>
+      <input class="inputCastling" value="bk" type="checkbox"> Black (0-0)<br>
+      <input class="inputCastling" value="bq" type="checkbox"> Black (0-0-0)<br></td>
+    </tr>
+    </table>
+
+    <div style="margin-top: 4px;">
+    <strong>Game Details:</strong>
+
+    <table border="0" cellspacing="0" cellpadding="2px">
+      <tr>
+      <td>White:</td>
+
+      <td><input id="inputWhite" name="inputWhite" class="textfield" value="" size="20" type="text"></td>
+
+      <td>Rating:</td>
+
+      <td><input id="inputWhiteElo" name="inputWhiteElo" class="textfield" value="" size="8" type="text"></td>
+      </tr>
+
+      <tr>
+      <td>Black:</td>
+
+      <td><input id="inputBlack" name="inputBlack" class="textfield" value="" size="20" type="text"></td>
+
+      <td>Rating:</td>
+
+      <td><input id="inputBlackElo" name="inputBlackElo" class="textfield" value="" size="8" type="text"></td>
+      </tr>
+
+      <tr>
+      <td>Event:</td>
+
+      <td><input id="inputEvent" name="inputEvent" class="textfield" value="" size="20" type="text"></td>
+
+      <td>Round:</td>
+
+      <td><input id="inputRound" name="inputRound" class="textfield" value="" size="4" type="text"></td>
+      </tr>
+
+      <tr>
+      <td>Site:</td>
+
+      <td><input id="inputSite" name="inputSite" class="textfield" value="" size="20" type="text"></td>
+
+      <td>Date:</td>
+
+      <td><input id="inputDateYYYY" name="inputDateYYYY" class="textfield" value="" size="4" type="text" style="width: 45px;"> /
+      <input id="inputDateMM" name="inputDateMM" class="textfield" value="" size="2" type="text" style="width: 30px;"> /
+      <input id="inputDateDD" name="inputDateDD" class="textfield" value="" size="2" type="text" style="width: 30px;"><br>
+      (year / month / day)</td>
+      </tr>
+
+      <tr>
+      <td>Result:</td>
+
+      <td><select name="inputResult" id="inputResult">
+        <option id="inputResultWhite" value="1-0">
+        White won (1-0)
+        </option>
+
+        <option id="inputResultBlack" value="0-1">
+        Black won (0-1)
+        </option>
+
+        <option id="inputResultDraw" value="1/2-1/2">
+        Draw (1/2 - 1/2)
+        </option>
+
+        <option id="inputResultNone" value="*">
+        No result (*)
+        </option>
+      </select></td>
+
+      <td>ECO:</td>
+
+      <td><input id="inputECO" name="inputECO" class="textfield" value="" size="8" type="text"></td>
+      </tr>
+    </table>
+    </div>
+
+    <div>
+    <div style="clear: both;"></div>
+
+    <div style="clear: both;"></div>
+    </div>
+  </div>
+
+  <div id="tab3" style="display: none;">
+    <div id="divGameOutput" style="width: 280px; height: 100px; padding: 5px; font: 12px Verdana; overflow: auto; background: #ffffff; border: 1px solid #888;"></div>
+
+    <p style="font-size: 10px;"><input id="buttonMoveStart" type="button" value="|&lt;" class="chess_gamenavbutton">
+    <input id="buttonMoveBackward2" type="button" value="&lt;&lt;" class="chess_gamenavbutton">
+    <input id="buttonMoveBackward" type="button" value="&lt;" class="chess_gamenavbutton">
+    <input id="buttonMoveForward" type="button" value="&gt;" class="chess_gamenavbutton">
+    <input id="buttonMoveForward2" type="button" value="&gt;&gt;" class="chess_gamenavbutton">
+    <input id="buttonMoveEnd" type="button" value="&gt;|" class="chess_gamenavbutton"> &nbsp;
+    <input id="buttonBeginNode" type="button" class="chess_gamenavbutton" value="Set Begin">
+    <input id="buttonFocusNode" type="button" class="chess_gamenavbutton" value="Set Focus">
+    <input id="buttonEndNode" type="button" class="chess_gamenavbutton" value="Set End"><br />
+    <select id="selectGlyph" name="selectGlyph" class="chess_selectoption">
+    <option value="0" class="inputGlyph">&nbsp;&nbsp;&nbsp;&nbsp;</option>
+    <option value="1" class="inputGlyph"></option>
+    <option value="2" class="inputGlyph"></option>
+    <option value="3" class="inputGlyph"></option>
+    <option value="4" class="inputGlyph"></option>
+    <option value="5" class="inputGlyph"></option>
+    <option value="6" class="inputGlyph"></option>
+    </select> <input id="buttonPromoteVariation" type="button" class="chess_gamenavbutton" value="Promote Variation">
+    <input id="buttonDeleteRemainingMoves" type="button" class="chess_gamenavbutton" value="Delete Moves"></p>
+
+    <div style="margin: 4px 0;">
+  Rules: <select id="inputBoardVariant">
+      <option value="Chess">Standard</option>
+    <option value="Chess960">Chess 960</option>
+    </select><br />
+    <input id="inputBoardFlip3" type="checkbox"> Flip Board <input id="inputBoardCoords3" type="checkbox"> Show coordinates
+    </div>
+
+    <div style="margin-top: 8px; font-size: 10px; ">
+    <input type="button" class="chess_gamenavbutton" value="Paste PGN" onclick="javascript:pastePgnDialog.show()">
+    <input type="button" class="chess_gamenavbutton" value="Copy PGN" onclick="javascript:showPgnString();">
+    </div>
+
+    <!--<div style="margin-top: 8px;">
+    <input id="" type="button" class="button" value="Copy PGN to Clipboard">
+    <input id="" type="button" class="button" value="Copy to Embed">
+    <input id="" type="button" class="button" value="Copy to iframe">
+    </div>-->
+
+    <div style="margin-top: 8px;">
+    <strong>Comment before move:</strong> <span style="font-size: 10px;">(Text is automatically saved)</span>
+    <textarea id="inputCommentBeforeMove" name="inputCommentBeforeMove" style="width: 280px; height: 30px;">
+</textarea>
+    </div>
+
+    <div style="margin-top: 8px;">
+    <strong>Comment after move:</strong> <span style="font-size: 10px;">(Text is automatically saved)</span>
+    <textarea id="inputCommentAfterMove" name="inputCommentAfterMove" style="width: 280px; height: 80px;">
+</textarea>
+    </div>
+
+  </div>
+  </div>
+
+  <div id="paste_fen_dialog" class="dialogbox" style="display: none;">
+    <p>Paste your FEN string in the following box and hit OK to apply it to the editor</p>
+
+    <div align="center">
+    <textarea id="paste_fen_textarea" style="width: 360px; height: 40px; font-size: 10px;"></textarea>
+    </div>
+
+    <div align="center">
+    <input type="button" class="bgry bgnone" value="OK" onclick="javascript:pasteFenDialog.hide(); pasteFenString();" />
+    <input type="button" class="bgry bgnone" value="Cancel" onclick="pasteFenDialog.hide();" />
+    </div>
+  </div>
+
+  <div id="paste_pgn_dialog" class="dialogbox" style="display: none;">
+    <p>Paste your PGN string in the following box and hit OK to apply it to the editor</p>
+
+    <div align="center">
+    <textarea id="paste_pgn_textarea" style="width: 360px; height: 80px; font-size: 10px;"></textarea>
+    </div>
+
+    <div align="center">
+    <input type="button" class="bgry bgnone" value="OK" onclick="javascript:pastePgnDialog.hide(); pastePgnString();" />
+    <input type="button" class="bgry bgnone" value="Cancel" onclick="pastePgnDialog.hide();" />
+    </div>
+  </div>
+
+  <div id="copy_fen_dialog" class="dialogbox" style="display: none;">
+    <p>Here is the FEN string of the diagram or starting position</p>
+
+    <div align="center">
+    <textarea id="copy_fen_textarea" onfocus="javascript:this.select()" style="width: 360px; height: 80px; font-size: 10px;"></textarea>
+    </div>
+
+    <div align="center">
+    <input type="button" class="bgry bgnone" value="Close" onclick="copyFenDialog.hide();" />
+    </div>
+  </div>
+
+  <div id="copy_pgn_dialog" class="dialogbox" style="display: none;">
+    <p>Here is the PGN output for this diagram</p>
+
+    <div align="center">
+    <textarea id="copy_pgn_textarea" onfocus="javascript:this.select()" style="width: 360px; height: 80px; font-size: 10px;"></textarea>
+    </div>
+
+    <div align="center">
+    <input type="button" class="bgry bgnone" value="Close" onclick="copyPgnDialog.hide();" />
+    </div>
+  </div>
+
+  <div id="save_as_embed_dialog" class="dialogbox" style="display: none;">
+    <p>Your diagram is now ready to be embedded! Copy/paste the code below into your
+    blog or web page to see it.</p>
+
+    <div align="center">
+    <textarea id="save_as_embed_textarea" onfocus="javascript:this.select()" style="width: 360px; height: 80px; font-size: 10px;"></textarea>
+    </div>
+
+    <div align="center">
+    <input type="button" class="bgry bgnone" value="Close" onclick="saveAsEmbedDialog.hide();" />
+    </div>
+  </div>
+
+  <div id="save_diagram_dialog" class="dialogbox" style="display: none;">
+    <p>Your game can be posted in a Chess.com forum, comment, post, article, or blog.
+  Copy/paste the image below into your post or comment to display the game.</p>
+
+    <textarea id="tinymcewindow" class="tinymcewindow" style="width: 360px; height: 240px"></textarea>
+
+    <div align="center" style="clear: both;">
+    <input type="button" class="bgry bgnone" value="Close" onclick="saveDiagramDialog.hide();" />
+    </div>
+  </div>
+
+  <div id="message_dialog" class="dialogbox" style="display: none;">
+    <p>You have already created a diagram using this editor. Do you wish to overwrite your existing
+    diagram or create a new one?</p>
+
+    <div align="center">
+    <input type="button" class="bgry bgnone" value="Overwrite Diagram" onclick="javascript:messageDialog.hide();overwriteDiagram();" />
+    <input type="button" class="bgry bgnone" value="Create Diagram" onclick="javascript:messageDialog.hide();createDiagram();" />
+    <input type="button" class="bgry bgnone" value="Cancel" onclick="javascript:messageDialog.hide();" />
+    </div>
+  </div>
+
+  <div id="pgnStuff" style="display: none;"></div>
+
+</div>
+
+<script>
+ var djConfig = {
+   locale: 'en',
+   blankGif: 'http://cssjs.chesscomfiles.com/images/spacer.gif',
+   dojoBlankHtmlUrl: 'http://www.chess.com/js/dojo2/blank.html'
+ };
+</script>
+
+
+    
+    </div>
+    <!-- /#main -->
+
+    <div id="bottomholder">
+        <div id="bottomleft"></div>
+        <div id="bottomright"></div>
+        <div id="roundBottomContent" class="clearfix">&nbsp;</div>
+    </div>
+
+    
+<div id="footer">
+
+            <div style="float: right; padding-top: 4px;">
+            <a href="http://sanjose.bbb.org/BusinessReport.aspx?CompanyID=1000000826" target="_blank" rel="nofollow">
+                <img src="http://images.chesscomfiles.com/images/bbb.png" border="0" height="38" width="98">
+            </a>
+        </div>
+    
+    <ul>
+        <li><a href="http://www.chess.com/">Home</a> |</li>
+        <li><a href="http://www.chess.com/widgets/">Spread the Word</a> |</li>
+        <li><a href="http://www.chess.com/site_demo_video.html">Video Tour</a> |</li>
+        <li><a href="http://www.chess.com/about.html">About</a> |</li>
+        <li><a href="http://support.chess.com/Knowledgebase/List">FAQs</a> |</li>
+        <li><a href="http://www.chess.com/help.html">Help &amp; Support</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="http://www.chess.com/sitemap.html">Site Map</a> |</li>
+        <li><a href="http://www.chess.com/legal.html#privacypolicy">Privacy Policy</a> |</li>
+        <li><a href="http://www.chess.com/legal.html#termsofservice">Legal</a> |</li>
+        <li><span id="copywrite">&copy; 2011 Chess.com</span></li>
+    </ul>
+
+</div>
+<!-- /#footer -->
+</div>
+<!-- /#wrapper -->
+
+
+<div style="display: none;" id="qcodo-state-id">
+	<input type="hidden" name="Qform__FormState" id="Qform__FormState" value="" />
+	<input type="hidden" name="Qform__FormId" id="Qform__FormId" value="DiagramForm" />
+</div>
+
+</form>
+<script src="http://cssjs.chesscomfiles.com/js/all_main_functions.v2011110802.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script>
+//<![CDATA[
+!window.jQuery && document.write(unescape('%3Cscript src="http://cssjs.chesscomfiles.com/js/jquery/jquery-1.6.1.min.js"%3E%3C/script%3E'))
+//]]>
+</script>
+<script src="http://images.chesscomfiles.com/assets/js/qcodo_all.v2011110802.js"></script>
+<script src="http://www.chess.com/js/tiny_mce/tiny_mce.js?v337"></script>
+<script src="http://cssjs.chesscomfiles.com/js/bundled/dojoeditor.v2011110802.js"></script>
+<script src="http://cssjs.chesscomfiles.com/js/chess2/bundled/DiagramEditorStandalone.v2011110802.js"></script>
+<script>
+//<![CDATA[
+qc.registerForm(); qc.imageAssets = "http://images.chesscomfiles.com/assets/images"; qc.cssAssets = "http://images.chesscomfiles.com/assets/css"; qc.phpAssets = "/assets/php"; qc.jsAssets = "http://images.chesscomfiles.com/assets/js"; 
+//]]>
+</script>                    <script>(function(){var ga=document.createElement("script");ga.type="text/javascript";ga.async=true;ga.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)})();</script>
+    
+<!-- Global Hits: 0 -->
+<!-- Hits: 4 -->
+<!-- Misses: 2 -->
+<!-- IP: 10.0.0.21 -->
+    <div id="fb-root"></div>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+
+    <script>
+      if ( ! window.ChesscomFB ) var ChesscomFB = {};
+
+              FB.init({appId: '2427617054', status: true, cookie: true, xfbml: true});
+              
+      ChesscomFB.share = function (url) {
+          var params = { method:'feed' };
+          if (url) {
+            if (url.indexOf('/') === 0) url = 'http://www.chess.com'+ url;
+          } else {
+            url = location.href;
+          }
+          if (url.indexOf('utm_source') === -1) url = url.replace(/\?|$/, '?utm_source=facebook&utm_medium=sharelink&').replace(/&$/,'');
+          params['link'] = url;
+          FB.ui(params);
+        }
+    </script>
+<script type="text/javascript">
+    var _qevents = _qevents || [];
+
+    (function() {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+    })();
+    
+    _qevents.push({
+        qacct:"p-18EODUg8e6wQQ"
+    });
+
+</script>
+
+<noscript>
+    <div style="display:none;">
+        <img src="//pixel.quantserve.com/pixel/p-18EODUg8e6wQQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
+    </div>
+</noscript>
+</body>
+</html>

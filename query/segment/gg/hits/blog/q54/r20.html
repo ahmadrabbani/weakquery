@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+  <title>Yum!: beggin' strips for humans</title>
+
+  <script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(b,i,d){d=d!=void 0?d:(new Date).getTime();this.t[b]=[d,i]};this.tick("start",null,b)}var e=new c;a.jstiming={Timer:c,load:e};try{var g=null;a.chrome&&a.chrome.csi&&(g=Math.floor(a.chrome.csi().pageT));g==null&&a.gtbExternal&&(g=a.gtbExternal.pageT());g==null&&a.external&&(g=a.external.pageT);g&&(a.jstiming.pt=g)}catch(h){};a.tickAboveFold=function(b){var f=0;if(b.offsetParent){do f+=b.offsetTop;while(b=b.offsetParent)}b=f;b<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){j||(j=true,a.jstiming.load.tick("firstScrollTime"))}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k);
+ })();</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="generator" content="Blogger" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.blogger.com/favicon.ico"/>
+<link rel="alternate" type="application/atom+xml" title="Yum! - Atom" href="http://deepfry.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Yum! - RSS" href="http://deepfry.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Yum! - Atom" href="http://www.blogger.com/feeds/3628745/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=3628745" />
+<link rel="alternate" type="application/atom+xml" title="Yum! - Atom" href="http://deepfry.blogspot.com/feeds/111427890950695108/comments/default" />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/static/v1/v-css/50269083-blog_controls.css"/> <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=3628745&zx=6046812a-2427-4f59-aad4-63d349b6d568"/>
+
+  <style type="text/css">
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Dots
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     24 Feb 2004
+----------------------------------------------- */
+
+
+body {
+  background:#fff url("http://www.blogblog.com/dots/bg_dots.gif") 50% 0;
+  margin:0;
+  padding:0 10px;
+  text-align:center;
+  font:x-small Verdana,Arial,Sans-serif;
+  color:#333;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+  }
+
+
+/* Page Structure
+----------------------------------------------- */
+#content {
+  background:url("http://www.blogblog.com/dots/bg_3dots.gif") no-repeat 250px 50px;
+  width:700px;
+  margin:0 auto;
+  padding:50px 0;
+  text-align:left;
+  }
+#main {
+  width:450px;
+  float:right;
+  padding:50px 0 20px;
+  font-size:85%;
+  }
+#main2 {
+  background:url("http://www.blogblog.com/dots/bg_dots2.gif") -100px -100px;
+  padding:20px 10px 15px;
+  }
+#sidebar {
+  width:200px;
+  float:left;
+  font-size:85%;
+  padding-bottom:20px;
+  }
+#sidebar2 {
+  background:url("http://www.blogblog.com/dots/bg_dots2.gif") 150px -50px;
+  padding:5px 10px 15px;
+  width:200px;
+  width/* */:/**/180px;
+  width: /**/180px;
+  }
+html>body #main, html>body #sidebar {
+  /* We only give this fade from white to nothing to
+     browsers that can handle 24-bit transparent PNGs  */
+  background/* */:/**/url("http://www.blogblog.com/dots/bg_white_fade.png") repeat-x left bottom;
+  }
+
+
+/* Title & Description
+----------------------------------------------- */
+#blog-title {
+  margin:0 0 .5em;
+  font:250%/1.4em Georgia,Serif;
+  color:#353;
+  }
+#blog-title a {
+  color:#353;
+  text-decoration:none;
+  }
+#description {
+  margin:0 0 1.75em;
+  color:#996;
+  }
+
+
+/* Links
+----------------------------------------------- */
+a:link {
+  color:#488;
+  }
+a:visited {
+  color:#885;
+  }
+a:hover {
+  color:#000;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+  margin:0 0 .75em;
+  padding-bottom:.35em;
+  border-bottom:1px dotted #9b9;
+  font:95%/1.4em Georgia,Serif;
+  text-transform:uppercase;
+  letter-spacing:.3em;
+  color:#663;
+  }
+.post {
+  margin:0 0 2.5em;
+  }
+.post-title {
+  margin:.25em 0;
+  font:bold 130%/1.4em Georgia,Serif;
+  color:#333;
+  }
+.post-title a, .post-title strong {
+  background:url("http://www.blogblog.com/dots/bg_post_title.gif") no-repeat 0 .25em;
+  display:block;
+  color:#333;
+  text-decoration:none;
+  padding:0 0 1px 45px;
+  }
+.post-title a:hover {
+  color:#000;
+  }
+.post p {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+p.post-footer {
+  margin:0;
+  text-align:right;
+  }
+p.post-footer em {
+  display:block;
+  float:left;
+  text-align:left;
+  font-style:normal;
+  color:#996;
+  }
+a.comment-link {
+  /* IE5.0/Win doesn't apply padding to inline elements,
+     so we hide these two declarations from it */
+  background/* */:/**/url("http://www.blogblog.com/dots/icon_comment.gif") no-repeat 0 .25em;
+  padding-left:15px;
+  }
+html>body a.comment-link {
+  /* Respecified, for IE5/Mac's benefit */
+  background:url("http://www.blogblog.com/dots/icon_comment.gif") no-repeat 0 .25em;
+  padding-left:15px;
+  }
+.post img {
+  margin:0 0 5px 0;
+  padding:4px;
+  border:1px solid #cca;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments {
+  margin:0;
+  }
+#comments h4 {
+  margin:0 0 10px;
+  border-top:1px dotted #9b9;
+  padding-top:.5em;
+  font:bold 110%/1.4em Georgia,Serif;
+  color:#333;
+  }
+#comments-block {
+  line-height:1.6em;
+  }
+.comment-poster {
+  background:url("http://www.blogblog.com/dots/icon_comment.gif") no-repeat 2px .35em;
+  margin:.5em 0 0;
+  padding:0 0 0 20px;
+  font-weight:bold;
+  }
+.comment-body {
+  margin:0;
+  padding:0 0 0 20px;
+  }
+.comment-body p {
+  margin:0 0 .5em;
+  }
+.comment-timestamp {
+  margin:0 0 .5em;
+  padding:0 0 .75em 20px;
+  color:#996;
+  }
+.comment-timestamp a:link {
+  color:#996;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* More Sidebar Content
+----------------------------------------------- */
+.sidebar-title {
+  margin:2em 0 .75em;
+  padding-bottom:.35em;
+  border-bottom:1px dotted #9b9;
+  font:95%/1.4em Georgia,Serif;
+  text-transform:uppercase;
+  letter-spacing:.3em;
+  color:#663;
+  }
+#sidebar p {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+#sidebar ul {
+  margin:.5em 0 1em;
+  padding:0 0px;
+  list-style:none;
+  line-height:1.5em;
+  }
+#sidebar ul li {
+  background:url("http://www.blogblog.com/dots/bullet.gif") no-repeat 3px .45em;
+  margin:0;
+  padding:0 0 5px 15px;
+  }
+#sidebar p {
+  margin:0 0 .6em;
+  }
+
+
+/* Profile
+----------------------------------------------- */
+.profile-datablock {
+  margin:0 0 1em;
+  }
+.profile-img {
+  display:inline;
+  }
+.profile-img img {
+  float:left;
+  margin:0 8px 5px 0;
+  border:4px solid #cc9;
+  }
+.profile-data {
+  margin:0;
+  line-height:1.5em;
+  }
+.profile-data strong {
+  display:block;
+  }
+.profile-textblock {
+  clear:left;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  clear:both;
+  padding:15px 0 0;
+  }
+#footer hr {
+  display:none;
+  }
+#footer p {
+  margin:0;
+  }
+  </style>
+
+<!-- --><style type="text/css">@import url(http://www.blogger.com/static/v1/v-css/navbar/697174003-classic.css);
+div.b-mobile {display:none;}
+</style>
+
+</head>
+
+
+
+<body><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=3628745&amp;blogName=Yum!&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=BLUE&amp;layoutType=CLASSIC&amp;searchRoot=http://deepfry.blogspot.com/search&amp;blogLocale=en_US&amp;homepageUrl=http://deepfry.blogspot.com/&amp;vt=7537114505856025915" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+<div></div>
+
+
+
+<!-- Begin #content -->
+
+<div id="content">
+
+
+
+
+
+
+<!-- Begin #sidebar -->
+
+<div id="sidebar"><div id="sidebar2">
+
+    <h1 id="blog-title">
+    <a href="http://deepfry.blogspot.com/">
+	Yum!
+	</a>
+  </h1>
+
+    <p id="description">Of she who is a gourmand and a gourmet.</p>
+
+
+
+
+
+
+
+  <!-- Begin #profile-container -->
+
+    <div id="profile-container"><h2 class="sidebar-title">About Me</h2>
+<dl class="profile-datablock"><dt class="profile-img"><a href="http://www.blogger.com/profile/10256558529133406839"><img src="http://darkwing.uoregon.edu/~ebreak/food.jpg" width="60" height="80" alt="My Photo"></a></dt>
+<dd class="profile-data"><strong>Name:</strong> <a rel="author" href="http://www.blogger.com/profile/10256558529133406839"> Deepfry </a></dd>
+<dd class="profile-data"><strong>Location:</strong>  Eugene, Oregon, United States </dd></dl>
+
+<p class="profile-link"><a rel="author" href="http://www.blogger.com/profile/10256558529133406839">View my complete profile</a></p></div>
+
+  <!-- End #profile -->
+<h2 class="sidebar-title">Food reads</h2>
+<a href=http://www.foodmigration.com/>Food migration</a><br>
+<a href=http://mrsdelicious.blogspot.com/>Mrs. Delicious</a><br>
+<a href=http://www.iheartbacon.com/>I Heart Bacon</a><br>
+<a href=http://www.extramsg.com>ExtraMSG</a><br>
+<a href=http://kitchengrl.blogspot.com/>kitchengrl</a><br>
+<a href=http://www.kiplog.com/food/>kiplog</a><br>
+<a href=http://www.kiplog.com/food/foodlinks.htm>Kiplog's FoodBlog links</a><br>
+<a href=http://foodpornwatch.arrr.net/>foodporn watch</a>
+
+      <h2 class="sidebar-title">Previous Posts</h2>
+    <ul id="recently">
+    
+        <li><a href="http://deepfry.blogspot.com/2005/04/gross.html">gross.</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/04/proof-of-god.html">proof of god</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/04/minneapolis-breakfast-of-champions.html">minneapolis breakfast of champions</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/04/since-my-ahem-april-1st-declaration-of.html">since my, ahem, april 1st declaration of vegan fru...</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/04/new-life-direction.html">new life direction</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/03/ive-made-it.html">i&#39;ve made it!</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/03/simplicity.html">simplicity</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/03/cheesecake-update.html">cheesecake update</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/03/grilled-donut.html">grilled donut</a></li>
+
+     
+        <li><a href="http://deepfry.blogspot.com/2005/03/hungry-hungry.html">hungry hungry</a></li>
+
+     
+  </ul>
+    
+ <h2 class="sidebar-title">Feeds</h2>
+    <ul class="archive-list">
+    	<li><a href="http://www.deepfry.blogspot.com/atom.xml" title="Atom feed">Site Feed (Atom)</a></li>
+    	  </ul>
+
+        <p id="powered-by"><a href="http://www.blogger.com"><img src="http://buttons.blogger.com/bloggerbutton1.gif" alt="Powered by Blogger" /></a></p>
+
+    <!--
+
+  <p>This is a paragraph of text that could go in the sidebar.</p>
+
+  -->
+
+  </div></div>
+
+<!-- End #sidebar -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Begin #main - Contains main-column blog content -->
+
+<div id="main"><div id="main2">
+
+
+
+    
+  <h2 class="date-header">23 April 2005</h2>
+  
+
+         <!-- Begin .post -->
+
+  <div class="post"><a name="111427890950695108"></a>
+
+         
+
+    <h3 class="post-title">
+	 
+	 beggin' strips for humans
+	 
+    </h3>
+    
+
+         <div class="post-body">
+	<p>
+      <div style="clear:both;"></div>in a pathetic attempt to "eat healthy," i recently purchased"Smart Bacon," vegetarian bacon strips. <img src="http://www.lightlife.com/images/bacon_prod.jpg" align="right" /> as any self-respecting Reform Jew will know, we, the Reform Jew non-Kosher types don't even consider ham to be a food (except that one time at the one Christmas party where I spent the entire evening huddled over the AMAZING ham in the corner, shoving large handfuls into my face, socializing with noone, focusing only on the ham.). and pork chops? sure, i'll eat 'em if someone puts it in front of me but i'd never go out of my way to procure one. but wow do we <b>love</b> the bacon. and, yes, i conducted a survey using a random sample of Reform Jews to confirm this fact. i think that this chart pretty much says it all:<br /><img src="http://photos8.flickr.com/10534673_30f66238fe.jpg" /><p> i admit i used to be more a sausage girl but in the past few years, it's bacon that's owned my heart. those salty and crispy yet moist strips of meaty perfection, never surprising you as sausage does with a nasty uncomfortably textured bite.  and so tasty with a nice poached egg draped over a piece of toast. sigh.<br /><br />oh, but this is about the Smart Bacon non-meat product. it's been sitting neglected in my fridge for a few weeks and this morning i decided to give it a try. a few weeks ago on Steve, Don't Eat It!, <a href="http://www.thesneeze.com/mt-archives/000070.php">Steve sampled Beggin' Strips</a>, the dog treat that is supposed to fool your dog into thinking he's <span style="font-style: italic;">actually </span>eating bacon.  The scent alone, and I quote, resembled "the smoky puke of a thousand maniacs." okay, Smart Bacon smelled more like cardboard, but the taste of it recalled Steve's reaction to Beggin' Strips: "I was overcome by the urge to go in the backyard and eat grass until it was all out of me." Really. Ew. Smart Bacon <span style="font-weight: bold; font-style: italic;">DOES NOT </span><span style="font-style: italic;"></span>taste like bacon. it doesn't even taste healthy, unless you equate health with a solid diet of shredded paper. needless to say, i'm disappointed in the Smart Bacon. i also have over half the package left and know without a doubt that i will eat every last bit of it because it's here and it's safe for human consumption. but, oh, Smart Bacon, i will NOT be happy when i eat you. not at all! damn you Smart Bacon! Damn you!!!<div style="clear:both; padding-bottom:0.25em"></div>
+    </p>
+
+    </div>
+
+        <p class="post-footer">
+
+      <em>posted by Deepfry @ <a href="http://deepfry.blogspot.com/2005/04/beggin-strips-for-humans.html" title="permanent link">10:19</a></em>&nbsp;
+
+       <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=3628745&postID=111427890950695108" title="Email Post"><img class="icon-action" alt="" src="http://img2.blogblog.com/img/icon18_email.gif" height="13" width="18"/></a></span>
+
+    </p>
+
+    </div>
+
+  <!-- End .post -->
+
+        <!-- Begin #comments -->
+ 
+  <div id="comments">
+
+	<a name="comments"></a>
+
+
+
+    <h4>7 Comments:</h4>
+
+        <dl id="comments-block">
+      
+
+      <dt class="comment-poster" id="c111428663933194909"><a name="c111428663933194909"></a>
+
+        <span style="line-height:16px" class="comment-icon anon-comment-icon"><img src="http://img2.blogblog.com/img/anon16-rounded.gif" alt="Anonymous" style="display:inline;" /></span>&nbsp;<span class="anon-comment-author">Anonymous</span> said...
+
+      </dt>
+
+      <dd class="comment-body">
+
+        <p>Try the Morning Star "bacon strips", much better.</p>
+
+      </dd>
+
+      <dd class="comment-timestamp"><a href="#c111428663933194909" title="comment permalink">1:03 PM</a>
+
+	  <span class="item-control blog-admin pid-373671459"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=3628745&postID=111428663933194909" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+      </dd>
+      
+
+      <dt class="comment-poster" id="c111430899843770309"><a name="c111430899843770309"></a>
+
+        <span style="line-height:16px" class="comment-icon anon-comment-icon"><img src="http://img2.blogblog.com/img/anon16-rounded.gif" alt="Anonymous" style="display:inline;" /></span>&nbsp;<a href="http://www.extramsg.com" rel="nofollow">Extramsg</a> said...
+
+      </dt>
+
+      <dd class="comment-body">
+
+        <p>Did you look at the ingredients list?<BR/><BR/>http://www.solaeliving.com/soyproteinproducts/products/smartbacon.jsp<BR/><BR/>I think Doritos and Twinkies are more natural.</p>
+
+      </dd>
+
+      <dd class="comment-timestamp"><a href="#c111430899843770309" title="comment permalink">7:16 PM</a>
+
+	  <span class="item-control blog-admin pid-1636472849"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=3628745&postID=111430899843770309" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+      </dd>
+      
+
+      <dt class="comment-poster" id="c111433253811138294"><a name="c111433253811138294"></a>
+
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="http://img2.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" /></span>&nbsp;<a href="http://www.blogger.com/profile/00955799153777091410" rel="nofollow">Deepfry</a> said...
+
+      </dt>
+
+      <dd class="comment-body">
+
+        <p>ew. i think in the future, i would do best to avoid anything that has an "isolate" as the second ingredient after water.</p>
+
+      </dd>
+
+      <dd class="comment-timestamp"><a href="#c111433253811138294" title="comment permalink">1:48 AM</a>
+
+	  <span class="item-control blog-admin pid-1732591532"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=3628745&postID=111433253811138294" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+      </dd>
+      
+
+      <dt class="comment-poster" id="c111449231426236049"><a name="c111449231426236049"></a>
+
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="http://img2.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" /></span>&nbsp;<a href="http://www.blogger.com/profile/06280868668878261349" rel="nofollow">cindym</a> said...
+
+      </dt>
+
+      <dd class="comment-body">
+
+        <p>Dude, have you tried that yuba crap yet?  M Henry has it (in Andersonville).  It is billed as a vegan meat, and is akin to eating burnt paper.  You should definitely pick some up!<BR/><BR/>Luv, Cindy<BR/><BR/>PS - I just googled "yuba" to make sure I was spelling it right, and the first entry refers to it as a "meat analog".  Enough said.</p>
+
+      </dd>
+
+      <dd class="comment-timestamp"><a href="#c111449231426236049" title="comment permalink">10:11 PM</a>
+
+	  <span class="item-control blog-admin pid-1735642251"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=3628745&postID=111449231426236049" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+      </dd>
+      
+
+      <dt class="comment-poster" id="c111463420595122012"><a name="c111463420595122012"></a>
+
+        <span style="line-height:16px" class="comment-icon anon-comment-icon"><img src="http://img2.blogblog.com/img/anon16-rounded.gif" alt="Anonymous" style="display:inline;" /></span>&nbsp;<span class="anon-comment-author">Anonymous</span> said...
+
+      </dt>
+
+      <dd class="comment-body">
+
+        <p>Your scientific survey totally made me pee.  And your link to "Steve, Don't Eat It!" might get me and my sister both fired.  Or at least yelled at for laughing too hard at work.  You, and Steve, are awesome.<BR/><BR/>Laura</p>
+
+      </dd>
+
+      <dd class="comment-timestamp"><a href="#c111463420595122012" title="comment permalink">1:36 PM</a>
+
+	  <span class="item-control blog-admin pid-1014330463"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=3628745&postID=111463420595122012" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+      </dd>
+      
+
+      <dt class="comment-poster" id="c111506140853641634"><a name="c111506140853641634"></a>
+
+        <span style="line-height:16px" class="comment-icon anon-comment-icon"><img src="http://img2.blogblog.com/img/anon16-rounded.gif" alt="Anonymous" style="display:inline;" /></span>&nbsp;<span class="anon-comment-author">Anonymous</span> said...
+
+      </dt>
+
+      <dd class="comment-body">
+
+        <p><A HREF="http://www.mcphee.com/bigindex/current/11476.html" REL="nofollow">Bacon strips bandages</A></p>
+
+      </dd>
+
+      <dd class="comment-timestamp"><a href="#c111506140853641634" title="comment permalink">12:16 PM</a>
+
+	  <span class="item-control blog-admin pid-59323147"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=3628745&postID=111506140853641634" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+      </dd>
+      
+
+      <dt class="comment-poster" id="c111674280123189289"><a name="c111674280123189289"></a>
+
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="http://img2.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" /></span>&nbsp;<a href="http://www.blogger.com/profile/14652931599004264512" rel="nofollow">Suebob</a> said...
+
+      </dt>
+
+      <dd class="comment-body">
+
+        <p>It is more like salt strips than bacon strips. And I am a big fanatic  vegetarian.</p>
+
+      </dd>
+
+      <dd class="comment-timestamp"><a href="#c111674280123189289" title="comment permalink">11:20 PM</a>
+
+	  <span class="item-control blog-admin pid-1528665491"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=3628745&postID=111674280123189289" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+      </dd>
+      
+
+    </dl>
+		<p class="comment-timestamp">
+    <a class="comment-link" href="http://www.blogger.com/comment.g?blogID=3628745&postID=111427890950695108">Post a Comment</a>
+    </p>
+    
+		<p class="comment-timestamp">
+
+	<a href="http://deepfry.blogspot.com/">&lt;&lt; Home</a>
+    </p>
+    </div>
+
+
+
+  <!-- End #comments -->
+
+
+
+</div></div>
+
+<!-- End #main -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Begin #footer -->
+
+<div id="footer"><hr />
+
+
+  <p><!-- This is an optional footer. If you want text here, place it inside these tags, and remove this comment. -->&nbsp;</p>
+
+
+
+</div>
+
+<!-- End #footer -->
+
+
+
+
+
+
+
+
+</div>
+
+<!-- End #content -->
+
+
+
+<script type="text/javascript" src="http://www.blogger.com/static/v1/common/js/4045862313-csitail.js"></script>
+<script type="text/javascript">BLOG_initCsi('classic_blogspot');</script></body>
+
+</html>

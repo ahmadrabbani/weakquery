@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+ <HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="GENERATOR" CONTENT="Mozilla, Netscape">
+<META NAME="ROBOTS" CONTENT="FOLLOW,INDEX">
+<META NAME="DESCRIPTION" CONTENT="Ruth Rendell, books, life and work>
+<META NAME="KEYWORDS" CONTENT="Ruth Rendell, Barbara Vine, crime writer, crime novel, mystery writer, detective, Wexford, Burden, crime, Kingsmarkham, English detectives, writer">
+<META NAME="TITLE" CONTENT="index.html">
+<META NAME="English">
+<META NAME="revisit-after" CONTENT="6 days">
+<META NAME="rating" CONTENT="General">
+<TITLE>English crime writer Ruth Rendell</TITLE>
+<META NAME="inejacet@wxs.nl">
+<META NAME="Ine Jacet">
+
+</HEAD>
+    
+ 
+<body bgcolor="#000000" background="../gilesblunt/streep.gif" text="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script> 
+<SCRIPT LANGUAGE='JavaScript'>
+
+<!-- de tekst-->
+
+var default1 = "www.ruthrendell.tk"; // wordt 1 keer getoond als pagina laad
+var text1 = "Ruth Rendell - Engelse crime writer";
+var text2 = "with all her books";
+var text3 = "Ruth Rendell as Barbara Vine";
+var changeRate = 4000; // 1000 = 1 seconde
+
+<!-- verander hieronder niets -->
+
+var messageNumber = 0;
+
+function changeStatus() {
+  if (messageNumber == 0) {
+     window.status=default1;
+     document.title=default1;
+    }
+  else if (messageNumber == 1) {
+     window.status=text1;
+     document.title=text1;
+    }
+  else if (messageNumber == 2) {
+     window.status=text2;
+     document.title=text2;
+     }
+  else if (messageNumber == 3) {
+     window.status=text3;
+     document.title=text3;
+     messageNumber = 0;
+     }
+
+  messageNumber++;
+  setTimeout("changeStatus();",changeRate);
+
+}
+
+changeStatus(); //www.ruthrendell.tk
+// -->
+</SCRIPT>
+<script language="JavaScript"> 
+
+function blockError(){return true;}
+
+window.onerror = blockError;
+
+</script>
+    
+<script>
+// teksten.
+var messages = new Array()
+messages[0] = "Welcome to my Ruth Rendell website!"
+messages[1] = "About her life"
+messages[2] = "With all her books"
+messages[3] = "English crime writer"
+messages[4] = "Barbara Vine"
+
+// de achtergrondkleur van de  scrollers. .
+var backgroundcolor=new Array("000000", "000000", "000000", "CC3333")
+
+// de letterkleur van de  scrollers. 
+var fntcolor = new Array("CC3333","CCCCCC","CCCCCC","000000")
+
+// Het lettertype van je messages.
+var fntfamily="Verdana"
+
+// de letter grootte (1 to 7)
+var fntsize=2
+
+// font-weight: stel in op  1 voor bold , stel in op  0 voor normaal font
+var fntweight=0
+
+// de breedte van de rand van de tabel (pixels)
+var borderwidth=1
+
+// d ebreedte van d escroller tabel (pixels)
+var scrollerwidth=160
+
+// de hoogte van de scroller tabel (pixels)
+var scrollerheight=60
+
+// de horizontale positie van de scroller ( vanaf de linker kant in pixels )
+var scrollerposition_x=30
+
+// de verticale positie van de scroller ( vanaf de top in pixels
+var scrollerposition_y=20
+
+// de interval (tijd voor ieder effect in seconden)
+var interval=3
+
+
+//verander hieronder niets meer
+
+var i_messages = 0
+var timer
+interval=interval*1000
+if (fntweight==1) { 
+    fntweight="<b>"
+}
+else {
+    fntweight=""
+}
+
+function randomposition(range) {		
+	return Math.floor(range*Math.random())
+}
+
+function dotransition() {
+    if (document.all) {
+        content.filters[i_messages].apply()
+        content.innerHTML = "<table width="+scrollerwidth+" height="+scrollerheight+" border="+borderwidth+" cellpadding=3 cellspacing=0><tr><td bgcolor="+backgroundcolor[randomposition(backgroundcolor.length)]+" align=center valign=middle>"+fntweight+"<font face="+fntfamily+" size="+fntsize+" color="+fntcolor[randomposition(fntcolor.length)]+">"+messages[i_messages]+"</font></td></tr></table>"
+        content.filters[i_messages].play()
+        if (i_messages >= messages.length-1) {
+            i_messages = 0
+        }
+        else {
+            i_messages++
+        }
+    } 
+	
+	    if (document.layers) {
+        document.nn.document.write("<table width="+scrollerwidth+" height="+scrollerheight+" border="+borderwidth+" cellpadding=3 cellspacing=0><tr><td bgcolor="+backgroundcolor[randomposition(backgroundcolor.length)]+" align=center valign=middle>")
+		 document.nn.document.write(fntweight+"<font face="+fntfamily+" size="+fntsize+" color="+fntcolor[randomposition(fntcolor.length)]+">"+messages[i_messages]+"</font></td></tr></table>")
+		document.close()
+        if (i_messages >= messages.length-1) {
+            i_messages = 0
+        }
+        else {
+            i_messages++
+        }
+    } 
+    timer = setTimeout("dotransition()",interval)   
+}
+
+if (document.all) {
+    document.write('<DIV id=content style="position:absolute; top:'+scrollerposition_y+'px; left:'+scrollerposition_x+'px;  text-align:center; filter: revealTrans(Transition=1, Duration=3) revealTrans(Transition=2, Duration=3) revealTrans(Transition=3, Duration=2)  revealTrans(Transition=4, Duration=2)  revealTrans(Transition=5, Duration=1)  revealTrans(Transition=6, Duration=3)  revealTrans(Transition=7, Duration=2)  revealTrans(Transition=8, Duration=1)  revealTrans(Transition=9, Duration=3)  revealTrans(Transition=10, Duration=1)  revealTrans(Transition=11, Duration=2)  revealTrans(Transition=12, Duration=3)  revealTrans(Transition=13, Duration=1)  revealTrans(Transition=14, Duration=2)  revealTrans(Transition=15, Duration=3)  revealTrans(Transition=16 Duration=1)  revealTrans(Transition=17, Duration=2)  revealTrans(Transition=18, Duration=3) revealTrans(Transition=19, Duration=1) revealTrans(Transition=20, Duration=2) revealTrans(Transition=21, Duration=3) revealTrans(Transition=22, Duration=3)"><table width='+scrollerwidth+' height='+scrollerheight+' border='+borderwidth+' cellpadding=3 cellspacing=0><tr><td bgcolor='+backgroundcolor[randomposition(backgroundcolor.length)]+' align=center valign=middle> </td></tr></table></DIV>')
+    window.onload=dotransition
+}
+if (document.layers) {
+    document.write('<layer id=nn top='+scrollerposition_y+' left='+scrollerposition_x+'> </layer>')
+    document.close()
+    window.onload=dotransition
+    }
+    </script>            
+<style type="text/css"><!-- 
+a:link, a:visited, a:active {text-decoration: none} 
+--></style> 
+<table width="700" height="580" border="0" align="center">
+  <td width="50" rowspan="6" bordercolor="#000000" bgcolor="#CC3333"></td>
+  <td height="28" colspan="3" align="center" valign="middle" bordercolor="#000000" bgcolor="#CCCCCC"> 
+    <img src="../plaatjes/naam.jpg" width="390" height="83"> </td>
+  <td width="50" rowspan="5" bordercolor="#000000" bgcolor="#CC3333"></td>
+  </tr>
+    <td height="28" colspan="3" align="center" valign="middle" bordercolor="#000000" bgcolor="#000000"> 
+      <font color="#CC3333" size="2" face="Comic Sans MS"> <a href="start.html">start</a></a></font> 
+      | <font color="#CC3333" size="2" face="Comic Sans MS"><a href="boeken.htm">books</a></font> 
+      | <font color="#CC3333" size="2" face="Comic Sans MS"><a href="leven.htm">life</a></a></font> 
+      | <font color="#CC3333" size="2" face="Comic Sans MS"><a href="links.htm">links</a> 
+      </font> |<font size="2" face="Comic Sans MS">&nbsp; </font><a href="../index.html"><font size="2" face="Comic Sans MS">Other 
+      crimewriters (Dutch)</font></a></td>
+  </tr>
+    <td width="200" height="54" align="center" valign="middle" bgcolor="#000000"> 
+      <img src="../plaatjes/animationrendell.gif" width="150" height="90"> </td>
+    <td width="300" bordercolor="#000000" bgcolor="#999999">
+<p align="center"><font face="Comic Sans MS" size="2" color="#FFFFFF"><b><font color="#000000">Ruth 
+        Rendell</font></b> <font color="#000000"><BR>
+        Ruth Rendell (1930) is the most famous crime writer in the world. <br>
+        She lives in London. She has received many awards for her books.<BR>
+        She started writing novels in 1964. Chief Inspector Wexford is a famous 
+        character.<BR>
+        </font></font><font face="Comic Sans MS" size="2" color="#000000">She 
+        also writes as 'Barbara Vine'.</font> </p></td>
+    <td width="200" valign="top" bordercolor="#000000" bgcolor="#666666"> <p align="center"><font color="#FFFFFF" size="2" face="Comic Sans MS">This 
+        is a Ruth Rendell website where</font> <font color="#FFFFFF" size="2" face="Comic Sans MS">you 
+        can find information about her<a href="boeken.htm"> books</a> and her<a href="leven.htm"> 
+        life.</a><BR>
+        <a href="links.htm"> Links </A>: brings you to other crime writers sites 
+        and Ruth Rendell sites. <BR>
+        </font></tr>
+  <tr> 
+    <td width="200" height="49" align="center" valign="middle" bordercolor="#000000" bgcolor="#FFFFFF"><img src="../plaatjes/handtekening%20rendell.jpg" width="140" height="47"></td>
+    <td width="300" bordercolor="#000000" bgcolor="#666666"><div align="center"><font face="Comic Sans MS" size="2" color="#FFFFFF"><b><a href="leven.htm">Life</a></b><br />
+        'Life': a Ruth Rendell biography.<br />
+        </font></div></td>
+    <td width="200" bordercolor="#000000" bgcolor="#999999"><font color="#FFFFFF" size="2" face="Comic Sans MS">Please 
+      write your questions or comments in my guestbook: 
+      <!-- Write2Me.NL - BEGIN -->
+      <a href="http://inejacet.write2me.nl" title="gastenboek write2me" target="new window"><BR>
+      write2me</a> 
+      <!-- Write2Me.NL - EIND -->
+      </font></td>
+  </tr>
+  <tr> 
+    <td width="200" height="200" align="center" valign="top" bordercolor="#000000" bgcolor="#999999"> 
+      <p align="center"><a href="../index.html"><img src="../plaatjes/Nederlandseversie.gif" width="200" height="120" border="0"></a><BR>
+        <font color="#FFFFFF" size="2" face="Comic Sans MS">For Dutch version 
+        :click on the picture.</font><BR>
+    </td>
+    <td width="300" align="center" valign="top" bordercolor="#000000" bgcolor="#999999"> 
+      <font face="Comic Sans MS" size="2" color="#FFFFFF">August 29 2003. For 
+      BBC radio Ruth Rendell did answer questions on 'a Judgement in Stone'. Listen 
+      to: <a href="http://www.bbc.co.uk/worldservice/programmes/ram/wbc_rrendell.ram" target="new window">BBC 
+      radio</a> . Or read it: <a href="http://www.gusworld.com.au/books/rendell/tajis.htm" target="new window">Gusworld</a></font> 
+      <table width="75%" border="0">
+        <tr> 
+          <td align="center" valign="middle"><font color="#FFFFFF" size="2" face="Comic Sans MS"><img src="../plaatjes/hoofd.gif" alt="Woman" width="120" height="120"></font></td>
+        </tr>
+      </table>
+      <font color="#FFFFFF" size="2" face="Comic Sans MS">&nbsp;</font> </td>
+    <td width="200" align="center" valign="middle" bordercolor="#000000" bgcolor="#FFFFFF"> 
+      <center>
+        <img src="../plaatjes/aniloep.gif" alt="Daily life and danger" width="180" height="165"> 
+      </center></td>
+  </tr>
+  <tr> 
+    <td height="30" colspan="4" align="center" valign="middle" bordercolor="#000000" bgcolor="#CC3333"> 
+      <font color="#000000" size="2" face="Comic Sans MS">E-mail : <a href="mailto:inejacet@wxs.nl?subject= Ruth Rendell"">click 
+      here</a> - - - - </font> <SCRIPT LANGUAGE="Javascript"><!--
+
+var url="http://www.ruthrendell.tk";
+var title="Website over Ruth Rendell";
+
+function favorites(){
+if(document.all)
+window.external.AddFavorite(url,title)
+}
+//--></SCRIPT> <A HREF="javascript:favorites()"><font size="2" face="Comic Sans MS">Add 
+      to my favourites</font></A></td></td>
+  </tr>
+</table>
+
+<BR>
+<center>
+<center>
+
+<div align="center">
+ <script language="javascript">
+<!--
+document.write('<input onSelectstart="return false;" style="background-color: #000000; cursor: default; color: #CC0000; border: 0px ridge #000000; font-family: "Comic Sans MS" system" value="Loading..." type="text" name="klokje" size="20" readonly>')
+function geefdeklok()
+// 
+
+{
+var klok = new Date()
+var dagen = klok.getDate()
+if(dagen<10)
+dagen = "0" + dagen
+var maanden = klok.getMonth() + 1
+if(maanden<10)
+maanden = "0" + maanden
+var jaren = klok.getFullYear()
+var uren = klok.getHours()
+if(uren<10)
+uren = "0" + uren
+var minuten = klok.getMinutes()
+if(minuten<10)
+minuten = "0" + minuten
+var seconden = klok.getSeconds()
+if(seconden<10)
+seconden = "0" + seconden
+var detijd   = dagen+"-"+maanden+"-"+jaren+"   "+uren+"."+minuten+"."+seconden;
+klokje.value = "" + detijd;
+}
+setInterval("geefdeklok()", 1000)
+// -->
+</script> 
+  
+  
+
+      </td>
+    </tr>
+  </table>
+  
+</div>
+
+</body>
+</html>

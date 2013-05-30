@@ -1,0 +1,3588 @@
+PERL PROGRAM LOG: /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl
+
+Starting test_wikiqrysgt_07.pl --- 13:20:55, 09-01-2011
+
+
+Starting Wikipedia database: en_20110526 connection13:20:55, 09-01-2011
+
+Infile  = March of the Penguins, 1
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:march penguin
+
+
+Starting query segmentation --- 13:20:55, 09-01-2011
+
+
+Produce result --- 13:20:55, 09-01-2011
+
+Original query:March of the Penguins
+Segmented query:"March of the Penguins:2305746"::1
+
+Infile  = larry summers, 2
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:larry summer
+
+
+Starting query segmentation --- 13:20:55, 09-01-2011
+
+
+Produce result --- 13:20:55, 09-01-2011
+
+Original query:larry summers
+Segmented query:"larry summers:206211"::2
+
+Infile  = state of the union, 3
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:state union
+
+
+Starting query segmentation --- 13:20:55, 09-01-2011
+
+
+Produce result --- 13:20:55, 09-01-2011
+
+Original query:state of the union
+Segmented query:"state of the union:37081"::3
+
+Infile  = Ann Coulter, 4
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:ann coulter
+
+
+Starting query segmentation --- 13:20:55, 09-01-2011
+
+
+Produce result --- 13:20:55, 09-01-2011
+
+Original query:Ann Coulter
+Segmented query:"Ann Coulter:205522"::4
+
+Infile  = abramoff bush, 5
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:abramoff bush
+
+
+Starting query segmentation --- 13:20:55, 09-01-2011
+
+
+Starting Google search --- 13:20:55, 09-01-2011
+
+Searching Google (q5=abramoff bush)
+ -- extracting links & snippets
+    34 HTMLs found so far
+ -- fetch #1: http://www.time.com/time/nation/article/0,8599,1158908,00.html
+ -- fetch #2: http://www.time.com/time/magazine/article/0,9171,1151784,00.html
+ -- fetch #3: http://www.usatoday.com/news/washington/2006-01-26-bush_x.htm
+ -- fetch #4: http://www.usatoday.com/news/washington/2005-05-06-abramoff-bush_x.htm
+ -- fetch #5: http://www.rense.com/general69/phots.htm
+ -- fetch #6: http://www.rense.com/general69/cridi.htm
+ -- fetch #7: http://www.washingtonpost.com/wp-dyn/content/article/2008/06/09/AR2008060902529.html
+ -- fetch #8: http://www.washingtonpost.com/wp-dyn/content/article/2006/01/05/AR2006010501903.html
+ -- fetch #9: http://www.cbsnews.com/stories/2006/02/10/politics/main1303778.shtml
+ -- fetch #10: http://www.rawstory.com/news/2005/Studio_that_scrubbed_photo_earned_140000_0126.html
+w1, w2: abramoff,bush
+
+144 95 56
+
+MI value:4.4450560004673
+
+
+Produce result --- 13:21:01, 09-01-2011
+
+Original query:abramoff bush
+Segmented query:"abramoff bush" ::5
+
+Infile  = macbook pro, 6
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:macbook pro
+
+
+Starting query segmentation --- 13:21:01, 09-01-2011
+
+
+Produce result --- 13:21:01, 09-01-2011
+
+Original query:macbook pro
+Segmented query:"macbook pro:3677824"::6
+
+Infile  = jon stewart, 7
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:jon stewart
+
+
+Starting query segmentation --- 13:21:01, 09-01-2011
+
+
+Produce result --- 13:21:01, 09-01-2011
+
+Original query:jon stewart
+Segmented query:"jon stewart:235888"::7
+
+Infile  = super bowl ads, 8
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:super bowl ad
+
+
+Starting query segmentation --- 13:21:01, 09-01-2011
+
+
+Starting Google search --- 13:21:01, 09-01-2011
+
+Searching Google (q8=super bowl ads)
+ -- extracting links & snippets
+    21 HTMLs found so far
+ -- fetch #1: http://video.google.com/superbowl.html
+ -- fetch #2: http://www.nj.com/entertainment/tv/index.ssf/2011/02/super_bowl_commercials_which_o.html
+ -- fetch #3: http://www.people.com/people/article/0,,20464264,00.html
+ -- fetch #4: http://www.huffingtonpost.com/2011/02/06/super-bowl-commercials-2011-all-the-ads_n_819313.html
+ -- fetch #5: http://www.cbsnews.com/stories/2011/02/04/earlyshow/leisure/main7317211.shtml
+ -- fetch #6: http://online.wsj.com/article/SB10001424052748703989504576128260801960194.html
+ -- fetch #7: http://www.cinemablend.com/television/2011-Super-Bowl-Commercials-Watch-Them-Here-29867.html
+ -- fetch #8: http://latimesblogs.latimes.com/sports_blog/2011/02/super-bowl-ads-the-top-5-best-and-worst-at-halftime.html
+ -- fetch #9: http://money.cnn.com/2011/02/03/news/companies/super_bowl_ads/index.htm
+ -- fetch #10: http://www.washingtonpost.com/wp-dyn/content/article/2011/02/07/AR2011020700184.html
+
+Starting query segmentation ranking --- 13:21:12, 09-01-2011
+
+Enter chkWkTopic: super bowl
+
+Enter calConditionalProb:4.59353697615821e-08 145 10064 2500
+
+Enter chkWkTopic: super bowl ads
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: bowl ads
+
+Enter calConditionalProb:8.0017247232697e-10 30 10064 2500
+
+ranked query topics:super bowl,bowl ads,super bowl ads
+
+top topic:context:super bowl:ads
+
+original term:ads
+
+term:ads
+
+Enter chkWkTopic: ads
+
+Enter chkWkTopic: super bowl
+
+top topic:context:bowl ads:super
+
+original term:super
+
+term:super
+
+Enter chkWkTopic: super
+
+Enter chkWkTopic: bowl ads
+
+top topic:context:super bowl ads:
+
+Enter chkWkTopic: super bowl ads
+
+
+Produce result --- 13:21:12, 09-01-2011
+
+Original query:super bowl ads
+Segmented query:"super bowl:27718" ads:22562196 ||"bowl ads" super:22562196 ||"super bowl ads" ||::8
+
+Infile  = letting india into the club, 9
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:letting india club
+
+
+Starting query segmentation --- 13:21:12, 09-01-2011
+
+
+Starting Google search --- 13:21:12, 09-01-2011
+
+Searching Google (q9=letting india into the club)
+ -- extracting links & snippets
+    36 HTMLs found so far
+ -- fetch #1: http://www.echarcha.com/forum/archive/index.php/t-22926.html
+ -- fetch #2: http://www.orlok.com/blog/archive_listserver/mb-civic/2006-March/018279.html
+ -- fetch #3: http://www.usindiafriendship.net/viewpoints1/5rejoinders.htm
+ -- fetch #4: http://www.tennisjunction.in/more/find-a-club.html
+ -- fetch #5: http://www.firstpost.com/politics/indias-big-power-aspirations-face-bigger-hurdles-42745.html
+ -- fetch #6: http://finance.indiamart.com/taxation/income_tax/tax_Income_house_property.html
+ -- fetch #7: http://newyork.citysearch.com/profile/41794956/new_york_ny/pacha.html
+ -- fetch #8: http://www.george-orwell.org/Burmese_Days/1.html
+ -- fetch #9: http://www.unicef.org/infobycountry/india_58294.html
+ -- fetch #10: http://www.bbc.co.uk/blogs/thereporters/soutikbiswas/2010/06/why_is_india_a_football_laggard.html
+Enter chkWkTopic: into 
+
+Enter chkWkTopic: into  club
+
+Enter chkWkTopic:  club
+
+Enter chkWkTopic:  club
+
+Enter chkWkTopic:  club
+
+Enter chkWkTopic:  club
+
+Enter chkWkTopic: letting india
+
+Enter chkWkTopic:  club
+
+Enter chkWkTopic: letting india
+
+Enter chkWkTopic: letting india
+
+Enter chkWkTopic: letting india into
+
+Enter chkWkTopic: india into
+
+
+Starting query segmentation ranking --- 13:21:32, 09-01-2011
+
+Enter chkWkTopic: letting india into  club
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:2.01670761032695e-28 0 0 2500
+
+Enter chkWkTopic: india into
+
+Enter calConditionalProb:1.58764379429954e-12 328 15837 2500
+
+Enter chkWkTopic: india into  club
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:2.54077772011847e-21 13 15837 2500
+
+Enter chkWkTopic: letting india into 
+
+Enter calConditionalProb:1.26017057576487e-19 9 15837 2500
+
+Enter chkWkTopic: india into 
+
+Enter calConditionalProb:1.58764379429954e-12 328 15837 2500
+
+Enter chkWkTopic: letting india
+
+Enter calConditionalProb:3.15008689345147e-15 9 15837 2500
+
+Enter chkWkTopic: letting india into
+
+Enter calConditionalProb:1.26017057576487e-19 9 15837 2500
+
+Enter chkWkTopic: into  club
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:3.20103488973488e-14 106 13973 2500
+
+Enter chkWkTopic: into 
+
+Enter wikiDisambiguation:into  letting india club
+
+Enter calConditionalProb:4.59353697615821e-08 28022 13973 2500
+
+Enter chkWkTopic:  club
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:8.0017247232697e-10 106 13973 2500
+
+ranked query topics:into ,india into,india into , club,into  club,india into  club,letting india,letting india into ,letting india into,letting india into  club
+
+top topic:context:into :letting india club
+
+original term:letting india club
+
+term:letting india club
+
+Enter chkWkTopic: letting india club
+
+Enter chkWkTopic: into 
+
+top topic:context:india into:letting  club
+
+original term:letting  club
+
+term:letting  club
+
+Enter chkWkTopic: letting  club
+
+Enter chkWkTopic: india into
+
+top topic:context:india into :letting club
+
+original term:letting club
+
+term:letting club
+
+Enter chkWkTopic: letting club
+
+Enter chkWkTopic: india into 
+
+
+Produce result --- 13:21:32, 09-01-2011
+
+Original query:letting india into  club
+Segmented query:"into :18951490" letting india club||"india into" letting  club||"india into " letting club||::9
+
+Infile  = arrested development, 10
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:arrest development
+
+
+Starting query segmentation --- 13:21:32, 09-01-2011
+
+
+Produce result --- 13:21:32, 09-01-2011
+
+Original query:arrested development
+Segmented query:"arrested development:8241941"::10
+
+Infile  = mardi gras, 11
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mardi gra
+
+
+Starting query segmentation --- 13:21:32, 09-01-2011
+
+
+Produce result --- 13:21:32, 09-01-2011
+
+Original query:mardi gras
+Segmented query:"mardi gras:38482"::11
+
+Infile  = colbert report, 12
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:colbert report
+
+
+Starting query segmentation --- 13:21:32, 09-01-2011
+
+
+Produce result --- 13:21:32, 09-01-2011
+
+Original query:colbert report
+Segmented query:"colbert report:1838984"::12
+
+Infile  = Whole Foods, 13
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:whole food
+
+
+Starting query segmentation --- 13:21:32, 09-01-2011
+
+
+Produce result --- 13:21:32, 09-01-2011
+
+Original query:Whole Foods
+Segmented query:"Whole Foods:22562196"::13
+
+Infile  = cheney hunting, 14
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:cheney hunt
+
+
+Starting query segmentation --- 13:21:32, 09-01-2011
+
+
+Starting Google search --- 13:21:32, 09-01-2011
+
+Searching Google (q14=cheney hunting)
+ -- extracting links & snippets
+!!snippet for result 107 NOT FOUND!!
+!!snippet for result 108 NOT FOUND!!
+    36 HTMLs found so far
+ -- fetch #1: http://politicalhumor.about.com/od/cheneyshooting/a/cheneyshooting_3.htm
+ -- fetch #2: http://www.nytimes.com/2006/02/14/politics/14cheney.html
+ -- fetch #3: http://www.rawstory.com/news/2005/Beer_quote_pulled_from_MSNBC_Cheney_0215.html
+ -- fetch #4: http://www.fugly.com/flash/708/cheney_hunt.html
+ -- fetch #5: http://www.cbsnews.com/stories/2003/12/15/politics/main588582.shtml
+ -- fetch #6: http://www.time.com/time/nation/article/0,8599,1159061,00.html
+ -- fetch #7: http://politicalhumor.about.com/od/cheneyshooting/Dick_Cheney_Shooting_Jokes.htm
+ -- fetch #8: http://www.funrestarea.com/pages/cheney_shot.shtml
+ -- fetch #9: http://www.huffingtonpost.com/roy-sekoff/cheneys-got-a-gun_b_15542.html
+ -- fetch #10: http://www.wsws.org/articles/2006/feb2006/chen-f14.shtml
+w1, w2: cheney,hunt
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+193 84 25
+
+MI value:3.3803945719032
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:cheney hunting
+Segmented query:"cheney hunting" ::14
+
+Infile  = joint strike fighter, 15
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:joint strike fighter
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:joint strike fighter
+Segmented query:"joint strike fighter:22562196"::15
+
+Infile  = muhammad cartoon, 16
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:muhammad cartoon
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:muhammad cartoon
+Segmented query:"muhammad cartoon:7765099"::16
+
+Infile  = barry bonds, 17
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:barry bond
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:barry bonds
+Segmented query:"barry bonds:4375"::17
+
+Infile  = cindy sheehan, 18
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:cindy sheehan
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:cindy sheehan
+Segmented query:"cindy sheehan:2328877"::18
+
+Infile  = brokeback mountain, 19
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:brokeback mountain
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:brokeback mountain
+Segmented query:"brokeback mountain:1623960"::19
+
+Infile  = bruce bartlett, 20
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:bruce bartlett
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:bruce bartlett
+Segmented query:"bruce bartlett:1717280"::20
+
+Infile  = coretta scott king, 21
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:coretta scott king
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:coretta scott king
+Segmented query:"coretta scott king:436127"::21
+
+Infile  = american idol, 22
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:american idol
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:american idol
+Segmented query:"american idol:191890"::22
+
+Infile  = life on mars, 23
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:life mar
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Produce result --- 13:21:42, 09-01-2011
+
+Original query:life on mars
+Segmented query:"life on mars:463835"::23
+
+Infile  = sonic food industry, 24
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:sonic food industry
+
+
+Starting query segmentation --- 13:21:42, 09-01-2011
+
+
+Starting Google search --- 13:21:42, 09-01-2011
+
+Searching Google (q24=sonic food industry)
+ -- extracting links & snippets
+    32 HTMLs found so far
+ -- fetch #1: http://www.sonic-horns.com/food_industry.htm
+ -- fetch #2: http://www.fastfood.com/chains/Sonic.html
+ -- fetch #3: http://essays24.com/print/Sonis-DriveIn/45707.html
+!Mech->get TimeOut: Error GETing http://essays24.com/print/Sonis-DriveIn/45707.html: Alarm
+ at /home/hz3/workspace/epic_prog/sub/spidersub_2010.pl line 55
+ -- fetch #4: http://www.secaucusnewjersey.org/mixed-reactions-to-selling-alcohol-in-fast-food-restaurants-1937.html
+ -- fetch #5: http://weblogs.ctnow.com/entertainment/dining/a-la-carte/2010/07/why-you-should-be-excited-abou.html
+ -- fetch #6: http://www.fluidproducts.com/food.htm
+ -- fetch #7: http://www.fluidproducts.com/sasfood.htm
+ -- fetch #8: http://www.hoovers.com/company/Sonic_Corp/ryrrti-1.html
+ -- fetch #9: http://fh1100-pilot.blogspot.com/2008/09/sonic-drive-in-art-of-tv-commercial.html
+ -- fetch #10: http://www.usatoday.com/money/industries/food/2011-06-30-fast-food-restaurants-offering-alcohol_n.htm
+
+Starting query segmentation ranking --- 13:22:02, 09-01-2011
+
+Enter chkWkTopic: sonic food
+
+Enter calConditionalProb:8.0017247232697e-10 4 6427 2500
+
+Enter chkWkTopic: sonic food industry
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: food industry
+
+Enter calConditionalProb:4.59353697615821e-08 6 6427 2500
+
+ranked query topics:food industry,sonic food,sonic food industry
+
+top topic:context:food industry:sonic
+
+original term:sonic
+
+term:sonic
+
+Enter chkWkTopic: sonic
+
+Enter chkWkTopic: food industry
+
+top topic:context:sonic food:industry
+
+original term:industry
+
+term:industry
+
+Enter chkWkTopic: industry
+
+Enter chkWkTopic: sonic food
+
+top topic:context:sonic food industry:
+
+Enter chkWkTopic: sonic food industry
+
+
+Produce result --- 13:22:02, 09-01-2011
+
+Original query:sonic food industry
+Segmented query:"food industry:2437974" sonic:22562196 ||"sonic food" industry:14543 ||"sonic food industry" ||::24
+
+Infile  = hybrid car, 25
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:hybrid car
+
+
+Starting query segmentation --- 13:22:02, 09-01-2011
+
+
+Produce result --- 13:22:02, 09-01-2011
+
+Original query:hybrid car
+Segmented query:"hybrid car:22562196"::25
+
+Infile  = natalie portman, 26
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:natalie portman
+
+
+Starting query segmentation --- 13:22:02, 09-01-2011
+
+
+Produce result --- 13:22:02, 09-01-2011
+
+Original query:natalie portman
+Segmented query:"natalie portman:38459"::26
+
+Infile  = Fox News Report, 27
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:fox news Report
+
+
+Starting query segmentation --- 13:22:02, 09-01-2011
+
+
+Starting Google search --- 13:22:02, 09-01-2011
+
+Searching Google (q27=Fox News Report)
+ -- extracting links & snippets
+    17 HTMLs found so far
+ -- fetch #1: http://www.foxnews.com/on-air/shepard-smith/index.html
+ -- fetch #2: http://www.foxnews.com/on-air/special-report/index.html
+ -- fetch #3: http://www.foxnews.com/story/0,2933,77538,00.html
+ -- fetch #4: http://www.foxnews.com/story/0,2933,1260,00.html
+ -- fetch #5: http://www.ageofautism.com/2011/05/fox-news-reports-.html
+ -- fetch #6: http://www.nytimes.com/2010/11/01/business/media/01fox.html
+ -- fetch #7: http://www.politico.com/blogs/onmedia/0311/CNN_reporter_slams_FOX_News_report_that_Qaddafi_used_reporters_as_human_shields.html
+ -- fetch #8: http://blog.zap2it.com/pop2it/2011/05/obama-bin-laden-dead-fox-news-affiliate-defends-itself-for-typo.html
+ -- fetch #9: http://www.huffingtonpost.com/andy-borowitz/fox-news-reports-no-link_b_807709.html
+ -- fetch #10: http://news.yahoo.com/blogs/cutline/latest-gawker-vs-fox-news-report-claims-bill-211459764.html
+
+Starting query segmentation ranking --- 13:22:14, 09-01-2011
+
+Enter chkWkTopic: News Report
+
+Enter calConditionalProb:4.59353697615821e-08 25 9151 2500
+
+Enter chkWkTopic: Fox News
+
+Enter wikiDisambiguation:Fox News Report
+
+Enter calConditionalProb:4.59353697615821e-08 91 9151 2500
+
+Enter chkWkTopic: Fox News Report
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+ranked query topics:Fox News,News Report,Fox News Report
+
+top topic:context:Fox News:Report
+
+original term:Report
+
+term:Report
+
+Enter chkWkTopic: Report
+
+Enter chkWkTopic: Fox News
+
+top topic:context:News Report:Fox
+
+original term:Fox
+
+term:Fox
+
+Enter chkWkTopic: Fox
+
+Enter chkWkTopic: News Report
+
+top topic:context:Fox News Report:
+
+Enter chkWkTopic: Fox News Report
+
+
+Produce result --- 13:22:14, 09-01-2011
+
+Original query:Fox News Report
+Segmented query:"Fox News:22112840" Report:4692150 ||"News Report:20781999" Fox:11299 ||"Fox News Report" ||::27
+
+Infile  = west wing, 28
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:west wing
+
+
+Starting query segmentation --- 13:22:14, 09-01-2011
+
+
+Produce result --- 13:22:14, 09-01-2011
+
+Original query:west wing
+Segmented query:"west wing:738133"::28
+
+Infile  = World Trade Organization, 29
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:world trade organization
+
+
+Starting query segmentation --- 13:22:14, 09-01-2011
+
+
+Produce result --- 13:22:14, 09-01-2011
+
+Original query:World Trade Organization
+Segmented query:"World Trade Organization:33873"::29
+
+Infile  = Jim Moran, 30
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:jim moran
+
+
+Starting query segmentation --- 13:22:14, 09-01-2011
+
+
+Produce result --- 13:22:14, 09-01-2011
+
+Original query:Jim Moran
+Segmented query:"Jim Moran:412996"::30
+
+Infile  = board chess, 31
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:board chess
+
+
+Starting query segmentation --- 13:22:14, 09-01-2011
+
+
+Starting Google search --- 13:22:14, 09-01-2011
+
+Searching Google (q31=board chess)
+ -- extracting links & snippets
+    38 HTMLs found so far
+ -- fetch #1: http://www.chessusa.com/chess-boards.html
+ -- fetch #2: http://www.chess.com/analysis-board-editor.html
+ -- fetch #3: http://chess.about.com/od/rulesofchess/ss/Boardsetup.htm
+ -- fetch #4: http://www.learn4good.com/games/board/chess.htm
+ -- fetch #5: http://www.chesshouse.com/chess_board_s/151.htm
+ -- fetch #6: http://www.chesshouse.com/dgt_electronic_chess_boards_s/361.htm
+ -- fetch #7: http://www.overstock.com/Sports-Toys/Chess/3195/subcat.html
+ -- fetch #8: http://www.epiloglaser.com/sc_chessboard.htm
+ -- fetch #9: http://www.dqsoft.com/chess.html
+ -- fetch #10: http://www.art.com/products/p10118002-sa-i890395/illusion-chess-board.htm
+w1, w2: board,chess
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+148 299 190
+
+MI value:4.02742475865339
+
+
+Produce result --- 13:22:19, 09-01-2011
+
+Original query:board chess
+Segmented query:"board chess" ::31
+
+Infile  = global warming, 32
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:global warm
+
+
+Starting query segmentation --- 13:22:19, 09-01-2011
+
+
+Produce result --- 13:22:19, 09-01-2011
+
+Original query:global warming
+Segmented query:"global warming:5042951"::32
+
+Infile  = ariel sharon, 33
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:ariel sharon
+
+
+Starting query segmentation --- 13:22:19, 09-01-2011
+
+
+Produce result --- 13:22:19, 09-01-2011
+
+Original query:ariel sharon
+Segmented query:"ariel sharon:2944"::33
+
+Infile  = Business Intelligence Resources, 34
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:business intelligence resource
+
+
+Starting query segmentation --- 13:22:19, 09-01-2011
+
+
+Starting Google search --- 13:22:19, 09-01-2011
+
+Searching Google (q34=Business Intelligence Resources)
+ -- extracting links & snippets
+    21 HTMLs found so far
+ -- fetch #1: http://www.1keydata.com/datawarehousing/links.html
+ -- fetch #2: http://www.oraclegiants.com/oracle-recycle-bin-10g.htm
+ -- fetch #3: http://www.llrx.com/features/busintellguide.htm
+ -- fetch #4: http://www.cutter.com/bia.html
+ -- fetch #5: http://biresources.blogspot.com/2010_01_01_archive.html
+ -- fetch #6: http://www.oracle.com/us/products/applications/ebusiness/hrm/053903.html
+ -- fetch #7: http://www.oracle.com/us/solutions/ent-performance-bi/hr-analytics-066536.html
+ -- fetch #8: http://jobsearchtech.about.com/od/techcareersskills/g/BI.htm
+ -- fetch #9: http://www.information-management-architect.com/business-intelligence-resources.html
+ -- fetch #10: http://www.information-management-architect.com/enterprise-business-intelligence.html
+
+Starting query segmentation ranking --- 13:22:29, 09-01-2011
+
+Enter chkWkTopic: Business Intelligence
+
+Enter wikiDisambiguation:Business Intelligence Resources
+
+Enter calConditionalProb:4.59353697615821e-08 254 11907 2500
+
+Enter chkWkTopic: Business Intelligence Resources
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: Intelligence Resources
+
+Enter calConditionalProb:8.0017247232697e-10 33 11907 2500
+
+ranked query topics:Business Intelligence,Intelligence Resources,Business Intelligence Resources
+
+top topic:context:Business Intelligence:Resources
+
+original term:Resources
+
+term:Resources
+
+Enter chkWkTopic: Resources
+
+Enter chkWkTopic: Business Intelligence
+
+top topic:context:Intelligence Resources:Business
+
+original term:Business
+
+term:Business
+
+Enter chkWkTopic: Business
+
+Enter chkWkTopic: Intelligence Resources
+
+top topic:context:Business Intelligence Resources:
+
+Enter chkWkTopic: Business Intelligence Resources
+
+
+Produce result --- 13:22:29, 09-01-2011
+
+Original query:Business Intelligence Resources
+Segmented query:"Business Intelligence:22562196" Resources:22562196 ||"Intelligence Resources" Business:39206 ||"Business Intelligence Resources" ||::34
+
+Infile  = lactose gas, 35
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:lactose gas
+
+
+Starting query segmentation --- 13:22:29, 09-01-2011
+
+
+Starting Google search --- 13:22:29, 09-01-2011
+
+Searching Google (q35=lactose gas)
+ -- extracting links & snippets
+    42 HTMLs found so far
+ -- fetch #1: http://ibdcrohns.about.com/cs/li/a/lactoseintol.htm
+ -- fetch #2: http://www.afraidtoask.com/bowel/gas.html
+ -- fetch #3: http://healthnews.ediets.com/diet-weight-loss/got-milk-and-gas-maybe-youre-lactose-intolerant.html
+ -- fetch #4: http://www.medicinenet.com/lactose_intolerance/page2.htm
+ -- fetch #5: http://kidshealth.org/teen/food_fitness/nutrition/lactose_intolerance.html
+ -- fetch #6: http://www.learnwhatsup.com/prc/health/adult/lactose.html
+ -- fetch #7: http://www.uic.edu/classes/phar/phar332/Clinical_Cases/carbo%20metab%20cases/lactose%20intol.htm
+ -- fetch #8: http://planetlactose.blogspot.com/2008/04/stomach-gas-not-from-lactose.html
+ -- fetch #9: http://www.menopauserx.com/health_center/health_Gas.htm
+ -- fetch #10: http://www.fda.gov/food/scienceresearch/LaboratoryMethods/BacteriologicalAnalyticalManualBAM/ucm064948.htm
+w1, w2: lactose,gas
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+320 170 42
+
+MI value:3.11143642414935
+
+
+Produce result --- 13:22:34, 09-01-2011
+
+Original query:lactose gas
+Segmented query:"lactose gas" ::35
+
+Infile  = Steve jobs, 36
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:steve job
+
+
+Starting query segmentation --- 13:22:34, 09-01-2011
+
+
+Produce result --- 13:22:34, 09-01-2011
+
+Original query:Steve jobs
+Segmented query:"Steve jobs:7412236"::36
+
+Infile  = king funeral, 37
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:king funeral
+
+
+Starting query segmentation --- 13:22:34, 09-01-2011
+
+
+Starting Google search --- 13:22:34, 09-01-2011
+
+Searching Google (q37=king funeral)
+ -- extracting links & snippets
+    28 HTMLs found so far
+ -- fetch #1: http://www.kingfuneralhome.com/services.htm
+ -- fetch #2: http://www.kingsfuneral.com/staff.htm
+ -- fetch #3: http://www.filbeckcannking.com/html/services.htm
+ -- fetch #4: http://www.jofreeman.com/photos/Kingfuneral2.html
+ -- fetch #5: http://www.independent.co.uk/news/world/americas/bush-squirms-as-policies-denounced-at-king-funeral-465946.html
+ -- fetch #6: http://national.citysearch.com/profile/3106114/augusta_ga/thomas_l_king_funeral_home.html
+ -- fetch #7: http://www.ldsgenesisgroup.com/kingfuneral.html
+ -- fetch #8: http://www.huffingtonpost.com/al-franken/reflections-on-the-wellst_b_15459.html
+ -- fetch #9: http://www.nytimes.com/2006/02/08/national/08king.html
+ -- fetch #10: http://www.thamesweb.co.uk/windsor/windsorhistory/royalfunerals/georgeV/geoV_280136.html
+w1, w2: king,funeral
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+95 190 50
+
+MI value:4.01169187654765
+
+
+Produce result --- 13:22:43, 09-01-2011
+
+Original query:king funeral
+Segmented query:"king funeral" ::37
+
+Infile  = carrie underwood, 38
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:carrie underwood
+
+
+Starting query segmentation --- 13:22:43, 09-01-2011
+
+
+Produce result --- 13:22:43, 09-01-2011
+
+Original query:carrie underwood
+Segmented query:"carrie underwood:1535727"::38
+
+Infile  = Aperto Networks, 39
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:aperto network
+
+
+Starting query segmentation --- 13:22:43, 09-01-2011
+
+
+Starting Google search --- 13:22:43, 09-01-2011
+
+Searching Google (q39=Aperto Networks)
+ -- extracting links & snippets
+    36 HTMLs found so far
+ -- fetch #1: http://www.apertonet.com/about/contact.html
+ -- fetch #2: http://www.apertonet.com/products/products.html
+ -- fetch #3: http://www.apertonet.com/about/careers.html
+ -- fetch #4: http://www.apertonet.com/about/execteam.html
+ -- fetch #5: http://www.apertonet.com/about/about.html
+ -- fetch #6: http://www.apertonet.com/products/pmax.html
+ -- fetch #7: http://www.oidview.com/mibs/4325/md-4325-1.html
+ -- fetch #8: http://www.glassdoor.com/Overview/Working-at-Aperto-Networks-EI_IE27462.11,26.htm
+ -- fetch #9: http://www.glassdoor.com/Reviews/Aperto-Networks-Reviews-E27462.htm
+ -- fetch #10: http://www.hoovers.com/company/Aperto_Networks_Inc/rttjfhi-1.html
+w1, w2: aperto,network
+
+93 34 48
+
+MI value:6.28757659009659
+
+
+Produce result --- 13:22:47, 09-01-2011
+
+Original query:Aperto Networks
+Segmented query:"Aperto Networks" ::39
+
+Infile  = SCI FI CHANNEL, 40
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:channel sci
+
+
+Starting query segmentation --- 13:22:47, 09-01-2011
+
+
+Produce result --- 13:22:47, 09-01-2011
+
+Original query:SCI FI CHANNEL
+Segmented query:"SCI FI CHANNEL:382617"::40
+
+Infile  = sag awards, 41
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:sag award
+
+
+Starting query segmentation --- 13:22:47, 09-01-2011
+
+
+Produce result --- 13:22:47, 09-01-2011
+
+Original query:sag awards
+Segmented query:"sag awards:4293294"::41
+
+Infile  = andrew coyne, 42
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:andrew coyne
+
+
+Starting query segmentation --- 13:22:47, 09-01-2011
+
+
+Produce result --- 13:22:47, 09-01-2011
+
+Original query:andrew coyne
+Segmented query:"andrew coyne:1069015"::42
+
+Infile  = Christianity Today, 43
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:christianity today
+
+
+Starting query segmentation --- 13:22:47, 09-01-2011
+
+
+Produce result --- 13:22:47, 09-01-2011
+
+Original query:Christianity Today
+Segmented query:"Christianity Today:695888"::43
+
+Infile  = howard stern, 44
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:howard stern
+
+
+Starting query segmentation --- 13:22:47, 09-01-2011
+
+
+Produce result --- 13:22:47, 09-01-2011
+
+Original query:howard stern
+Segmented query:"howard stern:113348"::44
+
+Infile  = mark driscoll, 45
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mark driscoll
+
+
+Starting query segmentation --- 13:22:47, 09-01-2011
+
+
+Produce result --- 13:22:47, 09-01-2011
+
+Original query:mark driscoll
+Segmented query:"mark driscoll:2937447"::45
+
+Infile  = mashup camp, 46
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mashup camp
+
+
+Starting query segmentation --- 13:22:47, 09-01-2011
+
+
+Starting Google search --- 13:22:47, 09-01-2011
+
+Searching Google (q46=mashup camp)
+ -- extracting links & snippets
+    15 HTMLs found so far
+ -- fetch #1: http://www.eaipatterns.com/ramblings/58_mashupcamp.html
+ -- fetch #2: http://news.cnet.com/MashupCamp--a-new-kind-of-get-together/2100-1032_3-6041377.html
+ -- fetch #3: http://news.cnet.com/Podbop-nets-big-prize-at-MashupCamp/2100-1032_3-6041844.html
+ -- fetch #4: http://www.starchamber.com/2007/01/mashup-camp.html
+ -- fetch #5: http://googledataapis.blogspot.com/2007/01/mashup-camp-3-googlers-experience.html
+ -- fetch #6: http://ross.typepad.com/blog/2006/02/mashupcamp.html
+ -- fetch #7: http://home.wangjianshuo.com/archives/20060313_mashup_camp_china.htm
+ -- fetch #8: http://www.opengardensblog.futuretext.com/archives/2008/10/techwebs_altern.html
+ -- fetch #9: http://www.christine.net/2006/07/day_one_takeawa.html
+ -- fetch #10: http://napsterization.org/stories/archives/000592.html
+w1, w2: mashup,camp
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+122 63 72
+
+MI value:5.87569720485209
+
+
+Produce result --- 13:22:56, 09-01-2011
+
+Original query:mashup camp
+Segmented query:"mashup camp" ::46
+
+Infile  = hawthorne heights, 47
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:hawthorne height
+
+
+Starting query segmentation --- 13:22:56, 09-01-2011
+
+
+Produce result --- 13:22:56, 09-01-2011
+
+Original query:hawthorne heights
+Segmented query:"hawthorne heights:1600291"::47
+
+Infile  = oscar fashion, 48
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:oscar fashion
+
+
+Starting query segmentation --- 13:22:56, 09-01-2011
+
+
+Starting Google search --- 13:22:56, 09-01-2011
+
+Searching Google (q48=oscar fashion)
+ -- extracting links & snippets
+    31 HTMLs found so far
+ -- fetch #1: http://www.mtv.com/news/articles/1658803/oscar-red-carpet.jhtml
+ -- fetch #2: http://www.peoplestylewatch.com/people/stylewatch/package/redcarpet/0,,20449766,00.html
+ -- fetch #3: http://latimesblogs.latimes.com/alltherage/2011/02/oscars-fashion-hits-and-misses.html
+ -- fetch #4: http://blog.zap2it.com/pop2it/2011/02/osars-fashion-5-best-5-worst-chosen-by-zap2its-guest-stylist-to-the-stars.html
+ -- fetch #5: http://www.washingtonpost.com/wp-dyn/content/article/2011/03/01/AR2011030102558.html
+ -- fetch #6: http://live.washingtonpost.com/2011-oscar-fashion.html
+ -- fetch #7: http://www.cbsnews.com/2300-207_162-10006848.html
+ -- fetch #8: http://www.nydailynews.com/lifestyle/fashion/galleries/2011_academy_awards/2011_academy_awards.html
+ -- fetch #9: http://www.nydailynews.com/entertainment/movies/galleries/fashion_at_the_oscars/fashion_at_the_oscars.html
+ -- fetch #10: http://fashion.telegraph.co.uk/galleries/TMG8351285/Oscars-red-carpet-fashion-hits-and-misses-2011-in-pictures.html
+w1, w2: oscar,fashion
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+142 106 36
+
+MI value:4.61051777108685
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:oscar fashion
+Segmented query:"oscar fashion" ::48
+
+Infile  = big love, 49
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:big love
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:big love
+Segmented query:"big love:2910063"::49
+
+Infile  = brand manager, 50
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:brand manager
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:brand manager
+Segmented query:"brand manager:22562196"::50
+
+Infile  = fort mcmurray, 51
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:fort mcmurray
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:fort mcmurray
+Segmented query:"fort mcmurray:329151"::51
+
+Infile  = winter olympics, 52
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:winter olympic
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:winter olympics
+Segmented query:"winter olympics:22562196"::52
+
+Infile  = plug awards, 53
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:plug award
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:plug awards
+Segmented query:"plug awards:2470400"::53
+
+Infile  = Beggin Strips, 54
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:beggin strip
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:Beggin Strips
+Segmented query:"Beggin Strips:2469377"::54
+
+Infile  = Lance Armstrong, 55
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:lance armstrong
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:Lance Armstrong
+Segmented query:"Lance Armstrong:23243880"::55
+
+Infile  = teri hatcher, 56
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:teri hatcher
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:teri hatcher
+Segmented query:"teri hatcher:210318"::56
+
+Infile  = lawful access, 57
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:lawful access
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Produce result --- 13:23:03, 09-01-2011
+
+Original query:lawful access
+Segmented query:"lawful access:5748872"::57
+
+Infile  = Opera Software Opera Browser Opera Mobile Opera Mini, 58
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:opera software opera browser opera mobile opera mini
+
+
+Starting query segmentation --- 13:23:03, 09-01-2011
+
+
+Starting Google search --- 13:23:03, 09-01-2011
+
+Searching Google (q58=Opera Software Opera Browser Opera Mobile Opera Mini)
+ -- extracting links & snippets
+!!snippet for result 101 NOT FOUND!!
+    23 HTMLs found so far
+ -- fetch #1: http://download.cnet.com/Opera-Mobile/3000-2356_4-10664921.html
+ -- fetch #2: http://techie-buzz.com/mobile-news/opera-mini-6-opera-mobile-11.html
+ -- fetch #3: http://techie-buzz.com/mobile-news/opera-mobile-mini-auto-suggest.html
+ -- fetch #4: http://download.cnet.com/Opera-Mobile/3000-2356_4-10865570.html
+ -- fetch #5: http://www.symbian-freak.com/news/011/07/opera_moini_6_1_for_symbian_gets_silent_update.html
+ -- fetch #6: http://www.admarvel.com/OMAE.html
+ -- fetch #7: http://news.softpedia.com/news/Download-Opera-Mini-5-and-Opera-Mobile-10-Final-137584.shtml
+ -- fetch #8: http://www.blackberryforums.com/aftermarket-software/119249-opera-mini-default-browser.html
+ -- fetch #9: http://www.huffingtonpost.com/2011/05/24/opera-mini-6-browser-ipad-phone_n_866084.html
+ -- fetch #10: http://www.mobgold.com/updates/resources/opera-mini-and-opera-mobile-browsers.html
+Enter chkWkTopic: Opera Browser
+
+Enter chkWkTopic: Opera Browser Opera
+
+Enter chkWkTopic: Opera Browser Opera Mobile
+
+Enter chkWkTopic: Opera Browser Opera Mobile Opera
+
+Enter chkWkTopic: Opera Browser Opera Mobile Opera Mini
+
+Enter chkWkTopic: Browser Opera
+
+Enter chkWkTopic: Browser Opera Mobile
+
+Enter chkWkTopic: Browser Opera Mobile Opera
+
+Enter chkWkTopic: Browser Opera Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mobile
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Browser Opera
+
+Enter chkWkTopic: Browser Opera Mobile
+
+Enter chkWkTopic: Browser Opera Mobile Opera
+
+Enter chkWkTopic: Browser Opera Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mobile
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Mobile
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Browser
+
+Enter chkWkTopic: Opera Browser Opera
+
+Enter chkWkTopic: Opera Browser Opera Mobile
+
+Enter chkWkTopic: Opera Browser Opera Mobile Opera
+
+Enter chkWkTopic: Opera Browser Opera Mobile Opera Mini
+
+Enter chkWkTopic: Browser Opera
+
+Enter chkWkTopic: Browser Opera Mobile
+
+Enter chkWkTopic: Browser Opera Mobile Opera
+
+Enter chkWkTopic: Browser Opera Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mobile
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Mobile
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Mobile
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Opera Mobile
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Opera Mobile
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Opera Software Opera Browser
+
+Enter chkWkTopic: Opera Software Opera Browser Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Software Opera Browser
+
+Enter chkWkTopic: Software Opera Browser Opera
+
+Enter chkWkTopic: Opera Browser
+
+Enter chkWkTopic: Opera Browser Opera
+
+Enter chkWkTopic: Browser Opera
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Opera Software Opera Browser
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Software Opera Browser
+
+Enter chkWkTopic: Opera Browser
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Opera Software Opera Browser
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Software Opera Browser
+
+Enter chkWkTopic: Opera Browser
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Opera Software Opera Browser
+
+Enter chkWkTopic: Opera Software Opera Browser Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Software Opera Browser
+
+Enter chkWkTopic: Software Opera Browser Opera
+
+Enter chkWkTopic: Opera Browser
+
+Enter chkWkTopic: Opera Browser Opera
+
+Enter chkWkTopic: Browser Opera
+
+Enter chkWkTopic: Opera Mini
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Opera Software Opera Browser
+
+Enter chkWkTopic: Opera Software Opera Browser Opera
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Software Opera Browser
+
+Enter chkWkTopic: Software Opera Browser Opera
+
+Enter chkWkTopic: Opera Browser
+
+Enter chkWkTopic: Opera Browser Opera
+
+Enter chkWkTopic: Browser Opera
+
+Enter chkWkTopic: Opera Software
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter chkWkTopic: Opera Software Opera Browser
+
+Enter chkWkTopic: Opera Software Opera Browser Opera
+
+Enter chkWkTopic: Opera Software Opera Browser Opera Mobile
+
+Enter chkWkTopic: Software Opera
+
+Enter chkWkTopic: Software Opera Browser
+
+Enter chkWkTopic: Software Opera Browser Opera
+
+Enter chkWkTopic: Software Opera Browser Opera Mobile
+
+Enter chkWkTopic: Opera Browser
+
+Enter chkWkTopic: Opera Browser Opera
+
+Enter chkWkTopic: Opera Browser Opera Mobile
+
+Enter chkWkTopic: Browser Opera
+
+Enter chkWkTopic: Browser Opera Mobile
+
+Enter chkWkTopic: Opera Mobile
+
+
+Starting query segmentation ranking --- 13:23:12, 09-01-2011
+
+Enter chkWkTopic: Software Opera Browser Opera Mobile Opera Mini
+
+Enter calConditionalProb:8.19818307419356e-32 0 7611 2500
+
+Enter chkWkTopic: Browser Opera
+
+Enter calConditionalProb:8.00178417021103e-10 0 0 2500
+
+Enter chkWkTopic: Opera Software Opera Browser Opera Mobile Opera Mini
+
+Enter calConditionalProb:3.27962670055515e-36 0 0 2500
+
+Enter chkWkTopic: Software Opera
+
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+Enter chkWkTopic: Opera Software Opera Browser
+
+Enter calConditionalProb:1.28055197093971e-18 0 0 2500
+
+Enter chkWkTopic: Opera Software Opera Browser Opera Mobile Opera
+
+Enter calConditionalProb:8.19818307419356e-32 0 7611 2500
+
+Enter chkWkTopic: Browser Opera Mobile Opera
+
+Enter calConditionalProb:1.28055197101039e-18 0 0 2500
+
+Enter chkWkTopic: Software Opera Browser Opera Mobile
+
+Enter calConditionalProb:5.1227600034481e-23 0 0 2500
+
+Enter chkWkTopic: Opera Browser Opera Mobile
+
+Enter calConditionalProb:1.28055197101039e-18 0 0 2500
+
+Enter chkWkTopic: Software Opera Browser
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: Opera Mobile Opera Mini
+
+Enter calConditionalProb:1.28055197101039e-18 0 0 2500
+
+Enter chkWkTopic: Browser Opera Mobile Opera Mini
+
+Enter calConditionalProb:5.12276000344887e-23 0 0 2500
+
+Enter chkWkTopic: Opera Software Opera Browser Opera
+
+Enter calConditionalProb:5.1227600034481e-23 0 0 2500
+
+Enter chkWkTopic: Mobile Opera Mini
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+Enter chkWkTopic: Opera Browser
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter chkWkTopic: Mobile Opera
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter chkWkTopic: Browser Opera Mobile
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+Enter chkWkTopic: Opera Browser Opera
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+Enter chkWkTopic: Software Opera Browser Opera Mobile Opera
+
+Enter calConditionalProb:2.04932487306e-27 0 0 2500
+
+Enter chkWkTopic: Opera Browser Opera Mobile Opera
+
+Enter calConditionalProb:5.12276000344887e-23 0 0 2500
+
+Enter chkWkTopic: Opera Mobile Opera
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+Enter chkWkTopic: Opera Browser Opera Mobile Opera Mini
+
+Enter calConditionalProb:2.04932487306e-27 0 0 2500
+
+Enter chkWkTopic: Software Opera Browser Opera
+
+Enter calConditionalProb:1.28055197093971e-18 0 0 2500
+
+Enter chkWkTopic: Opera Software Opera
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: Opera Mobile
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter chkWkTopic: Opera Software Opera Browser Opera Mobile
+
+Enter calConditionalProb:2.04932487306e-27 0 0 2500
+
+Enter chkWkTopic: Opera Mini
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter chkWkTopic: Opera Software
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+ranked query topics:Opera Browser,Mobile Opera,Opera Mobile,Opera Mini,Opera Software,Browser Opera,Software Opera,Mobile Opera Mini,Browser Opera Mobile,Opera Browser Opera,Opera Mobile Opera,Software Opera Browser,Opera Software Opera,Browser Opera Mobile Opera,Opera Browser Opera Mobile,Opera Mobile Opera Mini,Opera Software Opera Browser,Software Opera Browser Opera,Browser Opera Mobile Opera Mini,Opera Browser Opera Mobile Opera,Software Opera Browser Opera Mobile,Opera Software Opera Browser Opera,Software Opera Browser Opera Mobile Opera,Opera Browser Opera Mobile Opera Mini,Opera Software Opera Browser Opera Mobile,Software Opera Browser Opera Mobile Opera Mini,Opera Software Opera Browser Opera Mobile Opera,Opera Software Opera Browser Opera Mobile Opera Mini
+
+top topic:context:Opera Browser:"Opera Software" "Opera Mobile" "Mobile Opera" "Opera Mini" Opera Software Opera Mobile Opera Mini
+
+original term:"Opera Software
+
+term:Opera Software
+
+Enter chkWkTopic: Opera Software
+
+original term:"Opera Mobile
+
+term:Opera Mobile
+
+Enter chkWkTopic: Opera Mobile
+
+original term:"Mobile Opera
+
+term:Mobile Opera
+
+Enter chkWkTopic: Mobile Opera
+
+original term:"Opera Mini
+
+term:Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+original term:Opera Software Opera Mobile Opera Mini
+
+term:Opera Software Opera Mobile Opera Mini
+
+Enter chkWkTopic: Opera Software Opera Mobile Opera Mini
+
+Enter chkWkTopic: Opera Browser
+
+top topic:context:Mobile Opera:"Opera Software" "Opera Browser" "Opera Mini" Opera Software Opera Browser Opera Mini
+
+original term:"Opera Software
+
+term:Opera Software
+
+Enter chkWkTopic: Opera Software
+
+original term:"Opera Browser
+
+term:Opera Browser
+
+Enter chkWkTopic: Opera Browser
+
+original term:"Opera Mini
+
+term:Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+original term:Opera Software Opera Browser Opera Mini
+
+term:Opera Software Opera Browser Opera Mini
+
+Enter chkWkTopic: Opera Software Opera Browser Opera Mini
+
+Enter chkWkTopic: Mobile Opera
+
+top topic:context:Opera Mobile:"Opera Software" "Opera Browser" "Opera Mini" Opera Software Opera Browser Opera Mini
+
+original term:"Opera Software
+
+term:Opera Software
+
+Enter chkWkTopic: Opera Software
+
+original term:"Opera Browser
+
+term:Opera Browser
+
+Enter chkWkTopic: Opera Browser
+
+original term:"Opera Mini
+
+term:Opera Mini
+
+Enter chkWkTopic: Opera Mini
+
+original term:Opera Software Opera Browser Opera Mini
+
+term:Opera Software Opera Browser Opera Mini
+
+Enter chkWkTopic: Opera Software Opera Browser Opera Mini
+
+Enter chkWkTopic: Opera Mobile
+
+
+Produce result --- 13:23:12, 09-01-2011
+
+Original query:Opera Software Opera Browser Opera Mobile Opera Mini
+Segmented query:"Opera Browser:18996620" Opera_Software:538484 Opera_Mobile:7699834 Mobile_Opera:12197928 Opera_Mini:3069269 Opera Software Opera Mobile Opera Mini||"Mobile Opera:12197928" Opera_Software:538484 Opera_Browser:18996620 Opera_Mini:3069269 Opera Software Opera Browser Opera Mini||"Opera Mobile:7699834" Opera_Software:538484 Opera_Browser:18996620 Opera_Mini:3069269 Opera Software Opera Browser Opera Mini||::58
+
+Infile  = sasha cohen, 59
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:sasha cohen
+
+
+Starting query segmentation --- 13:23:12, 09-01-2011
+
+
+Produce result --- 13:23:12, 09-01-2011
+
+Original query:sasha cohen
+Segmented query:"sasha cohen:1040267"::59
+
+Infile  = ford bell, 60
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:ford bell
+
+
+Starting query segmentation --- 13:23:12, 09-01-2011
+
+
+Starting Google search --- 13:23:12, 09-01-2011
+
+Searching Google (q60=ford bell)
+ -- extracting links & snippets
+    20 HTMLs found so far
+ -- fetch #1: http://jfblassoc.org/ricci-map.html
+ -- fetch #2: http://gilesfordbell.com/Home.html
+ -- fetch #3: http://mustangtek.com/Bellhousings/Bellhousings.html
+ -- fetch #4: http://www.utsports.com/sports/m-xc/mtt/bell_ford00.html
+ -- fetch #5: http://www.f150online.com/forums/trucks-wanted-pre-1997-2011/438061-aluminum-ford-bell-housing.html
+ -- fetch #6: http://twincities.citysearch.com/profile/634275700/minneapolis_mn/james_ford_bell_museum.html
+ -- fetch #7: http://www.abaa.org/books/249265324.html
+ -- fetch #8: http://www.hoovers.com/company/James_Ford_Bell_Museum_of_Natural_History/shxrhrrkk-1.html
+ -- fetch #9: http://www.celebratingresearch.org/libraries/minnesota/fordbell~print.shtml
+ -- fetch #10: http://topics.al.com/tag/Ford%20W.%20Bell/index.html
+w1, w2: ford,bell
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+55 48 64
+
+MI value:5.84921078549984
+
+
+Produce result --- 13:23:18, 09-01-2011
+
+Original query:ford bell
+Segmented query:"ford bell" ::60
+
+Infile  = Hitachi Data Systems, 61
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:hitachi data system
+
+
+Starting query segmentation --- 13:23:18, 09-01-2011
+
+
+Produce result --- 13:23:18, 09-01-2011
+
+Original query:Hitachi Data Systems
+Segmented query:"Hitachi Data Systems:21318658"::61
+
+Infile  = Wikipedia primary source, 62
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:wikipedia primary source
+
+
+Starting query segmentation --- 13:23:18, 09-01-2011
+
+
+Starting Google search --- 13:23:18, 09-01-2011
+
+Searching Google (q62=Wikipedia primary source)
+ -- extracting links & snippets
+    21 HTMLs found so far
+ -- fetch #1: http://www.bespacific.com/mt/archives/013749.html
+ -- fetch #2: http://www.uta.fi/FAST/FIN/RESEARCH/sources.html
+ -- fetch #3: http://www.freetech4teachers.com/2010/02/textbooks-wikipedia-and-primary-source.html
+ -- fetch #4: http://media.www.tuftsdaily.com/media/storage/paper856/news/2007/10/30/OpEd/Beyond.Wikipedia.Recommendations.For.The.Primary.Source-3065222.shtml
+ -- fetch #5: http://erictremblay.blogspot.com/2008/12/wikipedia-is-now-primary-source.html
+ -- fetch #6: http://www.pbs.org/teachers/learning.now/2007/02/wikipedia_receives_a_citation_1.html
+ -- fetch #7: http://nonbovine-ruminations.blogspot.com/2007/04/wikipedia-as-primary-source-just-what.html
+ -- fetch #8: http://www.nzwriterscollege.co.nz/Competitions+and+Writers+Resources/Free+Writing+Resources/Why+can+I+not+use+WIKI+-+by+Tracey+Hawthorne.html
+ -- fetch #9: http://www.learningtolearn.group.shef.ac.uk/read/read_wikipedia.html
+ -- fetch #10: http://www.library.illinois.edu/village/primarysource/mod1/pg1.htm
+
+Starting query segmentation ranking --- 13:23:28, 09-01-2011
+
+Enter chkWkTopic: primary source
+
+Enter calConditionalProb:4.59353697615821e-08 63 7676 2500
+
+Enter chkWkTopic: Wikipedia primary source
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: Wikipedia primary
+
+Enter calConditionalProb:8.0017247232697e-10 17 7823 2500
+
+ranked query topics:primary source,Wikipedia primary,Wikipedia primary source
+
+top topic:context:primary source:Wikipedia
+
+original term:Wikipedia
+
+term:Wikipedia
+
+Enter chkWkTopic: Wikipedia
+
+Enter chkWkTopic: primary source
+
+top topic:context:Wikipedia primary:source
+
+original term:source
+
+term:source
+
+Enter chkWkTopic: source
+
+Enter chkWkTopic: Wikipedia primary
+
+top topic:context:Wikipedia primary source:
+
+Enter chkWkTopic: Wikipedia primary source
+
+
+Produce result --- 13:23:28, 09-01-2011
+
+Original query:Wikipedia primary source
+Segmented query:"primary source:177891" Wikipedia:5043734 ||"Wikipedia primary" source:22562196 ||"Wikipedia primary source" ||::62
+
+Infile  = Jiffy Lube, 63
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:jiffy lube
+
+
+Starting query segmentation --- 13:23:28, 09-01-2011
+
+
+Produce result --- 13:23:28, 09-01-2011
+
+Original query:Jiffy Lube
+Segmented query:"Jiffy Lube:4749459"::63
+
+Infile  = Windows Vista, 64
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:window vista
+
+
+Starting query segmentation --- 13:23:28, 09-01-2011
+
+
+Produce result --- 13:23:28, 09-01-2011
+
+Original query:Windows Vista
+Segmented query:"Windows Vista:2289648"::64
+
+Infile  = Mark Warner for President, 65
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mark warner President
+
+
+Starting query segmentation --- 13:23:28, 09-01-2011
+
+
+Starting Google search --- 13:23:28, 09-01-2011
+
+Searching Google (q65=Mark Warner for President)
+ -- extracting links & snippets
+    24 HTMLs found so far
+ -- fetch #1: http://www.washingtonpost.com/wp-dyn/content/article/2006/10/12/AR2006101200510.html
+ -- fetch #2: http://voices.washingtonpost.com/virginiapolitics/2011/01/alfalfa_clubs_annual_dinner_dr_1.html
+ -- fetch #3: http://www.nj.org/tv/newsweek/mark_warner.html
+ -- fetch #4: http://www.washingtonian.com/articles/people/1730.html
+ -- fetch #5: http://homepage.mac.com/chadhermann/iblog/C202808855/E20060717131346/index.html
+ -- fetch #6: http://www.huffingtonpost.com/2008/06/14/mark-warner-no-vice-presi_n_107166.html
+ -- fetch #7: http://www.huffingtonpost.com/zack-exley/the-first-adventures-of-f_b_28768.html
+ -- fetch #8: http://blogs.abcnews.com/thenote/2011/07/sen-mark-warner-if-we-dont-get-this-fixed-all-of-us-ought-to-get-fired-.html
+ -- fetch #9: http://www.realclearpolitics.com/articles/2010/12/10/guests_sen_mark_warner__gov_ed_rendell_on_parker_spitzer_108225.html
+ -- fetch #10: http://www.sinisterblog.com/2006/02/mark-warner-for-president.html
+Enter chkWkTopic:  President
+
+Enter chkWkTopic:  President
+
+Enter chkWkTopic: Mark Warner
+
+
+Starting query segmentation ranking --- 13:23:38, 09-01-2011
+
+Enter chkWkTopic: Mark Warner 
+
+Enter calConditionalProb:4.59353697615821e-08 56 11879 2500
+
+Enter chkWkTopic: Mark Warner
+
+Enter calConditionalProb:4.59353697615821e-08 56 11879 2500
+
+Enter chkWkTopic: Mark Warner  President
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:1.28055197093971e-18 0 0 2500
+
+Enter chkWkTopic: Warner 
+
+Enter calConditionalProb:4.59353697615821e-08 236 11879 2500
+
+Enter chkWkTopic: Warner  President
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:3.20103488973488e-14 8 11879 2500
+
+Enter chkWkTopic:  President
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+ranked query topics:Warner ,Mark Warner ,Mark Warner,Warner  President, President,Mark Warner  President
+
+top topic:context:Warner :Mark President
+
+original term:Mark President
+
+term:Mark President
+
+Enter chkWkTopic: Mark President
+
+Enter chkWkTopic: Warner 
+
+top topic:context:Mark Warner :President
+
+original term:President
+
+term:President
+
+Enter chkWkTopic: President
+
+Enter chkWkTopic: Mark Warner 
+
+top topic:context:Mark Warner: President
+
+original term: President
+
+term: President
+
+Enter chkWkTopic:  President
+
+Enter chkWkTopic: Mark Warner
+
+
+Produce result --- 13:23:38, 09-01-2011
+
+Original query:Mark Warner  President
+Segmented query:"Warner :457368" Mark President||"Mark Warner :13295044" President:24110 ||"Mark Warner:13295044"  President||::65
+
+Infile  = women in Saudi Arabia, 66
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:women saudi arabia
+
+
+Starting query segmentation --- 13:23:38, 09-01-2011
+
+
+Produce result --- 13:23:38, 09-01-2011
+
+Original query:women in Saudi Arabia
+Segmented query:"women in Saudi Arabia:14493286"::66
+
+Infile  = UN Commission on Human Rights, 67
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:commission human right UN
+
+
+Starting query segmentation --- 13:23:38, 09-01-2011
+
+
+Produce result --- 13:23:38, 09-01-2011
+
+Original query:UN Commission on Human Rights
+Segmented query:"UN Commission on Human Rights:50883"::67
+
+Infile  = Frank Gehry architecture, 68
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:frank gehry architecture
+
+
+Starting query segmentation --- 13:23:38, 09-01-2011
+
+
+Starting Google search --- 13:23:38, 09-01-2011
+
+Searching Google (q68=Frank Gehry architecture)
+ -- extracting links & snippets
+    34 HTMLs found so far
+ -- fetch #1: http://www.greatbuildings.com/architects/Frank_Gehry.html
+ -- fetch #2: http://www.e-architect.co.uk/architects/frank_gehry.htm
+ -- fetch #3: http://www.e-architect.co.uk/architects/frank_gehry_architect.htm
+ -- fetch #4: http://www.weisman.umn.edu/architecture/gehry.html
+ -- fetch #5: http://www.nytimes.com/2011/02/10/arts/design/10beekman.html
+ -- fetch #6: http://www.commarts.com/exhibit/swire-frank-gehry.html
+ -- fetch #7: http://architecture.about.com/od/greatarchitects/p/gehry.htm
+ -- fetch #8: http://latimesblogs.latimes.com/culturemonster/2010/06/frank-gehrys-bilbao-museum-tops-vanity-fair-architecture-list.html
+ -- fetch #9: http://explorechicago.org/city/en/millennium/about_the_architect.html
+ -- fetch #10: http://www.ted.com/talks/frank_gehry_as_a_young_rebel.html
+
+Starting query segmentation ranking --- 13:23:49, 09-01-2011
+
+Enter chkWkTopic: Frank Gehry architecture
+
+Enter calConditionalProb:6.35125970185493e-17 0 0 2500
+
+Enter chkWkTopic: Gehry architecture
+
+Enter calConditionalProb:1.58764379429954e-12 9 8626 2500
+
+Enter chkWkTopic: Frank Gehry
+
+Enter calConditionalProb:4.59353697615821e-08 141 8626 2500
+
+ranked query topics:Frank Gehry,Gehry architecture,Frank Gehry architecture
+
+top topic:context:Frank Gehry:architecture
+
+original term:architecture
+
+term:architecture
+
+Enter chkWkTopic: architecture
+
+Enter chkWkTopic: Frank Gehry
+
+top topic:context:Gehry architecture:Frank
+
+original term:Frank
+
+term:Frank
+
+Enter chkWkTopic: Frank
+
+Enter chkWkTopic: Gehry architecture
+
+top topic:context:Frank Gehry architecture:
+
+Enter chkWkTopic: Frank Gehry architecture
+
+
+Produce result --- 13:23:49, 09-01-2011
+
+Original query:Frank Gehry architecture
+Segmented query:"Frank Gehry:53404" architecture:21296224 ||"Gehry architecture" Frank:22562196 ||"Frank Gehry architecture" ||::68
+
+Infile  = Chipotle Restaurant, 69
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:chipotle restaurant
+
+
+Starting query segmentation --- 13:23:49, 09-01-2011
+
+
+Starting Google search --- 13:23:49, 09-01-2011
+
+Searching Google (q69=Chipotle Restaurant)
+ -- extracting links & snippets
+!!snippet for result 112 NOT FOUND!!
+    24 HTMLs found so far
+ -- fetch #1: http://latimesblogs.latimes.com/lanow/2011/02/illegal-immigration-crackdown-on-chipotle-restaurant-could-hurt-workers-activist-says.html
+ -- fetch #2: http://www.hoovers.com/company/Chipotle_Mexican_Grill_Inc/rfjyyhi-1.html
+ -- fetch #3: http://www.startribune.com/business/114310024.html
+ -- fetch #4: http://newyork.grubstreet.com/2011/03/americas_next_great_restaurant_2.html
+ -- fetch #5: http://www.nowpublic.com/style/chipotle-restaurant-founder-steve-ells-mexican-grill-oprah-2564671.html
+ -- fetch #6: http://www.easybreezyrecipes.com/chipotle-mexican-grill-restaurant-recipes.html
+ -- fetch #7: http://www.ask.com/food/mexican_food/Chipotle-Restaurant-Salsa-Recipes.html
+ -- fetch #8: http://www.dwlz.com/restaurants.html
+ -- fetch #9: http://www.indeed.com/q-Chipotle-Mexican-Grill-jobs.html
+ -- fetch #10: http://atlanta.citysearch.com/profile/39099906/atlanta_ga/chipotle_mexican_grill.html
+w1, w2: chipotle,restaurant
+
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+Use of uninitialized value in join or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1321.
+221 129 66
+
+MI value:4.52095234492859
+
+
+Produce result --- 13:23:59, 09-01-2011
+
+Original query:Chipotle Restaurant
+Segmented query:"Chipotle Restaurant" ::69
+
+Infile  = Ed Norton, 70
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:norton
+
+
+Starting query segmentation --- 13:23:59, 09-01-2011
+
+
+Produce result --- 13:23:59, 09-01-2011
+
+Original query:Ed Norton
+Segmented query:"Ed Norton:22562196"::70
+
+Infile  = Iceland European Union, 71
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:iceland european union
+
+
+Starting query segmentation --- 13:23:59, 09-01-2011
+
+
+Starting Google search --- 13:23:59, 09-01-2011
+
+Searching Google (q71=Iceland European Union)
+ -- extracting links & snippets
+!!snippet for result 101 NOT FOUND!!
+    30 HTMLs found so far
+ -- fetch #1: http://eeas.europa.eu/iceland/index_en.htm
+ -- fetch #2: http://ec.europa.eu/enlargement/potential-candidates/iceland/relation/index_en.htm
+ -- fetch #3: http://ec.europa.eu/news/external_relations/100224_en.htm
+ -- fetch #4: http://europa.eu/rapid/pressReleasesAction.do?reference=IP/11/791&type=HTML
+ -- fetch #5: http://www.bloomberg.com/news/2011-08-28/iceland-revives-carry-trade-as-swaps-show-default-risk-is-below-eu-average.html
+ -- fetch #6: http://cachef.ft.com/cms/s/0/a630ada4-6459-11e0-a69a-00144feab49a.html
+ -- fetch #7: http://eeas.europa.eu/delegations/iceland/index_en.htm
+ -- fetch #8: http://www.telegraph.co.uk/news/worldnews/europe/iceland/7827910/Iceland-close-to-opening-EU-membership-negotiations.html
+ -- fetch #9: http://ec.europa.eu/enlargement/press_corner/whatsnew/iceland_en.htm
+ -- fetch #10: http://www.nytimes.com/2009/04/27/world/europe/27iceland.html
+
+Starting query segmentation ranking --- 13:24:17, 09-01-2011
+
+Enter chkWkTopic: European Union
+
+Enter calConditionalProb:4.59353697615821e-08 38 5992 2500
+
+Enter chkWkTopic: Iceland European
+
+Enter calConditionalProb:8.0017247232697e-10 5 5750 2500
+
+Enter chkWkTopic: Iceland European Union
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:European Union,Iceland European,Iceland European Union
+
+top topic:context:European Union:Iceland
+
+original term:Iceland
+
+term:Iceland
+
+Enter chkWkTopic: Iceland
+
+Enter chkWkTopic: European Union
+
+top topic:context:Iceland European:Union
+
+original term:Union
+
+term:Union
+
+Enter chkWkTopic: Union
+
+Enter chkWkTopic: Iceland European
+
+top topic:context:Iceland European Union:
+
+Enter chkWkTopic: Iceland European Union
+
+
+Produce result --- 13:24:17, 09-01-2011
+
+Original query:Iceland European Union
+Segmented query:"European Union:9317" Iceland:14531 ||"Iceland European" Union:68840 ||"Iceland European Union" ||::71
+
+Infile  = tax break for hybrid automobiles, 72
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:tax break hybrid automobile
+
+
+Starting query segmentation --- 13:24:17, 09-01-2011
+
+
+Starting Google search --- 13:24:17, 09-01-2011
+
+Searching Google (q72=tax break for hybrid automobiles)
+ -- extracting links & snippets
+!!snippet for result 101 NOT FOUND!!
+    44 HTMLs found so far
+ -- fetch #1: http://www.hybridcars.com/federal-incentives.html
+ -- fetch #2: http://www.hybridcars.com/local-incentives/region-by-region.html
+ -- fetch #3: http://www.hybridcars.com/incentives-laws/fusion-and-milan-hybrids-get-3400-tax-credit-25466.html
+ -- fetch #4: http://www.hybridcars.com/cars.html
+ -- fetch #5: http://www.fueleconomy.gov/feg/tax_hybrid.shtml
+ -- fetch #6: http://www.fueleconomy.gov/feg/taxcenter.shtml
+ -- fetch #7: http://www.fueleconomy.gov/feg/tax_afv.shtml
+ -- fetch #8: http://www.irs.gov/newsroom/article/0,,id=157632,00.html
+ -- fetch #9: http://www.irs.gov/businesses/corporations/article/0,,id=203122,00.html
+ -- fetch #10: http://www.irs.gov/newsroom/article/0,,id=157557,00.html
+Enter chkWkTopic:  hybrid
+
+Enter chkWkTopic:  hybrid automobiles
+
+Enter chkWkTopic: hybrid automobiles
+
+Enter chkWkTopic: hybrid automobiles
+
+Enter chkWkTopic:  hybrid
+
+Enter chkWkTopic:  hybrid automobiles
+
+Enter chkWkTopic: hybrid automobiles
+
+Enter chkWkTopic: tax break
+
+Enter chkWkTopic: tax break 
+
+Enter chkWkTopic: break 
+
+Enter chkWkTopic: tax break
+
+Enter chkWkTopic: tax break
+
+Enter chkWkTopic: tax break 
+
+Enter chkWkTopic: break 
+
+
+Starting query segmentation ranking --- 13:24:24, 09-01-2011
+
+Enter chkWkTopic: tax break
+
+Enter calConditionalProb:4.59353697615821e-08 8 12148 2500
+
+Enter chkWkTopic: tax break  hybrid automobiles
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:5.1227600034481e-23 0 0 2500
+
+Enter chkWkTopic: break  hybrid
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:3.20103488973488e-14 1 12148 2500
+
+Enter chkWkTopic: hybrid automobiles
+
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+Enter chkWkTopic: break 
+
+Enter wikiDisambiguation:break  tax hybrid automobiles
+
+Enter calConditionalProb:4.59353697615821e-08 16 12148 2500
+
+Enter chkWkTopic: break  hybrid automobiles
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:1.28055197093971e-18 0 15724 2500
+
+Enter chkWkTopic: tax break  hybrid
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:1.28055197093971e-18 1 12148 2500
+
+Enter chkWkTopic: tax break 
+
+Enter calConditionalProb:4.59353697615821e-08 8 12148 2500
+
+Enter chkWkTopic:  hybrid automobiles
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic:  hybrid
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+ranked query topics:break ,tax break,tax break ,break  hybrid,tax break  hybrid,hybrid automobiles, hybrid, hybrid automobiles,break  hybrid automobiles,tax break  hybrid automobiles
+
+top topic:context:break :tax hybrid automobiles
+
+original term:tax hybrid automobiles
+
+term:tax hybrid automobiles
+
+Enter chkWkTopic: tax hybrid automobiles
+
+Enter chkWkTopic: break 
+
+top topic:context:tax break: hybrid automobiles
+
+original term: hybrid automobiles
+
+term: hybrid automobiles
+
+Enter chkWkTopic:  hybrid automobiles
+
+Enter chkWkTopic: tax break
+
+top topic:context:tax break :hybrid automobiles
+
+original term:hybrid automobiles
+
+term:hybrid automobiles
+
+Enter chkWkTopic: hybrid automobiles
+
+Enter chkWkTopic: tax break 
+
+
+Produce result --- 13:24:24, 09-01-2011
+
+Original query:tax break  hybrid automobiles
+Segmented query:"break :23287" tax hybrid automobiles||"tax break:2151903"  hybrid automobiles||"tax break :2151903" hybrid automobiles||::72
+
+Infile  = Whole Foods wind energy, 73
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:whole food wind energy
+
+
+Starting query segmentation --- 13:24:24, 09-01-2011
+
+
+Starting Google search --- 13:24:24, 09-01-2011
+
+Searching Google (q73=Whole Foods wind energy)
+ -- extracting links & snippets
+    27 HTMLs found so far
+ -- fetch #1: http://www.cbsnews.com/stories/2006/01/11/business/main1202695.shtml
+ -- fetch #2: http://www.usatoday.com/money/industries/food/2006-01-09-whole-foods-usat_x.htm
+ -- fetch #3: http://www.epa.gov/greenpower/partners/partners/wholefoodsmarket.htm
+ -- fetch #4: http://www.epa.gov/greenpower/toplists/top50.htm
+ -- fetch #5: http://www.sustainablebizness.com/gm_wfenergy-windrec.htm
+ -- fetch #6: http://www.hmmh.com/whole-foods-wind.html
+ -- fetch #7: http://www.prnewswire.com/news-releases/whole-foods-marketr-makes-largest-ever-purchase-of-wind-energy-credits-in-united-states-53374442.html
+ -- fetch #8: http://www.sustainablebusinessoregon.com/articles/2011/06/vestas-study-intel-whole-foods-among.html
+ -- fetch #9: http://www.sustainablebusinessoregon.com/articles/2010/04/whole_foods_reducing_energy_use_25_by_2015.html
+ -- fetch #10: http://www.awarenessmag.com/marapr06/ma06_whole_foods_market.htm
+Enter chkWkTopic: wind energy
+
+Enter chkWkTopic: Whole Foods
+
+
+Starting query segmentation ranking --- 13:24:30, 09-01-2011
+
+Enter chkWkTopic: Whole Foods
+
+Enter wikiDisambiguation:Whole Foods "wind energy" wind energy
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter chkWkTopic: Foods wind
+
+Enter calConditionalProb:8.0017247232697e-10 3 5602 2500
+
+Enter chkWkTopic: wind energy
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter chkWkTopic: Whole Foods wind energy
+
+Enter calConditionalProb:2.54077772011847e-21 0 0 2500
+
+Enter chkWkTopic: Foods wind energy
+
+Enter calConditionalProb:3.20103488973488e-14 0 5602 2500
+
+Enter chkWkTopic: Whole Foods wind
+
+Enter calConditionalProb:6.35125970185493e-17 0 5602 2500
+
+ranked query topics:Foods wind,Whole Foods,wind energy,Foods wind energy,Whole Foods wind,Whole Foods wind energy
+
+top topic:context:Foods wind:Whole energy
+
+original term:Whole energy
+
+term:Whole energy
+
+Enter chkWkTopic: Whole energy
+
+Enter chkWkTopic: Foods wind
+
+top topic:context:Whole Foods:"wind energy" wind energy
+
+original term:"wind energy
+
+term:wind energy
+
+Enter chkWkTopic: wind energy
+
+original term:wind energy
+
+term:wind energy
+
+Enter chkWkTopic: wind energy
+
+Enter chkWkTopic: Whole Foods
+
+top topic:context:wind energy:"Whole Foods" Whole Foods
+
+original term:"Whole Foods
+
+term:Whole Foods
+
+Enter chkWkTopic: Whole Foods
+
+original term:Whole Foods
+
+term:Whole Foods
+
+Enter chkWkTopic: Whole Foods
+
+Enter chkWkTopic: wind energy
+
+
+Produce result --- 13:24:30, 09-01-2011
+
+Original query:Whole Foods wind energy
+Segmented query:"Foods wind" Whole energy||"Whole Foods:180846" wind_energy:317221 wind_energy:317221 ||"wind energy:317221" Whole_Foods:22562196 Whole_Foods:22562196 ||::73
+
+Infile  = Papa John\'s Pizza, 74
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:papa pizza
+
+
+Starting query segmentation --- 13:24:30, 09-01-2011
+
+
+Produce result --- 13:24:30, 09-01-2011
+
+Original query:Papa John\'s Pizza
+Segmented query:"Papa John\'s Pizza:374214"::74
+
+Infile  = Mahmoud Ahmadinejad, 75
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mahmoud ahmadinejad
+
+
+Starting query segmentation --- 13:24:30, 09-01-2011
+
+
+Produce result --- 13:24:30, 09-01-2011
+
+Original query:Mahmoud Ahmadinejad
+Segmented query:"Mahmoud Ahmadinejad:7907317"::75
+
+Infile  = China one child law, 76
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:china child law
+
+
+Starting query segmentation --- 13:24:30, 09-01-2011
+
+
+Starting Google search --- 13:24:30, 09-01-2011
+
+Searching Google (q76=China one child law)
+ -- extracting links & snippets
+!!snippet for result 101 NOT FOUND!!
+    27 HTMLs found so far
+ -- fetch #1: http://geography.about.com/od/populationgeography/a/onechild.htm
+ -- fetch #2: http://www.time.com/time/world/article/0,8599,1912861,00.html
+ -- fetch #3: http://www.telegraph.co.uk/news/worldnews/asia/china/8024862/Thirty-years-of-Chinas-one-child-policy.html
+ -- fetch #4: http://www.nytimes.com/2010/12/22/world/asia/22population.html
+ -- fetch #5: http://news.yahoo.com/one-child-policy-surprising-boon-china-girls-152100729.html
+ -- fetch #6: http://www.usatoday.com/news/world/2010-09-09-1Achinaonechild09_ST_N.htm
+ -- fetch #7: http://online.wsj.com/article/SB10001424052748704463804576291053236961730.html
+ -- fetch #8: http://people.howstuffworks.com/one-child-policy.htm
+ -- fetch #9: http://www.independent.co.uk/news/world/asia/china-rethinks-its-controversial-onechild-policy-2077152.html
+ -- fetch #10: http://www.cbc.ca/news/world/story/2009/10/28/f-rfa-germain.html
+Enter chkWkTopic: child law
+
+Enter chkWkTopic: China one
+
+
+Starting query segmentation ranking --- 13:24:44, 09-01-2011
+
+Enter chkWkTopic: China one child
+
+Enter calConditionalProb:4.59353697615821e-08 19 7976 2500
+
+Enter chkWkTopic: one child
+
+Enter calConditionalProb:4.59353697615821e-08 102 7976 2500
+
+Enter chkWkTopic: one child law
+
+Enter calConditionalProb:4.59353697615821e-08 3 10326 2500
+
+Enter chkWkTopic: child law
+
+Enter calConditionalProb:8.00178417021103e-10 3 10326 2500
+
+Enter chkWkTopic: China one
+
+Enter calConditionalProb:8.0017247232697e-10 135 7976 2500
+
+Enter chkWkTopic: China one child law
+
+Enter calConditionalProb:1.28055197093971e-18 0 0 2500
+
+ranked query topics:China one,one child,China one child,one child law,child law,China one child law
+
+top topic:context:China one:child law
+
+original term:child law
+
+term:child law
+
+Enter chkWkTopic: child law
+
+Enter chkWkTopic: China one
+
+top topic:context:one child:China law
+
+original term:China law
+
+term:China law
+
+Enter chkWkTopic: China law
+
+Enter chkWkTopic: one child
+
+top topic:context:China one child:law
+
+original term:law
+
+term:law
+
+Enter chkWkTopic: law
+
+Enter chkWkTopic: China one child
+
+
+Produce result --- 13:24:44, 09-01-2011
+
+Original query:China one child law
+Segmented query:"China one" child law||"one child:7661594" China_law:37568 ||"China one child:44664" law:18949668 ||::76
+
+Infile  = intelligent design, 77
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:intelligent design
+
+
+Starting query segmentation --- 13:24:44, 09-01-2011
+
+
+Produce result --- 13:24:44, 09-01-2011
+
+Original query:intelligent design
+Segmented query:"intelligent design:15295"::77
+
+Infile  = Sheep and Wool Festival, 78
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:sheep wool festival
+
+
+Starting query segmentation --- 13:24:44, 09-01-2011
+
+
+Starting Google search --- 13:24:44, 09-01-2011
+
+Searching Google (q78=Sheep and Wool Festival)
+ -- extracting links & snippets
+    24 HTMLs found so far
+ -- fetch #1: http://www.sheepandwool.org/location.html
+ -- fetch #2: http://www.sheepandwool.org/contact.html
+ -- fetch #3: http://www.wisconsinsheepandwoolfestival.com/auctionssales/usedequipment.html
+ -- fetch #4: http://www.sheepstuff.com/Festival.html
+ -- fetch #5: http://www.shepherdsharvestfestival.org/vendors.shtml
+ -- fetch #6: http://www.njsheep.org/festival/index.html
+ -- fetch #7: http://www.wggb.org/sheep.htm
+ -- fetch #8: http://sheepgal.typepad.com/sheepgal_notes_from_a_she/2011/05/ma-sheep-wool-festival-no-kidding.html
+ -- fetch #9: http://www.thanksgivingpoint.com/calendar/events/lamb_wool/LambWool.html
+ -- fetch #10: http://www.sheepandgoat.com/programs/skillathon/skillathon.html
+Enter chkWkTopic: Wool Festival
+
+Enter chkWkTopic: Sheep 
+
+Enter chkWkTopic: Sheep 
+
+
+Starting query segmentation ranking --- 13:24:50, 09-01-2011
+
+Enter chkWkTopic: Sheep 
+
+Enter calConditionalProb:4.59353697615821e-08 74 3910 2500
+
+Enter chkWkTopic:  Wool Festival
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:3.20103488973488e-14 28 4059 2500
+
+Enter chkWkTopic: Sheep  Wool
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:3.20103488973488e-14 34 4059 2500
+
+Enter chkWkTopic: Wool Festival
+
+Enter calConditionalProb:8.00178417021103e-10 28 4059 2500
+
+Enter chkWkTopic: Sheep  Wool Festival
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:1.28055197093971e-18 0 0 2500
+
+Enter chkWkTopic:  Wool
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:8.0017247232697e-10 71 4059 2500
+
+ranked query topics:Sheep , Wool,Sheep  Wool,Wool Festival, Wool Festival,Sheep  Wool Festival
+
+top topic:context:Sheep :Wool Festival
+
+original term:Wool Festival
+
+term:Wool Festival
+
+Enter chkWkTopic: Wool Festival
+
+Enter chkWkTopic: Sheep 
+
+top topic:context: Wool:"Sheep " Sheep Festival
+
+original term:"Sheep 
+
+term:Sheep 
+
+Enter chkWkTopic: Sheep 
+
+original term:Sheep Festival
+
+term:Sheep Festival
+
+Enter chkWkTopic: Sheep Festival
+
+Enter chkWkTopic:  Wool
+
+top topic:context:Sheep  Wool:Festival
+
+original term:Festival
+
+term:Festival
+
+Enter chkWkTopic: Festival
+
+Enter chkWkTopic: Sheep  Wool
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Sheep  Wool Festival
+Segmented query:"Sheep :17158563" Wool Festival||" Wool" Sheep_:17158563 Sheep Festival||"Sheep  Wool" Festival:67500 ||::78
+
+Infile  = Subway Sandwiches, 79
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:subway sandwiche
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Subway Sandwiches
+Segmented query:"Subway Sandwiches:54581"::79
+
+Infile  = Nancy Grace, 80
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:nancy grace
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Nancy Grace
+Segmented query:"Nancy Grace:11481790"::80
+
+Infile  = flag burning, 81
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:flag burn
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:flag burning
+Segmented query:"flag burning:22562196"::81
+
+Infile  = Oregon Death with Dignity Act, 82
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:oregon death dignity act
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Oregon Death with Dignity Act
+Segmented query:"Oregon Death with Dignity Act:414467"::82
+
+Infile  = Morgan Freeman, 83
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:morgan freeman
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Morgan Freeman
+Segmented query:"Morgan Freeman:20584"::83
+
+Infile  = System of a Down, 84
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:system
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:System of a Down
+Segmented query:"System of a Down:28715"::84
+
+Infile  = Sew Fast Sew Easy, 85
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:sew fast sew easy
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Sew Fast Sew Easy
+Segmented query:"Sew Fast Sew Easy:13684709"::85
+
+Infile  = I Walk the Line, 86
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:walk line
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:I Walk the Line
+Segmented query:"I Walk the Line:3040961"::86
+
+Infile  = World Bank, 87
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:world bank
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:World Bank
+Segmented query:"World Bank:33309"::87
+
+Infile  = Ruth Rendell, 88
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:ruth rendell
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Ruth Rendell
+Segmented query:"Ruth Rendell:312241"::88
+
+Infile  = Mayo Clinic, 89
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mayo clinic
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Mayo Clinic
+Segmented query:"Mayo Clinic:160843"::89
+
+Infile  = Project Runway, 90
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:Project runway
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:Project Runway
+Segmented query:"Project Runway:1597866"::90
+
+Infile  = New York Philharmonic Orchestra, 91
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:new york philharmonic orchestra
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:New York Philharmonic Orchestra
+Segmented query:"New York Philharmonic Orchestra:88849"::91
+
+Infile  = israeli government, 92
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:israeli government
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:israeli government
+Segmented query:"israeli government:22562196"::92
+
+Infile  = The Geek Squad, 93
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:geek squad
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Produce result --- 13:24:50, 09-01-2011
+
+Original query:The Geek Squad
+Segmented query:"The Geek Squad:1259801"::93
+
+Infile  = federal shield law, 94
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:federal shield law
+
+
+Starting query segmentation --- 13:24:50, 09-01-2011
+
+
+Starting Google search --- 13:24:50, 09-01-2011
+
+Searching Google (q94=federal shield law)
+ -- extracting links & snippets
+    24 HTMLs found so far
+ -- fetch #1: http://www.rcfp.org/shields_and_subpoenas.html
+ -- fetch #2: http://www.huffingtonpost.com/peter-scheer/the-us-government-is-inte_b_784555.html
+ -- fetch #3: http://www.washingtonpost.com/wp-dyn/content/article/2008/08/28/AR2008082803206.html
+ -- fetch #4: http://www.nppa.org/news_and_events/news/2009/02/shield01.html
+ -- fetch #5: http://www.nytimes.com/2005/07/21/opinion/21thu2.html
+ -- fetch #6: http://www.newyorker.com/online/blogs/stevecoll/2009/06/a-federal-shield-law.html
+ -- fetch #7: http://en.rsf.org/united-states-federal-shield-law-passes-senate-15-12-2009,35391.html
+ -- fetch #8: http://www.opednews.com/articles/opedne_jayne_ly_071003_pass_the_federal_shi.htm
+ -- fetch #9: http://www.entrepreneur.com/tradejournals/article/202518929.html
+!!Mech->get Exception: Error GETing http://www.entrepreneur.com/error-503-varnish.php?myURL='/tradejournals/article/202518929.html': Service Unavailable at /home/hz3/workspace/epic_prog/sub/spidersub_2010.pl line 55
+ -- fetch #10: http://www.pbs.org/wgbh/pages/frontline/newswar/tags/federalshieldlaw.html
+
+Starting query segmentation ranking --- 13:25:05, 09-01-2011
+
+Enter chkWkTopic: federal shield
+
+Enter calConditionalProb:8.0017247232697e-10 72 13497 2500
+
+Enter chkWkTopic: federal shield law
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter chkWkTopic: shield law
+
+Enter wikiDisambiguation:shield law federal
+
+Enter calConditionalProb:4.59353697615821e-08 127 13497 2500
+
+ranked query topics:shield law,federal shield,federal shield law
+
+top topic:context:shield law:federal
+
+original term:federal
+
+term:federal
+
+Enter chkWkTopic: federal
+
+Enter chkWkTopic: shield law
+
+top topic:context:federal shield:law
+
+original term:law
+
+term:law
+
+Enter chkWkTopic: law
+
+Enter chkWkTopic: federal shield
+
+top topic:context:federal shield law:
+
+Enter chkWkTopic: federal shield law
+
+
+Produce result --- 13:25:05, 09-01-2011
+
+Original query:federal shield law
+Segmented query:"shield law:22562196" federal:22562196 ||"federal shield" law:18949668 ||"federal shield law" ||::94
+
+Infile  = David Irving, 95
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:david irving
+
+
+Starting query segmentation --- 13:25:05, 09-01-2011
+
+
+Produce result --- 13:25:05, 09-01-2011
+
+Original query:David Irving
+Segmented query:"David Irving:87585"::95
+
+Infile  = A Million Little Pieces, 96
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:million little piece
+
+
+Starting query segmentation --- 13:25:05, 09-01-2011
+
+
+Produce result --- 13:25:05, 09-01-2011
+
+Original query:A Million Little Pieces
+Segmented query:"A Million Little Pieces:2770911"::96
+
+Infile  = talk show hosts, 97
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:talk host
+
+
+Starting query segmentation --- 13:25:05, 09-01-2011
+
+
+Produce result --- 13:25:05, 09-01-2011
+
+Original query:talk show hosts
+Segmented query:"talk show hosts:87893"::97
+
+Infile  = Women on Numb3rs, 98
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:women
+
+
+Starting query segmentation --- 13:25:05, 09-01-2011
+
+
+Starting Google search --- 13:25:05, 09-01-2011
+
+Searching Google (q98=Women on Numb3rs)
+ -- extracting links & snippets
+    23 HTMLs found so far
+ -- fetch #1: http://numb3rs.wolfram.com/season2.html
+ -- fetch #2: http://www.hotfilesearch.com/download/64879814-aaf-numb3rs.s06.the.women.of.numb3rs.dvdrip.xvid.avi.html
+ -- fetch #3: http://www.hotfilesearch.com/download/69523404-aaf-numb3rs.s06.the.women.of.numb3rs.dvdrip.xvid.avi.html
+ -- fetch #4: http://homecinema.thedigitalfix.com/content/id/72562/numb3rs-season-6-r1-in-august.html
+ -- fetch #5: http://www.rerock4ever.com/shirt-1964-numb3rs_cast_numb3rs_sheer_cap_sleeve_womens_tshirt.html
+ -- fetch #6: http://www.rerock4ever.com/shirt-1966-numb3rs_don_charlie_sheer_cap_sleeve_womens_tshirt.html
+ -- fetch #7: http://www.bizrate.com/womens-tshirts/oid1801461585.html
+ -- fetch #8: http://www.bizrate.com/womens-tshirts/oid1781387079.html
+ -- fetch #9: http://dvd.ign.com/articles/109/1094319p1.html
+ -- fetch #10: http://www.math.cornell.edu/~numb3rs/spulido/Numb3rs_season5/Numb3rs_517.html
+
+Starting query segmentation ranking --- 13:25:16, 09-01-2011
+
+Enter chkWkTopic:  Numb3rs
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:1.58764379429954e-12 15160 7496 2500
+
+Enter chkWkTopic: Women  Numb3rs
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1430.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1452.
+Use of uninitialized value $topic2 in substitution (s///) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_07.pl line 1376.
+Enter calConditionalProb:6.35125970185493e-17 0 0 2500
+
+Enter chkWkTopic: Women 
+
+Enter wikiDisambiguation:Women  Numb3rs
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+ranked query topics: Numb3rs,Women ,Women  Numb3rs
+
+top topic:context: Numb3rs:Women
+
+original term:Women
+
+term:Women
+
+Enter chkWkTopic: Women
+
+Enter chkWkTopic:  Numb3rs
+
+top topic:context:Women :Numb3rs
+
+original term:Numb3rs
+
+term:Numb3rs
+
+Enter chkWkTopic: Numb3rs
+
+Enter chkWkTopic: Women 
+
+top topic:context:Women  Numb3rs:
+
+Enter chkWkTopic: Women  Numb3rs
+
+
+Produce result --- 13:25:16, 09-01-2011
+
+Original query:Women  Numb3rs
+Segmented query:" Numb3rs" Women:22562196 ||"Women :15573" Numb3rs:1348989 ||"Women  Numb3rs" ||::98
+
+Infile  = universal health care, 99
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:universal health care
+
+
+Starting query segmentation --- 13:25:16, 09-01-2011
+
+
+Produce result --- 13:25:16, 09-01-2011
+
+Original query:universal health care
+Segmented query:"universal health care:570661"::99
+
+Infile  = Trader Joe\'s, 100
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:trader
+
+
+Starting query segmentation --- 13:25:16, 09-01-2011
+
+
+Produce result --- 13:25:16, 09-01-2011
+
+Original query:Trader Joe\'s
+Segmented query:"Trader Joe\'s:481581"::100
+
+Infile  = George Clooney, 101
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:george clooney
+
+
+Starting query segmentation --- 13:25:16, 09-01-2011
+
+
+Produce result --- 13:25:16, 09-01-2011
+
+Original query:George Clooney
+Segmented query:"George Clooney:158889"::101
+
+
+Processed 101 queries
+
+
+Ending test_wikiqrysgt_07.pl --- 13:25:16, 09-01-2011
+
+  CPU seconds = 50.180 (UT),  0.360 (ST)
+  REAL TIME   = 0:4:21 (hh:mn:ss)
+

@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>Accuracy In Media - Briefings - Melting The Global Warming Myth</title>
+
+<!--   Created By: Milan -->	
+<!--   Date Created: March 25, 2002 -->
+
+</head>
+<!-- Blurb: While the media did state that there has been a cooling trend in the central Antarctic landmass, their massive reporting of the recent disintegration of a major ice shelf clearly implied their concern with global warming.  But atmospheric temperature measurements show no such trend and many scientists doubt that man's activities have a major effect on climate. -->
+
+<body bgcolor="white">
+<TABLE width="97%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td width="64%" valign="top">
+		<img src="http://www.aim.org/images/title_briefings3_new.gif"  alt="" border="0">
+		<table align="right" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			    <td align="right">
+<?php
+# sub.php
+# Example subscription script for LEF
+# coded for testlist@list.lexi.net
+#
+# Created by William Astle, April 8, 2003
+# Copyright (c) 2003 by Lexicom, Ltd.
+#
+# this is an example "front end" subscribe script for the LEF list server
+# project - IT ASSUMES register_globals IS OFF and may not work
+# register_globals is on.
+
+# you must set these variables
+
+# the name of the list
+# you may also remove this and change it to a parameter
+$listname = 'news';
+# the domain name of the list (includes the "list." bit if present!)
+$listhost = 'list.aim.org';
+
+# shouldn't need to change this (this is the name of the file on the backend
+# server)
+$drvr = 'driver.php';
+
+# address (shouldn't need to change this)
+# this is the address of the backend handler
+# Modified by Chris Calon May 28th, 2003
+if ($action == "sub") {
+	$url = "http://$listhost/$drvr?fn=sub&listname=" . urlencode($listname);
+}
+if ($action == "unsub") {
+	$url = "http://$listhost/$drvr?fn=unsub&listname=" . urlencode($listname);
+}
+
+# fetch the email address
+$emailaddy = $_POST['email'];
+if (!isset($emailaddy))
+	$emailaddy = $_GET['email'];
+
+# plunk out a subscribe form if no email address present
+# Subscribe
+if (!isset($emailaddy) || $emailaddy == '')
+{
+	print '<form method="POST">';
+	print '<table cellpadding="2" border="0"><tr><td colspan="2"><b><font color="#993333" face="verdana,arial" size="1"><b>Receive FREE updates by email:</b></td></tr>';
+	print '<input name="action" type="hidden" value="sub">';
+	print '<tr><td><input type="text" name="email" style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; border: 1 solid #333333; background-color: #FFFFFF;"></td><td><input type="submit" value="Subscribe" style="color:cc3300;font-family:Verdana,Arial,Helvetica;font-size:8pt;"></td></tr></table>';
+	print '</form>';
+	//exit;
+}
+
+#Added by Chris May 28th, 2003 in order to have both functions on one single page.
+if ($action != "") {
+
+		# construct the full URL for the back end
+		$fullurl = $url . '&email=' . urlencode($emailaddy);
+		
+		# do the subscribe (talk to the backend)
+		$res = implode ('', file ($fullurl));
+		
+		# modify the sections below as necessary - all likely result codes
+		# are included below. Only one of "OK subbed", "OK email conf", or
+		# "OK owner conf" needs to be present - which one depends on the list server
+		# configuration. "OK subbed" is for a list which requires no confirmation at
+		# all. "OK email conf" is for a list where the subscriber must respond to an
+		# email message to be subscribed, and "OK owner conf" is for a list where
+		# the list owner must approve subscriptions. If both an email confirmation
+		# and a list owner approval are required, then "OK email conf" will be
+		# returned.
+
+		#Added by Chris May 28th, 2003 in order to have both functions on one single page.
+		if ($action == "sub") {
+
+			if ($res == "OK subbed\n")
+			{
+				print "<font color=\"cc3300\" face=\"verdana,arial\" size=\"1\"><b>Thank you for signing up for<br><i>$listname@$listhost</i> as <i>$emailaddy</i>.</b></font><br><br>";
+			}
+			elseif ($res == "OK email conf\n")
+			{
+				print "<font color=\"cc3300\" face=\"verdana,arial\" size=\"1\"><b>Your request to subscribe to $listname@$listhost as $emailaddy has been received. You will receive an email message requesting a reply to confirm your subscription. You must reply to this message or your subscription will not be completed.</b></font><br><br>";
+			}
+			elseif ($res == "OK owner conf\n")
+			{
+				print "<font color=\"cc3300\" face=\"verdana,arial\" size=\"1\"><b>Your request to subscribe to $listname@$listhost as $emailaddy<br>has been send to the list owner for approval.</b></font><br><br>";
+			}
+			elseif ($res == "ERR bad email\n")
+			{
+				print "<font color=\"cc3300\" face=\"verdana,arial\" size=\"1\"><b>You have not entered a valid<br>email address.</b></font><br><br>";
+			}
+			elseif ($res == "ERR subbed\n")
+			{
+				print "<font color=\"cc3300\" face=\"verdana,arial\" size=\"1\"><b>You are already subscribed to<br><i>$listname@$listhost</i> as <i>$emailaddy</i>.</b></font><br><br>";
+			}
+			else
+			{
+				print "<font color=\"cc3300\" face=\"verdana,arial\" size=\"1\"><b><i>You must specify<br>the listserv name.</i></b></font><br><br>";
+			}
+		}
+	}
+?>
+				</td>
+			</tr>
+			<tr>
+			    <td align="right">
+					<table cellspacing="0" cellpadding="0" border="0">
+						<tr valign="center">
+						    <td><font face="Arial" size="1"><b> 
+<!--  CHANGE ARTICLE TITLE [instead word+word+word below] USING "+" INSTEAD OF SPACES, add YEAR, MONTH, DAY below, ex. briefing/2002/14feb2002.html -->
+<a href="http://www.aim.org/sendfriend/friend.php"
+onClick="window.open('http://www.aim.org/sendfriend/friend.php?subject=Melting+The+Global+Warming+Myth&url=http://www.aim.org/publications/briefings/2002/27mar2002.html','popup','width=377,height=400,status=0,location=0,left=50,top=30,x=1,y=1'); return false">
+<IMG SRC="http://www.aim.org/images/sendfriend.gif" border="0"></a></td>
+<!--  CHANGE ARTICLE TITLE [instead word+word+word below] USING "+" INSTEAD OF SPACES, add YEAR, MONTH, DAY below, ex. briefing/2002/14feb2002.html -->
+						    <td><font face="Arial" size="1"><b> | </b></td>
+						    <td><font face="Arial" size="1"><b><a href="http://www.aim.org" target="_parent"><IMG SRC="http://www.aim.org/images/mainpage.gif" border="0"></a></b></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	<!--   ARTICLE TITLE DATE BELOW  -->
+	<font color="#993333"><br>
+	<p><FONT size="4" face="Arial"><b>Melting The Global Warming Myth</b></font><br>
+	<!--   ARTICLE TITLE DATE ABOVE  -->
+	
+	<!--   AUTHOR BELOW   -->
+	<FONT size="2" face="Arial" color="000000"><i>By <b>Mar�a Graciela Arias</b></i>
+	<!--   AUTHOR ABOVE   -->
+	<br>
+	<!--   3. ARTICLE DATE BELOW (eg June 21, 2000 -->
+	<i>March 27, 2002</i></font></p>
+	<!--   3. ARTICLE DATE ABOVE (eg June 21, 2000 -->
+</form>
+	</td>
+</tr>
+</table>
+<center>
+<TABLE width="90%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td>
+
+<hr>
+<!--   4. ARTICLE TEXT BELOW  -->
+
+<p>"Environmentalists predict that global warming is coming, and our emissions are to blame.  They do that to keep us worried about our role in the whole thing.  If we aren't worried and guilty, we might not pay their salaries.  It's that simple."   -Kary Mullis, Nobel Prize winner in chemistry in 1993.
+
+<p>Some environmentalist groups seized on the sudden disintegration of an enormous ice mass in the Antarctic to renew their apocalyptic prophecies of global warming and its catastrophic effects.
+
+<p>Nevertheless, David Vaughan, a glaciologist with the British Antarctic Survey said that there was little evidence to directly link the ice shelf collapse to the effects of manmade global warming.  Rather they are blaming a localized warming effect.  He also made the assurance that the disintegration of the plateau did not affect the levels of the sea because the platform already floated in the sea.
+
+<p>But, global warming or not, who decides which is the  "correct"  global temperature?  The globe has experienced wide swings in temperature:  the Medieval Warm Period, the Ice Age, etcetera.
+
+<p>Over 17,000 well-qualified scientists have signed the Oregon Institute Petition  (<A HREF="http://www.oism.org/oism/s32p31.htm" target="_blank">http://www.oism.org/oism/s32p31.htm</A>)  saying, in part,  "there is no convincing scientific evidence that human release of carbon dioxide, methane, or other greenhouse gases is causing or will, in the foreseeable future, cause catastrophic heating of the Earth's atmosphere and disruption of the Earth's climate."  Here are just some facts they pronounce to unmask the myth.
+
+<p align="center">No global warming trend<br></p>
+Global warming alarmists point to surface-based temperature measurements showing 1997 was the warmest year on record.  But U.S. government satellites and weather balloons rank 1997 as the seventh coolest year since satellite measurements began in 1978.  Which record is more reliable? 
+
+<p>Satellite data agree almost exactly with those recorded by weather balloons, even though the latter use an entirely different technology.  While the satellite record extends back only to 1979, weather balloon data go back 38 years to 1960.  Neither set of data shows a warming trend since 1979.  Source: National Aeronautics and Space Administration (NASA).
+
+<p align="center">Do not believe computers<br></p>
+Predictions of global climate change are based on general circulation models (GCMs), complex computer programs that attempt to simulate the Earth's atmosphere.  GCMs help scientists learn more about atmospheric physics, but they cannot predict future climates.
+
+<p>GCMs use  "fudge factors"  that are larger than the variables they are supposed to be measuring.  In order to get their models to produce predictions that are close to their designers'  expectations, modelers resort to  "flux adjustments"  that can be 25 times larger than the effect of doubling carbon dioxide concentrations.  GCMs are only as good as the data fed into them.  The GCMs are programmed to assume an increase in greenhouse gas concentrations of 1 percent per year, even though the historical data show an annual increase of only 0.3 to 0.4 percent.  Population growth and coal production figures were similarly exaggerated.
+
+<p align="center">Meaning of consensus<br></p>
+The Intergovernmental Panel on Climate Change (IPCC) was created by the United Nations to act as a source of scientific advice on global warming.  Its latest assessment, Climate Change 1995, contains this statement:  "The balance of evidence suggests a discernible human influence on the global climate."
+
+<p>"Balance of evidence"  is a phrase used by scientists when evidence of a cause-and-effect relationship is unavailable.  It is an admission that genuine proof has not been found.  The word  "suggests"  means different people looking at the same data can disagree on its meaning.  And  "discernible"  means detectible but by no means large or significant.  It certainly does not mean  "major,"  "troubling,"  or even  "bad."
+
+<p>Dr. Frederick Seitz, president emeritus of Rockefeller University and past president of the National Academy of Sciences, has publicly denounced the IPCC report, writing  "I have never witnessed a more disturbing corruption of the peer-review process than the events that led to this IPCC report."
+
+<p>Dr. Benjamin Santer, the lead author of the science chapter of the IPCC report said that  "it will be hard to say, with confidence, that an anthropogenic climate signal has or has not been detected."
+
+<p><font size="-1">Mar�a Graciela Arias <i>is an intern at Accuracy in Media.</i></font><br>
+
+<P><font size="-1"><i>For questions or comments, please contact <a HREF="mailto:intern@aim.org">Intern@AIM.org</a>.</i>
+ </font>
+<!--   ARTICLE TEXT ABOVE  -->
+<hr width="100%" size="1" noshade>
+<font face="Verdana,Arial" size="1"><b>
+<div align="right">| <a href="https://secure.lexi.net/aim/become_a_member.html">Like What You Read?</a> | <a href="http://www.aim.org/publications/briefings/briefings_index.html">Back To Briefings Section</a> | <a href="http://www.aim.org" target="_parent">AIM Main Page</a> |</div>
+</b></font>
+
+	</td>
+</tr>
+</TABLE>
+</center>
+</body>
+</html>

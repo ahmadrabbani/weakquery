@@ -1,0 +1,305 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <!--<META NAME="Expires" CONTENT="31 December 1990" >-->
+    <meta name="robots" content="noimageindex"></meta> 
+    <title>South Carolina Legislature Online - Error</title>
+    <LINK REL="SHORTCUT ICON" HREF="/images/stateflagsmall.ico">
+	<link rel="icon" href="/images/stateflagsmall.ico" type="image/ico">
+
+	<link type="text/css" rel="stylesheet" href="/css/main.css" media="all" />
+	<!--[if lte IE 7]>
+	<link type="text/css" rel="stylesheet" href="/css/ie7main.css" media="all" />
+	<![endif]-->
+
+	<link type="text/css" rel="stylesheet" href="/css/zipsearch.css" media="screen">
+	<link type="text/css" rel="stylesheet" href="/css/print.css" media="print">
+	<link type="text/css" rel="stylesheet" href="/css/vote.css" media="screen">
+	
+	<!--<meta http-equiv="Cache-Control" content="max-age=0">-->
+
+	<script type="text/javascript" src="/js/element.js"></script>
+	<script type="text/javascript" src="/js/ajaxobj.js"></script>
+	<script type="text/javascript" src="/js/ajax.js"></script>
+	<script type="text/javascript" src="/js/formbuild.js"></script>
+	<script type="text/javascript" src="/js/utils.js"></script>
+	<script type="text/javascript" src="/js/date.js"></script>
+	<script type="text/javascript" src="/js/lightbox.js"></script>
+	<script type="text/javascript" src="/js/xmlparser.js"></script>
+	<script type="text/javascript" src="/js/legislation.js"></script>
+	<script type="text/javascript" src="/js/logon_lits.js"></script>
+	<script type="text/javascript" src="/js/message.js"></script>
+	<script type="text/javascript" src="/js/comm_meeting.js"></script>
+	<script type="text/javascript" src="/js/regs.js"></script>
+			
+   	<script type="text/javascript">
+    //document.onclick = function () { document.getElementById('transbox').style.display= 'none' };
+    	var xmlhttp=false;
+		xmlhttp = create_xml_object();
+
+		function checkreader(friendlyalert)
+		{
+		 	friendlyalert=friendlyalert||false;
+		 	
+		 	var browser_info = perform_acrobat_detection();
+			if (!browser_info.acrobat)
+			{
+			 	loadadobebox('adobebox', '/adobe.php');
+				return false;
+			}
+			else if (friendlyalert)
+			{
+		 		alert(friendlyalert);
+			}
+			return true;
+		}
+			
+		function loadadobebox(boxname, url)
+		{
+			var response = false;
+
+			doRequest(xmlhttp, "GET", url, false, null, null);
+			if (xmlhttp.status == 200)
+			{
+	         	response = xmlhttp.responseText;
+			}
+
+			if(response)
+			{
+		 		var ele = document.getElementById(boxname);
+			 	if (ele)
+			 	{
+			 		ele.style.visibility = 'hidden';
+	 				ele.style.display = 'block';
+
+	 				positionElement(ele, 'center', 'center', true);
+
+					ele.innerHTML = response;
+				    ele.style.visibility = 'visible';
+				    ele.style.display = 'block';
+//				    ele.scrollIntoView(true);
+				}
+			}
+			return response;
+		}
+
+
+		function init()
+		{
+	 		var ld=document.getElementById("loading");
+			if(ld)
+			{
+				ld.style.display = 'none';
+			}
+		}
+		
+		function openmore()
+		{
+		 	var id = document.getElementById('quicksearch');
+		 	if (id)
+		 	{
+			 	var pos = findPos(id);
+			 	id.style.zIndex = 10;
+			 	id.style.left = pos[0]+'px';
+			  	id.style.top = pos[1]+'px';
+			  	id.style.height = '218px';
+			  	id.style.position = 'absolute';
+			  	id.style.backgroundColor = '#f7f4ec';
+			  	var id2 = document.getElementById('searchmore');
+			  	if (id2)
+			  	{
+			  	 	id2.style.display = 'none';
+			  	}
+			  	var id3 = document.getElementById('contactlegislatordiv');
+			  	if (id3)
+			  	{
+			  	 	id3.style.display = 'none';
+			  	}
+			}
+		}
+	
+		function closemore()
+		{
+		 	var id = document.getElementById('quicksearch');
+		 	if (id)
+		 	{
+			  	id.style.height = '118px';
+			  	id.style.position = '';
+			  	id.style.backgroundColor = 'transparent';
+			  	var id2 = document.getElementById('searchmore');
+			  	if (id2)
+			  	{
+			  	 	id2.style.display = 'block';
+			  	}
+			  	var id3 = document.getElementById('contactlegislatordiv');
+			  	if (id3)
+			  	{
+			  	 	id3.style.display = '';
+			  	}
+			}		 	
+		}
+	
+	<!-- This script and many more are available free online at -->
+	<!-- The JavaScript Source!! http://javascript.internet.com -->
+	
+	<!-- Begin
+	function right(e) {
+	var msg = "Use of this image is strictly prohibited unless express written permission is given to the user by Legislative Printing, Information & Technology Systems.";
+	if (navigator.appName == 'Netscape' && e.which == 3) {
+	alert(msg);
+	return false;
+	stopEvent(e);
+	}
+	if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2) {
+	alert(msg);
+	return false;
+		stopEvent(event);
+	}
+	else return true;
+	}
+	
+	function trap() 
+	  {
+	  if(document.images)
+	    {
+	    for(i=0;i<document.images.length;i++)
+	      {
+	      document.images[i].onmousedown = right;
+	      document.images[i].oncontextmenu = function(){ return false; };
+	      //document.images[i].onmouseup = right;
+	      }
+	    }
+	  }
+	// End -->
+	</SCRIPT>
+</head>
+
+
+<body class="home"  onLoad="init(); trap();">
+<div id="adobebox" style="position:absolute; width:400px; height:150px; border:2px solid #555555; background-color:#cccccc; display:none;"></div>
+<div id="container" >
+		<div id="header" class="nodisplay" style="text-align:center; height:100px;" >
+							<img id="headerimg" class="nodisplay" src="/images/header8.png" />
+			<!--			<div class="nodisplay" style="float:right; margin:6px 20px 0px 0;"><a style="color:#f7f4ec; height:15px;" href="#" onClick="rsswindow();"><img border=0 src="/images/lock.png" style="vertical-align: middle;">&nbsp;Staff&nbsp;Portal&nbsp;Login</a></div>-->
+		</div>
+		<div class="printdisplay"><img border=0 src="/images/titleprint.jpg" alt="" title=""><br><hr><br></div>
+
+		<div id="pagebody" >
+
+
+			<div id="menu" class="nodisplay">
+				<ul class="nodisplay">
+				<li><a href="/index.php">Home</a></li>
+<li><a href="/senate.php">Senate</a></li>
+<li><a href="/house.php">House</a></li>
+<li><a href="/committeeinfo.php">Committee Information</a></li>
+<li><a href="/council.php">Legislative Council</a></li>
+<li><a href="/citizens.php">Citizens&#39; Interest</a></li>
+<li><a href="/publications.php">Publications</a></li>
+		    	</ul>
+			</div>
+			<div id="search" class="nodisplay" style="height: 28px;"><div class="nodisplay" style="float:right; margin:6px 20px 0px 0;">
+							<a style="color:#f7f4ec; height:15px;" href="#" onClick="rsswindow();"><img border=0 src="/images/lock.png" style="vertical-align: middle; width: 15px; height: 15px;">&nbsp;Staff&nbsp;Portal</a>
+						</div></div>
+				<div id="sidebar" class="nodisplay">
+				<div id="vidlinks">
+					<!--<img src="/images/videobutton12d.png">-->
+									<ul id="vidsidemenu">
+						<li id="vidinnermenu" style="font-size:16px;">Chamber Video</li>
+<a  href="/video/videopage.php?chamber=S" target="_blank">Senate</a><a  href="/video/videopage.php?chamber=H" target="_blank">House</a>
+						<!--<a  href="/video/videopage.php?chamber=S" target="_blank">Senate</a><a  href="/video/videopage.php?chamber=H" target="_blank">House</a>-->
+						<!--<a  href="/video/slvideo4.html" target="_blank">Senate</a><a  href="/video/slvideo4.html" target="_blank">House</a>-->
+											</ul>
+				</div>
+				
+				<div id="sidemenu">
+					<ul id="innermenu">
+	
+						<li><a href="/howdoi.php">How do I...</a></li>
+									
+						
+						<li class="nolink" onMouseOver="var ele=document.getElementById('sidesearch'); if(ele){ele.style.display='block'; document.sidesearchform.searchtext.focus();}" onMouseOut="var ele=document.getElementById('sidesearch'); if(ele){ele.style.display='none';}"><div class="nolinkdiv">Quick Search</div>
+							<div id="sidesearch" class="sidesubmenu">
+								<form id="sidesearchform" name="sidesearchform" method="POST" action="/query.php">
+									<input type="hidden" name="search" value="side" />
+									<div class="topelement"><label for="searchtext"><span class="label">Search for:</span></label><input id="searchtext" name="searchtext" type="text"/><a id="searchlink2" href="javascript:void(0);" onClick="document.sidesearchform.submit();"><img id="searchicon" src="images/searchbutton.png"/></a></div>
+			<!--						<div><input type="checkbox" id="searchchoice_all" name="searchchoice_all" value="all" /><label for="searchchoice_all">All</label></div>-->
+									<div style="padding-left:20px;"><input type="radio" id="searchchoice_billnumber" name="category" value="BILL" /><label for="searchchoice_billnumber">&nbsp;Bill Number</label></div>
+									<div style="padding-left:20px;"><input type="radio" id="searchchoice_legislation" name="category" value="LEGISLATION" CHECKED /><label for="searchchoice_legislation">&nbsp;Legislation</label></div>
+									<div style="padding-left:20px;"><input type="radio" id="searchchoice_budget" name="category" value="BUDGET" /><label for="searchchoice_budget">&nbsp;Budget</label></div>
+									<div style="padding-left:20px;"><input type="radio" id="searchchoice_codeoflaws" name="category" value="CODEOFLAWS" /><label for="searchchoice_codeoflaws">&nbsp;Code of Laws</label></div>
+									<div style="padding-left:20px;"><input type="radio" id="searchchoice_codeofregs" name="category" value="CODEOFREGS" /><label for="searchchoice_codeofregs">&nbsp;Code of Regulations</label></div>
+									<div style="padding-left:20px;"><input type="radio" id="searchchoice_constitution" name="category" value="CONSTITUTION" /><label for="searchchoice_constitution">&nbsp;Constitution</label></div>
+									<div style="padding-left:20px;"><input type="radio" id="searchchoice_housejournals" name="category" value="HOUSEJOURNALS" /><label for="searchchoice_housejournals">&nbsp;House Journals</label></div>
+									<div style="padding-left:20px;"><input type="radio" id="searchchoice_senatejournals" name="category" value="SENATEJOURNALS" /><label for="searchchoice_senatejournals">&nbsp;Senate Journals</label></div>
+									<div class="bottomelement" style="padding-left:20px;"><input type="radio" id="searchchoice_billsummary" name="category" value="SUMMARY" /><label for="searchchoice_billsummary">&nbsp;LPITS Bill Summary</label></div>
+								</form>
+								
+							</div>
+						</li>
+						<li><a href="/legislatorssearch.php">Find Your Legislators</a></li>
+						<li><a href="/email.php?chamber=B">Contact Your Legislator</a></li>
+								
+						<li><a href="/legislation.php">Legislation</a></li>
+						<li><a href="javascript:litswindow();">Track Legislation</a></li>
+						
+							<li><a href="#" onclick="multisearchwindow('INTROMANUAL');">Multi-Criteria Search</a></li>
+							<li><a href="/research.php">Research</a></li>
+
+						<li class="nolink" onMouseOver="var ele=document.getElementById('law'); if(ele){ele.style.display='block';}" onMouseOut="var ele=document.getElementById('law'); if(ele){ele.style.display='none';}"><div class="nolinkdiv">South Carolina Law</div>
+							<div id="law" class="sidesubmenu">
+								<div class="sidediv topelement"><a href="/newlaws.php">Ratifications &amp; Acts</a></div>
+								<div class="sidediv"><a href="/code/statmast.php">Code of Laws</a></div>
+								<div class="sidediv"><a href="/coderegs/statmast.php">Code of Regulations</a></div>
+								<div class="sidediv"><a href="/scconstitution/scconst.php">Constitution</a></div>
+								<div class="sidediv bottomelement"><a href="/state_register.php">State Register</a></div>
+							</div>
+						</li>
+								<li class="nolink" onMouseOver="var ele=document.getElementById('manual'); if(ele){ele.style.display='block';}" onMouseOut="var ele=document.getElementById('manual'); if(ele){ele.style.display='none';}"><div class="nolinkdiv">Legislative Manual</div>
+							<div id="manual" class="sidesubmenu">
+								<div class="sidediv topelement"><a href="https://www1.scstatehouse.gov/cgi-bin/webstore.exe" target="_blank">Purchase Manual</a></div>
+								<div class="sidediv bottomelement"><a href="/man11/manual11.php">View Manual Online</a></div>
+							</div>
+						</li>
+						<li><a href="/studentpage/index.html">Student Connection</a></li>
+						<li><a href="/visit.php">Visiting the State House</a></li>
+						<li><a href="/archives.php">Archives</a></li>
+						<li><a href="/stateagencysites.php">State Agency Websites</a></li>
+						<li><a href="/citizensinterestpage/media.php">Media Links</a></li>
+			 		</ul>
+		    	</div>
+	    	
+				<div id="side_ad">
+					<A href="http://www.sc.gov/" target="_blank"><img border=0 src="/images/scgov3.jpg" /></a>
+				</div>
+			</div>
+			
+<div class="mainwidepanel">
+<h2 class="barheader">Error: Internal Server Error (500)</h2>
+<div id="contentsection">
+<h3>The web page or resource that you are requesting has been removed or is now located on a different page.  Please refer to our home page for the information you want as links may have changed.</h3>
+</div>
+			</div>		 <!-- mainwidepanel -->
+
+		</div>		 <!-- pagebody -->
+		
+		<div id="footer" class="nodisplay" onContextMenu="return false;">
+			<div style="margin:0;">
+				South Carolina Legislative Printing, Information and Technology Systems * 223 Blatt Building * 1105 Pendleton Street * Columbia, SC 29201<!-- * 803-212-4420--><br>
+				<a href="/disclaimer.php">Disclaimer</a> * <a href="/policies.php">Policies</a> * <a href="/credits.php">Photo Credits</a> * <a href="/contact.php">Contact Us</a>
+			</div>
+		</div>
+		<div id="printfooter" class="printdisplay serifNormal" align=center style="font-size: 8pt;">
+			<br>
+			<br>
+			<hr>
+			Legislative Printing, Information and Technology Systems
+			<br>
+			h t t p : / / w w w . s c s t a t e h o u s e . g o v
+		</div>
+
+	</div>	<!-- container -->
+</body>
+</html>

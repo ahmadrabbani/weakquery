@@ -1,0 +1,307 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+   <link rel="stylesheet" href="/video/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="index.xml" />
+	<script type="text/javascript" src="/js_incls/jquery2.js"></script>
+	<script type="text/javascript" src="/js_incls/cycle.js"></script>  
+      
+	<script type="text/javascript">
+		jQuery.fn.fadeToggle = function(speed, easing, callback) {
+  			return this.animate({opacity: 'toggle'}, speed, easing, callback);  
+		};
+
+		$(function() {		
+			$('.tabs_container').each(function() {
+				var $slideCount=$('dl',this).length;
+				if($slideCount>1){
+					var $nav = $('<div class="matrix-nav"></div>').insertBefore(this);
+				}
+				
+				//$('<div class="caption"> </div>').insertAfter($nav);
+				//var $nav = $('.matrix-nav');
+				$(this).cycle({
+					fx:     'fade',
+					speed:   300,
+					timeout: 0,
+					pager:   $nav,
+					startingSlide: 3,
+					after:   onAfter,
+					
+					// callback fn that creates a thumbnail to use as pager anchor 
+					pagerAnchorBuilder: function(idx, slide) { 
+						return '<a href="#">' + slide.title + '</a>'; 
+					} 										
+				});
+			});
+			
+			function onAfter(curr, next, opts) {
+				var src = ' ';
+				if (next.src)
+					src = next.src.match(/([a-zA-Z0-9\.]+$)/)[1];
+				$(curr).parent().nextAll('div.caption:first').html(src);
+			}
+			
+			$('dl', '.tabs_container').show();
+			
+		});
+	</script>
+   
+   
+   <title>Real Clear Sports - Video - All Super Bowl Ads</title>
+   
+
+<!-- PUT THIS TAG IN THE head SECTION -->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-4560167926987914");
+  GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-4560167926987914", "RC_160_by_160_bottom_left");
+  GA_googleAddSlot("ca-pub-4560167926987914", "RC_160_by_600_bottom");
+  GA_googleAddSlot("ca-pub-4560167926987914", "RC_160_by_600_top");
+  GA_googleAddSlot("ca-pub-4560167926987914", "RC_300_by_250_bottom");
+  GA_googleAddSlot("ca-pub-4560167926987914", "RC_300_by_250_middle");
+  GA_googleAddSlot("ca-pub-4560167926987914", "RC_300_by_250_top");
+  GA_googleAddSlot("ca-pub-4560167926987914", "RC_468_by_60_middle");
+  GA_googleAddSlot("ca-pub-4560167926987914", "RC_728_by_90_top");
+</script>
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+<!-- END OF TAG FOR head SECTION -->
+
+<!-- start custom targeting -->
+
+<!-- This is where we indiciate what site this is, e.g. politics, markets, sports, world -->
+
+<script language="JavaScript">
+  GA_googleAddAttr("SiteDomain", "sports");
+</script>
+
+<!-- This is where we indiciate what section this is, e.g. articles, blog, charts, home, lists, polls, video, etc -->
+
+<script language="JavaScript">
+  GA_googleAddAttr("SitePage", "video");
+</script>
+
+
+
+
+<!-- end custom targeting -->   
+
+</head>
+<body>
+<!-- SiteCatalyst code version: H.14.
+Copyright 1997-2007 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="http://www.realclearsports.com/omniture.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server=""
+s.channel=""
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://forbesrcpdev.112.2O7.net/b/ss/forbesrcpdev/1/H.14--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+
+<!-- End SiteCatalyst code version: H.14. -->
+<div id="container">
+<div id="masthead">
+  <div id="page-header"> 
+    
+    <div id="page-header-logo"><a href="http://www.realclearsports.com"><img src="http://www.realclearsports.com/img/rcs_logo_follow.gif" border="0" alt="RealClearSports"></a></div>
+    
+    <div id="page-header-ad">
+      	<div id="ad-leaderboardtag"><img src="http://www.realclearsports.com/img/leaderboard_tag.gif" alt="Advertisement" width="18" height="90" /></div>
+      	<script language="JavaScript">
+  			//GA_googleFillSlot("RCS_Interior_Top_728x90");
+			OAS_AD('BigBanner');
+		</script>
+    </div>
+    
+  </div>
+    
+    <div class="navcontainer" id="navcontainer">
+    <ul id="nav">
+        <li><a href="http://www.realclearsports.com/blog_network/">Blog</a></li>
+       <li><a href="http://www.realclearsports.com/static/stats.html">Stats</a></li>
+        <li><a href="http://www.realclearsports.com/video">Videos</a></li>
+         <li><a href="http://www.realclearsports.com/news">News</a></li>
+        <li><a href="http://www.realclearsports.com/power_rankings">Power Rankings</a></li>
+        <li><a href="http://www.realclearsports.com/topic/in_the_news/top_10_lists/">Top 10s</a></li>
+        <li><a href="http://www.realclearpolitics.com" class="politics_nav">Politics</a></li>
+        <li><a href="http://www.realclearmarkets.com" class="markets_nav"">Markets</a></li> 
+        <li><a href="http://www.realclearworld.com" class="world_nav">World</a></li>
+    </ul>
+
+</div></div>
+
+
+<a href="/video/index.xml"><img src="http://www.realclearpolitics.com/images/rss_logo.gif" border="0" align="right" style="margin-top: 2px !important; margin-bottom: -20px !important;"></a>
+<div id="custom-topics-header" style="clear: both;"><h1 style="line-height: normal !important;"><span><a href="/video" style="text-decoration: none; color: #000; font-weight: normal;">Real Clear Sports Video</a></span></h1>
+<p>The Latest Sports Videos</p></div>
+<div class="innerCont">
+
+<div id="alpha">
+
+                  <div id="story"><span class="dateline">February 08, 2010</span><h3 class="entry_header" style="margin-top: 10px;">All Super Bowl Ads</h3><center><div align="center"><img src="http://www.realclearsports.com/blognetwork/rcs_sidelines/SB%20ads%20pic.jpg" height="310" width="524"></div><p></center><p><p><a href="http://www.realclearsports.com/lists/2010_super_bowl_ads/intro.html">Links to every Super Bowl Ad.</a></p></p><p class="entry-footer"><span class="post-footers">Posted by RCS Staff</span> <span class="separator">|</span> <a href="javascript:void window.open('/sendpage/friend.php?id=http://www.realclearsports.com/video/2010/02/08/all_super_bowl_ads.html&js=on','','width=500,height=500,scrollbars=yes');">Send to a Friend</a> <span class="separator">|</span>  <a href="mailto:info@realclearsports.com">Email Author</a> <span class="separator">|</span>  <a class="permalink" href="/video/2010/02/08/all_super_bowl_ads.html">Permalink</a></p>
+
+</div>
+</div>
+
+
+
+</div>
+
+<div id="beta">
+	<div id="topVideos">	
+	<h3>In The News</h3>
+		<script type="text/javascript" src="/incls/recent_video_promo_posts.js"></script>
+      </div>
+    <script type="text/javascript" language="JavaScript">
+<!--
+OAS_AD('Block');
+//-->
+</script>
+
+	 
+     
+     
+     
+           		      <!-- NEWS ALERTS -->			  
+      
+	  <script type="text/javascript" src="/js_incls/lists.js"></script>
+<script src="/js_incls/facebox/facebox.js" type="text/javascript"></script>
+<link href="/js_incls/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+	  
+	  <form method="post" action="javascript:void('0');" name="pending_subscriptions" id="pending_subscriptions" title="solid">
+    <div id="toolbox">
+        <table cellpadding="0" cellspacing="0" border="0">
+        	<tr>
+
+            	<td id="alert" colspan="3">
+                    <p class="title"><img class="icon_alert" src="/images/icon_alert.gif" alt="" /> Receive email alerts for RCS Video</p>
+                
+                    <span class="user"><input type="text" name="list_email" id="list_email" value="Email Address" onfocus="if(!this.emptied) { this.value = ''; this.emptied = 1; }" size="30" /></span>
+                    
+                    <!--<input class="list" type="hidden" value="http://www.realclearworld.com/topic/rss/?id=4126" name="list[]"/>-->
+                    <input class="other_list" name="other_list[]" value="http://www.realclearsports.com/video/index.xml" type="hidden"><input class="other_title" name="other_title[]" value="RCS Video" type="hidden">
+                    
+                    <button id="subscribe" name="subscribe" type="button">Sign Up</button> <span class="thinking" id="think_subscribe"></span><span class="thinking" id="think_email"></span>
+                    
+                    <div class="mario">
+                        <input id="zelda" type="text" name="zelda"/>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+            	<td class="first">
+              	<script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
+                <script type="text/javascript">
+										var addthis_options = 'facebook, twitter, digg, buzz, google, delicious, favorites, myspace, blogger, more';
+										var addthis_exclude = 'print,email';
+										var addthis_pub="aramanujan";
+									    </script>
+
+                
+                <a href="http://www.addthis.com/bookmark.php" 
+									style="text-decoration:none;" 
+									onmouseover="return addthis_open(this, '', 'http://www.realclearsports.com/video/', 'RealClearSports - Video');"
+									onmouseout="addthis_close();" 
+									onclick="return addthis_sendto();"><img class="icon_share" 
+									src="http://s7.addthis.com/static/btn/sm-plus.gif" 
+									width="16" height="16" border="0" alt="Share" /> Share</a>
+                                    
+              
+</td>
+                <td><a href="javascript:void window.open('/sendpage/friend.php?id=http://www.realclearsports.com/video/&amp;js=on','','width=500,height=500,scrollbars=yes');"><img class="icon_email" src="/images/icon_email.gif" alt="" /> Send To a Friend</a></td>
+                <td><a href="/video/index.xml"><img class="icon_rss" src="/images/icon_feed.gif" alt="" /> RSS</a></td>
+            </tr>
+        </table>
+
+    
+    </div>
+</form><div class="clear"></div>
+
+     
+     
+     
+     
+     
+     
+    <div class="sideContainer">
+        <h3>Latest From</h3>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="latestFrom"><tr valign="top"><td width="33%"><a href="/video/auto_racing">Auto Racing</a></td><td width="33%"><a href="/video/college_basketball">College Basketball</a></td><td width="33%"><a href="/video/college_football">College Football</a></td></tr><tr valign="top"><td width="33%"><a href="/video/college_sports">College Sports</a></td><td width="33%"><a href="/video/commercialsskits">Commercials/Skits</a></td><td width="33%"><a href="/video/cycling">Cycling</a></td></tr><tr valign="top"><td width="33%"><a href="/video/fights">Fights</a></td><td width="33%"><a href="/video/golf">Golf</a></td><td width="33%"><a href="/video/horse_racing">Horse Racing</a></td></tr><tr valign="top"><td width="33%"><a href="/video/interviews">Interviews</a></td><td width="33%"><a href="/video/mlb">MLB</a></td><td width="33%"><a href="/video/nba">NBA</a></td></tr><tr valign="top"><td width="33%"><a href="/video/nfl">NFL</a></td><td width="33%"><a href="/video/nhl">NHL</a></td><td width="33%"><a href="/video/olympics">Olympics</a></td></tr><tr valign="top"><td width="33%"><a href="/video/others">Others</a></td><td width="33%"><a href="/video/soccer">Soccer</a></td><td width="33%"><a href="/video/tennis">Tennis</a></td></tr></table>                                            
+    </div>
+
+
+    <div class="sideContainer">
+        <h3 style='text-align: center !important;'>Video Archives - February 2010</h3><table class="calendar">
+	<tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr>
+	<tr><td></td><td><a href='/video/2010/02/01'>1</a></td><td><a href='/video/2010/02/02'>2</a></td><td><a href='/video/2010/02/03'>3</a></td><td><a href='/video/2010/02/04'>4</a></td><td><a href='/video/2010/02/05'>5</a></td><td><a href='/video/2010/02/06'>6</a></td></tr>
+	<tr><td><a href='/video/2010/02/07'>7</a></td><td><a href='/video/2010/02/08'>8</a></td><td><a href='/video/2010/02/09'>9</a></td><td><a href='/video/2010/02/10'>10</a></td><td><a href='/video/2010/02/11'>11</a></td><td><a href='/video/2010/02/12'>12</a></td><td><a href='/video/2010/02/13'>13</a></td></tr>
+	<tr><td><a href='/video/2010/02/14'>14</a></td><td><a href='/video/2010/02/15'>15</a></td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+	<tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+	<tr><td>28</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+    </div>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+<div style="clear: both;"></div>
+
+</div>
+
+</div>
+
+               <div id="footer">
+
+
+<a class="footer" href="/static/about_us.html">About Us |</a> <a class="footer" href="/static/contact_us.html">Contact |</a> <a class="footer" href="/static/advertise.html">Advertise  |</a> <a class="footer" href="/static/privacy_policy.html">Privacy Policy  </a>  <span class="legal">            © RealClearSports 2009</span>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-31527-18";
+urchinTracker();
+</script>
+
+
+         </div>
+
+      </div>
+      
+      
+</body>
+</html>

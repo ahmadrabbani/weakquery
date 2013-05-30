@@ -1,0 +1,1170 @@
+PERL PROGRAM LOG: /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl
+
+Starting test_wikiqrysgt_06.pl --- 22:21:15, 08-24-2011
+
+
+Starting Wikipedia database: en_20110526 connection22:21:15, 08-24-2011
+
+Infile  = obama family tree, 1
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:obama family tree
+
+
+Starting query segmentation --- 22:21:15, 08-24-2011
+
+
+Starting Google search --- 22:21:15, 08-24-2011
+
+Searching Google (q1=obama family tree)
+ -- extracting links & snippets
+    38 HTMLs found so far
+ -- fetch #1: http://www.time.com/time/photogallery/0,29307,1834628,00.html
+ -- fetch #2: http://genealogy.about.com/od/aframertrees/p/barack_obama.htm
+ -- fetch #3: http://www.origins.net/html-email/ON-obama-familytree.htm
+ -- fetch #4: http://blogs.abcnews.com/politicalpunch/2008/07/barack-obamas-1.html
+ -- fetch #5: http://www.wargs.com/political/obama.html
+ -- fetch #6: http://www.nytimes.com/interactive/2009/10/08/us/politics/20091008-obama-family-tree.html
+ -- fetch #7: http://newsblogs.chicagotribune.com/religion_theseeker/2008/09/a-rabbi-on-obam.html
+ -- fetch #8: http://en.rian.ru/infographics/20110804/165552927.html
+ -- fetch #9: http://www.makemyfamilytree.com/articles/barack_obama_family_tree.html
+ -- fetch #10: http://www.doctorzebra.com/prez/z_x44family_tree_g.htm
+
+Starting query segmentation ranking --- 22:21:28, 08-24-2011
+
+Enter calConditionalProb:4.59353697615821e-08 48 14137 2500
+
+Enter calConditionalProb:4.59353697615821e-08 24 14657 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:family tree,obama family,obama family tree
+
+top topic:context:family tree:obama
+
+top topic:context:obama family:tree
+
+top topic:context:obama family tree:
+
+
+Produce result --- 22:21:28, 08-24-2011
+
+Original query:obama family tree
+Segmented query:"family tree:169269" "obama:22562196" ||"obama family:17775180" "tree:18955875" ||"obama family tree" ||::1
+
+Infile  = french lick resort and casino, 2
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:french lick resort casino
+
+
+Starting query segmentation --- 22:21:28, 08-24-2011
+
+
+Starting Google search --- 22:21:28, 08-24-2011
+
+Searching Google (q2=french lick resort and casino)
+ -- extracting links & snippets
+    31 HTMLs found so far
+ -- fetch #1: http://www.tripadvisor.com/Hotel_Review-g37130-d91236-Reviews-French_Lick_Resort-French_Lick_Indiana.html
+ -- fetch #2: http://www.tripadvisor.com/Attraction_Review-g37130-d1371634-Reviews-French_Lick_Resort_Casino-French_Lick_Indiana.html
+ -- fetch #3: http://www.golfersguide.com/golf/on-the-tee/french-lick-resort-and-casino-returns-to-glory-days.html
+ -- fetch #4: http://www.americancasinoguide.com/indiana/french-lick-resort.html
+ -- fetch #5: http://www.americancasinoguide.com/casino-profiles/casino-profile-french-lick-resort-casino-french-lick-indiana.html
+ -- fetch #6: http://www.mobicasinos.com/french-lick-resort-casino-start-schooling.html
+ -- fetch #7: http://hotelguides.com/indiana/french-lick-resort-casino-in-hotels.html
+ -- fetch #8: http://www.travelwriternews.com/story-ideas/accommodations/french_lick_resort.htm
+ -- fetch #9: http://www.reviewblue.com/UnitedStates/Indiana/SouthIndiana/FrenchLickIN/AttractionReviews/29-88948-2.html
+ -- fetch #10: http://www.pokernews.com/news/2007/06/room-review-french-lick-resort-casino-poker-room.htm
+
+Starting query segmentation ranking --- 22:21:41, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 81 6686 2500
+
+Enter calConditionalProb:8.00178417021103e-10 81 6686 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:1.28055197093971e-18 54 6686 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:5.1227600034481e-23 0 0 2500
+
+Enter calConditionalProb:3.20103488973488e-14 81 6686 2500
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter wikiDisambiguation:french lick "resort " resort  casino
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Enter calConditionalProb:4.59353697615821e-08 235 6686 2500
+
+Enter calConditionalProb:8.00178417021103e-10 81 6686 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:french lick,lick resort,lick resort ,french lick resort,french lick resort ,lick resort  casino,resort , casino,resort  casino,french lick resort  casino
+
+top topic:context:french lick:"resort " resort  casino
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+top topic:context:lick resort:french  casino
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+top topic:context:lick resort :french casino
+
+
+Produce result --- 22:21:41, 08-24-2011
+
+Original query:french lick resort  casino
+Segmented query:"french lick:1384077" "resort:471772" ":22562196" "resort:471772" ":22562196" "casino:5215" ||"lick resort" "french:22562196" ":22562196" "casino:5215" ||"lick resort " "french:22562196" "casino:5215" ||::2
+
+Infile  = getting organized, 3
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:getting organized
+
+
+Starting query segmentation --- 22:21:41, 08-24-2011
+
+
+Starting Google search --- 22:21:41, 08-24-2011
+
+Searching Google (q3=getting organized)
+ -- extracting links & snippets
+!!snippet for result 101 NOT FOUND!!
+    33 HTMLs found so far
+ -- fetch #1: http://www.stevepavlina.com/articles/getting-organized.htm
+ -- fetch #2: http://www.getorganizednow.com/cl-month.html
+ -- fetch #3: http://www.ourclassweb.com/sites_for_teachers_getting_organized.htm
+ -- fetch #4: http://www.nlight.com/Success/Study/3organize.html
+ -- fetch #5: http://kidshealth.org/parent/growth/learning/child_organized.html
+ -- fetch #6: http://www.best-of-time-management.com/organized-living.htm
+ -- fetch #7: http://www.containerstore.com/organize/index.html
+ -- fetch #8: http://www.artbizcoach.com/go.html
+ -- fetch #9: http://googlecode.blogspot.com/2011/05/getting-organized-with-tasks-api.html
+ -- fetch #10: http://www.napo-ny.net/goMonth.shtml
+w1, w2: getting,organized
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+33 82
+
+
+Produce result --- 22:21:49, 08-24-2011
+
+Original query:getting organized
+Segmented query:"getting organized" ::3
+
+Infile  = mitchell college, 4
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mitchell college
+
+
+Starting query segmentation --- 22:21:49, 08-24-2011
+
+
+Produce result --- 22:21:49, 08-24-2011
+
+Original query:mitchell college
+Segmented query:"mitchell college:502360"::4
+
+Infile  = air travel information, 5
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:air travel information
+
+
+Starting query segmentation --- 22:21:49, 08-24-2011
+
+
+Starting Google search --- 22:21:49, 08-24-2011
+
+Searching Google (q5=air travel information)
+ -- extracting links & snippets
+    19 HTMLs found so far
+ -- fetch #1: http://www.tsa.gov/travelers/airtravel/prohibited/permitted-prohibited-items.shtm
+ -- fetch #2: http://www.usa.gov/Citizen/Topics/Travel/Air.shtml
+ -- fetch #3: http://www.enchanted-isle.com/vieques/air-trans.htm
+ -- fetch #4: http://www.united.com/page/article/0,,2131,00.html
+ -- fetch #5: http://www.harbourislandguide.com/travel.htm
+ -- fetch #6: http://gohawaii.about.com/od/air/Air_Travel_Guide_to_Hawaii.htm
+ -- fetch #7: http://controller.berkeley.edu/travel/Air/index.htm
+ -- fetch #8: http://safetravel.dot.gov/whats_new_batteries.html
+ -- fetch #9: http://traveltips.usatoday.com/air-travel-information-children-52568.html
+ -- fetch #10: http://www.yatra.com/international/US/index.html
+
+Starting query segmentation ranking --- 22:22:00, 08-24-2011
+
+Enter calConditionalProb:4.59353697615821e-08 36 5060 2500
+
+Enter calConditionalProb:4.59353697615821e-08 12 4970 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:air travel,travel information,air travel information
+
+top topic:context:air travel:information
+
+top topic:context:travel information:air
+
+top topic:context:air travel information:
+
+
+Produce result --- 22:22:01, 08-24-2011
+
+Original query:air travel information
+Segmented query:"air travel:449952" "information:18985062" ||"travel information:8624576" "air:22562196" ||"air travel information" ||::5
+
+Infile  = used car parts, 6
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:used car part
+
+
+Starting query segmentation --- 22:22:01, 08-24-2011
+
+
+Starting Google search --- 22:22:01, 08-24-2011
+
+Searching Google (q6=used car parts)
+ -- extracting links & snippets
+    5 HTMLs found so far
+ -- extracting links & snippets
+    10 HTMLs found so far
+ -- extracting links & snippets
+    18 HTMLs found so far
+ -- fetch #1: http://www.car-part.com/dealersaz.shtml
+ -- fetch #2: http://www.car-part.com/recterms.htm
+ -- fetch #3: http://www.automotix.net/usedautoparts.html
+ -- fetch #4: http://www.usautoparts.net/bmw/parts/parts_used.htm
+ -- fetch #5: http://www.autoandparts.com/yardtours.html
+ -- fetch #6: http://www.autop.com/links.html
+ -- fetch #7: http://autorepair.about.com/od/quicktips/qt/used_parts_tip.htm
+ -- fetch #8: http://search7104.used-auto-parts.biz/inventory/retail.htm
+ -- fetch #9: http://www.alibaba.com/showroom/used-car-parts.html
+ -- fetch #10: http://www.classiccarpartsgiant.com/usedclassiccarparts.html
+
+Starting query segmentation ranking --- 22:22:21, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter wikiDisambiguation:car parts used
+
+Enter calConditionalProb:4.59353697615821e-08 196 31230 2500
+
+Enter calConditionalProb:4.59353697615821e-08 173 31230 2500
+
+ranked query topics:car parts,used car,used car parts
+
+top topic:context:car parts:used
+
+top topic:context:used car:parts
+
+top topic:context:used car parts:
+
+
+Produce result --- 22:22:21, 08-24-2011
+
+Original query:used car parts
+Segmented query:"car parts:22562196" "used:22562196" ||"used car:5146762" "parts:22562196" ||"used car parts" ||::6
+
+Infile  = cheap internet, 7
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:cheap internet
+
+
+Starting query segmentation --- 22:22:21, 08-24-2011
+
+
+Starting Google search --- 22:22:21, 08-24-2011
+
+Searching Google (q7=cheap internet)
+ -- extracting links & snippets
+    21 HTMLs found so far
+ -- fetch #1: http://www.mapsofworld.com/referrals/internet/internet-providers/cheap-internet-providers.html
+ -- fetch #2: http://www.cable-modem.net/cheap_broadband_cable_modem/index.html
+ -- fetch #3: http://www.clearwirelessinternet4g.com/clear-deals.html
+ -- fetch #4: http://www.miamiherald.com/2011/08/02/2342521/needy-families-offered-cheap-internet.html
+ -- fetch #5: http://www.cheap-online.net/internet-phone.html
+ -- fetch #6: http://www.satelliteinternet-now.com/Cheap-Satellite-Internet.html
+ -- fetch #7: http://www.nbcmiami.com/news/local/Comcast-Offering-Cheap-Internet-to-Needy-Families-126774688.html
+ -- fetch #8: http://www.ezisp.info/cheap.html
+ -- fetch #9: http://www.build-your-own-cheap-computer.com/internet-provider.html
+ -- fetch #10: http://www.easycall.net/dial-up-internet.shtml
+w1, w2: cheap,internet
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+57 315
+
+
+Produce result --- 22:22:30, 08-24-2011
+
+Original query:cheap internet
+Segmented query:"cheap internet" ::7
+
+Infile  = gmat prep classes, 8
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:gmat prep class
+
+
+Starting query segmentation --- 22:22:30, 08-24-2011
+
+
+Starting Google search --- 22:22:30, 08-24-2011
+
+Searching Google (q8=gmat prep classes)
+ -- extracting links & snippets
+    30 HTMLs found so far
+ -- fetch #1: http://www.gmat-mba-prep.com/gmat-courses.html
+ -- fetch #2: http://gmatclub.com/forum/gmat-prep-course-reviews-discount-codes-78451.html
+ -- fetch #3: http://www.800score.com/gmat-home.html
+ -- fetch #4: http://www.gbcwcu.org/gmatprep.html
+ -- fetch #5: http://www.daniels.du.edu/admissions/preparegmat/gmatprepcourses.html
+ -- fetch #6: http://www.csuohio.edu/ce/catalog/testprep.html
+ -- fetch #7: http://www.testmasters.com/gmat.html
+ -- fetch #8: http://www.belmont.edu/business/graduatebusiness/GMAT_GRE_Prep_Courses/gmat_preparation_courses/index.html
+ -- fetch #9: http://www.neiu.edu/~bschool/prep.htm
+ -- fetch #10: http://www.testprepreview.com/gmat_practice.htm
+
+Starting query segmentation ranking --- 22:22:38, 08-24-2011
+
+Enter calConditionalProb:0 6 6945 2500
+
+Enter calConditionalProb:8.0017247232697e-10 7 8349 2500
+
+Enter calConditionalProb:0 0 0 2500
+
+ranked query topics:gmat prep classes,prep classes,gmat prep
+
+top topic:context:gmat prep classes:
+
+top topic:context:prep classes:gmat
+
+top topic:context:gmat prep:classes
+
+
+Produce result --- 22:22:39, 08-24-2011
+
+Original query:gmat prep classes
+Segmented query:"gmat prep classes" ||"prep classes" "gmat" ||"gmat prep" "classes:22562196" ||::8
+
+Infile  = espn sports, 9
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:espn sport
+
+
+Starting query segmentation --- 22:22:39, 08-24-2011
+
+
+Starting Google search --- 22:22:39, 08-24-2011
+
+Searching Google (q9=espn sports)
+ -- extracting links & snippets
+    6 HTMLs found so far
+ -- extracting links & snippets
+    21 HTMLs found so far
+ -- fetch #1: http://www.texassports.com/genrel/082411aab.html
+ -- fetch #2: http://www.asiatraveltips.com/news11/188-RugbyWorldCup.shtml
+ -- fetch #3: http://sports.jrank.org/pages/5067/Vitale-Dick-Soars-with-Cable-Network.html
+ -- fetch #4: http://kissingsuzykolber.uproxx.com/2008/08/at-the-intersection-of-dipsht-avenue-and-fcktard-drive.html
+ -- fetch #5: http://www.nytimes.com/1997/09/04/business/disney-s-espn-unit-buying-classic-sports-programmer.html
+ -- fetch #6: http://www.city-data.com/forum/sports/765267-what-sports-should-espn-televise.html
+ -- fetch #7: http://damnyc.blogspot.com/2010/06/july-show-10-espn-sports-day.html
+ -- fetch #8: http://damnyc.blogspot.com/2011/04/march-11-show-espn-sports-day.html
+ -- fetch #9: http://radio.about.com/od/personalizedradiostreams/qt/Slacker-To-Offer-Personalized-Espn-Sports-Coverage-Online-And-On-SmartPhones.htm
+ -- fetch #10: http://www.espn1530.com/pages/lancesBlog.html
+w1, w2: espn,sport
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+127 131
+
+
+Produce result --- 22:22:50, 08-24-2011
+
+Original query:espn sports
+Segmented query:"espn sports" ::9
+
+Infile  = arizona game and fish, 10
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:arizona game fish
+
+
+Starting query segmentation --- 22:22:50, 08-24-2011
+
+
+Starting Google search --- 22:22:50, 08-24-2011
+
+Searching Google (q10=arizona game and fish)
+ -- extracting links & snippets
+!!snippet for result 113 NOT FOUND!!
+    27 HTMLs found so far
+ -- fetch #1: http://www.azgfd.gov/eservices/draw.shtml
+ -- fetch #2: http://www.azgfd.gov/h_f/hunting_rules.shtml
+ -- fetch #3: http://www.azgfd.gov/eservices/licenses.shtml
+ -- fetch #4: http://www.azgfd.gov/inside_azgfd/agency_directory.shtml
+ -- fetch #5: http://www.azgfd.gov/h_f/hunting_fishing.shtml
+ -- fetch #6: http://www.azgfd.gov/inside_azgfd/employment.shtml
+ -- fetch #7: http://azgfd.net/artman/publish/NewsMedia/Arizona-Game-and-Fish-expresses-concerns-over-proposed-cuts-to-critical-programs-that-help-states-manage-and-conserve-wildlife.shtml
+ -- fetch #8: http://www.sonorannews.com/archives/2011/110824/communitynews.html
+ -- fetch #9: http://www.gf.state.az.us/h_f/fish_consumption.shtml
+ -- fetch #10: http://www.boat-ed.com/az/handbook/agency.htm
+
+Starting query segmentation ranking --- 22:23:03, 08-24-2011
+
+Enter calConditionalProb:4.59353697615821e-08 104 7336 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:3.20103488973488e-14 52 7336 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:8.0017247232697e-10 174 7336 2500
+
+Enter calConditionalProb:8.00178417021103e-10 45 7336 2500
+
+Enter calConditionalProb:8.00178417021103e-10 45 7336 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:1.28055197093971e-18 0 0 2500
+
+ranked query topics: fish,game ,game  fish,arizona game,arizona game ,arizona game  fish
+
+top topic:context: fish:arizona game
+
+top topic:context:game :arizona fish
+
+top topic:context:game  fish:arizona
+
+
+Produce result --- 22:23:03, 08-24-2011
+
+Original query:arizona game  fish
+Segmented query:" fish" "arizona:21883824" "game:18723138" ||"game :18723138" "arizona:21883824" "fish:4699587" ||"game  fish" "arizona:21883824" ||::10
+
+Infile  = poker tournaments, 11
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:poker tournament
+
+
+Starting query segmentation --- 22:23:03, 08-24-2011
+
+
+Produce result --- 22:23:03, 08-24-2011
+
+Original query:poker tournaments
+Segmented query:"poker tournaments:141837"::11
+
+Infile  = wedding budget calculator, 12
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:wedding budget calculator
+
+
+Starting query segmentation --- 22:23:03, 08-24-2011
+
+
+Starting Google search --- 22:23:03, 08-24-2011
+
+Searching Google (q12=wedding budget calculator)
+ -- extracting links & snippets
+    34 HTMLs found so far
+ -- fetch #1: http://www.ritzcarlton.com/en/Events/Weddings/Calculator.htm
+ -- fetch #2: http://www.eventsyourway.net/WeddingBudget.htm
+ -- fetch #3: http://www.free-online-calculator-use.com/wedding-budget-calculator.html
+ -- fetch #4: http://www.weddingplannercoordinator.net/about.html
+ -- fetch #5: http://www.groomsonline.com/index.php/wedding-budget-calculator.html
+ -- fetch #6: http://www.weddingmanor.com/wedding_tools/wedding_budget.html
+ -- fetch #7: http://www.realsimple.com/holidays-entertaining/weddings/budget/wedding-cost-calculator-00000000008302/index.html
+ -- fetch #8: http://www.ehitched.com/wedding_planning/create_budget_list.htm
+!Mech->get TimeOut: Error GETing http://www.ehitched.com/wedding_planning/create_budget_list.htm: Alarm
+ at /home/huizhang/workspace/epic_prog/sub/spidersub_2010.pl line 55
+ -- fetch #9: http://www.corvallisbride.com/estimator.htm
+ -- fetch #10: http://www.santa-maria-weddings.com/planning/wedding_budget_calculator.html
+
+Starting query segmentation ranking --- 22:23:27, 08-24-2011
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+Enter calConditionalProb:8.00178417021103e-10 45 5200 2500
+
+Enter calConditionalProb:8.00178417021103e-10 66 5200 2500
+
+ranked query topics:wedding budget,budget calculator,wedding budget calculator
+
+top topic:context:wedding budget:calculator
+
+top topic:context:budget calculator:wedding
+
+top topic:context:wedding budget calculator:
+
+
+Produce result --- 22:23:27, 08-24-2011
+
+Original query:wedding budget calculator
+Segmented query:"wedding budget" "calculator:7593" ||"budget calculator" "wedding:32893" ||"wedding budget calculator" ||::12
+
+Infile  = the current, 13
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:current
+
+
+Starting query segmentation --- 22:23:27, 08-24-2011
+
+
+Produce result --- 22:23:27, 08-24-2011
+
+Original query:the current
+Segmented query:"the current:22562196"::13
+
+Infile  = rick warren, 14
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:rick warren
+
+
+Starting query segmentation --- 22:23:28, 08-24-2011
+
+
+Produce result --- 22:23:28, 08-24-2011
+
+Original query:rick warren
+Segmented query:"rick warren:735151"::14
+
+Infile  = lower heart rate, 15
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:lower heart rate
+
+
+Starting query segmentation --- 22:23:28, 08-24-2011
+
+
+Starting Google search --- 22:23:28, 08-24-2011
+
+Searching Google (q15=lower heart rate)
+ -- extracting links & snippets
+    32 HTMLs found so far
+ -- fetch #1: http://www.nemahealth.org/programs/healthcare/heart_rate_pulse.htm
+ -- fetch #2: http://www.ehow.com/how_5677967_reduce-heart-rate.html
+ -- fetch #3: http://www.heartmonitors.com/exercisetips/changing_heartrate.htm
+ -- fetch #4: http://www.heartmonitors.com/exercisetips/heart_rate_basics.htm
+ -- fetch #5: http://www.medicinenet.com/low_blood_pressure/page4.htm
+ -- fetch #6: http://www.naturalnews.com/028744_raisins_heart_rate.html
+ -- fetch #7: http://lifestyle.iloveindia.com/lounge/how-to-lower-heart-rate-naturally-8553.html
+ -- fetch #8: http://www.physorg.com/news202060977.html
+ -- fetch #9: http://www.exrx.net/Testing/HeartRate.html
+ -- fetch #10: http://www.brianmac.co.uk/hrm1.htm
+
+Starting query segmentation ranking --- 22:23:37, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:4.59353697615821e-08 372 10024 2500
+
+Enter calConditionalProb:8.0017247232697e-10 28 10024 2500
+
+ranked query topics:heart rate,lower heart,lower heart rate
+
+top topic:context:heart rate:lower
+
+top topic:context:lower heart:rate
+
+top topic:context:lower heart rate:
+
+
+Produce result --- 22:23:37, 08-24-2011
+
+Original query:lower heart rate
+Segmented query:"heart rate:304942" "lower:22562196" ||"lower heart" "rate:22562196" ||"lower heart rate" ||::15
+
+Infile  = ps 2 games, 16
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:game
+
+
+Starting query segmentation --- 22:23:37, 08-24-2011
+
+
+Starting Google search --- 22:23:37, 08-24-2011
+
+Searching Google (q16=ps 2 games)
+ -- extracting links & snippets
+    27 HTMLs found so far
+ -- fetch #1: http://ps2.ign.com/articles/772/772296p1.html
+ -- fetch #2: http://ps3.ign.com/articles/793/793775p1.html
+ -- fetch #3: http://ps2.ign.com/index/games.html
+ -- fetch #4: http://www.gamespot.com/ps2/index.html
+ -- fetch #5: http://www.gamespot.com/ps2/strategy/sims/index.html
+ -- fetch #6: http://www.gamespot.com/ps2/adventure/24thegame/index.html
+ -- fetch #7: http://www.buy.com/cat/playstation-2-controllers-ps2-memory-cards-and-more-accessories/62483.html
+ -- fetch #8: http://www.psxextreme.com/ps2-games.html
+ -- fetch #9: http://www.psxa2z.com/PS201L.html
+ -- fetch #10: http://www.cduniverse.com/search/xx/games/category2/365/a/Playstation+2.htm
+
+Starting query segmentation ranking --- 22:23:51, 08-24-2011
+
+Enter calConditionalProb:8.0017247232697e-10 14704 7267 2500
+
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:ps 2,2 games,ps 2 games
+
+top topic:context:ps 2:games
+
+top topic:context:2 games:ps
+
+top topic:context:ps 2 games:
+
+
+Produce result --- 22:23:52, 08-24-2011
+
+Original query:ps 2 games
+Segmented query:"ps 2" "games:22562196" ||"2 games" "ps:22562196" ||"ps 2 games" ||::16
+
+Infile  = diabetes education, 17
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:diabete education
+
+
+Starting query segmentation --- 22:23:52, 08-24-2011
+
+
+Produce result --- 22:23:52, 08-24-2011
+
+Original query:diabetes education
+Segmented query:"diabetes education:44677"::17
+
+Infile  = website design hosting, 18
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:website design hosting
+
+
+Starting query segmentation --- 22:23:52, 08-24-2011
+
+
+Starting Google search --- 22:23:52, 08-24-2011
+
+Searching Google (q18=website design hosting)
+ -- extracting links & snippets
+    2 HTMLs found so far
+ -- extracting links & snippets
+    4 HTMLs found so far
+ -- extracting links & snippets
+    6 HTMLs found so far
+ -- extracting links & snippets
+    9 HTMLs found so far
+ -- extracting links & snippets
+    20 HTMLs found so far
+ -- fetch #1: http://www.rezovation.com/dhp/rezovation_dhp.html
+ -- fetch #2: http://www.thehostingnews.com/business-websites-need-seo-16136.html
+ -- fetch #3: http://www.heritagewebdesign.com/design.html
+ -- fetch #4: http://www.allstarwebdesign.net/links_webdesign7.html
+ -- fetch #5: http://www.capital-connection.com/marketing.html
+ -- fetch #6: http://www.designhosting.biz/ecommerce.html
+ -- fetch #7: http://www.websitestampabay.com/tampa_website_design.htm
+ -- fetch #8: http://www.acorn-is.com/services-pricing.htm
+ -- fetch #9: http://www.dallasprowebdesigners.com/website-design-hosting-solutions.html
+ -- fetch #10: http://www.webdesign.org/site-maintenance/hosting-services/page-1.html
+
+Starting query segmentation ranking --- 22:24:07, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter wikiDisambiguation:website design hosting
+
+Enter calConditionalProb:4.59353697615821e-08 52 5701 2500
+
+Enter calConditionalProb:8.0017247232697e-10 23 5701 2500
+
+ranked query topics:website design,design hosting,website design hosting
+
+top topic:context:website design:hosting
+
+top topic:context:design hosting:website
+
+top topic:context:website design hosting:
+
+
+Produce result --- 22:24:08, 08-24-2011
+
+Original query:website design hosting
+Segmented query:"website design:22562196" "hosting:22562196" ||"design hosting" "website:33898" ||"website design hosting" ||::18
+
+Infile  = elliptical trainer, 19
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:elliptical trainer
+
+
+Starting query segmentation --- 22:24:08, 08-24-2011
+
+
+Produce result --- 22:24:08, 08-24-2011
+
+Original query:elliptical trainer
+Segmented query:"elliptical trainer:1393614"::19
+
+Infile  = cell phones, 20
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:cell phone
+
+
+Starting query segmentation --- 22:24:08, 08-24-2011
+
+
+Produce result --- 22:24:08, 08-24-2011
+
+Original query:cell phones
+Segmented query:"cell phones:22562196"::20
+
+Infile  = pampered chef, 21
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:pampered chef
+
+
+Starting query segmentation --- 22:24:08, 08-24-2011
+
+
+Produce result --- 22:24:08, 08-24-2011
+
+Original query:pampered chef
+Segmented query:"pampered chef:888155"::21
+
+Infile  = dogs for adoption, 22
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:dog adoption
+
+
+Starting query segmentation --- 22:24:08, 08-24-2011
+
+
+Starting Google search --- 22:24:08, 08-24-2011
+
+Searching Google (q22=dogs for adoption)
+ -- extracting links & snippets
+!!snippet for result 102 NOT FOUND!!
+    20 HTMLs found so far
+ -- fetch #1: http://www.petfinder.com/shelters/FL564.html
+ -- fetch #2: http://www.petswithdisabilities.org/adopt.html
+ -- fetch #3: http://www.huffingtonpost.com/2011/05/24/war-dog-adoption-navy-seal-cairo_n_866392.html
+ -- fetch #4: http://www.dogs-4life.com/abused-dog-adoption.html
+ -- fetch #5: http://www.dogadoptionnetwork.org/links.html
+ -- fetch #6: http://www.militaryworkingdogs.com/dogstoadopt.shtml
+ -- fetch #7: http://www.doggeek.com/Adoptions/index.shtml
+ -- fetch #8: http://www.the-happy-dog-spot.com/dog-adoption.html
+ -- fetch #9: http://www.anewleashonlifedogrescue.org/rehome.html
+ -- fetch #10: http://www.dogsonly.org/gallery.html
+
+Starting query segmentation ranking --- 22:24:23, 08-24-2011
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter wikiDisambiguation:dogs  adoption
+
+Enter calConditionalProb:4.59353697615821e-08 0 15747 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1410.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1432.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1356.
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+ranked query topics:dogs , adoption,dogs  adoption
+
+top topic:context:dogs :adoption
+
+top topic:context: adoption:dogs
+
+top topic:context:dogs  adoption:
+
+
+Produce result --- 22:24:23, 08-24-2011
+
+Original query:dogs  adoption
+Segmented query:"dogs :23287" "adoption:38534" ||" adoption" "dogs:22562196" ||"dogs  adoption" ||::22
+
+Infile  = disneyland hotel, 23
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:disneyland hotel
+
+
+Starting query segmentation --- 22:24:23, 08-24-2011
+
+
+Produce result --- 22:24:23, 08-24-2011
+
+Original query:disneyland hotel
+Segmented query:"disneyland hotel:22562196"::23
+
+Infile  = orange county convention center, 24
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:orange county convention center
+
+
+Starting query segmentation --- 22:24:23, 08-24-2011
+
+
+Produce result --- 22:24:23, 08-24-2011
+
+Original query:orange county convention center
+Segmented query:"orange county convention center:6961997"::24
+
+Infile  = the music man, 25
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:music man
+
+
+Starting query segmentation --- 22:24:23, 08-24-2011
+
+
+Produce result --- 22:24:23, 08-24-2011
+
+Original query:the music man
+Segmented query:"the music man:97723"::25
+
+Infile  = the secret garden, 26
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:secret garden
+
+
+Starting query segmentation --- 22:24:24, 08-24-2011
+
+
+Produce result --- 22:24:24, 08-24-2011
+
+Original query:the secret garden
+Segmented query:"the secret garden:410873"::26
+
+Infile  = map of the united states, 27
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:map united state
+
+
+Starting query segmentation --- 22:24:24, 08-24-2011
+
+
+Produce result --- 22:24:24, 08-24-2011
+
+Original query:map of the united states
+Segmented query:"map of the united states:18618239"::27
+
+Infile  = solar panels, 28
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:solar panel
+
+
+Starting query segmentation --- 22:24:24, 08-24-2011
+
+
+Produce result --- 22:24:24, 08-24-2011
+
+Original query:solar panels
+Segmented query:"solar panels:22562196"::28
+
+Infile  = alexian brothers hospital, 29
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:alexian brother hospital
+
+
+Starting query segmentation --- 22:24:24, 08-24-2011
+
+
+Starting Google search --- 22:24:24, 08-24-2011
+
+Searching Google (q29=alexian brothers hospital)
+ -- extracting links & snippets
+!!snippet for result 106 NOT FOUND!!
+!!snippet for result 107 NOT FOUND!!
+!!snippet for result 108 NOT FOUND!!
+    23 HTMLs found so far
+ -- fetch #1: http://alcoholism.about.com/od/tx_il/qt/il505.htm
+ -- fetch #2: http://www.prnewswire.com/news-releases/alexian-brothers-hospital-network-and-sanford-brown-schools-announce-new-alliance-114646859.html
+ -- fetch #3: http://www.prnewswire.com/news-releases/alexian-brothers-hospital-network-named-to-2010-list-of-top-places-to-work-112871309.html
+ -- fetch #4: http://planitnorthwest.nwherald.com/alexian+brothers+hospital+network.9.79294752p.home.html
+ -- fetch #5: http://www.hospital-data.com/hospitals/ALEXIAN-BROTHERS-HOSPITAL-SAN-JOSE.html
+ -- fetch #6: http://www.zapconnect.com/hospitals/index.cfm/fuseaction/hospital_detail/id_hospital/422.html
+ -- fetch #7: http://www.hospitalvictims.com/Pages/Missouri_hospital_prices/St.Louis/Alexian_Brothers_Hospital_ancillary.htm
+ -- fetch #8: http://www.brainygeography.com/features/MO.hospital/alexianbrothershospital.html
+ -- fetch #9: http://www.ucomparehealthcare.com/hospital/illinois/alexian_brothers_medical_center.html
+ -- fetch #10: http://local.meridianstar.com/alexian+brothers+hospital+network.9.53692718p.home.html
+
+Starting query segmentation ranking --- 22:24:33, 08-24-2011
+
+Enter calConditionalProb:4.59353697615821e-08 85 3961 2500
+
+Enter calConditionalProb:8.0017247232697e-10 60 3961 2500
+
+Enter calConditionalProb:6.35125970185493e-17 0 0 2500
+
+ranked query topics:alexian brothers,brothers hospital,alexian brothers hospital
+
+top topic:context:alexian brothers:hospital
+
+top topic:context:brothers hospital:alexian
+
+top topic:context:alexian brothers hospital:
+
+
+Produce result --- 22:24:33, 08-24-2011
+
+Original query:alexian brothers hospital
+Segmented query:"alexian brothers:5198401" "hospital:18994221" ||"brothers hospital" "alexian:5198401" ||"alexian brothers hospital" ||::29
+
+Infile  = indexed annuity, 30
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:indexed annuity
+
+
+Starting query segmentation --- 22:24:33, 08-24-2011
+
+
+Produce result --- 22:24:34, 08-24-2011
+
+Original query:indexed annuity
+Segmented query:"indexed annuity:22046794"::30
+
+Infile  = wilson antenna, 31
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:wilson antenna
+
+
+Starting query segmentation --- 22:24:34, 08-24-2011
+
+
+Starting Google search --- 22:24:34, 08-24-2011
+
+Searching Google (q31=wilson antenna)
+ -- extracting links & snippets
+    40 HTMLs found so far
+ -- fetch #1: http://www.wearecb.com/store/wilson-antenna-m-114.html
+ -- fetch #2: http://www.walcottcb.com/flex3-wilson-flexible-fiberglass-antenna-p-542.html
+ -- fetch #3: http://www.walcottcb.com/wilson-little-wil-magnet-mount-cb-radio-antenna-p-395.html
+ -- fetch #4: http://www.tessco.com/yts/partner/manufacturer_list/vendors/wilson_cellular/index.html
+ -- fetch #5: http://www.alternativewireless.com/cellular-antennas/cell-phone-antennas/wilson-antennas.html
+ -- fetch #6: http://www.alternativewireless.com/cellular-antennas/directconnect-amplifiers.html
+ -- fetch #7: http://reviews.cnet.com/network-cables/wilson-antenna-cable-50/4505-3115_7-34572400.html
+ -- fetch #8: http://www.overstock.com/Electronics/Wilson-Magnetic-Mount-Little-Wil-CB-Antenna/2596316/product.html
+ -- fetch #9: http://www.abesofmaine.com/item=WIL301135~item.htm
+ -- fetch #10: http://www.shopcell.com/all-all-cell_phone_boosters-t413732all.html
+w1, w2: wilson,antenna
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+337 487
+
+
+Produce result --- 22:24:49, 08-24-2011
+
+Original query:wilson antenna
+Segmented query:"wilson antenna" ::31
+
+Infile  = flame designs, 32
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:flame design
+
+
+Starting query segmentation --- 22:24:49, 08-24-2011
+
+
+Starting Google search --- 22:24:49, 08-24-2011
+
+Searching Google (q32=flame designs)
+ -- extracting links & snippets
+    33 HTMLs found so far
+ -- fetch #1: http://www.clipart-design.com/flame_designs_clipart_pro.htm
+ -- fetch #2: http://www.badasspaint.com/hall-of-flames.htm
+ -- fetch #3: http://azautographics.com/Flame%20Designs.htm
+ -- fetch #4: http://airbrushalleyandprographics.com/page/1ogrl/Airbrush_Helmets/Flame_Designs.html
+ -- fetch #5: http://www.hotrodders.com/forum/p-shop-some-flame-designs-my-32-a-89105.html
+ -- fetch #6: http://www.airbrushgallery.com/flame_design_motorcycle_helmets.html
+ -- fetch #7: http://flame-designs.com/service.html
+ -- fetch #8: http://www.4shared.com/photo/qR-_IMhJ/ist2_8328612-vector-tribal-tat.html
+ -- fetch #9: http://www.harleyseats.com/Seat_II_Solo_Flame_Sewn.htm
+ -- fetch #10: http://www.tribalall.com/photos/tribal-flame-designs-image.html
+w1, w2: flame,design
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1305.
+102 94
+
+
+Produce result --- 22:24:59, 08-24-2011
+
+Original query:flame designs
+Segmented query:"flame designs" ::32
+
+Infile  = dog heat, 33
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:dog heat
+
+
+Starting query segmentation --- 22:24:59, 08-24-2011
+
+
+Starting Google search --- 22:24:59, 08-24-2011
+
+Searching Google (q33=dog heat)
+ -- extracting links & snippets
+!!snippet for result 101 NOT FOUND!!
+    45 HTMLs found so far
+ -- fetch #1: http://www.dogbreedinfo.com/breedingheat.htm
+ -- fetch #2: http://www.dogbreedinfo.com/heat.htm
+ -- fetch #3: http://www.dogchatforum.com/dog_in_heat.htm
+ -- fetch #4: http://www.gifts-for-dog-lovers.com/dogs-in-heat.html
+ -- fetch #5: http://www.mytopdogs.com/dog-in-heat.shtml
+ -- fetch #6: http://www.talktothevet.com/ARTICLES/DOGS/Pdogsheatcycle.HTM
+ -- fetch #7: http://phoenix.about.com/od/animvet/a/dogsheat_2.htm
+ -- fetch #8: http://dogs.about.com/od/dogandpuppyhealth/qt/heatstroke.htm
+ -- fetch #9: http://206.130.118.243/docs/heating-dog-house.htm
+ -- fetch #10: http://www.usatoday.com/sports/basketball/nba/heat/2011-05-16-rebounding-game-1_N.htm
+w1, w2: dog,heat
+
+446 194
+
+
+Produce result --- 22:25:05, 08-24-2011
+
+Original query:dog heat
+Segmented query:"dog heat" ::33
+
+
+Processed 34 queries
+
+
+Ending test_wikiqrysgt_06.pl --- 22:25:05, 08-24-2011
+
+  CPU seconds = 60.790 (UT),  0.460 (ST)
+  REAL TIME   = 0:3:50 (hh:mn:ss)
+

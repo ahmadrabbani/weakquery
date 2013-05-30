@@ -1,0 +1,1984 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<script type="text/javascript">
+</script>
+<meta http-equiv="imagetoolbar" content="no"/>
+<title>Chipotle, Wichita - Restaurant Reviews - TripAdvisor</title>
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="cache-control" content="no-cache,must-revalidate"/>
+<meta http-equiv="expires" content="0"/>
+<meta property="og:image" content="http://c1.tacdn.com/img2/postimg.jpg" height="150px" width="150px"/>
+<meta name="keywords" content="Chipotle, Wichita, restaurant, reviews of restaurants, food, dining"/>
+<meta name="description" content="Chipotle, Wichita: See 4 unbiased reviews of Chipotle, rated 3.5 of 5 on TripAdvisor and ranked #119 of 570 restaurants in Wichita."/>
+<script type="text/javascript">
+(function () { /* ensure that console.log is a valid function */
+if (typeof console == "undefined") console = {};
+var funcs = ["log", "error", "warn"];
+for (var i = 0; i < funcs.length; i++) {
+if (console[funcs[i]] == undefined) {
+console[funcs[i]] = function () {};
+}
+}
+})()
+var pageInit = new Date();
+var jsGlobalMonths =   new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+var jsGlobalDaysAbbrev =   new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var jsGlobalDaysShort =   new Array("S","M","T","W","T","F","S");
+var sInvalidDates = "The dates you entered are invalid. Please correct your dates and search again.";
+var sSelectDeparture = "Please select a departure airport.";
+var DATE_FORMAT_MMM_YYYY = "MMM YYYY";
+var jsGlobalDayOffset = 1 - 1;
+var DATE_FORMAT = { pattern: /(\d{1,2})\/(\d{1,2})\/(\d{2,4})/, month: 1, date: 2, year: 3 };
+var formatDate = function(d, m, y) {return [++m,d,y].join("/");}
+var cal_month_header = function(month, year) {return cal_months[month]+"&nbsp;"+year;}
+var currencyLevel = new Array();
+var currencySymbol = new Array();
+var cur_prefix = false;
+var cur_postfix = true;
+currencySymbol["USD"] = new Array("$", false);
+currencyLevel["USD"] = new Array("Under $100","100" ,"Under $200","200" ,"Under $300","300" ,"Any Price","9999999" );
+currencySymbol["EUR"] = new Array("€", false);
+currencyLevel["EUR"] = new Array("Under €75","75" ,"Under €150","150" ,"Under €225","225" ,"Any Price","9999999" );
+currencySymbol["GBP"] = new Array("£", false);
+currencyLevel["GBP"] = new Array("Under £50","50" ,"Under £100","100" ,"Under £150","150" ,"Any Price","9999999" );
+currencySymbol["CAD"] = new Array("CAD ", false);
+currencyLevel["CAD"] = new Array("Under CAD 100","100" ,"Under CAD 200","200" ,"Under CAD 300","300" ,"Any Price","9999999" );
+currencySymbol["AUD"] = new Array("AUD ", false);
+currencyLevel["AUD"] = new Array("Under AUD 100","100" ,"Under AUD 200","200" ,"Under AUD 300","300" ,"Any Price","9999999" );
+currencySymbol["CHF"] = new Array("CHF ", false);
+currencyLevel["CHF"] = new Array("Under CHF 100","100" ,"Under CHF 200","200" ,"Under CHF 300","300" ,"Any Price","9999999" );
+currencySymbol["JPY"] = new Array("JPY", false);
+currencyLevel["JPY"] = new Array("Under JPY10000","10000" ,"Under JPY20000","20000" ,"Under JPY30000","30000" ,"Any Price","9999999" );
+currencySymbol["RMB"] = new Array("CNY", false);
+currencyLevel["RMB"] = new Array("Under CNY200","200" ,"Under CNY500","500" ,"Under CNY800","800" ,"Any Price","9999999" );
+currencySymbol["INR"] = new Array("INR", false);
+currencyLevel["INR"] = new Array("Under INR4000","4000" ,"Under INR8000","8000" ,"Under INR12000","12000" ,"Any Price","9999999" );
+currencySymbol["SEK"] = new Array("SEK", false);
+currencyLevel["SEK"] = new Array("Under SEK500","500" ,"Under SEK1000","1000" ,"Under SEK1500","1500" ,"Any Price","9999999" );
+currencySymbol["BRL"] = new Array("R$", false);
+currencyLevel["BRL"] = new Array("Under R$200","200" ,"Under R$400","400" ,"Under R$600","600" ,"Any Price","9999999" );
+currencySymbol["TRY"] = new Array("TL", false);
+currencyLevel["TRY"] = new Array("Under TL200","200" ,"Under TL400","400" ,"Under TL600","600" ,"Any Price","9999999" );
+currencySymbol["DKK"] = new Array("kr.", false);
+currencyLevel["DKK"] = new Array("Under kr.500","500" ,"Under kr.1000","1000" ,"Under kr.1500","1500" ,"Any Price","9999999" );
+currencySymbol["MXN"] = new Array("MXN", false);
+currencyLevel["MXN"] = new Array("Under MXN1000","1000" ,"Under MXN2000","2000" ,"Under MXN3000","3000" ,"Any Price","9999999" );
+currencySymbol["ARS"] = new Array("ARS", false);
+currencyLevel["ARS"] = new Array("Under ARS300","300" ,"Under ARS600","600" ,"Under ARS900","900" ,"Any Price","9999999" );
+currencySymbol["NOK"] = new Array("NOK", false);
+currencyLevel["NOK"] = new Array("Under NOK600","600" ,"Under NOK1200","1200" ,"Under NOK1800","1800" ,"Any Price","9999999" );
+currencySymbol["PLN"] = new Array("PLN", false);
+currencyLevel["PLN"] = new Array("Under PLN300","300" ,"Under PLN600","600" ,"Under PLN900","900" ,"Any Price","9999999" );
+currencySymbol["SGD"] = new Array("S$", false);
+currencyLevel["SGD"] = new Array("Under S$100","100" ,"Under S$200","200" ,"Under S$300","300" ,"Any Price","9999999" );
+currencySymbol["THB"] = new Array("THB", false);
+currencyLevel["THB"] = new Array("Under THB4000","4000" ,"Under THB8000","8000" ,"Under THB12000","12000" ,"Any Price","9999999" );
+currencySymbol["KRW"] = new Array("KRW", false);
+currencyLevel["KRW"] = new Array("Under KRW100000","100000" ,"Under KRW200000","200000" ,"Under KRW300000","300000" ,"Any Price","9999999" );
+currencySymbol["RUB"] = new Array("RUB", false);
+currencyLevel["RUB"] = new Array("Under RUB3000","3000" ,"Under RUB6000","6000" ,"Under RUB9000","9000" ,"Any Price","9999999" );
+currencySymbol["IDR"] = new Array("IDR", false);
+currencyLevel["IDR"] = new Array("Under IDR1000000","1000000" ,"Under IDR2000000","2000000" ,"Under IDR3000000","3000000" ,"Any Price","9999999" );
+currencySymbol["TWD"] = new Array("TWD", false);
+currencyLevel["TWD"] = new Array("Under TWD3000","3000" ,"Under TWD6000","6000" ,"Under TWD9000","9000" ,"Any Price","9999999" );
+currencySymbol["MYR"] = new Array("RM", false);
+currencyLevel["MYR"] = new Array("Under RM300","300" ,"Under RM600","600" ,"Under RM900","900" ,"Any Price","9999999" );
+currencySymbol["EGP"] = new Array("EGP", false);
+currencyLevel["EGP"] = new Array("Under EGP3000","3000" ,"Under EGP6000","6000" ,"Under EGP9000","9000" ,"Any Price","9999999" );
+var groupingSize = 3;
+var groupingSeparator = ",";
+var JS_location_not_found = "Your location not found.";
+var JS_click_to_expand = "Click to Expand";
+var JS_choose_valid_city = "Please choose a valid city from the list.";
+var JS_select_a_cruise_line = "Please select a cruise line.";
+var JS_loading = "Loading ...";
+var JS_Ajax_failed="We're sorry, but there was a problem retrieving the content. Please check back in a few minutes.";
+var JS_maintenance="Our site is currently undergoing maintenance.\n\nWe\'re sorry for the inconvenience...we\'ll be back soon.";
+var JS_Stop_search = "stop search";
+var JS_Resume_search = "Resume search";
+var JS_Thankyou = "Thank you";
+var JS_DateFormat = "mm/dd/yyyy";
+var JS_review_lost = "Your review will be lost.";
+var JS_coppa_sorry = "We're sorry....";
+var JS_coppa_privacy = "Based on information you submitted, your TripAdvisor account does not meet the requirements of our <a href='/pages/privacy.html'>Privacy Policy</a>.";
+var JS_coppa_deleted = "Your account has been deleted.";
+var JS_close = "Close";
+var JS_close_image = "http://c1.tacdn.com/img2/buttons/closeButton.gif";
+var JS_CHANGES_SAVED = "Changes saved";
+var JS_community_on = "Community has been enabled";
+var lang_Close = JS_close;
+var JS_UpdatingYourResults = "Updating your results &#8230;";
+var JS_OwnerPhoto_heading = "Thank you for submitting your request to TripAdvisor. ";
+var JS_OwnerPhoto_subheading = "We process most listings and changes within 5 business days. ";
+var JS_OwnerPhoto_more = "Add more photos to your listing";
+var JS_OwnerPhoto_return = "Return to your Owner’s Center";
+var JS_NMN_Timeout_title = "Do you want to keep trying?";
+var JS_NMN_Timeout_msg = "It is taking longer than expected to get your location.";
+var JS_NMN_Error_title = "Location error";
+var JS_NMN_Error_msg   = "There has been an error in trying to determine your location";
+var JS_KeepTrying = "Keep Trying";
+var JS_TryAgain   = "Try Again";
+var js_0001 = "Please select at least one vendor from the list."; var js_0002 = "Please choose dates in the future."; var js_0003 = "Please choose a check-out date that is at least one day later than your check-in date."; var js_0004 = "Please choose dates that are less than 330 days away.";   var js_0005 = "Searching for deals ... this may take a few moments"; var js_0006 = "Your selections have not changed."; var js_0010 = "Please click again to open each window or adjust browser settings to disable popup blockers."; var js_0011 = "Update"; var js_0012 = "Show next offer"; var js_0013 = "Please click the \"Check Rates!\" button above to open each window."; var js_0014 = 'Opens one window for each offer. Please disable pop-up blockers.';
+var js_0015 = 'Compare prices';
+var js_invalid_dates_text = "The dates entered are invalid. Please correct your dates and search again."; var js_invalid_dates_text_new = "Please enter dates to check rates"; var js_invalid_dates_text_new2 = "Please enter dates to show prices";
+var qcErrorImage = '<center><img src="http://c1.tacdn.com/img/action_required_blinking.gif" /></center>';
+var selectedHotelName = ""; var cr_loc_vend = 'http://c1.tacdn.com/img2/checkrates/cr.gif';
+var cr_loc_vend_ch = 'http://c1.tacdn.com/img2/checkrates/cr_check.gif';
+var cr_loc_logo = 'http://c1.tacdn.com/img2/checkrates/logo.gif';
+var cd_loc_vend = 'http://c1.tacdn.com/img2/checkrates/cd.png';
+var cd_loc_vend_ch = 'http://c1.tacdn.com/img2/checkrates/cd_check.png';
+var JS_Any_Date = "Any Date";
+var JS_Update_List = "Update List";
+var sNexusTitleMissing = "The title must be populated";
+var JS_Challenge="Challenge";
+var JS_TIQ_Level="Level";
+var JS_TIQ="Travel IQ";
+var JS_TIQ_Pts="pts";
+var RATING_STRINGS = [
+"Click to rate",
+"Terrible",
+"Poor",
+"Average",
+"Very Good",
+"Excellent"
+];
+var addOverlayCloseClass = "";
+var isOverlayServlet = "";
+var IS_OVERLAY_DEBUG = "false";
+var IS_MPU_ENABLED = false;
+var IS_DDPU_ENABLED = false
+var IS_AWPU_ENABLED = true;
+var IS_IPU_ENABLED = false;
+var blockPU =  false && false;
+var overlayLightbox = false;
+if("" != "")
+{
+overlayLightbox = true;
+}
+var overlayOptions = "";
+var overlayBackupLoc = "39143";
+var gmapDomain = "maps.google.com";
+var serverPool = "R";
+var reg_overhaul = true;
+var cssPhotoViewerAsset = "http://c1.tacdn.com/css2/photos-v1398903029b.css";
+var jsPhotoViewerAsset = 'http://c1.tacdn.com/js3/src/ta/photos/Viewer-v3071893217b.js';
+var jsPhotoViewerTALSOAsset = 'http://c1.tacdn.com/js3/src/TALSO-v12862410b.js';
+var hideOnLoad = new Array();
+var IS_DEBUG = false;
+var CDNHOST = "http://c1.tacdn.com";
+var VERSION_MAP = {
+"ta-widgets-typeahead.js": "http://c1.tacdn.com/js3/ta-widgets-typeahead-c-v428187958b.js",
+"ta-media.js": "http://c1.tacdn.com/js3/ta-media-c-v2948746342b.js"
+}
+var cookieDomain = ".tripadvisor.com";
+var modelLocaleCountry = "US";
+var ipCountryId = "191";
+var pageServlet = "Restaurant_Review";
+var crPageServlet = "Restaurant_Review";
+var cdnHost = "http://c1.tacdn.com";
+var arrowLeft     = "http://c1.tacdn.com/img/saves/saveIconArrowLeft.gif";
+var arrow         = "http://c1.tacdn.com/img/saves/saveIconArrow.gif";
+var example       = "http://c1.tacdn.com/img/saves/saveButtonExample.gif";
+var save          = "http://c1.tacdn.com/img/saves/folderSave.gif";
+var closedSub     = "http://c1.tacdn.com/img/saves/closedForSubfolder.gif";
+var closedFolder  = "http://c1.tacdn.com/img/saves/closedFolder.gif";
+var openFolder    = "http://c1.tacdn.com/img/saves/openFolder.gif";
+var add           = "http://c1.tacdn.com/img/saves/addFolder.gif";
+var userLoggedIn = false;
+var migrationMember = false;
+var savesEnable = true;
+var savesJS = 'http://c1.tacdn.com/js3/src/saves-v2062170575b.js';
+var flagsUrl = '/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html';
+var flagsSettings = [
+];
+var isIPad = false;
+var lang_Close  = "Close";
+var img_loop    = "http://c1.tacdn.com/img2/generic/site/loop.gif";
+var communityEnabled = true
+var footerFlagFormat = "common_detailgeo";
+var modelLocId = "1049401";
+var modelGeoId = "39143";
+var gClient = 'gme-expedia';
+var gKey = 'ABQIAAAAbrotionfLoNjvl0WlUPGSRTFRR2s4c7gY80NVirDrP_sOnqrLBSVVtzIxnDoL1UdRNciXk9sobP9EQ&client=gme-expedia';
+var gLang = '';
+var mapsJs = 'http://c1.tacdn.com/js3/ta-maps-home-c-v230538150b.js';
+var mapsJsLite = 'http://c1.tacdn.com/js3/lib/TAMap-v1601470523b.js';
+var memoverlayCSS = 'http://c1.tacdn.com/css2/pages/memberoverlay-v503555936b.css';
+var flagsFlyoutCSS = 'http://c1.tacdn.com/css2/overlays/flags/flags_flyout-v2900952896b.css';
+var emailHotelCSS = 'http://c1.tacdn.com/css2/t4b/emailhotel-v2182175311b.css';
+var compareHotelCSS = 'http://c1.tacdn.com/css2/pages/compareHotel-v2249085165b.css';
+var wiFriHasMember =  false  ;
+var JS_SECURITY_TOKEN = "AAABM4SkdB3S29IkXrH6kzseefLzIMyjaj5/vA==";
+var cpu_enabled = true;
+</script>
+<script type="text/javascript">
+var freshVSTrackingCookie = true;         </script>
+<script type='text/javascript' src='http://c1.tacdn.com/js3/tripadvisor-c-v2228257967b.js'></script>
+<script type="text/javascript">
+</script>
+<script type="text/javascript" src='http://c1.tacdn.com/js3/eatery-detail-c-v873468026b.js'></script>
+<script type="text/javascript" src='http://c1.tacdn.com/js3/src/foreignreview-v1321561155b.js'></script>
+<link rel='stylesheet' type='text/css' media='screen, print' href='http://c1.tacdn.com/css2/universal_new-v592062760b.css'/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="http://c1.tacdn.com/css2/singleRestaurant-v1465894440b.css"/>
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" media="screen, print" href="http://c1.tacdn.com/css2/winIE6-v1406895388b.css" />
+        <![endif]-->
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" media="screen, print" href="http://c1.tacdn.com/css2/winIE7-v3619003987b.css" />
+        <![endif]-->
+<style type="text/css">
+body{}
+#BODYCON,
+#BODYCON .balance { float:left;}
+.rtl #BODYCON,
+.rtl #BODYCON .balance { float:right;}
+#MAIN #BODYCON,
+#BODYCON .gridR, #BODYCON .gridA { overflow:visible !important; zoom:1}
+#MAIN #BODYCON .sidebar { overflow:visible !important;}
+#MAIN:after,
+.gridR:after, .gridA:after { content:"."; display:block; height:0; font-size:0; line-height:0; clear:both; visibility:hidden;}
+.sidebar .scrollAd { position:fixed !important; top:15px;}
+.sidebar .scrollAd .adServer { margin:0; border:none;}
+</style>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/Feeds-d1049401-treviews.xml"/>
+<!-- web46b.tripadvisor.com -->
+<!-- PRODUCTION -->
+<!-- PRODUCTION -->
+<script type="text/javascript" src="http://c1.tacdn.com/js3/src/trsupp-v283141723b.js"></script>
+</head>
+<body class="ltr domn_en_US withFtr globalNav2011_reset js_logging">
+<div id="fb-root"></div>
+<script type="text/javascript">
+function initSaves()
+{
+SV_DEFAULT_FOLDER_NAME = "My Wichita Trip";
+if (SV_DEFAULT_FOLDER_NAME.length > $('savesWidgetNewFolder').maxLength) {
+SV_DEFAULT_FOLDER_NAME = "My Trip";
+}
+SV_IS_POPUP = 0;
+}
+</script>
+<div id="iframediv"></div>
+<div id="PAGE" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review-aggregate">
+<div id="HEAD" class="sprite-gradient1x32_grn">
+<div class="masthead">
+<div class="container">
+<span class="topLogo">
+<a href="/" class="logoWrap" onclick="setPID(5045)"><img class="sprite-taLogo" src="http://c1.tacdn.com/img2/x.gif" width="362" height="42" alt=""/></a>
+</span>
+<h1 class="header">Chipotle, Wichita</h1>
+</div>
+<div class="navSrch sprite-magGlass_gry" id="SEARCH_LHN">
+<form method="get" action="/Search" onsubmit="return ta.call('ta.common.search.validate',event);">
+<input id="mainSearch" type="text" name="q" class=" text focusClear" autocomplete="off" onfocus="ta.call('ta.widgets.typeahead.factory.global',event,this,'SITEWIDE','ta.widgets.typeahead.events.onSelectGlobalTypeAhead',{maxChoices:16,minLength:3,showOnlyTypedChoices:true,geo:'39143'}); return ta.call('ta.common.search.clearOnFocus',event);" onblur="return ta.call('ta.common.search.defaultOnBlur',event);" value="City, hotel name, etc."/>
+<div class="submit_button sprite-gradient1x27_gry"><input id="mainSearchSubmit" onclick="setPID(3825);" onkeydown="var submitPID = function(event) { if(event.key && event.key=='enter') setPID(3826); }; submitPID(e);" type="submit" name="sub-search" class="submit" value="SEARCH" title="SEARCH"/></div>
+<input type="hidden" name="geo" value="39143"/>
+<input type="hidden" name="returnTo" value="__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html"/>
+</form>
+</div>
+<div class="tabsBar">
+<ul class="tabs">
+<li class="tabItem  hvrIE6"><a href="/" class="tabLink  pid4921" rel="nofollow">
+Home
+</a>
+</li>
+<li class="tabItem dropDown hvrIE6"><a href="/Tourism-g39143-Wichita_Kansas-Vacations.html" class="tabLink arwLink geoLink pid4964" rel="nofollow" onclick="setPID(4964);"><span class="arrow_text">Wichita</span><img class="arrow_dropdown_wht sprite-arrow_dropdown_wht" src="http://c1.tacdn.com/img2/x.gif" alt=""/></a> <ul class="subNav">
+<li class="subItem">
+<a class="subLink pid4971" href="/Tourism-g39143-Wichita_Kansas-Vacations.html">
+Wichita Tourism
+</a>
+</li>
+<li class="subItem">
+<a class="subLink pid4972" href="/Hotels-g39143-Wichita_Kansas-Hotels.html">
+Wichita Hotels
+</a>
+</li>
+<li class="subItem">
+<a class="subLink pid4973" href="/Flights-g39143-Wichita_Kansas-Cheap_Discount_Airfares.html">
+Flights to Wichita
+</a>
+</li>
+<li class="subItem">
+<span class="subLink fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LeVtIJpEJCItWymAUdmWxdSnGSIJQxbJCtJtB',4974)">
+Wichita Restaurants
+</span>
+</li>
+<li class="subItem">
+<span class="subLink fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LbIIEJnISiCtWymAUdmWbnISsSISVtWxdSnGSIJQxbJCtJtB',4977)">
+Things to Do in Wichita
+</span>
+</li>
+<li class="subItem">
+<a class="subLink pid4980" href="/ShowForum-g39143-i709-Wichita_Kansas.html">
+Wichita Travel Forum
+</a>
+</li>
+<li class="subItem">
+<span class="subLink fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LbccxfWymAUdmWxdSnGSIJQxbJCtJtB',0)">
+Wichita Travel Guide
+</span>
+</li>
+<li class="subItem">
+<a class="subLink pid4979" href="/LocationPhotos-g39143-Wichita_Kansas.html">
+Wichita Photos
+</a>
+</li>
+<li class="subItem">
+<span class="subLink fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LRinJczoWymAUdmWxdSnGSIJWbEVJB',4978)">
+Wichita Map
+</span>
+</li>
+<li class="subItem">
+<a class="subLink pid3762" href="/CarRentals-g39143-Wichita_Kansas.html">
+Wichita Car Rentals
+</a>
+</li>
+<li class="subItem">
+<a class="subLink " href="/Travel-g39143-s208/Wichita:Kansas:Weather.And.When.To.Go.html">
+Wichita Weather
+</a>
+</li>
+</ul>
+</li>
+<li class="tabItem  hvrIE6"><a href="/Hotels-g39143-Wichita_Kansas-Hotels.html" class="tabLink  pid4965" rel="nofollow">
+Hotels
+</a>
+</li>
+<li class="tabItem  hvrIE6"><a href="/Flights-g39143-Wichita_Kansas-Cheap_Discount_Airfares.html" class="tabLink  pid4966" rel="nofollow">
+Flights
+</a>
+</li>
+<li class="tabItem  hvrIE6"><a href="/Restaurants-g39143-Wichita_Kansas.html" class="tabLink  pid4967" rel="nofollow">
+Restaurants
+</a>
+</li>
+<li class="tabItem  hvrIE6"><a href="/Attractions-g39143-Activities-Wichita_Kansas.html" class="tabLink  pid4969" rel="nofollow">
+Things to Do
+</a>
+</li>
+<li class="tabItem  hvrIE6"><a href="/TravelersChoice" class="tabLink  pid5087" rel="nofollow">
+Best of 2011
+</a>
+</li>
+<li class="tabItem dropDown hvrIE6"><span class="tabLink arwLink"><span class="arrow_text">More</span><img class="arrow_dropdown_wht sprite-arrow_dropdown_wht" src="http://c1.tacdn.com/img2/x.gif" alt=""/></span> <ul class="subNav">
+<li class="subItem">
+<a href="/GoListOverview-g39143-Wichita_Kansas.html" class="subLink pid4981" rel="nofollow">Trip Lists
+</a>
+</li>
+<li class="subItem">
+<a href="/ShowForum-g39143-i709-Wichita_Kansas.html" class="subLink " rel="nofollow">Travel Forum
+</a>
+</li>
+<li class="subItem">
+<a href="/CityGuide" class="subLink pid15109" rel="nofollow">City Guides
+</a>
+</li>
+<li class="subItem">
+<a href="/MobileApps" class="subLink pid4982" rel="nofollow">Mobile
+</a>
+</li>
+<li class="subItem">
+<a href="/Travel-g39143-s1/Wichita:Kansas:Inside.html" class="subLink pid5281" rel="nofollow">Traveler Articles
+</a>
+</li>
+</ul>
+</li>
+<li class="tabItem altItem warLink sprite-gradient1x32_grn_drk last hvrIE6">
+<a href="/UserReview-g39143-d1049401-e__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html-Chipotle-Wichita_Kansas.html" class="tabLink pid1434" rel="nofollow">Write a Review</a></li>
+</ul> </div>
+<div id="USER_PREFS" class="prfs">
+<ul class="opts">
+<li class="optItem fbConnect">
+<div class="sprite-facebook15x15 fkLnk hvrIE6" onclick="ta.call('ta.support.Facebook.loginButton', event, this);">Sign&nbsp;in&nbsp;with&nbsp;Facebook</div>
+</li>
+<li class="optItem login"><span class="fkLnk hvrIE6" onClick="ta.util.cookie.setPIDCookie(429);ta.call('ta.overlays.Factory.showConnectOverlay', event, this, {flow: 'MASTHEAD'}, 'SIGNIN');">Sign in</span></li>
+<li id="register" class="optItem register flyoutX" onclick="ta.util.cookie.setPIDCookie(427); ta.call('ta.overlays.Factory.showConnectOverlay', event, this, {flow: 'MASTHEAD'}, 'SIGNUP');"><span class="fkLnk hvrIE6">Register Now!</span>
+<li class="optItem" id="MOBHDRLNK">
+<a class="optItemLink sprite-mobile_org mobile_org" onclick="ta.util.cookie.setPIDCookie(4109)" rel="nofollow" href="/MobileApps">FREE Mobile App</a>
+</li>
+<li id="INTLPOP" class="optItem intSites last" onclick="ta.call('ta.overlays.Factory.intlPopup', event, this)"><span class="sprite-arrow_dropdown_blu arrowDn"><img class="sprite-flag" src="http://c1.tacdn.com/img2/x.gif" alt="International Sites" title="International Sites"/></span></li> </ul> </div> </div> </div>
+<div id="MAIN" class="Restaurant_Review" rel="v:itemreviewed">
+<div class="ad iab_leaBoa">
+<div id="ad728X90" class="adInner" style="position:relative"><!-- Ad tags: doubleclick
+domain=ad.doubleclick.net
+site=ta.ta.com.s
+zone=na.us.ks.wichita
+PageType=Restaurant_Review
+pool=R
+kw=Chipotle
+geo=39143
+u=Restaurant_Review|R
+rd=com
+hname=Chipotle
+gname=Wichita
+sz=728X90,970X66
+tile=1
+ord=53126634
+area=NA.United_States.Kansas.Wichita
+
+-->
+<div class="adServer noFrame dom_en_US">
+<script language=Javascript1.1 src="http://ad.doubleclick.net/adj/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=728X90%2C970X66;tile=1;ord=53126634;abr=!webtv?"></script>
+<noscript>
+<!-- for non JavaScript browsers and Netscape 2.x -->
+<a href="http://ad.doubleclick.net/jump/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=728X90%2C970X66;tile=1;ord=53126634?" rel="nofollow">
+<img src="http://ad.doubleclick.net/ad/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=728X90%2C970X66;tile=1;ord=53126634?" width="728" height="90" border="0">
+</a>
+</noscript>
+</div> </div>
+</div>
+<div id="LEFTNAV" class="col">
+<h2 class="geoHeader">Wichita</h2>
+<div class="lhnHigh onShow ">
+<ul>
+<li class="firstItem">
+<a class="k_overview" href="/Tourism-g39143-Wichita_Kansas-Vacations.html">
+Wichita Tourism</a>
+</li>
+<li>
+<a class="k_hotels" href="/Hotels-g39143-Wichita_Kansas-Hotels.html">
+Wichita Hotels</a>
+</li>
+<li>
+<a class="k_flights" href="/Flights-g39143-Wichita_Kansas-Cheap_Discount_Airfares.html">
+Flights to Wichita</a>
+</li>
+<li>
+<a class="k_deals" href="/SmartDeals-g39143-Wichita_Kansas-Hotel-Deals.html">
+Wichita Hotel Deals</a>
+</li>
+<li class=" navTitle">
+More On Wichita
+</li>
+<li class=" mark">
+<span class=" k_dining fkLnk hvrIE6" onclick="setOneTimeCookie('mcreset','true');ta.util.ASDF.asdf('LeVtIJpEJCItWymAUdmWxdSnGSIJQxbJCtJtB',0)">
+Restaurants</span>
+<ul>
+<li class="viewing">
+<span class="sprite-lhnselected lhnselected">Chipotle</span>
+</li>
+</ul>
+</li>
+<li>
+<span class=" k_things_to_do fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LbIIEJnISiCtWymAUdmWbnISsSISVtWxdSnGSIJQxbJCtJtB',0)">
+Things to Do</span>
+</li>
+<li class=" selForums">
+<a class="k_forums pid2995" href="/ShowForum-g39143-i709-Wichita_Kansas.html">
+Travel Forum</a>
+</li>
+<li>
+<span class=" k_kbyg fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LbccxfWymAUdmWxdSnGSIJQxbJCtJtB',0)">
+Travel Guide</span>
+</li>
+<li>
+<a class="u_/LocationPhotos-g39143-Wichita_Kansas.html k_photos" href="/LocationPhotos-g39143-Wichita_Kansas.html" onclick="return ta.call('ta.overlays.Factory.photosLB', event, this);">
+Photos</a>
+</li>
+<li>
+<span class=" k_maps fkLnk hvrIE6">
+Map</span>
+</li>
+<li class=" navTitle">
+Wichita Deals
+</li>
+<li>
+<a class="k_discount_hotels_top_level" href="/Discount_Hotels-g39143-Wichita_Kansas.html">
+Discount Hotels</a>
+</li>
+<li>
+<a class="k_cheap_vacations" href="/Cheap_Vacations-g39143-Wichita_Kansas.html">
+Hotel &amp; Air Packages</a>
+</li>
+<li>
+<a class="k_car_rentals pid3762" href="/CarRentals-g39143-Wichita_Kansas.html">
+Wichita Car Rentals</a>
+</li>
+</ul>
+</div>
+<div id="NEWSLETTER_CALLOUT" class="bx01 declutter">
+<dl>
+<dt class="title">Free Newsletter</dt> <dd class="content">
+<p>Interested in <b>Wichita</b>?</p>
+<form action="/twsubscriptions" method="get">
+<fieldset>
+<input type="hidden" name="subSrc" value="twhomepage-R"/>
+<input type="hidden" name="returnTo" value="__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html"/>
+<input type="hidden" name="from" value="twhomepage"/>
+<input type="hidden" name="pid" value="431"/>
+<input type="hidden" name="geo" value="39143"/>
+<input class="text focusClear" type="text" name="email" value="Enter your email" onfocus="return ta.call('ta.common.search.clearOnFocus',event);"/> <div class="button"><input class="submit" type="submit" name="sub-tw" value="Sign up"/></div> </fieldset>
+</form>
+</dd>
+</dl>
+</div>
+<div class="ad iab_sideAd">
+<div id="ad160X80" class="adInner" style="position:relative"><!-- Ad tags: doubleclick
+domain=ad.doubleclick.net
+site=ta.ta.com.s
+zone=na.us.ks.wichita
+PageType=Restaurant_Review
+pool=R
+kw=Chipotle
+geo=39143
+u=Restaurant_Review|R
+rd=com
+hname=Chipotle
+gname=Wichita
+sz=160X80
+tile=4
+ord=53126634
+area=NA.United_States.Kansas.Wichita
+
+-->
+<div class="adServer ">
+<div class="details" id="adiframe4" style="display: none">
+<script> var adiframe4 = "ad.doubleclick.net+ta.ta.com.s+na.us.ks.wichita+80+160+NA.United_States.Kansas.Wichita+false+PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=160X80;tile=4;ord=53126634;abr=!webtv"; adpHtml = "adp/adp-v4051038080b.html"
+</script>
+</div>
+<noscript>
+<!-- for non JavaScript browsers and Netscape 2.x -->
+<a href="http://ad.doubleclick.net/jump/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=160X80;tile=4;ord=53126634?" rel="nofollow">
+<img src="http://ad.doubleclick.net/ad/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=160X80;tile=4;ord=53126634?" width="160" height="80" border="0">
+</a>
+</noscript>
+</div> </div>
+</div>
+<div class="ad iab_supSky">
+<div id="ad160X600" class="adInner" style="position:relative"><!-- Ad tags: doubleclick
+domain=ad.doubleclick.net
+site=ta.ta.com.s
+zone=na.us.ks.wichita
+PageType=Restaurant_Review
+pool=R
+kw=Chipotle
+geo=39143
+u=Restaurant_Review|R
+rd=com
+dcopt=ist
+hname=Chipotle
+gname=Wichita
+sz=160X600
+tile=2
+ord=53126634
+area=NA.United_States.Kansas.Wichita
+
+-->
+<div class="adServer ">
+<div class="details" id="adiframe2" style="display: none">
+<script> var adiframe2 = "ad.doubleclick.net+ta.ta.com.s+na.us.ks.wichita+600+160+NA.United_States.Kansas.Wichita+false+PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;dcopt=ist;hname=Chipotle;gname=Wichita;sz=160X600;tile=2;ord=53126634;abr=!webtv"; adpHtml = "adp/adp-v4051038080b.html"
+</script>
+</div>
+<noscript>
+<!-- for non JavaScript browsers and Netscape 2.x -->
+<a href="http://ad.doubleclick.net/jump/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;dcopt=ist;hname=Chipotle;gname=Wichita;sz=160X600;tile=2;ord=53126634?" rel="nofollow">
+<img src="http://ad.doubleclick.net/ad/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;geo=39143;u=Restaurant_Review%7CR;rd=com;dcopt=ist;hname=Chipotle;gname=Wichita;sz=160X600;tile=2;ord=53126634?" width="160" height="600" border="0">
+</a>
+</noscript>
+</div> </div>
+</div>
+<div id="sidebar_deals_div" class="bx01 deals">
+<h2>Popular Wichita restaurants</h2> <ul>
+<li><a href="/Restaurant_Review-g39143-d407039-Reviews-Pig_In_Pig_Out-Wichita_Kansas.html">Pig In Pig Out</a></li>
+<li><a href="/Restaurant_Review-g39143-d665458-Reviews-Texas_Roadhouse-Wichita_Kansas.html">Texas Roadhouse</a></li>
+<li><a href="/Restaurant_Review-g39143-d1892279-Reviews-Yen_Ching-Wichita_Kansas.html">Yen Ching</a></li>
+<li><a href="/Restaurant_Review-g39143-d2165981-Reviews-Fizz_Burgers_and_Bottles-Wichita_Kansas.html">Fizz Burgers and Bottles</a></li>
+<li><a href="/Restaurant_Review-g39143-d407066-Reviews-Legends-Wichita_Kansas.html">Legends</a></li>
+<li><a href="/Restaurant_Review-g39143-d407057-Reviews-Ty_s_Diner-Wichita_Kansas.html">Ty's Diner</a></li>
+<li><a href="/Restaurant_Review-g39143-d1644849-Reviews-Kanai_Sushi_Sake_to_Savor-Wichita_Kansas.html">Kanai - Sushi & Sake to Savor</a></li>
+<li><a href="/Restaurant_Review-g39143-d407077-Reviews-Ming_s_Chinese_Restaurant-Wichita_Kansas.html">Ming's Chinese Restaurant</a></li>
+<li><a href="/Restaurant_Review-g39143-d1995702-Reviews-Newport_Grill-Wichita_Kansas.html">Newport Grill</a></li>
+<li><a href="/Restaurant_Review-g39143-d407310-Reviews-The_Good_Egg-Wichita_Kansas.html">The Good Egg</a></li>
+<li><a href="/Restaurant_Review-g39143-d445560-Reviews-LA_Galette-Wichita_Kansas.html">LA Galette</a></li>
+<li><a href="/Restaurant_Review-g39143-d862959-Reviews-Promise_Thai_Cusine-Wichita_Kansas.html">Promise Thai Cusine</a></li>
+<li><a href="/Restaurant_Review-g39143-d407140-Reviews-Hog_Wild_Pit_Bar_B_Q-Wichita_Kansas.html">Hog-Wild Pit Bar-B-Q</a></li>
+<li><a href="/Restaurant_Review-g39143-d407193-Reviews-Bangkok_Thai_Restaurant-Wichita_Kansas.html">Bangkok Thai Restaurant</a></li>
+<li><a href="/Restaurant_Review-g39143-d407281-Reviews-Marchello_s_Restaurant-Wichita_Kansas.html">Marchello's Restaurant</a></li>
+<li><a href="/Restaurant_Review-g39143-d407070-Reviews-Barn_rds_Roast_Beef_Restaurant-Wichita_Kansas.html">Barn'rds Roast Beef Restaurant</a></li>
+<li><a href="/Restaurant_Review-g39143-d407288-Reviews-Green_Mill_Restaurant-Wichita_Kansas.html">Green Mill Restaurant</a></li>
+<li><a href="/Restaurant_Review-g39143-d858909-Reviews-Oeno_Wine_Bar-Wichita_Kansas.html">Oeno Wine Bar</a></li>
+<li><a href="/Restaurant_Review-g39143-d407061-Reviews-Yia_Yia_s_Eurobistro-Wichita_Kansas.html">Yia Yia's Eurobistro</a></li>
+<li><a href="/Restaurant_Review-g39143-d1836080-Reviews-Wasabi_Japanese_Restaurant-Wichita_Kansas.html">Wasabi Japanese Restaurant</a></li>
+</ul>
+<ul>
+<li>
+<a href="/Restaurants-g39143-Wichita_Kansas.html">Wichita restaurants: 1 - 20</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa20-Wichita_Kansas.html">Wichita restaurants: 21 - 70</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa70-Wichita_Kansas.html">Wichita restaurants: 71 - 120</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa120-Wichita_Kansas.html">Wichita restaurants: 121 - 170</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa170-Wichita_Kansas.html">Wichita restaurants: 171 - 220</a>
+</li>
+</ul>
+<div id="TOGGLEME" class="toggle">
+<div class="onShow">
+<ul>
+<li>
+<a href="/Restaurants-g39143-oa220-Wichita_Kansas.html">Wichita restaurants: 221 - 270</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa270-Wichita_Kansas.html">Wichita restaurants: 271 - 320</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa320-Wichita_Kansas.html">Wichita restaurants: 321 - 370</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa370-Wichita_Kansas.html">Wichita restaurants: 371 - 420</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa420-Wichita_Kansas.html">Wichita restaurants: 421 - 470</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa470-Wichita_Kansas.html">Wichita restaurants: 471 - 520</a>
+</li>
+<li>
+<a href="/Restaurants-g39143-oa520-Wichita_Kansas.html">Wichita restaurants: 521 - 570</a>
+</li>
+</ul>
+</div><!-- onShow -->
+<div class="controls">
+<span class="show">Show all</span> <span class="hide">Show fewer</span> </div>
+</div><!-- toggle -->
+<h2 class="deals_title">
+Recently Reviewed <a href="/Hotels-g39143-Wichita_Kansas-Hotels.html">Hotels around Wichita</a>
+</h2>
+<div class="details">
+<ul>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d2151986-Reviews-Fairfield_Inn_Suites_Wichita_Downtown-Wichita_Kansas.html">Fairfield Inn & Suites Wichita Downtown</a>
+<div class="rating">
+<span class="rate">3.5 out of 5, </span>
+<em>12 reviews</em>
+<div class="posted">Last reviewed Nov 7, 2011</div>
+</div>
+#40 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d252580-Reviews-Hotel_At_WaterWalk-Wichita_Kansas.html">Hotel At WaterWalk</a>
+<div class="rating">
+<span class="rate">4.5 out of 5, </span>
+<em>27 reviews</em>
+<div class="posted">Last reviewed Nov 7, 2011</div>
+</div>
+#2 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d92267-Reviews-Candlewood_Suites_Wichita_Northeast-Wichita_Kansas.html">Candlewood Suites - Wichita Northeast</a>
+<div class="rating">
+<span class="rate">4.0 out of 5, </span>
+<em>12 reviews</em>
+<div class="posted">Last reviewed Nov 6, 2011</div>
+</div>
+#42 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d92203-Reviews-Holiday_Inn_Wichita-Wichita_Kansas.html">Holiday Inn Wichita</a>
+<div class="rating">
+<span class="rate">3.5 out of 5, </span>
+<em>32 reviews</em>
+<div class="posted">Last reviewed Nov 2, 2011</div>
+</div>
+#44 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d225015-Reviews-BEST_WESTERN_PLUS_Eastgate_Inn_Suites-Wichita_Kansas.html">BEST WESTERN PLUS Eastgate Inn & Suites</a>
+<div class="rating">
+<span class="rate">4.5 out of 5, </span>
+<em>46 reviews</em>
+<div class="posted">Last reviewed Oct 31, 2011</div>
+</div>
+#5 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d114650-Reviews-Hyatt_Regency_Wichita-Wichita_Kansas.html">Hyatt Regency Wichita</a>
+<div class="rating">
+<span class="rate">3.5 out of 5, </span>
+<em>105 reviews</em>
+<div class="posted">Last reviewed Oct 28, 2011</div>
+</div>
+#21 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d268203-Reviews-Holiday_Inn_Wichita_Downtown-Wichita_Kansas.html">Holiday Inn Wichita Downtown</a>
+<div class="rating">
+<span class="rate">3.5 out of 5, </span>
+<em>35 reviews</em>
+<div class="posted">Last reviewed Oct 28, 2011</div>
+</div>
+#38 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d224319-Reviews-Hilton_Garden_Inn_Wichita-Wichita_Kansas.html">Hilton Garden Inn Wichita</a>
+<div class="rating">
+<span class="rate">4.0 out of 5, </span>
+<em>40 reviews</em>
+<div class="posted">Last reviewed Oct 22, 2011</div>
+</div>
+#26 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d88712-Reviews-Comfort_Inn_South-Wichita_Kansas.html">Comfort Inn South</a>
+<div class="rating">
+<span class="rate">3.5 out of 5, </span>
+<em>116 reviews</em>
+<div class="posted">Last reviewed Oct 13, 2011</div>
+</div>
+#24 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d88722-Reviews-Super_8_Wichita_East_Kellogg_Area-Wichita_Kansas.html">Super 8 Wichita/East Kellogg Area</a>
+<div class="rating">
+<span class="rate">3.5 out of 5, </span>
+<em>16 reviews</em>
+<div class="posted">Last reviewed Oct 10, 2011</div>
+</div>
+#46 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d88724-Reviews-Drury_Plaza_Hotel_Broadview_Wichita-Wichita_Kansas.html">Drury Plaza Hotel Broadview - Wichita</a>
+<div class="rating">
+<span class="rate">4.5 out of 5, </span>
+<em>4 reviews</em>
+<div class="posted">Last reviewed Oct 7, 2011</div>
+</div>
+#7 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d239906-Reviews-BEST_WESTERN_Governors_Inn_Suites-Wichita_Kansas.html">BEST WESTERN Governors Inn & Suites</a>
+<div class="rating">
+<span class="rate">4.0 out of 5, </span>
+<em>16 reviews</em>
+<div class="posted">Last reviewed Oct 1, 2011</div>
+</div>
+#22 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d646538-Reviews-Holiday_Inn_Express_Suites_Wichita_Airport-Wichita_Kansas.html">Holiday Inn Express & Suites Wichita Airport</a>
+<div class="rating">
+<span class="rate">4.0 out of 5, </span>
+<em>26 reviews</em>
+<div class="posted">Last reviewed Sep 28, 2011</div>
+</div>
+#9 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d92245-Reviews-TownePlace_Suites_Wichita_East-Wichita_Kansas.html">TownePlace Suites Wichita East</a>
+<div class="rating">
+<span class="rate">4.0 out of 5, </span>
+<em>14 reviews</em>
+<div class="posted">Last reviewed Sep 20, 2011</div>
+</div>
+#36 of 78 hotels in Wichita, KS<br/>
+</li>
+<li class="deals_item">
+<a class="pid3906" href="/Hotel_Review-g39143-d78332-Reviews-BEST_WESTERN_Airport_Inn_Conference_Center-Wichita_Kansas.html">BEST WESTERN Airport Inn & Conference Center</a>
+<div class="rating">
+<span class="rate">4.0 out of 5, </span>
+<em>23 reviews</em>
+<div class="posted">Last reviewed Sep 6, 2011</div>
+</div>
+#30 of 78 hotels in Wichita, KS<br/>
+</li>
+</ul>
+</div>
+</div>
+<div class="bx01 deals swirllinks">
+<div class="h2">Explore the world! TripAdvisor has reviews and information on over 400,000 locations, including:</div>
+<div class="swirllinkset">
+<div class="header">Restaurants</div>
+<ul>
+<li><a href="/Restaurant_Review-g54494-d841300-Reviews-Rush_s-West_Columbia_South_Carolina.html">Rush's</a></li>
+<li><a href="/Restaurant_Review-g198455-d957536-Reviews-Ristorante_Seespitz_Da_Mario-Herrsching_am_Ammersee_Bavarian_Alps_Bavaria.html">Ristorante Seespitz Da Mario</a></li>
+<li><a href="/Restaurant_Review-g189158-d697297-Reviews-Espiral-Lisbon_Estremadura.html">Espiral</a></li>
+<li><a href="/Restaurant_Review-g39604-d883588-Reviews-Stan_s_Fish_Sandwich-Louisville_Kentucky.html">Stan's Fish Sandwich</a></li>
+<li><a href="/Restaurant_Review-g187514-d1089337-Reviews-La_Musa-Madrid.html">La Musa</a></li>
+<li><a href="/Restaurant_Review-g187851-d2351753-Reviews-Ristorante_Corona-Piedmont.html">Ristorante Corona</a></li>
+</ul>
+</div>
+<div class="swirllinkset">
+<div class="header">Hotels</div>
+<ul>
+<li><a href="/Hotel_Review-g54371-d97516-Reviews-Avista_Resort-North_Myrtle_Beach_South_Carolina.html">Avista Resort in North Myrtle Beach</a></li>
+<li><a href="/Hotel_Review-g1370867-d1996795-Reviews-Jianfengling_Yulingu_Holiday_Hotel-Ledong_County_Hainan.html">Jianfengling Yulingu Holiday Hotel in Ledong County</a></li>
+<li><a href="/Hotel_Review-g147293-d276421-Reviews-IFA_Villas_Bavaro_Resort_Spa-Punta_Cana_Dominican_Republic.html">Ifa Villas Bavaro</a></li>
+<li><a href="/Hotel_Review-g317090-d2022906-Reviews-Home_Like_Hotel_Guiyang_Yijia-Guiyang_Guizhou.html">Home Like Hotel Guiyang Yijia</a></li>
+</ul>
+</div>
+</div>
+<div class="bx01 deals">
+<h3>Explore other Wichita resources:</h3>
+<ul>
+<li class="deals_item">
+<a href="/Restaurants-g39143-Wichita_Kansas.html" onclick="return setOneTimeCookie('mcreset','true')">Wichita Restaurants</a>
+</li>
+<li class="deals_item">
+<a href="/Attractions-g39143-Activities-Wichita_Kansas.html">Things to Do in Wichita</a>
+</li>
+<li class="deals_item">
+<a href="/AllReviews-g39143-Wichita_Kansas.html">Wichita Travel Guide</a>
+</li>
+<li class="deals_item">
+<a href="/LocalMaps-g39143-Wichita-Area.html">Wichita Maps</a>
+</li>
+<li class="deals_item">
+<a href="/Travel-g39143-s208/Wichita:Kansas:Weather.And.When.To.Go.html">Wichita Weather</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="BODYCON" class=" col poolR" typeof="v:Organization" itemscope itemtype="http://schema.org/FoodEstablishment">
+<div class="crumbs">
+<ul>
+<li>
+<a href="/" id="HOME">Home</a>
+<ul>
+<li> <img class="sprite-breadcrumb" src="http://c1.tacdn.com/img2/x.gif" alt="arrow">
+<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/Tourism-g191-United_States-Vacations.html" itemprop="url">
+<span itemprop="title">United States</span>
+</a>
+</div>
+</li>
+<li> <img class="sprite-breadcrumb" src="http://c1.tacdn.com/img2/x.gif" alt="arrow">
+<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/Tourism-g28937-Kansas-Vacations.html" itemprop="url">
+<span itemprop="title">Kansas (KS)</span>
+</a>
+</div>
+</li>
+<li> <img class="sprite-breadcrumb" src="http://c1.tacdn.com/img2/x.gif" alt="arrow">
+<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/Tourism-g39143-Wichita_Kansas-Vacations.html" itemprop="url">
+<span itemprop="title">Wichita</span>
+</a>
+</div>
+</li>
+<li> <img class="sprite-breadcrumb" src="http://c1.tacdn.com/img2/x.gif" alt="arrow">
+<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/Restaurants-g39143-Wichita_Kansas.html" itemprop="url" onclick="return setOneTimeCookie('mcreset','true')">
+<span itemprop="title">Restaurants</span>
+</a>
+</div>
+</li>
+<li> <img class="sprite-breadcrumb" src="http://c1.tacdn.com/img2/x.gif" alt="arrow">
+<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html#MAIN" itemprop="url">
+<span itemprop="title">Chipotle</span>
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div>
+<div id="HEADING_GROUP">
+<h1 id="HEADING" property="v:name" itemprop="name">
+Chipotle </h1>
+<fb:like href="http://www.tripadvisor.com/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html" layout="button_count" show_faces="false" ref="m13948" class="fb-like-button  track_RESTAURANT"></fb:like>
+</div>
+</div>
+<script src="http://c1.tacdn.com/js/util/TALSO.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">
+function setUpFootprint(x)
+{
+var defaultFootprint = "EFC383F8F09DDB2BBF07944FAE6EA02F";
+try
+{
+var footprint = TALSO.get('CookieId');
+if(footprint == "")
+{
+TALSO.set( 'CookieId', defaultFootprint );
+footprint = TALSO.get('CookieId');
+}
+if(footprint != "" && !x.href.contains("footprint"))
+{
+x.href = x.href + "&footprint=" + footprint;
+}
+}
+catch (e)
+{
+if( $('LsoId') ) $('LsoId').value = '';
+}
+return true;
+}
+function closeLightbox()
+{
+var lb = ta.retrieve('overlays.current');
+if (lb)
+lb.hide();
+}
+function toggleOwner() {
+//alert("calculate");
+var ele = document.getElementById("linkToOwnerCenter");
+if(ele.style.display == "block") {
+ele.style.display = "none";
+}
+else {
+ele.style.display = "block";
+}
+}
+ta.merge('facebook.data.params', {d: '1049401'});    ta.keep('facebook.data.request', 'HIGHLIGHT_FRIENDS');
+</script>
+<br class="br"/>
+<div id="EAT_DETAIL" class="gridA">
+<div class="col sidebar">
+<script type='text/javascript'>
+registerOnLoad(function() {
+eval('ta.maps.floatmap.setupFloatMap')();
+}, 'FloatMap');
+</script>
+<div class="box typeB interactive  med js_floatableMap" id="FLOATMAP">
+<div class="interior object js_floatMap">
+<div class="staticMap js_mapThumb mapH133">
+<a href='/LocalMaps-g39143-d1049401-Chipotle-Area.html' onclick='ta.util.cookie.setPIDCookie(1103);'>
+<img id='lazyload_-1684426834_0' alt=''/>
+<img class="sprite-orangeMarker marker" src="http://c1.tacdn.com/img2/x.gif"/> </a>
+</div>
+<div class="js_floatContent" title="Map">
+<script type="text/javascript">
+window.mapDivId = 'map0Div';
+window.map0Div = {
+lat: 37.694263,
+lng: -97.29904,
+locId: 1049401,
+title: "Chipotle",
+url: "/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html",
+minPins: [
+['hotel',       20],
+['restaurant',  30],
+['attraction',  10]
+],
+geoMap: false    };
+</script>
+<div class="whatsNearby">
+<div class="sidebar">
+<div class="pNameDir">
+<span class="sprite-pinHeader pName hvrIE6 js_mapHome">Chipotle</span>
+<div class="addr">
+<span>515 N Hillside St</span>
+<div>
+<span> Wichita, KS</span>
+</div>
+<div>
+<a onclick="ta.call('ta.util.link.directionsPop', event, this, { width:800, height:600 }, 'getDirectionsCorner');" href='http://maps.google.com/maps?daddr=515+N+Hillside+St+Wichita%2C+KS' rel="nofollow">Get Directions</a>
+</div>
+</div>
+</div>
+<form id="CHECK_NEARBY" class="fNear">
+<fieldset>
+<legend>What's Nearby:</legend>
+<span class="chkSet lHac js_markerClass cur">
+<div class="imgBox"></div>
+<input type="checkbox" checked="checked" id="cbx1" class="hotel"/>
+<label for="cbx1">Hotels</label>
+</span>
+<span class="chkSet lRest js_markerClass cur">
+<div class="imgBox"></div>
+<input type="checkbox" checked="checked" id="cbx2" class="restaurant"/>
+<label for="cbx2">Restaurants</label>
+</span>
+<span class="chkSet lAtt js_markerClass cur">
+<div class="imgBox"></div>
+<input type="checkbox" checked="checked" id="cbx3" class="attraction"/>
+<label for="cbx3">Things to Do</label>
+</span>
+</fieldset>
+</form>
+<div class="sponsorActivate">
+<form class="fNear">
+<fieldset class="sponsors">
+<span class="lbstWst sponsor_BEST_WESTERN chkSet js_markerClassSponsor ">
+<input type="checkbox" id="cbx-bstWst" class="sponsor_BEST_WESTERN"/>
+<label for="cbx-bstWst">Best Western</label>
+<span class="sponsorTrkHolder" style="display:none">view.atdmt.com/IWC/view/194120300/direct/01/</span>
+<span class="sponsorTrkHolder" style="display:none">ad.doubleclick.net/ad/N4764.TripAdvisor/B4241835.3;sz=1x1</span>
+</span>
+<span class="lhampton sponsor_HAMPTON_INN chkSet js_markerClassSponsor ">
+<input type="checkbox" id="cbx-hampton" class="sponsor_HAMPTON_INN"/>
+<label for="cbx-hampton">Hampton</label>
+<span class="sponsorTrkHolder" style="display:none">ad.doubleclick.net/ad/N5552.125687.TRIPADVISOR8/B5097813.8;sz=1x1</span>
+<span class="sponsorTrkHolder" style="display:none">ad.doubleclick.net/ad/N4764.TripAdvisor/B5344978.2;sz=1x1</span>
+</span>
+<span class="lcomfortinn sponsor_COMFORT_INN chkSet js_markerClassSponsor ">
+<input type="checkbox" id="cbx-comfortinn" class="sponsor_COMFORT_INN"/>
+<label for="cbx-comfortinn">Comfort Inn</label>
+<span class="sponsorTrkHolder" style="display:none">ad.doubleclick.net/ad/N884.TripAdvisor1/B4902356.61;sz=1x1</span>
+<span class="sponsorTrkHolder" style="display:none">ad.doubleclick.net/ad/N4764.TripAdvisor/B5088044.3;sz=1x1</span>
+</span>
+<span class="lsleepinn sponsor_SLEEP_INN chkSet js_markerClassSponsor ">
+<input type="checkbox" id="cbx-sleepinn" class="sponsor_SLEEP_INN"/>
+<label for="cbx-sleepinn">Sleep Inn</label>
+<span class="sponsorTrkHolder" style="display:none">ad.doubleclick.net/ad/N884.TripAdvisor1/B4902356.34;sz=1x1</span>
+<span class="sponsorTrkHolder" style="display:none">ad.doubleclick.net/ad/N4764.TripAdvisor/B5088044.10;sz=1x1</span>
+</span>
+</fieldset>
+</form>
+</div>
+<div class="nfo">Click map pins for more information.</div>
+<div class="js_error" style="display:none;">You are zoomed out too far to see location pins. Please zoom back in.</div>
+</div> <div class="balance">
+<div id="FM_BANNER_CONTAINER">
+<div id="FM_BANNER" class="fmBanner">
+</div>
+</div>
+<div id="map0Div" class="js_map"></div>
+</div> </div> </div> </div>
+<div class="all sponsored wrap"><div class="fr "></div><a href='/LocalMaps-g39143-d1049401-Chipotle-Area.html' onclick='ta.util.cookie.setPIDCookie(1103);'>view map of Chipotle</a></div>
+<div class="whats_near_inline">
+<div class="title">See what's near Chipotle</div>
+<div class="content">
+<span class="fkLnk hotels hvrIE6" onclick="setPID(4041);ta.call('ta.maps.Factory.createFloatMap', event);">Hotels</span> | <span class="fkLnk restaurants hvrIE6" onclick="setPID(4041);ta.call('ta.maps.Factory.createFloatMap', event);">Restaurants</span> | <span class="fkLnk attractions hvrIE6" onclick="setPID(4041);ta.call('ta.maps.Factory.createFloatMap', event);">Things to do</span>
+</div>
+</div>
+</div>
+<div class="bx01 quickguide">
+<div class="content">
+<div class="h19">Free Wichita Guide</div>
+<p>Get your quick guide to the top hotels, restaurants and things to do.</p>
+<div class="wrap">
+<div class="button">
+<a rel="nofollow" class="pid1725" href="/QuickGuide-g39143-Wichita_Kansas.html">Grab it and Go!</a> </div>
+</div>
+</div>
+</div>
+<div id="FRIEND_ACTIVITY_SIDEBAR_PLACEHOLDER"></div>
+<script type='text/javascript'>
+ta.merge('facebook.data.params', {locExclude: '1049401', g: '39143'});    ta.keep('facebook.data.request', 'FRIEND_ACTIVITY_SIDEBAR');
+ta.keep('facebook.data.onAvail.FRIEND_ACTIVITY_SIDEBAR', function(){
+var content = ta.id('FRIEND_ACTIVITY_SIDEBAR'),
+placeholder = ta.id('FRIEND_ACTIVITY_SIDEBAR_PLACEHOLDER');
+if (content && placeholder) {
+content.replaces(placeholder);
+}
+})
+</script>
+<div class="ad iab_medRec">
+<div id="ad300X250" class="adInner" style="position:relative"><!-- Ad tags: doubleclick
+domain=ad.doubleclick.net
+site=ta.ta.com.s
+zone=na.us.ks.wichita
+PageType=Restaurant_Review
+pool=R
+kw=Chipotle
+pos=top
+geo=39143
+u=Restaurant_Review|R
+rd=com
+hname=Chipotle
+gname=Wichita
+sz=300X250,300X600
+tile=3
+ord=53126634
+area=NA.United_States.Kansas.Wichita
+
+-->
+<div class="adServer ">
+<div class="details" id="adiframe3" style="display: none">
+<script> var adiframe3 = "ad.doubleclick.net+ta.ta.com.s+na.us.ks.wichita+250+300+NA.United_States.Kansas.Wichita+false+PageType=Restaurant_Review;pool=R;kw=Chipotle;pos=top;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=300X250%2C300X600;tile=3;ord=53126634;abr=!webtv"; adpHtml = "adp/adp-v4051038080b.html"
+</script>
+</div>
+<noscript>
+<!-- for non JavaScript browsers and Netscape 2.x -->
+<a href="http://ad.doubleclick.net/jump/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;pos=top;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=300X250%2C300X600;tile=3;ord=53126634?" rel="nofollow">
+<img src="http://ad.doubleclick.net/ad/ta.ta.com.s/na.us.ks.wichita;PageType=Restaurant_Review;pool=R;kw=Chipotle;pos=top;geo=39143;u=Restaurant_Review%7CR;rd=com;hname=Chipotle;gname=Wichita;sz=300X250%2C300X600;tile=3;ord=53126634?" width="300" height="250" border="0">
+</a>
+</noscript>
+</div> </div>
+</div>
+<div id="NEARBY" class="box typeA cap travRe">
+<div class="interior">
+<input type="hidden" id="nearbyDistanceUnits" value="0"/>
+<h2>What's Near Chipotle</h2>
+<dl class="first simHotel">
+<dt>
+<span>
+Top-Rated Nearby Hotels
+</span> </dt>
+<dd>
+<div class="disType">
+Distance in:
+<input type="radio" name="accommodationOption" value="0" class="milesOption" onclick="ta.call('ta.servlet.Location.showMi', event)" checked/> <span class="milesLabel selected">mi</span>
+<input type="radio" name="accommodationOption" value="1" class="kmOption" onclick="ta.call('ta.servlet.Location.showKm', event);"/> <span class="kmLabel ">km</span>
+</div>
+<table>
+<thead>
+<tr>
+<th class="titleColumn">Hotel</th> <th class="priceColumn">USD*</th>
+<th class="distanceColumn">Distance</th> <th class="ratingColumn">Rating</th> </tr>
+</thead>
+<tbody>
+<tr>
+<td class="titleColumn"><a href="/Hotel_Review-g39143-d605665-Reviews-Wesley_Inn-Wichita_Kansas.html" class="pid907">Wesley Inn</a></td>
+<td class="priceColumn">
+$80
+</td>
+<td class="distanceColumn">
+<span class="distanceMiles ">0.1 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">0.2 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="titleColumn"><a href="/Hotel_Review-g39143-d125602-Reviews-Wichita_Suites-Wichita_Kansas.html" class="pid907">Wichita Suites</a></td>
+<td class="priceColumn">
+$85
+</td>
+<td class="distanceColumn">
+<span class="distanceMiles ">1.9 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">3.1 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss35"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="3.5 of 5 stars"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="titleColumn"><a href="/Hotel_Review-g39143-d92201-Reviews-Hotel_at_Old_Town-Wichita_Kansas.html" class="pid907">Hotel at Old Town</a></td>
+<td class="priceColumn">
+$182
+</td>
+<td class="distanceColumn">
+<span class="distanceMiles ">2.0 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">3.3 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="titleColumn"><a href="/Hotel_Review-g39143-d620241-Reviews-Courtyard_by_Marriott_Wichita_at_Old_Town-Wichita_Kansas.html" class="pid907">Courtyard by Marriott - Wichita at Old Town</a></td>
+<td class="priceColumn">
+$213
+</td>
+<td class="distanceColumn">
+<span class="distanceMiles ">2.0 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">3.3 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss35"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="3.5 of 5 stars"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="titleColumn"><a href="/Hotel_Review-g39143-d125603-Reviews-Kansas_Inn-Wichita_Kansas.html" class="pid907">Kansas Inn</a></td>
+<td class="priceColumn">
+$74
+</td>
+<td class="distanceColumn">
+<span class="distanceMiles ">2.5 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">4.0 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+<a class="more pid907" href="/Hotels-g39143-Wichita_Kansas-Hotels.html">All Hotels in Wichita<img class="sprite-arrowRgt arrowRgt" src="http://c1.tacdn.com/img2/x.gif" alt=""/></a> <div class="disclaimer">Average price/night*</div> </dd>
+<dt>
+Top-Rated Nearby Restaurants </dt>
+<dd>
+<div class="disType">
+Distance in:
+<input type="radio" name="eateryOption" value="0" class="milesOption" onclick="ta.call('ta.servlet.Location.showMi', event)" checked/> <span class="milesLabel selected">mi</span>
+<input type="radio" name="eateryOption" value="1" class="kmOption" onclick="ta.call('ta.servlet.Location.showKm', event);"/> <span class="kmLabel ">km</span>
+</div>
+<table>
+<thead>
+<tr>
+<th class="titleColumn">restaurant</th> <th class="distanceColumn">Distance</th> <th class="ratingColumn">Rating</th> </tr>
+</thead>
+<tbody>
+<tr>
+<td class="titleColumn"><a href="/Restaurant_Review-g39143-d815472-Reviews-Zoomdweebies_Tea_Bar-Wichita_Kansas.html" rel="nofollow" class="pid908">Zoomdweebies Tea Bar</a></td>
+<td class="distanceColumn">
+<span class="distanceMiles ">0.1 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">0.2 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss45"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4.5 of 5 stars"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="titleColumn"><a href="/Restaurant_Review-g39143-d1062266-Reviews-Great_Wall_Chinese_Restaurant-Wichita_Kansas.html" rel="nofollow" class="pid908">Great Wall Chinese Restaurant</a></td>
+<td class="distanceColumn">
+<span class="distanceMiles ">0.1 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">0.2 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss45"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4.5 of 5 stars"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="titleColumn"><a href="/Restaurant_Review-g39143-d1510809-Reviews-Sport_Burger-Wichita_Kansas.html" rel="nofollow" class="pid908">Sport Burger</a></td>
+<td class="distanceColumn">
+<span class="distanceMiles ">0.5 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">0.8 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+<a class="more pid908" href="/Restaurants-g39143-Wichita_Kansas.html" rel="nofollow">All Restaurants in Wichita<img class="sprite-arrowRgt arrowRgt" src="http://c1.tacdn.com/img2/x.gif" alt=""/></a> </dd>
+<dt>
+Top-Rated Nearby Things to Do </dt>
+<dd>
+<div class="disType">
+Distance in:
+<input type="radio" name="attractionOption" value="0" class="milesOption" onclick="ta.call('ta.servlet.Location.showMi', event)" checked/> <span class="milesLabel selected">mi</span>
+<input type="radio" name="attractionOption" value="1" class="kmOption" onclick="ta.call('ta.servlet.Location.showKm', event);"/> <span class="kmLabel ">km</span>
+</div>
+<table>
+<thead>
+<tr>
+<th class="titleColumn">Thing to Do</th> <th class="distanceColumn">Distance</th> <th class="ratingColumn">Rating</th> </tr>
+</thead>
+<tbody>
+<tr>
+<td class="titleColumn"><a href="/Attraction_Review-g39143-d1985639-Reviews-Crown_Uptown_Theatre-Wichita_Kansas.html" rel="nofollow" class="pid909">Crown Uptown Theatre</a></td>
+<td class="distanceColumn">
+<span class="distanceMiles ">0.6 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">0.9 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="titleColumn"><a href="/Attraction_Review-g39143-d1581569-Reviews-Mort_s_Cigar_Bar-Wichita_Kansas.html" rel="nofollow" class="pid909">Mort's Cigar Bar</a></td>
+<td class="distanceColumn">
+<span class="distanceMiles ">2.0 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">3.2 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss50"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="titleColumn"><a href="/Attraction_Review-g39143-d259724-Reviews-Museum_of_World_Treasures-Wichita_Kansas.html" rel="nofollow" class="pid909">Museum of World Treasures</a></td>
+<td class="distanceColumn">
+<span class="distanceMiles ">2.1 <em>mi</em></span>
+<span class="distanceKm  nonDefUnits">3.3 <em>km</em></span>
+</td>
+<td class="ratingColumn">
+<span class="rate rate_sss sss40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+<a class="more pid909" href="/Attractions-g39143-Activities-Wichita_Kansas.html" rel="nofollow">All Things to Do in Wichita<img class="sprite-arrowRgt arrowRgt" src="http://c1.tacdn.com/img2/x.gif" alt=""/></a> <dd>
+</dl> </div> </div>
+<div class="bx01 owners">
+<h2 class="title">
+Is Chipotle your business? </h2>
+<div class="content">
+<ul class="arrows">
+<li><span class="fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LDJCJyVaVCIfVCIVEWymAUdmWMUKdAdKUWnKWfGS2iIcVWxdSnGSIJQxbJCtJtB')">Manage your listing</span></li> </ul>
+</div> </div> </div> <div class="col balance">
+<div id="EAT_DETAIL_DETAILS" class="all_details">
+<div class="details">
+<div class="rs popularity">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Ollie" class="popollie"> <var class="dig3"><sup>#</sup><b>119</b></var> <span>of 349 <i><a href="/Restaurants-g39143-Wichita_Kansas.html">restaurants in Wichita</a></i></span>
+</div>
+<div class="wrap">
+<div class="rs rating" rel="v:rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+<span class="rate rate_no no35"><img class="sprite-ratings" property="v:average" src="http://c1.tacdn.com/img2/x.gif" alt="3.5 of 5 stars"/>
+<meta itemprop="ratingValue" content="3.5"> </span>
+<span class="more" itemprop="reviewCount">
+<var property="v:count">4</var> ratings </span>
+</div>
+</div><!--/ wrap-->
+<div class="information textual">
+<ul class="addtlDetail">
+</ul>
+<ul class="vcard" itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+<li class="adr" itemprop="streetAddress"> <span dir="ltr"><span class="street-address" property="v:street-address">515 N Hillside St</span>, <span class="locality"><span property="v:locality">Wichita</span>, <span property="v:region">KS</span></span> </span>
+</li>
+</ul>
+</div>
+</div><!--/ DETAILS-->
+<div class="restDetail detailBox ">
+<div class="infoColLeft">
+<ul>
+</ul>
+</div>
+<div class="infoColRight">
+<ul>
+</ul>
+</div>
+<div style="clear:both;"></div>
+</div>
+<div class="restDetail ">
+<div class="infoCol">
+<ul>
+<li>
+<span class="fkLnk" onclick="login(['tt', 'ajax', 'returnTo', '__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html']);">Update business details</span><br/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="REVIEWS" class="deckB">
+<div id="LOCAL_FRIEND_ACTIVITY_PLACEHOLDER"></div>
+<script type='text/javascript'>
+ta.merge('facebook.data.params', {d: '1049401', g: '39143'});    ta.keep('facebook.data.request', 'LOCAL_FRIEND_ACTIVITY');
+ta.keep('facebook.data.onAvail.LOCAL_FRIEND_ACTIVITY', function(){
+var content = ta.id('LOCAL_FRIEND_ACTIVITY'),
+placeholder = ta.id('LOCAL_FRIEND_ACTIVITY_PLACEHOLDER');
+if (content && placeholder) {
+content.replaces(placeholder);
+}
+})
+</script>
+<div class="cantrust wrap">
+<div class="button war-eatery"><a href="/UserReview-g39143-d1049401-e__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html-Chipotle-Wichita_Kansas.html" onclick="setPID(5036);" rel="nofollow">Write a Review</a></div> <h3 class="cantrust"><span class="sprite-ollie">&nbsp;</span>Reviews you can trust</h3> </div>
+<form id="REVIEW_FILTER_FORM" class="review_filter" method="post" action="/SortReviews#REVIEWS">
+<fieldset class="review_filter_eatery">
+<div class="content wrap">
+<div class="col1of2 segments">
+<div class="title_segments">
+<b>Rating summary</b>
+</div>
+<ul class="barChart">
+<li class="row disabled">
+<span class="text">Excellent</span>
+<div class="line"><div class="fill" style="width:0px;"></div></div>
+<span class="total">0</span>
+</li>
+<li class="row fkLnk" onclick="document.forms.REVIEW_FILTER_FORM.filterRating.value='4';document.forms.REVIEW_FILTER_FORM.submit();">
+<span class="text">Very Good</span>
+<div class="line"><div class="fill" style="width:60px;"></div></div>
+<span class="total">3</span>
+</li>
+<li class="row disabled">
+<span class="text">Average</span>
+<div class="line"><div class="fill" style="width:0px;"></div></div>
+<span class="total">0</span>
+</li>
+<li class="row disabled">
+<span class="text">Poor</span>
+<div class="line"><div class="fill" style="width:0px;"></div></div>
+<span class="total">0</span>
+</li>
+<li class="row fkLnk" onclick="document.forms.REVIEW_FILTER_FORM.filterRating.value='1';document.forms.REVIEW_FILTER_FORM.submit();">
+<span class="text">Terrible</span>
+<div class="line"><div class="fill" style="width:20px;"></div></div>
+<span class="total">1</span>
+</li>
+</ul>
+</div>
+<div class="col2of2 segments summary">
+<div class="title_segments">
+&nbsp; </div>
+<ul class="barChart">
+<li class="row">
+<span class="text">Food</span>
+<div class="line"><div class="fill" style="width:72px;"></div></div>
+</li>
+<li class="row">
+<span class="text">Service</span>
+<div class="line"><div class="fill" style="width:72px;"></div></div>
+</li>
+<li class="row">
+<span class="text">Value</span>
+<div class="line"><div class="fill" style="width:56px;"></div></div>
+</li>
+<li class="row">
+<span class="text">Atmosphere</span>
+<div class="line"><div class="fill" style="width:56px;"></div></div>
+</li>
+</ul>
+</div>
+</div>
+<input name="returnTo" type="hidden" value="__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html"/>
+<input name="filterSegment" type="hidden" value="0"/>
+<input name="filterRating" type="hidden" value="0"/>
+</fieldset>
+</form>
+<div class="deckTools">
+<div class="pagination">
+<span class="pgCount">Showing reviews 1 - 4 of 4</span>
+</div>
+<div class="srtTools">
+<form action="/SortEateries" method="post" id="SORT_FORM">
+<fieldset class="inlineFldst">
+<label for="sortOrder">Sort by</label> <input name="sortOrder" id="sortOrder" type="hidden"/>
+<input type="hidden" name="returnTo" value="__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html"/>
+[ <span class="fkLnk hvrIE6 sprite-sortArrowDn sortArrow" onclick=" document.forms.SORT_FORM.sortOrder.value='2';document.forms.SORT_FORM.submit();">Date</span>
+] [ <span class="fkLnk hvrIE6" onclick=" document.forms.SORT_FORM.sortOrder.value='3';document.forms.SORT_FORM.submit();">Rating</span>
+] </fieldset>
+</form>
+<form id="LANG_FORM" action="/SetLangFilter" method="post">
+<fieldset class="split">
+<input type="hidden" name="returnTo" value="__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html"/>
+<div class="show language">
+<select name="filterLang" id="filterLang" onchange="this.form.submit()">
+<option value="en" selected="selected">
+English first </option>
+</select>
+</div>
+</fieldset>
+</form>
+</div> </div>
+<div id="review_119571026" class="reviewSelector">
+<div class="basic_review ">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_88EAC5818CA640A655FF37BFA4124327-SRC_119571026" onmouseover="ta.call('ta.overlays.Factory.memberOverlay', event, this, 's3 dg rgba_gry')">
+<div class="avatar profile_88EAC5818CA640A655FF37BFA4124327 ">
+<span class="fkLnk" onclick="ta.util.ASDF.asdf('LxOL2VCJtnimv'); setPID(4442);">
+<img id='lazyload_-1684426834_1' alt='' class='avatar'/>
+</span>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_88EAC5818CA640A655FF37BFA4124327"> penasco38</span>
+</div>
+</div>
+<div class="location">
+</div>
+<div class="wrap">
+<img id='lazyload_-1684426834_2' class='recogTotalImg'/> <span class="recogTotalText">
+5 reviews </span>
+</div>
+<div class="hvrIE6 wrap" onmouseover="ta.call('ta.overlays.Factory.relBelowOverlaySolidGreenBorder', event, this)">
+<img id='lazyload_-1684426834_3' alt='' class='recogHelpfulImg'/> <span class="recogHelpfulText">
+2 helpful votes </span>
+<div class="overlayContents">
+<div style="width:245px;">
+This member's reviews have been voted helpful by TripAdvisor travelers. </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="quote">
+<a href="/ShowUserReviews-g39143-d1049401-r119571026-Chipotle-Wichita_Kansas.html#REVIEWS" onclick="ta.util.cookie.setPIDNoA(this)" class="pid4442" id="r119571026" rel="nofollow">&#x201c;Taco Bell on steroids&#x201d;</a>
+</div>
+<div class="rating reviewItemInline">
+<span class="rate rate_s s40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+<span class="ratingDate">Reviewed October 21, 2011
+</span>
+</div>
+<div class="entry">
+<p class="partial_entry">
+For a quick mexican food lunch in the mid-west we were pleasantly surprised. Will be back again soon.
+<div class="partnerRvw">
+<div><span class="fkLnk hvrIE6 tr119571026 moreLink linkItem" onclick="setPID(4444);ta.call('ta.servlet.Reviews.expandReviews',event,this,'review_119571026', '0')">more</span><img class="textArrow_more sprite-textArrowDn_more" src="http://c1.tacdn.com/img2/x.gif" alt=""/></div> </div>
+</p>
+</div>
+<div id="helpfulq119571026_collapsed" class="helpful">
+<span class="isHelpful">Was this review helpful?</span> <span rel="nofollow" class="yes tgt_helpfulq119571026" onmouseover="this.style.cursor='pointer';" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1qgeVtIJpEJCIQQoqnQQeVsSVuqHymAUdmqHMUKdAdKUqHxfqHfGS2iIcVqHxdSnGSIJQQoqnQQxbJCtJtxiGIac6XoXmqoTpcUUAokUKX30tEn1UUAokUKX30zH1mAUdm0pSM1vvzsbfovUvfb3dKb3ooqnqnmk7qnbdUXdmXk0EJIVqiJcpV1U');">Yes</span> </div>
+<div class="wrap reportProblem">
+<span class="problem collapsed fkLnk" onmouseover="ta.util.fkLnk.mouseover(this)" onmouseout="ta.util.fkLnk.mouseout(this)" onclick="login(['tt', 'ajax', 'returnTo', '__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html']);">Problem with this review?</span>
+</div>
+</div> </div>
+</div>
+<div id="review_86521526" class="reviewSelector">
+<div class="basic_review ">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5D7D958A81ECCF75CB3B92F8618DDEFB-SRC_86521526" onmouseover="ta.call('ta.overlays.Factory.memberOverlay', event, this, 's3 dg rgba_gry')">
+<div class="avatar profile_5D7D958A81ECCF75CB3B92F8618DDEFB ">
+<span class="fkLnk" onclick="ta.util.ASDF.asdf('LxOLJaJCMJEiJnGv'); setPID(4442);">
+<img id='lazyload_-1684426834_4' height='74' alt='' width='74' class='avatar'/>
+</span>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5D7D958A81ECCF75CB3B92F8618DDEFB"> amandaroa...</span>
+</div>
+</div>
+<div class="location">
+Cheney, Kansas
+</div>
+<div class="wrap">
+<span class="recogTotalText">
+1 review </span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="quote">
+<a href="/ShowUserReviews-g39143-d1049401-r86521526-Chipotle-Wichita_Kansas.html#REVIEWS" onclick="ta.util.cookie.setPIDNoA(this)" class="pid4442" id="r86521526">&#x201c;I can eat out at Chipotle without feeling guilty.&#x201d;</a>
+</div>
+<div class="rating reviewItemInline">
+<span class="rate rate_s s40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+<span class="ratingDate">Reviewed November 9, 2010
+</span>
+</div>
+<div class="entry">
+<p class="partial_entry">
+My mom, son and I ate at Chipotle a few days ago. I had never been to this location on the east side before. We were stopped at a stop light and were discussing were to eat. As I looked over and saw Chipotle. This is one of my mom&#39;s favorite resturaunts. I made a turn and easily parked in...
+<div class="partnerRvw">
+<div><span class="fkLnk hvrIE6 tr86521526 moreLink linkItem" onclick="setPID(4444);ta.call('ta.servlet.Reviews.expandReviews',event,this,'review_86521526', '0')">more</span><img class="textArrow_more sprite-textArrowDn_more" src="http://c1.tacdn.com/img2/x.gif" alt=""/></div> </div>
+</p>
+</div>
+<div id="helpfulq86521526_collapsed" class="helpful">
+<span class="isHelpful">Was this review helpful?</span> <span rel="nofollow" class="yes tgt_helpfulq86521526" onmouseover="this.style.cursor='pointer';" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1qgeVtIJpEJCIQQoqnQQeVsSVuqHymAUdmqHMUKdAdKUqHxfqHfGS2iIcVqHxdSnGSIJQQoqnQQxbJCtJtxiGIac6XoXmqoTpcv3oXUoX30tEn1v3oXUoX30zH1mAUdm0pSM1oxMkxMAovbvUzsffqnkof7m7AXqnv3UvxMxMzsqn70EJIVqiJcpV1U');">Yes</span> </div>
+<div class="wrap reportProblem">
+<span class="problem collapsed fkLnk" onmouseover="ta.util.fkLnk.mouseover(this)" onmouseout="ta.util.fkLnk.mouseout(this)" onclick="login(['tt', 'ajax', 'returnTo', '__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html']);">Problem with this review?</span>
+</div>
+</div> </div>
+</div>
+<div id="review_47409648" class="reviewSelector">
+<div class="basic_review ">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B87ED3C343FD7A6EDA075529A9E57490-SRC_47409648" onmouseover="ta.call('ta.overlays.Factory.memberOverlay', event, this, 's3 dg rgba_gry')">
+<div class="avatar profile_B87ED3C343FD7A6EDA075529A9E57490 ">
+<span class="fkLnk" onclick="ta.util.ASDF.asdf('LxOLbpIiHiH'); setPID(4442);">
+<img id='lazyload_-1684426834_5' alt='' class='avatar'/>
+</span>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B87ED3C343FD7A6EDA075529A9E57490"> Autobob</span>
+</div>
+</div>
+<div class="location">
+OZ
+</div>
+<div class="wrap">
+<img id='lazyload_-1684426834_6' class='recogTotalImg'/> <span class="recogTotalText">
+14 reviews </span>
+</div>
+<div class="hvrIE6 wrap" onmouseover="ta.call('ta.overlays.Factory.relBelowOverlaySolidGreenBorder', event, this)">
+<img id='lazyload_-1684426834_7' alt='' class='recogHelpfulImg'/> <span class="recogHelpfulText">
+7 helpful votes </span>
+<div class="overlayContents">
+<div style="width:245px;">
+This member's reviews have been voted helpful by TripAdvisor travelers. </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="quote">
+<a href="/ShowUserReviews-g39143-d1049401-r47409648-Chipotle-Wichita_Kansas.html#REVIEWS" onclick="ta.util.cookie.setPIDNoA(this)" class="pid4442" id="r47409648">&#x201c;Good quick Mexican food. A step above Mexican fast food shops.&#x201d;</a>
+</div>
+<div class="rating reviewItemInline">
+<span class="rate rate_s s40"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars"/>
+</span>
+<span class="ratingDate">Reviewed October 21, 2009
+</span>
+</div>
+<div class="entry">
+<p class="partial_entry">
+While quality can and spice can vary a little overall this Chipotle has been a good experience over the past 3 years or so of eating here. Quite a choice of different meats, spices and vegies. Staff seems to want you to be happy and have been very nice. Very clean. Call in and go to the head of the...
+<div class="partnerRvw">
+<div><span class="fkLnk hvrIE6 tr47409648 moreLink linkItem" onclick="setPID(4444);ta.call('ta.servlet.Reviews.expandReviews',event,this,'review_47409648', '0')">more</span><img class="textArrow_more sprite-textArrowDn_more" src="http://c1.tacdn.com/img2/x.gif" alt=""/></div> </div>
+</p>
+</div>
+<div id="helpfulq47409648_collapsed" class="helpful">
+<span class="isHelpful">Was this review helpful?</span> <span rel="nofollow" class="yes tgt_helpfulq47409648" onmouseover="this.style.cursor='pointer';" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1qgeVtIJpEJCIQQoqnQQeVsSVuqHymAUdmqHMUKdAdKUqHxfqHfGS2iIcVqHxdSnGSIJQQoqnQQxbJCtJtxiGIac6XoXmqoTpcdkdKA3dv0tEn1dkdKA3dv0zH1mAUdm0pSM17vkzsxMmfmdmqnxMkb3zsxMbKkooXAbAzsokdAK0EJIVqiJcpV1U');">Yes</span> </div>
+<div class="wrap reportProblem">
+<span class="problem collapsed fkLnk" onmouseover="ta.util.fkLnk.mouseover(this)" onmouseout="ta.util.fkLnk.mouseout(this)" onclick="login(['tt', 'ajax', 'returnTo', '__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html']);">Problem with this review?</span>
+</div>
+</div> </div>
+</div>
+<div id="review_16250504" class="reviewSelector">
+<div class="basic_review ">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar profile_298E6B2AC0F99CD12EFB46698B555B4F ">
+<span>
+<img class="fbConnect" alt="Facebook Connect" src="http://c1.tacdn.com/img/facebook/connect/fb_14x14.gif"/>
+<img id='lazyload_-1684426834_8' height='74' alt='' width='74' class='avatar'/>
+</span>
+</div>
+<div class="username mo">
+A TripAdvisor reviewer on Facebook </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="quote">
+<a href="/ShowUserReviews-g39143-d1049401-r16250504-Chipotle-Wichita_Kansas.html#REVIEWS" onclick="ta.util.cookie.setPIDNoA(this)" class="pid4442" id="r16250504" rel="nofollow">&#x201c;People make way to big of a deal of this place. They try to hard. Tone it down a bit buddy!&#x201d;</a>
+</div>
+<div class="rating reviewItemInline">
+<span class="rate rate_s s10"><img class="sprite-ratings" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars"/>
+</span>
+<span class="ratingDate">Reviewed May 4, 2008
+</span>
+</div>
+<div class="entry">
+<p class="partial_entry">
+People make way to big of a deal of this place. They try to hard. Tone it down a bit buddy!
+<div class="partnerRvw">
+<div><span class="fkLnk hvrIE6 tr16250504 moreLink linkItem" onclick="setPID(4444);ta.call('ta.servlet.Reviews.expandReviews',event,this,'review_16250504', '0')">more</span><img class="textArrow_more sprite-textArrowDn_more" src="http://c1.tacdn.com/img2/x.gif" alt=""/></div> </div>
+</p>
+</div>
+<div id="helpfulq16250504_collapsed" class="helpful">
+<span class="isHelpful">Was this review helpful?</span> <span rel="nofollow" class="yes tgt_helpfulq16250504" onmouseover="this.style.cursor='pointer';" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1qgeVtIJpEJCIQQoqnQQeVsSVuqHymAUdmqHMUKdAdKUqHxfqHfGS2iIcVqHxdSnGSIJQQoqnQQxbJCtJtxiGIac6XoXmqoTpcU3XoKoKd0tEn1U3XoKoKd0zH1mAUdm0pSM1XAvzs37XbfKqnAAfxMUXzsqn7d33Av7ooo7dqn0EJIVqiJcpV1U');">Yes</span> </div>
+<div class="wrap reportProblem">
+<span class="problem collapsed fkLnk" onmouseover="ta.util.fkLnk.mouseover(this)" onmouseout="ta.util.fkLnk.mouseout(this)" onclick="login(['tt', 'ajax', 'returnTo', '__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html']);">Problem with this review?</span>
+</div>
+</div> </div>
+</div>
+<div class="deckTools btm">
+<div class="pagination">
+<span class="pgCount">Showing reviews 1 - 4 of 4</span>
+</div> </div> </div>
+<div class="bx01 writeOwn">
+<dl>
+<dt class="title">
+Write Your Own Restaurant Review
+</dt>
+<dd class="content">
+<p><b>Been to Chipotle? Share your experiences!</b></p>
+<div class="wrpBtn">
+<div class="button"><span onclick="ta.util.cookie.setPIDCookie(458);ta.util.ASDF.asdf('LqdWymAUdmWMUKdAdKUWVqgeVtIJpEJCIQQoqnQQeVsSVuqHymAUdmqHMUKdAdKUqHxfqHfGS2iIcVqHxdSnGSIJQQoqnQQxbJCtJtxiGIacWTHVTSEtIQeVtIJpEJCIQeVsSVuQuESIVJEVsSVuQIi2WfGS2iIcVWxdSnGSIJQxbJCtJtB')">Write a Review</span></div>
+<div class="button"><span class="fkLnk hvrIE6" onClick="ta.call('ta.media.uploader.start', event, this, {oldPhotoUploadURL: 'LxTq3WymAUdmWMUKdAdKUWVqgeVtIJpEJCIQQoqnQQeVsSVuqHymAUdmqHMUKdAdKUqHxfqHfGS2iIcVqHxdSnGSIJQQoqnQQxbJCtJtxiGIacWTHVTSEtIQeVtIJpEJCIQeVsSVuQ2itI2GiIitiCcgQIi2WfGS2iIcVWxdSnGSIJQxbJCtJtB', oldPhotoUploadPID: 459, locationId: 39143, detailId: 1049401, locale: 'en'})">Add Photos</span></div>
+<div class="button"><span onclick="ta.util.cookie.setPIDCookie(460);ta.util.ASDF.asdf('LxTqiSMViWymAUdmWMUKdAdKUWVqgeVtIJpEJCIQQoqnQQeVsSVuqHymAUdmqHMUKdAdKUqHxfqHfGS2iIcVqHxdSnGSIJQQoqnQQxbJCtJtxiGIacWTHVTSEtIQeVtIJpEJCIQeVsSVuQ2itIsSMVitiCcgQIi2WfGS2iIcVWxdSnGSIJQxbJCtJtB')">Add Videos</span></div>
+</div>
+</dd> </dl>
+</div>
+<div id="COMMERCE_MID" class="box typeB commerce v3"> <div class="interior">
+<h2 id="COMMERCE_MID_TITLE">Travel deals: Wichita</h2>
+<dl>
+<dd>
+<ul>
+<li dir="ltr">
+<a rel="nofollow" onclick=" ta.call('ta.util.link.popup', event, this, {'ensureReferrer':true});" href="/Commerce?p=DaysInnHotelsGEO&amp;src=4592758&amp;geo=39143&amp;from=Restaurant_Review&amp;area=MID&amp;slot=1&amp;cnt=4&amp;oos=4"><var>Wichita: Official Days Inn Site</var><br/>
+<span><b>DaysInn.com</b> Spring Price Break Save 20% Best Rate Guaranteed at DaysInn.com</span></a>
+</li>
+<li dir="ltr">
+<a rel="nofollow" onclick=" ta.call('ta.util.link.popup', event, this, {'ensureReferrer':true});" href="/Commerce?p=HotelsComVacationsGEOUS&amp;src=1526315&amp;geo=39143&amp;from=Restaurant_Review&amp;area=MID&amp;slot=2&amp;cnt=4&amp;oos=4"><var>Wichita: Save on Air + Hotel – Book a Getaway Today!</var><br/>
+<span><b>hotels.com Vacations</b> The One Stop Shop for Your Next Trip. Click or call now: 1-800-764-6835</span></a>
+</li>
+<li dir="ltr">
+<a rel="nofollow" onclick=" ta.call('ta.util.link.popup', event, this, {'ensureReferrer':true});" href="/Commerce?p=GenComHotelPlannerHotelsGEO&amp;src=8134594&amp;geo=39143&amp;from=Restaurant_Review&amp;area=MID&amp;slot=3&amp;cnt=4&amp;oos=4"><var>Wichita: Groups: Need 3+ Rooms?</var><br/>
+<span><b>HotelPlanner.com</b> Group Hotel Rates. Did you lock in a group rate yet?</span></a>
+</li>
+<li dir="ltr">
+<a rel="nofollow" onclick=" ta.call('ta.util.link.popup', event, this, {'ensureReferrer':true});" href="/Commerce?p=ExpediaHotelsGEO6US&amp;src=1524665&amp;geo=39143&amp;from=Restaurant_Review&amp;area=MID&amp;slot=4&amp;cnt=4&amp;oos=4"><var>Wichita: Save up to 50% off Hotels Everyday</var><br/>
+<span><b>Expedia.com</b> Photos, Reviews and the Guaranteed Lowest Prices</span></a>
+</li>
+</ul>
+</dd>
+<dt class="note">Sponsored links *</dt>
+</dl>
+</div> </div>
+<div class="note fOs">* Restaurant price information is based on meal cost per person, excluding drinks, tax and tip.</div>
+</div> </div>
+<script type='text/javascript'>
+ta.merge('facebook.data.params', {d: '1049401'});    ta.keep('facebook.data.request', 'FRIEND_NAMES');
+ta.store('facebook.data.handlers.FRIEND_NAMES', function() {
+var content = ta.id('FRIEND_NAMES');
+if (content) {
+content.getElements('.mbrFriendName').each(function(elmt) {
+var userId = elmt.getProperty('class').match(/FRIEND_NAME_(\w+)/);
+if (!userId && !userId[1]) return;
+ta.id('MAIN').getElements('.mbrName_' + userId[1]).each(function(name) {
+name.set('html', elmt.get('text'));
+});
+});
+content.getElements('.mbrProfileCTA').each(function(elmt) {
+var userId = elmt.getProperty('class').match(/FRIEND_NAME_(\w+)/);
+ta.id('MAIN').getElements('.thanks_' + userId[1]).each(function(cta) {
+cta.set('html', elmt.get('text'));
+});
+});
+content.getElements('.mbrFriendAvatar').each(function(elmt) {
+var userId = elmt.getProperty('class').match(/FRIEND_NAME_(\w+)/);
+if (!userId && !userId[1]) return;
+var profileNodes  = ta.id('MAIN').getElements('.profile_' + userId[1]);
+profileNodes.each(function(profileNode) {
+profileNode.removeClass('avatar');
+profileNode.setProperty('class', profileNode.getProperty('class') + ' facebookFriend');
+// if there is no FB logo already, we will need to add one
+var convertToFBAvatar = profileNode.getElements('.sprite-facebookAvatarLogo').length == 0;
+profileNode.getElements('img.avatar').each(function (avatarImg)
+{
+// Check if markup has already assigned a size that cannot be overridden.
+// See bug 57545.
+var profileDiv = avatarImg.getParent().getParent();
+if (profileDiv.hasClass('noresize'))
+{
+return;
+}
+var src = elmt.getProperty('src');
+if (avatarImg.oSRC) {
+avatarImg.oSRC = src;
+} else {
+avatarImg.setProperty('src', src);
+}
+if (convertToFBAvatar) {
+var img = ta.id(document.createElement('img'));
+img.setProperty('class', 'sprite-facebookAvatarLogo facebookAvatarLogo');
+img.setProperty('src', 'http://c1.tacdn.com/img2/x.gif');
+var profileLink = avatarImg.getParent();
+profileLink.appendChild(img);
+var facebookAvatarDiv = ta.id(document.createElement('div'));
+facebookAvatarDiv.setProperty('class', 'facebookAvatar');
+facebookAvatarDiv.setProperty('style', 'width: 74px; height: 74px');
+profileLink.getParent().appendChild(facebookAvatarDiv);
+facebookAvatarDiv.appendChild(profileLink);
+}
+}); // avatarImg
+}); // profileNode
+}); // elmt
+} // content
+});
+ta.keep('facebook.data.onAvail.FRIEND_NAMES', ta.retrieve('facebook.data.handlers.FRIEND_NAMES'));
+</script>
+</div>
+</div>
+<div id="FOOT">
+<div class="corporate">
+<div class="col sidebar">
+<div class="block">
+<dl class="about">
+<dt>About TripAdvisor&#174;</dt> <dd> TripAdvisor&#8482; provides unbiased reviews, articles, recommendations and opinions on <b>Chipotle</b>, Wichita.</dd>
+</dl>
+</div> </div>
+<div class="col balance">
+<div class="block">
+<dl class="sep brand">
+<dt>
+<img class="sprite-identityFOOT" src="http://c1.tacdn.com/img2/x.gif" alt="TripAdvisor"/>
+</dt>
+<dd class="meta">
+Reviews and advice on hotels, resorts, <a href="/Flights">flights</a>, vacation rentals, travel packages, and lots more! </dd>
+</dl>
+<dl class="sep flags">
+<dt>Select a TripAdvisor site:</dt>
+<dd>
+<ul id="FLAGS">
+<li class="flag_item">
+<a id="flag_uk" class="flag_link flag_uk" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.co.uk/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_ca" class="flag_link flag_ca" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.ca/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_it" class="flag_link flag_it" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.it/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_es" class="flag_link flag_es" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.es/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_de" class="flag_link flag_de" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.de/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_fr" class="flag_link flag_fr" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.fr/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_ja" class="flag_link flag_ja" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle" href="http://www.tripadvisor.jp/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_cn" class="flag_link flag_cn" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, 威奇托" href="http://www.daodao.com/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, 威奇托"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_in" class="flag_link flag_in" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.in/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_sv" class="flag_link flag_sv" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.se/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_nl" class="flag_link flag_nl" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.nl/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_pt" class="flag_link flag_pt" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.com.br/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_tr" class="flag_link flag_tr" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.com.tr/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_da" class="flag_link flag_da" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.dk/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_mx" class="flag_link flag_mx" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.com.mx/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_ie" class="flag_link flag_ie" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.ie/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_eg" class="flag_link flag_eg" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="‫‫Chipotle‬, ‫Wichita‬‬" href="http://www.tripadvisor.com.eg/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="‫‫Chipotle‬, ‫Wichita‬‬"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_el" class="flag_link flag_el" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Γουίτσιτα" href="http://www.tripadvisor.com.gr/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Γουίτσιτα"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_au" class="flag_link flag_au" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.com.au/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_my" class="flag_link flag_my" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.com.my/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_sg" class="flag_link flag_sg" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.com.sg/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_ar" class="flag_link flag_ar" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.com.ar/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_id" class="flag_link flag_id" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.co.id/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_ko" class="flag_link flag_ko" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, 위치타" href="http://www.tripadvisor.co.kr/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, 위치타"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_no" class="flag_link flag_no" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://no.tripadvisor.com/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_pl" class="flag_link flag_pl" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://pl.tripadvisor.com/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_ru" class="flag_link flag_ru" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, Wichita" href="http://www.tripadvisor.ru/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, Wichita"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_th" class="flag_link flag_th" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, วิชิตอ" href="http://th.tripadvisor.com/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, วิชิตอ"/></a>
+</li>
+<li class="flag_item">
+<a id="flag_tw" class="flag_link flag_tw" onclick="ta.call('ta.util.link.remTAPD', event, this);" title="Chipotle, 威奇托" href="http://www.tripadvisor.com.tw/Restaurant_Review-g39143-d1049401-Reviews-Chipotle-Wichita_Kansas.html"><img class="flag" src="http://c1.tacdn.com/img2/sprites/posFlags-V7.gif" alt="Chipotle, 威奇托"/></a>
+</li>
+</ul>
+</dd>
+</dl>
+<div class="sep internal">
+<span class="fkLnk hvrIE6" onClick="ta.util.ASDF.asdf('LzFLJHipIQptB')">About Us</span> |
+<span class="fkLnk hvrIE6" onClick="ta.util.ASDF.asdf('Lqd')">Write a review</span> |
+<span class="fkLnk hvrIE6" onClick="ta.util.ASDF.asdf('LxIL')">Careers</span> | <span><a href="/pages/site_map_lodging.html">Site Map</a></span> | <span><a href="/pages/top200.html">Top Cities</a></span>
+| <span class="fkLnk hvrIE6" onClick="ta.util.ASDF.asdf('LqN')">Owners</span> | <span class="fkLnk hvrIE6" onClick="ta.util.ASDF.asdfPopup('Lqo')">Help Center</span>
+| <span class="fkLnk hvrIE6" onClick="ta.util.ASDF.asdf('L7ptSCVttRStISCyt')">Business Listings</span> | <span class="fkLnk hvrIE6" onClick="ta.util.ASDF.asdf('LqN')">DMO/CVB</span> </div>
+<div class="sep legal">
+<div class="copyright">
+© 2011 TripAdvisor LLC All rights reserved. TripAdvisor <span class="fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LzFLIVEatB')">Terms of Use</span> and <span class="fkLnk hvrIE6" onclick="ta.util.ASDF.asdf('LzFL2ESsJngB')">Privacy Policy</span>.</div>
+<div class="vfm_disclaimer">
+</div>
+<div class="disclaimer">
+* TripAdvisor LLC is not a booking agent and does not charge any service fees to users of our site... (<span id="TERMS" class="fkLnk hvrIE6" onclick="ta.util.ASDF.asdfPopupTerms('LzFL2ESnSCyQIVEatB')">more</span>) </div>
+<div class="disclaimer">TripAdvisor LLC is not responsible for content on external web sites. Taxes, fees not included for deals content.</div>
+</div>
+</div> </div> </div>
+</div>
+</div>
+<script type="text/javascript">
+var lazyImgs = [
+{ id: 'lazyload_-1684426834_0', src: 'http://maps.google.com/maps/api/staticmap?center=37.694263,-97.299042&zoom=15&maptype=roadmap&size=268x133&client=gme-expedia&sensor=false&signature=UvTYcngGodOP6_sUoptuAhw5B7I=', scroll: false }
+, { id: 'lazyload_-1684426834_1', src: 'http://media-cdn.tripadvisor.com/media/photo-f/01/f1/60/ae/penasco38.jpg', scroll: true }
+, { id: 'lazyload_-1684426834_2', src: 'http://c1.tacdn.com/img2/icons/16/star_1a.png', scroll: true }
+, { id: 'lazyload_-1684426834_3', src: 'http://c1.tacdn.com/img2/icons/16/ribbon2.gif', scroll: true }
+, { id: 'lazyload_-1684426834_4', src: 'http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif', scroll: true }
+, { id: 'lazyload_-1684426834_5', src: 'http://media-cdn.tripadvisor.com/media/photo-f/01/2e/70/a4/avatar075.jpg', scroll: true }
+, { id: 'lazyload_-1684426834_6', src: 'http://c1.tacdn.com/img2/icons/16/star_3a.png', scroll: true }
+, { id: 'lazyload_-1684426834_7', src: 'http://c1.tacdn.com/img2/icons/16/ribbon2.gif', scroll: true }
+, { id: 'lazyload_-1684426834_8', src: 'http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif', scroll: true }
+]
+var lazyHtml = [
+]
+ta.queueForLoad( function() {
+window.setupLazyLoad();
+}, 'lazy load images');
+</script>
+<script type="text/javascript">
+ta.keep('startOffset', '1');
+</script>
+<script type="text/javascript">
+ta.store('page.geo', "39143");
+ta.store('page.location', "1049401");
+ta.store('page.urlSafe', "__2F__Restaurant__5F__Review__2D__g39143__2D__d1049401__2D__Reviews__2D__Chipotle__2D__Wichita__5F__Kansas__2E__html");
+ta.store('facebook.disableLogin', false);
+ta.store('facebook.apiKey', "f1e687a58f0cdac60b7af2317a5febb3");
+ta.store('facebook.appId', "162729813767876");
+ta.store("facebook.invalidFBCreds", true);
+ta.store('fb.new.sdk.enabled', true);
+ta.store('fb.use.iframe.enabled', false);
+window.fbAsyncInit = ta.support.Facebook.init;
+ta.queueForLoad(function(){
+new Asset.javascript("http://connect.facebook.net/en_US/all.js");
+}, 0, 'LoadFBJS');
+ta.store('facebook.showWelcomeBar', true);
+ta.keep('facebook.data.request', [
+'IP_HEADER'               ]);
+ta.keep('facebook.data.request', ['ACTIVITY_COUNT']);
+ta.keep('facebook.onSessionAvail', function () {
+var node = ta.id('MOBHDRLNK');
+if (node)
+{
+node.parentNode.removeChild(node);
+}
+});
+ta.queueForLoad( function() { Cookie.writeSession('FBH', sniffFacebook() ? 1 : 2); }, 'SniffFB' );
+if( ta.common && ta.common.scrollAd ) {
+window.addEvent('scroll', function() {
+ta.common.scrollAd.handleScroll( document.getElement('.gridA>.sidebar'), 0);
+});
+}
+</script>
+<script type='text/javascript'>
+</script>
+<div id="TM_FTR" class="ftr_vr">
+<div class="ftrWrap">
+<div class="topInnerBorder">
+<div class="ftrTALogo sisterSites">
+<span class="sprite-ftr-Ollie"></span><span class="otherTA">Other TripAdvisor sites:</span>
+</div>
+<div class="ftrClose" onclick="setTAMGFooterCookie('Yes');">
+<span><img class="xBtn sprite-X" src="http://c1.tacdn.com/img2/x.gif"/></span>
+</div>
+<div class="sisterSites">
+<div class="seeAll" onclick="ta.call('ta.overlays.Factory.tamgShowLightbox', event, this,'http://c1.tacdn.com/css2/tamgfooter_deferred-v1289307832b.css')">See all sites</div>
+<div class="tamgBtn CC" onmouseover="tamgShowFly(this, 'sis1', 'cc', '89' )" onmouseout="tamgHideFly(this, 'sis1', event)" onclick="ta.util.ASDF.asdfPopup('LrbDzzqniiIVEfiCIEiccVEWJQzZYUWJQpEcYGII26Xomb6XoXqn6XoXqnuuuxinEpStVnESISnxinia6XoXqn6XomqnVsVCI6XomxMU6XoX3Ig2V6XomxMIJayTiiIVE6XoX3tSIV6XomxMIJWJQzhY3knv3UvnKXXK3U3MoW2XXXA');">
+<span class="btnIcn sprite-CC16x16"></span><span class="btnTxt">Cruise Critic</span>
+<div class="ftrFly sis1">
+<p>The ultimate cruise resource: cruise reviews, deals, news and advice.</p>
+</div>
+</div>
+<div class="tamgBtn SG" onmouseover="tamgShowFly(this, 'sis2', 'sg', '177' )" onmouseout="tamgHideFly(this, 'sis2', event)" onclick="ta.util.ASDF.asdfPopup('LrbDzzqniiIVEfiCIEiccVEWJQzZYUWJQpEcYGII26Xomb6XoXqn6XoXqnuuuxitVJIypEpxinia6XoXqn6XomqnE6XomxMIJayqHTiiIVEQQoqnQQIJqHIiqHtyWJQzhYHMTndnkUdmTmKMKAAW2XXX3');">
+<span class="btnIcn sprite-SG16x16"></span><span class="btnTxt">SeatGuru</span>
+<div class="ftrFly sis2">
+<p>The world's most comprehensive source for airline seats, airline info, &amp; in-flight amenities.</p>
+</div>
+</div>
+<div class="tamgBtn FVC" onmouseover="tamgShowFly(this, 'sis3', 'fvc', '118' )" onmouseout="tamgHideFly(this, 'sis3', event)" onclick="ta.util.ASDF.asdfPopup('LrbDzzqniiIVEfiCIEiccVEWJQzZYUWJQpEcYGII26Xomb6XoXqn6XoXqnuuuxiTJaScgsJnJISiCnESISnxinia6XoXqn6XomqnVsVCI6XomxMU6XoX3Ig2V6XomxMIJayTiiIVE6XoX3tSIV6XomxMIJ6XoX3zH6XomxMmAUdm6XoX32Ei26XomxMUKdAdKU6XoX32I6XomxMeVtIJpEJCIQQoqnQQeVsSVuWJQzhYVAnAVXno3TokdnnVHW2XXmX');">
+<span class="btnIcn sprite-FVC16x16"></span><span class="btnTxt">Family Vacation Critic</span>
+<div class="ftrFly sis3">
+<p>The best family vacations start here.</p>
+</div>
+</div>
+</div>
+<div id="FTR_PROMO" class="for_vr">
+<div id="FTR_BTN" class="ftrBtn">
+<span class="fkLnk" onclick="if(ta.util){ ta.util.ASDF.asdf('Lqaqrt','3784')}">Best beach houses of 2011</span>&nbsp;&raquo;
+</div>
+<script type='text/javascript'>
+// img src
+var ftrHeroSrc = CDNHOST + '/img2/tamgfooter/vr/ftrHero.png';
+if (cookieDomain == '.tripadvisor.es') {
+ftrHeroSrc = CDNHOST + '/img2/tamgfooter/vr/ftrHero.gif';
+}
+// animate 2 seconds after page load
+ta.queueForLoad( function() {
+setTimeout( function() { ta.id('FTR_ANI').src = ftrHeroSrc; var ftrFx = new Fx.Morph(ta.id('FTR_ANI'), {duration:1000, wait:false}); ftrFx.start({ 'margin-bottom': 0 }); }, 2000 );
+}, 'TOVR');
+</script>
+<img class="ftrHero" id="FTR_ANI" alt="" onclick="if(ta.util){ ta.util.ASDF.asdf('Lqaqrt','3784')}" style="margin-bottom:-85px" alt="" onmouseover="ta.id('FTR_BTN').addClass('hvrd')" onmouseout="ta.id('FTR_BTN').removeClass('hvrd')" height="85" width="209" src="http://c1.tacdn.com/img2/x.gif"/>
+</div>
+</div> </div> </div>
+<div id="IP_IFRAME_HOLDER"></div>
+</body>
+<!-- st: 160 dc: 3 sc: 8 -->
+</html>

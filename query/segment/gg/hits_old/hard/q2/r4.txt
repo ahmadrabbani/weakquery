@@ -1,0 +1,334 @@
+ Relating to hydroelectric projects; creating new provisions; amending ORS 543.010, 543.017, 543.050, 543.255 and 543.260; and repealing ORS 543.510, 543.520 and 543.620. 
+
+ 
+
+
+
+     68th OREGON LEGISLATIVE ASSEMBLY--1995 Regular Session
+
+NOTE:  Matter within  { +  braces and plus signs + } in an
+amended section is new. Matter within  { -  braces and minus
+signs - } is existing law to be omitted. New sections are within
+ { +  braces and plus signs + } .
+
+LC 3428
+
+                         House Bill 3087
+
+Sponsored by Representative NORRIS; Representative FISHER (at the
+  request of Portland General Electric)
+
+
+                             SUMMARY
+
+The following summary is not prepared by the sponsors of the
+measure and is not a part of the body thereof subject to
+consideration by the Legislative Assembly. It is an editor's
+brief statement of the essential features of the measure as
+introduced.
+
+  Repeals provisions causing fully amortized hydroelectric
+project to become property of state and requiring Water Resources
+Director to establish and maintain amortization reserves.
+Specifies minimum standards apply only to application for new
+hydroelectric project. Requires Water Resources Director to
+convene hydroelectric task force to develop recommendations for
+consolidated state agency process for relicensing of
+hydroelectric projects in Oregon.
+
+                        A BILL FOR AN ACT
+Relating to hydroelectric projects; creating new provisions;
+  amending ORS 543.010, 543.017, 543.050, 543.255 and 543.260;
+  and repealing ORS 543.510, 543.520 and 543.620.
+Be It Enacted by the People of the State of Oregon:
+  SECTION 1. ORS 543.010 is amended to read:
+  543.010. As used in ORS 543.010 to 543.620:
+  (1) 'Actual original cost' includes the sum paid to the state
+at the time the application was made for a preliminary permit;
+the sum paid or secured to be paid to the state by the applicant
+for license at the time such application was made; such sums as
+may be paid to the United States or any department thereof; and
+such sums as shall have been reasonably and prudently expended in
+preliminary investigations, explorations and organization
+expenses, as determined by the Water Resources Commission.
+  (2) 'Project' means a complete unit, improvement or
+development. It includes, among other things, power houses, water
+wheels, conduits or pipes, dams and appurtenant works and
+structures, storage, diverting or forebay reservoirs connected
+therewith, and primary lines transmitting power to the point of
+junction with a distributing system, or with any interconnected
+primary system, miscellaneous works and structures used in
+connection with the unit or any part thereof, rights of way,
+lands, flowage rights and all other properties, rights and
+structures necessary or appropriate in the use, operation and
+maintenance of any such unit.
+    { - (3) 'Net investment' is the actual legitimate cost of a
+project constructed or acquired under a license as determined by
+the Water Resources Commission and according to the
+classification of accounts established by the commission, plus
+similar cost of permanent additions thereto and betterments
+thereof, minus the sum of the following items, if any, earned and
+accumulated during the period of the license from earnings in
+excess of a fair return on the net investment: - }
+    { - (a) Current credit balance to amortization account. - }
+    { - (b) Current credit balance to depreciation account. - }
+    { - (c) Earnings expended for permanent additions or
+betterments. - }
+    { - (d) Surplus not appropriated to one of the accounts
+specified in paragraphs (a), (b) and (c) of this subsection. - }
+  SECTION 2. ORS 543.017 is amended to read:
+  543.017. (1) In order to carry out the policy set forth in ORS
+543.015, the following minimum standards shall apply to any
+action of the Water Resources Commission relating to the
+development of hydroelectric power in Oregon:
+  (a) The anadromous salmon and steelhead resources of Oregon
+shall be preserved. The commission shall not approve
+ { - activity - }  { +  a water right permit or license for any
+new hydroelectric project + } that may result in mortality or
+injury to anadromous salmon and steelhead resources or loss of
+natural habitat of any anadromous salmon and steelhead resources
+except when an applicant proposes to modify an existing facility
+or project in such a manner that can be shown to restore, enhance
+or improve anadromous fish populations within that river system.
+  (b)   { - Any activity related to hydroelectric development - }
+ { +  The commission + } shall   { - be consistent - }  { +  not
+approve a water right permit or license for any new hydroelectric
+project that is inconsistent + } with the provisions of the
+Columbia River Basin Fish and Wildlife Program providing for the
+protection, mitigation and enhancement of the fish and wildlife
+resources of the region as adopted by the Pacific Northwest
+Electric Power and Conservation Planning Council pursuant to
+Public Law 96-501.
+  (c) Except as provided in this paragraph, no   { - activity - }
+ { +  water right permit or license for a new hydroelectric
+project + } may be approved that results in a net loss of wild
+game fish or recreational opportunities. If a proposed activity
+may result in a net loss of any of the above resources, the
+commission may allow mitigation if the commission finds the
+proposed mitigation in the project vicinity is acceptable.
+Proposed mitigation which may result in a wild game fish
+population or the fishery the wild game fish population provides,
+being converted to a hatchery dependent resource is not
+acceptable mitigation. A water dependent recreational opportunity
+must be mitigated by another water dependent recreational
+opportunity. Mitigation of water dependent recreational
+opportunities which, in the judgment of the commission, are of
+statewide significance with a recreational opportunity that is
+readily available on other waters of this state is not acceptable
+mitigation. In deciding whether mitigation is acceptable, the
+commission shall consult with other local, state and federal
+agencies.
+  (d) Other natural resources in the   { - project - }
+vicinity { +  of a new or existing project, + } including water
+quality, wildlife, scenic and aesthetic values, historic,
+cultural and archaeological sites, shall be maintained or
+enhanced. No   { - activity - }  { +  water right permit or
+license for a new hydroelectric project + } may be approved
+which, in the judgment of the commission after balancing gains
+and losses to all affected natural resources, may result in a net
+loss of natural resources. In determining whether the proposed
+ { - activity - }  { +  new hydroelectric project + } may result
+in a net loss of natural resources, the commission may consider
+mitigation if the commission determines the proposed mitigation
+ { - in the project vicinity - }  is acceptable. Mitigation may
+include appropriate measures considered necessary to meet the net
+loss standard. In determining whether mitigation is acceptable
+the commission shall consult with appropriate state, federal and
+local agencies.
+  (e) In determining whether it is in the public interest to
+allocate water for a proposed  { + new + } hydroelectric
+development, the commission shall consider present and future
+power needs and shall make a finding on the need for the power.
+For a hydroelectric project with a nominal electric generating
+capacity of 25 megawatts or more, the Water Resources Commission
+shall consider any recommendation by the Energy Facility Siting
+Council. The Energy Facility Siting Council's recommendation
+shall be based solely on information contained in the hearing
+record of the Water Resources Commission. The commission's order
+on the proposed hydroelectric development shall describe the
+Energy Facility Siting Council's recommendations on the need for
+the power. If the commission's decision on the need for power is
+contrary to the Energy Facility Siting Council's recommendation,
+the commission's order shall explain the commission's failure to
+follow the recommendation of the Energy Facility Siting Council.
+The commission also shall consult with the Energy Facility Siting
+Council on other matters within the expertise of the Energy
+Facility Siting Council.
+  (2) The commission shall adopt all necessary rules to carry out
+the policy set forth in ORS 543.015 and to implement the minimum
+standards set forth in subsection (1) of this section. In the
+absence of implementing rules,   { - any action of the commission
+relating to hydroelectric development - }  { +  the approval of
+the commission of any water right or license for a new
+hydroelectric project + } shall comply with the standards as set
+forth in this section.
+  SECTION 3. ORS 543.050 is amended to read:
+  543.050. The Water Resources Commission may:
+  (1) Issue preliminary permits, as provided in ORS 543.210 to
+543.250, to any person qualified to become a licensee.
+  (2) Issue licenses, as provided in ORS 543.260, to citizens of
+the United States, associations of citizens, or private
+corporations organized under the laws of the United States or any
+state of the United States, to appropriate, initiate, perfect,
+acquire and hold the right to the use of waters within the state,
+including waters over which the state has concurrent
+jurisdiction, and to construct, operate and maintain dams,
+reservoirs, power houses, conduits, transmission lines, and all
+other works and structures necessary or convenient for the use of
+the waters in the generation and utilization of electricity.
+  (3) Conduct investigations and collect information the
+commission considers necessary or useful for the purposes of ORS
+543.010 to 543.620 and cooperate with the Federal Government and
+adjoining states concerning all such matters, particularly with
+reference to waters forming the boundary between this state and
+another state.
+  (4) Prescribe the forms of all accounts, records and memoranda
+to be kept by licensees under ORS 543.010 to 543.620  { - , and
+make all rules and regulations with respect thereto deemed
+necessary or expedient. The Water Resources Commission shall
+employ and promulgate standard regulations for accounting,
+determination of depreciation, amortization, net investment, rate
+of return and allocation of earnings, etc., and a certified copy
+of such accounting data shall be filed with the Water Resources
+Commission from time to time, as may be required by the
+commission - } .
+  (5) Examine at any time all accounts, books of account and
+documents and data related to the business of a licensee under
+ORS 543.010 to 543.620; and require a licensee to submit,
+whenever required by the commission, reports and statements under
+oath containing information as to assets, liabilities,
+capitalization, gross receipts, interest and dividend
+requirements, interest due and paid, amortization and other
+reserves, net investment, cost of any project constructed,
+maintained or operated, in whole or in part, cost of maintenance,
+operation, renewals, replacements, cost of production,
+transmission, distribution and sale of electricity, and other
+data as the commission may require.
+  (6) Perform all acts, exercise all powers and issue all orders
+which, in the judgment and discretion of the commission, are
+necessary to effectuate the purposes of ORS 543.010 to 543.620.
+  SECTION 4. ORS 543.255 is amended to read:
+  543.255. (1) Whenever the Water Resources Commission receives
+an application to appropriate water for { +  a new + }
+hydroelectric
+  { - power - }  { +  project + } under ORS 537.140 to 537.320 or
+for a hydroelectric permit or license under ORS 543.010 to
+543.620, the commission shall determine whether the impacts of
+the project would be cumulative with:
+  (a) Impacts of other proposed hydroelectric projects for which
+an application is pending before the commission; or
+  (b) Existing hydroelectric projects in the same river basin.
+  (2) If the commission determines that there is no possibility
+that the hydroelectric projects proposed in pending applications
+or existing projects may have cumulative effects, the commission
+shall issue an order setting forth the commission's determination
+that there are no cumulative effects and the commission's
+decision that consolidated review is not required.
+  (3) If the commission determines that pending applications or
+existing projects may have cumulative effects, the commission
+shall conduct a consolidated review before approving any
+application in the affected river basin. A consolidated review
+process shall be conducted as a contested case hearing under the
+applicable provisions of ORS 183.310 to 183.550 and shall include
+a study of the individual and cumulative effects of proposed
+hydroelectric projects for which applications are pending before
+the commission and existing hydroelectric projects. In its final
+order on an application, the commission shall include its
+findings on cumulative impacts. The findings of the commission
+under this section must be sufficient to support the commission's
+decision to approve or deny an application.
+  (4) Any application for a project in the same river basin filed
+after the commission begins a consolidated review contested case
+hearing shall not be reviewed until the commission has issued
+final findings on cumulative effects for all projects included in
+the consolidated review proceeding.
+  (5) At the request of an applicant for a permit to appropriate
+water for  { + a new + } hydroelectric   { - purposes - }  { +
+project + } under ORS 537.140 to 537.320 or for a permit or
+license under ORS 543.010 to 543.620, the commission may
+immediately upon receiving such application begin the
+consolidated review proceeding under subsection (3) of this
+section.
+  SECTION 5. ORS 543.260 is amended to read:
+  543.260. (1) A license may be issued by the Water Resources
+Commission to any qualified   { - licensee - }  { +  person + }
+for a period not exceeding 50 years. { +  If the project is
+subject to regulation by the Federal Energy Regulatory
+Commission, the term shall be concurrent with and expire upon
+expiration of the federal license for the project. + } Each
+license shall be conditioned upon acceptance by the licensee of
+all the terms and conditions of ORS 543.010 to 543.620, and such
+further terms and conditions as the commission may prescribe, not
+inconsistent with those sections. All such terms and conditions,
+and their acceptance by the licensee, shall be expressed in the
+license. A license may be terminated for the reasons and in the
+manner provided in ORS 543.010 to 543.620. The form of license
+containing all the terms and conditions may be set forth in the
+preliminary permit.
+  (2) The commission may deny any application for a license if it
+appears that the applicant has failed to comply substantially
+with the terms and conditions of the preliminary permit or,
+notwithstanding the commission has issued a preliminary permit,
+if in the judgment of the commission the project is unfeasible or
+the public interest requires the denial thereof.
+  (3) A municipal corporation or people's utility district shall
+be given preference on any project in the issuance of a license,
+upon condition that the municipal corporation or people's utility
+district exercising such preference right shall be required to
+reimburse the holder of a preliminary permit for all reasonable
+actual expenditures made by the holder upon the project described
+or referred to therein.
+  SECTION 6.  { + (1) Not later than 60 days after the effective
+date of this Act, the Water Resources Director shall convene a
+hydroelectric task force. The task force shall include
+representatives from:
+  (a) The State Department of Fish and Wildlife;
+  (b) The Department of Environmental Quality;
+  (c) The State Parks and Recreation Department;
+  (d) The Public Utility Commission;
+  (e) The Division of State Lands;
+  (f) The Department of Energy;
+  (g) Investor-owned utilities;
+  (h) Publicly owned utilities;
+  (i) Municipalities;
+  (j) Environmental organizations; and
+  (k) Non-utility owners of hydroelectric projects.
+  (2) The task force shall develop a recommendation to be
+presented to the Sixty-ninth Legislative Assembly. The
+recommendations shall include suggested legislative changes
+necessary for the development of a consolidated state agency
+process for the relicensing of hydroelectric projects in Oregon,
+which shall be used to develop the response of Oregon state
+agencies in the Federal Energy Regulatory Commission relicensing
+process. + }
+  SECTION 7.  { + ORS 543.510, 543.520 and 543.620 are
+repealed. + }
+                         ----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

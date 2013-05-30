@@ -1,0 +1,562 @@
+result:"hubble telescope:40203" achievements:881586
+$1_1:hubble telescope
+$word_2:achievements
+target:"hubble telescope:40203" achievements:881586 anote:"hubble telescope" "achievements"
+q_accu:1
+
+result:"hubble telescope:40203" achievements:881586
+$1_1:hubble telescope
+$word_2:achievements
+target:"hubble telescope:40203" achievements:881586 anote:"hubble telescope" "achievements"
+seg accuracy:1,1,1,2
+
+result:"new hydroelectric" projects:160483
+$1_2:new hydroelectric
+target:"new hydroelectric" projects:160483 anote:"new" "hydroelectric projects"
+q_accu:0
+
+result:"new hydroelectric" projects:160483
+$1_2:new hydroelectric
+$word_2:projects
+target:"new hydroelectric" projects:160483 anote:"new" "hydroelectric projects"
+seg accuracy:0,0,0,0
+
+result:"brain cancer:37284" radio_waves:604830 radio_waves:604830
+$1_1:brain cancer
+$word_1:radio waves
+$word_1:radio waves
+target:"brain cancer:37284" radio_waves:604830 radio_waves:604830 anote:"radio waves" "brain cancer"
+q_accu:1
+
+result:"brain cancer:37284" radio_waves:604830 radio_waves:604830
+$1_1:brain cancer
+$word_1:radio waves
+$word_1:radio waves
+target:"brain cancer:37284" radio_waves:604830 radio_waves:604830 anote:"radio waves" "brain cancer"
+seg accuracy:1,1.5,1.2,3
+
+result:"marine" "vegetation"
+$1_2:marine
+$1_2:vegetation"
+target:"marine" "vegetation" anote:"marine" "vegetation"
+q_accu:0
+
+result:"marine" "vegetation"
+$1_2:marine
+$1_2:vegetation"
+target:"marine" "vegetation" anote:"marine" "vegetation"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"art crime:12388799" international:3741372
+$1_1:art crime
+$word_2:international
+target:"art crime:12388799" international:3741372 anote:"international" "art crime"
+q_accu:1
+
+result:"art crime:12388799" international:3741372
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$1_1:art crime
+$word_2:international
+target:"art crime:12388799" international:3741372 anote:"international" "art crime"
+seg accuracy:1,1,1,2
+
+result:"cult" "lifestyles"
+$1_2:cult
+$1_2:lifestyles"
+target:"cult" "lifestyles" anote:"cult" "lifestyles"
+q_accu:0
+
+result:"cult" "lifestyles"
+$1_2:cult
+$1_2:lifestyles"
+target:"cult" "lifestyles" anote:"cult" "lifestyles"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"iran-iraq" "cooperation"
+$1_2:iran-iraq
+$1_2:cooperation"
+target:"iran-iraq" "cooperation" anote:"iran-iraq" "cooperation"
+q_accu:0
+
+result:"iran-iraq" "cooperation"
+$1_2:iran-iraq
+$1_2:cooperation"
+target:"iran-iraq" "cooperation" anote:"iran-iraq" "cooperation"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"black bear:51054" attacks:458649
+$1_1:black bear
+$word_2:attacks
+target:"black bear:51054" attacks:458649 anote:"black bear" "attacks"
+q_accu:1
+
+result:"black bear:51054" attacks:458649
+$1_1:black bear
+$word_2:attacks
+target:"black bear:51054" attacks:458649 anote:"black bear" "attacks"
+seg accuracy:1,1,1,2
+
+result:"airport security:284770"
+1:airport security "airport security"
+target:"airport security:284770" anote:"airport security"
+q_accu:1
+
+result:"airport security:284770"
+1:airport security "airport security"
+target:"airport security:284770" anote:"airport security"
+seg accuracy:1,1,1,1
+
+result:"abuses" "e-mail"
+$1_2:abuses
+$1_2:e-mail"
+target:"abuses" "e-mail" anote:"abuses" "e-mail"
+q_accu:0
+
+result:"abuses" "e-mail"
+$1_2:abuses
+$1_2:e-mail"
+target:"abuses" "e-mail" anote:"abuses" "e-mail"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"overseas tobacco" sales:155698
+$1_2:overseas tobacco
+target:"overseas tobacco" sales:155698 anote:"overseas" "tobacco sales"
+q_accu:0
+
+result:"overseas tobacco" sales:155698
+$1_2:overseas tobacco
+$word_2:sales
+target:"overseas tobacco" sales:155698 anote:"overseas" "tobacco sales"
+seg accuracy:0,0,0,0
+
+result:"wildlife" "extinction"
+$1_2:wildlife
+$1_2:extinction"
+target:"wildlife" "extinction" anote:"wildlife" "extinction"
+q_accu:0
+
+result:"wildlife" "extinction"
+$1_2:wildlife
+$1_2:extinction"
+target:"wildlife" "extinction" anote:"wildlife" "extinction"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"antarctica" "exploration"
+$1_2:antarctica
+$1_2:exploration"
+target:"antarctica" "exploration" anote:"antarctica" "exploration"
+q_accu:0
+
+result:"antarctica" "exploration"
+$1_2:antarctica
+$1_2:exploration"
+target:"antarctica" "exploration" anote:"antarctica" "exploration"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"journalist" "risks"
+$1_2:journalist
+$1_2:risks"
+target:"journalist" "risks" anote:"journalist" "risks"
+q_accu:0
+
+result:"journalist" "risks"
+$1_2:journalist
+$1_2:risks"
+target:"journalist" "risks" anote:"journalist" "risks"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"human smuggling:68714"
+1:human smuggling "human smuggling"
+target:"human smuggling:68714" anote:"human smuggling"
+q_accu:1
+
+result:"human smuggling:68714"
+1:human smuggling "human smuggling"
+target:"human smuggling:68714" anote:"human smuggling"
+seg accuracy:1,1,1,1
+
+result:"transportation tunnel" disasters:8137
+$1_2:transportation tunnel
+$word_2:disasters
+target:"transportation tunnel" disasters:8137 anote:"transportation tunnel" "disasters"
+q_accu:1
+
+result:"transportation tunnel" disasters:8137
+$1_2:transportation tunnel
+$word_2:disasters
+target:"transportation tunnel" disasters:8137 anote:"transportation tunnel" "disasters"
+seg accuracy:1,1,1,2
+
+result:"native american casino:58286"
+1:native american casino "native american casino"
+target:"native american casino:58286" anote:"native american casino"
+q_accu:1
+
+result:"native american casino:58286"
+1:native american casino "native american casino"
+target:"native american casino:58286" anote:"native american casino"
+seg accuracy:1,1,1,1
+
+result:"nobel prize winners:1175987"
+1:nobel prize winners "nobel prize winners"
+target:"nobel prize winners:1175987" anote:"nobel prize winners"
+q_accu:1
+
+result:"nobel prize winners:1175987"
+1:nobel prize winners "nobel prize winners"
+target:"nobel prize winners:1175987" anote:"nobel prize winners"
+seg accuracy:1,1,1,1
+
+result:"hydrogen energy:906156"
+1:hydrogen energy "hydrogen energy"
+target:"hydrogen energy:906156" anote:"hydrogen energy"
+q_accu:1
+
+result:"hydrogen energy:906156"
+1:hydrogen energy "hydrogen energy"
+target:"hydrogen energy:906156" anote:"hydrogen energy"
+seg accuracy:1,1,1,1
+
+result:"euro" "opposition"
+$1_2:euro
+$1_2:opposition"
+target:"euro" "opposition" anote:"euro" "opposition"
+q_accu:0
+
+result:"euro" "opposition"
+$1_2:euro
+$1_2:opposition"
+target:"euro" "opposition" anote:"euro" "opposition"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"mental illness:19356" drugs:9311172
+$1_1:mental illness
+$word_2:drugs
+target:"mental illness:19356" drugs:9311172 anote:"mental illness" "drugs"
+q_accu:1
+
+result:"mental illness:19356" drugs:9311172
+$1_1:mental illness
+$word_2:drugs
+target:"mental illness:19356" drugs:9311172 anote:"mental illness" "drugs"
+seg accuracy:1,1,1,2
+
+result:"technology transfer:315952" illegal:18949668
+$1_1:technology transfer
+$word_2:illegal
+target:"technology transfer:315952" illegal:18949668 anote:"illegal" "technology transfer"
+q_accu:1
+
+result:"technology transfer:315952" illegal:18949668
+$1_1:technology transfer
+$word_2:illegal
+target:"technology transfer:315952" illegal:18949668 anote:"illegal" "technology transfer"
+seg accuracy:1,1,1,2
+
+result:"mercy killing:9587"
+1:mercy killing "mercy killing"
+target:"mercy killing:9587" anote:"mercy killing"
+q_accu:1
+
+result:"mercy killing:9587"
+1:mercy killing "mercy killing"
+target:"mercy killing:9587" anote:"mercy killing"
+seg accuracy:1,1,1,1
+
+result:"home schooling:13603"
+1:home schooling "home schooling"
+target:"home schooling:13603" anote:"home schooling"
+q_accu:1
+
+result:"home schooling:13603"
+1:home schooling "home schooling"
+target:"home schooling:13603" anote:"home schooling"
+seg accuracy:1,1,1,1
+
+result:"automobile" "recalls"
+$1_2:automobile
+$1_2:recalls"
+target:"automobile" "recalls" anote:"automobile" "recalls"
+q_accu:0
+
+result:"automobile" "recalls"
+$1_2:automobile
+$1_2:recalls"
+target:"automobile" "recalls" anote:"automobile" "recalls"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"oceanographic vessels:1540172"
+1:oceanographic vessels "oceanographic vessels"
+target:"oceanographic vessels:1540172" anote:"oceanographic vessels"
+q_accu:1
+
+result:"oceanographic vessels:1540172"
+1:oceanographic vessels "oceanographic vessels"
+target:"oceanographic vessels:1540172" anote:"oceanographic vessels"
+seg accuracy:1,1,1,1
+
+result:"minorities germany" foreign:633574
+$1_2:minorities germany
+target:"minorities germany" foreign:633574 anote:"foreign minorities", "germany"
+q_accu:0
+
+result:"minorities germany" foreign:633574
+$1_2:minorities germany
+$word_2:foreign
+target:"minorities germany" foreign:633574 anote:"foreign minorities", "germany"
+seg accuracy:0,0,0,0
+
+result:"peace talks:1" ireland:147575
+$1_1:peace talks
+$word_2:ireland
+target:"peace talks:1" ireland:147575 anote:"ireland", "peace talks"
+q_accu:1
+
+result:"peace talks:1" ireland:147575
+$1_1:peace talks
+$word_2:ireland
+target:"peace talks:1" ireland:147575 anote:"ireland", "peace talks"
+seg accuracy:1,1,1,2
+
+result:"tropical storms:8282374"
+1:tropical storms "tropical storms"
+target:"tropical storms:8282374" anote:"tropical storms"
+q_accu:1
+
+result:"tropical storms:8282374"
+1:tropical storms "tropical storms"
+target:"tropical storms:8282374" anote:"tropical storms"
+seg accuracy:1,1,1,1
+
+result:"pan am:81024" legal 103
+$1_1:pan am
+target:"pan am:81024" legal 103 anote:"legal", "pan am 103"
+q_accu:0
+
+result:"pan am:81024" legal 103
+$1_1:pan am
+$word_3:legal
+$word_3:103
+target:"pan am:81024" legal 103 anote:"legal", "pan am 103"
+seg accuracy:0.333333333333333,0.5,0.4,1
+
+result:"three gorges project:65192"
+1:three gorges project "three gorges project"
+target:"three gorges project:65192" anote:"three gorges project"
+q_accu:1
+
+result:"three gorges project:65192"
+1:three gorges project "three gorges project"
+target:"three gorges project:65192" anote:"three gorges project"
+seg accuracy:1,1,1,1
+
+result:"automobile tires" recycle:70157
+$1_2:automobile tires
+$word_2:recycle
+target:"automobile tires" recycle:70157 anote:"recycle", "automobile tires"
+q_accu:1
+
+result:"automobile tires" recycle:70157
+$1_2:automobile tires
+$word_2:recycle
+target:"automobile tires" recycle:70157 anote:"recycle", "automobile tires"
+seg accuracy:1,1,1,2
+
+result:"law enforcement:537859" dogs:4269567
+$1_1:law enforcement
+$word_2:dogs
+target:"law enforcement:537859" dogs:4269567 anote:"law enforcement", "dogs"
+q_accu:1
+
+result:"law enforcement:537859" dogs:4269567
+$1_1:law enforcement
+$word_2:dogs
+target:"law enforcement:537859" dogs:4269567 anote:"law enforcement", "dogs"
+seg accuracy:1,1,1,2
+
+result:"uv damage" eyes:1070221
+$1_2:uv damage
+$word_2:eyes
+target:"uv damage" eyes:1070221 anote:"uv damage", "eyes"
+q_accu:1
+
+result:"uv damage" eyes:1070221
+$1_2:uv damage
+$word_2:eyes
+target:"uv damage" eyes:1070221 anote:"uv damage", "eyes"
+seg accuracy:1,1,1,2
+
+result:"greek philosophy:1" stoicism:19224834
+$1_1:greek philosophy
+target:"greek philosophy:1" stoicism:19224834 anote:"greek", "philosophy", "stoicism"
+q_accu:0
+
+result:"greek philosophy:1" stoicism:19224834
+$1_1:greek philosophy
+$word_2:stoicism
+target:"greek philosophy:1" stoicism:19224834 anote:"greek", "philosophy", "stoicism"
+seg accuracy:0.5,0.333333333333333,0.4,1
+
+result:"population growth:940606" curbing:3600229
+$1_1:population growth
+$word_2:curbing
+target:"population growth:940606" curbing:3600229 anote:"curbing" "population growth"
+q_accu:1
+
+result:"population growth:940606" curbing:3600229
+$1_1:population growth
+$word_2:curbing
+target:"population growth:940606" curbing:3600229 anote:"curbing" "population growth"
+seg accuracy:1,1,1,2
+
+result:"railway accidents:963688"
+1:railway accidents "railway accidents"
+target:"railway accidents:963688" anote:"railway accidents"
+q_accu:1
+
+result:"railway accidents:963688"
+1:railway accidents "railway accidents"
+target:"railway accidents:963688" anote:"railway accidents"
+seg accuracy:1,1,1,1
+
+result:"scientific discoveries:615491" inventions:44312
+$1_1:scientific discoveries
+$word_2:inventions
+target:"scientific discoveries:615491" inventions:44312 anote:"inventions", "scientific discoveries"
+q_accu:1
+
+result:"scientific discoveries:615491" inventions:44312
+$1_1:scientific discoveries
+$word_2:inventions
+target:"scientific discoveries:615491" inventions:44312 anote:"inventions", "scientific discoveries"
+seg accuracy:1,1,1,2
+
+result:"u.s. investment" africa:5334607
+$1_2:u.s. investment
+target:"u.s. investment" africa:5334607 anote:"u.s.", "investment", "africa"
+q_accu:0
+
+result:"u.s. investment" africa:5334607
+$1_2:u.s. investment
+$word_2:africa
+target:"u.s. investment" africa:5334607 anote:"u.s.", "investment", "africa"
+seg accuracy:0.5,0.333333333333333,0.4,1
+
+result:"ship" "losses"
+$1_2:ship
+target:"ship" "losses" anote:"ship losses"
+q_accu:0
+
+result:"ship" "losses"
+$1_2:ship
+$1_2:losses"
+target:"ship" "losses" anote:"ship losses"
+seg accuracy:0,0,0,0
+
+result:"price fixing:92026"
+1:price fixing "price fixing"
+target:"price fixing:92026" anote:"price fixing"
+q_accu:1
+
+result:"price fixing:92026"
+1:price fixing "price fixing"
+target:"price fixing:92026" anote:"price fixing"
+seg accuracy:1,1,1,1
+
+result:"bombing wtc" arrests:170638
+$1_2:bombing wtc
+target:"bombing wtc" arrests:170638 anote:"arrests" "bombing" "wtc"
+q_accu:0
+
+result:"bombing wtc" arrests:170638
+$1_2:bombing wtc
+$word_2:arrests
+target:"bombing wtc" arrests:170638 anote:"arrests" "bombing" "wtc"
+seg accuracy:0.5,0.333333333333333,0.4,1
+
+result:"wrongful convictions:21356022"
+1:wrongful convictions "wrongful convictions"
+target:"wrongful convictions:21356022" anote:"wrongful convictions"
+q_accu:1
+
+result:"wrongful convictions:21356022"
+1:wrongful convictions "wrongful convictions"
+target:"wrongful convictions:21356022" anote:"wrongful convictions"
+seg accuracy:1,1,1,1
+
+result:"on-line shopping:1118379" consumer:7818
+$1_1:on-line shopping
+$word_2:consumer
+target:"on-line shopping:1118379" consumer:7818 anote:"consumer" "on-line shopping"
+q_accu:1
+
+result:"on-line shopping:1118379" consumer:7818
+$1_1:on-line shopping
+$word_2:consumer
+target:"on-line shopping:1118379" consumer:7818 anote:"consumer" "on-line shopping"
+seg accuracy:1,1,1,2
+
+result:"family leave:722484" law:18949668
+$1_1:family leave
+$word_2:law
+target:"family leave:722484" law:18949668 anote:"family leave" "law"
+q_accu:1
+
+result:"family leave:722484" law:18949668
+$1_1:family leave
+$word_2:law
+target:"family leave:722484" law:18949668 anote:"family leave" "law"
+seg accuracy:1,1,1,2
+
+result:"tax evasion:395564" indicted:14559
+$1_1:tax evasion
+$word_2:indicted
+target:"tax evasion:395564" indicted:14559 anote:"tax evasion" "indicted"
+q_accu:1
+
+result:"tax evasion:395564" indicted:14559
+$1_1:tax evasion
+$word_2:indicted
+target:"tax evasion:395564" indicted:14559 anote:"tax evasion" "indicted"
+seg accuracy:1,1,1,2
+
+result:"ethnic population" u.s.:3434750
+$1_2:ethnic population
+$word_2:u.s.
+target:"ethnic population" u.s.:3434750 anote:"u.s." "ethnic population"
+q_accu:1
+
+result:"ethnic population" u.s.:3434750
+$1_2:ethnic population
+$word_2:u.s.
+target:"ethnic population" u.s.:3434750 anote:"u.s." "ethnic population"
+seg accuracy:1,1,1,2
+
+result:"teenage pregnancy:228824"
+1:teenage pregnancy "teenage pregnancy"
+target:"teenage pregnancy:228824" anote:"teenage pregnancy"
+q_accu:1
+
+result:"teenage pregnancy:228824"
+1:teenage pregnancy "teenage pregnancy"
+target:"teenage pregnancy:228824" anote:"teenage pregnancy"
+seg accuracy:1,1,1,1
+
+result:"family-planning" "aid"
+$1_2:family-planning
+$1_2:aid"
+target:"family-planning" "aid" anote:"family-planning" "aid"
+q_accu:0
+
+result:"family-planning" "aid"
+$1_2:family-planning
+$1_2:aid"
+target:"family-planning" "aid" anote:"family-planning" "aid"
+seg accuracy:0.5,0.5,0.5,1
+
+Accuracy at query level is:0.63265306122449
+
+Accuracy at segmentation level is:0.772108843537415,0.775510204081633,0.771428571428571
+
+

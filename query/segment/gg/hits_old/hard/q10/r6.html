@@ -1,0 +1,710 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>Exchange 2000 Postmaster@IP And Abuse@IP Mailboxes</title>
+  <meta name="keywords" content="ADUC, ADSI, posmaster@IP address, abuse@IP address, junk email, domain,">
+  <meta name="description" content="If you ever need to add Postmaster@IP And Abuse@IP addresses to your Exchange 2000 server, you will not be able to do so with ADUC. This article describes a way in which it can be done with ADSI Edit.">
+  <meta name="verify-v1" content="1pjiRGtFTXh9gJKvOdrhGX+4RpV/lj6XpcsL+7wRKRo=" />
+  <meta name="verify-v1" content="lHtjYQ7qNoP/7bPmKAsHf9w1xdSWqToUBmhAIipBpmM=" />
+
+
+  <link type="text/css" rel="stylesheet" href="/css/site-mse/screen.css"	media="screen" title="Screen default"><link type="text/css" rel="stylesheet" href="/css/site-mse/print.css"	media="print"  title="Print default">
+
+
+  <link rel="alternate" type="application/rss+xml" title="MSExchange RSS Feed" href="http://rss.msexchange.org/allnews.xml" />
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <script type="text/javascript" src="/js/utils.js"></script>
+
+  <style type="text/css">
+/*  for "netshelter-bb" */
+body #netshelter-bb{
+	margin-left:-35px;
+}
+#main-banner{
+	top:auto!important;
+	margin-top:80px;
+}
+#sb-community-area{
+	top:auto!important;
+	margin-top:-103px!important;
+}
+/*  for "netshelter-bb" */
+  </style>
+
+</head>
+<body class="art-page">
+ <div id="ww-wrapper">
+   <div id="netshelter-bb">
+	<script type="text/javascript">
+		var ord = window.ord || Math.floor(Math.random()*1E16);
+		document.write('<sc'+'ript type="text/javascript" src="http://ad2.netshelter.net/adj/ns.msexchange/general;ppos=atf;kw=;tile=1;sz=970x90;ord=' + ord + '?"><\/scr'+'ipt>');
+	</script>
+   </div>
+
+  <div id="main-banner">
+   		<script type="text/javascript" src="http://banman.isoftmarketing.com/a.aspx?ZoneID=1&amp;SiteID=2&amp;PageID=9085&amp;CountImpressions=True&amp;Random=1320781291863&amp;Task=Get&amp;IFR=False&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations"></script><noscript>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=1&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291863&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=1&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291863&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+</noscript>
+
+  </div>
+
+  <div id="ww-header">
+   <ul>
+    <!-- li><a href="http://antispam.msexchange.org">Anti Spam</a></li -->
+    <li><a href="http://www.msexchange.org/articles_tutorials/">Articles</a></li>
+    <li><a href="http://www.msexchange.org/authors/">Authors</a></li>
+    <li><a href="http://blogs.msexchange.org/">Blogs</a></li>
+    <!-- li><a href="http://www.msexchange.org/pages/books.asp">Books</a></li -->
+    <li><a href="http://www.msexchange.org/services/Exchange-Hosting/">Exchange Hosting</a></li>
+    <!-- li><a href="/faq/">FAQs</a></li -->
+    <li><a href="http://www.msexchange.org/software/Free-Exchange-Tools/">Free Tools</a></li>
+    <li><a href="http://www.msexchange.org/hardware/">Hardware</a></li>
+    <!-- li><a href="http://www.msexchange.org/pages/links.asp">Links</a></li -->
+    <li><a href="http://forums.msexchange.org/">Message Boards</a></li>
+    <li><a href="http://www.msexchange.org/pages/newsletter.asp">Newsletter</a></li>
+    <li><a href="http://www.msexchange.org/services/">Services</a></li>
+    <li><a href="http://www.msexchange.org/software/">Software</a></li>
+    <li><a href="http://www.msexchange.org/kbase/ExchangeServerTips/">Tips</a></li>
+    <li class="ww-last"><a href="http://whitepapers.msexchange.org/platforms/microsoft-exchange/">White Papers</a></li>
+   </ul>
+
+   <p id="ww-logo">
+    <a href="http://www.msexchange.org"><img src="http://www.msexchange.org/img/logo-mse.gif" alt="MSExchange logo" width="300" width2="310" height="60"></a>
+   </p>
+
+   <form id="ww-search" action="http://www.msexchange.org/search.asp">
+    <p>
+      <label for="ww-search-input"><span>Site Search</span><input id="ww-search-input" name = "s" class="i-text" value="Search Site" onfocus = 'if (this.value == "Search Site") this.value = "";' /></label>
+      <input type="submit" value="" class="i-submit" />
+    </p>
+    <p class="sf-advs"><a href="http://www.msexchange.org/search-adv.asp">Advanced Search</a></p>
+   </form>
+
+   <div id="ww-connect-with-us">
+     <ul>
+      <li><a href="http://www.techgenix.com/content-rss.htm"><img src="/img/rss32.png" alt="RSS" width="32" height="32"></a></li>
+      <li><a href="http://twitter.com/#!/TechGenix"><img src="/img/twitter32.png" alt="Twitter" width="32" height="32"></a></li>
+      <li><a href="http://www.facebook.com/pages/TechGenix/169387059745042"><img src="/img/facebook32.png" alt="FaceBook" width="32" height="32"></a></li>
+     </ul>
+   </div>
+
+  </div>
+
+  
+
+  <div id="ww-container">
+   <div id="ww-cont-one">
+    <div id="ww-cont-two">
+
+     <div id="ww-content">
+
+
+    <ul id="ww-bread" style="margin-bottom:1em;width:100%;zoom:1;overflow:hidden;"><li class="ww-first"><a href="/"><span>Home</span></a>
+  
+         <ul><li><a href="/articles_tutorials/"><span>Articles & Tutorials</span></a>
+  
+         <ul><li><a href="/articles_tutorials/exchange-server-2000/"><span>Exchange 2000 Articles</span></a>
+  
+         <ul><li><a href="/articles_tutorials/exchange-server-2000/monitoring-operations/"><span>Monitoring & Operations</span></a>
+  
+
+         <!-- ul><li><span>Exchange 2000 Postmaster@IP And Abuse@IP Mailboxes</span></li></ul -->
+
+  
+         </ul></li>
+  
+         </ul></li>
+  
+         </ul></li>
+   
+    </ul>
+
+<h1 class="ww-important"><span>Exchange 2000 Postmaster@IP And Abuse@IP Mailboxes</span></h1>
+
+<div id="art-ads-block">
+<!-- Begin -  Site: MSExchange.org Zone: MSE - Rectangle - Articles -->
+<script language="javascript"  type="text/javascript"><!--
+var SiteID = 2;
+var ZoneID = 58;
+var browDateTime = (new Date()).getTime();
+document.write('<s'+'cript lang' + 'uage="jav' + 'ascript" src="http://banman.isoftmarketing.com/a.aspx?ZoneID=' + ZoneID + '&amp;Task=Get&amp;IFR=False&amp;PageID=63187&amp;SiteID=' + SiteID + '&amp;Random=' + browDateTime + '&amp;Keywords=ArtTest">'); document.write('</'+'scr'+'ipt>');
+// --></script>
+<noscript>
+    <a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=54&amp;Task=Click&amp;Mode=HTML&amp;SiteID=7&amp;PageID=63187" target="_blank">
+    <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=54&amp;Task=Get&amp;Mode=HTML&amp;SiteID=7&amp;PageID=63187" width="336" height="280" border="0"  alt=""></a>
+</noscript>
+<!-- End -  Site: MSExchange.org Zone: MSE - Rectangle - Articles -->
+</div>
+
+
+<!-- <<<
+
+seTitle		= "Exchange 2000 Postmaster@IP And Abuse@IP Mailboxes"
+seDescr		= "If you ever need to add Postmaster@IP And Abuse@IP addresses to your Exchange 2000 server, you will not be able to do so with ADUC. This article describes a way in which it can be done with ADSI Edit."
+seKeys		= "ADUC, ADSI, posmaster@IP address, abuse@IP address, junk email, domain,"
+seTags		= ""
+seAuthorName	= "Lee Derbyshire"
+seAuthorUrl	= ""
+seAuthorRss	= ""
+seSectionName	= "Monitoring &amp; Operations"
+seSectionUrl	= "http://www.MSExchange.org/articles_tutorials/exchange-server-2000/monitoring-operations/"
+seSectionRss	= ""
+sePubDate	= "07/07/2003"
+
+>>> -->
+
+<table id="pozor-mne-no-vihoda-net" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top">
+
+<div id="art-descr">
+ If you ever need to add Postmaster@IP And Abuse@IP addresses to your Exchange 2000 server, you will not be able to do so with ADUC. This article describes a way in which it can be done with ADSI Edit.
+</div>
+
+</td><td class="width172" rowspan="2" width="172"></tr><tr><td valign="bottom">
+
+<div id="art-meta">
+ 
+ <ul>
+  <li><span>Published:</span> 	<strong>Jul 07, 2003        </strong></li>
+  <li><span>Updated:</span> 	<strong>Apr 19, 2007        </strong></li>
+  <li><span>Section:</span>
+    <strong><a href="/articles_tutorials/exchange-server-2000/monitoring-operations/">Monitoring &amp; Operations</a></strong>
+  </li>
+  <li><span>Author:</span>
+    
+      <strong>Lee Derbyshire</strong>
+    
+  </li>
+  
+    <li><span>Company:</span> 		<strong><a href="http://www.leederbyshire.com">www.leederbyshire.com</a></strong></li>
+  
+  <li id="am-printversion"><strong><a rel="nofollow" href="?printversion">Printable&nbsp;Version</a></strong></li>
+  <li id="am-adjust-font">
+   <span>Adjust font size:</span>
+   <a class="af-plus" href="#" onclick='var cnt = document.getElementById("ww-content"); cnt.style.fontSize = (cnt.style.fontSize == "")?"1.2em":(parseFloat(cnt.style.fontSize, 1) + 0.1) + "em";'><img src="/img/icon.plus.gif" alt="+"></a>
+   <a class="af-minus" href="#" onclick='var cnt = document.getElementById("ww-content"); cnt.style.fontSize = (cnt.style.fontSize == "")?"1.0em":(parseFloat(cnt.style.fontSize, 1) - 0.1) + "em";'><img src="/img/icon.minus.gif" alt="-"></a>
+  </li>
+
+  
+  <li><span>Rating:</span> 		<strong>4.3/5 - 53 Votes</strong></li>
+ 
+ 
+
+ </ul>
+
+ 
+ <form class="vote-form" action="/pages/vote.asp?id=570" target="vote-win" method="POST">
+  <input type="hidden" name="act" value="vote">
+  <ul>
+   <li id="vf-1"><label>1<input class="i-radio" type="radio" name="rate" value="1"></label></li>
+   <li id="vf-2"><label>2<input class="i-radio" type="radio" name="rate" value="2"></label></li>
+   <li id="vf-3"><label>3<input class="i-radio" type="radio" name="rate" value="3"></label></li>
+   <li id="vf-4"><label>4<input class="i-radio" type="radio" name="rate" value="4"></label></li>
+   <li id="vf-5"><label>5<input class="i-radio" type="radio" name="rate" value="5"></label></li>
+  </ul>
+  <input class="i-image" type="image" src="/img/but-rate.gif" value="Rate this article" onclick='window.open("about:blank", "vote-win", "channelmode=no,directories=no,height=100,width=200,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no");'>
+ </form>
+
+
+ <div class="am-addthis">
+	<!-- AddThis Button BEGIN -->
+
+	<div class="addthis_toolbox addthis_default_style">
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	<a class="addthis_button_tweet"></a>
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=TechGenix"></script>
+	<!-- AddThis Button END -->
+ </div>
+
+</div>
+
+</td></tr></table>
+
+
+<div id="art-header">
+ 
+</div>
+
+<div id="art-content" class="text-block">
+ <!-- >>> -->
+<P align=left><B>Exchange 2000 Postmaster@IP And Abuse@IP Mailboxes<BR></B>By Lee Derbyshire</P>
+<P><B>Introduction<BR></B>The problem of junk email seems to be spiralling out of control, and more and more companies are resorting to email domain blacklists in an effort to control the flood of unwanted messages. As a result, many Exchange admins will inadvertently find their servers blacklisted. Usually, all that is required is to secure your server against open relay, and all is well again.</P>
+<P>Sometimes, however, you might find yourself on a list whose conditions are somewhat stricter than others. And you will have to jump through a few more hoops to get yourself removed from it.</P>
+<P>One such requirement is for your email domain to have two special addresses , <B>postmaster@[xxx.xxx.xxx.xxx]</B> and <B>abuse@[xxx.xxx.xxx.xxx]</B> , which will allow anyone to send email to the administrator of the domain and expect that it will be delivered, regardless of whether or not the domain has functioning DNS. Unfortunately, MS Exchange has never made any provision for these special recipients out of the box, and in Exchange 2000 it is not particularly easy to add them manually.</P>
+<P>If you find yourself in the position of having to add these addresses, or even if you just want to do it to be on the safe side, then this article will describe how it can be done.</P>
+<P><B>Procedure<BR></B>You may first want to confirm that your server is, indeed, incapable of receiving mail destined for these addresses. You cant do it in Outlook because it will just get confused if you try to send an email to, say, postmaster@[192.168.1.3] (although Outlook Express is perfectly happy to do so). The best way to do it is to use <B>Telnet</B> to open a connection to your server on <B>port 25</B> (SMTP) and use standard SMTP commands to send a test message to the server. You can open a telnet session from your <B>Start</B> menu by using the <B>Run</B> dialog as shown in figure 1 and entering the telnet command. The IP address of your server will be different to mine, so throughout the rest of this article you will need to substitute your own IP address instead of 192.168.1.3 .</P>
+<P align=center><?xml:namespace prefix = v ns = "urn:schemas-microsoft-com:vml" /><v:shapetype id=_x0000_t75 coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke join></v:stroke><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"></v:f><v:f eqn="sum @0 1 0"></v:f><v:f eqn="sum 0 0 @1"></v:f><v:f eqn="prod @2 1 2"></v:f><v:f eqn="prod @3 21600 pixelWidth"></v:f><v:f eqn="prod @3 21600 pixelHeight"></v:f><v:f eqn="sum @0 0 1"></v:f><v:f eqn="prod @6 1 2"></v:f><v:f eqn="prod @7 21600 pixelWidth"></v:f><v:f eqn="sum @8 21600 0"></v:f><v:f eqn="prod @7 21600 pixelHeight"></v:f><v:f eqn="sum @10 21600 0"></v:f></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"></v:path></v:shapetype></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/Run11057568668272.gif"></P>
+<P align=left>Fig. 1  Starting a Telnet session from the Start menu.</B></P>
+<P>When you have an open telnet session to your server, you can send a test message to it by using the <B>HELO</B>, <B>MAIL FROM:</B>, <B>RCPT TO:</B> and <B>DATA </B>commands as shown in figure 2. Type <B>QUIT</B> when you have finished.</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/Telnet11057568686518.gif"></B></P>
+<P align=left><B>Fig. 2  An unsuccessful attempt to email postmaster using Telnet.</B></P>
+<P>If you see the expected <B>550 response</B> to the RCPT TO: command as shown above, then you will need to follow the instructions described here. If, on the other hand, you get a <B>250 response</B>, then someone has already beaten you to it and you need go no further.<BR><BR>There are two stages to the process:</P>
+<OL type=1>
+<LI>Persuade Exchange to accept email for the domain [xxx.xxx.xxx.xxx] (i.e. your subnet address). 
+<LI>Assign the postmaster@ and abuse@ email addresses to the relevant mailbox(es).</LI></OL>
+<P>Stage 1 requires a straightforward application of the Exchange System Manager, but there a two quite different approaches to stage 2:</P>
+<P>The first approach (described in this article) requires the use of the Windows 2000 ADSI Edit utility to add the required email addresses to an existing users details. We will add them to the Administrator user, since someone is likely to be checking this mailbox routinely. However, incautious use of ADSI Edit can reduce your precious Exchange server to a beige-coloured brick, so if you are not familiar with its operation, do not attempt to use it.</P>
+<P>If you do not wish to use ADSI Edit, you will need to create two users named postmaster and abuse, and let automatic email address generation create the addresses for you. The reason you cant simply use the Active Directory Users and Computers tool to add the addresses to an existing mailbox is that it simply wont allow you to create email address containing the [ and ] characters.</P>
+<P>To get Exchange to receive email addressed to [xxx.xxx.xxx.xxx], you need to add the IP address as a domain to the Default Recipient Policy using the Exchange System Manager. Start the ESM, and locate the Default Recipient Policy as shown in figure 3:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/ESM11057568727868.gif"></B></P>
+<P align=left><B>Fig. 3  Locating the Default Recipient Policy in ESM.</B></P>
+<P>Double-click the Default Recipient Policy to reveal its properties as shown in figure 4:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/DPP11057568763208.gif"></B></P>
+<P align=left><B>Fig. 4  Email Addresses for the Default Recipient Policy.</B></P>
+<P>You should see your existing domain listed here, but you need to add the servers IP address as a domain. Click the New button to reveal the New E-mail Address dialog shown in figure 5:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/DPP21057568789336.gif"></B></P>
+<P align=left><B>Fig. 5  The New E-mail Address dialog.</B></P>
+<P>Add the IP address as a domain in the form @[xxx.xxx.xxx.xxx] (where xxx.xxx.xxx.xxx is your own servers IP address) as shown in figure 6:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/DPP31057568805019.gif"></B></P>
+<P align=left><B>Fig. 6  Adding the IP address as a domain.</B></P>
+<P>Click OK to add it to the list, and make sure the checkbox to the left is checked. Unfortunately, this means that all users will now get an email address @[xxx.xxx.xxx.xxx] added to their profile, but you will be unable to receive email for this domain if you do not check it. The Default Policy property dialog should now look something like figure 7:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/DPP41057568841731.gif"></B></P>
+<P align=left><B>Fig. 7  The Default Policy properties with the new domain added.</B></P>
+<P>You will be asked (figure 8) if you want to create a new email address @[xxx.xxx.xxx.xxx] for all your existing users. You do not need to do so, but as previously mentioned, all new users will get this address added (although you can safely remove them later).</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/DPP51057568863733.gif"></B></P>
+<P align=left><B>Fig. 8  Address generation query dialog.</B></P>
+<P>Now your Exchange system will accept email addressed to its IP address. Next, we need to add the required email address to the relevant user. Im using the Administrators mailbox, since this will probably be regularly checked for things like virus scanner notifications, badly addressed messages, and so on. Unfortunately, the Active Directory Users and Computers tool will not accept email address with the [ or ] characters, so you need to hard code the addresses with the ADSI Edit utility. Like I have already said; <B>misuse of ADSI Edit can really upset your server</B>, so please <B>proceed only if you are familiar with its operation</B>. Locate the user that you are going to add the addresses to (in this example, Administrator) and view its properties as shown in figure 9:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/ADSIE11057568882360.gif"></B></P>
+<P align=left><B>Fig. 9  ADSI Edit showing the properties of the Administrator user.</B></P>
+<P>Select the property named proxyAddresses from the drop-down box to reveal a string containing the email addresses for the user, as shown in figure 10:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/ADSIE21057568895799.gif"></B></P>
+<P align=left><B>Fig. 10  The proxyAddresses field in ADSI Edit.</B></P>
+<P>Type SMTP:postmaster@[xxx.xxx.xxx.xxx] in the Edit Attribute field (remember that xxx.xxx.xxx.xxx represents your IP address), and click Add to insert it into the string as shown in figure 11. Repeat the operation for the abuse@ address.</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/ADSIE31057568911542.gif"></B></P>
+<P align=left><B>Fig. 11  The postmaster@ and abuse@ address in ADSI Edit.</B></P>
+<P>Now when you look at the Administrators email address in Active Directory Users and Computers, you will see the two extra email addresses as shown in figure 12. You would not have been able to add these addresses using this utility, although you can edit them once theyre in there.</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/ADUC11057568927945.gif"></B></P>
+<P align=left><B>Fig. 12  The postmaster@ and abuse@ address in ADUC</B></P>
+<P>Now if you try to send an email to postmaster@[IP address] (using telnet as before), the mail is sent successfully as shown in figure 13:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/Telnet21057568944449.gif"></B></P>
+<P align=left><B>Fig. 13  A successful attempt to email postmaster using Telnet.</B></P>
+<P>And, as final proof that the email reached its destination, here is the email message in the Administrators mailbox being opened in Outlook:</P>
+<P align=center></P>
+<P align=left><B><IMG src="http://www.msexchange.org/img/upl/Outlook1057568957438.gif"></B></P>
+<P align=left><B>Fig. 14  The test message in MS Outlook.</B></P>
+ <!-- <<< -->
+
+  
+
+ <div class="pl-addthis" style="margin:1em 0;">
+	<!-- AddThis Button BEGIN -->
+	<div class="addthis_toolbox addthis_default_style">
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	<a class="addthis_button_tweet"></a>
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+	<!-- AddThis Button END -->
+ </div>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=253482631371357";
+		  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-comments" data-href="http://www.msexchange.org/articles/Exchange_2000_PostmasterIP_And_AbuseIP_Mailboxes.html" data-num-posts="20" data-width="576"></div>
+
+</div>
+
+
+ 
+<div id="art-about-author">
+ <h1>About Lee Derbyshire</h1>
+ <p>
+  Lee Derbyshire BSc (Hons), MVP MCSE is a full-time IT Professional living in the UK. You can visit his home page at <a href="http://www.leederbyshire.com" target=_blank>www.leederbyshire.com</a>
+ </p>
+ 
+</div>
+
+
+
+
+
+<div id="art-newsletter-subsr">
+ <h1>Receive all the latest articles by email!</h1>
+ <p>Get all articles delivered directly to your mailbox as and when they are released on MSExchange.org! Choose between receiving instant updates with the Real-Time Article Update, or a monthly summary with the Monthly Article Update. Sign up to the MSExchange.org Monthly Newsletter, written by <a href="/Henrik_Walther/">Exchange MVP Henrik Walther</a>, containing news, the hottest tips, Exchange links of the month and much more. Subscribe today and don't miss a thing!</p>
+ <form action="http://www.techgenix.com/newsletter/subscribe.aspx?Task=Join" method="post">
+  <input type="hidden" value="Check" name="JoinType"> 
+  <input type="hidden" value="8,4,15" name="IDList"> 
+  <input type="hidden" value="{D67B20E7-F97D-4537-AFD6-90940C9D0FED}" name="SID"> 
+  <input type="hidden" value="HTML" name="DeliveryFormat">
+  <ul>
+   <li><label><input type="checkbox" name="NewsletterListID_8" value="ON" checked="checked"> Real-Time Article Update<label> (<a target="_blank" href="/MSExchange.org-Real-Time-Article-Update-Newsletter-Sample.htm">click for sample</a>)</li>
+   <li><label><input type="checkbox" name="NewsletterListID_4" value="ON" checked="checked"> Monthly Article Update<label> (<a target="_blank" href="/MSExchange.org-Monthly-Article-Update-Newsletter-Sample.htm">click for sample</a>)</li>
+   <li><label><input type="checkbox" name="NewsletterListID_15" value="ON" checked="checked"> Monthly Newsletter<label> (<a target="_blank" href="/MSExchange.org-Monthly-Website-Newsletter-Sample.htm">click for sample</a>)</li>
+  </ul>
+
+  <p>
+   <input class="i-text" name="Email" value="Enter email address">
+   <input class="i-image" type="image" src="/img/but-subscribe2.gif" value="Subscribe">
+  </p>
+
+  <!-- p class="ww-note">* Please note that we do NOT sell or rent the email addresses belonging to our subscribers; we respect your privacy!</p -->
+ </form>
+</div>
+
+
+<br class="ww-dev">
+
+
+<div id="art-recent">
+ <h1>Latest articles by Lee Derbyshire</h1>
+ <ul>
+   
+  <li>
+   <a href = "/articles-tutorials/exchange-server-2007/mobility-client-access/implementing-captcha-validation-owa-2007-authentication.html">Implementing Captcha Validation with OWA 2007 and Forms-Based Authentication</a>
+   
+  </li>
+   
+  <li>
+   <a href = "/tutorials/PowerControls_v11_Exchange_Restoration_And_Admin.html">PowerControls v1.1 Exchange Restoration And Admin</a>
+   
+  </li>
+   
+  <li>
+   <a href = "/tutorials/Ontrack_PowerControls_v10_Restoration_and_Administration.html">Ontrack PowerControls v1.0 Restoration and Administration</a>
+   
+  </li>
+   
+  <li>
+   <a href = "/tutorials/exclaimer_exchange_2000.html">Product Review: eXclaimer for MS Exchange 2000</a>
+   
+  </li>
+   
+  <li>
+   <a href = "/articles/Windows-2003-Server-Emergency-Management-Services.html">Windows 2003 Server Emergency Management Services</a>
+   
+  </li>
+   
+ </ul>
+</div>
+   <div id="art-related"><h1>Related links</h1><ul>
+<li><a href = "http://www.msexchange.org/tutorials/A_Logon_Screen_For_MS_Exchange_2000_Outlook_Web_Access.html">A Logon Screen For MS Exchange 2000 Outlook Web Access</a></li>
+<li><a href = "http://www.msexchange.org/articles/Access-Exchange-2000-2003-Mailbox-WebDAV.html">Access Your Exchange 2000 / 2003 Mailbox With WebDAV</a></li>
+<li><a href = "http://www.msexchange.org/tutorials/MF016.html">Controlling Users Mailboxes in Exchange 2000</a></li>
+<li><a href = "http://www.msexchange.org/tutorials/Connecting_POP_And_IMAP_Clients_To_MS_Exchange_Server.html">Connecting POP And IMAP Clients To MS Exchange Server</a></li>
+<li><a href = "http://www.msexchange.org/articles/Exchange-Blacklisted.html">Things to Do When Your Exchange gets Blacklisted</a></li>
+</ul></div>
+
+
+
+<div id="art-footer">
+ 
+</div>
+ 
+<!-- End content -->
+      <div id="ww-featured-links">
+       <h1>Featured Links*</h1>
+       <div id="featured-links">
+        		<script type="text/javascript" src="http://banman.isoftmarketing.com/SponsorshipNoRotate.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;CountImpressions=True&amp;Random=1320781291879&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations"></script><noscript>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291879&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291879&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291880&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291880&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291881&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291881&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291882&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291882&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291883&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=13&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291883&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+</noscript>
+
+       </div>
+      </div>
+
+
+      <br style="clear:both;">
+      <div id="extfoot-newsletter-subsr"> <h1>Receive all the latest articles by email!</h1> <p>Receive Real-Time &amp; Monthly MSExchange.org article updates in your mailbox. Enter your email below!<br>Click for <a target="_blank" href="http://www.msexchange.org/MSExchange.org-Real-Time-Article-Update-Newsletter-Sample.htm">Real-Time sample</a> &amp; <a target="_blank" href="http://www.msexchange.org/MSExchange.org-Monthly-Article-Update-Newsletter-Sample.htm">Monthly sample</a></p> <form action="http://www.techgenix.com/newsletter/subscribe.aspx?Task=Join" method="post">  <p>   <input value="Check" name="JoinType" type="hidden">    <input name="IDList" value="4,8" type="hidden">   <input name="NewsletterListID_4" value="ON" type="hidden">   <input name="NewsletterListID_8" value="ON" type="hidden">   <input value="{D67B20E7-F97D-4537-AFD6-90940C9D0FED}" name="SID" type="hidden">    <input value="HTML" name="DeliveryFormat" type="hidden">   <input class="i-text" name="Email" value="Enter Email" onfocus = 'if (this.value == "Enter Email") this.value = "";'>   <input class="i-image" src="/img/but-subscribe2.gif" value="Subscribe" type="image">  </p> </form></div><div id="extfoot-forum"> <h1>Become an MSExchange.org member!</h1> <p>Discuss your Exchange Server issues with thousands of other Exchange experts.  <a href="http://forums.msexchange.org/register.aspx">Click here</a> to join!</p></div>
+
+     </div>
+
+    </div>
+   </div>
+
+<!-- begin right sidebars -->
+
+   <div class="ww-sidebar" id="sb-community-area">
+    <h3><a href="http://forums.msexchange.org/">Community Area</a></h3>
+    <p id="sb-in">
+      <a href="http://forums.msexchange.org/loginflat.aspx">Log in</a>
+      <span class="ww-div">|</span>
+      <a href="http://forums.msexchange.org/register.aspx">Register</a>
+    </p>
+
+    <p id="sb-out">
+      <a href="http://forums.msexchange.org/editprofile.aspx">My Account</a>
+      <span class="ww-div">|</span>
+      <a href="http://forums.msexchange.org/redirect.aspx">Log out</a>
+    </p>
+    <script type="text/javascript" src="http://forums.msexchange.org/ism-script.aspx"></script>
+   </div>
+
+
+   <div  class="ww-sidebar" id="ads-block-top">
+     		<script type="text/javascript" src="http://banman.isoftmarketing.com/a.aspx?ZoneID=26&amp;SiteID=2&amp;PageID=9085&amp;CountImpressions=True&amp;Random=1320781291879&amp;Task=Get&amp;IFR=False&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations"></script><noscript>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=26&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291879&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=26&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291879&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+</noscript>
+
+   </div>
+
+   
+
+   <div  class="ww-sidebar" id="ads-block">
+     		<script type="text/javascript" src="http://banman.isoftmarketing.com/a.aspx?ZoneID=15&amp;SiteID=2&amp;PageID=9085&amp;CountImpressions=True&amp;Random=1320781291879&amp;Task=Get&amp;IFR=False&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations"></script><noscript>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=15&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291879&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=15&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291879&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+</noscript>
+
+     <script type="text/javascript"><!--
+        SkyscraperBannerParser();
+     // --></script>
+   </div>
+
+   <div class="ww-sidebar" id="ads-dell">
+    <h3>Featured freeware!</h3>
+    <a href="http://www.solarwinds.com/register/index.aspx?Program=1323&amp;c=70150000000P9di&amp;CMP=BIZ-TAD-TG-APPS-PAFT-DL-2011"><img src="http://www.msexchange.org/img/PermissionsAnalyzerCollapsedList.png" alt="SolarWinds Permissions Analyzer screenshot" width="145"></a>
+    <p><a href="http://www.solarwinds.com/register/index.aspx?Program=1323&amp;c=70150000000P9di&amp;CMP=BIZ-TAD-TG-APPS-PAFT-DL-2011">Get a free copy of the new SolarWinds Permissions Analyzer!</a></p>
+   </div>
+
+
+   <div  class="ww-sidebar" id="ads-block-bottom">
+     <h3>Solution Center</h3>
+     <div  class="ww-sidebar" id="ads-block-bottom-script">
+      		<script type="text/javascript" src="http://banman.isoftmarketing.com/SponsorshipNoRotate.aspx?ZoneID=27&amp;SiteID=2&amp;PageID=9085&amp;CountImpressions=True&amp;Random=1320781291879&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations"></script>
+     </div>
+   </div>
+
+
+<!-- end right sidebars -->
+
+  </div>
+
+<!-- begin left sidebars -->
+
+   <ul class="ww-sidebar" id="ww-menu" onclick="treeClick(event);">
+    <li><a href = "http://antispam.msexchange.org">Anti Spam Section</a></li>
+    <li class="ww-collapse"><a href="#">Articles &amp; Tutorials</a>
+     <ul>
+      	<li><a href = "http://www.msexchange.org/articles_tutorials/exchange-server-2010/">Exchange    2010 Articles</a></li>
+	<li><a href = "http://www.msexchange.org/articles_tutorials/exchange-server-2007/">Exchange   2007 Articles</a></li>
+	<li><a href = "http://www.msexchange.org/articles_tutorials/exchange-server-2003/">Exchange  2003 Articles</a></li>
+	<li><a href = "http://www.msexchange.org/articles_tutorials/exchange-server-2000/">Exchange 2000 Articles</a></li>
+	<li><a href = "http://www.msexchange.org/articles_tutorials/exchange-server-5-5/">Exchange 5.5 Articles</a></li>
+	<li><a href = "http://www.msexchange.org/articles_tutorials/office-365/">Office 365</a></li>
+	<li class="ww-last"><a href = "http://www.msexchange.org/articles_tutorials/product-reviews/">Product Reviews</a></li>
+
+     </ul>
+    </li>
+    <li class="ww-collapse"><a href="#">Authors</a>
+     <ul>
+      	<li><a href = "http://www.msexchange.org/J_Peter_Bruzzese/">J. Peter Bruzzese </a></li>
+	<li><a href = "http://www.msexchange.org/Andy_Grogan/">Andy Grogan</a></li>
+	<li><a href = "http://www.msexchange.org/Henrik_Walther/">Henrik Walther</a></li>
+	<li><a href = "http://www.msexchange.org/Neil_Hobson/">Neil Hobson</a></li>
+	<li><a href = "http://www.msexchange.org/Anderson_Patricio/">Anderson Patricio</a></li>
+	<li><a href = "http://www.msexchange.org/Jaap_Wesselius/">Jaap Wesselius</a></li>
+	<li><a href = "http://www.msexchange.org/Markus_Klein/">Markus Klein</a></li>
+	<li><a href = "http://www.msexchange.org/Rui_JM_Silva/">Rui Silva</a></li>
+	<li class="ww-last"><a href = "http://www.msexchange.org/Ilse_Van_Criekinge/">Ilse Van Criekinge</a></li>
+
+     </ul>
+    </li>
+    <li><a href="http://blogs.msexchange.org/">Blogs</a></li>
+    <!-- li><a href="http://www.msexchange.org/pages/books.asp">Books</a></li -->
+    <li><a href="http://www.msexchange.org/services/Exchange-Hosting/">Exchange Hosting</a></li>
+    <li class="ww-collapse"><a href="#">Hardware</a>
+     <ul>
+      	<li class="ww-last"><a href = "http://www.msexchange.org/hardware/Mail-Archiving/">Mail Archiving</a></li>
+
+     </ul>
+    </li>
+    <!-- li><a href="http://www.msexchange.org/pages/links.asp">Links</a></li -->
+    <li><a href="http://forums.msexchange.org">Message Boards</a></li>
+    <li><a href="http://migration.msexchange.org/">Migration Section</a></li>
+    <li class="ww-collapse"><a href = "#">Services</a>
+     <ul>
+      	<li><a href = "http://www.msexchange.org/services/Anti-Spam-Filtering/">Anti Spam Filtering</a></li>
+	<li><a href = "http://www.msexchange.org/services/BlackBerry-Hosting/">BlackBerry Hosting</a></li>
+	<li><a href = "http://www.msexchange.org/services/Exchange-Hosting/">Exchange Hosting</a></li>
+	<li class="ww-last"><a href = "http://www.msexchange.org/services/Hosted-Email-Archiving/">Hosted Email Archiving</a></li>
+
+     </ul>
+    </li>
+    <li class="ww-collapse"><a href="#">Software</a>
+     <ul>
+      	<li><a href = "http://www.msexchange.org/software/Administration/">Administration</a></li>
+	<li><a href = "http://www.msexchange.org/software/Anti-Spam/">Anti Spam</a></li>
+	<li><a href = "http://www.msexchange.org/software/Backup-Recovery/">Backup &amp; Recovery</a></li>
+	<li><a href = "http://www.msexchange.org/software/Calendar-Tools/">Calendar Tools</a></li>
+	<li><a href = "http://www.msexchange.org/software/Content-Checking/">Content Checking</a></li>
+	<li><a href = "http://www.msexchange.org/software/CRM-Software/">CRM Software</a></li>
+	<li><a href = "http://www.msexchange.org/software/Disclaimers/">Disclaimers</a></li>
+	<li><a href = "http://www.msexchange.org/software/Document-Management/">Document Management</a></li>
+	<li><a href = "http://www.msexchange.org/software/eDiscovery/">eDiscovery</a></li>
+	<li><a href = "http://www.msexchange.org/software/Email-Anti-Virus/">Email Anti Virus</a></li>
+	<li><a href = "http://www.msexchange.org/software/Email-Archive-Storage/">Email Archive &amp; Storage</a></li>
+	<li><a href = "http://www.msexchange.org/software/Email-Signatures/">Email Signatures</a></li>
+	<li><a href = "http://www.msexchange.org/software/Fax-Connectors/">Fax Connectors</a></li>
+	<li><a href = "http://www.msexchange.org/software/Free-Exchange-Tools/">Free Exchange Tools</a></li>
+	<li><a href = "http://www.msexchange.org/software/List-Servers-Mgmt/">List Servers - Mgmt</a></li>
+	<li><a href = "http://www.msexchange.org/software/Log-Monitoring/">Log Monitoring</a></li>
+	<li><a href = "http://www.msexchange.org/software/Migration/">Migration</a></li>
+	<li><a href = "http://www.msexchange.org/software/Misc-Exchange-server-software/">Misc. Exchange server software</a></li>
+	<li><a href = "http://www.msexchange.org/software/Mobility-Wireless/">Mobility & Wireless</a></li>
+	<li><a href = "http://www.msexchange.org/software/Outlook-Addons/">Outlook Addons</a></li>
+	<li><a href = "http://www.msexchange.org/software/OWA-Addons/">OWA Addons</a></li>
+	<li><a href = "http://www.msexchange.org/software/POP3-Downloaders/">POP3 Downloaders</a></li>
+	<li><a href = "http://www.msexchange.org/software/PST-Management/">PST Management</a></li>
+	<li><a href = "http://www.msexchange.org/software/Reporting/">Reporting</a></li>
+	<li><a href = "http://www.msexchange.org/software/Security-Encryption/">Security &amp; Encryption</a></li>
+	<li class="ww-last"><a href = "http://www.msexchange.org/software/SMS-Paging/">SMS &amp; Paging</a></li>
+
+     </ul>
+    </li>
+    <li><a href="http://www.msexchange.org/kbase/ExchangeServerTips/">Tips &amp; Tricks</a></li>
+    <li><a href="http://whitepapers.msexchange.org/platforms/microsoft-exchange/">White Papers</a></li>
+   </ul>
+
+   <script type="text/javascript">treeParse();</script>
+
+   <div class="ww-sidebar" id="sb-featured-product">
+    <h3>Featured Products</h3>
+    		<script type="text/javascript" src="http://banman.isoftmarketing.com/SponsorshipNoRotate.aspx?ZoneID=14&amp;SiteID=2&amp;PageID=9085&amp;CountImpressions=True&amp;OrderBy=abc&amp;Random=1320781291894&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations"></script><noscript>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=14&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291894&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=14&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291894&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+	<p><a href="http://banman.isoftmarketing.com/a.aspx?ZoneID=14&amp;SiteID=2&amp;PageID=9085&amp;Task=Click&amp;Random=1320781291895&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" target="_blank">  <img src="http://banman.isoftmarketing.com/a.aspx?ZoneID=14&amp;SiteID=2&amp;PageID=9085&amp;Random=1320781291895&amp;Task=Get&amp;Mode=HTML&amp;Keywords=ArticlesTutorialsExchange2000ArticlesMonitoringOperations" border="0"  alt=""></a></p>
+</noscript>
+
+   </div>
+
+   <div class="ww-sidebar" id="sb-featured-book">
+    <h3>Featured Book</h3>
+    <p>
+     <a href="http://www.amazon.com/exec/obidos/ASIN/1597491373/isaserver1-20/" target="_blank">
+       <img src="http://www.msexchange.org/img/mse-featured-book.jpg" border="0" width="75">
+     </a>
+     <br>
+     Order today <a href="http://www.amazon.com/exec/obidos/ASIN/1597491373/isaserver1-20/" target="_blank">Amazon.com</a>
+     <br>
+     Special Preview: <a href="http://www.msexchange.org/tutorials/Configuring-Exchange-Server-2007-Preview-Chapter9-Disaster-Recovery-Exchange-Server-2007.html">Read Chapter 9 here</a>
+    </p>
+   </div>
+
+   <div class="ww-sidebar" id="sb-poll">
+	<h3>Readers' Choice</h3>
+	<form method="POST" action="http://www.MSExchange.org/poll/vote.asp">
+	<p id="pl-question"><input type="hidden" name="QID" value="295" /><strong>Which is your preferred Exchange Server administration add on?</strong></p>
+		<ul>
+		<li><label for="pl-item-3669"><input id="pl-item-3669" name="AID" type="radio" value="3669"><span>CodeTwo Exchange Rules Pro</span></label></li>
+		<li><label for="pl-item-3670"><input id="pl-item-3670" name="AID" type="radio" value="3670"><span>ENow Mailscape</span></label></li>
+		<li><label for="pl-item-3689"><input id="pl-item-3689" name="AID" type="radio" value="3689"><span>Exclaimer Auto Responder</span></label></li>
+		<li><label for="pl-item-3671"><input id="pl-item-3671" name="AID" type="radio" value="3671"><span>Mail Attender</span></label></li>
+		<li><label for="pl-item-3672"><input id="pl-item-3672" name="AID" type="radio" value="3672"><span>NetIQ Exchange Administrator</span></label></li>
+		<li><label for="pl-item-3673"><input id="pl-item-3673" name="AID" type="radio" value="3673"><span>Permessa Email Control! Express</span></label></li>
+		<li><label for="pl-item-3674"><input id="pl-item-3674" name="AID" type="radio" value="3674"><span>Quest Spotlight on Messaging</span></label></li>
+		<li><label for="pl-item-3675"><input id="pl-item-3675" name="AID" type="radio" value="3675"><span>Symprex Folder Permissions Manager</span></label></li>
+		<li><label for="pl-item-3676"><input id="pl-item-3676" name="AID" type="radio" value="3676"><span>U-BTech Exchange Tasks 2010</span></label></li>
+		<li id="pl-question-other">
+			<label for="pl-item-0"><input id="pl-item-0" name="AID" type="radio" value="3677"><span>Other</span></label>
+			<input id="pl-other" name="other" type="text" value="please specify" onfocus="if (this.defaultValue==this.value) { this.value = ''; }" />
+		</li>
+		</ul>
+	<p id="pl-submit"><input type="submit" value="Vote!"></p>
+	</form>
+</div>
+
+
+
+   <div class="ww-sidebar" id="sb-recommended-sites">
+    <h3>TechGenix Sites</h3>
+    <dl class="techgenix-sites">
+     <dt><a href="http://www.isaserver.org">ISAserver.org</a></dt>
+     <dd><a href="http://www.isaserver.org">The No.1 Forefront TMG / UAG and ISA Server resource site.</a></dd>
+     <!-- dt><a href="http://www.msexchange.org">MSExchange.org</a></dt>
+     <dd><a href="http://www.msexchange.org">The leading Microsoft Exchange Server 2010 / 2007 / 2003 resource site.</a></dd -->
+     <dt><a href="http://www.windowsecurity.com">WindowSecurity.com</a></dt>
+     <dd><a href="http://www.windowsecurity.com">Network Security &amp; Information Security resource for IT administrators.</a></dd>
+     <dt><a href="http://www.windowsnetworking.com">WindowsNetworking.com</a></dt>
+     <dd><a href="http://www.windowsnetworking.com">Windows Server 2008 / 2003 &amp; Windows 7 networking resource site.</a></dd>
+     <dt><a href="http://www.wservernews.com">WServerNews.com</a></dt>
+     <dd><a href="http://www.wservernews.com">The largest Windows Server focused newsletter worldwide.</a></dd>
+     <dt><a href="http://www.virtualizationadmin.com/">VirtualizationAdmin.com</a></dt>
+     <dd><a href="http://www.virtualizationadmin.com/">The essential Virtualization resource site for administrators.</a></dd>
+    </dl>
+   </div>
+<!-- end left sidebars -->
+
+
+  <div id="ww-footer">
+   <ul>
+    <li><a href="http://antispam.msexchange.org">Anti Spam</a></li>
+    <li><a href="http://www.msexchange.org/articles_tutorials/">Articles</a></li>
+    <li><a href="http://www.msexchange.org/authors/">Authors</a></li>
+    <li><a href="http://blogs.msexchange.org/">Blogs</a></li>
+    <li><a href="http://www.msexchange.org/pages/books.asp">Books</a></li>
+    <!-- li><a href="/faq/">FAQs</a></li -->
+    <li><a href="http://www.msexchange.org/software/Free-Exchange-Tools/">Free Tools</a></li>
+    <li><a href="http://www.msexchange.org/hardware/">Hardware</a></li>
+    <li><a href="http://www.msexchange.org/services/Exchange-Hosting/">Hosted Exchange</a></li>
+    <li><a href="http://www.msexchange.org/pages/links.asp">Links</a></li>
+    <li class="ww-last"><a href="http://forums.msexchange.org/">Message Boards</a></li>
+   </ul>
+   <ul>
+    <li><a href="http://www.msexchange.org/pages/newsletter.asp">Newsletter</a></li>
+    <li><a href="http://www.msexchange.org/services/">Services</a></li>
+    <li><a href="http://www.msexchange.org/software/">Software</a></li>
+    <li><a href="http://www.msexchange.org/kbase/ExchangeServerTips/">Tips</a></li>
+    <li class="ww-last"><a href="http://whitepapers.msexchange.org/platforms/microsoft-exchange/">White Papers</a></li>
+   </ul>
+
+    <p class="notice">
+      <a href="http://www.techgenix.com/aboutus.htm">About Us</a> :
+      <script type="text/javascript">ShowEmail('info/msexchange|org','Email us');</script> :
+      <a href="http://www.msexchange.org/software/submissionform.asp">Product Submission Form</a> :
+      <a href="http://www.techgenix.com/advert/index.htm">Advertising Information</a>
+      <br />
+      MSExchange.org is in no way affiliated with Microsoft Corp. *Links are sponsored by advertisers.
+    </p>
+    <address id="ww-copyright">
+     Copyright &copy; 2011 <a href="http://www.techgenix.com">TechGenix Ltd.</a>
+     All rights reserved.
+     Please read our <a href="http://www.msexchange.org/pages/privacy.asp">Privacy Policy</a> and <a href="http://www.msexchange.org/pages/terms.asp">Terms &amp; Conditions</a>.
+    </address>
+
+  </div>
+
+
+ </div>
+
+<!--  -->
+
+<script type="text/javascript"> 
+(function() {
+    var nstrack = document.createElement("script"), el_nstrack = document.getElementsByTagName("script")[0]; nstrack.async = true;
+    nstrack.src = "http://track.netshelter.net/async/js/sites/msexchange.org-async.js";
+    el_nstrack.parentNode.insertBefore(nstrack, el_nstrack);
+  })();
+</script>
+
+<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-313036-2");
+pageTracker._initData();
+pageTracker._setDomainName("msexchange.org");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

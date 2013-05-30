@@ -1,0 +1,512 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+
+		<title>Aperto Networks MIB Download - view and download all SNMP MIBs for Aperto Networks Network Management</title>
+		<meta name="description" content="Aperto Networks SNMP MIBs courtesy of ByteSphere's searchable online MIB database, with thousands of downloadable MIBs, from hundreds of different vendors!">
+		<META NAME="KEYWORDS" content="Aperto Networks,MIBS,Download,ZIP,MIB Browser,mib archive,SNMP,MIB,Network,Management,MIB Database,ASN1,Compiler,Nicholas W. Saparoff">
+		<meta name="ROBOTS" CONTENT="INDEX,FOLLOW,ALL">
+		<link rel="stylesheet" type="text/css" href="/styles/style.css"/>
+		<script language="JavaScript" src="/templates/mm_menu.js"></script>
+		<script language="JavaScript" src="/templates/mm_menu_links.js"></script>
+		<script language="JavaScript" src="/templates/session.js"></script>
+		<script language="JavaScript" src="/templates/load_images.js"></script>
+		<script language="JavaScript" src="/templates/mib_nav.js" type="text/javascript"></script>
+		<script language="JavaScript" src="/templates/dialogs.js" type="text/javascript"></script>
+
+		<link rel="SHORTCUT ICON" href="http://www.oidview.com/images/oidview-16.ico">
+
+		<!-- PUT THIS TAG IN THE head SECTION -->
+		<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+		</script>
+		<script type="text/javascript">
+		  GS_googleAddAdSenseService("ca-pub-3258692365364496");
+		  GS_googleEnableAllServices();
+		</script>
+		<script type="text/javascript">
+		  GA_googleAddSlot("ca-pub-3258692365364496", "mibs_header_intro");
+		  GA_googleAddSlot("ca-pub-3258692365364496", "mibs_header_leaderboard");
+		  GA_googleAddSlot("ca-pub-3258692365364496", "mibs_footer_leaderboard");
+		  GA_googleAddSlot("ca-pub-3258692365364496", "mibs_download_dialog");
+		</script>
+		<script type="text/javascript">
+		  GA_googleFetchAds();
+		</script>
+		<!-- END OF TAG FOR head SECTION -->
+
+	</head>
+
+	<div id="popUpMibs" class="getmibfile" style="visibility:hidden;z-index:10000;">
+		<div id="popUpHeader">
+			<div style="width:90%;float:left;height:26px"></div>
+			<div style="width:10%;float:right" onclick="closePopupMibs()">
+				<img src="/images/1pxtrans.gif" width=16 height=16 id="imgClosePopup" onclick="closePopupMibs()"/>
+			</div>
+		</div>
+		<div style="visibility:hidden;padding-left:10px;padding-bottom:20px;" id="popUpAds" >
+			<script type="text/javascript">
+			  GA_googleFillSlot("mibs_download_dialog");
+			</script>
+		</div>
+		<HR>
+		<div id="popUpContent"></div>
+	</div>
+
+	<body onLoad="javascript:getPageSize();">
+
+		<center>
+		<div id="wrapper">
+			
+<table width="890" border="0" cellspacing="0" cellpadding="0" align="center" id="container">
+  <tr>
+    <td><div id="liner"> <span id="sites">  <a href="http://www.oidview.com/index.html" class="hashlink">ByteSphere.com</a> <a href="http://www.oidview.com/mibbrowser.html">MIB Browser Download</a> </span> <span id="topright">  <a href="http://www.oidview.com/sitemap.html"  class="hashlink">Site Map</a> <a href="http://www.oidview.com/mib_browser_information.html"  class="hashlink">Articles &amp; Information </a> <a href="https://secure.hosting4less.com/bytesphere/cgi-bin/cart.cgi?show_cart=1&amp;" class="hashlink">View Cart</a> <a href="" onClick="loginReseller();return false;">Reseller Login</a></span></div>
+
+		<div id="header_nsb">
+
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+
+				<tr>
+					<td width="640"><img style='margin-top:-3px' alt="MIB DOWNLOAD" src="/images/bytesphere_logo.jpg" border="0" /></td>
+					<td>
+						<div id="mibs_header_intro" align="right" style='margin-top:-8px;padding-top:0px;margin-bottom:-8px;'>
+								<!-- PUT THIS TAG IN DESIRED LOCATION OF SLOT mibs_header_intro -->
+								<table width='100%'>
+								<tr><td align='right'>
+								<script type="text/javascript">
+								  GA_googleFillSlot("mibs_header_intro");
+								</script>
+								</td></tr>
+								<tr><td align='right'><font size="1" color="black" face="Verdana"><a href='http://www.oidview.com/advertising.html' target='_blank'>Advertise with Bytesphere</a></font></td></tr>
+								</table>
+								<!-- END OF TAG FOR SLOT mibs_header_intro -->
+						</div>
+					</td>
+				</tr>
+
+				<tr valign='top' align='left'>
+
+					<td colspan=2 align='left' valign='top'>
+							<ul valign='top' id="menus" >
+								<li class="home"><a class="home" title="Home" href="http://www.oidview.com/">Home</a></li>
+								<li><a title="Products" href="http://www.oidview.com/products.html">Products</a></li>
+								<li><a title="Solutions" href="http://www.oidview.com/industry_solutions.html">Solutions</a></li>
+								<li class="current_page_item"><a title="Support" href="http://www.oidview.com/support.html">Support</a></li>
+								<li><a title="Sales" href="http://www.oidview.com/sales.html">Sales</a></li>
+								<li><a title="Company" href="http://www.oidview.com/corporate.html">Company</a></li>
+								<li><a title="Community" href="http://www.oidview.com/join.html">Community</a></li>
+								<li><a class="lastmenu" href="javascript:void(0);"></a></li>
+							</ul>
+					</td>
+			  </tr>
+
+			</table>
+
+		</div>
+
+		<table border="0" cellpadding="0" cellspacing="2" width="100%">
+
+
+			<tr>
+				<td colspan=3>
+										<BR>
+					<H2>Welcome to the ByteSphere online Aperto Networks MIB Database<BR>Free MIB Download for all Aperto Networks SNMP MIBs</H2>
+					This particular page contains a full list of all SNMP MIBS from Aperto Networks represented in our database.
+					Use these MIBs to manage and capture information from various Aperto Networks equipment, including Aperto Networks routers, switches, other devices and software agents.
+					There are a total of  13 Aperto Networks MIB downloads in this section, containing over  290 OIDS (Object Identifiers) in the proprietary Aperto Networks subtree.
+					Some of the latest updated Aperto Networks MIBs include BSUWIRELESSIF-MIB, BSUVLAN-MIB, BSUSTATUS-MIB, BSU-BRGCLUSTER-MIB, BSUPARAM-MIB<BR><BR>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="14">
+					<form name="PV">
+					<input type="hidden" name="vendor" value="0"><input type="hidden" name="currpage" value="md-0-1.html"><input type="hidden" name="VID">
+					</form>
+				</td>
+				<td width="735">
+					<table border="0" cellpadding="2" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="3" valign="top">
+								<div align="left">
+									<table border="0" cellpadding="0" cellspacing="5" width="890">
+										<tr>
+											<td width="408" valign="top">
+
+												<div align="left">
+
+												   	<IFRAME valign='top' src="http://www.oidview.com/mibs/last_updated.html"
+												   		scrolling="no"
+												   		frameborder=0
+												   		border=0
+												   		width='350'
+												   		height='50'>
+												   	</IFRAME><br>
+
+													<br>
+<b>Please support this free service</b><br>
+To submit more SNMP MIBs, <a href="http://www.oidview.com/mib-upload.html" target="_top">click here</a>.<br>
+To be notified when we update, <a href="http://www.oidview.com/join.html" target="_top">click here</a>.<br>
+To see a list of all vendors, <a href="http://www.oidview.com/mibs/vendors.html" target="_top">click here</a>.</font><font color="#0000cd" face="Verdana" size="1"><br>
+<br>
+
+													<br>
+
+
+												</div>
+
+											</td>
+
+											<td valign="top">
+												<div align="right">
+
+													<table border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="372" bgcolor="#2b436d">
+																<center>
+																	<font face="Verdana" color="#f5f5f5" size="2"><b><A HREF='http://www.oidview.com/mibbrowser.html' target='top'><b><font face="Verdana" color="#f5f5f5" size="2">OidView MIB Browser</font></b></A> / Repository Integration</b></font></center>
+															</td>
+														</tr>
+														<tr>
+															<td width="372" valign="top">
+																<table border="0" cellpadding="1" cellspacing="1" width="100%">
+																	<tr>
+																		<td width="97" align="left" valign="middle">
+																			<center>
+																				<a href="http://www.oidview.com/oidview.html" target="_top"><img height="101" width="112" src="/images/ov-pro-ts.gif" border="0"></a></center>
+																		</td>
+																		<td>
+																			<div align="left">
+																				<font size="1" color="black" face="Verdana">All <b>MIBs</b> in ByteSphere's patent-pending MIB&nbsp;Repository have been pre-compiled and checked for inconsistencies. If a mib doesn't compile with OidView, we won't post it. </font><font size="1" face="Verdana">OidView<b> </b>MUST&nbsp;be installed prior to installation of MIB PAKs.<br>
+																				</font>Get OidView <a href="http://www.oidview.com/oidview.html" target="_blank"><font size="1" face="Verdana" color="red">MIB Browser</font></a></div>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														 </tr>
+													</table>
+
+												</div>
+											</td>
+										</tr>
+									</table>
+
+									<center>
+										<table>
+										<tr><td align='center'>
+										<script type="text/javascript">
+										  GA_googleFillSlot("mibs_header_leaderboard");
+										</script>
+										</td></tr>
+										<tr><td align='right'><font size="1" color="black" face="Verdana"><a href='http://www.oidview.com/advertising.html' target='_blank'>Advertise with Bytesphere</a></font></td></tr>
+										</table>
+									</center>
+
+									<br>
+
+									<table border="0" cellpadding="0" cellspacing="0" width="890">
+										<tr>
+
+											<td width='49%' bgcolor="#778899">
+												<center>
+													<font color="#fffafa" face="Verdana" size="2"><b>Select MIB&nbsp;Filter</b></font>
+												</center>
+											</td>
+
+											<td width='2%'>
+											</td>
+
+
+											<td width='49%' bgcolor="#778899">
+												<center>
+													<font color="#fffafa" face="Verdana" size="2"><b>Sign-Up for MIB Updates!</b></font>
+												</center>
+											</td>
+
+										</tr>
+
+										<tr valign='top'>
+
+											<td valign='top' width='49%'>
+												<BR>
+												<div align='center' id='vendor_nav_bar'>
+													<form name="selectObjects">
+														<table border="0" cellpadding="0" cellspacing="0" width="100%">
+															<tr>
+																<td>
+																	<div align='left'>
+																		<font size="2" face="Verdana">
+																		Standards (RFCs) or Vendor:<br>
+																		</font><select name='selectName' size='1' onChange=setVendorByName();><option value ='0'>Select by vendor name<option value ='0'>Standards/RFCs<option value ='4839'>2Wire, Inc. (4839)<option value ='43'>3Com (43)<option value ='370'>3COM/Axon (370)<option value ='5'>ACC (5)<option value ='6333'>Accord Networks Ltd. (6333)<option value ='9148'>Acme Packet (9148)<option value ='17471'>Actona Technologies, Inc (17471)<option value ='795'>Adaptec Inc. (795)<option value ='181'>ADC Kentrox (181)<option value ='664'>Adtran (664)<option value ='2544'>ADVA AG Optical Networking (2544)<option value ='3764'>Advanced Digital Information C ...  (3764)<option value ='2162'>Advent Network Management (2162)<option value ='11898'>Agere Systems, Inc. (11898)<option value ='5053'>Agilent Technologies (5053)<option value ='14179'>Airespace, Inc (formerly Black ...  (14179)<option value ='390'>Alantec (390)<option value ='637'>Alcatel-Lucent (previously was ...  (637)<option value ='543'>Alebra Technologies, Inc. (543)<option value ='7138'>Allaire Corporation (7138)<option value ='207'>Allied Telesis, Inc. (207)<option value ='2603'>Allot Communications (2603)<option value ='1872'>Alteon Networks, Inc. (1872)<option value ='3076'>Altiga Networks, Inc. (3076)<option value ='318'>American Power Conversion Corp ...  (318)<option value ='1954'>AMTEC spa (1954)<option value ='10829'>Andover Controls Corporation (10829)<option value ='1450'>AOL / Netscape Communications  ...  (1450)<option value ='4325'>Aperto Networks (4325)<option value ='63'>Apple Computer, Inc. (63)<option value ='539'>Applied Innovation Inc. (539)<option value ='1438'>Applied Innovation Inc. (1438)<option value ='2637'>Aptis Communications, Inc. (2637)<option value ='4618'>ARMILLAIRE TECHNOLOGIES (4618)<option value ='2467'>ArrowPoint Communications Inc. (2467)<option value ='139'>Artel (139)<option value ='4962'>Artel Video Systems, Inc. (4962)<option value ='4280'>ARtem GmbHMichael Marsanu/Catr ...  (4280)<option value ='14823'>Aruba Networks Inc (14823)<option value ='298'>Asante Technology (298)<option value ='529'>Ascend Communications Inc. (529)<option value ='3052'>Asentria Corporation (3052)<option value ='74'>AT&T (74)<option value ='2221'>Atlas Computer Equipment, Inc. (2221)<option value ='353'>ATM Forum (353)<option value ='12350'>ATMEL Hellas, S.A.n (12350)<option value ='1774'>AUDITEC SA (1774)<option value ='80'>Auspex Systems, Inc (80)<option value ='1117'>Avanti Technology, Inc. (1117)<option value ='6889'>Avaya Communication (6889)<option value ='2474'>Avici Systems, Inc. (2474)<option value ='368'>Axis Communications AB (368)<option value ='130'>Banyan Systems Inc. (130)<option value ='18514'>BekArts International (18514)<option value ='2947'>Best Power - A Division of Gen ...  (2947)<option value ='170'>BICC (170)<option value ='272'>BinTec Communications GmbH (272)<option value ='11096'>BlueArc Corporation (11096)<option value ='9967'>Bluesocket, Inc. (9967)<option value ='1031'>BMC Software (1031)<option value ='3716'>Brand Communications Limited (3716)<option value ='3493'>Broadband Access Systems, Inc. (3493)<option value ='4413'>Broadcom Corporation (4413)<option value ='6431'>BroadSoft, Inc. (6431)<option value ='1588'>Brocade Communications Systems ...  (1588)<option value ='2435'>Brother Industries, Ltd. (2435)<option value ='107'>Bull Company (107)<option value ='7013'>ByteSphere Technologies LLC (7013)<option value ='4491'>Cable Television Laboratories, ...  (4491)<option value ='3417'>CacheFlow Inc. (3417)<option value ='7505'>Calista Ltd. (7505)<option value ='3'>Carnegie Mellon (3)<option value ='20858'>Casa Systems, Inc. (20858)<option value ='277'>Cascade Communications Corp. (277)<option value ='56'>Castle Rock Computing (56)<option value ='7'>CAYMAN (7)<option value ='930'>Centillion Networks, Inc. (930)<option value ='3607'>Cerent Corporation (3607)<option value ='10910'>Chateau Systems, Inc (10910)<option value ='2620'>Check Point Software Technolog ...  (2620)<option value ='46'>Cheyenne Software (46)<option value ='49'>Chippcom (49)<option value ='3695'>Chromatis Networks Inc. (3695)<option value ='9'>ciscoSystems (9)<option value ='3845'>Citrix Systems Inc. (3845)<option value ='2653'>City Com BV (2653)<option value ='2858'>Clarent Corporation (2858)<option value ='187'>Clearpoint Research Corp. (187)<option value ='449'>Codex (449)<option value ='226'>CODIMA Technologies Ltd (226)<option value ='1141'>Com21 (1141)<option value ='232'>Compaq (232)<option value ='255'>Compatible Systems Corp. (255)<option value ='791'>Computer Associates Internatio ...  (791)<option value ='3327'>Computer Associates Intl. (3327)<option value ='333'>Computer Network Technology (333)<option value ='2439'>Computerm Corporation (2439)<option value ='6247'>Comtech EFData Corporation (6247)<option value ='597'>Comtek Services Inc. (597)<option value ='1996'>Copper Mountain Communications ...  (1996)<option value ='5812'>Coriolis Networks (5812)<option value ='3085'>Cosine Communications (3085)<option value ='208'>Cray Communications A/S (208)<option value ='6848'>Crossbeam Systems, Inc. (6848)<option value ='1425'>CXR Telecom (1425)<option value ='1457'>CyberGuard CorporationDavid Rh ...  (1457)<option value ='8116'>Danware Data A/S (8116)<option value ='19746'>Data Domain, Inc (19746)<option value ='85'>Datability Software Systems (85)<option value ='36'>DEC (36)<option value ='674'>Dell Inc. (674)<option value ='1919'>Deutscher Wetterdienst (1919)<option value ='3028'>Dialogic Corporation (3028)<option value ='300'>Digital Link (300)<option value ='901'>Digital Products, Inc. (901)<option value ='2696'>Digital Video Broadcasting (DV ...  (2696)<option value ='412'>Distributed Management Task Fo ...  (412)<option value ='1597'>Distributed Processing Technol ...  (1597)<option value ='171'>D-Link Systems, Inc. (171)<option value ='2682'>DPS Inc. (2682)<option value ='384'>Dynatech Communications (384)<option value ='644'>Eastern Research Inc. (644)<option value ='534'>Eaton Corporation (534)<option value ='19631'>eDial Inc. (19631)<option value ='763'>Efficient Networks, Inc. (763)<option value ='434'>EICON (434)<option value ='21067'>Elitecore Technologies Ltd. (21067)<option value ='1139'>EMC Corp (1139)<option value ='106'>EMC Data General Division (106)<option value ='476'>Emerson Computer PowerRoger Dr ...  (476)<option value ='635'>Encore Networks, Inc. (635)<option value ='13827'>EndRun Technologies LLC (13827)<option value ='1123'>Engenio Information Technologi ...  (1123)<option value ='5624'>Enterasys Networks (5624)<option value ='52'>Enterasys Networks Inc. (52)<option value ='12'>Epilogue (12)<option value ='5022'>Equipe Communications Corporat ...  (5022)<option value ='193'>Ericsson AB (193)<option value ='10923'>Ericsson AB - Packet Core Netw ...  (10923)<option value ='14832'>ESO Consortium (14832)<option value ='2159'>Essential Communications (2159)<option value ='3405'>Expand Networks Inc. (3405)<option value ='683'>Extended Systems, Inc. (683)<option value ='1916'>Extreme Networks (1916)<option value ='3375'>F5 Labs, Inc. (3375)<option value ='304'>Farallon Computing, Inc. (304)<option value ='22'>Fibronics (22)<option value ='8603'>Flarion Technologies (8603)<option value ='1548'>FlowPoint Corporation (1548)<option value ='326'>Fore Systems, Inc. (326)<option value ='1226'>Forte Networks Inc. (1226)<option value ='12356'>Fortinet, Inc. (12356)<option value ='1991'>Foundry Networks, Inc. (1991)<option value ='141'>Frontier Software Development (141)<option value ='211'>Fujitsu Limited (211)<option value ='231'>Fujitsu Siemens Computers (231)<option value ='1754'>Gadzoox Microsystems Inc. (1754)<option value ='64'>Gandalf (64)<option value ='498'>General DataComm, Inc. (498)<option value ='2281'>Giganet Ltd (2281)<option value ='24534'>Gordano Ltd (24534)<option value ='437'>Grand Junction Networks (437)<option value ='1955'>GRETACODER Data Systems AG (1955)<option value ='1242'>Halcyon Inc. (1242)<option value ='1563'>Harmonic Lightwaves (1563)<option value ='603'>Harris & Jeffries, Inc. (603)<option value ='11'>Hewlett-Packard (11)<option value ='116'>Hitachi, Ltd. (116)<option value ='2011'>HUAWEI Technology Co.,Ltd (2011)<option value ='21796'>HW group s.r.o (21796)<option value ='626'>Hypercom, Inc. (626)<option value ='2'>IBM (2)<option value ='18458'>Image Processing Techniques Lt ...  (18458)<option value ='22096'>Image Project Inc. (22096)<option value ='818'>IMV Victron bv (818)<option value ='3606'>Incognito Software Inc. (3606)<option value ='140'>Independence Technologies, Inc ...  (140)<option value ='1714'>Infortrend Technology, Inc. (1714)<option value ='9611'>Infosim (9611)<option value ='2468'>Ingrasys (2468)<option value ='1967'>inktomi corporation (1967)<option value ='8714'>iNOC, Inc. (8714)<option value ='343'>Intel Corporation (343)<option value ='28'>Interlan (28)<option value ='1195'>ITK (1195)<option value ='4399'>Johnson Controls, Inc. (4399)<option value ='2636'>Juniper Networks, Inc. (2636)<option value ='1411'>Juniper Networks/Funk Software (1411)<option value ='4874'>Juniper Networks/Unisphere (4874)<option value ='2302'>K2Net (2302)<option value ='762'>Karlnet Corp. (762)<option value ='77'>LAN Manager (77)<option value ='712'>LANart Corp. (712)<option value ='2745'>LANCAST, Inc. (2745)<option value ='482'>LANcity Corporation (482)<option value ='2356'>LANCOM Systems (2356)<option value ='710'>Lannair Ltd. (710)<option value ='81'>Lannet Company (81)<option value ='224'>LANOPTICS LTD., Israel (224)<option value ='244'>Lantronix (244)<option value ='7185'>Latitude Communications (7185)<option value ='9804'>Lefthand Networks (9804)<option value ='641'>Lexmark International (641)<option value ='3955'>Linksys (3955)<option value ='307'>Livingston Enterprises, Inc. (307)<option value ='677'>Loral WDl (677)<option value ='334'>Lotus Development Corp. (334)<option value ='1751'>Lucent Technologies (1751)<option value ='4614'>Luminous Networks, Inc (4614)<option value ='494'>Madge Networks, Inc. (494)<option value ='1012'>Marconi (1012)<option value ='289'>McData Corporation (289)<option value ='397'>MegaPAC (397)<option value ='495'>Memotec Communications (495)<option value ='705'>Merlin Gerin (705)<option value ='335'>MICOM Communication Corporatio ...  (335)<option value ='102'>Microcom (102)<option value ='3181'>MICROSENS GmbH & Co. KG (3181)<option value ='311'>Microsoft (311)<option value ='14988'>MikroTik (14988)<option value ='2590'>Minolta Co., Ltd. (2590)<option value ='2349'>Mission Critical Software, Inc ...  (2349)<option value ='1027'>Mitel, Corp. (1027)<option value ='1101'>MoNet Systems, Inc. (1101)<option value ='161'>Motorola (161)<option value ='8691'>Moxa Technologies Co., Ltd. (8691)<option value ='33'>MRV Communications, In-Reach P ...  (33)<option value ='1608'>Mylex Corporation (1608)<option value ='3495'>National Laboratory for Applie ...  (3495)<option value ='629'>NBASE Switch Communication (629)<option value ='191'>NCR (191)<option value ='119'>NEC Corporation (119)<option value ='12532'>Neoteris, Inc. (12532)<option value ='11256'>NETASQ (11256)<option value ='5528'>NetBotz (5528)<option value ='251'>Netcomm, Ltd. (251)<option value ='329'>Netcore, Inc. (329)<option value ='4526'>Netgear (4526)<option value ='568'>NetQuest Corp. (568)<option value ='10950'>Netrake Corporation (10950)<option value ='2382'>NetReality, Inc. (2382)<option value ='5951'>Netscaler (5951)<option value ='3224'>NetScreen Technologies, Inc. (3224)<option value ='8072'>net-snmp (8072)<option value ='1080'>NetStar, Inc. (1080)<option value ='789'>Network Appliance Corporation (789)<option value ='86'>Network Application Technology (86)<option value ='3401'>Network Associates, Inc. (3401)<option value ='82'>Network Computing Devices (82)<option value ='177'>Network Equipment Technologies (177)<option value ='315'>Network Resources Corporation (315)<option value ='2505'>New Oak Communications, Inc. (2505)<option value ='123'>Newbridge Networks Corporation (123)<option value ='3167'>NICE Systems Ltd. (3167)<option value ='210'>NIPPON TELEGRAPH AND TELEPHONE ...  (210)<option value ='94'>Nokia (94)<option value ='562'>Northern Telecom, Ltd. (562)<option value ='23'>Novell (23)<option value ='10'>NSC (10)<option value ='2592'>NSI Software (2592)<option value ='1'>NxNetworks (1)<option value ='2001'>Oki Data Corporation (2001)<option value ='285'>Olicom A/S (285)<option value ='279'>Olivetti (279)<option value ='135'>OnStream Networks (135)<option value ='1900'>Openwave Systems, Inc. (1900)<option value ='50'>Optical Data Systems (50)<option value ='1869'>Optical Transmission Labs, Inc ...  (1869)<option value ='111'>Oracle (111)<option value ='3351'>Overland Data, Inc. (3351)<option value ='5987'>Pacific Broadband Communicatio ...  (5987)<option value ='2334'>Packeteer Inc. (2334)<option value ='927'>PairGain Technologies, Inc. (927)<option value ='25461'>PALO ALTO NETWORKS (25461)<option value ='760'>Pan Dacom Telekommunikations (760)<option value ='1795'>Paradyne (1795)<option value ='2935'>Pathlight Technology Inc. (2935)<option value ='5655'>P-Cube Ltd. (5655)<option value ='8239'>Peribit Networks (8239)<option value ='1357'>Periphonics Corporation (1357)<option value ='17766'>PGP Corporation (17766)<option value ='24852'>Phihong USA (24852)<option value ='866'>Philips Communication d'Entrep ...  (866)<option value ='3884'>Phobos Corporation (3884)<option value ='274'>PictureTel Corporation (274)<option value ='17713'>PipingHot Networks Limited (17713)<option value ='295'>PlainTree Systems Inc. (295)<option value ='2766'>Platform Computing Corporation (2766)<option value ='13885'>Polycom, Inc. (13885)<option value ='3317'>Port Community Rotterdam (3317)<option value ='2699'>Printer Working Group (2699)<option value ='2167'>Prominet Corporation (2167)<option value ='7933'>Promise Technology Inc. (7933)<option value ='480'>QMS, Inc. (480)<option value ='1676'>Qualix Group, Inc. (1676)<option value ='4323'>Quantum Bridge (4323)<option value ='3662'>QWES.com Incorporated (3662)<option value ='124'>Racal-Datacom (124)<option value ='164'>Rad Data Communications Ltd. (164)<option value ='2272'>Rapid City Communication (2272)<option value ='4355'>RapidStream, Inc. (4355)<option value ='1294'>Raptor Systems, Inc. (1294)<option value ='3184'>Raymond and Lae Engineering, I ...  (3184)<option value ='1958'>Red Creek Communications, Inc. (1958)<option value ='2352'>RedBack Networks (2352)<option value ='2773'>Redstone Communications, Inc. (2773)<option value ='885'>RELTEC Corporation (885)<option value ='3530'>Research In Motion Ltd. (3530)<option value ='248'>Richard Hirschmann GmbH & Co. (248)<option value ='2606'>Rittal-Werk Rudolf Loh GmbH &  ...  (2606)<option value ='17163'>Riverbed Technology, Inc. (17163)<option value ='4981'>RiverDelta Networks (4981)<option value ='5567'>Riverstone Networks (5567)<option value ='89'>RND (89)<option value ='28459'>Rogue Engineering Inc. (28459)<option value ='1038'>SAGEM (1038)<option value ='2158'>SALIX Technologies, Inc. (2158)<option value ='236'>Samsung Electronics Co., LTD. (236)<option value ='1055'>SBE, Inc. (1055)<option value ='179'>Schneider & Koch & Co, Datensy ...  (179)<option value ='1573'>Secure Computing Corporation (1573)<option value ='14706'>sFlow.org (14706)<option value ='13743'>SGTE-IES (13743)<option value ='3320'>Shanghai Baud Data Communicati ...  (3320)<option value ='3199'>Shasta Networks (3199)<option value ='166'>Shiva Corporation (166)<option value ='4329'>Siemens AG (4329)<option value ='4196'>Siemens AG Automation & Drives (4196)<option value ='97'>Sigma Network Systems, Inc. (97)<option value ='27243'>Signal Networks Pvt. Ltd. (27243)<option value ='3711'>SINETICA (3711)<option value ='1978'>SITA ADS (1978)<option value ='202'>SMC (202)<option value ='15553'>SnarlSNMP Dynamic Web Applicat ...  (15553)<option value ='99'>SNMP Research (99)<option value ='559'>Sonix Communications, Ltd. (559)<option value ='2926'>Sonoma Systems, Inc. (2926)<option value ='2879'>Sonus Networks, Inc. (2879)<option value ='122'>Sony (122)<option value ='3551'>Spring Tide Networks, Inc. (3551)<option value ='1369'>Stonesoft Corp (1369)<option value ='1211'>Storage Technology Corporation (1211)<option value ='351'>Stratacom (351)<option value ='458'>Stratus Computer (458)<option value ='4056'>StreamCORE (4056)<option value ='175'>Sumitomo Electric Industries ( ...  (175)<option value ='42'>Sun Microsystems (42)<option value ='10876'>Super Micro Computer Inc. (10876)<option value ='393'>Symantec Corporation (393)<option value ='388'>Symbol Technologies, Inc. (388)<option value ='9070'>Symmetricom (9070)<option value ='385'>Symplex Communications Corp. (385)<option value ='485'>Sync Research, Inc. (485)<option value ='114'>Synernetics, Inc. (114)<option value ='45'>SynOptics (45)<option value ='3174'>Tasman Networks, Inc. (3174)<option value ='2668'>Tavve Software Co. (2668)<option value ='1575'>Technical University of Brauns ...  (1575)<option value ='217'>Technically Elite Concepts, In ...  (217)<option value ='2785'>Tecnopro SA (2785)<option value ='564'>Telco Systems NAC (564)<option value ='230'>Telematics International, Inc. (230)<option value ='1570'>Telesend Inc. (1570)<option value ='522'>Telesystems SLW Inc. (522)<option value ='293'>Teltrend (NZ) Limited (293)<option value ='4513'>Terawave Communications, Inc. (4513)<option value ='16'>Timeplex (16)<option value ='5549'>TimesTen Performance Software (5549)<option value ='1022'>TimeStep Corp. (1022)<option value ='868'>Transition Engineering Inc. (868)<option value ='11857'>Transmode Systems AB (11857)<option value ='24575'>Tranzeo Wireless Technologies  ...  (24575)<option value ='6101'>Trend Micro Inc. (6101)<option value ='850'>Tripp Lite (850)<option value ='425'>TxPort (425)<option value ='466'>Tylink (466)<option value ='2021'>U.C. Davis, ECE Dept. Tom (2021)<option value ='75'>Ungermann-Bass (75)<option value ='223'>Unisys_Corp (223)<option value ='4'>Unix (4)<option value ='429'>UTStarcom Incorporated (429)<option value ='321'>Verilink Corp (321)<option value ='1302'>VERITAS Software Corp. (1302)<option value ='727'>Verso Technologies Canada Inc. ...  (727)<option value ='2338'>Vertical Networks, Inc. (2338)<option value ='4596'>Videoframe Systems (4596)<option value ='3011'>VideoServer, Inc. (3011)<option value ='2186'>Vina Technologies (2186)<option value ='29'>Vitalink Communications (29)<option value ='6876'>VMware Inc. (6876)<option value ='2516'>VocalTec Communications Ltd. (2516)<option value ='15191'>Voice Print International, Inc ...  (15191)<option value ='1866'>VPNet (1866)<option value ='3097'>WatchGuard Technologies Inc. (3097)<option value ='18'>Wellfleet (18)<option value ='3166'>Westek Technology Ltd John Tuc ...  (3166)<option value ='3727'>Western Multiplex (3727)<option value ='2252'>WheelGroup Corporation Jonatha ...  (2252)<option value ='2686'>Wi-LAN Inc. (2686)<option value ='731'>Wind River Systems (731)<option value ='3183'>Wired for Management (3183)<option value ='922'>WordPerfect Corp. (922)<option value ='6141'>World Wide Packets (6141)<option value ='714'>Wyse Technology (714)<option value ='838'>Xedia Corporation (838)<option value ='253'>Xerox (253)<option value ='2366'>XIOtech Corporation (2366)<option value ='588'>Xircom (588)<option value ='800'>Xylan Corp. (800)<option value ='15'>Xylogics, Inc. (15)<option value ='890'>ZyXEL Communications Corp. (890)</select><br>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<br>
+																	<div align='left'>
+																		<font size="2" face="Verdana">Enterprise #:<br>
+																		</font><select name='selectVID' size='1' onChange=setVendorByVID();><option value ='0'>Select by enterprise number<option value ='1'>1 (NxNetworks)<option value ='2'>2 (IBM)<option value ='3'>3 (Carnegie Mellon)<option value ='4'>4 (Unix)<option value ='5'>5 (ACC)<option value ='7'>7 (CAYMAN)<option value ='9'>9 (ciscoSystems)<option value ='10'>10 (NSC)<option value ='11'>11 (Hewlett-Packard)<option value ='12'>12 (Epilogue)<option value ='15'>15 (Xylogics, Inc.)<option value ='16'>16 (Timeplex)<option value ='18'>18 (Wellfleet)<option value ='22'>22 (Fibronics)<option value ='23'>23 (Novell)<option value ='28'>28 (Interlan)<option value ='29'>29 (Vitalink Communications)<option value ='33'>33 (MRV Communications, In-Reach P ... )<option value ='36'>36 (DEC)<option value ='42'>42 (Sun Microsystems)<option value ='43'>43 (3Com)<option value ='45'>45 (SynOptics)<option value ='46'>46 (Cheyenne Software)<option value ='49'>49 (Chippcom)<option value ='50'>50 (Optical Data Systems)<option value ='52'>52 (Enterasys Networks Inc.)<option value ='56'>56 (Castle Rock Computing)<option value ='63'>63 (Apple Computer, Inc.)<option value ='64'>64 (Gandalf)<option value ='74'>74 (AT&T)<option value ='75'>75 (Ungermann-Bass)<option value ='77'>77 (LAN Manager)<option value ='80'>80 (Auspex Systems, Inc)<option value ='81'>81 (Lannet Company)<option value ='82'>82 (Network Computing Devices)<option value ='85'>85 (Datability Software Systems)<option value ='86'>86 (Network Application Technology)<option value ='89'>89 (RND)<option value ='94'>94 (Nokia)<option value ='97'>97 (Sigma Network Systems, Inc.)<option value ='99'>99 (SNMP Research)<option value ='102'>102 (Microcom)<option value ='106'>106 (EMC Data General Division)<option value ='107'>107 (Bull Company)<option value ='111'>111 (Oracle)<option value ='114'>114 (Synernetics, Inc.)<option value ='116'>116 (Hitachi, Ltd.)<option value ='119'>119 (NEC Corporation)<option value ='122'>122 (Sony)<option value ='123'>123 (Newbridge Networks Corporation)<option value ='124'>124 (Racal-Datacom)<option value ='130'>130 (Banyan Systems Inc.)<option value ='135'>135 (OnStream Networks)<option value ='139'>139 (Artel)<option value ='140'>140 (Independence Technologies, Inc ... )<option value ='141'>141 (Frontier Software Development)<option value ='161'>161 (Motorola)<option value ='164'>164 (Rad Data Communications Ltd.)<option value ='166'>166 (Shiva Corporation)<option value ='170'>170 (BICC)<option value ='171'>171 (D-Link Systems, Inc.)<option value ='175'>175 (Sumitomo Electric Industries ( ... )<option value ='177'>177 (Network Equipment Technologies)<option value ='179'>179 (Schneider & Koch & Co, Datensy ... )<option value ='181'>181 (ADC Kentrox)<option value ='187'>187 (Clearpoint Research Corp.)<option value ='191'>191 (NCR)<option value ='193'>193 (Ericsson AB)<option value ='202'>202 (SMC)<option value ='207'>207 (Allied Telesis, Inc.)<option value ='208'>208 (Cray Communications A/S)<option value ='210'>210 (NIPPON TELEGRAPH AND TELEPHONE ... )<option value ='211'>211 (Fujitsu Limited)<option value ='217'>217 (Technically Elite Concepts, In ... )<option value ='223'>223 (Unisys_Corp)<option value ='224'>224 (LANOPTICS LTD., Israel)<option value ='226'>226 (CODIMA Technologies Ltd)<option value ='230'>230 (Telematics International, Inc.)<option value ='231'>231 (Fujitsu Siemens Computers)<option value ='232'>232 (Compaq)<option value ='236'>236 (Samsung Electronics Co., LTD.)<option value ='244'>244 (Lantronix)<option value ='248'>248 (Richard Hirschmann GmbH & Co.)<option value ='251'>251 (Netcomm, Ltd.)<option value ='253'>253 (Xerox)<option value ='255'>255 (Compatible Systems Corp.)<option value ='272'>272 (BinTec Communications GmbH)<option value ='274'>274 (PictureTel Corporation)<option value ='277'>277 (Cascade Communications Corp.)<option value ='279'>279 (Olivetti)<option value ='285'>285 (Olicom A/S)<option value ='289'>289 (McData Corporation)<option value ='293'>293 (Teltrend (NZ) Limited)<option value ='295'>295 (PlainTree Systems Inc.)<option value ='298'>298 (Asante Technology)<option value ='300'>300 (Digital Link)<option value ='304'>304 (Farallon Computing, Inc.)<option value ='307'>307 (Livingston Enterprises, Inc.)<option value ='311'>311 (Microsoft)<option value ='315'>315 (Network Resources Corporation)<option value ='318'>318 (American Power Conversion Corp ... )<option value ='321'>321 (Verilink Corp)<option value ='326'>326 (Fore Systems, Inc.)<option value ='329'>329 (Netcore, Inc.)<option value ='333'>333 (Computer Network Technology)<option value ='334'>334 (Lotus Development Corp.)<option value ='335'>335 (MICOM Communication Corporatio ... )<option value ='343'>343 (Intel Corporation)<option value ='351'>351 (Stratacom)<option value ='353'>353 (ATM Forum)<option value ='368'>368 (Axis Communications AB)<option value ='370'>370 (3COM/Axon)<option value ='384'>384 (Dynatech Communications)<option value ='385'>385 (Symplex Communications Corp.)<option value ='388'>388 (Symbol Technologies, Inc.)<option value ='390'>390 (Alantec)<option value ='393'>393 (Symantec Corporation)<option value ='397'>397 (MegaPAC)<option value ='412'>412 (Distributed Management Task Fo ... )<option value ='425'>425 (TxPort)<option value ='429'>429 (UTStarcom Incorporated)<option value ='434'>434 (EICON)<option value ='437'>437 (Grand Junction Networks)<option value ='449'>449 (Codex)<option value ='458'>458 (Stratus Computer)<option value ='466'>466 (Tylink)<option value ='476'>476 (Emerson Computer PowerRoger Dr ... )<option value ='480'>480 (QMS, Inc.)<option value ='482'>482 (LANcity Corporation)<option value ='485'>485 (Sync Research, Inc.)<option value ='494'>494 (Madge Networks, Inc.)<option value ='495'>495 (Memotec Communications)<option value ='498'>498 (General DataComm, Inc.)<option value ='522'>522 (Telesystems SLW Inc.)<option value ='529'>529 (Ascend Communications Inc.)<option value ='534'>534 (Eaton Corporation)<option value ='539'>539 (Applied Innovation Inc.)<option value ='543'>543 (Alebra Technologies, Inc.)<option value ='559'>559 (Sonix Communications, Ltd.)<option value ='562'>562 (Northern Telecom, Ltd.)<option value ='564'>564 (Telco Systems NAC)<option value ='568'>568 (NetQuest Corp.)<option value ='588'>588 (Xircom)<option value ='597'>597 (Comtek Services Inc.)<option value ='603'>603 (Harris & Jeffries, Inc.)<option value ='626'>626 (Hypercom, Inc.)<option value ='629'>629 (NBASE Switch Communication)<option value ='635'>635 (Encore Networks, Inc.)<option value ='637'>637 (Alcatel-Lucent (previously was ... )<option value ='641'>641 (Lexmark International)<option value ='644'>644 (Eastern Research Inc.)<option value ='664'>664 (Adtran)<option value ='674'>674 (Dell Inc.)<option value ='677'>677 (Loral WDl)<option value ='683'>683 (Extended Systems, Inc.)<option value ='705'>705 (Merlin Gerin)<option value ='710'>710 (Lannair Ltd.)<option value ='712'>712 (LANart Corp.)<option value ='714'>714 (Wyse Technology)<option value ='727'>727 (Verso Technologies Canada Inc. ... )<option value ='731'>731 (Wind River Systems)<option value ='760'>760 (Pan Dacom Telekommunikations)<option value ='762'>762 (Karlnet Corp.)<option value ='763'>763 (Efficient Networks, Inc.)<option value ='789'>789 (Network Appliance Corporation)<option value ='791'>791 (Computer Associates Internatio ... )<option value ='795'>795 (Adaptec Inc.)<option value ='800'>800 (Xylan Corp.)<option value ='818'>818 (IMV Victron bv)<option value ='838'>838 (Xedia Corporation)<option value ='850'>850 (Tripp Lite)<option value ='866'>866 (Philips Communication d'Entrep ... )<option value ='868'>868 (Transition Engineering Inc.)<option value ='885'>885 (RELTEC Corporation)<option value ='890'>890 (ZyXEL Communications Corp.)<option value ='901'>901 (Digital Products, Inc.)<option value ='922'>922 (WordPerfect Corp.)<option value ='927'>927 (PairGain Technologies, Inc.)<option value ='930'>930 (Centillion Networks, Inc.)<option value ='1012'>1012 (Marconi)<option value ='1022'>1022 (TimeStep Corp.)<option value ='1027'>1027 (Mitel, Corp.)<option value ='1031'>1031 (BMC Software)<option value ='1038'>1038 (SAGEM)<option value ='1055'>1055 (SBE, Inc.)<option value ='1080'>1080 (NetStar, Inc.)<option value ='1101'>1101 (MoNet Systems, Inc.)<option value ='1117'>1117 (Avanti Technology, Inc.)<option value ='1123'>1123 (Engenio Information Technologi ... )<option value ='1139'>1139 (EMC Corp)<option value ='1141'>1141 (Com21)<option value ='1195'>1195 (ITK)<option value ='1211'>1211 (Storage Technology Corporation)<option value ='1226'>1226 (Forte Networks Inc.)<option value ='1242'>1242 (Halcyon Inc.)<option value ='1294'>1294 (Raptor Systems, Inc.)<option value ='1302'>1302 (VERITAS Software Corp.)<option value ='1357'>1357 (Periphonics Corporation)<option value ='1369'>1369 (Stonesoft Corp)<option value ='1411'>1411 (Juniper Networks/Funk Software)<option value ='1425'>1425 (CXR Telecom)<option value ='1438'>1438 (Applied Innovation Inc.)<option value ='1450'>1450 (AOL / Netscape Communications  ... )<option value ='1457'>1457 (CyberGuard CorporationDavid Rh ... )<option value ='1548'>1548 (FlowPoint Corporation)<option value ='1563'>1563 (Harmonic Lightwaves)<option value ='1570'>1570 (Telesend Inc.)<option value ='1573'>1573 (Secure Computing Corporation)<option value ='1575'>1575 (Technical University of Brauns ... )<option value ='1588'>1588 (Brocade Communications Systems ... )<option value ='1597'>1597 (Distributed Processing Technol ... )<option value ='1608'>1608 (Mylex Corporation)<option value ='1676'>1676 (Qualix Group, Inc.)<option value ='1714'>1714 (Infortrend Technology, Inc.)<option value ='1751'>1751 (Lucent Technologies)<option value ='1754'>1754 (Gadzoox Microsystems Inc.)<option value ='1774'>1774 (AUDITEC SA)<option value ='1795'>1795 (Paradyne)<option value ='1866'>1866 (VPNet)<option value ='1869'>1869 (Optical Transmission Labs, Inc ... )<option value ='1872'>1872 (Alteon Networks, Inc.)<option value ='1900'>1900 (Openwave Systems, Inc.)<option value ='1916'>1916 (Extreme Networks)<option value ='1919'>1919 (Deutscher Wetterdienst)<option value ='1954'>1954 (AMTEC spa)<option value ='1955'>1955 (GRETACODER Data Systems AG)<option value ='1958'>1958 (Red Creek Communications, Inc.)<option value ='1967'>1967 (inktomi corporation)<option value ='1978'>1978 (SITA ADS)<option value ='1991'>1991 (Foundry Networks, Inc.)<option value ='1996'>1996 (Copper Mountain Communications ... )<option value ='2001'>2001 (Oki Data Corporation)<option value ='2011'>2011 (HUAWEI Technology Co.,Ltd)<option value ='2021'>2021 (U.C. Davis, ECE Dept. Tom)<option value ='2158'>2158 (SALIX Technologies, Inc.)<option value ='2159'>2159 (Essential Communications)<option value ='2162'>2162 (Advent Network Management)<option value ='2167'>2167 (Prominet Corporation)<option value ='2186'>2186 (Vina Technologies)<option value ='2221'>2221 (Atlas Computer Equipment, Inc.)<option value ='2252'>2252 (WheelGroup Corporation Jonatha ... )<option value ='2272'>2272 (Rapid City Communication)<option value ='2281'>2281 (Giganet Ltd)<option value ='2302'>2302 (K2Net)<option value ='2334'>2334 (Packeteer Inc.)<option value ='2338'>2338 (Vertical Networks, Inc.)<option value ='2349'>2349 (Mission Critical Software, Inc ... )<option value ='2352'>2352 (RedBack Networks)<option value ='2356'>2356 (LANCOM Systems)<option value ='2366'>2366 (XIOtech Corporation)<option value ='2382'>2382 (NetReality, Inc.)<option value ='2435'>2435 (Brother Industries, Ltd.)<option value ='2439'>2439 (Computerm Corporation)<option value ='2467'>2467 (ArrowPoint Communications Inc.)<option value ='2468'>2468 (Ingrasys)<option value ='2474'>2474 (Avici Systems, Inc.)<option value ='2505'>2505 (New Oak Communications, Inc.)<option value ='2516'>2516 (VocalTec Communications Ltd.)<option value ='2544'>2544 (ADVA AG Optical Networking)<option value ='2590'>2590 (Minolta Co., Ltd.)<option value ='2592'>2592 (NSI Software)<option value ='2603'>2603 (Allot Communications)<option value ='2606'>2606 (Rittal-Werk Rudolf Loh GmbH &  ... )<option value ='2620'>2620 (Check Point Software Technolog ... )<option value ='2636'>2636 (Juniper Networks, Inc.)<option value ='2637'>2637 (Aptis Communications, Inc.)<option value ='2653'>2653 (City Com BV)<option value ='2668'>2668 (Tavve Software Co.)<option value ='2682'>2682 (DPS Inc.)<option value ='2686'>2686 (Wi-LAN Inc.)<option value ='2696'>2696 (Digital Video Broadcasting (DV ... )<option value ='2699'>2699 (Printer Working Group)<option value ='2745'>2745 (LANCAST, Inc.)<option value ='2766'>2766 (Platform Computing Corporation)<option value ='2773'>2773 (Redstone Communications, Inc.)<option value ='2785'>2785 (Tecnopro SA)<option value ='2858'>2858 (Clarent Corporation)<option value ='2879'>2879 (Sonus Networks, Inc.)<option value ='2926'>2926 (Sonoma Systems, Inc.)<option value ='2935'>2935 (Pathlight Technology Inc.)<option value ='2947'>2947 (Best Power - A Division of Gen ... )<option value ='3011'>3011 (VideoServer, Inc.)<option value ='3028'>3028 (Dialogic Corporation)<option value ='3052'>3052 (Asentria Corporation)<option value ='3076'>3076 (Altiga Networks, Inc.)<option value ='3085'>3085 (Cosine Communications)<option value ='3097'>3097 (WatchGuard Technologies Inc.)<option value ='3166'>3166 (Westek Technology Ltd John Tuc ... )<option value ='3167'>3167 (NICE Systems Ltd.)<option value ='3174'>3174 (Tasman Networks, Inc.)<option value ='3181'>3181 (MICROSENS GmbH & Co. KG)<option value ='3183'>3183 (Wired for Management)<option value ='3184'>3184 (Raymond and Lae Engineering, I ... )<option value ='3199'>3199 (Shasta Networks)<option value ='3224'>3224 (NetScreen Technologies, Inc.)<option value ='3317'>3317 (Port Community Rotterdam)<option value ='3320'>3320 (Shanghai Baud Data Communicati ... )<option value ='3327'>3327 (Computer Associates Intl.)<option value ='3351'>3351 (Overland Data, Inc.)<option value ='3375'>3375 (F5 Labs, Inc.)<option value ='3401'>3401 (Network Associates, Inc.)<option value ='3405'>3405 (Expand Networks Inc.)<option value ='3417'>3417 (CacheFlow Inc.)<option value ='3493'>3493 (Broadband Access Systems, Inc.)<option value ='3495'>3495 (National Laboratory for Applie ... )<option value ='3530'>3530 (Research In Motion Ltd.)<option value ='3551'>3551 (Spring Tide Networks, Inc.)<option value ='3606'>3606 (Incognito Software Inc.)<option value ='3607'>3607 (Cerent Corporation)<option value ='3662'>3662 (QWES.com Incorporated)<option value ='3695'>3695 (Chromatis Networks Inc.)<option value ='3711'>3711 (SINETICA)<option value ='3716'>3716 (Brand Communications Limited)<option value ='3727'>3727 (Western Multiplex)<option value ='3764'>3764 (Advanced Digital Information C ... )<option value ='3845'>3845 (Citrix Systems Inc.)<option value ='3884'>3884 (Phobos Corporation)<option value ='3955'>3955 (Linksys)<option value ='4056'>4056 (StreamCORE)<option value ='4196'>4196 (Siemens AG Automation & Drives)<option value ='4280'>4280 (ARtem GmbHMichael Marsanu/Catr ... )<option value ='4323'>4323 (Quantum Bridge)<option value ='4325'>4325 (Aperto Networks)<option value ='4329'>4329 (Siemens AG)<option value ='4355'>4355 (RapidStream, Inc.)<option value ='4399'>4399 (Johnson Controls, Inc.)<option value ='4413'>4413 (Broadcom Corporation)<option value ='4491'>4491 (Cable Television Laboratories, ... )<option value ='4513'>4513 (Terawave Communications, Inc.)<option value ='4526'>4526 (Netgear)<option value ='4596'>4596 (Videoframe Systems)<option value ='4614'>4614 (Luminous Networks, Inc)<option value ='4618'>4618 (ARMILLAIRE TECHNOLOGIES)<option value ='4839'>4839 (2Wire, Inc.)<option value ='4874'>4874 (Juniper Networks/Unisphere)<option value ='4962'>4962 (Artel Video Systems, Inc.)<option value ='4981'>4981 (RiverDelta Networks)<option value ='5022'>5022 (Equipe Communications Corporat ... )<option value ='5053'>5053 (Agilent Technologies)<option value ='5528'>5528 (NetBotz)<option value ='5549'>5549 (TimesTen Performance Software)<option value ='5567'>5567 (Riverstone Networks)<option value ='5624'>5624 (Enterasys Networks)<option value ='5655'>5655 (P-Cube Ltd.)<option value ='5812'>5812 (Coriolis Networks)<option value ='5951'>5951 (Netscaler)<option value ='5987'>5987 (Pacific Broadband Communicatio ... )<option value ='6101'>6101 (Trend Micro Inc.)<option value ='6141'>6141 (World Wide Packets)<option value ='6247'>6247 (Comtech EFData Corporation)<option value ='6333'>6333 (Accord Networks Ltd.)<option value ='6431'>6431 (BroadSoft, Inc.)<option value ='6848'>6848 (Crossbeam Systems, Inc.)<option value ='6876'>6876 (VMware Inc.)<option value ='6889'>6889 (Avaya Communication)<option value ='7013'>7013 (ByteSphere Technologies LLC)<option value ='7138'>7138 (Allaire Corporation)<option value ='7185'>7185 (Latitude Communications)<option value ='7505'>7505 (Calista Ltd.)<option value ='7933'>7933 (Promise Technology Inc.)<option value ='8072'>8072 (net-snmp)<option value ='8116'>8116 (Danware Data A/S)<option value ='8239'>8239 (Peribit Networks)<option value ='8603'>8603 (Flarion Technologies)<option value ='8691'>8691 (Moxa Technologies Co., Ltd.)<option value ='8714'>8714 (iNOC, Inc.)<option value ='9070'>9070 (Symmetricom)<option value ='9148'>9148 (Acme Packet)<option value ='9611'>9611 (Infosim)<option value ='9804'>9804 (Lefthand Networks)<option value ='9967'>9967 (Bluesocket, Inc.)<option value ='10829'>10829 (Andover Controls Corporation)<option value ='10876'>10876 (Super Micro Computer Inc.)<option value ='10910'>10910 (Chateau Systems, Inc)<option value ='10923'>10923 (Ericsson AB - Packet Core Netw ... )<option value ='10950'>10950 (Netrake Corporation)<option value ='11096'>11096 (BlueArc Corporation)<option value ='11256'>11256 (NETASQ)<option value ='11857'>11857 (Transmode Systems AB)<option value ='11898'>11898 (Agere Systems, Inc.)<option value ='12350'>12350 (ATMEL Hellas, S.A.n)<option value ='12356'>12356 (Fortinet, Inc.)<option value ='12532'>12532 (Neoteris, Inc.)<option value ='13743'>13743 (SGTE-IES)<option value ='13827'>13827 (EndRun Technologies LLC)<option value ='13885'>13885 (Polycom, Inc.)<option value ='14179'>14179 (Airespace, Inc (formerly Black ... )<option value ='14706'>14706 (sFlow.org)<option value ='14823'>14823 (Aruba Networks Inc)<option value ='14832'>14832 (ESO Consortium)<option value ='14988'>14988 (MikroTik)<option value ='15191'>15191 (Voice Print International, Inc ... )<option value ='15553'>15553 (SnarlSNMP Dynamic Web Applicat ... )<option value ='17163'>17163 (Riverbed Technology, Inc.)<option value ='17471'>17471 (Actona Technologies, Inc)<option value ='17713'>17713 (PipingHot Networks Limited)<option value ='17766'>17766 (PGP Corporation)<option value ='18458'>18458 (Image Processing Techniques Lt ... )<option value ='18514'>18514 (BekArts International)<option value ='19631'>19631 (eDial Inc.)<option value ='19746'>19746 (Data Domain, Inc)<option value ='20858'>20858 (Casa Systems, Inc.)<option value ='21067'>21067 (Elitecore Technologies Ltd.)<option value ='21796'>21796 (HW group s.r.o)<option value ='22096'>22096 (Image Project Inc.)<option value ='24534'>24534 (Gordano Ltd)<option value ='24575'>24575 (Tranzeo Wireless Technologies  ... )<option value ='24852'>24852 (Phihong USA)<option value ='25461'>25461 (PALO ALTO NETWORKS)<option value ='27243'>27243 (Signal Networks Pvt. Ltd.)<option value ='28459'>28459 (Rogue Engineering Inc.)</select><br>
+																	</div>
+																</td>
+
+															</tr>
+														</table>
+													</form>
+												</div>
+
+												Click here for <a href="http://www.oidview.com/mibs/0/md-0-1.html"><font size="3" face="Verdana"><b>Standards / RFCs</b></font></a><br>
+
+											</td>
+
+											<td width='2%'>
+											</td>
+
+
+											<td width='49%'>
+
+												<table width='100%'><tr>
+												<td>We are now posting <strong>MIB updates via twitter!</strong>.<br>For updates please follow us <strong>@bytesphere!</strong></td>
+												<td align='right'><a id="gotwitter" target="_blank" alt="Follow us on Twitter!" href="http://www.twitter.com/bytesphere"></a></td>
+												</tr>
+												<br>
+
+												<div align='center'>
+													<form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
+														<input type="hidden" name="meta_web_form_id" value="2026720897">
+														<input type="hidden" name="meta_split_id" value="">
+														<input type="hidden" name="unit" value="bytesphere_news">
+														<input type="hidden" name="redirect" value="http://www.aweber.com/form/thankyou_vo.html" id="redirect_a487663df3746805605f3ba967bb8f24">
+														<input type="hidden" name="meta_redirect_onlist" value="">
+														<input type="hidden" name="meta_adtracking" value="newsletter">
+														<input type="hidden" name="meta_message" value="1">
+														<input type="hidden" name="meta_required" value="from">
+														<input type="hidden" name="meta_forward_vars" value="0">
+														<table>
+														<tr><td colspan=3><hr></td></tr>
+														<tr>
+															<td colspan=3>
+																You can also join our mailing list to get MIB updates.
+															</td>
+														</tr>
+
+														<tr>
+															<td>Email:</td>
+															<td><input type="text" class="textfield" name="from" value="" size="35"></td>
+															<td valign='top'align='center' width='25%' style='padding-top:5px'>
+																<input type="submit" class="submit" name="submit" value="Sign me up!">
+															</td>
+
+														</tr>
+														</table>
+													</form>
+												</div>
+
+
+											</td>
+
+										</tr>
+
+									</table>
+								</div>
+								<BR>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+
+			<HR>
+
+		<table width='100%'>
+
+			<tr valign='top' HEIGHT="100%">
+
+			<td valign='top' width="530">
+
+				<table width="100%">
+					<tr height="40">
+						<td height="40" width='50%'>
+							<div align="left">
+								<font size="3"><b>Aperto Networks</b></font><br>
+								<font size="1">Total Files:  13<br>
+								Sort By: mibname<br>
+								</font></div>
+						</td>
+						<td height="40" width="211">
+							<div align="left">
+								<a href="bpak-4325.exe"><img src="/images/dload-bn.gif" width="30" height="30" border="0" hspace="5" align="left" alt="Precompiled Aperto Networks MIBS"><b class="a3">Pre-Compiled MIB-PAK </b></a><br>
+								<font size="1"> 158 Kbytes</font><br>
+								</div>
+						</td>
+
+						<td height="40" width="148">
+							<div align="left">
+								<a href="javascript:openPopupMibs('asn1-4325.zip','4325','275')"><img src="/images/wzico.gif" width="40" height="40" border="0" hspace="5" align="left" alt="Download Aperto Networks SNMP MIBS"><b class="a3">ASN.1 MIBs</b></a><br>
+								<font size="1"> 23 Kbytes<br>
+								</font></div>
+						</td>
+					</tr>
+				</table>
+
+				<div id="mib-row-content">
+					<table border="0" cellpadding="5" cellspacing="0" width="100%">
+						<tr bgcolor="#2b436d" height="13">
+							<td width="90%" height="13"><a href='md-4325-1.html'><font color="white">MIB / Module</font></a>&nbsp;&nbsp;<a href='md-4325-2.html'><font color="white">OID</font></a>&nbsp;&nbsp;<a href='md-4325-3.html'><font color="white">Variable</font></a></td>
+							<td width="5%" height="13"><a href='md-4325-4.html'><font color="white">#</font></a></td>
+							<td width="5%" height="13"><a href='md-4325-5.html'><font color="white">Date</font></a></td>
+						</tr>
+
+						<tr bgcolor='#EBEBEB' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/ANIROOT-MIB.html'>ANIROOT-MIB</A></td>
+<td width='5%' >41</td>
+<td width='5%' ></td><!-- 7/9/2009 10:44:07 PM -->
+</tr><tr bgcolor='#EBEBEB'><td colspan='3'><font size=2>1.3.6.1.4.1.4325&nbsp;&nbsp;(ani)</font></td></tr>
+</tr>
+
+<tr bgcolor='#DCDCDC' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSU-BRGCLUSTER-MIB.html'>BSU-BRGCLUSTER-MIB</A></td>
+<td width='5%' >2</td>
+<td width='5%' >9/25/2002</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#DCDCDC'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.5.1&nbsp;&nbsp;(aniBsuSuBridgeEnable)</font></td></tr>
+</tr><tr bgcolor='#DCDCDC'><td colspan='4' height='13'><font size='1'>This group allows Configuration/Viewing of Bridging and Clustering parameters for BSU. Clusters can be added and deleted using Configuration Manager and viewed using SNMP. When BSU is running in point to point mode, this group is not applicable. Also for </font></td></tr>
+
+<tr bgcolor='#EBEBEB' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUCLK-MIB.html'>BSUCLK-MIB</A></td>
+<td width='5%' >8</td>
+<td width='5%' >5/9/2001</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#EBEBEB'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.4.1&nbsp;&nbsp;(aniBsuClkSntpTimeZone)</font></td></tr>
+</tr><tr bgcolor='#EBEBEB'><td colspan='4' height='13'><font size='1'>This module is used to configure the clock time on the BSU. BSUs need to obtain and set their current clock time at boot up. Sus will communicate with the BSU during their own boot up and set their own clock time to that of BSU. Time at the BSU can be set</font></td></tr>
+
+<tr bgcolor='#DCDCDC' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUMSUBNETS-MIB.html'>BSUMSUBNETS-MIB</A></td>
+<td width='5%' >6</td>
+<td width='5%' >5/9/2001</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#DCDCDC'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.6.1&nbsp;&nbsp;(aniBsuSubnetConfTable)</font></td></tr>
+</tr>
+
+<tr bgcolor='#EBEBEB' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUPARAM-MIB.html'>BSUPARAM-MIB</A></td>
+<td width='5%' >2</td>
+<td width='5%' >11/12/2001</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#EBEBEB'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.8.1&nbsp;&nbsp;(aniBsuDhcpParamSource)</font></td></tr>
+</tr><tr bgcolor='#EBEBEB'><td colspan='4' height='13'><font size='1'>This group contains other configurable parameters for the BSU. </font></td></tr>
+
+<tr bgcolor='#DCDCDC' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUSTATS-MIB.html'>BSUSTATS-MIB</A></td>
+<td width='5%' >40</td>
+<td width='5%' >5/9/2001</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#DCDCDC'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.3.1&nbsp;&nbsp;(aniBsuStatsGrp)</font></td></tr>
+</tr><tr bgcolor='#DCDCDC'><td colspan='4' height='13'><font size='1'>This group contains Statistical information for the BSU. aniBsuRfStatsTable shows the RF Port level statistics. aniBsuStatsBWGroup shows the bandwidth allocation statistics. aniBsuRfSigQStatsTable shows the Signal Quality Port level statistics. </font></td></tr>
+
+<tr bgcolor='#EBEBEB' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUSTATUS-MIB.html'>BSUSTATUS-MIB</A></td>
+<td width='5%' >25</td>
+<td width='5%' >9/25/2002</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#EBEBEB'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.1.1&nbsp;&nbsp;(aniBsuStatusBootState)</font></td></tr>
+</tr><tr bgcolor='#EBEBEB'><td colspan='4' height='13'><font size='1'>This group shows the Status Information for the BSU. The aniBsuStatusRadioTable shows the information for each radio that is connected to the BSU. </font></td></tr>
+
+<tr bgcolor='#DCDCDC' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUSUBASE-MIB.html'>BSUSUBASE-MIB</A></td>
+<td width='5%' >8</td>
+<td width='5%' >5/9/2001</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#DCDCDC'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.7.2.1&nbsp;&nbsp;(aniBsuSuBaseTable)</font></td></tr>
+</tr><tr bgcolor='#DCDCDC'><td colspan='4' height='13'><font size='1'>This group allows the users of the BSU to access some basic information about the SU through Proxy. </font></td></tr>
+
+<tr bgcolor='#EBEBEB' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUSUINV-MIB.html'>BSUSUINV-MIB</A></td>
+<td width='5%' >10</td>
+<td width='5%' >5/9/2001</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#EBEBEB'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.7.1.1&nbsp;&nbsp;(aniBsuSuInvTable)</font></td></tr>
+</tr><tr bgcolor='#EBEBEB'><td colspan='4' height='13'><font size='1'>This group allows viewing of SU Inventory information maintained by the BSU. It provides information about all the SUs connected to the particular BSU. </font></td></tr>
+
+<tr bgcolor='#DCDCDC' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUSUSTATS-MIB.html'>BSUSUSTATS-MIB</A></td>
+<td width='5%' >23</td>
+<td width='5%' >5/9/2001</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#DCDCDC'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.7.4.1&nbsp;&nbsp;(aniBsuSuServStatsTable)</font></td></tr>
+</tr><tr bgcolor='#DCDCDC'><td colspan='4' height='13'><font size='1'>This group contains Statistical information for each SU connected to this BSU. It displays statistics per SU per Service Flow ID when viewed from the BSU. </font></td></tr>
+
+<tr bgcolor='#EBEBEB' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUSUSTATUS-MIB.html'>BSUSUSTATUS-MIB</A></td>
+<td width='5%' >28</td>
+<td width='5%' >5/9/2001</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#EBEBEB'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.7.3.1&nbsp;&nbsp;(aniBsuSuUSLinkStatusTable)</font></td></tr>
+</tr><tr bgcolor='#EBEBEB'><td colspan='4' height='13'><font size='1'>This group allows the users of the BSU to access status information about the SU. It consists of 2 tables - The Upstream Link Status Table and Downstream Link Status Table. </font></td></tr>
+
+<tr bgcolor='#DCDCDC' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUVLAN-MIB.html'>BSUVLAN-MIB</A></td>
+<td width='5%' >7</td>
+<td width='5%' >10/25/2002</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#DCDCDC'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.11.1&nbsp;&nbsp;(aniBsuVlanConf)</font></td></tr>
+</tr><tr bgcolor='#DCDCDC'><td colspan='4' height='13'><font size='1'>This group shows the VLAN information for the BSU. </font></td></tr>
+
+<tr bgcolor='#EBEBEB' height='13'>
+<td width='90%' ><A HREF='http://www.oidview.com/mibs/4325/BSUWIRELESSIF-MIB.html'>BSUWIRELESSIF-MIB</A></td>
+<td width='5%' >90</td>
+<td width='5%' >2/10/2003</td><!-- 7/9/2009 10:44:08 PM -->
+</tr><tr bgcolor='#EBEBEB'><td colspan='3'><font size=2>1.3.6.1.4.1.4325.3.2.1&nbsp;&nbsp;(aniBsuWirelessPortTable)</font></td></tr>
+</tr>
+
+
+
+					</table>
+				</div>
+
+			</td>
+
+			<td width="2">
+			</td>
+
+			<td align='center' width="400" valign='top' HEIGHT="100%">
+
+					<IFRAME
+						align='left'
+						valign='top'
+						id='sidebar'
+						name='sidebar'
+						src="http://www.oidview.com/mibs/sidebar.html?VID=4325"
+						scrolling="no"
+						frameborder=0
+						border=0
+						HEIGHT="100%" WIDTH="380">
+					</IFRAME><br>
+
+			</td>
+
+			</tr>
+
+		</table>
+
+		<P></P>
+
+		<center>
+			<script type="text/javascript">
+				GA_googleFillSlot("mibs_footer_leaderboard");
+			</script>
+		</center>
+
+		<table border="0" cellpadding="5" cellspacing="2" width="890">
+			<tr>
+				<td>
+				<center><HR width="890">
+					This file automagically generated by OidView <a href='http://www.oidview.com/oidview.html'>Network and Fault Management</a> Tools and SNMP <a href='http://www.oidview.com/mibbrowser.html'>MIB Browser</a>.<BR>Copyright 2001-2010 <a href='http://www.oidview.com'>ByteSphere Technologies LLC</a>, and Nicholas W. Saparoff. All rights Reserved.
+				</center>
+				</td>
+			</tr>
+		</table>
+
+		<BR><BR>
+
+		<script type="text/javascript" src="/ga.js"></script>
+		<script type="text/javascript" src="http://analytics.aweber.com/js/awt_analytics.js?id=6Rcm"></script>
+
+		</div>
+		</center>
+
+	</body>
+
+</html>
+

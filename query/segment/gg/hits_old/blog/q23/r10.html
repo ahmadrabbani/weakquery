@@ -1,0 +1,511 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+<!-- template_regular -->
+<meta http-equiv = "Content-Type" content = "text/html; charset=iso-8859-1">
+<title>Life on Mars - present environment</title>
+<link rel='stylesheet' type='text/css' href='/redesign/style_main.css' media="screen">
+<link rel="stylesheet" href="/redesign/print.css" type="text/css" media="print" />
+<link rel='stylesheet' type='text/css' href='/redesign/colorbox.css'>
+<link rel="shortcut icon"  type="image/x-icon"  href="/favicon.ico">
+
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" media="screen" type="text/css" href="http://www.windows2universe.org/redesign/IE7.css" /> 
+<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" type="text/css" href="http://www.windows2universe.org/redesign/IE6.css" /><![endif]--> 
+<link rel="stylesheet" href="/redesign/horiz-nav.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/JavaScript/jquery.min.js"></script>
+<script type="text/JavaScript" src="/redesign/zRSS/jquery.zrssfeed.js"></script>
+<script  type="text/javascript" src="/redesign/zRSS/jquery.vticker.js"></script>
+<script type="text/javascript" src="/redesign/hoverIntent/jquery.hoverIntent.minified.js"></script>
+<script type="text/JavaScript" src="/redesign/jquery.colorbox-min.js"></script>
+<script  type="text/javascript" src="/JavaScript/win_main_jquery.js"></script>
+<script  type="text/javascript">
+$(document).ready(function() {
+	var feeds = ['http://geography.usgs.gov/newsroom/USGS_Geography_RSS.php','http://feeds.feedburner.com/usgsfaqs','http://earthobservatory.nasa.gov/Feeds/rss/nh.rss'];
+	for( var i=0; i<feeds.length; i++ ) {
+  	  $('#news_left').append('<div id="ticker'+i+'"> </div>');
+  		$('#ticker'+i).rssfeed(feeds[i], { content: false }, function(e) {
+                    $(e).find(' div.rssBody').vTicker({ showItems: 1, pause: 20000, height: 0, speed: 1000});
+   	 	});
+	}
+	
+	if ( $('#events_scroll').find('li').length > 2 ) {
+	$('#events_scroll').vTicker({
+		speed: 1000,
+		pause: 20000,
+		showItems: 2
+	});
+	}
+
+	$('#bookmark_button').click( function() {
+            $.get( '/php/bookmark.php', $(this).attr('name'), function(data) {
+            $('#bookmark_result').append(data).show();
+          });
+	});
+	
+	 $('#bookmark_result_close').live( 'click',function() {
+            $('#bookmark_result').hide().html('<a href="#" id="bookmark_result_close">x</a>') ;
+        }); 
+        
+        $('#bookmark_remove').live( 'click',function() {
+                $.get( '/php/bookmark.php', $(this).attr('name') + '&action=remove', function(data) {
+                $('#bookmark_result').html('<a href="#" id="bookmark_result_close">x</a>').append(data).show();
+            }); 
+        });
+
+
+	$('#closewindow').live( 'click', function() {
+		$('#donation_ad').hide();
+		 $.get( '/php/ad_close.php');
+	});
+	$('a[href*="quiz.php"]').colorbox({width:"700", height:"800",  opacity:0.5, iframe:true, overlayClose: false});
+ });
+</script>
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-7815427952014216");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-7815427952014216", "156x90_bottom_left");
+GA_googleAddSlot("ca-pub-7815427952014216", "156x90_bottom_right");
+GA_googleAddSlot("ca-pub-7815427952014216", "156x90_top_left");
+GA_googleAddSlot("ca-pub-7815427952014216", "156x90_top_right");
+GA_googleAddSlot("ca-pub-7815427952014216", "top_leaderboard");
+GA_googleAddSlot("ca-pub-7815427952014216", "bottom_leaderboard");
+GA_googleAddSlot("ca-pub-7815427952014216", "content_rectangle");
+GA_googleAddSlot("ca-pub-7815427952014216", "left_skyscraper");
+GA_googleAddSlot("ca-pub-7815427952014216", "right_skyscraper");
+GA_googleAddSlot("ca-pub-7815427952014216", "156x192_rectangle");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script>
+
+
+<script type="text/JavaScript">
+ $(document).ready(function() {
+      
+      var len1 = $('#column_left').height();
+      var len2 = $('#column_right').height() - 65;
+      var num = Math.max( len1, len2 ) - $('#content').height()-30 ;
+      num = Math.round(num/132)-1;
+	if ( num <= 0 )  $('#features').hide();
+      else $('#features .feature').slice( num ).hide(); 
+     
+      $fwidth = 519 + 40; 
+      $fheight = 475 + 200; 
+      $('#content_image a').colorbox({transition:'elastic', speed:500, innerWidth:$fwidth,  innerHeight:$fheight, maxHeight:"100%", opacity:0.8,  iframe:true});
+      $('#content a[href*="image.html"]').not('#content_image a').colorbox({transition:'elastic', speed:500, width:"850", height:"550", opacity:0.8,  iframe:true});
+ });
+
+</script>
+
+</head>
+<body >
+<div id="frame">
+<div id="ad_top"><!-- top_leaderboard -->
+<script type='text/javascript'>
+GA_googleFillSlot("top_leaderboard");
+</script></div>
+    <div id="header">
+		<div id="logo"><a href="http://www.windows2universe.org"><img src="/images/logo.gif" border=0></a></div>
+		
+		<div id="level_buttons">
+		  <div id="language_buttons">  <img src="/redesign/language.gif" usemap="#language" border=0>
+  <map name="language">
+  <area shape="rect" href="/earth/Life/Mars_environment.html&lang=en"  coords="14,11,61,49" alt="English">
+  <area shape="rect" href="/earth/Life/Mars_environment.html&lang=sp" coords="64,0,118,36" alt="Spanish">
+  </map>
+</div>
+			        <ul>
+	<li><a href="/earth/Life/Mars_environment.html&edu=elem">Beginner</a></li>
+	<li class="active"><a href="/earth/Life/Mars_environment.html&edu=mid" >Intermediate</a></li>
+	<li><a href="/earth/Life/Mars_environment.html&edu=high">Advanced</a></li>
+	</ul>
+
+		  <div id="search_form">
+		        <form method=get action="/php/search/search_new.php">
+		  <input class="bordered" size=20 name="search_phrase">
+		  <input type="submit" name="submit" value="Search" class="search_button">
+		  <input type=hidden name="search_level" value="mid">
+		  <input type=hidden name="edu" value="mid">
+		  <input type=hidden name="lang" value="en">
+		  </form>
+		  <div id="member_link"><a href="/membership.html">Become a Member</a><br><a href="/gen_member_benefits.html">Member Benefits, No Ads</a></div>
+		  </div>
+		</div>
+		<div id="nesta_blurb"><a href="http://www.nestanet.org">Brought to you by the National Earth Science Teachers Association</a></div>
+    </div>
+    <div id="enclose">
+     <!--  <div id="links_main"> -->
+          <ul id="topnav"><li><a href="/sun/sun.html" class="parentLink">Sun</a>
+<div class="sub"><ul><li><a href="/sun/solar_interior_new.html">Interior </a>
+<li><a href="/sun/solar_atmosphere.html">Atmosphere</a>
+<li><a href="/sun/solar_activity.html">Activity</a>
+<li><a href="/sun/atmosphere/sunspots.html">Sunspots</a>
+<li><a href="/sun/sun_polar_regions.html">Poles</a>
+<li><a href="/sun/atmosphere/solar_eclipse.html">Eclipses</a>
+<li><a href="/sun/sun_magnetic_field.html">Magnetic Field</a>
+<li><a href="/physical_science/physics/radiation.html">Radiation</a>
+<li><a href="/sun/fate.html">Fate</a>
+<li><a href="/mythology/planets/sun.html">Culture</a>
+<li class='more'><a href='#'>more...</a><ul><li class="more_item"><a href="/space_weather/space_weather.html">Space Weather</a>
+<li class="more_item"><a href="/sun/sun_il.html">Multimedia</a>
+<li class="more_item"><a href="/sun/recent_images.html">Recent Images</a>
+<li class="more_item"><a href="/sun/mission.html">Missions</a>
+<li class="more_item"><a href="/sun/statistics.html">Facts</a>
+<li class="more_item"><a href="/php/headline_universe/solar_system/sun_news.php">News</a>
+<li class="more_item"><a href="/sun/links.html">Links</a>
+</ul></li></ul></div></li><li  class="active"><a href="/earth/earth.html"  class="parentLink">Earth</a>
+<div class="sub"><ul><li><a href="/earth/interior_surface.html">Interior/Surface</a>
+<li><a href="/earth/Atmosphere/overview.html">Atmosphere</a>
+<li><a href="/earth/Magnetosphere/overview.html">Magnetosphere</a>
+<li><a href="/earth/moons_and_rings.html">Moon</a>
+<li><a href="/earth/polar/polar.html">Poles</a>
+<li><a href="/earth/climate/climate.html">Climate</a>
+<li><a href="/earth/Water/overview.html">Water</a>
+<li class="active "><a href="/earth/Life/life.html">Life</a>
+<li><a href="/mythology/planets/Earth/earth.html">Myth</a>
+<li><a href="/earth/research_expeditions.html">Exploration</a>
+<li class='more'><a href='#'>more...</a><ul><li class="more_item"><a href="/earth/changing_planet/changing_planet.html">Our Changing Planet</a>
+<li class="more_item"><a href="/earth/ess1.html">Earth System</a>
+<li class="more_item"><a href="/earth/statistics.html">Facts</a>
+<li class="more_item"><a href="/php/gallery/gallery.php?id=7">Multimedia</a>
+<li class="more_item"><a href="/earth/links.html">Links</a>
+<li class="more_item"><a href="/php/headline_universe/earth_science/earth_news.php">News</a>
+<li class="more_item"><a href="/cool_stuff/tours_main.html">Tours</a>
+</ul></li></ul></div></li><li><a href="/our_solar_system/solar_system.html" class="parentLink">Solar System</a>
+<div class="sub"><ul><li><a href="/our_solar_system/solar_system_1.html">Formation</a>
+<li><a href="/sun/sun.html">Sun</a>
+<li><a href="/our_solar_system/planets.html">Planets</a>
+<li><a href="/our_solar_system/dwarf_planets/dwarf_planets.html">Dwarf Planets</a>
+<li><a href="/our_solar_system/asteroids.html">Asteroids</a>
+<li><a href="/our_solar_system/meteors/meteors.html">Meteors</a>
+<li><a href="/comets/comets.html">Comets</a>
+<li><a href="/our_solar_system/solar_system_poles.html">Poles </a>
+<li><a href="/mythology/planets/planets.html">Culture</a>
+<li><a href="/our_solar_system/discovery.html">Discovery</a>
+<li class='more'><a href='#'>more...</a><ul><li class="more_item"><a href="/comets/Kuiper_belt.html">Kuiper Belt</a>
+<li class="more_item"><a href="/our_solar_system/reference_data.html">Facts</a>
+<li class="more_item"><a href="/php/headline_universe/solar_system/solar_system.php">News</a>
+<li class="more_item"><a href="/php/gallery/gallery.php?id=66">Multimedia</a>
+<li class="more_item"><a href="/cool_stuff/tours_main.html">Tours</a>
+</ul></li></ul></div></li><li><a href="/the_universe/the_universe.html" class="parentLink">Space</a>
+<div class="sub"><ul><li><a href="/the_universe/uts/ast_history.html">History</a>
+<li><a href="/the_universe/uts/intro.html">Our Sky</a>
+<li><a href="/the_universe/Constellations/constnavi.html">Constellations</a>
+<li><a href="/the_universe/sky_maps.html">Sky Maps</a>
+<li><a href="/the_universe/Stars.html">Stars</a>
+<li><a href="/the_universe/Stars/exoplanets.html">Exoplanets </a>
+<li><a href="/the_universe/Strange.html">Strange Stuff</a>
+<li><a href="/the_universe/Galaxy.html">Galaxies</a>
+<li><a href="/the_universe/Cosmology.html">Cosmos</a>
+<li class='more'><a href='#'>more...</a><ul><li class="more_item"><a href="/the_universe/Nebula.html">Star Dust</a>
+<li class="more_item"><a href="/php/headline_universe/universe/universe_news.php">News</a>
+<li class="more_item"><a href="/php/gallery/gallery.php?id=78">Multimedia</a>
+<li class="more_item"><a href="/the_universe/links.html">Links</a>
+<li class="more_item"><a href="/space_missions/space_missions.html">Missions</a>
+<li class="more_item"><a href="/cool_stuff/tours_main.html">Tours</a>
+</ul></li></ul></div></li><li><a href="/physical_science/sciences.html" class="parentLink">Sciences</a>
+<div class="sub"><ul><li><a href="/earth/geology/geology.html">Geology</a>
+<li><a href="/physical_science/physics/physics.html">Physics</a>
+<li><a href="/physical_science/chemistry/chemistry.html">Chemistry</a>
+<li><a href="/earth/Life/biology.html">Biology</a>
+<li><a href="/olpa/nsf_olpa_portal.html">Research</a>
+<li><a href="/people/people.html">Scientists</a>
+<li><a href="/earth/research_expeditions.html">Expeditions</a>
+<li><a href="/people/scientific_process.html">Scientific Process </a>
+<li><a href="/cool_stuff/tour_evolution_0.html">Evolution</a>
+<li class='more'><a href='#'>more...</a><ul><li class="more_item"><a href="/teacher_resources/main/frameworks/frameworks_main.html">Frameworks </a>
+<li class="more_item"><a href="/teacher_resources/sci_schools/ss_home.html">Scientists in Schools</a>
+</ul></li></ul></div></li><li><a href="/mythology/myths_stories_art.html" class="parentLink">Culture</a>
+<div class="sub"><ul><li><a href="/mythology/mythology.html">Myth</a>
+<li><a href="/art_and_music/storyfolk.html">Stories</a>
+<li><a href="/art_and_music/poems.html">Poetry</a>
+<li><a href="/php/poetry_pictures/poetry_pictures.php">Poetry & Pictures</a>
+<li><a href="/art_and_music/books.html">Books</a>
+<li><a href="/art_and_music/films.html">Movies</a>
+<li><a href="/art_and_music/cloud_art/cloud_art_main.html">Clouds in Art</a>
+<li><a href="/art_and_music/art_archive.html">Mythology Art </a>
+<li><a href="/mythology/links.html">Links</a>
+<li><a href="/art_and_music/people_art_archive.html">People Art </a>
+</ul></div></li><li><a href="/people/people.html" class="parentLink">People</a>
+<div class="sub"><ul><li><a href="/people/ancient_epoch.html">Ancient</a>
+<li><a href="/people/middle_ages.html">Middle Ages</a>
+<li><a href="/people/ren_epoch.html">Renaissance</a>
+<li><a href="/people/enlightenment.html">Enlightenment </a>
+<li><a href="/people/modern_era.html">Modern Era</a>
+<li><a href="/people/today.html">Today</a>
+<li><a href="/people/astronauts.html">Astronauts</a>
+<li><a href="/people/scientific_process.html">Scientific Process</a>
+<li class='more'><a href='#'>more...</a><ul><li class="more_item"><a href="/people/blogs/scientist.html">Blogs</a>
+<li class="more_item"><a href="/people/observatory.html">The Observatory</a>
+<li class="more_item"><a href="/bio/bio_entry.html">Windows People</a>
+<li class="more_item"><a href="/coloring_book/index_people.html">Coloring Book</a>
+<li class="more_item"><a href="/people/links.html">Links</a>
+</ul></li></ul></div></li><li><a href="/games/games.html" class="parentLink">Games</a>
+<div class="sub"></div></li><li><a href="/teacher_resources/main/teacher_resources.html" class="parentLink">Teachers</a>
+<div class="sub"><ul><li><a href="/teacher_resources/main/gccepdn_main.html">Web Seminars</a>
+<li><a href="/teacher_resources/main/frameworks/frameworks_main.html">Frameworks</a>
+<li><a href="/php/teacher_resources/activity.php">Activities</a>
+<li><a href="javascript:wb_onclick();">Journal</a>
+<li><a href="/teacher_resources/main/w2u_workshops.html">Workshops</a>
+<li><a href="/teacher_resources/main/enewsletter.html"> E-Newsletter</a>
+<li><a href="/olpa/nsf_olpa_portal.html">Research </a>
+<li class='more'><a href='#'>more...</a><ul><li class="more_item"><a href="/teacher_resources/sci_schools/ss_home.html">Scientists in Schools</a>
+<li class="more_item"><a href="/cool_stuff/tours_main.html">Tours</a>
+<li class="more_item"><a href="/teacher_resources/online_courses/courses_content_menu.html">Online Courses Content Pages</a>
+<li class="more_item"><a href="/teacher_resources/main/edu_links.html">Links</a>
+</ul></li></ul></div></li><li><a href="/more_links.html" class="parentLink">more...</a>
+<div class="sub"><ul><li><a href="/space_weather/space_weather.html">Space Weather</a>
+<li><a href="/headline_universe/headline_universe.html">News</a>
+<li><a href="/olpa/nsf_olpa_portal.html">Research</a>
+<li><a href="/multimedia_gallery/multimedia_gallery.html">Multimedia</a>
+<li><a href="/people/postcards/postcards_menu.html">Postcards</a>
+<li><a href="/kids_space/kids_space.html">Kids' Space</a>
+<li><a href="/citizen_science/citizen_science.html">Citizen Science</a>
+</ul></div></li></ul>
+    <!--  </div> --> <!-- links_main -->
+     <!--  <div id="links_sub"> </div> -->
+	<div id="column_left">
+            <div id="links_left">
+              
+	                       <!-- AddThis Button BEGIN -->
+		<script type="text/javascript">
+			var addthis_config = { ui_click: true };
+			 
+	         </script>
+             <div id="share" class="addthis_toolbox addthis_default_style">
+                <a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4c44c1d374d06de9" class="addthis_button">Share this page</a>
+                </div>
+		  
+                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c44c1d374d06de9"></script>
+                <!-- AddThis Button END -->
+              <ul><li class='leftnav_title'>LIFE AND ECOLOGY <EM>(THE BIOSPHERE)</EM></li><li><a href="/earth/Life/biosphere.html">Biosphere</a>
+</li><li><a href="/earth/Life/cell_intro.html">Cells</a>
+</li><li><a href="/earth/Life/genetics_intro.html">Genetics</a>
+</li><li><a href="/earth/Life/classification_intro.html">Classification</a>
+</li><li><a href="/earth/ecosystems.html">Ecosystems</a>
+</li><li><a href="/earth/polar/polar_life_intro.html">Polar Life</a>
+</li><li><a href="/people/postcards/postcards_menu.html">Postcards</a>
+</li><li><a href="/cool_stuff/tour_evolution_0.html">Evolution</a>
+</li><li><a href="/earth/Life/astrobio_intro.html">Astrobiology</a>
+</li><li><a href="/php/headline_universe/earth_science/biosphere_news.php">News</a>
+</li><li><a href="/php/gallery/gallery.php?id=15">Life Images</a>
+</li><li><a href="/earth/Life/lifepeople.html">Scientists</a>
+</li><li><a href="/cool_stuff/tours_main.html">Tours</a>
+</li></ul>
+            </div> <!-- links_left -->
+            	  
+	    <div id="hotchalk"><!-- left_skyscraper -->
+<script type='text/javascript'>
+GA_googleFillSlot("left_skyscraper");
+</script>
+ </div>
+  
+            <div id="news_left">
+ 	     	     <div id="ticker"> <h4><a href='/multimedia_gallery/rss_feeds.html'>RSS Feeds</a></h4> </div> 
+	    </div>
+	        <div class="dfp_ad">
+	<!-- ca-pub-7815427952014216/156x90_top_right -->
+        <script type='text/javascript'>
+        GA_googleFillSlot("156x90_top_right");
+        </script>
+	</div>
+	<div class="dfp_ad">
+	<!-- ca-pub-7815427952014216/156x90_bottom_right -->
+        <script type='text/javascript'>
+        GA_googleFillSlot("156x90_bottom_right");
+        </script>
+	</div>
+                    <div class="dfp_ad">
+		<!-- ca-pub-7815427952014216/156x90_top_left -->
+		<script type='text/javascript'>
+		GA_googleFillSlot("156x90_top_left");
+		</script>
+		</div>
+
+    	</div> <!-- column_left -->
+
+      <div id="column_main">
+	
+            <div id="content">
+		 
+ 	      
+	      <div id="content_wrapper"  style="width: 216px">
+                <div id="content_image">                  
+                    
+                    <a href="/mars/images/vikingsite_color_image.html">
+                    
+      		    <img src="/mars/images/vikingsite_color_s.gif" width=216></a>
+      		</div>
+      		<div id="content_caption">This is an image of the surface of Mars.<br>
+                    
+                    Click on image for full size<br>
+                    
+        	    <em>   NASA</em>
+    		</div>
+			  
+    		<div id="content_page_links">   				 
+                        
+    		</div>
+		
+  	      </div> <!-- content_wrapper-->
+	      
+<h1>Can there be Life in the Environment of Mars?</h1> 
+  	      In spite of the fact that Mars has an atmosphere, the environment of Mars seems unfriendly toward <a href="/earth/Life/life.html" >life as we know it</a> on earth.
+<p>Mars is small, so there is not much gravity.  For this reason, much of the <a href="/mars/lower_atmosphere.html" >atmosphere</a> of Mars has drifted away.  With little atmosphere, and no ozone layer, there is less protection from the ultraviolet radiation of the sun, which is very harmful to life.
+<p>With little atmosphere, there is a only a small buffer between the surface and space itself.   This means that the temperature above the surface is cold.  With little atmosphere, there is only a little pressure, which sophisticated life forms such as humans need to keep blood from boiling.  (Remember what happened to the characters of the movie "Total Recall" when they encountered the surface of Mars)!
+<p>We know, however, that there are life forms on earth which can survive in very harsh environments.
+<p>In the <a href="/earth/Life/Mars_past_environment.html" >past</a>, liquid water flowed on the surface of Mars.  With a liquid water habitat and a thicker atmosphere, life may have once thrived.  More exploration of Mars is needed to determine if <a href="/earth/Life/Mars_life_discovery.html" >life</a> was once present there.     
+
+<br clear=all>
+
+
+
+        
+		<div id="last_updated"></div>   
+		 
+		<div class="ad_store_content"><a href='/store/product.php?productid=21' target='_blank'><img src='/store/images/T/Insects in amber_150x99.jpg'  border=0 class='left'></a><img src='/images/cart_earth.jpg'  class='right'><p><h4>Shop Windows to the Universe Science Store!</h4>We have beautiful specimens of <a href="/store/product.php?productid=21&cat=9&page=1">insects in amber</a> in our <a href="/store/home.php">online store</a> from Nature's Own, along with many other <a href="/store/home.php?cat=9">mineral</a> specimens.</div> 
+		 
+	    </div> <!-- content-->
+	<div id="community"> <div id='adrect' >
+ <!-- content_rectangle -->
+<script type='text/javascript'>
+GA_googleFillSlot("content_rectangle");
+</script>
+ </div>
+ 
+  <table border=0>
+  <tr><td colspan=2 align='center' > <h3>Windows to the Universe Community </h3></td></tr>
+  <tr><td width='50%' align='center'><h3>News</h3></td><td align='center'><h3>Opportunities</h3></td></tr>
+  <tr><td><div class="community_link"><img src="/newsletters/images/10_2006_5.jpg"> <a href="/teacher_resources/main/w2u_workshops.html">Upcoming W2U Events</a></div></td>
+  <td><div class="community_link"><img src="/newsletters/images/11_2006_6.jpg"> <a href="/membership.html">Join Today - Benefits,<br> No Ads!</a></div></td></tr>
+   <tr><td><div class="community_link"><img src="/newsletters/images/4_2009_Corner3.jpg"> <a href="/offers.html">Special Offers for Teachers</a></div></td>
+   <td><div class="community_link"><img src="/images/icons/earthatm_atmoptics.jpg"> <a href="/gen_member_benefits.html">Member Benefits</a></div></td></tr>
+    <tr><td><div class="community_link"><img src="/images/icons/teacher_newsletter.jpg" > <a href="/teacher_resources/main/enewsletter.html">Teacher Newsletter</a></div></td>
+    <td><div class="community_link"><img src="/images/icons/schools_aboutsciedu.jpg"> <a href="/partnership_opportunities.html" >Partnership Opportunities</a></div></td></tr>
+  </table>
+</div>
+
+	    
+		<div id="features">
+                    <h2>You might also be interested in:</h2><div class="feature"><a href="/store/product.php?productid=22"><img src="/store/images/T/Perisphinctes ammonite_150x99.jpg" width=155></a><h2><a href="/store/product.php?productid=22">White Ammonite</a></h2><strong>Check out <a href='/store/index.php' target='_blank'>our online store</a></strong> - minerals, fossils, books, activities, jewelry, and household items!<a class="more" href="/store/product.php?productid=22">...more</a></div><div class="feature"><a href="/earth/Life/Mars_life_discovery.html"><img src="/mars/images/the_meteorite_small.gif" width=155></a><h2><a href="/earth/Life/Mars_life_discovery.html">The possible discovery of Life on Mars</a></h2>In July, 1996, it was announced that Dr. David McKay, along with a team of scientists at Johnson Space Center (a division of NASA), had discovered possible fossils of bacteria in a meteorite named ALH84<a class="more" href="/earth/Life/Mars_life_discovery.html">...more</a></div><div class="feature"><a href="/space_missions/mars/phoenix_mars_lander/phoenix_objectives_instruments.html"><img src="/space_missions/mars/phoenix_mars_lander/mars_phoenix_lander_sm.jpg" width=155></a><h2><a href="/space_missions/mars/phoenix_mars_lander/phoenix_objectives_instruments.html">Phoenix Mars Lander - Instruments and Mission Objectives</a></h2>The Phoenix Mars Lander was a robot spacecraft that was sent to Mars. Phoenix landed near the North Pole on Mars. This page tells about the mission of Phoenix. It also describes the instruments on the<a class="more" href="/space_missions/mars/phoenix_mars_lander/phoenix_objectives_instruments.html">...more</a></div><div class="feature"><a href="/earth/Life/atacama_desert_life.html"><img src="/physical_science/basic_tools/telescopes/images/eso_la_silla_atacama_sm.jpg" width=155></a><h2><a href="/earth/Life/atacama_desert_life.html">Life in the Atacama Desert</a></h2>The Atacama Desert in Chile is one of the driest places on Earth. Some plants, animals, and microbes manage to survive there, though. People live and work in the Atacama Desert, too. Places like the Atacama,<a class="more" href="/earth/Life/atacama_desert_life.html">...more</a></div><div class="feature"><a href="/earth/Life/J_environment.html"><img src="/jupiter/images/galprobe_jpl_small.gif" width=155></a><h2><a href="/earth/Life/J_environment.html">Can there be Life in the Environment of Jupiter?</a></h2>Jupiter's atmospheric environment is one of strong gravity, high pressure, strong winds, from 225 miles per hour to 1000 miles per hour, and cold temperatures of -270 degrees to +32 degrees (freezing temperature).<a class="more" href="/earth/Life/J_environment.html">...more</a></div><div class="feature"><a href="/earth/Life/S_environment.html"><img src="/saturn/images/saturnc_small.gif" width=155></a><h2><a href="/earth/Life/S_environment.html">The Environment of Saturn</a></h2>Saturn's atmospheric environment is one of strong gravity, high pressure, strong winds, from 225 miles per hour to 1000 miles per hour, and cold temperatures of -270 degrees to +80 degrees. With winds<a class="more" href="/earth/Life/S_environment.html">...more</a></div><div class="feature"><a href="/earth/Life/Titan_environment.html"><img src="/saturn/images/titan_blank.gif" width=155></a><h2><a href="/earth/Life/Titan_environment.html">Can there be Life in the Environment of Titan?</a></h2>Titan's atmosphere is a lot like the Earth's, except that it is very cold, from -330 degrees to -290 degrees! Like the Earth, there is a lot of Nitrogen and other complex molecules. There also may be an<a class="more" href="/earth/Life/Titan_environment.html">...more</a></div><div class="feature"><a href="/earth/Life/autotrophs.html"><img src="/earth/Life/images/autotroph_sm.jpg" width=155></a><h2><a href="/earth/Life/autotrophs.html">Autotrophs</a></h2>Autotrophs are organisms that can "make their own food" from an inorganic source of carbon (carbon dioxide) given a source of energy. Most autotrophs use sunlight in the process of photosynthesis to make<a class="more" href="/earth/Life/autotrophs.html">...more</a></div>
+		</div> <!-- features -->
+	    
+        </div> <!-- column_main -->
+    </div> <!-- enclose -->
+       
+    <div id="column_right">
+        <div id="shop" class="highlight">
+        <h2>Shop Windows to the Universe</h2><a href='/store/product.php?productid=14' target='_blank'><img src='/store/images/T/Charoite_150x100.jpg' height=90 border=0></a><a href="/store/product.php?productid=14&cat=9&page=1">Charoite</a> is available in our <a href="/store/home.php">online store</a>, along with other <a href="/store/home.php?cat=9">minerals</a> and <a href="/store/home.php?cat=10">fossils</a>, <a href="/store/home.php?cat=5">books</a>, <a href="/store/home.php?cat=1">activities</a>, <a href="/store/home.php?cat=12">jewelry</a>, and <a href="/store/home.php?cat=11">household items</a>.        
+        </div>
+        <div id="login">
+	        <h2>Please log in</h2>
+        <form method=post action="https://www.windows2universe.org/php/registration/reg_login_new.php?lang=en">
+        Username:<br/><input size=17 name="login" class="bordered" ><br/>
+        Password:<br/><input size=17 name="password" type="password" class="bordered" >
+        <br/><input type="submit" name="submit" value="Log in" class="login_button"> 
+        <input type=hidden name="lang" value="en">
+        <input type=hidden name="location" value="/earth/Life/Mars_environment.html">
+        </form>
+        <p><a href="/membership.html">Become a member</a><br><a href="/gen_member_benefits.html">Member Benefits, No Ads</a><br>
+	 <a href="/php/registration/reg_school.php">School Subscriptions</a><br>
+	  <a href="/php/registration/reg_menu_school.php">School/Classroom Login</a></p><p><a href='/php/teacher_resources/quiz.php'><font color='red'>Test your knowledge</font></a></p>
+        </div>       
+        <div id="google_mockup">
+	<!-- right_skyscraper -->
+<script type='text/javascript'>
+GA_googleFillSlot("right_skyscraper");
+</script>
+        </div>
+          <div class="dfp_double_ad">
+      <!-- 156x192_rectangle -->
+      <script type='text/javascript'>
+      GA_googleFillSlot("156x192_rectangle");
+      </script>
+      </div>
+	<div id="blogs">    <h4>Science Blogs</h4>
+    <p><a href="http://www.realclimate.org/" target="_blank">Real Climate: climate science from climate scientists</a>
+    <p><a href="http://starstuff.blogspot.com/" target="_blank">Star Stuff: science news from an astronomer's perspective</a>
+    <p><a href="http://classic.globe.gov/fsl/scientistsblog/" target="_blank">Global Learning and Observations to Benefit the Environment</a>
+    <p><a href="http://www.talkingscience.org/category/citizen-science-buzz/" target="_blank">Citizen Science Buzz</a></div>
+    
+        <div id="sponsors" class="highlight">
+            <img src='/redesign/sponsors1.jpg' usemap="#m_sponsors1" border=0><br>Generous sponsorship of Windows to the Universe is provided by the Hewlett Foundation, the American Geological Institute, the American Geophysical Union, the National Science Foundation, NASA, NCAR, and the CISM and CMMAP projects.<img src='/redesign/sponsors2.jpg' align=center usemap="#m_sponsors2"  border=0>
+    <map name="m_sponsors2">
+    <area shape="rect" coords="96,30,120,55" href="http://www.nasa.gov" target="_blank" title="NASA" alt="NASA" >
+    <area shape="rect" coords="14,30,43,56" href="http://www.cmmap.org/index.html" target="_blank" title="CMMAP" alt="CMMAP" >
+    <area shape="rect" coords="45,33,91,52" href="http://www.agu.org" title="AGU" alt="AGU" >
+    <area shape="rect" coords="80,11,130,28" href="http://www.bu.edu/cism/" target="_blank" title="CISM" alt="CISM" >
+    <area shape="rect" coords="18,10,78,29" href="http://www.ncar.ucar.edu" target="_blank" title="NCAR" alt="NCAR" >
+    </map>
+    <map name="m_sponsors1">
+    <area shape="rect" coords="87,7,144,32" href="http://www.hewlett.org" target="_blank" title="Hewlett" alt="Hewlett" >
+    <area shape="rect" coords="46,6,79,37" href="http://www.agiweb.org/" target="_blank" title="AGI" alt="AGI" >
+    <area shape="rect" coords="4,4,37,38" href="http://www.nsf.gov" target="_blank" title="NSF" alt="NSF" >
+</map>      
+        </div>
+       
+    </div> <!-- column_right -->
+
+    <div id="footer">
+  <div id="adsense_bottom"><!-- bottom_leaderboard -->
+<script type='text/javascript'>
+GA_googleFillSlot("bottom_leaderboard");
+</script>  </div> 
+        <div id="footer_content">
+          <ul>
+          <li><a href="/about_windows.html">About Us</a></li>
+          <li><a href="/comments/comments.html">Contact Us</a></li>
+          <li><a href="/disclaimer.html">Disclaimers</a></li>
+          <li><a href="/image_linking.html">Policies</a></li>
+          <li><a href="/copyright.html">Copyright</a></li>
+          <li><a href="/donation.html">Donate</a></li>
+          <li><a href="/advertising.html">Advertise</a></li>
+          <li><a href="/credits.html">Credits</a></li>
+          <li><a href="/privacy_policy.html">Privacy Policy</a></li>
+          <li><a href="/bibliography.html">Bibliography</a></li>
+          </ul>
+        </div>
+<div id="copyright">The source of this material is <em>Windows to the Universe</em>, at <a href="http://windows2universe.org">http://windows2universe.org/</a> from the <a href="http://nestanet.org">National Earth Science Teachers Association (NESTA)</a>. The Website was developed in part with the support of <a href="http://www.ucar.edu">UCAR</a> and <a href="http://www.ncar.ucar.edu">NCAR</a>, where it resided from 2000 - 2010.  &copy; 2011 National Earth Science Teachers Association. <em>Windows to the Universe</em>&reg; is a registered trademark of NESTA. All Rights Reserved. See our <a href="/copyright.html">copyright and licenses</a> page for information about how you can use our materials.<a href="/image_linking.html">Site policies</a> and <a href="/disclaimer.html">disclaimer.</a></div>
+    </div>
+</div> <!-- frame -->
+
+<IMG SRC="/bug/earth/Life/Mars_environment.html" WIDTH="1" HEIGHT="1">
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-674DE8hxF_rfA"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-674DE8hxF_rfA.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+<!-- Start Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var benchmarkTracker = _gat._getTracker("UA-5033010-1");
+benchmarkTracker._trackPageview();
+
+var pageTracker = _gat._getTracker("UA-8361503-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- End Google Analytics -->
+</body>
+</html>

@@ -1,0 +1,648 @@
+
+
+
+<!-- QUERY: SELECT name, shortname, id FROM titles WHERE name = 'Entertainment Business Newsweekly ' -->
+
+
+<!--  : 48 -->
+
+<!-- 
+
+Array
+(
+    [0] => Keywords: Sci- Fi Channel.
+)
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sci- Fi Channel - SCI FI Partners With E1 Entertainment</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="VerticalNews - A Top News Source Online - More News in More Articles Each Week Than Any Other Publisher"/>
+<meta name="author" content="NewsRx"/>
+<meta name="Distribution" content="Global"/>
+<meta name="revisit-after" content="1 day"/>
+<meta name="robots" content="FOLLOW,INDEX"/>
+<script type="text/javascript" language="javascript" src="/js/ajax.js"></script>
+<meta name="keywords" content="Entertainment Business Newsweekly , , verticalnews, vertical news, research, business news"/>
+
+<link rel="shortcut icon" href="http://www.verticalnews.com/favicon.ico" type="image/x-icon"/>
+
+<link href="http://www.verticalnews.com/css/style.css" rel="stylesheet" type="text/css"/>
+
+
+<script type="text/javascript" src="http://www.verticalnews.com/includes/dropdown.js"></script>
+
+<script type="text/javascript">
+<!-- Begin
+var NewWinPutX=10;
+var NewWinPutY=10;
+
+function Start(page) {
+OpenWin = this.open(page, "CtrlWindow", "toolbar=no,menubar=yes,location=yes,scrollbars=yes,resizable=yes,width=650,height=400,left=100,top=100");
+}
+
+function popupWin(page){
+	var w = 450;
+	var h = 220;
+	var winl = (screen.width - w) / 2;
+	var wint = (screen.height - h) / 2;
+	
+	window.open('http://www.newsrx.com/popup_tos.php', '', 'toolbar=0,scrollbars=1,location=0,statusbar=1,menubar=0,resizable=0,width='+w+',height='+h+',left='+winl+',top='+wint+'');
+}
+
+function popupWin2(page,width,height){
+	var w = width;
+	var h = height;
+	var winl = (screen.width - w) / 2;
+	var wint = (screen.height - h) / 2;
+	
+	window.open(page, '', 'toolbar=1,scrollbars=1,location=0,statusbar=1,menubar=0,resizable=0,width='+w+',height='+h+',left='+winl+',top='+wint+'');
+}
+
+function popupImg(page){
+	var w = 600;
+	var h = 400;
+	var winl = (screen.width - w) / 2;
+	var wint = (screen.height - h) / 2;
+	
+	window.open(page, '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width='+w+',height='+h+',left='+winl+',top='+wint+'');
+}
+
+function toggleDisplay(areaID) {
+	if( document.getElementById(areaID).style.display == "none" ) {
+    	document.getElementById(areaID).style.display = "block";
+  	} else {
+    	document.getElementById(areaID).style.display = "none";
+    }
+}
+
+
+var Open = ""
+var Closed = ""
+function preload(){
+	if(document.images){
+		Open = new Image(16,13)
+		Closed = new Image(16,13)
+		Open.src = "http://www.newsrx.com/product_descriptions/images/open.gif"
+		Closed.src = "http://www.newsrx.com/product_descriptions/images/closed.gif"
+	}
+}
+function showhide(what,what2){
+	if (what.style.display=='none'){
+		what.style.display='';
+		what2.src=Open.src
+	}
+	else{
+		what.style.display='none'
+		what2.src=Closed.src
+	}
+}
+
+
+
+function enough(limit, validate) {
+	var el, msg = '', howmany = 0;
+	for (var i=0; i < document.subscriber.elements.length; ++i) {
+		el = document.subscriber.elements[i];
+		if (el.type == 'checkbox' && el.checked) ++howmany;
+	}
+	msg +=
+	(howmany>limit) ?
+	'Please select at most ' + limit + '.' :
+	(validate && howmany != limit) ?
+	'Please check at least ' + limit + ' of the boxes, my friend.' :
+	'';
+	if (msg) {
+		alert(msg);
+		return false;
+	}
+	return true;
+}
+
+
+
+
+
+/***********************************************
+* Cool DHTML tooltip script II- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var offsetfromcursorX=12 //Customize x offset of tooltip
+var offsetfromcursorY=10 //Customize y offset of tooltip
+
+var offsetdivfrompointerX=10 //Customize x offset of tooltip DIV relative to pointer image
+var offsetdivfrompointerY=14 //Customize y offset of tooltip DIV relative to pointer image. Tip: Set it to (height_of_pointer_image-1).
+
+document.write('<div id="dhtmltooltip"></div>') //write out tooltip DIV
+document.write('<img id="dhtmlpointer" src="http://www.newsrx.com/images/arrow2.gif">') //write out pointer image
+
+var ie=document.all
+var ns6=document.getElementById && !document.all
+var enabletip=false
+if (ie||ns6)
+var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
+
+var pointerobj=document.all? document.all["dhtmlpointer"] : document.getElementById? document.getElementById("dhtmlpointer") : ""
+
+function ietruebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function ddrivetip(thetext, thewidth, thecolor){
+if (ns6||ie){
+if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+tipobj.innerHTML=thetext
+enabletip=true
+return false
+}
+}
+
+function positiontip(e){
+if (enabletip){
+var nondefaultpos=false
+var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+//Find out how close the mouse is to the corner of the window
+var winwidth=ie&&!window.opera? ietruebody().clientWidth : window.innerWidth-20
+var winheight=ie&&!window.opera? ietruebody().clientHeight : window.innerHeight-20
+
+var rightedge=ie&&!window.opera? winwidth-event.clientX-offsetfromcursorX : winwidth-e.clientX-offsetfromcursorX
+var bottomedge=ie&&!window.opera? winheight-event.clientY-offsetfromcursorY : winheight-e.clientY-offsetfromcursorY
+
+var leftedge=(offsetfromcursorX<0)? offsetfromcursorX*(-1) : -1000
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<tipobj.offsetWidth){
+//move the horizontal position of the menu to the left by it's width
+tipobj.style.left=curX-tipobj.offsetWidth+"px"
+nondefaultpos=true
+}
+else if (curX<leftedge)
+tipobj.style.left="5px"
+else{
+//position the horizontal position of the menu where the mouse is positioned
+tipobj.style.left=curX+offsetfromcursorX-offsetdivfrompointerX+"px"
+pointerobj.style.left=curX+offsetfromcursorX+"px"
+}
+
+//same concept with the vertical position
+if (bottomedge<tipobj.offsetHeight){
+tipobj.style.top=curY-tipobj.offsetHeight-offsetfromcursorY+"px"
+nondefaultpos=true
+}
+else{
+tipobj.style.top=curY+offsetfromcursorY+offsetdivfrompointerY+"px"
+pointerobj.style.top=curY+offsetfromcursorY+"px"
+}
+tipobj.style.visibility="visible"
+if (!nondefaultpos)
+pointerobj.style.visibility="visible"
+else
+pointerobj.style.visibility="hidden"
+}
+}
+
+function hideddrivetip(){
+if (ns6||ie){
+enabletip=false
+tipobj.style.visibility="hidden"
+pointerobj.style.visibility="hidden"
+tipobj.style.left="-1000px"
+tipobj.style.backgroundColor=''
+tipobj.style.width=''
+}
+}
+
+document.onmousemove=positiontip
+
+
+
+//-->
+</script>
+
+
+
+</head>
+<body>
+
+<!-- begin header -->
+<table width="819" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><a href="http://www.verticalnews.com/index.php"><img src="http://www.verticalnews.com/images/logo.jpg" border="0" alt="VerticalNews" title="VerticalNews"/></a></td>
+		
+		
+		
+<td align="right" valign="bottom">
+<a href="http://www.verticalnews.com/login.php"><img src="http://www.verticalnews.com/images/subcriber-login.gif" alt="VerticalNews" border="0"/></a>
+</td>
+		
+		
+	</tr>
+	<tr>
+	  	<td colspan="2">
+	 		<table border="0" align="center" cellpadding="0" cellspacing="0" width="834">
+				<tr>
+					<td width="63"><a href="http://www.verticalnews.com/index.php"><img src="http://www.verticalnews.com/images/nav-home.gif" alt="VerticalNews" border="0"/></a></td>
+					<td width="75"><a href="http://www.verticalnews.com/products.php"><img src="http://www.verticalnews.com/images/nav-products.gif" alt="VerticalNews" border="0"/></a></td>
+					<td width="71"><a href="http://www.verticalnews.com/about_us.php"><img src="http://www.verticalnews.com/images/nav-about-us.gif" alt="VerticalNews" border="0"/></a></td>
+					<td width="68"><a href="http://www.verticalnews.com/contacts.php"><img src="http://www.verticalnews.com/images/nav-contact.gif" alt="VerticalNews" border="0"/></a></td>
+					<td width="131" style="background-image:url(http://www.verticalnews.com/images/nav-bkgd.gif);">&nbsp;</td>
+					<td width="100" style="background-image:url(http://www.verticalnews.com/images/nav-bkgd.gif);">&nbsp;</td>
+					<td width="67"><img src="http://www.verticalnews.com/images/home/nav.gif" alt="VerticalNews"/></td>
+					<td width="263"><img src="http://www.verticalnews.com/images/home/nav-find.gif" alt="VerticalNews"/></td>
+				</tr>
+			</table>
+		</td>
+  	</tr>
+</table>
+
+
+
+
+<!--BEGIN BODY-->
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="819">
+  <tr>
+    <!--BEGIN LEFT SIDE-->
+	<td width="199" valign="top">
+		
+				<br />
+		
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="199">
+  <tr>
+    <td><table border="0" cellspacing="0" cellpadding="0" width="199">
+		<tr>
+          <td align="center">
+		  	
+						
+		  </td>
+        </tr>
+	
+        <tr>
+          <td><img src="http://www.verticalnews.com/images/home/side-nav-top.gif" alt="VerticalNews"/></td>
+        </tr>
+        <tr>
+          <td width="199" style="padding-right: 5px; background-image:url(http://www.verticalnews.com/images/home/side-nav-border.gif);">
+              
+          
+          	<b>Government</b><br />
+<div>
+<ul class="nav_list">
+<li><a href="http://Defense-and-Aerospace.verticalnews.com/index.html">Defense &amp; Aerospace</a></li>
+<li><a href="http://Politics-and-Government.verticalnews.com/index.html">Politics &amp; Government</a></li>
+<li><a href="http://Transportation.verticalnews.com/index.html">Transportation</a></li>
+</ul></div>
+
+<b>Technology</b><br />
+<div>
+<ul class="nav_list">
+<li><a href="http://Computer.verticalnews.com/index.html">Computers</a></li>
+<li><a href="http://Electronics.verticalnews.com/index.html">Electronics</a></li>
+<li><a href="http://Engineering.verticalnews.com/index.html">Engineering</a></li>
+<li><a href="http://Information-Technology.verticalnews.com/index.html">Information Technology</a></li>
+<li><a href="http://Internet.verticalnews.com/index.html">Internet</a></li>
+<li><a href="http://Nanotechnology.verticalnews.com/index.html">Nanotechnology</a></li>
+<li><a href="http://Network.verticalnews.com/index.html">Networks</a></li>
+<li><a href="http://Robotics-and-Machine-Learning.verticalnews.com/index.html">Robotics &amp; Machine Learning</a></li>
+<li><a href="http://Technology.verticalnews.com/index.html">Technology</a></li>
+<li><a href="http://Telecommunications.verticalnews.com/index.html">Telecommunications</a></li>
+</ul></div>
+
+<b>Science</b><br />
+<div>
+<ul class="nav_list">
+<li><a href="http://Chemical-and-Chemistry.verticalnews.com/index.html">Chemicals &amp; Chemistry</a></li>
+<li><a href="http://Energy.verticalnews.com/index.html">Energy</a></li>
+<li><a href="http://Health.verticalnews.com/index.html">Health</a></li>
+<li><a href="http://Mathematics.verticalnews.com/index.html">Mathematics</a></li>
+<li><a href="http://Physics.verticalnews.com/index.html">Physics</a></li>
+<li><a href="http://Veterinary.verticalnews.com/index.html">Veterinary</a></li>
+</ul></div>
+
+<b>International</b><br />
+<div>
+<ul class="nav_list">
+<li><a href="http://China.verticalnews.com/index.html">China</a></li>
+<li><a href="http://India.verticalnews.com/index.html">India</a></li>
+</ul></div>
+
+<b>Business</b><br />
+<div>
+<ul class="nav_list">
+<li><a href="http://Economics.verticalnews.com/index.html">Economics</a></li>
+<li><a href="http://Insurance.verticalnews.com/index.html">Insurance</a></li>
+<li><a href="http://Investment.verticalnews.com/index.html">Investment</a></li>
+<li><a href="http://Marketing.verticalnews.com/index.html">Marketing</a></li>
+<li><a href="http://Mergers-and-Acquisitions.verticalnews.com/index.html">Mergers &amp; Acquisitions</a></li>
+<li><a href="http://Real-Estate.verticalnews.com/index.html">Real Estate</a></li>
+</ul></div>
+
+<b>Ecology &amp; Environment</b><br />
+<div>
+<ul class="nav_list">
+<li><a href="http://Agriculture.verticalnews.com/index.html">Agriculture</a></li>
+<li><a href="http://Ecology-Conservation-Environment.verticalnews.com/index.html">Ecology</a></li>
+<li><a href="http://Food.verticalnews.com/index.html">Food</a></li>
+<li><a href="http://Global-Warming.verticalnews.com/index.html">Global Warming</a></li>
+<li><a href="http://Mining-and-Minerals.verticalnews.com/index.html">Mining &amp; Minerals</a></li>
+</ul></div>
+
+<b>Entertainment</b><br />
+<div>
+<ul class="nav_list">
+<li><a href="http://Entertainment.verticalnews.com/index.html">Entertainment</a></li>
+<li><a href="http://Leisure-and-Travel.verticalnews.com/index.html">Leisure &amp; Travel</a></li>
+</ul></div>
+
+<b>Education</b><br />
+<div>
+<ul class="nav_list">
+<li><a href="http://Education.verticalnews.com/index.html">Education</a></li>
+	          	</ul>
+	          	
+	         <!-- 	-->
+	          	 
+	           <div class="nav"><img src="http://www.verticalnews.com/images/home/dotted-line.gif" alt="VerticalNews"/></div>  
+				<b>Other Products</b>              
+	              
+	              <div>
+	                <ul class="nav_list">
+	                  <li><a href="http://www.verticalnews.com/premium_newsletters.html">Premium Titles</a></li>
+	            <!--  <li><a href="http://www.verticalnews.com/products/passes.html">NewsRx Passes</a></li>
+	                  <li><a href="http://www.verticalnews.com/products/bundles.html">NewsRx Bundles</a></li>
+	                  <li><a href="http://www.verticalnews.com/products/custom_report.html">Custom Reports</a></li>
+	                  <li><a href="http://www.verticalnews.com/products/site_license.html">Site Licenses</a></li> -->
+	                </ul>
+	              </div>
+	              
+	              <div class="nav"><img src="http://www.verticalnews.com/images/home/dotted-line.gif" alt="VerticalNews"/></div>
+	              
+	              
+	              <div>
+	                <ul class="nav_list">
+	                  <li><a href="http://www.verticalnews.com/privacy_policy.php">Privacy Policy</a></li>
+	                </ul>
+	              </div>
+	              	          </div>
+	          
+	          
+	          
+	          
+	          
+	        </td>
+        </tr>
+        <tr>
+          <td><img src="http://www.verticalnews.com/images/home/side-nav-bottom.gif" alt="VerticalNews"/></td>
+        </tr>
+
+		<tr valign="top">
+         <td height="60"><a href="http://www.facebook.com/pages/Atlanta-GA/NewsRx-Medical-News/44344887808" target="_blank"><img title="VerticalNews On Facebook" src="http://www.verticalnews.com/images/home/find_us_on_facebook_badge.gif" border="0" alt="VerticalNews"/></a></td>
+        </tr>
+		
+		<!-- 06.28.2011 - jason@newsrx.com
+		<tr valign="top">
+         <td height="60"><a href="http://www.verticalnews.com/pr_registration.php"><img src="http://www.verticalnews.com/images/home/marketing-PR-button.gif" border="0" alt="VerticalNews"/></a></td>
+        </tr>
+		
+		<tr valign="top">
+         <td height="60"><a href="http://www.verticalnews.com/pr_login.php"><img src="http://www.verticalnews.com/images/home/PR-login.gif" border="0" alt="VerticalNews"/></a></td>
+        </tr>
+        -->
+
+    </table></td>
+  </tr>
+  <!--END SIDE NAV-->
+
+
+
+
+
+  <tr>
+    <td> <script language="JavaScript" type="text/javascript" src="//smarticon.geotrust.com/si.js"></script></td>
+  </tr>
+
+</table>
+			
+			
+				
+	
+	
+	
+</td>
+<!--END LEFT SIDE-->
+
+
+<!--BEGIN WECLOME-->
+<td valign="top">
+
+	<!--BEGIN SEARCH BAR-->
+	<table border="0" cellspacing="0" cellpadding="0">
+	
+		<tr>
+			<td id="searchbar-internal" align="right" width="620" valign="top">
+			
+				<form action="http://www.verticalnews.com/search_results.php" method="get" name="searchBar">
+				<table border="0" align="right" cellpadding="0" cellspacing="0">
+
+                  <tr>
+                    <td align="right">
+                    	<input name="search_term" type="text" id="search_field" value="Enter Keyword(s)" onfocus="if (this.value=='Enter Keyword(s)') { this.value = '' }  this.style.background='#FFFFCC';" onblur="if (this.value=='') { this.value = 'Enter Keyword(s)' }  this.style.background='#FFFFFF';" /><input type="hidden" name="termEval" value="ALL"  /></td>
+					<td><select name="cat" size="1" onchange="(document.searchBar.cat.selectedValue == 3 ? document.searchBar.action = 'http://www.verticalnews.com/search_options.php' : document.searchBar.action = 'http://www.verticalnews.com/search_results.php' )"><option selected="selected" value="a">All News</option><option value="p">Clinical News</option><option value="b">Business News</option><option value="c">Consumer News</option><option value="as">Advanced Search</option></select></td>
+                    <td align="right"><input name="doSearch" type="image" src="http://www.verticalnews.com/images/home/search-button.gif" id="search_button" class="search_button" /></td>
+                  </tr>
+                </table>
+                </form>
+				
+			</td>
+			</tr>
+		<tr>
+			<td height="7"><img src="http://www.verticalnews.com/images/home/spacer.gif" height="7" width="1" alt="VerticalNews"/></td>
+		</tr>
+	</table>
+	<!--END SEARCH BAR-->	
+		
+		
+	 <!--BEGIN MIDDLE SECTION-->
+	
+	<table border="0" cellspacing="0" cellpadding="0" width="620">
+	<tr>
+	<td valign="top">
+	
+		<table border="0" cellspacing="0" cellpadding="0" width="420">
+		<tr>
+		<td valign="top" id="text-internal">
+        
+        	<img src="http://www.verticalnews.com/images/space.gif" width="400" height="1" alt="VerticalNews"/>
+        
+
+<!-- HERE -->
+
+<h1 style="display: inline; margin: 0; color: red; font-size: 18pt; font-family: Impact;">Entertainment Business Newsweekly </h1>
+
+<div style="float: right; clear: right; width: 190px; margin-left: 10px; margin-top: 10px; margin-bottom:10px; padding: 5px; background-color: #F0F6FA; border: 1px solid #000; text-align: center;">
+<div style="font-weight: bold; margin-bottom: 5px;">Welcome to VerticalNews!</div>
+<div style="padding: 3px; background-color: #FFF; border: 1px solid #000; text-align: left;">
+<br>
+
+<div style="margin-left: 12px; margin-right: 10px;">We're a pay-per-view site for premium content. If you'd like to purchase this article, it's only $3.00.</div><br>
+
+<center><a href="http://www.verticalnews.com/issue_article.php?issuedate=2009-04-05&code=EBN&id=5245EBN" rel="nofollow"><img src="http://www.verticalnews.com/images/buy_now.gif" border="0" alt="Buy Now" title="Buy this Article Now" style="vertical-align: middle;" align="middle"></a></center>
+<br>
+
+</div>
+</div>
+
+<br>
+<br>
+
+<h2 class="articleSubhead">Sci- Fi Channel</h2><br>
+<br>
+
+<h1 class="articleTitle">SCI FI Partners With E1 Entertainment</h1><br>
+<br>
+
+<em>April 5th, 2009</em><br>
+<br>
+
+<!-- embed_term: 0.00057 //-->
+
+NBC Universal Global Networks today revealed a new five figure</p><p>  sponsorship deal for its SCI FI channel's primetime schedule. As part of the continued development and growth of the NBC Universal channel brands in the UK, E1 Entertainment UK's forthcoming theatrical blockbuster Knowing has been signed to sponsor fourteen nights of series and movies on the UK's only dedicated science fiction and fantasy channel.</p><p>  Brokered by Sky Media, the sponsorship will run up to and including March 25. SCI FI's in-house team has produced apocalyptic break bumpers and opener and closer credits for wrap around primetime programming including hit series Eli Stone and Medium,...<br><br>
+<a href="http://www.verticalnews.com/search_results.php?search_term=Sci-+Fi+Channel">Click here for more articles from Sci- Fi Channel</a><br>
+<br>
+
+<hr style="color: #000000; background-color: #000000; height: 1px; border: 0;">
+
+<b>Source:</b> <a href="http://www.verticalnews.com/premium_newsletters/Entertainment-Business-Newsweekly-/2009-04-05.html">Entertainment Business Newsweekly </a> (2009-04-05)<br>
+<ul>
+<li><a href="http://www.verticalnews.com/premium_newsletters/Entertainment-Business-Newsweekly-.html">View Other Issues of Entertainment Business Newsweekly </a><br>
+<li><a href="http://www.verticalnews.com/pub_list.php">View Other VerticalNews Publications</a><br>
+</ul>
+<br>
+
+	
+
+		<!--	<script lanugage="javascript" type="text/javascript">
+		
+		res_width = screen.width;
+		res_height = screen.height;
+		navigator.appName != "Netscape" ? color_depth = screen.colorDepth : color_depth = screen.pixelDepth;
+		visitor_ref = document.referrer;
+		
+		document.write("<img src=\"/tracker.php?pageVisit=28880887&sw="+res_width+"&sh="+res_height+"&cd="+color_depth+"&r="+escape(visitor_ref)+"\" height=\"1\" width=\"1\" alt=\"\">");
+		
+		</script>
+		//-->
+		
+	</td>
+	</tr>
+	</table>
+	
+	
+</td>
+    		
+<td valign="top">
+	<!--BEGIN RIGHT COLUMN-->
+
+	<table border="0" cellspacing="0" cellpadding="0" width="199">
+	
+	
+	<tr>
+		<td align="right"></td>
+	</tr>
+	
+		
+		
+
+				
+				
+				
+	<tr>
+<td>
+
+<table border="0" align="right" cellpadding="0" cellspacing="0" width="199">
+<tr>
+	<td align="right"><img src="/images/column_more_articles.jpg" alt="VerticalNews" /></td>
+</tr>
+<tr>
+	<td id="bg">
+	
+		
+		<ul>
+			
+			<li id="top_research"><a href="http://www.verticalnews.com/newsletters/Entertainment-Business-Newsweekly-/2009-04-05/839EBN.html">2009 College Basketball Tournament Guide Is Now Available</a></li>
+<li id="top_research"><a href="http://www.verticalnews.com/newsletters/Entertainment-Business-Newsweekly-/2009-04-05/841EBN.html">THQ Announces UFC&#174; 2009 Undisputed Cover Athletes</a></li>
+<li id="top_research"><a href="http://www.verticalnews.com/newsletters/Entertainment-Business-Newsweekly-/2009-04-05/892EBN.html">BBN Technologies Awarded $1.2 Million in Defense Funding to Help US Army Monitor Foreign Media</a></li>
+<li id="top_research"><a href="http://www.verticalnews.com/newsletters/Entertainment-Business-Newsweekly-/2009-04-05/920EBN.html">Go Go Gadget Crash Lands on iPhone</a></li>
+<li id="top_research"><a href="http://www.verticalnews.com/newsletters/Entertainment-Business-Newsweekly-/2009-04-05/926EBN.html">Performance, Value Abound in Gateway P-7808u FX Notebook for Gaming, Entertainment</a></li>
+<li id="top_research"><a href="http://www.verticalnews.com/newsletters/Entertainment-Business-Newsweekly-/2009-04-05/5529EBN.html">Tennis Growth Skyrockets 43 Percent!</a></li>
+		
+		</ul>
+	
+	</td>
+</tr>
+
+<tr>
+	<td align="right"><img src="/images/internal/top-ten-footer.gif" alt="VerticalNews" /></td>
+</tr>
+</table>
+
+<br></td>
+</tr>
+
+	
+	
+	
+				
+	</table>
+	
+	
+<!--END RIGHT COLUMN-->
+
+
+</td>
+</tr>
+</table>
+
+
+</td>
+</tr>
+</table>
+
+
+<!--</td></tr>-->
+<tr>
+<!--BEGIN FOOTER-->
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="819">
+  <tr>
+    <td colspan="2"><img src="http://www.verticalnews.com/images/home/footer.gif" alt="VerticalNews"/></td>
+
+  </tr>
+  <tr>
+    <td width="77"><span id="ss_img_wrapper_100-50_image_en">
+  <a href="http://www.globalsign.com/" target="_blank" title="SSL Certificate">
+   <img alt="SSL" border="0" id="ss_img" src="http://seal.globalsign.com/SiteSeal/images/gs_noscript_100-50_en.gif"/>
+  </a>
+</span>
+<script type="text/javascript" src="http://seal.globalsign.com/SiteSeal/gs_image_100-50_en.js"></script>
+<img src="https://www.globalsign.net/evcert.cfm" width="1" height="1" border="0" alt="VerticalNews"/> <!--<a href="https://seal.verisign.com/splash?form_file=fdf/splash.fdf&dn=WWW.NEWSRX.COM&lang=en" target="_blank"><img src="http://www.verticalnews.com/images/home/security-logo.gif" border="0"></a>--></td>
+    <td align="right" width="742" id="footer"><a href="http://www.verticalnews.com">Home</a> <!--| <a href="http://www.verticalnews.com/news_alerts.php">Free Newsletters</a>--> | <a href="http://www.verticalnews.com/products.php">Products</a> <!--| <a href="http://www.verticalnews.com/library/home.html">Article Library</a>--> | <a href="http://www.verticalnews.com/about_us.php">About Us</a> | <a href="http://www.verticalnews.com/contacts.php">Contact</a> | <a href="http://www.verticalnews.com/privacy_policy.php">Privacy Policy</a> | <a href="http://www.verticalnews.com/search_options.php">Search</a><br />
+
+Copyright © 2011 VerticalNews.com<br />
+</td>
+  </tr>
+
+</table>
+
+<!-- 0.37914 seconds //-->
+
+</body>
+</html>

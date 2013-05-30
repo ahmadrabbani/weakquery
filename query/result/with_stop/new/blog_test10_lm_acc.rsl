@@ -1,0 +1,1107 @@
+result:"of the:2910906" march penguins
+$1_1:of the
+target:"of the:2910906" march penguins anote:"march of the penguins"
+q_accu:0
+
+result:"of the:2910906" march penguins
+$1_1:of the
+$word_3:march
+$word_3:penguins
+target:"of the:2910906" march penguins anote:"march of the penguins"
+seg accuracy:0,0,0,0
+
+result:"larry summers:206211"
+1:larry summers "larry summers"
+target:"larry summers:206211" anote:"larry summers"
+q_accu:1
+
+result:"larry summers:206211"
+1:larry summers "larry summers"
+target:"larry summers:206211" anote:"larry summers"
+seg accuracy:1,1,1,1
+
+result:"of the:2910906" state_union:2622058
+$1_1:of the
+target:"of the:2910906" state_union:2622058 anote:"state of the union"
+q_accu:0
+
+result:"of the:2910906" state_union:2622058
+$1_1:of the
+$word_1:state union
+target:"of the:2910906" state_union:2622058 anote:"state of the union"
+seg accuracy:0,0,0,0
+
+result:"ann coulter:205522"
+1:ann coulter "ann coulter"
+target:"ann coulter:205522" anote:"ann coulter"
+q_accu:1
+
+result:"ann coulter:205522"
+1:ann coulter "ann coulter"
+target:"ann coulter:205522" anote:"ann coulter"
+seg accuracy:1,1,1,1
+
+result:"abramoff bush"
+2:"abramoff bush" "abramoff" "bush"
+target:"abramoff bush" anote:"abramoff" "bush"
+q_accu:0
+
+result:"abramoff bush"
+2:"abramoff bush" "abramoff" "bush"
+target:"abramoff bush" anote:"abramoff" "bush"
+seg accuracy:0,0,0,0
+
+result:"macbook pro:3677824"
+1:macbook pro "macbook pro"
+target:"macbook pro:3677824" anote:"macbook pro"
+q_accu:1
+
+result:"macbook pro:3677824"
+1:macbook pro "macbook pro"
+target:"macbook pro:3677824" anote:"macbook pro"
+seg accuracy:1,1,1,1
+
+result:"jon stewart:235888"
+1:jon stewart "jon stewart"
+target:"jon stewart:235888" anote:"jon stewart"
+q_accu:1
+
+result:"jon stewart:235888"
+1:jon stewart "jon stewart"
+target:"jon stewart:235888" anote:"jon stewart"
+seg accuracy:1,1,1,1
+
+result:"super bowl:27718" ads:2861
+$1_1:super bowl
+$word_2:ads
+target:"super bowl:27718" ads:2861 anote:"super bowl" "ads"
+q_accu:1
+
+result:"super bowl:27718" ads:2861
+$1_1:super bowl
+$word_2:ads
+target:"super bowl:27718" ads:2861 anote:"super bowl" "ads"
+seg accuracy:1,1,1,2
+
+result:"the club:1" letting india into
+$1_1:the club
+target:"the club:1" letting india into anote:"letting" "india" "into" "the" "club"
+q_accu:0
+
+result:"the club:1" letting india into
+$1_1:the club
+$word_3:letting
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$word_3:india
+$word_3:into
+target:"the club:1" letting india into anote:"letting" "india" "into" "the" "club"
+seg accuracy:0.75,0.6,0.666666666666667,3
+
+result:"arrested development:8241941"
+1:arrested development "arrested development"
+target:"arrested development:8241941" anote:"arrested development"
+q_accu:1
+
+result:"arrested development:8241941"
+1:arrested development "arrested development"
+target:"arrested development:8241941" anote:"arrested development"
+seg accuracy:1,1,1,1
+
+result:"mardi gras:38482"
+1:mardi gras "mardi gras"
+target:"mardi gras:38482" anote:"mardi gras"
+q_accu:1
+
+result:"mardi gras:38482"
+1:mardi gras "mardi gras"
+target:"mardi gras:38482" anote:"mardi gras"
+seg accuracy:1,1,1,1
+
+result:"colbert report:1838984"
+1:colbert report "colbert report"
+target:"colbert report:1838984" anote:"colbert report"
+q_accu:1
+
+result:"colbert report:1838984"
+1:colbert report "colbert report"
+target:"colbert report:1838984" anote:"colbert report"
+seg accuracy:1,1,1,1
+
+result:"whole foods:30871513"
+1:whole foods "whole foods"
+target:"whole foods:30871513" anote:"whole foods"
+q_accu:1
+
+result:"whole foods:30871513"
+1:whole foods "whole foods"
+target:"whole foods:30871513" anote:"whole foods"
+seg accuracy:1,1,1,1
+
+result:"cheney hunting"
+2:"cheney hunting" "cheney" "hunting"
+target:"cheney hunting" anote:"cheney" "hunting"
+q_accu:0
+
+result:"cheney hunting"
+2:"cheney hunting" "cheney" "hunting"
+target:"cheney hunting" anote:"cheney" "hunting"
+seg accuracy:0,0,0,0
+
+result:"strike fighter:164922" joint:210242
+$1_1:strike fighter
+target:"strike fighter:164922" joint:210242 anote:"joint strike fighter"
+q_accu:0
+
+result:"strike fighter:164922" joint:210242
+$1_1:strike fighter
+$word_2:joint
+target:"strike fighter:164922" joint:210242 anote:"joint strike fighter"
+seg accuracy:0,0,0,0
+
+result:"muhammad cartoon:7765099"
+1:muhammad cartoon "muhammad cartoon"
+target:"muhammad cartoon:7765099" anote:"muhammad cartoon"
+q_accu:1
+
+result:"muhammad cartoon:7765099"
+1:muhammad cartoon "muhammad cartoon"
+target:"muhammad cartoon:7765099" anote:"muhammad cartoon"
+seg accuracy:1,1,1,1
+
+result:"barry bonds:4375"
+1:barry bonds "barry bonds"
+target:"barry bonds:4375" anote:"barry bonds"
+q_accu:1
+
+result:"barry bonds:4375"
+1:barry bonds "barry bonds"
+target:"barry bonds:4375" anote:"barry bonds"
+seg accuracy:1,1,1,1
+
+result:"cindy sheehan:2328877"
+1:cindy sheehan "cindy sheehan"
+target:"cindy sheehan:2328877" anote:"cindy sheehan"
+q_accu:1
+
+result:"cindy sheehan:2328877"
+1:cindy sheehan "cindy sheehan"
+target:"cindy sheehan:2328877" anote:"cindy sheehan"
+seg accuracy:1,1,1,1
+
+result:"brokeback mountain:1623960"
+1:brokeback mountain "brokeback mountain"
+target:"brokeback mountain:1623960" anote:"brokeback mountain"
+q_accu:1
+
+result:"brokeback mountain:1623960"
+1:brokeback mountain "brokeback mountain"
+target:"brokeback mountain:1623960" anote:"brokeback mountain"
+seg accuracy:1,1,1,1
+
+result:"bruce bartlett:1717280"
+1:bruce bartlett "bruce bartlett"
+target:"bruce bartlett:1717280" anote:"bruce bartlett"
+q_accu:1
+
+result:"bruce bartlett:1717280"
+1:bruce bartlett "bruce bartlett"
+target:"bruce bartlett:1717280" anote:"bruce bartlett"
+seg accuracy:1,1,1,1
+
+result:"scott king:30308290" coretta:14863423
+$1_1:scott king
+target:"scott king:30308290" coretta:14863423 anote:"coretta scott king"
+q_accu:0
+
+result:"scott king:30308290" coretta:14863423
+$1_1:scott king
+$word_2:coretta
+target:"scott king:30308290" coretta:14863423 anote:"coretta scott king"
+seg accuracy:0,0,0,0
+
+result:"american idol:191890"
+1:american idol "american idol"
+target:"american idol:191890" anote:"american idol"
+q_accu:1
+
+result:"american idol:191890"
+1:american idol "american idol"
+target:"american idol:191890" anote:"american idol"
+seg accuracy:1,1,1,1
+
+result:"life on mars:463835"
+1:life on mars "life on mars"
+target:"life on mars:463835" anote:"life on mars"
+q_accu:1
+
+result:"life on mars:463835"
+1:life on mars "life on mars"
+target:"life on mars:463835" anote:"life on mars"
+seg accuracy:1,1,1,1
+
+result:"food industry:2437974" sonic:18994087
+$1_1:food industry
+target:"food industry:2437974" sonic:18994087 anote:"sonic food" "industry"
+q_accu:0
+
+result:"food industry:2437974" sonic:18994087
+$1_1:food industry
+$word_2:sonic
+target:"food industry:2437974" sonic:18994087 anote:"sonic food" "industry"
+seg accuracy:0,0,0,0
+
+result:"hybrid car:8166749"
+1:hybrid car "hybrid car"
+target:"hybrid car:8166749" anote:"hybrid car"
+q_accu:1
+
+result:"hybrid car:8166749"
+1:hybrid car "hybrid car"
+target:"hybrid car:8166749" anote:"hybrid car"
+seg accuracy:1,1,1,1
+
+result:"natalie portman:38459"
+1:natalie portman "natalie portman"
+target:"natalie portman:38459" anote:"natalie portman"
+q_accu:1
+
+result:"natalie portman:38459"
+1:natalie portman "natalie portman"
+target:"natalie portman:38459" anote:"natalie portman"
+seg accuracy:1,1,1,1
+
+result:"fox news:11121" report:4692150
+$1_1:fox news
+$word_2:report
+target:"fox news:11121" report:4692150 anote:"fox news" "report"
+q_accu:1
+
+result:"fox news:11121" report:4692150
+$1_1:fox news
+$word_2:report
+target:"fox news:11121" report:4692150 anote:"fox news" "report"
+seg accuracy:1,1,1,2
+
+result:"west wing:738133"
+1:west wing "west wing"
+target:"west wing:738133" anote:"west wing"
+q_accu:1
+
+result:"west wing:738133"
+1:west wing "west wing"
+target:"west wing:738133" anote:"west wing"
+seg accuracy:1,1,1,1
+
+result:"world trade:1" organization:105070
+$1_1:world trade
+target:"world trade:1" organization:105070 anote:"world trade organization"
+q_accu:0
+
+result:"world trade:1" organization:105070
+$1_1:world trade
+$word_2:organization
+target:"world trade:1" organization:105070 anote:"world trade organization"
+seg accuracy:0,0,0,0
+
+result:"jim moran:412996"
+1:jim moran "jim moran"
+target:"jim moran:412996" anote:"jim moran"
+q_accu:1
+
+result:"jim moran:412996"
+1:jim moran "jim moran"
+target:"jim moran:412996" anote:"jim moran"
+seg accuracy:1,1,1,1
+
+result:"board" "chess"
+$1_2:board
+target:"board" "chess" anote:"board chess"
+q_accu:0
+
+result:"board" "chess"
+$1_2:board
+$1_2:chess"
+target:"board" "chess" anote:"board chess"
+seg accuracy:0,0,0,0
+
+result:"global warming:5042951"
+1:global warming "global warming"
+target:"global warming:5042951" anote:"global warming"
+q_accu:1
+
+result:"global warming:5042951"
+1:global warming "global warming"
+target:"global warming:5042951" anote:"global warming"
+seg accuracy:1,1,1,1
+
+result:"ariel sharon:2944"
+1:ariel sharon "ariel sharon"
+target:"ariel sharon:2944" anote:"ariel sharon"
+q_accu:1
+
+result:"ariel sharon:2944"
+1:ariel sharon "ariel sharon"
+target:"ariel sharon:2944" anote:"ariel sharon"
+seg accuracy:1,1,1,1
+
+result:"business intelligence:168387" resources:10368228
+$1_1:business intelligence
+$word_2:resources
+target:"business intelligence:168387" resources:10368228 anote:"business intelligence" "resources"
+q_accu:1
+
+result:"business intelligence:168387" resources:10368228
+$1_1:business intelligence
+$word_2:resources
+target:"business intelligence:168387" resources:10368228 anote:"business intelligence" "resources"
+seg accuracy:1,1,1,2
+
+result:"lactose gas"
+2:"lactose gas" "lactose gas"
+target:"lactose gas" anote:"lactose gas"
+q_accu:1
+
+result:"lactose gas"
+2:"lactose gas" "lactose gas"
+target:"lactose gas" anote:"lactose gas"
+seg accuracy:1,1,1,1
+
+result:"steve jobs:7412236"
+1:steve jobs "steve jobs"
+target:"steve jobs:7412236" anote:"steve jobs"
+q_accu:1
+
+result:"steve jobs:7412236"
+1:steve jobs "steve jobs"
+target:"steve jobs:7412236" anote:"steve jobs"
+seg accuracy:1,1,1,1
+
+result:"king funeral"
+2:"king funeral" "king" "funeral"
+target:"king funeral" anote:"king" "funeral"
+q_accu:0
+
+result:"king funeral"
+2:"king funeral" "king" "funeral"
+target:"king funeral" anote:"king" "funeral"
+seg accuracy:0,0,0,0
+
+result:"carrie underwood:1535727"
+1:carrie underwood "carrie underwood"
+target:"carrie underwood:1535727" anote:"carrie underwood"
+q_accu:1
+
+result:"carrie underwood:1535727"
+1:carrie underwood "carrie underwood"
+target:"carrie underwood:1535727" anote:"carrie underwood"
+seg accuracy:1,1,1,1
+
+result:"aperto networks"
+2:"aperto networks" "aperto networks"
+target:"aperto networks" anote:"aperto networks"
+q_accu:1
+
+result:"aperto networks"
+2:"aperto networks" "aperto networks"
+target:"aperto networks" anote:"aperto networks"
+seg accuracy:1,1,1,1
+
+result:"sci fi:272659" channel
+$1_1:sci fi
+target:"sci fi:272659" channel anote:"sci fi channel"
+q_accu:0
+
+result:"sci fi:272659" channel
+$1_1:sci fi
+$word_3:channel
+target:"sci fi:272659" channel anote:"sci fi channel"
+seg accuracy:0,0,0,0
+
+result:"sag awards:4293294"
+1:sag awards "sag awards"
+target:"sag awards:4293294" anote:"sag awards"
+q_accu:1
+
+result:"sag awards:4293294"
+1:sag awards "sag awards"
+target:"sag awards:4293294" anote:"sag awards"
+seg accuracy:1,1,1,1
+
+result:"andrew coyne:1069015"
+1:andrew coyne "andrew coyne"
+target:"andrew coyne:1069015" anote:"andrew coyne"
+q_accu:1
+
+result:"andrew coyne:1069015"
+1:andrew coyne "andrew coyne"
+target:"andrew coyne:1069015" anote:"andrew coyne"
+seg accuracy:1,1,1,1
+
+result:"christianity today:695888"
+1:christianity today "christianity today"
+target:"christianity today:695888" anote:"christianity today"
+q_accu:1
+
+result:"christianity today:695888"
+1:christianity today "christianity today"
+target:"christianity today:695888" anote:"christianity today"
+seg accuracy:1,1,1,1
+
+result:"howard stern:113348"
+1:howard stern "howard stern"
+target:"howard stern:113348" anote:"howard stern"
+q_accu:1
+
+result:"howard stern:113348"
+1:howard stern "howard stern"
+target:"howard stern:113348" anote:"howard stern"
+seg accuracy:1,1,1,1
+
+result:"mark driscoll:2937447"
+1:mark driscoll "mark driscoll"
+target:"mark driscoll:2937447" anote:"mark driscoll"
+q_accu:1
+
+result:"mark driscoll:2937447"
+1:mark driscoll "mark driscoll"
+target:"mark driscoll:2937447" anote:"mark driscoll"
+seg accuracy:1,1,1,1
+
+result:"mashup camp"
+2:"mashup camp" "mashup" "camp"
+target:"mashup camp" anote:"mashup" "camp"
+q_accu:0
+
+result:"mashup camp"
+2:"mashup camp" "mashup" "camp"
+target:"mashup camp" anote:"mashup" "camp"
+seg accuracy:0,0,0,0
+
+result:"hawthorne heights:1600291"
+1:hawthorne heights "hawthorne heights"
+target:"hawthorne heights:1600291" anote:"hawthorne heights"
+q_accu:1
+
+result:"hawthorne heights:1600291"
+1:hawthorne heights "hawthorne heights"
+target:"hawthorne heights:1600291" anote:"hawthorne heights"
+seg accuracy:1,1,1,1
+
+result:"oscar fashion"
+2:"oscar fashion" "oscar" "fashion"
+target:"oscar fashion" anote:"oscar" "fashion"
+q_accu:0
+
+result:"oscar fashion"
+2:"oscar fashion" "oscar" "fashion"
+target:"oscar fashion" anote:"oscar" "fashion"
+seg accuracy:0,0,0,0
+
+result:"big love:2910063"
+1:big love "big love"
+target:"big love:2910063" anote:"big love"
+q_accu:1
+
+result:"big love:2910063"
+1:big love "big love"
+target:"big love:2910063" anote:"big love"
+seg accuracy:1,1,1,1
+
+result:"brand manager:256560"
+1:brand manager "brand manager"
+target:"brand manager:256560" anote:"brand manager"
+q_accu:1
+
+result:"brand manager:256560"
+1:brand manager "brand manager"
+target:"brand manager:256560" anote:"brand manager"
+seg accuracy:1,1,1,1
+
+result:"fort mcmurray:329151"
+1:fort mcmurray "fort mcmurray"
+target:"fort mcmurray:329151" anote:"fort mcmurray"
+q_accu:1
+
+result:"fort mcmurray:329151"
+1:fort mcmurray "fort mcmurray"
+target:"fort mcmurray:329151" anote:"fort mcmurray"
+seg accuracy:1,1,1,1
+
+result:"winter olympics:34069"
+1:winter olympics "winter olympics"
+target:"winter olympics:34069" anote:"winter olympics"
+q_accu:1
+
+result:"winter olympics:34069"
+1:winter olympics "winter olympics"
+target:"winter olympics:34069" anote:"winter olympics"
+seg accuracy:1,1,1,1
+
+result:"plug awards:2470400"
+1:plug awards "plug awards"
+target:"plug awards:2470400" anote:"plug awards"
+q_accu:1
+
+result:"plug awards:2470400"
+1:plug awards "plug awards"
+target:"plug awards:2470400" anote:"plug awards"
+seg accuracy:1,1,1,1
+
+result:"beggin strips:2469377"
+1:beggin strips "beggin strips"
+target:"beggin strips:2469377" anote:"beggin strips"
+q_accu:1
+
+result:"beggin strips:2469377"
+1:beggin strips "beggin strips"
+target:"beggin strips:2469377" anote:"beggin strips"
+seg accuracy:1,1,1,1
+
+result:"lance armstrong:23243880"
+1:lance armstrong "lance armstrong"
+target:"lance armstrong:23243880" anote:"lance armstrong"
+q_accu:1
+
+result:"lance armstrong:23243880"
+1:lance armstrong "lance armstrong"
+target:"lance armstrong:23243880" anote:"lance armstrong"
+seg accuracy:1,1,1,1
+
+result:"teri hatcher:210318"
+1:teri hatcher "teri hatcher"
+target:"teri hatcher:210318" anote:"teri hatcher"
+q_accu:1
+
+result:"teri hatcher:210318"
+1:teri hatcher "teri hatcher"
+target:"teri hatcher:210318" anote:"teri hatcher"
+seg accuracy:1,1,1,1
+
+result:"lawful access:5748872"
+1:lawful access "lawful access"
+target:"lawful access:5748872" anote:"lawful access"
+q_accu:1
+
+result:"lawful access:5748872"
+1:lawful access "lawful access"
+target:"lawful access:5748872" anote:"lawful access"
+seg accuracy:1,1,1,1
+
+result:"opera browser:18996620" opera_software:538484 opera_mobile:7699834 mobile_opera:12197928 opera_mini:3069269 opera software opera mobile opera mini
+$1_1:opera browser
+$word_1:opera software
+$word_1:opera mobile
+$word_1:mobile opera
+$word_1:opera mini
+$word_3:opera
+$word_3:software
+$word_3:opera
+$word_3:mobile
+$word_3:opera
+$word_3:mini
+target:"opera browser:18996620" opera_software:538484 opera_mobile:7699834 mobile_opera:12197928 opera_mini:3069269 opera software opera mobile opera mini anote:"opera software" "opera browser" "opera mobile" "opera mini"
+q_accu:0
+
+result:"opera browser:18996620" opera_software:538484 opera_mobile:7699834 mobile_opera:12197928 opera_mini:3069269 opera software opera mobile opera mini
+$1_1:opera browser
+$word_1:opera software
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$word_1:opera mobile
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$word_1:mobile opera
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$word_1:opera mini
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$word_3:opera
+$word_3:software
+$word_3:opera
+$word_3:mobile
+$word_3:opera
+$word_3:mini
+target:"opera browser:18996620" opera_software:538484 opera_mobile:7699834 mobile_opera:12197928 opera_mini:3069269 opera software opera mobile opera mini anote:"opera software" "opera browser" "opera mobile" "opera mini"
+seg accuracy:0.363636363636364,1,0.533333333333333,4
+
+result:"sasha cohen:1040267"
+1:sasha cohen "sasha cohen"
+target:"sasha cohen:1040267" anote:"sasha cohen"
+q_accu:1
+
+result:"sasha cohen:1040267"
+1:sasha cohen "sasha cohen"
+target:"sasha cohen:1040267" anote:"sasha cohen"
+seg accuracy:1,1,1,1
+
+result:"ford bell"
+2:"ford bell" "ford bell"
+target:"ford bell" anote:"ford bell"
+q_accu:1
+
+result:"ford bell"
+2:"ford bell" "ford bell"
+target:"ford bell" anote:"ford bell"
+seg accuracy:1,1,1,1
+
+result:"hitachi data systems:21318658"
+1:hitachi data systems "hitachi data systems"
+target:"hitachi data systems:21318658" anote:"hitachi data systems"
+q_accu:1
+
+result:"hitachi data systems:21318658"
+1:hitachi data systems "hitachi data systems"
+target:"hitachi data systems:21318658" anote:"hitachi data systems"
+seg accuracy:1,1,1,1
+
+result:"primary source:177891" wikipedia:5043734
+$1_1:primary source
+$word_2:wikipedia
+target:"primary source:177891" wikipedia:5043734 anote:"wikipedia" "primary source"
+q_accu:1
+
+result:"primary source:177891" wikipedia:5043734
+$1_1:primary source
+$word_2:wikipedia
+target:"primary source:177891" wikipedia:5043734 anote:"wikipedia" "primary source"
+seg accuracy:1,1,1,2
+
+result:"jiffy lube:4749459"
+1:jiffy lube "jiffy lube"
+target:"jiffy lube:4749459" anote:"jiffy lube"
+q_accu:1
+
+result:"jiffy lube:4749459"
+1:jiffy lube "jiffy lube"
+target:"jiffy lube:4749459" anote:"jiffy lube"
+seg accuracy:1,1,1,1
+
+result:"windows vista:2289648"
+1:windows vista "windows vista"
+target:"windows vista:2289648" anote:"windows vista"
+q_accu:1
+
+result:"windows vista:2289648"
+1:windows vista "windows vista"
+target:"windows vista:2289648" anote:"windows vista"
+seg accuracy:1,1,1,1
+
+result:"mark warner:13295044" for president
+$1_1:mark warner
+$word_3:for
+$word_3:president
+target:"mark warner:13295044" for president anote:"mark warner" "president"
+q_accu:1
+
+result:"mark warner:13295044" for president
+$1_1:mark warner
+$word_3:for
+$word_3:president
+target:"mark warner:13295044" for president anote:"mark warner" "president"
+seg accuracy:0.666666666666667,1,0.8,2
+
+result:"saudi arabia:349303" women in
+$1_1:saudi arabia
+target:"saudi arabia:349303" women in anote:"women in saudi arabia"
+q_accu:0
+
+result:"saudi arabia:349303" women in
+$1_1:saudi arabia
+$word_3:women
+$word_3:in
+target:"saudi arabia:349303" women in anote:"women in saudi arabia"
+seg accuracy:0,0,0,0
+
+result:"human rights:13831" un_commission:2945051 un commission on
+$1_1:human rights
+target:"human rights:13831" un_commission:2945051 un commission on anote:"un commission on human rights"
+q_accu:0
+
+result:"human rights:13831" un_commission:2945051 un commission on
+$1_1:human rights
+$word_1:un commission
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$word_3:un
+$word_3:commission
+$word_3:on
+target:"human rights:13831" un_commission:2945051 un commission on anote:"un commission on human rights"
+seg accuracy:0,0,0,0
+
+result:"frank gehry:53404" architecture:21296224
+$1_1:frank gehry
+$word_2:architecture
+target:"frank gehry:53404" architecture:21296224 anote:"frank gehry" "architecture"
+q_accu:1
+
+result:"frank gehry:53404" architecture:21296224
+$1_1:frank gehry
+$word_2:architecture
+target:"frank gehry:53404" architecture:21296224 anote:"frank gehry" "architecture"
+seg accuracy:1,1,1,2
+
+result:"chipotle restaurant"
+2:"chipotle restaurant" "chipotle restaurant"
+target:"chipotle restaurant" anote:"chipotle restaurant"
+q_accu:1
+
+result:"chipotle restaurant"
+2:"chipotle restaurant" "chipotle restaurant"
+target:"chipotle restaurant" anote:"chipotle restaurant"
+seg accuracy:1,1,1,1
+
+result:"ed norton:1310504"
+1:ed norton "ed norton"
+target:"ed norton:1310504" anote:"ed norton"
+q_accu:1
+
+result:"ed norton:1310504"
+1:ed norton "ed norton"
+target:"ed norton:1310504" anote:"ed norton"
+seg accuracy:1,1,1,1
+
+result:"european union:9317" iceland:14531
+$1_1:european union
+$word_2:iceland
+target:"european union:9317" iceland:14531 anote:"iceland" "european union"
+q_accu:1
+
+result:"european union:9317" iceland:14531
+$1_1:european union
+$word_2:iceland
+target:"european union:9317" iceland:14531 anote:"iceland" "european union"
+seg accuracy:1,1,1,2
+
+result:"tax break:2151903" for hybrid automobiles
+$1_1:tax break
+$word_3:for
+$word_3:hybrid
+$word_3:automobiles
+target:"tax break:2151903" for hybrid automobiles anote:"tax break" "hybrid automobiles"
+q_accu:0
+
+result:"tax break:2151903" for hybrid automobiles
+$1_1:tax break
+$word_3:for
+$word_3:hybrid
+$word_3:automobiles
+target:"tax break:2151903" for hybrid automobiles anote:"tax break" "hybrid automobiles"
+seg accuracy:0.25,0.5,0.333333333333333,1
+
+result:"whole foods:620343" wind_energy:317221 wind_energy:317221
+$1_1:whole foods
+$word_1:wind energy
+$word_1:wind energy
+target:"whole foods:620343" wind_energy:317221 wind_energy:317221 anote:"whole foods" "wind energy"
+q_accu:1
+
+result:"whole foods:620343" wind_energy:317221 wind_energy:317221
+$1_1:whole foods
+$word_1:wind energy
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$word_1:wind energy
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+target:"whole foods:620343" wind_energy:317221 wind_energy:317221 anote:"whole foods" "wind energy"
+seg accuracy:1,1.5,1.2,3
+
+result:"papa john\'s:374214" pizza:24768
+$1_1:papa john\'s
+target:"papa john\'s:374214" pizza:24768 anote:"papa john's pizza"
+q_accu:0
+
+result:"papa john\'s:374214" pizza:24768
+$1_1:papa john\'s
+$word_2:pizza
+target:"papa john\'s:374214" pizza:24768 anote:"papa john's pizza"
+seg accuracy:0,0,0,0
+
+result:"mahmoud ahmadinejad:7907317"
+1:mahmoud ahmadinejad "mahmoud ahmadinejad"
+target:"mahmoud ahmadinejad:7907317" anote:"mahmoud ahmadinejad"
+q_accu:1
+
+result:"mahmoud ahmadinejad:7907317"
+1:mahmoud ahmadinejad "mahmoud ahmadinejad"
+target:"mahmoud ahmadinejad:7907317" anote:"mahmoud ahmadinejad"
+seg accuracy:1,1,1,1
+
+result:"one child:7661594" china_law:37568
+$1_1:one child
+$word_1:china law
+target:"one child:7661594" china_law:37568 anote:"china" "one child" "law"
+q_accu:0
+
+result:"one child:7661594" china_law:37568
+$1_1:one child
+$word_1:china law
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+target:"one child:7661594" china_law:37568 anote:"china" "one child" "law"
+seg accuracy:0.5,0.333333333333333,0.4,1
+
+result:"intelligent design:15295"
+1:intelligent design "intelligent design"
+target:"intelligent design:15295" anote:"intelligent design"
+q_accu:1
+
+result:"intelligent design:15295"
+1:intelligent design "intelligent design"
+target:"intelligent design:15295" anote:"intelligent design"
+seg accuracy:1,1,1,1
+
+result:"and wool" sheep festival
+$1_2:and wool
+target:"and wool" sheep festival anote:"sheep" "wool" "festival"
+q_accu:0
+
+result:"and wool" sheep festival
+$1_2:and wool
+$word_3:sheep
+$word_3:festival
+target:"and wool" sheep festival anote:"sheep" "wool" "festival"
+seg accuracy:0.666666666666667,0.666666666666667,0.666666666666667,2
+
+result:"subway sandwiches:54581"
+1:subway sandwiches "subway sandwiches"
+target:"subway sandwiches:54581" anote:"subway sandwiches"
+q_accu:1
+
+result:"subway sandwiches:54581"
+1:subway sandwiches "subway sandwiches"
+target:"subway sandwiches:54581" anote:"subway sandwiches"
+seg accuracy:1,1,1,1
+
+result:"nancy grace:11481790"
+1:nancy grace "nancy grace"
+target:"nancy grace:11481790" anote:"nancy grace"
+q_accu:1
+
+result:"nancy grace:11481790"
+1:nancy grace "nancy grace"
+target:"nancy grace:11481790" anote:"nancy grace"
+seg accuracy:1,1,1,1
+
+result:"flag burning:536874"
+1:flag burning "flag burning"
+target:"flag burning:536874" anote:"flag burning"
+q_accu:1
+
+result:"flag burning:536874"
+1:flag burning "flag burning"
+target:"flag burning:536874" anote:"flag burning"
+seg accuracy:1,1,1,1
+
+result:"death with dignity act:1" oregon:26811621
+$1_1:death with dignity act
+target:"death with dignity act:1" oregon:26811621 anote:"oregon death with dignity act"
+q_accu:0
+
+result:"death with dignity act:1" oregon:26811621
+$1_1:death with dignity act
+$word_2:oregon
+target:"death with dignity act:1" oregon:26811621 anote:"oregon death with dignity act"
+seg accuracy:0,0,0,0
+
+result:"morgan freeman:20584"
+1:morgan freeman "morgan freeman"
+target:"morgan freeman:20584" anote:"morgan freeman"
+q_accu:1
+
+result:"morgan freeman:20584"
+1:morgan freeman "morgan freeman"
+target:"morgan freeman:20584" anote:"morgan freeman"
+seg accuracy:1,1,1,1
+
+result:"system of a down:28715"
+1:system of a down "system of a down"
+target:"system of a down:28715" anote:"system of a down"
+q_accu:1
+
+result:"system of a down:28715"
+1:system of a down "system of a down"
+target:"system of a down:28715" anote:"system of a down"
+seg accuracy:1,1,1,1
+
+result:"sew fast sew easy:13684709"
+1:sew fast sew easy "sew fast sew easy"
+target:"sew fast sew easy:13684709" anote:"sew fast sew easy"
+q_accu:1
+
+result:"sew fast sew easy:13684709"
+1:sew fast sew easy "sew fast sew easy"
+target:"sew fast sew easy:13684709" anote:"sew fast sew easy"
+seg accuracy:1,1,1,1
+
+result:"the line:13636763" i walk
+$1_1:the line
+target:"the line:13636763" i walk anote:"i walk the line"
+q_accu:0
+
+result:"the line:13636763" i walk
+$1_1:the line
+$word_3:i
+$word_3:walk
+target:"the line:13636763" i walk anote:"i walk the line"
+seg accuracy:0,0,0,0
+
+result:"world bank:33309"
+1:world bank "world bank"
+target:"world bank:33309" anote:"world bank"
+q_accu:1
+
+result:"world bank:33309"
+1:world bank "world bank"
+target:"world bank:33309" anote:"world bank"
+seg accuracy:1,1,1,1
+
+result:"ruth rendell:312241"
+1:ruth rendell "ruth rendell"
+target:"ruth rendell:312241" anote:"ruth rendell"
+q_accu:1
+
+result:"ruth rendell:312241"
+1:ruth rendell "ruth rendell"
+target:"ruth rendell:312241" anote:"ruth rendell"
+seg accuracy:1,1,1,1
+
+result:"mayo clinic:160843"
+1:mayo clinic "mayo clinic"
+target:"mayo clinic:160843" anote:"mayo clinic"
+q_accu:1
+
+result:"mayo clinic:160843"
+1:mayo clinic "mayo clinic"
+target:"mayo clinic:160843" anote:"mayo clinic"
+seg accuracy:1,1,1,1
+
+result:"project runway:1597866"
+1:project runway "project runway"
+target:"project runway:1597866" anote:"project runway"
+q_accu:1
+
+result:"project runway:1597866"
+1:project runway "project runway"
+target:"project runway:1597866" anote:"project runway"
+seg accuracy:1,1,1,1
+
+result:"new york:8210131" philharmonic_orchestra:22706 philharmonic_orchestra:22706
+$1_1:new york
+target:"new york:8210131" philharmonic_orchestra:22706 philharmonic_orchestra:22706 anote:"new york philharmonic orchestra"
+q_accu:0
+
+result:"new york:8210131" philharmonic_orchestra:22706 philharmonic_orchestra:22706
+$1_1:new york
+$word_1:philharmonic orchestra
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+$word_1:philharmonic orchestra
+Use of uninitialized value $1 in split at /home/huizhang/workspace/epic_prog/calc_trec_wiki_accuracy.pl line 366.
+target:"new york:8210131" philharmonic_orchestra:22706 philharmonic_orchestra:22706 anote:"new york philharmonic orchestra"
+seg accuracy:0,0,0,0
+
+result:"israeli government:74576"
+1:israeli government "israeli government"
+target:"israeli government:74576" anote:"israeli government"
+q_accu:1
+
+result:"israeli government:74576"
+1:israeli government "israeli government"
+target:"israeli government:74576" anote:"israeli government"
+seg accuracy:1,1,1,1
+
+result:"the geek:1548721" squad:166655
+$1_1:the geek
+target:"the geek:1548721" squad:166655 anote:"the geek squad"
+q_accu:0
+
+result:"the geek:1548721" squad:166655
+$1_1:the geek
+$word_2:squad
+target:"the geek:1548721" squad:166655 anote:"the geek squad"
+seg accuracy:0,0,0,0
+
+result:"shield law:4516801" federal:195149
+$1_1:shield law
+target:"shield law:4516801" federal:195149 anote:"federal shield law"
+q_accu:0
+
+result:"shield law:4516801" federal:195149
+$1_1:shield law
+$word_2:federal
+target:"shield law:4516801" federal:195149 anote:"federal shield law"
+seg accuracy:0,0,0,0
+
+result:"david irving:87585"
+1:david irving "david irving"
+target:"david irving:87585" anote:"david irving"
+q_accu:1
+
+result:"david irving:87585"
+1:david irving "david irving"
+target:"david irving:87585" anote:"david irving"
+seg accuracy:1,1,1,1
+
+result:"a million:30413435" little pieces
+$1_1:a million
+target:"a million:30413435" little pieces anote:"a million little pieces"
+q_accu:0
+
+result:"a million:30413435" little pieces
+$1_1:a million
+$word_3:little
+$word_3:pieces
+target:"a million:30413435" little pieces anote:"a million little pieces"
+seg accuracy:0,0,0,0
+
+result:"talk show:87893" hosts:214053
+$1_1:talk show
+target:"talk show:87893" hosts:214053 anote:"talk show hosts"
+q_accu:0
+
+result:"talk show:87893" hosts:214053
+$1_1:talk show
+$word_2:hosts
+target:"talk show:87893" hosts:214053 anote:"talk show hosts"
+seg accuracy:0,0,0,0
+
+result:"on numb3rs" women:33183
+$1_2:on numb3rs
+target:"on numb3rs" women:33183 anote:"women" "numb3rs"
+q_accu:0
+
+result:"on numb3rs" women:33183
+$1_2:on numb3rs
+$word_2:women
+target:"on numb3rs" women:33183 anote:"women" "numb3rs"
+seg accuracy:0.5,0.5,0.5,1
+
+result:"health care:261925" universal:2685907
+$1_1:health care
+target:"health care:261925" universal:2685907 anote:"universal health care"
+q_accu:0
+
+result:"health care:261925" universal:2685907
+$1_1:health care
+$word_2:universal
+target:"health care:261925" universal:2685907 anote:"universal health care"
+seg accuracy:0,0,0,0
+
+result:"trader joe\'s:481581"
+1:trader joe\'s "trader joe's"
+target:"trader joe\'s:481581" anote:"trader joe's"
+q_accu:1
+
+result:"trader joe\'s:481581"
+1:trader joe\'s "trader joe's"
+target:"trader joe\'s:481581" anote:"trader joe's"
+seg accuracy:1,1,1,1
+
+result:"george clooney:158889"
+1:george clooney "george clooney"
+target:"george clooney:158889" anote:"george clooney"
+q_accu:1
+
+result:"george clooney:158889"
+1:george clooney "george clooney"
+target:"george clooney:158889" anote:"george clooney"
+seg accuracy:1,1,1,1
+
+Accuracy at query level is:0.702970297029703
+
+Accuracy at segmentation level is:0.72967296729673,0.743564356435644,0.733663366336634
+
+

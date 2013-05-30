@@ -1,0 +1,10 @@
+ Yeast and Lactose 
+
+      NEWTON's HOME PAGE          Privacy Policy                                                     Yeast and Lactose     Name: Kate
+Status: Other
+Grade:  Other
+Location: CA
+Country: United States
+Date: April 2005
+ 
+ Question:  Our class performed an experiment where yeast was placed into 2 tubes, one containing glucose and the other containing lactose. Growth occured in the tube with glucose and a gas bubble formed indicating the yeast was able to perform fermentation. No growth however occured in the tube with lactose and i dont understand why? is it because the yeast was unable to break the lactose down into glucose?  Replies:  Yes. There is an enzyme, beta-galactosidase or lactase, that breaks lactose down into glucose + galactose. If the yeast don't produce this enzyme, they are unable to use lactose as a carbon and energy source.  Ron Baker, Ph.D.  You are absolutely correct! Remember that all biochemical reactions require enzymes to make reactions occur at useful rates. There is an enzyme that catalyzes the breakdown of lactose into glucose. Enzymes are proteins and therefore are coded for by genes and the yeast you used doesn't have this gene. I will let you look up the name of this enzyme.  vanhoeck  Click here to return to the Molecular Biology Archives         NEWTON is an electronic community for Science, Math, and Computer Science K-12 Educators, sponsored and operated by  Argonne National Laboratory 's  Educational Programs , Andrew Skipor, Ph.D., Head of Educational Programs.  For assistance with NEWTON contact a  System Operator (help@newton.dep.anl.gov) , or at Argonne's  Educational Programs NEWTON AND ASK A SCIENTIST   Educational Programs Building 223 9700 S. Cass Ave. Argonne, Illinois  60439-4845, USA  Update: November 2011                          

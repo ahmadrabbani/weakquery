@@ -1,0 +1,379 @@
+<html>
+<head>
+<title>Project on International Courts and Tribunals</title>
+<link rel="stylesheet" href="../library/pict.css" type="text/css">
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- Hide script from old browsers
+
+
+ if (document.images) {            
+
+img1on = new Image();      
+img1on.src = "../images/rollover/homeon.jpg";
+img2on = new Image();      
+img2on.src = "../images/rollover/abouton.jpg"; 
+img3on = new Image();      
+img3on.src = "../images/rollover/sitemapon.jpg";
+img4on = new Image();      
+img4on.src = "../images/rollover/contacton.jpg";
+img5on = new Image();      
+img5on.src = "../images/rollover/news_archiveon.jpg";
+
+img1off = new Image();      
+img1off.src = "../images/rollover/homeoff.jpg"; 
+img2off = new Image();      
+img2off.src = "../images/rollover/aboutoff.jpg";
+img3off = new Image();      
+img3off.src = "../images/rollover/sitemapoff.jpg";
+img4off = new Image();      
+img4off.src = "../images/rollover/contactoff.jpg";
+img5off = new Image();      
+img5off.src = "../images/rollover/news_archiveoff.jpg";
+
+}
+
+function imgOn(imgName) {
+
+
+if (document.images) {
+
+
+document[imgName].src = eval(imgName + "on.src");
+
+
+
+}
+
+}
+
+
+function imgOff(imgName) {
+
+ if (document.images) {
+
+
+document[imgName].src = eval(imgName + "off.src");
+
+}
+
+}
+
+// End hiding script from old browsers -->
+
+</SCRIPT>
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])?args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) { img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr) for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function mmLoadMenus() {
+  if (window.mm_menu_0113171731_0) return;
+    window.mm_menu_0113171731_0_1 = new Menu("Criminal&nbsp;Bodies&nbsp;&nbsp;",83,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#000084","left","middle",4,0,100,1,0,true,true,true,4,true,true);
+    mm_menu_0113171731_0_1.addMenuItem("ICC&nbsp;&nbsp;","location='ICC.html'");
+    mm_menu_0113171731_0_1.addMenuItem("ICTY&nbsp;&nbsp;","location='ICTY.html'");
+    mm_menu_0113171731_0_1.addMenuItem("ICTR&nbsp;&nbsp;","location='ICTR.html'");
+    mm_menu_0113171731_0_1.addMenuItem("Hybrid&nbsp;Courts&nbsp;&nbsp;","location='hybrid.html'");
+     mm_menu_0113171731_0_1.hideOnMouseOut=true;
+     mm_menu_0113171731_0_1.menuBorder=0;
+     mm_menu_0113171731_0_1.menuLiteBgColor='#ffffff';
+     mm_menu_0113171731_0_1.menuBorderBgColor='#555555';
+     mm_menu_0113171731_0_1.bgColor='#555555';
+      window.mm_menu_0113171731_0_2_1 = new Menu("Europe&nbsp;&nbsp;",74,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#000084","left","middle",4,0,100,1,0,true,true,true,4,true,true);
+      mm_menu_0113171731_0_2_1.addMenuItem("ECHR&nbsp;&nbsp;","location='ECHR.html'");
+      mm_menu_0113171731_0_2_1.addMenuItem("ECJ&nbsp;/&nbsp;CFI&nbsp;&nbsp;","location='ECJ.html'");
+      mm_menu_0113171731_0_2_1.addMenuItem("EFTA&nbsp;&nbsp;","location='EFTA.html'");
+      mm_menu_0113171731_0_2_1.addMenuItem("Benelux&nbsp;CJ&nbsp;&nbsp;","location='beneluxCJ.html'");
+       mm_menu_0113171731_0_2_1.hideOnMouseOut=true;
+       mm_menu_0113171731_0_2_1.menuBorder=0;
+       mm_menu_0113171731_0_2_1.menuLiteBgColor='#ffffff';
+       mm_menu_0113171731_0_2_1.menuBorderBgColor='#555555';
+       mm_menu_0113171731_0_2_1.bgColor='#555555';
+      window.mm_menu_0113171731_0_2_2 = new Menu("Americas&nbsp;&nbsp;",52,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#000084","left","middle",4,0,100,1,0,true,true,true,4,true,true);
+      mm_menu_0113171731_0_2_2.addMenuItem("IACHR&nbsp;&nbsp;","location='IACHR.html'");
+      mm_menu_0113171731_0_2_2.addMenuItem("TJAC&nbsp;&nbsp;","location='TJAC.html'");
+      mm_menu_0113171731_0_2_2.addMenuItem("CACJ&nbsp;&nbsp;","location='CACJ.html'");
+      mm_menu_0113171731_0_2_2.addMenuItem("CCJ&nbsp;&nbsp;","location='CCJ.html'");
+       mm_menu_0113171731_0_2_2.hideOnMouseOut=true;
+       mm_menu_0113171731_0_2_2.menuBorder=0;
+       mm_menu_0113171731_0_2_2.menuLiteBgColor='#ffffff';
+       mm_menu_0113171731_0_2_2.menuBorderBgColor='#555555';
+       mm_menu_0113171731_0_2_2.bgColor='#555555';
+      window.mm_menu_0113171731_0_2_3 = new Menu("Africa&nbsp;&nbsp;",65,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#000084","left","middle",4,0,100,1,0,true,true,true,4,true,true);
+      mm_menu_0113171731_0_2_3.addMenuItem("OHADA&nbsp;&nbsp;","location='OHADA.html'");
+      mm_menu_0113171731_0_2_3.addMenuItem("COMESA&nbsp;&nbsp;","location='COMESA.html'");
+      mm_menu_0113171731_0_2_3.addMenuItem("ACHPR&nbsp;&nbsp;","location='ACHPR.html'");
+       mm_menu_0113171731_0_2_3.hideOnMouseOut=true;
+       mm_menu_0113171731_0_2_3.menuBorder=0;
+       mm_menu_0113171731_0_2_3.menuLiteBgColor='#ffffff';
+       mm_menu_0113171731_0_2_3.menuBorderBgColor='#555555';
+       mm_menu_0113171731_0_2_3.bgColor='#555555';
+    window.mm_menu_0113171731_0_2 = new Menu("Regional&nbsp;Bodies&nbsp;&nbsp;",63,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#000084","left","middle",4,0,100,1,0,true,true,true,4,true,true);
+    mm_menu_0113171731_0_2.addMenuItem(mm_menu_0113171731_0_2_1);
+    mm_menu_0113171731_0_2.addMenuItem(mm_menu_0113171731_0_2_2);
+    mm_menu_0113171731_0_2.addMenuItem(mm_menu_0113171731_0_2_3);
+     mm_menu_0113171731_0_2.hideOnMouseOut=true;
+     mm_menu_0113171731_0_2.childMenuIcon="../images/nav/arrows.gif";
+     mm_menu_0113171731_0_2.menuBorder=0;
+     mm_menu_0113171731_0_2.menuLiteBgColor='#ffffff';
+     mm_menu_0113171731_0_2.menuBorderBgColor='#555555';
+     mm_menu_0113171731_0_2.bgColor='#555555';
+    window.mm_menu_0113171731_0_3 = new Menu("Arbitration&nbsp;&nbsp;",54,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#000084","left","middle",4,0,100,1,0,true,true,true,4,true,true);
+    mm_menu_0113171731_0_3.addMenuItem("PCA&nbsp;&nbsp;","location='PCA.html'");
+    mm_menu_0113171731_0_3.addMenuItem("ICSID&nbsp;&nbsp;","location='ICSID.html'");
+    mm_menu_0113171731_0_3.addMenuItem("NAFTA&nbsp;&nbsp;","location='NAFTA.html'");
+     mm_menu_0113171731_0_3.hideOnMouseOut=true;
+     mm_menu_0113171731_0_3.menuBorder=0;
+     mm_menu_0113171731_0_3.menuLiteBgColor='#ffffff';
+     mm_menu_0113171731_0_3.menuBorderBgColor='#555555';
+     mm_menu_0113171731_0_3.bgColor='#555555';
+  window.mm_menu_0113171731_0 = new Menu("root",97,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#000084","left","middle",4,0,100,1,0,true,true,true,4,true,true); mm_menu_0113171731_0.addMenuItem("ICJ&nbsp;&nbsp;","location='ICJ.html'");
+  mm_menu_0113171731_0.addMenuItem("ITLOS&nbsp;&nbsp;","location='ITLOS.html'");
+  mm_menu_0113171731_0.addMenuItem("WTO&nbsp;&nbsp;","location='WTO.html'");
+  mm_menu_0113171731_0.addMenuItem(mm_menu_0113171731_0_1);
+  mm_menu_0113171731_0.addMenuItem(mm_menu_0113171731_0_2);
+  mm_menu_0113171731_0.addMenuItem(mm_menu_0113171731_0_3);
+   mm_menu_0113171731_0.hideOnMouseOut=true;
+   mm_menu_0113171731_0.childMenuIcon="../images/nav/arrows.gif";
+   mm_menu_0113171731_0.menuBorder=0;
+   mm_menu_0113171731_0.menuLiteBgColor='#ffffff';
+   mm_menu_0113171731_0.menuBorderBgColor='#555555';
+   mm_menu_0113171731_0.bgColor='#555555';
+  window.mm_menu_0113115453_0 = new Menu("root",119,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#333399","left","middle",4,0,100,-5,9,true,true,true,5,true,true);
+  mm_menu_0113115453_0.addMenuItem("Systemic&nbsp;Issues","location='../research/systemic_issues.html'");
+  mm_menu_0113115453_0.addMenuItem("Ethics&nbsp;/&nbsp;Independence","location='../research/ethics_indepce.html'");
+  mm_menu_0113115453_0.addMenuItem("Access&nbsp;/&nbsp;Participation","location='../research/access_particip.html'");
+  mm_menu_0113115453_0.addMenuItem("Legal&nbsp;/&nbsp;Proc.&nbsp;Issues","location='../research/legal_issues.html'");
+  mm_menu_0113115453_0.addMenuItem("Int.&nbsp;Criminal&nbsp;Justice","location='../research/int_crim_jst.html'");
+   mm_menu_0113115453_0.hideOnMouseOut=true;
+   mm_menu_0113115453_0.menuBorder=0;
+   mm_menu_0113115453_0.menuLiteBgColor='#ffffff';
+   mm_menu_0113115453_0.menuBorderBgColor='#999999';
+   mm_menu_0113115453_0.bgColor='#ffffff';
+  window.mm_menu_0113120803_1 = new Menu("root",91,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#333399","left","middle",4,0,100,-5,9,true,true,true,5,true,true);
+  mm_menu_0113120803_1.addMenuItem("Books","location='../publications/books.html'");
+  mm_menu_0113120803_1.addMenuItem("ICC&nbsp;Papers","location='../publications/icc_paprs.html'");
+  mm_menu_0113120803_1.addMenuItem("Articles&nbsp;/&nbsp;Papers","location='../publications/articles_paprs.html'");
+  mm_menu_0113120803_1.addMenuItem("Synoptic&nbsp;Chart","location='../publications/synoptic_chart.html'");
+  mm_menu_0113120803_1.addMenuItem("Matrix","location='../matrix/checkforflash.html'");
+  mm_menu_0113120803_1.addMenuItem("Bibliographies","location='../publications/bibliographies.html'");
+   mm_menu_0113120803_1.hideOnMouseOut=true;
+   mm_menu_0113120803_1.menuBorder=0;
+   mm_menu_0113120803_1.menuLiteBgColor='#ffffff';
+   mm_menu_0113120803_1.menuBorderBgColor='#999999';
+   mm_menu_0113120803_1.bgColor='#ffffff';
+  window.mm_menu_0113122114_2 = new Menu("root",108,18,"Arial, Helvetica, sans-serif",10,"#333399","#ffffff","#ff9933","#333399","left","middle",4,0,100,1,9,true,true,true,5,true,true);
+  mm_menu_0113122114_2.addMenuItem("Meetings","location='../activities/meetings.html'");
+  mm_menu_0113122114_2.addMenuItem("ILA&nbsp;Study&nbsp;Group","../location='activities/ILA_study_grp.html'");
+  mm_menu_0113122114_2.addMenuItem("Training&nbsp;Courses","location='../activities/training.html'");
+  mm_menu_0113122114_2.addMenuItem("Teaching","location='../activities/teaching.html'");
+  mm_menu_0113122114_2.addMenuItem("Lectures&nbsp;/&nbsp;Seminars","../ocation='activities/seminars.html'");
+   mm_menu_0113122114_2.hideOnMouseOut=true;
+   mm_menu_0113122114_2.menuBorder=0;
+   mm_menu_0113122114_2.menuLiteBgColor='#ffffff';
+   mm_menu_0113122114_2.menuBorderBgColor='#999999';
+   mm_menu_0113122114_2.bgColor='#ffffff';
+
+  mm_menu_0113122114_2.writeMenus();
+} // mmLoadMenus()
+
+//-->
+</script>
+<script language="JavaScript1.2" src="../mm_menu.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+<body bgcolor="#ffffff" link="#333399" vlink="#FF9933" alink="#FF9933" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('../images/nav/navigation_r1_c1_f2.gif','../images/nav/navigation_r1_c1_f4.gif','../images/nav/navigation_r1_c1_f3.gif','../images/nav/navigation_r1_c3_f2.gif','../images/nav/navigation_r1_c3_f4.gif','../images/nav/navigation_r1_c3_f3.gif','../images/nav/navigation_r1_c5_f2.gif','../images/nav/navigation_r1_c5_f4.gif','../images/nav/navigation_r1_c5_f3.gif','../images/nav/navigation_r1_c7_f2.gif','../images/nav/navigation_r1_c7_f4.gif','../images/nav/navigation_r1_c7_f3.gif');">
+<script language="JavaScript1.2">mmLoadMenus();</script>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000033">
+  <tr>
+  <td align="left" valign="top">
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+          <td align="left" valign="top"><img src="../images/logo_top.jpg" width="181" height="48"></td>
+    <td align="left" valign="top">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="619" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td colspan="10"><img src="../images/rollover/top.jpg" width="619" height="24"></td>
+  </tr>
+  <tr> 
+    <td><img src="../images/rollover/bottom1.jpg" width="83" height="24"></td>
+    <td><a href="../index.html" onMouseOver="imgOn('img1')"  onMouseOut="imgOff('img1')"><img src="../images/rollover/homeoff.jpg" width="30" height="24" border="0 "name="img1"></a></td>
+    <td><img src="../images/rollover/bottom2.jpg" width="73" height="24"></td>                
+    <td><a href="../news_archive/ICJ/ICJ_05.html" onMouseOver="imgOn('img5')"  onMouseOut="imgOff('img5')"><img src="../images/rollover/news_archiveoff.jpg" name="img5" width="74" height="24" border="0"></a></td>
+        <td><img src="../images/rollover/bottom3.jpg" width="79" height="24"></td>
+    <td><a href="../about/about.html" onMouseOver="imgOn('img2')"  onMouseOut="imgOff('img2')"><img src="../images/rollover/aboutoff.jpg" name="img2" width="35" height="24" border="0"></a></td>
+    <td><img src="../images/rollover/bottom4.jpg" width="77" height="24"></td>                
+    <td><a href="../site_map.html" onMouseOver="imgOn('img3')"  onMouseOut="imgOff('img3')"><img src="../images/rollover/sitemapoff.jpg" name="img3" width="47" height="24" border="0"></a></td>
+    <td><img src="../images/rollover/bottom5.jpg" width="67" height="24"></td>                
+    <td><a href="../contact.html" onMouseOver="imgOn('img4')"  onMouseOut="imgOff('img4')"><img src="../images/rollover/contactoff.jpg" name="img4" width="54" height="24" border="0"></a></td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+</td></tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ff9933">
+  <tr>
+  <td align="left" valign="top">
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+          <td align="left" valign="top"><img src="../images/logo_bottm.jpg" width="181" height="26"></td>
+    <td align="left" valign="top" width="619"><table border="0" cellpadding="0" cellspacing="0" width="619">
+<!-- fwtable fwsrc="navigation.png" fwbase="navigation.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+  <tr>
+   <td><a href="#" onMouseOut="MM_nbGroup('out');MM_startTimeout();" onMouseOver="MM_showMenu(window.mm_menu_0113171731_0,0,27,null,'navigation_r1_c1');MM_nbGroup('over','navigation_r1_c1','../images/nav/navigation_r1_c1_f2.gif','../images/nav/navigation_r1_c1_f4.gif',1);" onClick="MM_nbGroup('down','navbar1','navigation_r1_c1','../images/nav/navigation_r1_c1_f3.gif',1);"><img name="navigation_r1_c1" src="../images/nav/navigation_r1_c1.gif" width="111" height="26" border="0" alt=""></a></td>
+   <td><img name="navigation_r1_c2" src="../images/nav/navigation_r1_c2.gif" width="77" height="26" border="0" alt=""></td>
+   <td><a href="#" onMouseOut="MM_nbGroup('out');MM_startTimeout();" onMouseOver="MM_showMenu(window.mm_menu_0113115453_0,-9,27,null,'navigation_r1_c3');MM_nbGroup('over','navigation_r1_c3','../images/nav/navigation_r1_c3_f2.gif','../images/nav/navigation_r1_c3_f4.gif',1);" onClick="MM_nbGroup('down','navbar1','navigation_r1_c3','../images/nav/navigation_r1_c3_f3.gif',1);"><img name="navigation_r1_c3" src="../images/nav/navigation_r1_c3.gif" width="77" height="26" border="0" alt=""></a></td>
+   <td><img name="navigation_r1_c4" src="../images/nav/navigation_r1_c4.gif" width="77" height="26" border="0" alt=""></td>
+   <td><a href="#" onMouseOut="MM_nbGroup('out');MM_startTimeout();" onMouseOver="MM_showMenu(window.mm_menu_0113120803_1,-9,27,null,'navigation_r1_c5');MM_nbGroup('over','navigation_r1_c5','../images/nav/navigation_r1_c5_f2.gif','../images/nav/navigation_r1_c5_f4.gif',1);" onClick="MM_nbGroup('down','navbar1','navigation_r1_c5','../images/nav/navigation_r1_c5_f3.gif',1);"><img name="navigation_r1_c5" src="../images/nav/navigation_r1_c5.gif" width="122" height="26" border="0" alt=""></a></td>
+   <td><img name="navigation_r1_c6" src="../images/nav/navigation_r1_c6.gif" width="58" height="26" border="0" alt=""></td>
+   <td><a href="#" onMouseOut="MM_nbGroup('out');MM_startTimeout();" onMouseOver="MM_showMenu(window.mm_menu_0113122114_2,-9,27,null,'navigation_r1_c7');MM_nbGroup('over','navigation_r1_c7','../images/nav/navigation_r1_c7_f2.gif','../images/nav/navigation_r1_c7_f4.gif',1);" onClick="MM_nbGroup('down','navbar1','navigation_r1_c7','../images/nav/navigation_r1_c7_f3.gif',1);"><img name="navigation_r1_c7" src="../images/nav/navigation_r1_c7.gif" width="78" height="26" border="0" alt=""></a></td>
+   <td><img name="navigation_r1_c8" src="../images/nav/navigation_r1_c8.gif" width="19" height="26" border="0" alt=""></td>
+   <td><img src="../images/nav/spacer.gif" width="1" height="26" border="0" alt=""></td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+</td></tr>
+</table>
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td><img src="../images/spacer.gif" width="22" height="31"></td>
+    <td><img src="../images/spacer.gif" width="159" height="1"></td>
+    <td><img src="../images/spacer.gif" width="503" height="1"></td>
+    <td><img src="../images/spacer.gif" width="106" height="1"></td>
+  </tr>
+  <tr> 
+    <td><img src="../images/spacer.gif" width="1" height="37" border="0"></td>
+    <td align="left" valign="top"><img src="../images/spacer.gif" width="1" height="1" border="0"></td>
+    <td align="left" valign="top"><font color="#FF9933" size="4" face="Arial, Helvetica, sans-serif">WTO</font><br>
+      <font color="#333399" size="3" face="Arial, Helvetica, sans-serif"><strong>Dispute Settlement System Of The World Trade Organization</strong></font></td>
+    <td align="left" valign="top"><img src="../images/spacer.gif" width="1" height="1"></td>
+  </tr>
+    <tr> 
+    <td colspan="4"><img src="../images/spacer.gif" width="1" height="30" border="0"></td>   
+  </tr>
+   <tr> 
+    <td><img src="../images/spacer.gif" width="1" height="1"></td>
+    <td align="left" valign="top" width="159"><a href="WTO_contact.html" class="link">Contact</a><br>
+        <img src="../images/spacer.gif" width="1" height="4"><br>
+<a href="WTO_basic_doc.html" class="link">Basic Documents</a><br>
+      <img src="../images/spacer.gif" width="1" height="4"><br>
+      <a href="WTO_judg_bio.html" class="link">Judges Biographies</a><br>
+      <img src="../images/spacer.gif" width="1" height="4"><br>
+      <a href="WTO_cases.html" class="link">Cases</a><br>
+      <img src="../images/spacer.gif" width="1" height="4"><br>
+      <a href="bibliographies/WTO.doc" class="link">Bibliography</a><br>
+    </td>
+    <td align="left" valign="top"><div align="justify"><font color="#666666" size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.wto.org/english/tratop_e/dispu_e/dispu_e.htm" target="_new">The 
+        World Trade Organization (WTO)</a> is the only international organization 
+        dealing with promotion and regulation of international trade at a global 
+        level. Its aims are to help trade flow as freely as possible, to achieve 
+        further liberalization gradually through negotiation, and to provide an 
+        impartial means of settling disputes.<br>
+        <br>
+        The WTO was established in 1994 to replace the less structured system 
+        of the General Agreement on Tariffs and Trade (GATT) which, since 1948, 
+        had provided a normative framework for international trade. That framework 
+        had been upgraded by subsequent rounds of negotiations, the last of which, 
+        the Uruguay Round, led to the creation of the WTO. The 1994 Agreement 
+        Establishing the WTO introduced an Annex on dispute settlement referred 
+        to as the Understanding on Rules and Procedures Governing the Settlement 
+        of Disputes (DSU). Although the DSU can be regarded as a direct offspring 
+        of the dispute settlement procedures under the old GATT, it has substantially 
+        departed from its predecessor. For this reason, the data contained in 
+        this matrix refers only to the DSU and not to the old GATT dispute settlement 
+        system.<br>
+        <br>
+        In particular, the main new feature is the creation of the Dispute Settlement 
+        Body (DSB) and the Standing Appellate Body (AB). The DSB is a political 
+        body comprising representatives of all WTO members. Its function is to 
+        administer the WTO dispute settlement system. To this end it supervises 
+        the process of consultation between disputing members; establishes panels 
+        to settle disputes, adopts or rejects panel or AB recommendations; maintains 
+        surveillance of implementation of rulings and recommendations, and eventually 
+        authorizes retaliatory measures in cases of non-implementation of recommendations.<br>
+        <br>
+        If a dispute arises between members of the WTO over their respective obligations, 
+        first, each party may request the other to enter into consultations. Upon 
+        failure of consultations, each party may propose to employ other dispute 
+        settlement procedures (e.g., mediation, good offices, etc.). If these 
+        alternative procedures also fail, the complaining party may request the 
+        DSB to establish an ad hoc Panel. Panels conduct hearings on the dispute 
+        and issue a report on the merits of the case. The recommendations contained 
+        in the Panel's report become binding after their adoption by the DSB. 
+        Adoption by the DSB is automatic unless all WTO members agree to reject 
+        it. This is the main innovation lacking in the old GATT dispute settlement 
+        system, where Panel reports had to be adopted by a consensus of GATT members 
+        to become binding.<br>
+        <br>
+        The Panel report may be appealed, but only on legal grounds before the 
+        AB, a permanent body composed by seven individuals. The appeal is heard 
+        before a three-person division of the AB, who may uphold, modify or reverse 
+        the findings of the panel. The report of the AB is then to be adopted 
+        by the DSB and has binding force unless, as in the case of the Panel report, 
+        it is unanimously rejected.</font></div></td>
+    <td align="left" valign="top"><img src="../images/spacer.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td colspan="4"><img src="../images/spacer.gif" width="1" height="60" border="0"></td>   
+  </tr>
+</table>
+</body>
+</html>

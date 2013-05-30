@@ -1,0 +1,4818 @@
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	
+<title>Andrew Coyne Speaker Profile at The Lavin Agency</title>
+	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/xml; charset=iso-8859-1">
+<meta name="DOCUMENTLANGUAGECODE" content="en">
+<meta name="DOCUMENTCOUNTRYCODE" content="ca">
+<meta name="AUTHOR" content="Concrete / Visia">
+<meta name="COPYRIGHT" content="&copy; Copyright 2008 by The Lavin Agency">
+<meta name="SECURITY" content="Public">
+<meta name="ROBOTS" content="index,follow">
+<meta name="keywords" content="andrew coyne, maclean's, national post, canadian politics, canadian economics">
+<meta name="description" content="To book Andrew Coyne for your event, contact The Lavin Agency today.">
+<meta name="revisit-after" content="10 days">
+	
+
+	
+	<!-- StyleSheet -->
+	<link href="style/lavin.css" rel="stylesheet" type="text/css">
+	<link href="style/autocomplete.css" rel="stylesheet" type="text/css">
+
+	<!-- MISC JS File 
+	<script language="javascript" src="scripts/misc.js" type="text/javascript"></script>
+	-->
+
+	<script language="javascript" src="scripts/drag.js" type="text/javascript"></script>
+	<script language="javascript" src="scripts/prototype.js" type="text/javascript"></script>
+	<script language="javascript" src="scripts/scriptaculous.js" type="text/javascript"></script>
+	<script type="text/javascript" src="scripts/RSH/rsh.js"></script>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-554709-1");
+	</script>
+
+
+	<!-- Javascript Functions -->
+	<script type="text/javascript">
+		////////////////////////////////////////////////////////////////
+		///
+		///   Really Simple History (Back Button)
+		///
+		////////////////////////////////////////////////////////////////
+
+
+		window.dhtmlHistory.create({
+			toJSON: function(o) { 
+				return Object.toJSON(o);        
+			}
+			, fromJSON: function(s) {
+				return s.evalJSON();
+		}});
+
+
+		var yourListener = function(newLocation, historyData) {
+			if(newLocation == '' || historyData == null)
+				GET_AJAX_EXEC(startPage, writeHTML, 'SPKRS');
+			else
+				GET_AJAX_EXEC(newLocation, writeHTML, 'SPKRS');
+		}
+
+		
+		window.onload = function() {
+			if(!loadAjaxUrl())
+				pageTracker._trackPageview(startPage);
+				dhtmlHistory.initialize();
+				dhtmlHistory.addListener(yourListener);
+		};
+
+		var startPage = 'speakers_detail.php?action=getSpeaker&SID=andrew-coyne';
+
+		function loadAjaxUrl(){
+			var loc = window.location.toString();
+			if(loc.indexOf('#') != -1){
+				if(loc.substr(loc.indexOf('#')+1).indexOf('php') != -1){
+					startPage = loc.substr(loc.indexOf('#')+1)
+					GET_AJAX_EXEC(startPage, writeHTML, 'SPKRS');
+					return true;
+				}
+			}
+
+			return false;
+
+		}
+
+		
+
+		////////////////////////////////////////////////////////////////
+		///
+		///   BG Swap Function
+		///
+		////////////////////////////////////////////////////////////////
+
+		
+		function BGswap(on, off){
+			document.getElementById(on).style.backgroundColor='#EBEBEB';
+			document.getElementById(off).style.backgroundColor='#DCDCDC';
+
+			document.getElementById(on).style.backgroundImage = 'url(images/shim.gif)';
+			document.getElementById(off).style.backgroundImage = 'url(images/DROP_' + off + '.png)';
+		}
+
+		function swapTitle(newTitle){
+			document.title = newTitle;
+		}
+
+		
+
+		////////////////////////////////////////////////////////////////
+		///
+		///   Cookie functions
+		///
+		////////////////////////////////////////////////////////////////
+
+		function readCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		}
+
+		
+
+		////////////////////////////////////////////////////////////////
+		///
+		///   Catch Enter Function
+		///
+		////////////////////////////////////////////////////////////////
+
+		function catchEnter(e, formName) {
+			if (!e) var e = window.event;
+			if (e.keyCode) code = e.keyCode;
+			else if (e.which) code = e.which;
+			
+			//Keyword submit
+			if (code==13 && formName=="keyword") {
+				
+				GET_AJAX('speakers.php?keyword=' + document.getElementById('keyword').value, writeHTML, 'SPKRS');
+				document.getElementById('keyword').value = "";
+
+							}
+
+			
+			//CatLogin
+			if (code==13 && formName=="catLogin") {
+				GET_AJAX('cat_login.php?' + Form.serialize($('login_form')), writeHTML, 'CAT');
+			}
+
+			//CatRegister
+			if (code==13 && formName=="catRegister") {
+				GET_AJAX('cat_register.php?' + Form.serialize($('reg_form')), writeHTML, 'CAT');
+			}
+
+			//CatGetPass
+			if (code==13 && formName=="catGetPass") {
+				GET_AJAX('cat_login.php?' + Form.serialize($('get_pass')), writeHTML, 'CAT');
+			}
+
+			//CatEditProfile 
+			if (code==13 && formName=="catProfile") {
+				GET_AJAX('cat_profile.php?' + Form.serialize($('profile_edit')), writeHTML, 'CAT');
+			}
+			
+			//PropsEditProfile 
+			if (code==13 && formName=="propsProfile") {
+				GET_AJAX('PROPS_profile.php?' + Form.serialize($('profile_edit')), writeHTML, 'CAT');
+			}
+
+			//PopNewCat
+			if (code==13 && formName=="popNewCat") {
+				GET_AJAX('cat_index.php?' + Form.serialize($('add_cat')), writeHTML, 'CAT');
+				hideElement('DIA');
+			}
+
+
+			//PopEditCat
+			if (code==13 && formName=="popEditCat") {
+				GET_AJAX('cat_detail.php?' + Form.serialize($('edit_cat')), writeHTML, 'CAT');
+				hideElement('DIA');
+			}
+
+			
+			//PopEmailCat
+			if (code==13 && formName=="popEmailCat") {
+				GET_AJAX('DIA_email_cat_confirm.php?' + Form.serialize($('email_cat')), writeHTML, 'DIA_CONTENT');
+			}
+
+		
+			//PopDelCat
+			if (code==13 && formName=="popDelCat") {
+				GET_AJAX('cat_index.php?' + Form.serialize($('del_cat')), writeHTML, 'CAT');
+				hideElement('DIA');
+			}
+
+			//DIA_grabEmail
+			if (code==13 && formName=="DIA_grabEmail") {
+				GET_AJAX('DIA_login.php?' + Form.serialize($('DIA_grabEmail')), writeHTML, 'DIA_CONTENT');
+			}
+
+
+			//DIA_login
+			if (code==13 && formName=="DIA_login") {
+				GET_AJAX('DIA_login.php?' + Form.serialize($('DIA_login_form')), writeHTML, 'DIA_CONTENT');
+			}
+
+			//DIA_getPass
+			if (code==13 && formName=="DIA_getPass") {
+				GET_AJAX('DIA_login.php?' + Form.serialize($('DIA_get_pass')), writeHTML, 'DIA_CONTENT');
+			}
+
+			//DIA_reg
+			if (code==13 && formName=="DIA_reg") {
+				GET_AJAX('DIA_login.php?' + Form.serialize($('DIA_reg_form')), writeHTML, 'DIA_CONTENT');
+			}
+
+			//DIA_email_SPKR
+			if (code==13 && formName=="DIA_email_SPKR") {
+				GET_AJAX('DIA_email_speaker_confirm.php?' + Form.serialize($('email_speaker')), writeHTML, 'DIA_CONTENT');
+			}
+
+
+			//DIA_email_CAT
+			if (code==13 && formName=="DIA_email_CAT") {
+				GET_AJAX('DIA_email_cat_confirm.php?' + Form.serialize($('email_cat')), writeHTML, 'DIA_CONTENT');
+			}
+
+			//DIA_send_prop
+			if (code==13 && formName=="DIA_send_prop") {
+				GET_AJAX('DIA_send_prop_confirm.php?' + Form.serialize($('send_prop')), writeHTML, 'DIA_CONTENT');
+			}
+		}
+
+
+
+		////////////////////////////////////////////////////////////////
+		///
+		///   Show Hide Functions
+		///
+		////////////////////////////////////////////////////////////////
+
+		function mouseLeaves (element, evt) {
+			if (typeof evt.toElement != 'undefined' && typeof element.contains != 'undefined') {
+				return !element.contains(evt.toElement);
+			}else if (typeof evt.relatedTarget != 'undefined' && evt.relatedTarget) {
+				return !contains(element, evt.relatedTarget);
+			}
+		}
+
+		function contains (container, containee) {
+			while (containee) {
+				if (container == containee) {
+					return true;
+				}
+			containee = containee.parentNode;
+			}
+			return false;
+		}
+
+			
+		function hideElement (element) {
+			div = document.getElementById(element);
+			div.style.display = 'none';
+            if(div.stopScroll)
+				div.stopScroll();
+		}
+
+			
+		function showElement (element) {
+			div = document.getElementById(element);
+			div.style.display = 'block';
+		}
+
+
+		function scroller(box){
+		  $(box).scrollTop = 0;
+		  var scrollLetter = null;
+		  var scrollIndex = null;
+		  var scrollOptions = null;
+
+		  function scrollToLetter(letter){
+		    if(letter != scrollLetter){
+		      scrollLetter = letter;
+		      scrollIndex = 0;
+		      scrollOptions = $(box).select('.'+scrollLetter).toArray();
+		    }
+
+		    else{
+		      scrollIndex = (scrollIndex+1)%scrollOptions.size();
+		    }
+		    $(box).scrollTop = scrollOptions[scrollIndex].offsetTop;
+		  }
+
+		  function catchLetter(event){
+		    if (event.keyCode)
+		      var code = event.keyCode;
+		    else
+		      var code = event.which;
+
+		    if(code > 90) code -= 32;
+
+		    if(code >= 65 && code <= 90)
+		      scrollToLetter(String.fromCharCode(code));
+		  }
+
+		  Event.observe(document, 'keypress', catchLetter);
+		  $(box).stopScroll = function(){Event.stopObserving(document, 'keypress', catchLetter);};
+		}
+
+
+		////////////////////////////////////////////////////////////////
+		///
+		///   AJAX Functions
+		///
+		////////////////////////////////////////////////////////////////
+
+		var xmlHttp;
+
+		function GET_AJAX(doc, doFunc, divID){
+			if(divID == 'SPKRS' && navigator.vendor != "Apple Computer, Inc.")
+				dhtmlHistory.add(doc, new Array(doFunc, divID));
+
+			GET_AJAX_EXEC(doc, doFunc, divID);
+
+			//Make the call to the Google Analytics function
+			//Determine the page "name" and clean up the URL
+			//pageTracker._trackPageview('/Hello_World/');
+		}
+
+
+		function GET_AJAX_EXEC(doc, doFunc, divID){
+		    xmlHttp=GetXmlHttpObject();
+		    xmlHttp.onreadystatechange=function(){ 
+		        if (xmlHttp.readyState==4){
+		            if (xmlHttp.status==200){
+		                var tracked = false;
+		                doFunc(xmlHttp, divID);
+		                if(!tracked){
+		                    pageTracker._trackPageview(doc);
+		                }
+		            }
+		        }
+		    }
+
+			//var doc=doc + Math.random();
+			//url=url+"?q="+;
+			//url=url+"&sid="+Math.random();
+			
+		    xmlHttp.open("POST",doc,true);
+		    xmlHttp.send(null);
+
+			//Scroll the page back to the top
+			//window.scroll(0,0); // horizontal and vertical scroll targets
+		}
+
+
+		function writeHTML(req, divID){
+		    //document.getElementById(divID).innerHTML = req.responseText;
+			setAndExecute(divID, req.responseText);
+		}
+
+
+		//Add this extra step in case there's any Javascript in the response
+		function setAndExecute(divId, innerHTML){   
+			var div = document.getElementById(divId);
+			div.innerHTML = innerHTML;
+			var x = div.getElementsByTagName("script");
+			for(var i=0; i < x.length; i++){
+				eval(x[i].text);
+			}
+
+			centerDIA();
+
+		}
+
+		
+
+		//Browser Sniff Function
+		function GetXmlHttpObject(){
+			var xmlHttp=null;
+
+			if (window.XMLHttpRequest){
+				// code for all new browsers
+		  		xmlHttp=new XMLHttpRequest();
+				//alert ("This is IE 7");
+
+		  	}else if (window.ActiveXObject){
+				// code for IE5 and IE6
+		    	xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+				//alert ("This is IE 7");
+
+			}
+
+			return xmlHttp;
+
+		}
+
+
+		//DIA Box Functions
+		function swapDIA_TITLE(titleText){
+			document.getElementById('DIA_TITLE').innerHTML = titleText;
+		}
+
+		function clearDiaContent(){
+			document.getElementById('DIA_CONTENT').innerHTML = "";
+		}
+
+		function centerDIA(){
+ 			//Center the DIA div
+			document.getElementById('DIA').style.left = ((screen.availWidth / 2) - (500 / 2));
+			document.getElementById('DIA').style.top = ((screen.availHeight /2) - (500 / 2));
+ 		}
+
+		function swapLogout(){
+			//alert("Logout");
+			document.getElementById('login_logout').innerHTML = "<a href=\"javascript: GET_AJAX('cat_login.php?func=logout', writeHTML, 'CAT');\" class=\"nav\">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;";
+		}
+
+		function swapLogin(){
+			//alert("Login");
+			document.getElementById('login_logout').innerHTML = "<a href=\"javascript: GET_AJAX('cat_login.php', writeHTML, 'CAT');\" class=\"nav\">Sign-In | Register</a>&nbsp;&nbsp;&nbsp;&nbsp;";
+		}
+
+	</script>
+
+</head>
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+
+	<!--  Dialogue Box  -->
+	<!--  Dialogue Box  -->
+<div name="DIA" id="DIA" class="dialogue_box">
+	<table width="440" cellspacing="0" cellpadding="0" border="0">
+		<tr valign="middle" height="20">
+			<td width="20"><img src="images/shim.gif" width="20" height="20" border="0" alt="" /></td>
+			<td><img src="images/shim.gif" width="20" height="20" border="0" alt="" /></td>
+			<td width="20"><img src="images/shim.gif" width="20" height="20" border="0" alt="" /></td>
+		</tr>
+		<tr valign="top">
+			<td width="20"><img src="images/shim.gif" width="20" height="20" border="0" alt="" /></td>
+			<td width="400">
+				
+				<table width="400" cellspacing="0" cellpadding="0" border="0">
+					<tr valign="top" height="30">
+						<td bgcolor="#666666">
+							<div align="right" name="DIA_HANDLE" id="DIA_HANDLE" style="cursor: move; padding-top: 5px;">
+								<a href="javascript: hideElement('DIA'); clearDiaContent();"><img src="images/BTN_close.png" oversrc="images/BTN_del_03.png" width="20" height="20" border="0" alt="" /></a>&nbsp;&nbsp;		
+							</div>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td bgcolor="#FFFFFF">
+							<div name="DIA_CONTENT" id="DIA_CONTENT" style="height: 100%; border-left: 1px solid #666666; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 20px;">
+								<img src="images/shim.gif" width="300" height="150" border="0" alt="" /><br />
+								<p />
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+			</td>
+			<td width="20" background="images/DIA_drop_right.png"><img src="images/shim.gif" width="20" height="20" border="0" alt="" /></td>
+		</tr>
+		<tr valign="top">
+			<td width="20"><img src="images/shim.gif" width="20" height="20" border="0" alt="" /></td>
+			<td background="images/DIA_drop_bottom.png"><img src="images/shim.gif" width="20" height="20" border="0" alt="" /></td>
+			<td width="20" background="images/DIA_drop_bot_right.png"><img src="images/shim.gif" width="20" height="20" border="0" alt="" /></td>
+		</tr>
+	</table>
+</div>
+<script type="text/javascript">
+	var theHandle = document.getElementById("DIA_HANDLE");
+	var theRoot = document.getElementById("DIA");
+	Drag.init(theHandle, theRoot);
+</script>
+
+
+	<!-- Formatting Table -->
+	<table width="990" height="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+
+		<!-- Header -->
+		<tr valign="top" bgcolor="#3F3F3F" height="65">
+			<td colspan="2"><table width="990" height="65" cellspacing="0" cellpadding="0" border="0">
+	<tr valign="center">
+		<td width="145"><a href="index.php"><img src="images/logo.jpg" width="145" height="65" border="0" alt="The Lavin Agency" /></a></td>
+		<td width="45"><img src="images/shim.gif" width="45" height="10" border="0" alt="" /></td>
+		<td>
+			<a href="javascript: GET_AJAX('blog.php', writeHTML, 'SPKRS');" class="nav">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript: GET_AJAX('newsletter.php', writeHTML, 'SPKRS');" class="nav">E-Newsletter</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript: GET_AJAX('about.php', writeHTML, 'SPKRS');" class="nav">About Lavin</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript: GET_AJAX('contact.php', writeHTML, 'SPKRS');" class="nav">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript: GET_AJAX('FAQ.php', writeHTML, 'SPKRS');" class="nav">FAQs</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<!--<div id="login_logout" style="display: inline;"><a href="javascript: GET_AJAX('cat_login.php', writeHTML, 'CAT');" onClick="GET_AJAX('cat_login.php', writeHTML, 'CAT');" class="nav">Sign-In | Register</a>&nbsp;&nbsp;&nbsp;&nbsp;</div>-->
+		</td>
+		<td>
+			<a href="http://www.twitter.com/TheLavinAgency" target="_blank"><img src="images/twitter.jpg" width="160" height="65" alt="Follow us on Twitter!" border="0" /></a>
+		</td>
+	</tr>
+</table></td>
+		</tr>
+
+		<!-- Search Bar -->
+		<tr bgcolor="#8C8C8C" valign="middle" height="45">
+			<td colspan="2">
+				<div style="border-left: 1px solid #818181; border-right: 1px solid #818181;">
+					
+<table width="585" height="45" cellspacing="0" cellpadding="0" border="0">
+
+
+
+	<tr valign="middle">
+
+		<td width="15"><img src="images/shim.gif" width="15" height="10" border="0" alt="" /></td>
+
+		<td width="175">
+
+		
+
+			<!-- Search By Name -->
+
+			<div id="search_by_name" class="drop_button_175" onClick="showElement('nameSearch'); document.getElementById('keyword').value = 'Search by keyword'; scroller('nameSearch');">
+
+				&nbsp;&nbsp;<b>Search by name</b>
+
+			</div>
+
+			
+
+			<div name="nameSearch" id="nameSearch" class="drop_box_175" onmouseout="if (mouseLeaves(this, event)) { hideElement('nameSearch');}">
+
+				
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers.php', writeHTML, 'SPKRS');">&nbsp;&nbsp;All Speakers</div>
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=93', writeHTML, 'SPKRS'); swapTitle(' Chris  Abani  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Abani, Chris</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2246', writeHTML, 'SPKRS'); swapTitle(' Jack  Abramoff  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Abramoff, Jack</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2171', writeHTML, 'SPKRS'); swapTitle(' Daron  Acemoglu  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Acemoglu, Daron</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=19', writeHTML, 'SPKRS'); swapTitle(' David  Adjey  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Adjey, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=95', writeHTML, 'SPKRS'); swapTitle(' Isabel  Allende  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Allende, Isabel</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2237', writeHTML, 'SPKRS'); swapTitle(' David  Andelman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Andelman, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=89', writeHTML, 'SPKRS'); swapTitle(' Kwame Anthony  Appiah  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Appiah, Kwame Anthony</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=119', writeHTML, 'SPKRS'); swapTitle(' Karen  Armstrong  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Armstrong, Karen</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2213', writeHTML, 'SPKRS'); swapTitle(' Bal  Arneson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Arneson, Bal</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2194', writeHTML, 'SPKRS'); swapTitle(' Reza  Aslan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Aslan, Reza</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=86', writeHTML, 'SPKRS'); swapTitle(' Margaret  Atwood  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Atwood, Margaret</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2158', writeHTML, 'SPKRS'); swapTitle(' Dan  Austin  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Austin, Dan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2182', writeHTML, 'SPKRS'); swapTitle(' Mike  Babcock  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Babcock, Mike</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2066', writeHTML, 'SPKRS'); swapTitle(' Andrew  Bacevich  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Bacevich, Andrew</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2041', writeHTML, 'SPKRS'); swapTitle(' Matt  Bai  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Bai, Matt</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=116', writeHTML, 'SPKRS'); swapTitle(' Linwood  Barclay  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Barclay, Linwood</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=53', writeHTML, 'SPKRS'); swapTitle(' Dave  Barry  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Barry, Dave</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2128', writeHTML, 'SPKRS'); swapTitle(' Warren  Berger  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Berger, Warren</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2217', writeHTML, 'SPKRS'); swapTitle(' Tzeporah  Berman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Berman, Tzeporah</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2236', writeHTML, 'SPKRS'); swapTitle(' Fatima  Bhutto  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Bhutto, Fatima</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2116', writeHTML, 'SPKRS'); swapTitle(' Mark  Bittman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Bittman, Mark</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=132', writeHTML, 'SPKRS'); swapTitle('Dr. Roberta  Bondar  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Bondar, Roberta</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=66', writeHTML, 'SPKRS'); swapTitle(' David  Brancaccio  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Brancaccio, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2167', writeHTML, 'SPKRS'); swapTitle(' Ian  Bremmer  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Bremmer, Ian</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=118', writeHTML, 'SPKRS'); swapTitle(' Marc  Brown  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Brown, Marc</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2112', writeHTML, 'SPKRS'); swapTitle(' Rob  Brown  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Brown, Rob</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=101', writeHTML, 'SPKRS'); swapTitle(' Minnijean  Brown Trickey  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Brown Trickey, Minnijean</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=133', writeHTML, 'SPKRS'); swapTitle(' Shannon  Brownlee  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Brownlee, Shannon</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2069', writeHTML, 'SPKRS'); swapTitle(' Todd  Buchholz  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Buchholz, Todd</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=115', writeHTML, 'SPKRS'); swapTitle(' Marcus  Buckingham  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Buckingham, Marcus</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2004', writeHTML, 'SPKRS'); swapTitle('Dr. Robert  Buckman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Buckman, Robert</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=82', writeHTML, 'SPKRS'); swapTitle(' Ken  Burns  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Burns, Ken</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=41', writeHTML, 'SPKRS'); swapTitle(' Brent  Butt  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Butt, Brent</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2071', writeHTML, 'SPKRS'); swapTitle(' Stewart  Butterfield  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Butterfield, Stewart</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2227', writeHTML, 'SPKRS'); swapTitle(' Susan  Cain  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Cain, Susan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=42', writeHTML, 'SPKRS'); swapTitle(' Cassie  Campbell  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Campbell, Cassie</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2005', writeHTML, 'SPKRS'); swapTitle(' Yvonne  Camus  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Camus, Yvonne</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2205', writeHTML, 'SPKRS'); swapTitle(' Arthur  Caplan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Caplan, Arthur</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2032', writeHTML, 'SPKRS'); swapTitle(' Curt  Carlson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Carlson, Curt</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2183', writeHTML, 'SPKRS'); swapTitle(' Joe  Carter  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Carter, Joe</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=107', writeHTML, 'SPKRS'); swapTitle(' Jeff  Chang  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Chang, Jeff</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=130', writeHTML, 'SPKRS'); swapTitle(' Ram  Charan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Charan, Ram</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=62', writeHTML, 'SPKRS'); swapTitle(' David  Chilton  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Chilton, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2198', writeHTML, 'SPKRS'); swapTitle(' Joe  Clark  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Clark, Joe</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=134', writeHTML, 'SPKRS'); swapTitle(' Michael Pinball Clemons  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Clemons, Michael Pinball</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2074', writeHTML, 'SPKRS'); swapTitle(' Ta-Nehisi  Coates  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Coates, Ta-Nehisi</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=88', writeHTML, 'SPKRS'); swapTitle(' Joel  Cohen  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Cohen, Joel</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=33', writeHTML, 'SPKRS'); swapTitle(' Anderson  Cooper  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Cooper, Anderson</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=139', writeHTML, 'SPKRS'); swapTitle(' Sheila  Copps  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Copps, Sheila</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=138', writeHTML, 'SPKRS'); swapTitle(' Jennifer  Corriero  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Corriero, Jennifer</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=50', writeHTML, 'SPKRS'); swapTitle(' Andrew  Coyne  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Coyne, Andrew</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=99', writeHTML, 'SPKRS'); swapTitle(' Sloane  Crosley  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Crosley, Sloane</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=90', writeHTML, 'SPKRS'); swapTitle(' Guy  Dauncey  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Dauncey, Guy</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=51', writeHTML, 'SPKRS'); swapTitle(' Angela  Davis  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Davis, Angela</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=131', writeHTML, 'SPKRS'); swapTitle(' Graeme  Deans  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Deans, Graeme</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2108', writeHTML, 'SPKRS'); swapTitle(' Valentino Achak Deng  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Deng, Valentino Achak</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=24', writeHTML, 'SPKRS'); swapTitle(' Alan  Deutschman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Deutschman, Alan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2026', writeHTML, 'SPKRS'); swapTitle(' Jared  Diamond  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Diamond, Jared</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2079', writeHTML, 'SPKRS'); swapTitle(' Arlene  Dickinson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Dickinson, Arlene</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=102', writeHTML, 'SPKRS'); swapTitle(' Bob  Dole  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Dole, Bob</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2160', writeHTML, 'SPKRS'); swapTitle(' Jonny  Dubowsky  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Dubowsky, Jonny</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2188', writeHTML, 'SPKRS'); swapTitle(' Drew  Dudley  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Dudley, Drew</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=135', writeHTML, 'SPKRS'); swapTitle(' Linda  Duxbury  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Duxbury, Linda</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2179', writeHTML, 'SPKRS'); swapTitle(' David  Eagleman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Eagleman, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2180', writeHTML, 'SPKRS'); swapTitle(' David  Eaves  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Eaves, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2044', writeHTML, 'SPKRS'); swapTitle(' Linda  Edgecombe  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Edgecombe, Linda</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2231', writeHTML, 'SPKRS'); swapTitle(' Derek  Edwards  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Edwards, Derek</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2228', writeHTML, 'SPKRS'); swapTitle(' Atom  Egoyan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Egoyan, Atom</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=103', writeHTML, 'SPKRS'); swapTitle(' Kurt  Eichenwald  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Eichenwald, Kurt</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2061', writeHTML, 'SPKRS'); swapTitle(' Andrea  Elliott  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Elliott, Andrea</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=125', writeHTML, 'SPKRS'); swapTitle(' Rafe  Esquith  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Esquith, Rafe</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1957', writeHTML, 'SPKRS'); swapTitle(' James  Fallows  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Fallows, James</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2232', writeHTML, 'SPKRS'); swapTitle(' Deborah  Fallows  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Fallows, Deborah</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2083', writeHTML, 'SPKRS'); swapTitle(' Susan  Faludi  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Faludi, Susan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2207', writeHTML, 'SPKRS'); swapTitle(' Vanessa  Farquharson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Farquharson, Vanessa</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2045', writeHTML, 'SPKRS'); swapTitle(' Noah  Feldman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Feldman, Noah</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2166', writeHTML, 'SPKRS'); swapTitle(' Niall  Ferguson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ferguson, Niall</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2218', writeHTML, 'SPKRS'); swapTitle(' Charles  Ferguson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ferguson, Charles</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2013', writeHTML, 'SPKRS'); swapTitle(' Keith  Ferrazzi  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ferrazzi, Keith</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2117', writeHTML, 'SPKRS'); swapTitle(' Timothy  Ferriss  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ferriss, Timothy</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2244', writeHTML, 'SPKRS'); swapTitle(' Scott  Feschuk  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Feschuk, Scott</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2002', writeHTML, 'SPKRS'); swapTitle(' Charles  Fishman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Fishman, Charles</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=26', writeHTML, 'SPKRS'); swapTitle(' Tim  Flannery  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Flannery, Tim</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=136', writeHTML, 'SPKRS'); swapTitle(' Farley  Flex  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Flex, Farley</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1953', writeHTML, 'SPKRS'); swapTitle(' Richard  Florida  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Florida, Richard</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=63', writeHTML, 'SPKRS'); swapTitle(' David  Foot  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Foot, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2226', writeHTML, 'SPKRS'); swapTitle(' Amanda  Foreman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Foreman, Amanda</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2229', writeHTML, 'SPKRS'); swapTitle(' Glen  Foster  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Foster, Glen</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2186', writeHTML, 'SPKRS'); swapTitle(' Justin  Fox  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Fox, Justin</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1998', writeHTML, 'SPKRS'); swapTitle(' Diane  Francis  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Francis, Diane</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=73', writeHTML, 'SPKRS'); swapTitle(' Paul  Franklin  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Franklin, Paul</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2220', writeHTML, 'SPKRS'); swapTitle(' Jonathan  Franklin  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Franklin, Jonathan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1958', writeHTML, 'SPKRS'); swapTitle(' Michael  Furdyk  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Furdyk, Michael</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 F" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2174', writeHTML, 'SPKRS'); swapTitle(' John  Furlong  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Furlong, John</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2042', writeHTML, 'SPKRS'); swapTitle(' Sue  Gardner  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gardner, Sue</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1997', writeHTML, 'SPKRS'); swapTitle(' Laurie  Garrett  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Garrett, Laurie</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=29', writeHTML, 'SPKRS'); swapTitle('Sir Bob  Geldof  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Geldof, Bob</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1973', writeHTML, 'SPKRS'); swapTitle(' Neil  Gershenfeld  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gershenfeld, Neil</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2202', writeHTML, 'SPKRS'); swapTitle(' Jian  Ghomeshi  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ghomeshi, Jian</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2201', writeHTML, 'SPKRS'); swapTitle(' Shane  Gibson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gibson, Shane</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=121', writeHTML, 'SPKRS'); swapTitle(' Michael Gates Gill  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gill, Michael Gates</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2109', writeHTML, 'SPKRS'); swapTitle(' Doug  Glanville  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Glanville, Doug</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2058', writeHTML, 'SPKRS'); swapTitle(' Arthur  Golden  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Golden, Arthur</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2242', writeHTML, 'SPKRS'); swapTitle(' Joshua  Goldstein  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Goldstein, Joshua</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2168', writeHTML, 'SPKRS'); swapTitle(' Jack  Goldstone  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Goldstone, Jack</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2196', writeHTML, 'SPKRS'); swapTitle(' Ian  Graham  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Graham, Ian</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=40', writeHTML, 'SPKRS'); swapTitle(' Bob  Gray  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gray, Bob</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1993', writeHTML, 'SPKRS'); swapTitle(' Allan  Gregg  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gregg, Allan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2153', writeHTML, 'SPKRS'); swapTitle(' Lev  Grossman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Grossman, Lev</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2076', writeHTML, 'SPKRS'); swapTitle(' Jonathan  Gruber  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gruber, Jonathan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2095', writeHTML, 'SPKRS'); swapTitle(' Jason  Grumet  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Grumet, Jason</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2214', writeHTML, 'SPKRS'); swapTitle(' Chris  Guillebeau  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Guillebeau, Chris</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1974', writeHTML, 'SPKRS'); swapTitle(' Alma  Guillermoprieto  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Guillermoprieto, Alma</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=137', writeHTML, 'SPKRS'); swapTitle('Dr. Sanjay  Gupta  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gupta, Sanjay</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2165', writeHTML, 'SPKRS'); swapTitle(' Anil  Gupta  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gupta, Anil</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 G" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1967', writeHTML, 'SPKRS'); swapTitle(' Jeremy  Gutsche  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Gutsche, Jeremy</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2176', writeHTML, 'SPKRS'); swapTitle(' Jonathan  Haidt  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Haidt, Jonathan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2125', writeHTML, 'SPKRS'); swapTitle(' Joseph  Hallinan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hallinan, Joseph</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2169', writeHTML, 'SPKRS'); swapTitle(' Justin  Halpern  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Halpern, Justin</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2072', writeHTML, 'SPKRS'); swapTitle(' Dean  Hamer  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hamer, Dean</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=141', writeHTML, 'SPKRS'); swapTitle(' Jack  Hanna  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hanna, Jack</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2078', writeHTML, 'SPKRS'); swapTitle(' Rahaf  Harfoush  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Harfoush, Rahaf</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2203', writeHTML, 'SPKRS'); swapTitle(' Stuart  Hart  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hart, Stuart</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2106', writeHTML, 'SPKRS'); swapTitle(' Joseph  Heath  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Heath, Joseph</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=57', writeHTML, 'SPKRS'); swapTitle(' Chantal  Hebert  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hebert, Chantal</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2152', writeHTML, 'SPKRS'); swapTitle(' Virginia  Heffernan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Heffernan, Virginia</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2010', writeHTML, 'SPKRS'); swapTitle(' Ronald  Heifetz  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Heifetz, Ronald</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=28', writeHTML, 'SPKRS'); swapTitle('Dr. Richard  Heinzl  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Heinzl, Richard</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2211', writeHTML, 'SPKRS'); swapTitle(' Dave  Hemstad  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hemstad, Dave</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2225', writeHTML, 'SPKRS'); swapTitle(' Robert  Herjavec  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Herjavec, Robert</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=122', writeHTML, 'SPKRS'); swapTitle(' Seymour  Hersh  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hersh, Seymour</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1996', writeHTML, 'SPKRS'); swapTitle(' Lyn  Heward  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Heward, Lyn</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=149', writeHTML, 'SPKRS'); swapTitle(' Carl  Hiaasen  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hiaasen, Carl</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2055', writeHTML, 'SPKRS'); swapTitle(' Rick  Hillier  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hillier, Rick</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2245', writeHTML, 'SPKRS'); swapTitle(' Michael  Hlinka  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hlinka, Michael</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2133', writeHTML, 'SPKRS'); swapTitle(' Clara  Hughes  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Hughes, Clara</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 I" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1950', writeHTML, 'SPKRS'); swapTitle(' John  Ibbitson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ibbitson, John</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 I" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1975', writeHTML, 'SPKRS'); swapTitle(' Walter  Isaacson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Isaacson, Walter</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 J" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2094', writeHTML, 'SPKRS'); swapTitle(' Jessica  Jackley  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Jackley, Jessica</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 J" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2008', writeHTML, 'SPKRS'); swapTitle(' Jason  Jennings  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Jennings, Jason</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 J" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2047', writeHTML, 'SPKRS'); swapTitle(' Natalie  Jeremijenko  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Jeremijenko, Natalie</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 J" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2241', writeHTML, 'SPKRS'); swapTitle(' Daymond  John  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;John, Daymond</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 J" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2193', writeHTML, 'SPKRS'); swapTitle(' Happy  Johnson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Johnson, Happy</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 J" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2118', writeHTML, 'SPKRS'); swapTitle(' Cameron  Johnson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Johnson, Cameron</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2135', writeHTML, 'SPKRS'); swapTitle(' Joseph  Kahn  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kahn, Joseph</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2154', writeHTML, 'SPKRS'); swapTitle(' Paul  Kedrosky  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kedrosky, Paul</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1970', writeHTML, 'SPKRS'); swapTitle(' Randall  Kennedy  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kennedy, Randall</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2212', writeHTML, 'SPKRS'); swapTitle(' Jonah  Keri  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Keri, Jonah</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2087', writeHTML, 'SPKRS'); swapTitle(' Mahvish  Khan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Khan, Mahvish</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2100', writeHTML, 'SPKRS'); swapTitle(' Mohammad  Khatami  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Khatami, Mohammad</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2060', writeHTML, 'SPKRS'); swapTitle(' Charles  Kimball  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kimball, Charles</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2136', writeHTML, 'SPKRS'); swapTitle(' Cindy  Klassen  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Klassen, Cindy</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=126', writeHTML, 'SPKRS'); swapTitle(' Chuck  Klosterman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Klosterman, Chuck</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2051', writeHTML, 'SPKRS'); swapTitle(' Ryan  Knighton  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Knighton, Ryan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=98', writeHTML, 'SPKRS'); swapTitle(' Gina  Kolata  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kolata, Gina</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2150', writeHTML, 'SPKRS'); swapTitle(' Frank  Koller  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Koller, Frank</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1949', writeHTML, 'SPKRS'); swapTitle(' Jonathan  Kozol  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kozol, Jonathan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2000', writeHTML, 'SPKRS'); swapTitle(' Arkadi  Kuhlmann  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kuhlmann, Arkadi</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2033', writeHTML, 'SPKRS'); swapTitle(' Robert  Kurson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kurson, Robert</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 K" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2243', writeHTML, 'SPKRS'); swapTitle(' Robert  Kuttner  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Kuttner, Robert</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1954', writeHTML, 'SPKRS'); swapTitle(' Polly  LaBarre  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;LaBarre, Polly</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2151', writeHTML, 'SPKRS'); swapTitle(' Anthony  Lacavera  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lacavera, Anthony</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=23', writeHTML, 'SPKRS'); swapTitle(' Padma  Lakshmi  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lakshmi, Padma</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=117', writeHTML, 'SPKRS'); swapTitle(' Michael  Landsberg  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Landsberg, Michael</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1978', writeHTML, 'SPKRS'); swapTitle(' Lewis  Lapham  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lapham, Lewis</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2142', writeHTML, 'SPKRS'); swapTitle(' Catriona  Le May Doan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Le May Doan, Catriona</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1979', writeHTML, 'SPKRS'); swapTitle(' Spike  Lee  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lee, Spike</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2090', writeHTML, 'SPKRS'); swapTitle(' Jonah  Lehrer  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lehrer, Jonah</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2208', writeHTML, 'SPKRS'); swapTitle(' Gayle Tzemach Lemmon  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lemmon, Gayle Tzemach</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2016', writeHTML, 'SPKRS'); swapTitle(' Patrick  Lencioni  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lencioni, Patrick</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1980', writeHTML, 'SPKRS'); swapTitle(' Stephen  Lewis  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lewis, Stephen</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=25', writeHTML, 'SPKRS'); swapTitle(' Alan  Lightman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lightman, Alan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2190', writeHTML, 'SPKRS'); swapTitle(' Amanda  Lindhout  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lindhout, Amanda</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2192', writeHTML, 'SPKRS'); swapTitle(' Lisa  Ling  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ling, Lisa</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2127', writeHTML, 'SPKRS'); swapTitle(' Imogen  Lloyd Webber  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lloyd Webber, Imogen</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=85', writeHTML, 'SPKRS'); swapTitle(' Mike  Lupica  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lupica, Mike</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=120', writeHTML, 'SPKRS'); swapTitle(' Daniel  Lyons  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Lyons, Daniel</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=32', writeHTML, 'SPKRS'); swapTitle(' Amber  MacArthur  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;MacArthur, Amber</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2023', writeHTML, 'SPKRS'); swapTitle(' Judith  MacBride-King  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;MacBride-King, Judith</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1995', writeHTML, 'SPKRS'); swapTitle(' Lewis  MacKenzie  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;MacKenzie, Lewis</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=79', writeHTML, 'SPKRS'); swapTitle(' Ron  MacLean  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;MacLean, Ron</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2235', writeHTML, 'SPKRS'); swapTitle(' Elle  Macpherson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Macpherson, Elle</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2178', writeHTML, 'SPKRS'); swapTitle(' John  Maeda  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Maeda, John</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2065', writeHTML, 'SPKRS'); swapTitle(' Hooman  Majd  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Majd, Hooman</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1965', writeHTML, 'SPKRS'); swapTitle(' Ronald  Mallett  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mallett, Ronald</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=81', writeHTML, 'SPKRS'); swapTitle(' Peter  Mansbridge  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mansbridge, Peter</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=113', writeHTML, 'SPKRS'); swapTitle(' Roger  Martin  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Martin, Roger</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1955', writeHTML, 'SPKRS'); swapTitle(' Bruce  Mau  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mau, Bruce</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2022', writeHTML, 'SPKRS'); swapTitle(' Marnie  McBean  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;McBean, Marnie</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2139', writeHTML, 'SPKRS'); swapTitle(' Colum  McCann  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;McCann, Colum</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=110', writeHTML, 'SPKRS'); swapTitle(' William  McDonough  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;McDonough, William</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2162', writeHTML, 'SPKRS'); swapTitle(' Frank  McKenna  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;McKenna, Frank</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2113', writeHTML, 'SPKRS'); swapTitle(' Bill  McKibben  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;McKibben, Bill</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2019', writeHTML, 'SPKRS'); swapTitle(' Stuart  McLean  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;McLean, Stuart</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2199', writeHTML, 'SPKRS'); swapTitle(' Brad  Meltzer  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Meltzer, Brad</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=78', writeHTML, 'SPKRS'); swapTitle(' Rick  Mercer  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mercer, Rick</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2129', writeHTML, 'SPKRS'); swapTitle(' Douglas  Merrill  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Merrill, Douglas</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2040', writeHTML, 'SPKRS'); swapTitle(' Wendy  Mesley  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mesley, Wendy</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2089', writeHTML, 'SPKRS'); swapTitle(' Dunya  Mikhail  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mikhail, Dunya</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1981', writeHTML, 'SPKRS'); swapTitle(' Kenneth  Miller  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Miller, Kenneth</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2184', writeHTML, 'SPKRS'); swapTitle(' Manjit  Minhas  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Minhas, Manjit</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2224', writeHTML, 'SPKRS'); swapTitle(' George  Mitchell  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mitchell, George</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2172', writeHTML, 'SPKRS'); swapTitle(' Ralph  Moar Jr. Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Moar, Ralph</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=58', writeHTML, 'SPKRS'); swapTitle(' Colin  Mochrie  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mochrie, Colin</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1982', writeHTML, 'SPKRS'); swapTitle(' Sy  Montgomery  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Montgomery, Sy</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2149', writeHTML, 'SPKRS'); swapTitle(' Jon  Montgomery  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Montgomery, Jon</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2096', writeHTML, 'SPKRS'); swapTitle(' Patti  Moreno  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Moreno, Patti</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2048', writeHTML, 'SPKRS'); swapTitle(' Daryl  Morey  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Morey, Daryl</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2099', writeHTML, 'SPKRS'); swapTitle(' Mark  Mullins  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mullins, Mark</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2056', writeHTML, 'SPKRS'); swapTitle(' Leilani  Munter  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Munter, Leilani</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2103', writeHTML, 'SPKRS'); swapTitle(' Blake  Mycoskie  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Mycoskie, Blake</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 N" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=27', writeHTML, 'SPKRS'); swapTitle(' Euvin  Naidoo  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Naidoo, Euvin</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 N" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=124', writeHTML, 'SPKRS'); swapTitle(' Mira  Nair  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Nair, Mira</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 N" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1964', writeHTML, 'SPKRS'); swapTitle(' Pedro  Noguera  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Noguera, Pedro</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 N" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2209', writeHTML, 'SPKRS'); swapTitle('Dr. Samantha  Nutt  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Nutt, Samantha</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 O" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1956', writeHTML, 'SPKRS'); swapTitle('Dr. Michael  Osterholm  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Osterholm, Michael</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 O" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2130', writeHTML, 'SPKRS'); swapTitle(' Neri  Oxman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Oxman, Neri</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 O" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2088', writeHTML, 'SPKRS'); swapTitle(' Kevin  O\'Leary  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;O'Leary, Kevin</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 O" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2101', writeHTML, 'SPKRS'); swapTitle(' Terry  O\'Reilly  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;O'Reilly, Terry</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2233', writeHTML, 'SPKRS'); swapTitle(' Steven  Page  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Page, Steven</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2105', writeHTML, 'SPKRS'); swapTitle(' Maulik  Pancholy  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Pancholy, Maulik</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2170', writeHTML, 'SPKRS'); swapTitle(' Neil  Pasricha  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Pasricha, Neil</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2230', writeHTML, 'SPKRS'); swapTitle(' Steve  Patterson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Patterson, Steve</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=22', writeHTML, 'SPKRS'); swapTitle(' Kal  Penn  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Penn, Kal</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=142', writeHTML, 'SPKRS'); swapTitle(' Bruce  Philp  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Philp, Bruce</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=114', writeHTML, 'SPKRS'); swapTitle(' Susan  Pinker  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Pinker, Susan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1968', writeHTML, 'SPKRS'); swapTitle(' Steven  Pinker  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Pinker, Steven</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2187', writeHTML, 'SPKRS'); swapTitle(' David  Pogue  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Pogue, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1961', writeHTML, 'SPKRS'); swapTitle(' Stephen  Prothero  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Prothero, Stephen</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 Q" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2020', writeHTML, 'SPKRS'); swapTitle(' Pat  Quinn  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Quinn, Pat</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2204', writeHTML, 'SPKRS'); swapTitle(' Leo  Rautins  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Rautins, Leo</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2137', writeHTML, 'SPKRS'); swapTitle(' Maelle  Ricker  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ricker, Maelle</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2107', writeHTML, 'SPKRS'); swapTitle(' Glenn Doc Rivers  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Rivers, Glenn Doc</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2239', writeHTML, 'SPKRS'); swapTitle(' James  Robinson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Robinson, James</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1959', writeHTML, 'SPKRS'); swapTitle(' John Elder  Robison  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Robison, John Elder</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2238', writeHTML, 'SPKRS'); swapTitle(' Tina  Rosenberg  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Rosenberg, Tina</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2119', writeHTML, 'SPKRS'); swapTitle(' Mike  Rowe  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Rowe, Mike</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2098', writeHTML, 'SPKRS'); swapTitle(' Jeff  Rubin  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Rubin, Jeff</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2064', writeHTML, 'SPKRS'); swapTitle(' Michael  Ruse  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Ruse, Michael</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=94', writeHTML, 'SPKRS'); swapTitle('Sir Salman  Rushdie  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Rushdie, Salman</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2216', writeHTML, 'SPKRS'); swapTitle(' Alexandra  Samuel  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Samuel, Alexandra</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2037', writeHTML, 'SPKRS'); swapTitle(' Tim  Sanders  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Sanders, Tim</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2073', writeHTML, 'SPKRS'); swapTitle(' Sebastien  Sasseville  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Sasseville, Sebastien</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2234', writeHTML, 'SPKRS'); swapTitle(' Claudia  Schiffer  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Schiffer, Claudia</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2084', writeHTML, 'SPKRS'); swapTitle(' Lou  Schizas  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Schizas, Lou</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2081', writeHTML, 'SPKRS'); swapTitle(' Monika  Schnarre  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Schnarre, Monika</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2102', writeHTML, 'SPKRS'); swapTitle(' Brian  Scudamore  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Scudamore, Brian</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2027', writeHTML, 'SPKRS'); swapTitle(' Peter  Sealey  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Sealey, Peter</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1985', writeHTML, 'SPKRS'); swapTitle(' Zaib  Shaikh  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Shaikh, Zaib</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2123', writeHTML, 'SPKRS'); swapTitle(' Lisa  Shannon  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Shannon, Lisa</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2031', writeHTML, 'SPKRS'); swapTitle('Dr. Marla  Shapiro  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Shapiro, Marla</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2221', writeHTML, 'SPKRS'); swapTitle(' Al  Sharpton  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Sharpton, Al</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1986', writeHTML, 'SPKRS'); swapTitle(' Jeffrey  Simpson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Simpson, Jeffrey</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=38', writeHTML, 'SPKRS'); swapTitle(' Sami Jo  Small  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Small, Sami Jo</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1987', writeHTML, 'SPKRS'); swapTitle(' Tavis  Smiley  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Smiley, Tavis</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2197', writeHTML, 'SPKRS'); swapTitle(' Patti  Smith  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Smith, Patti</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2222', writeHTML, 'SPKRS'); swapTitle(' David Livingstone Smith  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Smith, David Livingstone</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1988', writeHTML, 'SPKRS'); swapTitle(' Michael  Smyth  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Smyth, Michael</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2159', writeHTML, 'SPKRS'); swapTitle(' Dava  Sobel  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Sobel, Dava</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2043', writeHTML, 'SPKRS'); swapTitle(' George  Stalk  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Stalk, George</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=31', writeHTML, 'SPKRS'); swapTitle(' Alex  Steffen  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Steffen, Alex</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=54', writeHTML, 'SPKRS'); swapTitle(' Ben  Stein  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Stein, Ben</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2210', writeHTML, 'SPKRS'); swapTitle(' Douglas  Stephens  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Stephens, Douglas</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=49', writeHTML, 'SPKRS'); swapTitle(' Brian  Stewart  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Stewart, Brian</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1966', writeHTML, 'SPKRS'); swapTitle(' Bill  Strickland  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Strickland, Bill</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1963', writeHTML, 'SPKRS'); swapTitle(' Marcelo  Suarez-Orozco  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Suarez-Orozco, Marcelo</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2093', writeHTML, 'SPKRS'); swapTitle(' Marc  Summers  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Summers, Marc</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=45', writeHTML, 'SPKRS'); swapTitle(' Amy  Sutherland  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Sutherland, Amy</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=77', writeHTML, 'SPKRS'); swapTitle(' David  Suzuki  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Suzuki, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=30', writeHTML, 'SPKRS'); swapTitle(' Diana  Swain  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Swain, Diana</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2219', writeHTML, 'SPKRS'); swapTitle(' Matt  Taibbi  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Taibbi, Matt</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=21', writeHTML, 'SPKRS'); swapTitle(' Daniel  Tammet  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Tammet, Daniel</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2155', writeHTML, 'SPKRS'); swapTitle(' Bryant  Terry  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Terry, Bryant</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1991', writeHTML, 'SPKRS'); swapTitle(' Brian  Tobin  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Tobin, Brian</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2163', writeHTML, 'SPKRS'); swapTitle(' Joe  Torre  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Torre, Joe</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2164', writeHTML, 'SPKRS'); swapTitle(' Dara  Torres  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Torres, Dara</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2206', writeHTML, 'SPKRS'); swapTitle(' Debbie  Travis  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Travis, Debbie</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2132', writeHTML, 'SPKRS'); swapTitle(' Marc  Trestman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Trestman, Marc</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 T" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1962', writeHTML, 'SPKRS'); swapTitle(' David  Trimble  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Trimble, David</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 V" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2157', writeHTML, 'SPKRS'); swapTitle(' Vijay V. Vaitheeswaran  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Vaitheeswaran, Vijay V.</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 V" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=112', writeHTML, 'SPKRS'); swapTitle(' Adria  Vasil  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Vasil, Adria</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 V" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2021', writeHTML, 'SPKRS'); swapTitle(' Michael  Vickers  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Vickers, Michael</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=67', writeHTML, 'SPKRS'); swapTitle(' Derek  Walcott  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Walcott, Derek</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2215', writeHTML, 'SPKRS'); swapTitle(' Rob  Walker  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Walker, Rob</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=106', writeHTML, 'SPKRS'); swapTitle(' Sheila  Watt-Cloutier  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Watt-Cloutier, Sheila</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2092', writeHTML, 'SPKRS'); swapTitle(' Andrew  Weaver  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Weaver, Andrew</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=18', writeHTML, 'SPKRS'); swapTitle(' Alan  Weisman  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Weisman, Alan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2030', writeHTML, 'SPKRS'); swapTitle(' Charles  Wheelan  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Wheelan, Charles</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2141', writeHTML, 'SPKRS'); swapTitle(' Hayley  Wickenheiser  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Wickenheiser, Hayley</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=47', writeHTML, 'SPKRS'); swapTitle(' Brian  Williams  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Williams, Brian</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1972', writeHTML, 'SPKRS'); swapTitle(' Jody  Williams  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Williams, Jody</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1952', writeHTML, 'SPKRS'); swapTitle(' Edward O. Wilson  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Wilson, Edward O.</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=97', writeHTML, 'SPKRS'); swapTitle(' Andrew  Winston  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Winston, Andrew</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2110', writeHTML, 'SPKRS'); swapTitle(' Nathan  Wolfe  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Wolfe, Nathan</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2124', writeHTML, 'SPKRS'); swapTitle(' Vanessa  Woods  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Woods, Vanessa</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2035', writeHTML, 'SPKRS'); swapTitle(' Steve  Wozniak  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Wozniak, Steve</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=1999', writeHTML, 'SPKRS'); swapTitle(' Tom  Wujec  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Wujec, Tom</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 Y" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2115', writeHTML, 'SPKRS'); swapTitle(' Carol Kaesuk  Yoon  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Yoon, Carol Kaesuk</div>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<div class="drop_item_175 Y" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('nameSearch'); GET_AJAX('speakers_detail.php?SID=2097', writeHTML, 'SPKRS'); swapTitle(' Kenji  Yoshino  Speaker Profile at The Lavin Agency');">&nbsp;&nbsp;Yoshino, Kenji</div>
+
+				
+
+				
+				
+
+				
+				
+
+			
+
+			</div>
+
+		
+
+		</td>
+
+		<td width="15"><img src="images/shim.gif" width="15" height="10" border="0" alt="" /></td>
+
+		<td width="175">
+
+			<!-- Search By Topic -->
+
+		
+
+			<div class="drop_button_175" onClick="showElement('topicSearch'); document.getElementById('keyword').value = 'Search by keyword'; scroller('topicSearch');">
+
+				&nbsp;&nbsp;<b>Search by topic</b>
+
+			</div>
+
+			
+
+			<div name="topicSearch" id="topicSearch" class="drop_box_175" onmouseout="if (mouseLeaves(this, event)) { hideElement('topicSearch');}">
+
+				
+
+				
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=24', writeHTML, 'SPKRS'); swapTitle('Arts and Pop Culture Speakers at The Lavin Agency');">&nbsp;&nbsp;Arts and Pop Culture</div>
+
+				
+				<div class="drop_item_175 A" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=53', writeHTML, 'SPKRS'); swapTitle('Authors Speakers at The Lavin Agency');">&nbsp;&nbsp;Authors</div>
+
+				
+				<div class="drop_item_175 B" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=14', writeHTML, 'SPKRS'); swapTitle('Business Strategy Speakers at The Lavin Agency');">&nbsp;&nbsp;Business Strategy</div>
+
+											<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers_campus.php', writeHTML, 'SPKRS'); swapTitle('Campus Speakers at The Lavin Agency');">&nbsp;&nbsp;Campus Activities</div>
+						
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=44', writeHTML, 'SPKRS'); swapTitle('Celebrities Speakers at The Lavin Agency');">&nbsp;&nbsp;Celebrities</div>
+
+				
+				<div class="drop_item_175 C" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=50', writeHTML, 'SPKRS'); swapTitle('College Speakers at The Lavin Agency');">&nbsp;&nbsp;College</div>
+
+				
+				<div class="drop_item_175 D" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=16', writeHTML, 'SPKRS'); swapTitle('Diversity Speakers at The Lavin Agency');">&nbsp;&nbsp;Diversity</div>
+
+				
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=32', writeHTML, 'SPKRS'); swapTitle('Economics Speakers at The Lavin Agency');">&nbsp;&nbsp;Economics</div>
+
+				
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=17', writeHTML, 'SPKRS'); swapTitle('Education Speakers at The Lavin Agency');">&nbsp;&nbsp;Education</div>
+
+				
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=18', writeHTML, 'SPKRS'); swapTitle('Entertainers Speakers at The Lavin Agency');">&nbsp;&nbsp;Entertainers</div>
+
+				
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=19', writeHTML, 'SPKRS'); swapTitle('Environment Speakers at The Lavin Agency');">&nbsp;&nbsp;Environment</div>
+
+				
+				<div class="drop_item_175 E" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=43', writeHTML, 'SPKRS'); swapTitle('Exclusives Speakers at The Lavin Agency');">&nbsp;&nbsp;Exclusives</div>
+
+				
+				<div class="drop_item_175 H" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=20', writeHTML, 'SPKRS'); swapTitle('Health Speakers at The Lavin Agency');">&nbsp;&nbsp;Health</div>
+
+				
+				<div class="drop_item_175 I" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=33', writeHTML, 'SPKRS'); swapTitle('Innovation Speakers at The Lavin Agency');">&nbsp;&nbsp;Innovation</div>
+
+				
+				<div class="drop_item_175 L" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=34', writeHTML, 'SPKRS'); swapTitle('Leadership Speakers at The Lavin Agency');">&nbsp;&nbsp;Leadership</div>
+
+				
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=36', writeHTML, 'SPKRS'); swapTitle('Marketing Speakers at The Lavin Agency');">&nbsp;&nbsp;Marketing</div>
+
+				
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=46', writeHTML, 'SPKRS'); swapTitle('Most Requested Speakers at The Lavin Agency');">&nbsp;&nbsp;Most Requested</div>
+
+				
+				<div class="drop_item_175 M" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=22', writeHTML, 'SPKRS'); swapTitle('Motivation Speakers at The Lavin Agency');">&nbsp;&nbsp;Motivation</div>
+
+				
+				<div class="drop_item_175 N" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=54', writeHTML, 'SPKRS'); swapTitle('New Speakers Speakers at The Lavin Agency');">&nbsp;&nbsp;New Speakers</div>
+
+				
+				<div class="drop_item_175 P" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=23', writeHTML, 'SPKRS'); swapTitle('Politics Speakers at The Lavin Agency');">&nbsp;&nbsp;Politics</div>
+
+				
+				<div class="drop_item_175 R" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=25', writeHTML, 'SPKRS'); swapTitle('Religion Speakers at The Lavin Agency');">&nbsp;&nbsp;Religion</div>
+
+				
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=41', writeHTML, 'SPKRS'); swapTitle('Sales Speakers at The Lavin Agency');">&nbsp;&nbsp;Sales</div>
+
+				
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=26', writeHTML, 'SPKRS'); swapTitle('Science Speakers at The Lavin Agency');">&nbsp;&nbsp;Science</div>
+
+				
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=28', writeHTML, 'SPKRS'); swapTitle('Social Change Speakers at The Lavin Agency');">&nbsp;&nbsp;Social Change</div>
+
+				
+				<div class="drop_item_175 S" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=27', writeHTML, 'SPKRS'); swapTitle('Sports Speakers at The Lavin Agency');">&nbsp;&nbsp;Sports</div>
+
+				
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=42', writeHTML, 'SPKRS'); swapTitle('Web 2.0 and Social Media Speakers at The Lavin Agency');">&nbsp;&nbsp;Web 2.0 and Social Media</div>
+
+				
+				<div class="drop_item_175 W" onmouseover="this.style.backgroundColor='#EBEBEB';" onmouseout="this.style.backgroundColor='#FFFFFF';" onclick="hideElement('topicSearch'); GET_AJAX('speakers.php?catID=45', writeHTML, 'SPKRS'); swapTitle('Work Speakers at The Lavin Agency');">&nbsp;&nbsp;Work</div>
+
+				
+		
+
+			</div>
+
+		
+
+		</td>
+
+		<td width="15"><img src="images/shim.gif" width="15" height="10" border="0" alt="" /></td>
+
+		<td width="15">
+
+			<div class="keyword_box_175">
+
+				<table background="#FFFFFF" width="175" height="20" cellspacing="0" cellpadding="0" border="0">
+
+					<tr valign="top">
+
+						<td width="155">&nbsp;&nbsp;<input type="text" id="keyword" onKeyPress="catchEnter(window.event,'keyword');" class="keywordSearch" onFocus="if(this.value=='Search by keyword')this.value='';" onBlur="if(this.value=='')this.value='Search by keyword';" value="Search by keyword" /></td>
+
+						<td width="20" align="right"><a href="javascript: GET_AJAX('speakers.php?keyword=' + document.getElementById('keyword').value, writeHTML, 'SPKRS');"><img src="images/shim.gif" width="20" height="16" border="0" alt="" /></a><br /></td>
+
+					</tr>
+
+				</table>
+
+			</div>
+
+		</td>
+
+
+
+	</tr>
+
+
+
+</table>				</div>
+			</td>
+		</tr>
+
+		<!-- Content Well -->
+		<tr bgcolor="#EBEBEB" valign="top">
+			
+			<!-- My Speakers -->
+			<td width="585">			
+				<div name="SPKRS" id="SPKRS" style="height: 100%; padding: 15px; border-left: 1px solid #818181;" onMouseOver="BGswap('SPKRS','CAT');">
+					
+
+
+<img src="images/TXT_mySpeakers.png" width="200" height="45" border="0" alt="" /><br />
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+<img src="images/dotLine_555.png" width="555" height="1" border="0" alt="" /><br />
+
+<table width="555" height="35" cellspacing="0" cellpadding="0" border="0">
+	<tr valign="middle">
+		<td>
+			<span class="pagNav"><a href="javascript: GET_AJAX('speakers.php', writeHTML, 'SPKRS'); swapTitle('Speakers Bureau: The Lavin Agency');" class="subNav">All Speakers</a> >    Andrew  Coyne </span>
+		</td>
+	</tr>
+</table>
+
+<img src="images/dotLine_555.png" width="555" height="1" border="0" alt="" /><br />
+<img src="images/shim.gif" width="555" height="15" border="0" alt="" /><br />
+
+
+<!-- Details Page -->
+<table width="555" cellspacing="0" cellpadding="0" border="0">
+	<tr valign="top">
+		
+		<!-- Story -->
+		<td width="405">
+		
+			<table width="405" cellspacing="0" cellpadding="0" border="0">
+				<tr valign="top">
+					<td width="70">
+										<img src="scripts/phpThumb/phpThumb.php?src=../../images/uploads/1211922077_coyne.jpg&w=150&h=150&aoe=1" alt=" Andrew  Coyne " border="0" />
+									
+					</td>
+					<td width="15"><img src="images/shim.gif" width="15" height="10" border="0" alt="" /></td>
+					<td>
+						<div style="padding-right: 15px;">
+														<H1><b> Andrew  Coyne </b></H1>
+							<H3>National Editor of Maclean's</H3><br />
+							<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+							<H4><i>At Issue: Canada's Economic and Political Future</i></H4>
+							
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+			
+		</td>
+		
+		<!-- SideBar -->
+		<td width="150">
+			<!--
+			<a href="javascript: if( readCookie('login') == 'iAmTheOne'){ showElement('drop_'); GET_AJAX('DROP_addToCat.php?speakersID=', writeHTML, 'drop_'); }else{ showElement('DIA'); GET_AJAX('DIA_login.php?speakersID=', writeHTML, 'DIA_CONTENT');}" class="redLink">Add to my catalogues</a><br />
+			<div name="drop_" id="drop_" class="add_drop" style="display: none;" onmouseout="if (mouseLeaves(this, event)) { hideElement('drop_');}">
+			</div>
+			<img src="images/shim.gif" width="10" height="3" border="0" alt="" /><br />
+			-->
+			
+			<a href="javascript: showElement('link_50'); GET_AJAX('DROP_linkToSpeaker.php?speakersID=50', writeHTML, 'link_50');" class="redLink">Link to this speaker</a><br />
+			<div name="link_50" id="link_50" class="add_drop" style="display: none;" onmouseout="if (mouseLeaves(this, event)) { hideElement('link_50');}">
+			</div>
+			<img src="images/shim.gif" width="10" height="3" border="0" alt="" /><br />
+			
+			<a href="PDF.php?SID=50" target="_blank" class="redLink">Create PDF</a><br />
+			<img src="images/shim.gif" width="10" height="3" border="0" alt="" /><br />
+			
+			<!--
+			<a href="PDF.php?SID=" target="_blank" class="redLink">Print this page</a><br />
+			<img src="images/shim.gif" width="10" height="3" border="0" alt="" /><br />		
+			-->
+			
+			<a href="javascript: showElement('DIA'); GET_AJAX('DIA_email_speaker.php?speakersID=50', writeHTML, 'DIA_CONTENT');" class="redLink">Email to a friend</a><br />
+			<img src="images/shim.gif" width="10" height="3" border="0" alt="" /><br />
+			
+			
+			
+							<a href="javascript: GET_AJAX('speakers.php?limitStart=0', writeHTML, 'SPKRS');" class="redLink">Back to search results</a><br />
+						<img src="images/shim.gif" width="10" height="3" border="0" alt="" /><br />
+			
+		</td>
+	</tr>
+	
+</table>
+
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+
+
+<!-- Details Page -->
+<table width="555" cellspacing="0" cellpadding="0" border="0">
+	<tr valign="top">
+		
+		<!-- Story -->
+		<td width="405">
+			<img src="images/dotLine_390.png" width="390" height="1" border="0" alt="" /><br />
+			<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+			<div class="body" style="padding-right: 20px; padding-bottom: 50px;">
+				<p>Andrew Coyne is the national editor of <em>Maclean's -- </em>one of Canadian journalism's most prestigious and influential positions. An original member of <em>The National Post</em>, where he was their national affairs columnist, Coyne has established himself over the last two decades as one of this country's most thoughtful, passionate and articulate commentators on political and economic issues. </p>
+<p>Andrew Coyne plays a key role in leading the news coverage at a revamped <em>Maclean's</em>, a publication that, one hundred years after its founding, continues to stay relevant, take chances, reinvent itself and grow. (Not unlike Coyne himself, who has been an editorial writer, columnist and contributor for <em>The Globe and Mail</em>, <em>The Financial Post</em>, <em>Saturday Night,</em> <em>The New York Times</em>, <em>The Wall Street Journal</em> and <em>Time</em> magazine). And while <em>Maclean's</em> won Canada's Magazine of the Year award as recently as 2006, Coyne, too, is no stranger to national accolades: he is the winner of two National Newspaper Awards, and the Hyman Solomon Award for Excellence in Public Policy Journalism.&nbsp;He is also a&nbsp;member of the "At Issue" Panel on CBC's <em>The National,&nbsp;</em>appears on TVO's <i>The Agenda</i>, and once co-hosted <em>Face-Off </em>on CBC<em>.</em> </p>
+<p><strong>Andrew Coyne Speech Topics</strong></p>
+<p><em>At Issue: Canada's Economic and Political Future</em></p>
+<p>In his keynotes, Andrew Coyne translates the new energy and cross-country insight of the new <em>Maclean's</em> to the stage, commenting and bringing clarity to the social, political, media and economic issues shaping the country today.</p>			</div>			
+		</td>
+		
+		<!-- SideBar -->
+		<td width="150">
+			<img src="images/dotLine_150.png" width="150" height="1" border="0" alt="" /><br />
+			<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+			
+			
+							<H2><b>VIDEOS</b>
+								<a href="javascript: showElement('DIA'); GET_AJAX('videos.php?SID=50', writeHTML, 'DIA_CONTENT');"><img src="../images/uploads/1228855030_coyne-video.jpg" width="150" height="112" border="0" alt="Videos of  Andrew  Coyne " /></a><br />
+				<p />
+				
+				<img src="images/dotLine_150.png" width="150" height="1" border="0" alt="" /><br />
+				<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+			
+
+
+							<H2><b>LINKS</b></H2>
+								<a href="http://forums.macleans.ca/advansis/?mod=for&act=dis&ref=publish&eid=63" class="bodyLink" target="_blank">Andrew Coyne's Blog at Maclean's</a><br />
+				<img src="images/shim.gif" width="10" height="3" border="0" alt="" /><br />
+				
+								<img src="images/shim.gif" width="10" height="7" border="0" alt="" /><br />
+				<img src="images/dotLine_150.png" width="150" height="1" border="0" alt="" /><br />
+				<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+						
+			
+			
+			
+			
+			
+			
+			
+						
+		</td>
+	</tr>
+	
+</table>
+
+<!-- End Search Results -->
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+<img src="images/dotLine_555.png" width="555" height="1" border="0" alt="" /><br />
+
+<table width="555" height="35" cellspacing="0" cellpadding="0" border="0">
+	<tr valign="middle">
+		<td>
+			<span class="pagNav"><a href="javascript: GET_AJAX('speakers.php', writeHTML, 'SPKRS');" class="subNav">All Speakers</a> >    Andrew  Coyne </span>
+		</td>
+	</tr>
+</table>
+
+<img src="images/dotLine_555.png" width="555" height="1" border="0" alt="" /><br />
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+
+<script type="text/javascript">
+pageTracker._trackPageview('andrew-coyne');
+tracked = true;
+</script>
+				</div>
+			</td>
+
+			
+
+			<!-- My Catalogues -->
+			<td width="405" bgcolor="#DCDCDC">				
+				<div name="CAT" id="CAT" style="height: 100%; padding: 15px; border-right: 1px solid #818181; background-image: url('images/DROP_CAT.png');" onMouseOver="BGswap('CAT','SPKRS');">
+					<script>
+	//GET_AJAX('cat_index.php', writeHTML, 'CAT');
+	//swapLogout();
+</script>
+<img src="images/TXT_featureVideo.png" width="200" height="45" border="0" alt="" /><br />
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+<img src="images/dotLine_375.png" width="375" height="1" border="0" alt="" /><br />
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+
+
+
+<span class="subHeader"><b>JESSICA JACKLEY, Co-Founder of KIVA</b></span><br />
+
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+<img src="images/dotLine_375.png" width="375" height="1" border="0" alt="" /><br />
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+
+<a href="javascript: showElement('DIA'); GET_AJAX('featureVideo.php', writeHTML, 'DIA_CONTENT');"><img src="images/Feature_Video_02.jpg" width="375" height="211" border="0" alt="" /></a><br />
+<img src="images/shim.gif" width="10" height="10" border="0" alt="" /><br />
+
+<div class="body">
+<b>"The way that we participate in each others stories is of deep importance."</b> In this TED talk, <a href="http://www.thelavinagency.com/speaker-jessica-jackley.html">Jessica Jackley</a> shares her personal 
+story behind the creation of KIVA &mdash; the microlending site that has enabled over $150 million in microloans to entrepreneurs in the 
+developing world. Loans start at just $25. For all its measurable success, KIVA  is at core about engaging with and helping others. 
+It's about community, dignity, respect, and hope. As Jackley reminds us, "The best way for people to change their lives is for them 
+to have control in a way that they believe is best for them."
+</div>				</div>
+			</td>
+		</tr>
+
+		
+
+		<!-- Footer -->
+		<tr height="65" bgcolor="#3F3F3F">
+			<td colspan="2"><table width="990" height="65" cellspacing="0" cellpadding="0" border="0">
+	<tr valign="center">
+		<td>
+			<div style="padding-left: 15px;" class="footerText">
+				<b>800 265 4870</b>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:info@thelavinagency.com" class="nav"><b>info@thelavinagency.com</b></a><br />
+				
+								                    <a href="speakers.html" class="nav">All Speakers</a>&nbsp;<span class="footerText">|</span>&nbsp;
+                    <a href="blog.html" class="nav">Blog</a>&nbsp;<span class="footerText">|</span>&nbsp;
+                    <a href="newsletter.html" class="nav">E-Newsletter</a>&nbsp;<span class="footerText">|</span>&nbsp;
+                    <a href="about.html" class="nav">About Lavin</a>&nbsp;<span class="footerText">|</span>&nbsp;
+                    <a href="contact.html" class="nav">Contact us</a>&nbsp;<span class="footerText">|</span>&nbsp;
+                    <a href="faq.html" class="nav">FAQs</a>&nbsp;<span class="footerText">|</span>&nbsp;
+                    <a href="privacy.html" class="nav">Privacy Policy</a>&nbsp;<span class="footerText">|</span>&nbsp;
+					<a href="sitemap.html" class="nav">Sitemap</a>
+                				
+			</div>
+		</td>
+		<td align="right">
+			<div style="padding-right: 15px;" class="footerText">&copy; 2011 The Lavin Agency Ltd.</div>
+		</td>
+	</tr>
+</table>
+
+</td>
+		</tr>
+	</table>
+	
+	
+
+</body>
+</html>

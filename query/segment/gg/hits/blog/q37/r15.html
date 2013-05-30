@@ -1,0 +1,1102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link href="/images/_defaults.css" rel="stylesheet" type="text/css" />
+	<link href="/images/_layout_v2.css" rel="stylesheet" type="text/css" />
+
+<link href="/images/_layout_sky.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]><style type="text/css">@import url("/images/_defaults_ie6.css");</style><![endif]--> 
+	<script type="text/javascript">
+function isCheckedOnOff(InputName)
+{
+	if(document.getElementById(InputName).checked == true)
+		document.getElementById(InputName).checked = false;
+	else
+		document.getElementById(InputName).checked = true;
+}
+
+function openCloseTabs(element){
+	if(document.getElementById(element).style.display == 'none'){
+		document.getElementById(element).style.display = 'block';
+	}else{
+		document.getElementById(element).style.display = 'none';
+	}
+}
+function PopWindow(mypage, myname, w, h, scroll) 
+	{
+	var winl = (screen.width - w) / 2;
+	var wint = (screen.height - h) / 2;
+	/* winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars='+scroll+',resizable,status' */
+winprops = 'height='+h+',width='+w+',top='+120+',left='+winl+',scrollbars='+scroll+',resizable,status=no,toolbar=no,menubar=no';
+
+win = window.open(mypage, myname, winprops)
+/* if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); } */
+}
+</script>
+
+
+
+
+<script type="text/javascript">
+	function hideTabContent(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).style.display = 'none';
+			}
+		}
+	}
+	function showTabContent(tab,tabId,element,id){
+		hideTabContent(element);
+		changeTabBack(tab);
+		if(document.getElementById(element+'_'+id) != null){
+			document.getElementById(element+'_'+id).style.display = 'block';
+		}
+		if(document.getElementById(tab+'_'+tabId) != null){
+			document.getElementById(tab+'_'+tabId).style.backgroundImage = 'url(/images/tab_selected_back.jpg)';
+			document.getElementById(tab+'_'+tabId).style.color = '#407740';
+			document.getElementById(tab+'_'+tabId).style.fontWeight = 'bold';
+		}
+	}
+	function changeTabBack(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).style.backgroundImage = 'url(/images/tab_unselected_back.jpg)';
+				document.getElementById(element+'_'+x).style.color = '#666666';
+				document.getElementById(element+'_'+x).style.fontWeight = 'normal';
+			}
+		}
+	}
+	
+	
+	
+	
+	function hideTabContentCal(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).style.display = 'none';
+			}
+		}
+	}
+	function showTabContentCal(tab,tabId,element,id){
+		hideTabContentCal(element);
+		changeTabBackCal(tab);
+		if(document.getElementById(element+'_'+id) != null){
+			document.getElementById(element+'_'+id).style.display = 'block';
+		}
+		if(document.getElementById(tab+'_'+tabId) != null){
+			document.getElementById(tab+'_'+tabId).className = 'selectedtabCal';
+		}
+	}
+	function changeTabBackCal(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).className = 'unselectedtabCal';
+			}
+		}
+	}
+	
+	
+	function hideTabContentblogs(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).style.display = 'none';
+			}
+		}
+	}
+	function showTabContentblogs(tab,tabId,element,id){
+		hideTabContentblogs(element);
+		changeTabBackblogs(tab);
+		if(document.getElementById(element+'_'+id) != null){
+			document.getElementById(element+'_'+id).style.display = 'block';
+		}
+		if(document.getElementById(tab+'_'+tabId) != null){
+			document.getElementById(tab+'_'+tabId).className = 'selectedtabblogs';
+		}
+	}
+	function changeTabBackblogs(element){
+		for(var x=1;x<30;x++){
+			if(document.getElementById(element+'_'+x) != null){
+				document.getElementById(element+'_'+x).className = 'unselectedtabblogs';
+			}
+		}
+	}
+function toggle(div_id) {
+	var el = document.getElementById(div_id);
+	if ( el.style.display == 'none' ) {	el.style.display = 'block';}
+	else {el.style.display = 'none';}
+}
+function blanket_size(popUpDivVar) {
+	if (typeof window.innerWidth != 'undefined') {
+		viewportheight = window.innerHeight;
+	} else {
+		viewportheight = document.documentElement.clientHeight;
+	}
+	if ((viewportheight > document.body.parentNode.scrollHeight) && (viewportheight > document.body.parentNode.clientHeight)) {
+		blanket_height = viewportheight;
+	} else {
+		if (document.body.parentNode.clientHeight > document.body.parentNode.scrollHeight) {
+			blanket_height = document.body.parentNode.clientHeight;
+		} else {
+			blanket_height = document.body.parentNode.scrollHeight;
+		}
+	}
+	var blanket = document.getElementById('blanket');
+	blanket.style.height = blanket_height + 'px';
+	var popUpDiv = document.getElementById(popUpDivVar);
+	popUpDiv_height=blanket_height/2-150;
+	popUpDiv.style.top = 10 + '%';
+}
+function window_pos(popUpDivVar) {
+	if (typeof window.innerWidth != 'undefined') {
+		viewportwidth = window.innerHeight;
+	} else {
+		viewportwidth = document.documentElement.clientHeight;
+	}
+	if ((viewportwidth > document.body.parentNode.scrollWidth) && (viewportwidth > document.body.parentNode.clientWidth)) {
+		window_width = viewportwidth;
+	} else {
+		if (document.body.parentNode.clientWidth > document.body.parentNode.scrollWidth) {
+			window_width = document.body.parentNode.clientWidth;
+		} else {
+			window_width = document.body.parentNode.scrollWidth;
+		}
+	}
+	var popUpDiv = document.getElementById(popUpDivVar);
+	window_width=window_width/2-150;
+	popUpDiv.style.left = 20 + '%';
+}
+function popup(windowname) {
+	blanket_size(windowname);
+	window_pos(windowname);
+	toggle('blanket');
+	toggle(windowname);		
+}
+</script>
+
+<title>Obituaries and funeral notices for Fort Dodge - MessengerNews.net | News, Sports, Jobs, Community Info. - The Messenger</title><meta name="description" content="Obituaries and funeral notices from The Messenger. The Messenger serves the Fort Dodge, Webster County and the North Central Iowa region with the latest local and national news, sports. Comment on stories, find jobs, submit news and view photos online." />
+
+<meta name="keywords" content="obits, obituaries, fort dodge obits, fort dodge obituaries, Gunderson, Laufersweiler, Bruce-Graham, Brown, Carson, Bowman, Foster, Joyce, Palmer & Sons, Palmer & Swank, Powers, Stark-Welin, funeral home, death, died, die, services, wake" />
+
+
+	
+	<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+	</script>
+	<script type="text/javascript">
+	  GS_googleAddAdSenseService("ca-pub-0279219903859783");
+	  GS_googleEnableAllServices();
+	</script>
+	
+	<script type="text/javascript">
+		GA_googleAddAttr("SiteID", "TMFI");
+	</script>
+	
+	<script type="text/javascript">
+		GA_googleAddAttr("MSection", "news");
+	</script>
+	
+	
+		<script type="text/javascript">
+			GA_googleAddAttr("SubSection", "obituaries");
+		</script>
+	
+				<script type="text/javascript">
+					GA_googleAddAttr("SLevel_1", "news");
+				</script>
+			
+				<script type="text/javascript">
+					GA_googleAddAttr("SLevel_2", "obituaries");
+				</script>
+			
+	<script type="text/javascript">
+		GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_Bottom_728x90");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x94_0x0");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x95_74x60");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_Top_728x90");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_Left_160x600");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x40_234x60");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_Middle_300x250");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x41_234x60");
+GA_googleAddSlot("ca-pub-0279219903859783", "CMSv2_x42_234x60");
+
+	</script>
+	<script type="text/javascript">
+	  GA_googleFetchAds();
+	</script>
+
+
+</head>
+<body>
+<div id="blanket" style="display:none;"></div>
+<div id="hdr">
+	<div id="hdrNav">
+		<div id="hdrNavL">Mobile: <a href="http://mobile.messengernews.net" title="Mobile Version">mobile.messengernews.net</a></div>
+		<div id="hdrNavR">
+	<span id="visitorNav">
+		<a href="https://www.messengernews.net/page/memberscreate.create/sign-in.html" title="Sign In">Sign In</a> | 
+		<a href="https://www.messengernews.net/page/memberscreate.create/create-an-account.html" title="Create an Account for Messenger News">Create an Account</a> | 
+	</span>
+	<span id="memberNav">
+		Welcome, <strong id="displayUsername"></strong>. <a href="https://www.messengernews.net/page/memberssecure.home/" title="My Account">My Account</a> | 
+		<a href="https://www.messengernews.net/page/memberslogin.actLogout/" title="Logout">Logout</a> | 
+	</span>
+	
+	<a href="https://secure.oweb.net/onisubscriptions/subscriptions/subscriptions.asp?publicationID=31" title="Subscribe to Messenger News">Subscribe</a> | <a href="http://74.84.106.139/vnr/index.asp?publicationID=31" title="Submit News to Messenger News">Submit News</a> | <a href="/page/category.detail/nav/5064/Contact-Us.html" class="">Contact Us</a> | 
+<a href="http://www.messengernews.net">Home</a>
+<a href="/page/syndrss.front/headline.xml" title="RSS Feed"><img src="/images/rss.gif" border="0" class="imgMiddle" alt="RSS" /></a>
+
+<script type="text/javascript">
+	var searchTerm = "DNAME=" ;
+	if (document.cookie.length > 0) { 
+		offset = document.cookie.indexOf(searchTerm);
+		if (offset != -1) {
+			offset += searchTerm.length;
+			var stopTerm = ';';
+			var stopPoint = document.cookie.indexOf(stopTerm, offset);
+			if ( stopPoint == -1 ) {
+				stopPoint = document.cookie.length;
+			}
+			var accountUsername = document.cookie.substring(offset,stopPoint);
+			/* additional check for cookie difference between browsers */
+			if ( unescape(document.cookie.substring(offset,offset+1)) != ';' ) {
+				showMember(accountUsername);
+			} else {
+				showGuest();
+			}
+		} else {
+			showGuest();
+		}							 
+	} else {
+		showGuest();
+	}
+	function showMember(accountUsername) {
+		document.getElementById('visitorNav').style.display = 'none';
+		document.getElementById('memberNav').style.display = '';
+		document.getElementById('displayUsername').innerHTML = accountUsername;
+	}
+	function showGuest() {
+		document.getElementById('visitorNav').style.display = '';
+		document.getElementById('memberNav').style.display = 'none';
+		document.getElementById('displayUsername').innerHTML = '';
+	}
+</script>
+</div>
+	</div>
+	<div id="hdrM">
+		<div id="hdrMLogo"><a href="http://www.messengernews.net" title="Home"><img src="/images/spacer.gif" border="0" width="250" height="96" /></a></div>
+		<div id="hdrMAd">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_Top_728x90");
+	</script>
+</div>
+	</div>
+</div>
+<div id="bdy">
+	<div id="bdyL"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div id="bdyC">
+		<!-- Top Nav -->
+		<div id="navTopCap"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+		<div id="navTop"><a href="/page/category.detail/nav/5020/News.html" class="">News</a>&nbsp; <a href="/page/category.detail/nav/5086/Opinion.html" class="">Opinion</a>&nbsp; 
+			<a href="/page/mboard.home/forums.html" >Forums</a>&nbsp; <a href="/page/category.detail/nav/5024/Sports.html" class="">Sports</a>&nbsp; <a href="/page/category.detail/nav/5000/Sections.html" class="">Sections</a>&nbsp; <a href="/page/category.detail/nav/5026/Business.html" class="">Business</a>&nbsp; <a href="/page/category.detail/nav/5030/Ads.html" class="">Ads</a>&nbsp; 
+			<a href="http://jobs.messengernews.net/" >Jobs</a>&nbsp; 
+			<a href="http://www.hot-ads.com/browse/index.cfm?SID=IA&RGID=00010000000&CID=8" >Local Classified</a>&nbsp; 
+			<a href="http://cu.messengernews.net" >CU</a>&nbsp; <a href="/page/category.detail/nav/5057/Extras.html" class="">Extras</a>&nbsp; <a href="/page/category.detail/nav/5062/Customer-Service.html" class="">Customer Service</a> </div>
+		
+		
+<div id="searchBox_nC">
+	<div id="searchBox_nC_search"><style type="text/css">
+	.formInputHint {color:#999;}
+</style>
+
+<script language="javascript">
+
+		function clearTextBox(chosen,chosenValue) {
+			if ( document.getElementById(chosen).value == chosenValue ) {
+				document.getElementById(chosen).value = '';
+			}
+		}
+
+</script>
+
+<form action="/page/search.results" method="get">
+	<div>
+		<input class="formInputHint" onclick="clearTextBox('searchBox_nC_search_box','News, Blogs & Events'); this.className='';" name="keywords" value="News, Blogs & Events" autocomplete="off" type="text" maxlength="128" id="searchBox_nC_search_box" /><input name="btnWebSearch" type="submit" value="Search" id="searchBox_nC_search_btn" />
+		<input type="hidden" name="startDate" value="" />
+		<input type="hidden" name="endDate" value="" />
+	</div>
+</form></div>
+	<div id="searchBox_nC_nC"><script type="text/javascript">
+
+	var xmlhttpNotificationCenter = false;
+	var notificationTitleArray = new Array();
+	var notificationURLArray = new Array();
+	var nextNotification = 1;
+	var delay = 5000;
+	
+	xmlhttpNotificationCenter=GetXmlHttpObjectSearch();
+	if (xmlhttpNotificationCenter==null) {
+		  alert ("Sorry, but I couldn't create an XMLHttpRequest");
+	}
+
+	if (xmlhttpNotificationCenter) {
+		xmlhttpNotificationCenter.onreadystatechange = setnotificationTitleArray;
+		xmlhttpNotificationCenter.open("GET", "/page/xml.notificationCenter", true);
+		xmlhttpNotificationCenter.send(null);
+	}
+	else {
+		alert("Sorry, but I couldn't create an XMLHttpRequest");
+	}
+
+	function GetXmlHttpObjectSearch() {
+		if (window.XMLHttpRequest) {
+		  /* code for IE7+, Firefox, Chrome, Opera, Safari */
+		  return new XMLHttpRequest();
+		}
+		if (window.ActiveXObject) {
+		  /* code for IE6, IE5 */
+		  return new ActiveXObject('Microsoft.XMLHTTP');
+		}
+		return null;
+	}
+
+	function setnotificationTitleArray() {
+		if (xmlhttpNotificationCenter.readyState == 4) {
+			if (xmlhttpNotificationCenter.status == 200) {
+				if (xmlhttpNotificationCenter.responseXML) {
+					var allNotifications = xmlhttpNotificationCenter.responseXML.getElementsByTagName("note");
+					for (var i=0; i<allNotifications.length; i++) {
+						var curSortType = allNotifications[i].getElementsByTagName("sortType")[0].firstChild.nodeValue;
+						if ( curSortType == 'Latest' ) {
+							var curID = allNotifications[i].getElementsByTagName("FK_noteID")[0].firstChild.nodeValue;
+							var curTitle = allNotifications[i].getElementsByTagName("title")[0].firstChild.nodeValue;
+							notificationTitleArray[i] = curTitle;
+							notificationURLArray[i] = '/page/notificationCenter.click?noteID='+curID;
+						} else if ( curSortType == 'Most Clicked' ) {
+							var curID = allNotifications[i].getElementsByTagName("FK_contentID")[0].firstChild.nodeValue;
+							var curTitle = allNotifications[i].getElementsByTagName("title")[0].firstChild.nodeValue;
+							var curCatID = allNotifications[i].getElementsByTagName("FK_catID")[0].firstChild.nodeValue;
+							notificationTitleArray[i] = curTitle;
+							notificationURLArray[i] = '/page/content.detail/id/'+curID+'/'+curTitle.replace(/[^0-9a-zA-Z]/g,'-')+'.html?nav='+curCatID;
+						} else if ( curSortType == 'Most Commented Article' ) {
+							var curID = allNotifications[i].getElementsByTagName("FK_contentID")[0].firstChild.nodeValue;
+							var curTitle = allNotifications[i].getElementsByTagName("title")[0].firstChild.nodeValue;
+							var curCatID = allNotifications[i].getElementsByTagName("FK_catID")[0].firstChild.nodeValue;
+							notificationTitleArray[i] = curTitle;
+							notificationURLArray[i] = '/page/content.detail/id/'+curID+'/'+curTitle.replace(/[^0-9a-zA-Z]/g,'-')+'.html?nav='+curCatID;
+						} else if ( curSortType == 'Most Commented Poll' ) {
+							var curID = allNotifications[i].getElementsByTagName("FK_pollID")[0].firstChild.nodeValue;
+							var curTitle = allNotifications[i].getElementsByTagName("title")[0].firstChild.nodeValue;
+							notificationTitleArray[i] = curTitle;
+							notificationURLArray[i] = '/page/polls.detail/id/'+curID+'/'+curTitle.replace(/[^0-9a-zA-Z]/g,'-')+'.html';
+						} else if ( curSortType == 'Most Commented Topic' ) {
+							var curID = allNotifications[i].getElementsByTagName("FK_topicID")[0].firstChild.nodeValue;
+							var curTitle = allNotifications[i].getElementsByTagName("title")[0].firstChild.nodeValue;
+							notificationTitleArray[i] = curTitle;
+							notificationURLArray[i] = '/page/mboard.detail/fNav/'+curID+'/'+curTitle.replace(/[^0-9a-zA-Z]/g,'-')+'.html';
+						} else if ( curSortType == 'Most Commented Blog' ) {
+							var curID = allNotifications[i].getElementsByTagName("FK_blogID")[0].firstChild.nodeValue;
+							var curTitle = allNotifications[i].getElementsByTagName("title")[0].firstChild.nodeValue;
+							notificationTitleArray[i] = curTitle;
+							notificationURLArray[i] = '/page/blogs.detail/display/'+curID+'/'+curTitle.replace(/[^0-9a-zA-Z]/g,'-')+'.html';
+						} else {
+							notificationTitleArray[i] = '';
+							notificationURLArray[i] = '';
+						}
+					}
+					setNotification(0, rotateNotifications);
+				}
+			}
+		}
+	}
+	
+	
+	function rotateNotifications() {
+		setTimeout('setNotification("'+nextNotification+'",rotateNotifications)', delay);
+		nextNotification++;
+		if ( nextNotification > notificationTitleArray.length -1 ) {
+			nextNotification = 0;
+		}
+	}
+
+
+	function setNotification(chosen,functionName) {
+		document.getElementById('notificationNumber').innerHTML = (parseInt(chosen)+1)+') ';
+		document.getElementById('notificationTitle').innerHTML = notificationTitleArray[chosen];
+		document.getElementById('notificationURL').href = notificationURLArray[chosen];
+		document.getElementById('notificationURL').title = notificationTitleArray[chosen];
+		functionName();
+	}
+</script>
+
+
+<strong>What's Trending &raquo;</strong><span id="notificationNumber"></span><a id="notificationURL" href="" title=""><span id="notificationTitle"></span></a></div>
+	<div class="clearR"></div>
+</div>
+		<!-- Breaking -->
+		
+
+	<div id="breakingNewsAjax"></div>
+	<script language="javascript">
+		var xmlhttp;
+		
+		function getBreaking() {
+			xmlhttp=GetXmlHttpObject();
+			if (xmlhttp==null) {
+				  alert ("Sorry, but I couldn't create an XMLHttpRequest");
+				  return;
+			}
+			
+			var url="/cached/layout.breakingNews.html";
+			url += '?sid='+Math.random();
+
+			xmlhttp.onreadystatechange=stateChanged;
+			xmlhttp.open('GET',url,true);
+			xmlhttp.send(null);
+				
+		}
+	
+		function GetXmlHttpObject() {
+			if (window.XMLHttpRequest) {
+			  /* code for IE7+, Firefox, Chrome, Opera, Safari */
+			  return new XMLHttpRequest();
+			}
+			if (window.ActiveXObject) {
+			  /* code for IE6, IE5 */
+			  return new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			return null;
+		}
+		
+		function stateChanged() {
+			if (xmlhttp.readyState==4) {
+				if (xmlhttp.status == 200) {
+					document.getElementById('breakingNewsAjax').innerHTML = '';
+					document.getElementById('breakingNewsAjax').innerHTML=xmlhttp.responseText;
+				}
+			}
+		}
+		
+		getBreaking();
+	
+	</script>
+	
+<!-- Main Body -->
+<table id="mBdy" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td id="mBdyLAd" valign="top">
+			<div id="navCat">
+				<h3>Obituaries</h3>
+				
+<ul>
+
+			<li><a href="/page/category.detail/nav/5010/Local-News.html" class="">Local News</a></li>
+		
+		<li><a href="http://cu.messengernews.net/" >Local Photos</a></li>
+	
+			<li><a href="/page/category.detail/nav/5001/News-Brief.html" class="">News Brief</a></li>
+		
+		<li><a href="http://www.messengernews.net/page/category.detail/nav/5026/Local-News.html" >Business</a></li>
+	
+			<li class="color_blue"><strong><a href="/page/category.detail/nav/5011/Obituaries.html" class="">Obituaries</a></strong></li>
+		
+		<li><a href="/page/category.detail/nav/5027" >Lifestyle</a></li>
+	
+			<li><a href="/page/category.detail/nav/5054/Education.html" class="">Education</a></li>
+		
+			<li><a href="/page/category.detail/nav/5096/From-Our-Files.html" class="">From Our Files</a></li>
+		
+			<li><a href="/page/category.detail/nav/5232/News-of-record.html" class="">News of record</a></li>
+		
+			<li><a href="/page/category.detail/nav/5075/Iowa-News.html" class="">Iowa News</a></li>
+		
+			<li><a href="/page/category.detail/nav/5021/National-News.html" class="">National News</a></li>
+		
+			<li><a href="/page/category.detail/nav/5022/International-News.html" class="">International News</a></li>
+		
+		<li><a href="/page/category.detail/nav/5028/Local-News.html" >Religion</a></li>
+	
+		<li><a href="http://74.84.106.139/vnr/index.asp?publicationID=31" >SUBMIT News</a></li>
+	
+			<li><a href="/page/category.detail/nav/5134/Closings-and-delays.html" class="">Closings and delays</a></li>
+		
+<div class="clearL"></div>
+</ul>
+
+			</div>
+			
+<div class="padBtm">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_Left_160x600");
+	</script>
+</div>
+
+		</td>
+		<td id="mBdyLC" valign="top">
+			
+<div id="navBCrumbs">
+	
+				/ <a href="/page/category.detail/nav/5020/News.html" title="News">News</a>
+			
+				/ <a href="/page/category.detail/nav/5011/Obituaries.html" title="Obituaries">Obituaries</a>
+			 
+	/
+</div>
+
+<div class="padBtm"><img src="http://extras.messengernews.net/cat_heads/obitsB.jpg" border="0" /></div>
+			
+<div class="cBdrHdrSm">
+	<div class="cBdrTLSm">&nbsp;</div>
+	<div class="cBdrTRSm">&nbsp;</div>
+	<div class="cBdrTCOSm">&nbsp;</div>
+</div>
+<div class="cBdrMainBig">
+	<div id="cat_StoryListPagDate_navTop" class="navPaginate">
+		page: | <strong>1</strong> | <a href="/page/category.displayall/nav/5011.html?startIndex=21#ptgats" title="21 - 40">2</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=41#ptgats" title="41 - 60">3</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=61#ptgats" title="61 - 80">4</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=81#ptgats" title="81 - 100">5</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=101#ptgats" title="101 - 120">6</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=121#ptgats" title="121 - 140">7</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=141#ptgats" title="141 - 160">8</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=161#ptgats" title="161 - 180">9</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=181#ptgats" title="181 - 200">10</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=201#ptgats" title="201 - 220">11</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=221#ptgats" title="221 - 240">12</a> | <a href="#" title="Search Pages" onClick="popup('popUpDiv_status_searchCat')">Search</a> | 
+	</div>
+	<div id="popUpDiv_status_searchCat" class="popUpDiv_600" style="display:none;"><div class="cBdrMainBig">
+	<div class="bBorder_e padBtm">
+		<div class="cBdrHdrR txtSmall dim"><a href="#" onClick="popup('popUpDiv_status_searchCat')" title="Close">CLOSE</a></div>
+		<div class="cBdrHdrL"><h2 class="color_blue">Search: Obituaries</h2></div>
+	</div>
+	<form id="catSearch" action="/page/search.results" method="get">
+		<input type="hidden" name="nav" value="5011" />
+		<h5>I am looking for:</h5>
+		<div>
+			<input name="keywords" id="siteSearchBox" value="" autocomplete="off" type="text" size="18" maxlength="128" />
+				<strong class="dim txtSmaller">between</strong>
+			<input size="10" type="text" id="StartDate" name="StartDate" readonly="readonly" />
+			<a href="javascript:StartDate.popup();"><img src="/templates/calendar/img/cal.gif" width="16" height="16" border="0" alt="Click Here to Select Date"></a>
+				<strong class="dim txtSmaller">and</strong>
+			<input size="10" type="text" id="EndDate" name="EndDate" readonly="readonly" />
+			<a href="javascript:EndDate.popup();"><img src="/templates/calendar/img/cal.gif" width="16" height="16" border="0" alt="Click Here to Select Date"></a>
+			<input name="btnSiteSearch" type="submit" value="Search" class="fButton" />
+		
+		</div>
+		<input type="hidden" name="nav" value="5011" />
+	</form>
+</div><script type="text/JavaScript" src="/templates/calendar/calendar2.js"></script>
+
+<script type="text/javascript">
+	 /* create calendar object(s) just after form tag closed */
+	 /* specify form element as the only parameter (document.forms['formname'].elements['inputname']); */
+	 /* note: you can have as many calendar objects as you need for your application */
+	var StartDate = new calendar2(document.getElementById('StartDate'));
+		StartDate.year_scroll = true;
+		StartDate.time_comp = false;
+</script>
+
+
+<script type="text/javascript">
+	 /* create calendar object(s) just after form tag closed */
+	 /* specify form element as the only parameter (document.forms['formname'].elements['inputname']); */
+	 /* note: you can have as many calendar objects as you need for your application */
+	var EndDate = new calendar2(document.getElementById('EndDate'));
+		EndDate.year_scroll = true;
+		EndDate.time_comp = false;
+</script>
+</div>
+	<div class="contentList">
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543908/DORIS-E--ERNST.html?nav=5011" class="h3A" title="DORIS E. ERNST">DORIS E. ERNST</a>
+				<p><em class="dim">November 17, 2011</em> HUMBOLDT — Doris E. Ernst, 85, of Humboldt, passed away November 15, 2011 at the Humboldt County Memorial Hospital. Funeral services will be 10:30 a.m. <a href="/page/content.detail/id/543908/DORIS-E--ERNST.html?nav=5011" class="" title="DORIS E. ERNST">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543909/ISABEL-NEGRETE.html?nav=5011" class="h3A" title="ISABEL NEGRETE">ISABEL NEGRETE</a>
+				<p><em class="dim">November 17, 2011</em> BELMOND — Mass of Christian Burial is 10:30 a.m. Saturday at St. Francis Xavier Catholic Church, Belmond. Visitation is 5 to 7 p.m. Friday at Dugger Funeral Home, Belmond. <a href="/page/content.detail/id/543909/ISABEL-NEGRETE.html?nav=5011" class="" title="ISABEL NEGRETE">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/543910/MARY-L--SWEENEY.html?nav=5011"><img src="/photos/news/md/543910_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/543910/MARY-L--SWEENEY.html?nav=5011" class="h3A" title="MARY L. SWEENEY">MARY L. SWEENEY</a>
+				<p><em class="dim">November 17, 2011</em> Mary L. Sweeney, 78, of Fort Dodge, died Tuesday, November 15, 2011 at Trinity Regional Medical Center. The service honoring Mary’s life will be 1:00 p.m. <a href="/page/content.detail/id/543910/MARY-L--SWEENEY.html?nav=5011" class="" title="MARY L. SWEENEY">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543911/MARY-M--SPANGLER.html?nav=5011" class="h3A" title="MARY M. SPANGLER">MARY M. SPANGLER</a>
+				<p><em class="dim">November 17, 2011</em> EAGLE GROVE — Services are Saturday at 1 p.m. at United Methodist Church, Eagle Grove. Visitation one hour prior to service. Foust Funeral Home in charge of arrangments. <a href="/page/content.detail/id/543911/MARY-M--SPANGLER.html?nav=5011" class="" title="MARY M. SPANGLER">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/543912/ROBERT-C--REDLING.html?nav=5011"><img src="/photos/news/md/543912_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/543912/ROBERT-C--REDLING.html?nav=5011" class="h3A" title="ROBERT C. REDLING">ROBERT C. REDLING</a>
+				<p><em class="dim">November 17, 2011</em> Robert C. Redling, 61, of Fort Dodge, passed away Tuesday, November 15, 2011 at Trinity Regional Medical Center. <a href="/page/content.detail/id/543912/ROBERT-C--REDLING.html?nav=5011" class="" title="ROBERT C. REDLING">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/543892/JUDY-L--DAVIS.html?nav=5011"><img src="/photos/news/md/543892_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/543892/JUDY-L--DAVIS.html?nav=5011" class="h3A" title="JUDY L. DAVIS">JUDY L. DAVIS</a>
+				<p><em class="dim">November 16, 2011</em> Judy L. Davis, 64, Champlin, MN, formerly of Fort Dodge, passed away November 10, 2011 after a long and courageous battle with lung cance. <a href="/page/content.detail/id/543892/JUDY-L--DAVIS.html?nav=5011" class="" title="JUDY L. DAVIS">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543893/MARY-LORRAINE-SWEENEY.html?nav=5011" class="h3A" title="MARY LORRAINE SWEENEY">MARY LORRAINE SWEENEY</a>
+				<p><em class="dim">November 16, 2011</em> Mary Lorraine Sweeney, 78, of Fort Dodge, died Tuesday, November 15, 2011 at Trinity Regional Medical Center. Arrangements have been entrusted to the Gunderson Funeral Home and Cremation Services. <a href="/page/content.detail/id/543893/MARY-LORRAINE-SWEENEY.html?nav=5011" class="" title="MARY LORRAINE SWEENEY">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543894/ROBERT-REDLING.html?nav=5011" class="h3A" title="ROBERT REDLING">ROBERT REDLING</a>
+				<p><em class="dim">November 16, 2011</em> Robert Redling, 61, of Fort Dodge, died Tuesday, November 15, 2011 at Trinity Regional Medical Center. Services are pending. The Laufersweiler-Sievers Funeral Home is serving the family. <a href="/page/content.detail/id/543894/ROBERT-REDLING.html?nav=5011" class="" title="ROBERT REDLING">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543875/BETTY-LOU-JENSEN.html?nav=5011" class="h3A" title="BETTY LOU JENSEN">BETTY LOU JENSEN</a>
+				<p><em class="dim">November 15, 2011</em> ROCKWELL CITY — Betty Lou Jensen 81, passed away Monday, Nov. 7, 2011 at Pocahontas Community Hospital in Pocahontas.  Graveside services will be 12:30 p.m. Friday, Nov. <a href="/page/content.detail/id/543875/BETTY-LOU-JENSEN.html?nav=5011" class="" title="BETTY LOU JENSEN">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543876/ROGER-O--HAATVEDT.html?nav=5011" class="h3A" title="ROGER O. HAATVEDT">ROGER O. HAATVEDT</a>
+				<p><em class="dim">November 15, 2011</em> Roger O. Haatvedt, 72, of Atalissa, Iowa passed away on Saturday, October 22, 2011, at St. Mary’s Hospital in Rochester, MN.   Iowa Cremation is assisting with arrangements. <a href="/page/content.detail/id/543876/ROGER-O--HAATVEDT.html?nav=5011" class="" title="ROGER O. HAATVEDT">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543877/M-E---RED--BOUGHTON.html?nav=5011" class="h3A" title="M.E. (RED) BOUGHTON">M.E. (RED) BOUGHTON</a>
+				<p><em class="dim">November 15, 2011</em> M. E. (Red) Boughton passed away November 11, 2011 in Mesa, AZ.  He was born May 14, 1922 to Lela Mae Bixler Boughton and Vern Boughton. <a href="/page/content.detail/id/543877/M-E---RED--BOUGHTON.html?nav=5011" class="" title="M.E. (RED) BOUGHTON">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/543878/EMERSON-PAUL-FULLER.html?nav=5011"><img src="/photos/news/md/543878_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/543878/EMERSON-PAUL-FULLER.html?nav=5011" class="h3A" title="EMERSON PAUL FULLER">EMERSON PAUL FULLER</a>
+				<p><em class="dim">November 15, 2011</em> Emerson Paul Fuller, 76, of Fort Dodge, died Sunday, November 13, at the Paula J. Barber Hospice Home in Fort Dodge. <a href="/page/content.detail/id/543878/EMERSON-PAUL-FULLER.html?nav=5011" class="" title="EMERSON PAUL FULLER">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/543879/JAMES-R--CERWICK.html?nav=5011"><img src="/photos/news/md/543879_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/543879/JAMES-R--CERWICK.html?nav=5011" class="h3A" title="JAMES R. CERWICK">JAMES R. CERWICK</a>
+				<p><em class="dim">November 15, 2011</em> HARDY — James R. Cerwick, 73, of Hardy, formerly of Fort Dodge, passed away on Sunday, November 13, 2011 at Trinity Regional Medical Center. <a href="/page/content.detail/id/543879/JAMES-R--CERWICK.html?nav=5011" class="" title="JAMES R. CERWICK">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/543880/FRANKLIN-R--GRADY.html?nav=5011"><img src="/photos/news/md/543880_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/543880/FRANKLIN-R--GRADY.html?nav=5011" class="h3A" title="FRANKLIN R. GRADY">FRANKLIN R. GRADY</a>
+				<p><em class="dim">November 15, 2011</em> Franklin R. Grady, 66 of Fort Dodge, died Thursday, November 10, 2011 at University of Iowa Hospital and Clinics in Iowa City. <a href="/page/content.detail/id/543880/FRANKLIN-R--GRADY.html?nav=5011" class="" title="FRANKLIN R. GRADY">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543881/TERESA-SEFCIK.html?nav=5011" class="h3A" title="TERESA SEFCIK">TERESA SEFCIK</a>
+				<p><em class="dim">November 15, 2011</em> POCAHONTAS — Service 10:30 a.m. Wednesday at Resurrection of Our Lord Catholic Church, Pocahontas, with visitation at 9 a.m. Burial Calvary Cemetery Pocahontas. <a href="/page/content.detail/id/543881/TERESA-SEFCIK.html?nav=5011" class="" title="TERESA SEFCIK">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/543860/GEORGINA-L--GREENFIELD.html?nav=5011"><img src="/photos/news/md/543860_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/543860/GEORGINA-L--GREENFIELD.html?nav=5011" class="h3A" title="GEORGINA L. GREENFIELD">GEORGINA L. GREENFIELD</a>
+				<p><em class="dim">November 14, 2011</em> WEBSTER CITY — Georgina L. Greenfield, 81, of Webster City, died Friday, November 11, 2011 at the Israel Family Hospice House at Ames. A memorial service will be held at 11:00 a.m. <a href="/page/content.detail/id/543860/GEORGINA-L--GREENFIELD.html?nav=5011" class="" title="GEORGINA L. GREENFIELD">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543861/ED-DRILLING.html?nav=5011" class="h3A" title="ED DRILLING">ED DRILLING</a>
+				<p><em class="dim">November 14, 2011</em> LAKE VIEW — Service is 10 a.m. Wednesday at St. Joseph’s Catholic Church, Wall Lake. Visitation is 5-7 p.m. Tuesday at Farber & Otteman Funeral Home, Lake View. <a href="/page/content.detail/id/543861/ED-DRILLING.html?nav=5011" class="" title="ED DRILLING">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543862/DONNA-DOMINO.html?nav=5011" class="h3A" title="DONNA DOMINO">DONNA DOMINO</a>
+				<p><em class="dim">November 14, 2011</em> SAC CITY — Service is 10:30 a.m. Wednesday at St. Paul Lutheran Church, Sac City. Visitation is 4-8 p.m. Tuesday at Christensen-Huffman Funeral Home, Sac City. <a href="/page/content.detail/id/543862/DONNA-DOMINO.html?nav=5011" class="" title="DONNA DOMINO">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e popOut">
+			<div class="contentShortL">
+				
+					<a href="/page/content.detail/id/543863/ORVILLE-GRAY.html?nav=5011"><img src="/photos/news/md/543863_1.jpg" border="0" class="photo" width="150" /></a>
+				<a href="/page/content.detail/id/543863/ORVILLE-GRAY.html?nav=5011" class="h3A" title="ORVILLE GRAY">ORVILLE GRAY</a>
+				<p><em class="dim">November 14, 2011</em> WEBSTER CITY — Orville Gray, 84, was called home on Saturday, November 12, 2011 at Crestview Senior Living in Webster City.  He was born May 14, 1927 to . <a href="/page/content.detail/id/543863/ORVILLE-GRAY.html?nav=5011" class="" title="ORVILLE GRAY">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+		<div class="bBorder_e padSides">
+			<div class="contentShortL">
+				<a href="/page/content.detail/id/543864/JAMES-R--CERWICK.html?nav=5011" class="h3A" title="JAMES R. CERWICK">JAMES R. CERWICK</a>
+				<p><em class="dim">November 14, 2011</em> HARDY — James R. Cerwick, 73, of Hardy, passed away on Sunday, November 13, 2011 at Trinity Regional Medical Center. Services are pending. The Laufersweiler-Sievers Funeral Home is serving the family. <a href="/page/content.detail/id/543864/JAMES-R--CERWICK.html?nav=5011" class="" title="JAMES R. CERWICK">more&nbsp;&raquo;&raquo;</a></p>
+				<div class="clearL"></div>
+			</div>
+		</div>
+	
+	</div>
+	<div id="cat_StoryListPagDate_navBottom" class="navPaginate">
+		page: | <strong>1</strong> | <a href="/page/category.displayall/nav/5011.html?startIndex=21#ptgats" title="21 - 40">2</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=41#ptgats" title="41 - 60">3</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=61#ptgats" title="61 - 80">4</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=81#ptgats" title="81 - 100">5</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=101#ptgats" title="101 - 120">6</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=121#ptgats" title="121 - 140">7</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=141#ptgats" title="141 - 160">8</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=161#ptgats" title="161 - 180">9</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=181#ptgats" title="181 - 200">10</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=201#ptgats" title="201 - 220">11</a> | <a href="/page/category.displayall/nav/5011.html?startIndex=221#ptgats" title="221 - 240">12</a> | <a href="#" title="Search Pages" onClick="popup('popUpDiv_status_searchCat')">Search</a> | 
+	</div>
+</div>
+<div class="cBdrFdr">
+	<div class="cBdrBL"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBR"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBC"><img src="/images/spacer.gif" border="0" width="1" height="5" /></div>
+</div>
+
+		</td>
+		<td id="mBdyRC" valign="top">
+			<div id="weatherMag">
+	<div id="weatherMagL">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x95_74x60");
+	</script>
+</div>
+	<div id="weatherMagR"><div id="wx_module">
+   <a href="http://www.weather.com/weather/local/USIA0307">Fort Dodge Weather Forecast, IA</a>
+</div>
+
+<div id="wx_module">
+   <a href="http://www.weather.com/weather/local/USIA0307">Fort Dodge Weather Forecast, IA</a>
+</div>
+
+<script type="text/javascript">
+
+   /* The location ID [wx_locID] may be changed as needed.  However, please update */
+   /* the link and text in the above wx_module to reflect any changes made. */
+   var wx_locID = 'USIA0307';
+
+   /* Please do not change the configuration value [wx_config] manually - your module */
+   /* will no longer function if you do.  If at any time you wish to modify this */
+   /* configuration please use the graphical configuration tool found at */
+   /* https://registration.weather.com/ursa/wow/step2 */
+   var wx_config='SZ=teaser*lnk=http|www.messengernews.net/page/weather.lg/*PID=1031326525*DN=www.messengernews.net*MD5=c08f52e914f054fc17307e7906b7dd56';
+
+   document.write('<scr'+'ipt src="'+document.location.protocol+'//wow.weather.com/weather/wow/module/'+wx_locID+'?config='+wx_config+'&proto='+document.location.protocol+'&target=wx_module"></scr'+'ipt>');
+</script> </div>
+	<div class="clear"></div>
+</div>
+			
+			
+
+
+
+<script type="text/javascript">
+
+	var xmlhttpSearch = false;
+	var headingsArray = new Array();
+	var headingsIDArray = new Array();
+
+	
+	function getSearchXML() {
+		xmlhttpSearch=GetXmlHttpObjectSearch();
+		if (xmlhttpSearch==null) {
+			  alert ("Sorry, but I couldn't create an XMLHttpRequest");
+		}
+	
+		if (xmlhttpSearch) {
+			xmlhttpSearch.onreadystatechange = setheadingsArray;
+			xmlhttpSearch.open("GET", "/shared/localSearch/headings.xml", true);
+			xmlhttpSearch.send(null);
+		}
+		else {
+			alert("Sorry, but I couldn't create an XMLHttpRequest");
+		}
+	
+		function GetXmlHttpObjectSearch() {
+			if (window.XMLHttpRequest) {
+			  /* code for IE7+, Firefox, Chrome, Opera, Safari */
+			  return new XMLHttpRequest();
+			}
+			if (window.ActiveXObject) {
+			  /* code for IE6, IE5 */
+			  return new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			return null;
+		}
+	}
+
+	function setheadingsArray() {
+		if (xmlhttpSearch.readyState == 4) {
+			if (xmlhttpSearch.status == 200) {
+				if (xmlhttpSearch.responseXML) {
+					var allHeadingss = xmlhttpSearch.responseXML.getElementsByTagName("item");
+					for (var i=0; i<allHeadingss.length; i++) {
+						headingsArray[i] = allHeadingss[i].getElementsByTagName("headingName")[0].firstChild;
+						headingsIDArray[i] = allHeadingss[i].getElementsByTagName("localSearchHeadingID")[0].firstChild;
+					}
+					searchBoxSuggest();
+				}
+			}
+		}
+	}
+
+	function searchBoxSuggest() {
+		if ( !headingsArray.length ) {
+			getSearchXML();
+		}
+		var str = document.getElementById("searchBox").value;
+		if (str != "") {
+			document.getElementById("popupsSearch").innerHTML = "";
+			document.getElementById("popupsSearch").style.display = '';
+		
+			for (var i=0; i<headingsArray.length; i++) {
+				var thisHeading = headingsArray[i].nodeValue;
+		
+				if (thisHeading.toLowerCase().indexOf(str.toLowerCase()) == 0) {
+					var thisHeadingID = headingsIDArray[i].nodeValue;
+					var tempDiv = document.createElement("div");
+					var titleURL = thisHeading.replace(/\&amp;/g,'&');
+					var titleURL = titleURL.replace(/[^0-9a-zA-Z]/g,'-');
+					tempDiv.innerHTML = thisHeading;
+					tempDiv.onclick = new Function('makeSearchChoice('+thisHeadingID+',this.innerHTML)');
+					/*tempDiv.onclick = function (){var titleURL = thisCurrentHeading.replace(/\&amp;/g,'&'); var titleURL = titleURL.replace(/[^0-9a-zA-Z]/g,'-'); window.location="/page/local.headDetail/id/" + thisHeadingID + "/" + titleURL + ".html";}; */
+					tempDiv.className = "suggestionsSearch";
+					tempDiv.style.cursor = "pointer";
+					document.getElementById("popupsSearch").appendChild(tempDiv);
+					document.getElementById("popupsSearch").style.backgroundColor='#fff';
+					document.getElementById("popupsSearch").style.border="1px solid #999"; 
+					document.getElementById("popupsSearch").style.height="250px";
+				}
+			}
+			if ( document.getElementById("popupsSearch").innerHTML.length == 0 ) {
+				document.getElementById("popupsSearch").style.display = 'none';
+			}
+		} else {
+			document.getElementById("popupsSearch").innerHTML = "";
+			document.getElementById("popupsSearch").style.display = "none";
+		}
+				
+	}
+	
+	function onBlurSearchSuggestions() {
+		if ( document.activeElement != document.getElementById("popupsSearch") ) {
+			var delay = 250;
+			setTimeout('hideSearchSuggestions()', delay);
+		}
+	}
+
+	function onBlurSearchResults() {
+		if ( document.activeElement != document.getElementById("searchBox") ) {
+			var delay = 250;
+			setTimeout('hideSearchSuggestions()', delay);
+		}
+	}
+
+	function hideSearchSuggestions() {
+		document.getElementById('popupsSearch').innerHTML = "";
+		document.getElementById('popupsSearch').style.display = 'none';
+	}
+	
+	document.onclick = onBlurSearchResults;
+
+	function makeSearchChoice(chosen,urlTitle) {
+		/* added catch to remove category name from search term */
+		if ( urlTitle.toLowerCase().search('<a>') != -1 ) {
+			var endPoint = urlTitle.toLowerCase().search('<a>');
+			var urlTitle = urlTitle.substr(0, endPoint-1);
+		}
+		/*var thisDiv = (evt) ? evt.target : window.event.srcElement; */
+		document.getElementById("popupsSearch").innerHTML = "";
+		/*var titleURL = urlTitle.replace(/\&amp;/g,'&');
+		var titleURL = titleURL.replace(/[^0-9a-zA-Z]/g,'-');
+		window.location="/page/local.headDetail/id/" + chosen + "/" + titleURL + ".html";*/
+		window.location="/page/local.searchBoxCatchAutocomplete/id/" + chosen + "/text/" + urlTitle;		
+		document.getElementById("popupsSearch").style.display = "none";
+		/*document.getElementById('searchBox').value = thisDiv.innerHTML.replace(/\&amp;/g,'&'); */
+		/*document.getElementById("popupsSearch").innerHTML = ""; */
+	}
+	
+</script>
+<div id="searchHeaderClass" class="cBdrHdr cBBg_lSearch">
+	<div class="cBdrTLOn">&nbsp;</div>
+	<div class="cBdrTROn">&nbsp;</div>
+	<div class="cBdrTC"><h2 id="searchHeaderTitle" class="color_lBlue">&nbsp;</h2></div>
+</div>
+<div class="cBdrMain">
+	
+	<form id="frmLocalSearch" action="/page/local.search" method="get">
+		<h5>I am looking for:</h5>
+		<div><input name="txtLSearch" id="searchBox" value="" autocomplete="off" onkeyup="searchBoxSuggest();" type="text" size="24" maxlength="128" /> <input name="btnSearch" type="submit" value="Search" class="fButton" /></div>
+		<div id="popupsSearch" style="z-index:20;"> </div>
+	</form>
+
+	<script type="text/javascript">
+	
+		
+		function getQuerystring(key, default_) {
+			if (default_==null) { 
+				default_=""; 
+			} 
+			var search = unescape(location.search); 
+			if (search == "") { 
+				return default_; 
+			} 
+			search = search.substr(1); 
+			var params = search.split("&"); 
+			for (var i = 0; i < params.length; i++) { 
+				var pairs = params[i].split("="); 
+				if(pairs[0] == key) { 
+					if ( pairs[0] == 'keywords' && pairs[1].length == 0 ) {
+						pairs[1] = ' ';
+					}
+					return pairs[1]; 
+				} 
+			} 
+			return default_; 
+		}	
+			
+		if (getQuerystring('txtLSearch')) {
+			changeSearch('local');
+			document.getElementById('txtLSearch').value = getQuerystring('q').replace(/\+/g," ").replace(/%2B/g," ");
+			document.getElementById('btnLocalSearch').checked = true;
+		}
+		if (getQuerystring('keywords')) {
+			changeSearch('site');
+			document.getElementById('siteSearchBox').value = getQuerystring('keywords').replace(/\+/g," ").replace(/%2B/g," ");
+			document.getElementById('btnSite').checked = true;
+		}
+		if (getQuerystring('q')) {
+			changeSearch('web');
+			document.getElementById('webSearchBox').value = getQuerystring('q').replace(/\+/g," ").replace(/%2B/g," ");
+			document.getElementById('btnWeb').checked = true;
+		}
+		if (getQuerystring('StartDate')) {
+			document.getElementById('StartDate').value = getQuerystring('StartDate');
+		}
+		if (getQuerystring('EndDate')) {
+			document.getElementById('EndDate').value = getQuerystring('EndDate');
+		}
+		
+		var findFuseaction = "search.results" ;
+		fuseactionFound = window.location.href.indexOf(findFuseaction);
+		if (fuseactionFound != -1) {
+			document.getElementById('searchDateRange').style.display = '';
+		} else {	
+			document.getElementById('searchDateRange').style.display = 'none';
+		}
+	
+	</script>
+	
+
+<script type="text/JavaScript" src="/templates/calendar/calendar2.js"></script>
+
+<script type="text/javascript">
+	if ( document.getElementById('StartDate') ) {
+		 /* create calendar object(s) just after form tag closed */
+		 /* specify form element as the only parameter (document.forms['formname'].elements['inputname']); */
+		 /* note: you can have as many calendar objects as you need for your application */
+		var StartDate = new calendar2(document.getElementById('StartDate'));
+			StartDate.year_scroll = true;
+			StartDate.time_comp = false;
+	}
+</script>
+
+
+<script type="text/javascript">
+	if ( document.getElementById('EndDate') ) {
+		 /* create calendar object(s) just after form tag closed */
+		 /* specify form element as the only parameter (document.forms['formname'].elements['inputname']); */
+		 /* note: you can have as many calendar objects as you need for your application */
+		var EndDate = new calendar2(document.getElementById('EndDate'));
+			EndDate.year_scroll = true;
+			EndDate.time_comp = false;
+	}
+</script>
+
+</div>
+<div class="cBdrFdr">
+	<div class="cBdrBL"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBR"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="cBdrBC"><img src="/images/spacer.gif" border="0" width="1" height="5" /></div>
+</div>
+			<div class="adBlock_rightRail">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_Middle_300x250");
+	</script>
+</div>
+			<div class="adBlock_rightRail">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x40_234x60");
+	</script>
+</div>
+			<div class="adBlock_rightRail">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x41_234x60");
+	</script>
+</div>
+			<div class="adBlock_rightRail">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x42_234x60");
+	</script>
+</div>
+		</td>
+	</tr>
+</table>	</div>
+	<div id="bdyR"><img src="/images/spacer.gif" border="0" width="1" height="1" /></div>
+	<div class="clear"></div>
+</div>
+
+<div class="adBlock_bottom">
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_Bottom_728x90");
+	</script>
+
+	<script type="text/javascript">
+	  GA_googleFillSlot("CMSv2_x94_0x0");
+	</script>
+</div>
+
+<div class="footer">
+	<h4 class="color_white">Messenger News</h4>
+	<p>713 Central Ave. , Fort Dodge, IA 50501 | 515-573-2141</p>
+	<p>&copy; 2011. All rights reserved.| <a href="/tos.html">Terms of Service and Privacy Policy</a></p>
+</div>
+</body>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-2730887-1";
+urchinTracker();
+</script>
+</html> 

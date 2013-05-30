@@ -1,0 +1,822 @@
+<html><head>
+<script language="JavaScript">
+function NoSSL(){
+str=window.location.pathname;
+	if (window.location.protocol != 'http:'){
+		if(str.indexOf('.html') > 0){
+			location.href='http://' + window.location.hostname + window.location.pathname;
+		}
+	}
+}
+function PopShipping(prrfnbr){
+	var url;
+	url="/cgi-bin/shippingcalculator.cgi?prrfnbr=" + prrfnbr;
+	window.open(url,'win1','width=475px,height=320px,resizable,scrollbars');
+}
+function PopRebate(pdfile){
+	window.open(pdfile,'win1','width=550px,height=450px,resizable,scrollbars');
+}
+function AddItem(item){
+var url;
+url="/cgi-bin/cart.cgi?add=" + item;
+window.location=url;
+}
+function ViewImage(prrfnbr,seq){
+	var url;
+	url="/cgi-bin/image.cgi?prrfnbr=" + prrfnbr + "&seq=" + seq;
+	window.open(url,'win1','width=500px,height=500px,resizable,scrollbars');
+}
+function popURL(url){
+window.open(url,'win1','width=600px,height=450px,resizable,scrollbars');
+}
+function getCookie(c_name){
+if (document.cookie.length>0){
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1){
+    c_start=c_start + c_name.length+1
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    }
+  }
+return ""
+}
+function checkCookies(){
+	document.write("You have ");
+	cartitems=getCookie('datavis_cart_items')
+	if (cartitems!=null && cartitems!=""){
+		document.write(cartitems);
+	} else {
+		document.write("0");
+	}
+	document.write(" item(s) in the cart=</font><font color=#ff0000>$");
+	carttotal=getCookie('datavis_cart_total')
+	if (carttotal!=null && carttotal!=""){
+		document.write(carttotal);
+	} else {
+		document.write("0.00");
+	}
+}
+function popNotify(merchant,item){
+	window.open('/cgi-bin/notify.cgi?merfnbr=' + merchant + '&prrfnbr=' + item,'win1','width=400px,height=250px');
+}
+function doCompare(merfnbr){
+	var url='';
+	var items=0;
+	if (eval(document.forms[0].chkboxarray)){
+		for (i=0 ; i < document.forms[0].chkboxarray.length; i++ ){
+			if (document.forms[0].chkboxarray[i].checked){
+				items++;
+				if(url==''){
+					url='/cgi-bin/compare.cgi?merfnbr=' + merfnbr + '&prrfnbr=' + document.forms[0].chkboxarray[i].value;
+				} else {
+					url=url + '&prrfnbr=' + document.forms[0].chkboxarray[i].value;
+				}
+			}
+		}
+		if((items > 0) && (items < 5)){
+			location.href=url;
+		} else {
+			alert('select max 5 items please!');
+		}
+	} else {
+		return false;
+	}
+}
+function PopPayLater(){
+	window.open('https://www.paypal.com/cgi-bin/webscr?cmd=xpt/cps/popup/BCLearnMoreNoPayments-outside','win1','width=550px,height=400px,resizable,scrollbars');
+}
+function PopWePreferPayPal(){
+	window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/cps/popup/OLCWhatIsPayPal-outside','win1','width=550px,height=400px,resizable,scrollbars');
+}
+function PopNowAcceptingAmazonPayments(){
+	window.open('/NowAcceptingAmazonPayments.asp','win1','width=350,height=275,resizable,scrollbars');
+}
+function PopPhoneCall(_merfnbr,_prrfnbr){
+	window.open('/cgi-bin/call.cgi?merfnbr=' + _merfnbr + '&prrfnbr=' + _prrfnbr,'win1','width=425px,height=325px');
+}
+function ShowBestPrice(_merfnbr,_prrfnbr){
+	window.open('/cgi-bin/showbestprice.cgi?merfnbr=' + _merfnbr + '&prrfnbr=' + _prrfnbr,'win1','width=425px,height=300px');
+}
+function PopTwitter(){
+	window.open('http://twitter.com/datavisionNYC','win1','width=650,height=450,resizable,scrollbars,menubar,location');
+}
+function PopEGear(){
+	window.open('http://secure.napco.com/circ/egear/?sid=cl124','win1','width=650,height=450,resizable,scrollbars,menubar,location');
+}
+function PopDataComm(){
+	window.open('http://www.youtube.com/watch?v=hs4XyltVFAA','win1','width=650,height=450,resizable,scrollbars,menubar,location');
+}
+</script>
+<script language="JavaScript">
+NoSSL();
+</script>
+<script type="text/javascript" src="/js/liveUpdater.js"></script>
+<script type="text/javascript" src="/js/cssmenu.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/pwConnect.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/2000.css">
+<link rel="stylesheet" type="text/css" href="/css/autocomplete.css">
+<link rel="stylesheet" type="text/css" href="/css/cssmenu.css">
+<meta name="description" content="Apple MacBook Pro 17" 2.53GHz Processor">
+<title>Apple MacBook Pro 17" 2.53GHz Processor</title>
+<meta name="keywords" content="17, 2.53ghz, 885909304356, apple, macbook, pro, processor">
+<SCRIPT language="JavaScript" type="text/javascript">
+<!-- Yahoo! Inc.
+var ysm_accountid  = "1839C313VT1TE3OOS1RULSTT6F8";
+document.write("<SCR" + "IPT language='JavaScript' type='text/javascript' " 
++ "SRC=//" + "srv2.wa.marketingsolutions.yahoo.com" + "/script/ScriptServlet" + "?aid=" + ysm_accountid 
++ "></SCR" + "IPT>");
+// -->
+</SCRIPT>
+</head><body>
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" bgcolor="0" width="1000">
+<tr><td bgcolor="#ffffff">
+<table background="/assets/background.jpg" cellspacing="0" cellpadding="0" border="0" width="1000">
+<tr><td align="right" valign="top" height="58">
+<table cellspacing="0" cellpadding="0" border="0" width="1000" height="58">
+<tr><td valign="top" align="right">
+<a href="/cgi-bin/category.cgi" class="link_body"><img src="/assets/home.gif" border="0"></a>&nbsp;<a href="/cgi-bin/category.cgi" class="link">Home</a><font color="#006699"> | </font>
+<a href="/cgi-bin/login.cgi" class="link_body"><img src="/assets/user.gif" border="0"></a>&nbsp;<a href="/cgi-bin/login.cgi" class="link">Log-in</a><font color="#006699"> | </font>
+<a href="/cgi-bin/orderstatus.cgi" class="link_body"><img src="/assets/info.gif" border="0"></a>&nbsp;<a href="/cgi-bin/orderstatus.cgi" class="link">Order Status</a><font color="#006699"> | </font>
+<a href="/cgi-bin/cart.cgi" class="link_body"><img src="/assets/cart.gif" border="0"></a>&nbsp<a href="/cgi-bin/cart.cgi" class="link">Shopping Cart</a><font color="#006699"> | </font>
+<a href="/service/" class="link_body"><img src="/assets/service.gif" border="0"></a>&nbsp<a href="/service/" class="link">Service</a><font color="#006699"> | </font>
+<a href="/cgi-bin/sitemap.cgi" class="link_body"><img src="/assets/sitemap.gif" border="0"></a>&nbsp;<a href="/cgi-bin/sitemap.cgi" class="link">Site Map</a>
+&nbsp;&nbsp;</td></tr>
+<tr><td height="5"></td></tr>
+<tr><td valign="top" align="right">
+<tr><form action="/cgi-bin/search.cgi" method="GET"><td valign="top" align="right">
+<table border="0" cellspacing="0" cellpadding="1"width="350">
+<tr><td align="left" valign="top">
+<input autocomplete="off" id="autocomplete-input" value="" name="key" type="text" size="35" style="font-family: Tahoma; vertical-align: middle; font-size: 11px; color: #003366; font-weight: bold;border-style:solid;border-width:1px;border-color:#aaaaaa;">
+<div id="autocomplete-popup" class="autocomplete" style="position: absolute;"></div>
+<script type="text/javascript">
+autocomplete('autocomplete-input', 'autocomplete-popup', '/cgi-bin/keywords.cgi')
+</script>
+</td>
+<td align="left" width="100" valign="top"><input type="image" src="/assets/2000-Search.jpg" border="0"></td>
+</tr></form></table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+<tr><td bgcolor="#ffffff" width="1000" align="center" valign="middle"><table cellspacing="0" cellpadding="0" border="0">
+<tr><td valign="top" align="center"><img src="/assets/2000.jpg" border="0" width="109" height="24"><td>
+<td valign="top" align="center">
+<a href="/TV.html" class="anchorclass whitelink" rel="submenu1">
+<img src="/assets/1879.jpg" border="0" onmouseover="this.src='/assets/1879-1.jpg';" onmouseout="this.src='/assets/1879.jpg';"></a>
+</td>
+<td valign="top" align="center">
+<a href="/Computers.html" class="anchorclass whitelink" rel="submenu2">
+<img src="/assets/1719.jpg" border="0" onmouseover="this.src='/assets/1719-1.jpg';" onmouseout="this.src='/assets/1719.jpg';"></a>
+</td>
+<td valign="top" align="center">
+<a href="/Handhelds.html" class="anchorclass whitelink" rel="submenu3">
+<img src="/assets/1713.jpg" border="0" onmouseover="this.src='/assets/1713-1.jpg';" onmouseout="this.src='/assets/1713.jpg';"></a>
+</td>
+<td valign="top" align="center">
+<a href="/Cameras.html" class="anchorclass whitelink" rel="submenu4">
+<img src="/assets/1682.jpg" border="0" onmouseover="this.src='/assets/1682-1.jpg';" onmouseout="this.src='/assets/1682.jpg';"></a>
+</td>
+<td valign="top" align="center">
+<a href="/Audio.html" class="anchorclass whitelink" rel="submenu5">
+<img src="/assets/1628.jpg" border="0" onmouseover="this.src='/assets/1628-1.jpg';" onmouseout="this.src='/assets/1628.jpg';"></a>
+</td>
+<td valign="top" align="center">
+<a href="/Video.html" class="anchorclass whitelink" rel="submenu6">
+<img src="/assets/1892.jpg" border="0" onmouseover="this.src='/assets/1892-1.jpg';" onmouseout="this.src='/assets/1892.jpg';"></a>
+</td>
+<td valign="top" align="center">
+<a href="/Office.html" class="anchorclass whitelink" rel="submenu7">
+<img src="/assets/1724.jpg" border="0" onmouseover="this.src='/assets/1724-1.jpg';" onmouseout="this.src='/assets/1724.jpg';"></a>
+</td>
+<td valign="top" align="center">
+<a href="/Accessories.html" class="anchorclass whitelink" rel="submenu8">
+<img src="/assets/1623.jpg" border="0" onmouseover="this.src='/assets/1623-1.jpg';" onmouseout="this.src='/assets/1623.jpg';"></a>
+</td>
+<td valign="top" align="center">
+<a href="/Home-and-Appliances.html" class="anchorclass whitelink" rel="submenu9">
+<img src="/assets/346371.jpg" border="0" onmouseover="this.src='/assets/346371-1.jpg';" onmouseout="this.src='/assets/346371.jpg';"></a>
+</td>
+<td valign="top" align="center"><img src="/assets/2000.jpg" border="0" width="109" height="24"><td></tr>
+<div id="submenu1" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/LCD-TV.html">LCD TV</a></li>
+  <li><a href="/LED-TV.html">LED TV</a></li>
+  <li><a href="/Plasma-TV.html">Plasma TV</a></li>
+  <li><a href="/TV-VCR-DVD-Combo.html">TV/VCR/DVD Combo</a></li>
+  <li><a href="/3D-Television.html">3D Television</a></li>
+  <li><a href="/Portable-TV.html">Portable TV</a></li>
+  <li><a href="/Television-Accessories.html">Television Accessories</a></li>
+ </ul>
+ </div>
+</div>
+<div id="submenu2" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/Apple-Hardware.html">Apple Hardware</a></li>
+  <li><a href="/Computer-Parts.html">Computer Parts</a></li>
+  <li><a href="/Desktops.html">Desktops</a></li>
+  <li><a href="/Netbook.html">Netbook</a></li>
+  <li><a href="/Networking.html">Networking</a></li>
+  <li><a href="/Notebooks.html">Notebooks</a></li>
+  <li><a href="/Monitors.html">Monitors</a></li>
+  <li><a href="/Multimedia.html">Multimedia</a></li>
+  <li><a href="/Power-Protection.html">Power Protection</a></li>
+  <li><a href="/Printers.html">Printers</a></li>
+  <li><a href="/Scanners.html">Scanners</a></li>
+  <li><a href="/Software.html">Software</a></li>
+  <li><a href="/Notebook-Tablet-PC.html">Tablets</a></li>
+  <li><a href="/cgi-bin/category.cgi?merfnbr=2000&cgrfnbr=346779">Ultrabooks</a></li>
+ </ul>
+ </div>
+</div>
+<div id="submenu3" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/Pocket-PC-Handheld.html">Handheld Devices</a></li>
+  <li><a href="/GPS.html">GPS</a></li>
+  <li><a href="/Organizer-Handheld.html">eBook Readers</a></li>
+  <li><a href="/Notebook-Tablet-PC.html">Tablets</a></li>
+  <li><a href="/Cell-Phones.html">Cell Phones</a></li>
+ </ul>
+ </div>
+</div>
+<div id="submenu4" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/Digital-Accessories.html">Camera Accessories</a></li>
+  <li><a href="/Camera-Cases.html">Camera Cases</a></li>
+  <li><a href="/Digital-Cameras.html">Digital Cameras</a></li>
+  <li><a href="/Digital-Photo-Printers.html">Digital Photo Printers</a></li>
+  <li><a href="/35mm-Cameras.html">35mm Cameras</a></li>
+  <li><a href="/Film.html">Film</a></li>
+  <li><a href="/Digital-Memory.html">Memory Cards</a></li>
+ </ul>
+ </div>
+</div>
+<div id="submenu5" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/Audio-Accessories.html">Audio Accessories</a></li>
+  <li><a href="/Car-Audio.html">Car Audio</a></li>
+  <li><a href="/Cables-and-More.html">Cables</a></li>
+  <li><a href="/Computer-Speakers.html">Computer Speakers</a></li>
+  <li><a href="/Headphones.html">Headphones</a></li>
+  <li><a href="/Microphones.html">Microphones</a></li>
+  <li><a href="/Minisystems.html">Minisystems</a></li>
+  <li><a href="/MP3-Players.html">MP3 Players</a></li>
+  <li><a href="/Music-Keyboards-and-Guitars.html">Music Keyboards & Guitars</a></li>
+  <li><a href="/Portable-Audio.html">Portable Electronics</a></li>
+  <li><a href="/Receivers.html">Receivers</a></li>
+  <li><a href="/DJ-Equipment.html">DJ</a></li>
+  <li><a href="/Radios.html">Radios</a></li>
+  <li><a href="/Home-Theatre.html">Home Theatre</a></li>
+ </ul>
+ </div>
+</div>
+<div id="submenu6" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/Camcorders.html">Camcorders</a></li>
+  <li><a href="/TV.html">TV</a></li>
+  <li><a href="/DVD-Decks.html">DVD Players</a></li>
+  <li><a href="/Media-Streaming.html">Media Streaming</a></li>
+  <li><a href="/Projectors.html">Projectors</a></li>
+  <li><a href="/Video-Accessories.html">Video Accessories</a></li>
+  <li><a href="/Video-Game-Systems.html">Video Game Systems</a></li>
+  <li><a href="/Home-Theatre-Video.html">Home Theatre Video</a></li>
+ </ul>
+ </div>
+</div>
+<div id="submenu7" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/Calculators.html">Calculators & Translators</a></li>
+  <li><a href="/Cash-Registers.html">Cash Registers</a></li>
+  <li><a href="/Computer-Stands.html">Computer Stands</a></li>
+  <li><a href="/Copiers.html">Copiers</a></li>
+  <li><a href="/Fax-Machines.html">Fax Machines</a></li>
+  <li><a href="/Home-Security.html">Home Security</a></li>
+  <li><a href="/Point-of-Sale-Hardware.html">Point of Sale Hardware</a></li>
+  <li><a href="/Shredders.html">Shredders</a></li>
+  <li><a href="/Telephones.html">Telephones</a></li>
+  <li><a href="/Voice-Over-IP-VOIP.html">Voice Over IP - VOIP</a></li>
+  <li><a href="/Pointing-Devices.html">Pointing Devices</a></li>
+  <li><a href="/Furniture.html">Furniture</a></li>
+  <li><a href="/Laminating-Equipment.html">Laminating Equipment</a></li>
+  <li><a href="/Office-Supplies.html">Office Supplies</a></li>
+  <li><a href="/Signage.html">Signage</a></li>
+  <li><a href="/Laminating-Supplies.html">LAMINATION SUPP</a></li>
+ </ul>
+ </div>
+</div>
+<div id="submenu8" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/Batteries.html">Batteries</a></li>
+  <li><a href="/Car-Accessories.html">Car Accessories</a></li>
+  <li><a href="/Multi-Systems-TV-PAL.html">Multi Systems/TV PAL</a></li>
+  <li><a href="/Cables-and-More.html">Cables</a></li>
+  <li><a href="/Cases-and-Bags.html">Cases and Bags</a></li>
+  <li><a href="/Cleaning-Kits.html">Cleaning Kits</a></li>
+  <li><a href="/Input-Devices.html">Input Devices</a></li>
+  <li><a href="/Microphones.html">Microphones</a></li>
+  <li><a href="/Mount-Kits.html">Mount Kits</a></li>
+  <li><a href="/Tools.html">Tools</a></li>
+  <li><a href="/Wrist-Watch-Computers.html">Watches</a></li>
+  <li><a href="/Tech-Service.html">Tech Service</a></li>
+  <li><a href="/Dust-Covers.html">Dust Covers</a></li>
+  <li><a href="/IDE-SATA-Cables.html">IDE / SATA Cables</a></li>
+  <li><a href="/Optical-Eyewear.html">Optical Eyewear</a></li>
+  <li><a href="/Solar-Chargers.html">Solar Chargers</a></li>
+  <li><a href="/Screen-Protectors.html">Screen Protectors</a></li>
+  <li><a href="/Toys-and-Robotics.html">Toys and Robotics</a></li>
+  <li><a href="/Deals-of-the-Week.html">Deals of the Week</a></li>
+ </ul>
+ </div>
+</div>
+<div id="submenu9" class="cssmenucols">
+ <div class="column">
+ <ul>
+  <li><a href="/Air-Conditioners.html">Air Conditioners</a></li>
+  <li><a href="/Air-Purifiers.html">Air Purifiers</a></li>
+  <li><a href="/Dryers.html">Dryers</a></li>
+  <li><a href="/Fans.html">Fans</a></li>
+  <li><a href="/Floor-Care.html">Floor Care</a></li>
+  <li><a href="/Grills.html">Grills</a></li>
+  <li><a href="/Heaters.html">Heaters</a></li>
+  <li><a href="/Heath-And-Beauty.html">Health and Fitness</a></li>
+  <li><a href="/Humidifiers.html">Humidifiers</a></li>
+  <li><a href="/Inflatable-Beds.html">Inflatable Beds</a></li>
+  <li><a href="/Irons.html">Irons</a></li>
+  <li><a href="/Kitchen-Appliances.html">Kitchen Appliances</a></li>
+  <li><a href="/Lighting.html">Lighting</a></li>
+  <li><a href="/Musical-Instruments.html">Musical Instruments</a></li>
+  <li><a href="/Non-Electric-Housewares.html">Non Electric Housewares</a></li>
+  <li><a href="/Outdoor-Living.html">Outdoor Living</a></li>
+  <li><a href="/Sewing-Machines.html">Sewing Machines</a></li>
+  <li><a href="/Smoke-Detectors.html">Smoke Detectors</a></li>
+  <li><a href="/Datavision_Sporting-Goods.html">Sporting Goods</a></li>
+  <li><a href="/Washing-Machines.html">Washing Machines</a></li>
+  <li><a href="/Weather-Monitoring.html">Weather Monitoring</a></li>
+  <li><a href="/Appliance-Accessories.html">Appliance Accessories</a></li>
+ </ul>
+ </div>
+</div>
+</table>
+</td></tr>
+<tr><td bgcolor="#ffffff" width="1000" align="center" valign="top">
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" bgcolor="0" width="1000">
+<tr><td bgcolor="#ffffff" width="175" align="left" valign="top">
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" width="175">
+<tr bgcolor="#ffffff"><td valign="top">
+<table bgcolor="#ffffff" width="175" cellspacing="0" cellpadding="0" border="0">
+<tr><td valign="top"><img height=3 alt="" src="/img/2000_1b.gif" width=3></td>
+<td bgcolor="#e6e6e6" rowspan="2" class="head">&#187;&nbsp;Brand Stores</td>
+<td valign="top"><img height=3 alt="" src="/img/2000_3b.gif" width=3></td>
+</tr>
+<tr><td class="head" width="3" height="15"></td>
+<td class="head" width="3" height="15"></td>
+</tr>
+<tr><td background=/img/4a.gif align="right" width=3></td>
+	<td bgcolor="#ffffff">
+<table border="0" cellspacing="0" cellpadding="2" bgcolor"#ffffff" width="100%">
+<tr><td class="body"><a class="link" href="/Home.html"><font color="#ff0000"><b>&middot;&nbsp;Datavision Home                                                                </font></a></td></tr>
+<tr><td class="body"><a class="link" href="/Sony-Store.html"><b>&middot;&nbsp;Sony Store                                                                     </a></td></tr>
+<tr><td class="body"><a class="link" href="/Apple-Products.html"><b>&middot;&nbsp;Apple Products                                                                 </a></td></tr>
+<tr><td class="body"><a class="link" href="/Canon-Store.html"><b>&middot;&nbsp;Canon Store                                                                    </a></td></tr>
+<tr><td class="body"><a class="link" href="/Samsung-Store.html"><b>&middot;&nbsp;Samsung Store                                                                  </a></td></tr>
+<tr><td class="body"><a class="link" href="/Intel-Store.html"><b>&middot;&nbsp;Intel Showcase                                                                 </a></td></tr>
+<tr><td class="body"><a class="link" href="/LG-Electronics-Store.html"><b>&middot;&nbsp;LG Store                                                                       </a></td></tr>
+<tr><td class="body"><a class="link" href="/Asus-Store.html"><b>&middot;&nbsp;Asus Store                                                                     </a></td></tr>
+<tr><td class="body"><a class="link" href="/NetGear-Store.html"><b>&middot;&nbsp;NetGear Store                                                                  </a></td></tr>
+<tr><td class="body"><a class="link" href="/western-digital-store.html"><b>&middot;&nbsp;Western Digital Store                                                          </a></td></tr>
+<tr><td class="body"><a class="link" href="/hard-candy-store.html"><b>&middot;&nbsp;Hard Candy Store                                                               </a></td></tr>
+<tr><td class="body"><a class="link" href="/Hewlett-Packard-Store.html"><b>&middot;&nbsp;Hewlett Packard                                                                </a></td></tr>
+<tr><td class="body"><a class="link" href="/AppUp.html"><b>&middot;&nbsp;AppUp                                                                          </a></td></tr>
+<tr><td class="body"><a class="link" href="/Linksys-Store.html"><b>&middot;&nbsp;Linksys                                                                        </a></td></tr>
+</table>
+	</td>
+	<td background=/img/5a.gif align="right" width=3></td></tr>
+<tr>
+<td><img height=3 alt="" src="/img/6a.gif" width=3></td>
+<td background=/img/7a.gif></td>
+<td><img height=3 alt="" src="/img/8a.gif" width=3></td>
+</tr>
+</table>
+</td></tr>
+<tr bgcolor="#ffffff"><td valign="top">
+<table bgcolor="#ffffff" width="175" cellspacing="0" cellpadding="0" border="0">
+<tr><td valign="top"><img height=3 alt="" src="/img/2000_1b.gif" width=3></td>
+<td bgcolor="#e6e6e6" rowspan="2" class="head">&#187;&nbsp;Narrow your search</td>
+<td valign="top"><img height=3 alt="" src="/img/2000_3b.gif" width=3></td>
+</tr>
+<tr><td class="head" width="3" height="15"></td>
+<td class="head" width="3" height="15"></td>
+</tr>
+<tr><td background="/img/4a.gif" align="right" width=3></td>
+	<td bgcolor="#ffffff">
+<table border="0" cellspacing="0" cellpadding="1" bgcolor"#6699cc" width="100%">
+<tr><td class="body">&middot;&nbsp;<a class="link" href="/cgi-bin/category.cgi?merfnbr=2000&cgrfnbr=1723&atn=6"><u>Brand</u></a></td></tr>
+<tr><td class="attr">&nbsp;&nbsp;&nbsp;<a class="attr" href="/cgi-bin/category.cgi?merfnbr=2000&cgrfnbr=345920&an=6&av=113">Apple</a>&nbsp;<font class="text11">(8)</font>
+</td></tr>
+<tr><td class="body">&middot;&nbsp;<a class="link" href="/cgi-bin/category.cgi?merfnbr=2000&cgrfnbr=1723&atn=7"><u>Price</u></a></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;<a class="attr" href="/cgi-bin/category.cgi?merfnbr=2000&cgrfnbr=345920&an=7&as=1000&ae=2000">1000&nbsp;$-2000&nbsp;$</a>&nbsp;<font class="text11">(3)</font>
+</font></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;<a class="attr" href="/cgi-bin/category.cgi?merfnbr=2000&cgrfnbr=345920&an=7&as=2000&ae=5000">2000&nbsp;$-5000&nbsp;$</a>&nbsp;<font class="text11">(5)</font>
+</font></td></tr>
+</td></tr></table>
+	</td>
+	<td background=/img/5a.gif align="right" width=3></td></tr>
+<tr>
+<td><img height=3 alt="" src="/img/6a.gif" width=3></td>
+<td background=/img/7a.gif></td>
+<td><img height=3 alt="" src="/img/8a.gif" width=3></td>
+</tr>
+</table>
+</td></tr>
+<tr bgcolor="#ffffff"><td valign="top">
+<table bgcolor="#ffffff" width="175" cellspacing="0" cellpadding="0" border="0">
+<tr><td valign="top"><img height=3 alt="" src="/img/2000_1b.gif" width=3></td>
+<td bgcolor="#e6e6e6" rowspan="2" class="head">&#187;&nbsp;SubCategories</td>
+<td valign="top"><img height=3 alt="" src="/img/2000_3b.gif" width=3></td>
+</tr>
+<tr><td class="head" width="3" height="15"></td>
+<td class="head" width="3" height="15"></td>
+</tr>
+<tr><td background=/img/4a.gif align="right" width=3></td>
+	<td bgcolor="#ffffff">
+<table border="0" cellspacing="0" cellpadding="1" bgcolor"#e6e6e6" width="100%">
+<tr><td bgcolor="#ffffff"><font class="link">&middot;&nbsp;</font><a class="link" href="/Screen-Protectors.html">Screen Protectors                                                                                                               </a><font class="text11">(204)</font>
+</font></td></tr>
+</table>
+	</td>
+	<td background=/img/5a.gif align="right" width=3></td></tr>
+<tr>
+<td><img height=3 alt="" src="/img/6a.gif" width=3></td>
+<td background=/img/7a.gif></td>
+<td><img height=3 alt="" src="/img/8a.gif" width=3></td>
+</tr>
+</table>
+</td></tr>
+<tr><td align="center">
+<iframe src="http://rcm.amazon.com/e/cm?t=datavision04-20&o=1&p=14&l=ur1&category=kindle&banner=1Z4BGFAR9ST7BT0409R2&f=ifr" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</td></tr>
+</table>
+</td><td width="650" bgcolor="#ffffff" align="center" valign="top">
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" width="650">
+<tr bgcolor="#ffffff"><td valign="top">
+<a href="/Apple-iPad.html"><img src="/banners/appleipad2top.jpg" border="0"></a>
+</td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="left">
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" border="0" width="100%">
+<tr><td valign="top" class="body">
+<a class="link" href="/Home.html">Home</a><font color="#444444">&nbsp;&gt;&nbsp;</font><a class="link" href="/Computers.html">Computers</a><font color="#444444">&nbsp;&gt;&nbsp;</font><a class="link" href="/Apple-Hardware.html">Apple Hardware</a><font color="#444444">&nbsp;&gt;&nbsp;</font><a class="link" href="/MacBook-Pro.html">MacBook Pro</a><font color="#444444">&nbsp;&gt;&nbsp;</font></td></tr></table>
+</td></tr>
+<tr bgcolor="#ffffff"><td valign="top">
+<form name="product" action="/cgi-bin/cart.cgi" method="POST">
+<table border="0" cellspacing="1" cellpadding="2" bgcolor="#ffffff" width="650">
+<tr bgcolor="#ffffff"><td class="page_title">Apple MacBook Pro 17" 2.53GHz Processor
+</td></tr><tr bgcolor="#ffffff"><input type="hidden" name="add" value="530234">
+<td align="left">
+<table cellpadding=0 cellspacing=0 border=0 bgcolor="#ffffff" width="100%">
+<tr><td width="200" align="center">
+<table cellpadding=0 cellspacing=0 border=0 bgcolor="#ffffff" width="200">
+<tr><td width="200" align="center" colspan="5">
+<div id="SP_ProductImage">
+<a href="javascript:ViewImage('530234','0')"><img border="0" width="200" height="200" SRC="/200/530234.jpg" ALT="Apple MacBook Pro 17" 2.53GHz Processor"></a>
+</div></td></tr>
+<tr><td align="center" bgcolor="#ffffff">
+<table cellpadding=0 cellspacing="1" border=0 bgcolor="#cccccc">
+<tr><td align="center"><a href="JavaScript:ViewImage('530234','0');"><img src="/60/530234.jpg" border="0" width="45" height="45"></a></td>
+<td align="center"><a href="JavaScript:ViewImage('530234','1');"><img src="/60/530234-1.jpg" border="0" width="45" height="45"></a></td>
+<td align="center"><a href="JavaScript:ViewImage('530234','2');"><img src="/60/530234-2.jpg" border="0" width="45" height="45"></a></td>
+<td align="center"><a href="JavaScript:ViewImage('530234','3');"><img src="/60/530234-3.jpg" border="0" width="45" height="45"></a></td>
+<td align="center"><a href="JavaScript:ViewImage('530234','4');"><img src="/60/530234-4.jpg" border="0" width="45" height="45"></a></td>
+</tr>
+</table></td></tr><tr><td align="center" bgcolor="#ffffff"></td><tr>
+<tr><td bgcolor="#ffffff" align="center" height="20">
+<script src="http://content.webcollage.net/datavis/smart-button"></script>
+<script language="javascript" src="http://sb.sellpoint.net/smart_button/datavis.js"></script>
+<script language="javascript">
+vsr_sku='530234';
+vsr_shopping_cart='https://www.datavis.com/cgi-bin/cart.cgi?add=530234';
+vsr_button_url='http://www.datavis.com/assets/clickforproduct.gif';
+vsr_price='1999.99';
+window.show_vsr_button ? show_vsr_button() : '';
+</script>
+</td></tr>
+</table>
+</td><td width="400" align="center" valign="middle">
+<table cellpadding=3 cellspacing="1" border=0 bgcolor="#ffffff" width="100%">
+<tr bgcolor="#ffffff"><td align="right" valign="top"><a href="/cgi-bin/manufacturer.cgi?marfnbr=43"><img src="/brands/APPLEM.gif" border="0"></a></td>
+<tr bgcolor="#ffffff"><td align="right" valign="top"><b>Product:</b></td><td align="left" valign="top">Apple MacBook Pro 17" 2.53GHz Processor</td></tr>
+<tr bgcolor="#ffffff"><td align="right"><b>SKU:</b></td><td align="left">MC024LL/A</td></tr>
+<tr bgcolor="#ffffff"><td align="right"><b>UPC:</b></td><td align="left">885909304356</td></tr>
+<tr bgcolor="#ffffff"><td align="right"><b>Brand:</b></td><td align="left">Apple</td></tr>
+<tr bgcolor="#ffffff"><td align="right"><b>Availability:</b></td><td align="left">Discontinued                                     </td></tr>
+<tr bgcolor="#ffffff"><td align="right"><b>Condition:</b></td><td align="left"><font color="11AA11">Brand New Factory Sealed with Full USA Warranty</font>
+</td></tr>
+<tr bgcolor="#ffffff"><td align="right"><b>Price:</b></td><td align="left"><font color="#ff0000"><b><font color="#ff0000" face="Verdana,Arial,Helvetica" size="2"><b>$1999.99</b></font>&nbsp;&nbsp;</td></tr>
+<tr bgcolor="#ffffff"><td align="right"><b>Shipping:</b></td><td align="left"><a class="linknormal" href="JavaScript:PopShipping(530234);">Click to Calculate!</a></td></tr>
+<tr><td align="right" colspan="2" bgcolor="#ffffff">
+<a href="JavaScript:popNotify(2000,530234);"><img src="/assets/2000-NotifyMeWhenAvailable.jpg" border="0"></a>
+</td></tr>
+</td></tr></table>
+</td></tr>
+</table>
+</td></tr></table>
+</td></tr>
+<tr><td align="right">
+<script type="text/javascript" language="javascript"
+src="/js/resaleWidget.js"></script>
+<span id="squaretrade_resale_pp"></span>
+<script type="text/javascript" language="javascript">
+st_resale.createProductPageWidget({itemCategory:'345920',itemPrice:1999.99, itemCondition:'New', swfFilePath:'/flash' });
+</script>
+</td></tr>
+</form>
+<tr bgcolor="#ffffff"><td valign="top">
+<table border="0" cellspacing="1" cellpadding="0" bgcolor="#ffffff" width="650">
+<tr>
+<td colspan="3" align="left"><table bgcolor="#ffffff" width="110" cellspacing="0" cellpadding="0" border="0">
+<tr><td valign="top"><img height="3" alt="" src="/img/1a.gif" width="3"></td>
+<td background="/img/2a.gif" height="3" width="125"></td>
+<td valign="top"><img height="3" alt="" src="/img/3a.gif" width="3"></td>
+</tr>
+<tr><td background="/img/4a.gif" width="3" height="15"></td>
+<td class="body"><font color="#000000">&#187;&nbsp;Description</font></td>
+<td background="/img/5a.gif" width="3" height="15"></td>
+</tr>
+</table>
+</td></tr><tr><td>
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" width="650">
+<tr><td valign="top"><img height="3" src="/img/1a.gif" width="3"></td>
+<td background="/img/2a.gif" height="3" width="644"></td>
+<td valign="top"><img height="3" src="/img/3a.gif" width="3"></td>
+</tr><tr><td background="/img/4a.gif" align="right" width="3"></td><td bgcolor="#ffffff">
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="4" border="0" width="644">
+<tr><td bgcolor="#ffffff"><a name="Description"></a>
+<font class="text1"><br>
+2.53GHz IntelCore i5 Processor; 4GB Memory; 500GB Serial ATA Drive @ 5400 rpm; SuperDrive 8x (DVD±R DL/DVD±RW/CD-RW); 17-inch Hi-Resolution Glossy Widescreen Display; Backlit Keyboard (English) & User's Guide.<br>Innovation runs in the family! Aluminum unibody enclosure, advanced longer-lasting battery, brilliant LED-backlit display. MacBook Pro has been precision engineered down to the smallest detail.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+</font></td></tr>
+</table>
+<br><br></td><td background="/img/5a.gif" align="right" width="3"></td></tr>
+</tr><tr><td><img height="3" alt="" src="/img/6a.gif" width="3"></td>
+<td background="/img/7a.gif"></td>
+<td><img height="3" alt="" src="/img/8a.gif" width="3"></td>
+</tr>
+</table>
+</td></tr></table>
+<table border="0" cellspacing="1" cellpadding="0" bgcolor="#ffffff" width="650">
+<tr>
+<td colspan="3" align="left"><table bgcolor="#ffffff" width="110" cellspacing="0" cellpadding="0" border="0">
+<tr><td valign="top"><img height="3" alt="" src="/img/1a.gif" width="3"></td>
+<td background="/img/2a.gif" height="3" width="125"></td>
+<td valign="top"><img height="3" alt="" src="/img/3a.gif" width="3"></td>
+</tr>
+<tr><td background="/img/4a.gif" width="3" height="15"></td>
+<td class="body"><font color="#000000">&#187;&nbsp;Features</font></td>
+<td background="/img/5a.gif" width="3" height="15"></td>
+</tr>
+</table>
+</td></tr><tr><td>
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" width="650">
+<tr><td valign="top"><img height="3" src="/img/1a.gif" width="3"></td>
+<td background="/img/2a.gif" height="3" width="644"></td>
+<td valign="top"><img height="3" src="/img/3a.gif" width="3"></td>
+</tr><tr><td background="/img/4a.gif" align="right" width="3"></td><td bgcolor="#ffffff">
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="4" border="0" width="644">
+<tr><td bgcolor="#ffffff"><a name="Features"></a>
+<font class="text1"><br>
+Features:<br>* Precision aluminum. The new gold standard. Carved from a single block of aluminum, the MacBook Pro is a true engineering achievement. Itspatented unibody enclosure is the product of precise machining.<br>* The longest-lasting Mac notebook battery ever. The new energy-efficient architecture in every MacBook Pro, along with automatic graphics switching in the 15- and 17-inch models, gives you dramatically longer battery life. On a single charge, the battery in the new MacBook Pro lasts up 8 to 9 hours.<br>* A display of brilliance. Every MacBook Pro has a pristine LED-backlit displaywith wide-angle viewing and a color gamut usuallyseen only on a desktop display.<br>* Even the keyboard is advanced. The rigid aluminum keyboard webbing has been cut precisely to hold the keys. And the keys are curved to perfectly fit fingers. The result? Pure typing bliss.<br>* Burn DVDs superfast. After editing and applying the finishing touchesto your home movie masterpiece in iMovie and iDVD, use the ultrafast 8x SuperDrive on your MacBook Pro to burn it to DVD.<br>* Be everywhere at once. iSight Camera: Cleverly integrated  almost hidden at the top of the MacBook Pro display is an iSight camera. Use it with iChat, and you can be anywhere without actually being there. Video chat withup to three of your friends, share a video with acolleague, or present to a client.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+</font></td></tr>
+</table>
+<br><br></td><td background="/img/5a.gif" align="right" width="3"></td></tr>
+</tr><tr><td><img height="3" alt="" src="/img/6a.gif" width="3"></td>
+<td background="/img/7a.gif"></td>
+<td><img height="3" alt="" src="/img/8a.gif" width="3"></td>
+</tr>
+</table>
+</td></tr></table>
+<table border="0" cellspacing="1" cellpadding="0" bgcolor="#ffffff" width="650">
+<tr>
+<td colspan="3" align="left"><table bgcolor="#ffffff" width="110" cellspacing="0" cellpadding="0" border="0">
+<tr><td valign="top"><img height="3" alt="" src="/img/1a.gif" width="3"></td>
+<td background="/img/2a.gif" height="3" width="125"></td>
+<td valign="top"><img height="3" alt="" src="/img/3a.gif" width="3"></td>
+</tr>
+<tr><td background="/img/4a.gif" width="3" height="15"></td>
+<td class="body"><font color="#000000">&#187;&nbsp;Specifications</font></td>
+<td background="/img/5a.gif" width="3" height="15"></td>
+</tr>
+</table>
+</td></tr><tr><td>
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" width="650">
+<tr><td valign="top"><img height="3" src="/img/1a.gif" width="3"></td>
+<td background="/img/2a.gif" height="3" width="644"></td>
+<td valign="top"><img height="3" src="/img/3a.gif" width="3"></td>
+</tr><tr><td background="/img/4a.gif" align="right" width="3"></td><td bgcolor="#ffffff">
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="4" border="0" width="644">
+<tr><td bgcolor="#ffffff"><a name="Specifications"></a>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" border="0" width="100%">
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"><b>General Information</b></font></td><td bgcolor="#f1f1f1"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Manufacturer</font></td><td bgcolor="#ffffff"><font color="#333333">Apple, Inc</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Manufacturer Part Number</font></td><td bgcolor="#f1f1f1"><font color="#333333">MC024LL/A</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Manufacturer Website Address</font></td><td bgcolor="#ffffff"><font color="#333333">www.apple.com</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Brand Name</font></td><td bgcolor="#f1f1f1"><font color="#333333">Apple</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Product Line</font></td><td bgcolor="#ffffff"><font color="#333333">MacBook Pro</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Product Model</font></td><td bgcolor="#f1f1f1"><font color="#333333">MC024LL/A</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Product Name</font></td><td bgcolor="#ffffff"><font color="#333333">MacBook Pro MC024LL/A Notebook</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Marketing Information</font></td><td bgcolor="#f1f1f1"><font color="#333333"><p>The Mac is designed to provide the best computer experience you can have. Everything just works. And everything works together. That?s because Apple makes both the hardware and the software. So whether you?re accessing a Wi-Fi network or organizing your photos by faces or video chatting with friends, it?s all amazingly simple. And that?s just the beginning.</p>                                                                                                                                             
+</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Product Type</font></td><td bgcolor="#ffffff"><font color="#333333">Notebook</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"><b>Processor & Chipset</b></font></td><td bgcolor="#f1f1f1"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Processor Manufacturer</font></td><td bgcolor="#ffffff"><font color="#333333">Intel</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Processor Type</font></td><td bgcolor="#f1f1f1"><font color="#333333">Core i5</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Processor Speed</font></td><td bgcolor="#ffffff"><font color="#333333">2.53 GHz</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Processor Core</font></td><td bgcolor="#f1f1f1"><font color="#333333">Dual-core</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000"><b>Memory</b></font></td><td bgcolor="#ffffff"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Standard Memory</font></td><td bgcolor="#f1f1f1"><font color="#333333">4 GB</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Maximum Memory</font></td><td bgcolor="#ffffff"><font color="#333333">8 GB</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Memory Technology</font></td><td bgcolor="#f1f1f1"><font color="#333333">DDR3 SDRAM</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Memory Standard</font></td><td bgcolor="#ffffff"><font color="#333333">DDR3-1066/PC3-8500</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"><b>Storage</b></font></td><td bgcolor="#f1f1f1"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Hard Drive Capacity</font></td><td bgcolor="#ffffff"><font color="#333333">500 GB</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Solid State Drive Capacity</font></td><td bgcolor="#f1f1f1"><font color="#333333">Not Included</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Optical Drive Type</font></td><td bgcolor="#ffffff"><font color="#333333">DVD-Writer</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Optical Media Support</font></td><td bgcolor="#f1f1f1"><font color="#333333">DVD±R/±RW</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000"><b>Display & Graphics</b></font></td><td bgcolor="#ffffff"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Screen Size</font></td><td bgcolor="#f1f1f1"><font color="#333333">17"</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Graphic Mode</font></td><td bgcolor="#ffffff"><font color="#333333">WUXGA</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Display Screen Type</font></td><td bgcolor="#f1f1f1"><font color="#333333">Active Matrix TFT Color LCD</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Backlight Technology</font></td><td bgcolor="#ffffff"><font color="#333333">LED</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Widescreen</font></td><td bgcolor="#f1f1f1"><font color="#333333">Yes</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Graphics Controller Manufacturer</font></td><td bgcolor="#ffffff"><font color="#333333">nVIDIA</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Graphics Controller Model</font></td><td bgcolor="#f1f1f1"><font color="#333333">GeForce GT 330M</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Graphics Memory Capacity</font></td><td bgcolor="#ffffff"><font color="#333333">512 MB</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"><b>Network & Communication</b></font></td><td bgcolor="#f1f1f1"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Network Technology</font></td><td bgcolor="#ffffff"><font color="#333333">Gigabit Ethernet</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"></font></td><td bgcolor="#f1f1f1"><font color="#333333">Wi-Fi</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000"></font></td><td bgcolor="#ffffff"><font color="#333333">Bluetooth</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"><b>Software</b></font></td><td bgcolor="#f1f1f1"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Operating System</font></td><td bgcolor="#ffffff"><font color="#333333">Mac OS X 10.6 Snow Leopard</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"><b>Battery Information</b></font></td><td bgcolor="#f1f1f1"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Maximum Battery Run Time</font></td><td bgcolor="#ffffff"><font color="#333333">9 Hour</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"><b>Physical Characteristics</b></font></td><td bgcolor="#f1f1f1"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Color</font></td><td bgcolor="#ffffff"><font color="#333333">Aluminum</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Height</font></td><td bgcolor="#f1f1f1"><font color="#333333">0.98"</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Width</font></td><td bgcolor="#ffffff"><font color="#333333">15.47"</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Depth</font></td><td bgcolor="#f1f1f1"><font color="#333333">10.51"</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000"><b>Miscellaneous</b></font></td><td bgcolor="#ffffff"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Package Contents</font></td><td bgcolor="#f1f1f1"><font color="#333333"><li>MacBook Pro MC024LL/A Notebook</li> <li>Power Cord</li> <li>AC Wall Plug</li> <li>Install/restore DVDs</li> <li>Display Cleaning Cloth</li> <li>Lithium-Polymer Battery</li> <li>85W MagSafe Power Adapter</li> <li>Printed and Electronic Documentation </li>                                                                                                                                                                                                                                                         
+</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Green Compliance</font></td><td bgcolor="#ffffff"><font color="#333333">Yes</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000">Green Compliance Certificate/Authority</font></td><td bgcolor="#f1f1f1"><font color="#333333">Energy Star</font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000"></font></td><td bgcolor="#ffffff"><font color="#333333">EPEAT Gold</font></td></tr>
+<tr><td bgcolor="#f1f1f1" align="right" valign="top" width="125"><font color="#000000"><b>Warranty</b></font></td><td bgcolor="#f1f1f1"><font color="#333333"></font></td></tr>
+<tr><td bgcolor="#ffffff" align="right" valign="top" width="125"><font color="#000000">Standard Warranty</font></td><td bgcolor="#ffffff"><font color="#333333">1 Year Limited</font></td></tr>
+</table>
+</td></tr>
+</table>
+<br><br></td><td background="/img/5a.gif" align="right" width="3"></td></tr>
+</tr><tr><td><img height="3" alt="" src="/img/6a.gif" width="3"></td>
+<td background="/img/7a.gif"></td>
+<td><img height="3" alt="" src="/img/8a.gif" width="3"></td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr>
+</table>
+</td><td width="170" bgcolor="#ffffff" valign="top" align="left">
+<table bgcolor="e6e6e6" cellspacing="1" cellpadding="0" border="0" width="100%">
+<tr bgcolor="#ffffff"><td valign="top">
+<div><table border="0" cellspacing="0" cellpadding="0" width="175">
+<tr><td align="center"></td>
+<td align='center'>
+<a id="_lpChatBtn" href='https://server.iad.liveperson.net/hc/54043650/?cmd=file&file=visitorWantsToChat&site=54043650&byhref=1&imageUrl=https://server.iad.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/Consulting/3a' target='chat54043650'  onClick="lpButtonCTTUrl = 'https://server.iad.liveperson.net/hc/54043650/?cmd=file&file=visitorWantsToChat&site=54043650&imageUrl=https://server.iad.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/Consulting/3a&referrer='+escape(document.location); lpButtonCTTUrl = (typeof(lpAppendVisitorCookies) != 'undefined' ? lpAppendVisitorCookies(lpButtonCTTUrl) : lpButtonCTTUrl); window.open(lpButtonCTTUrl,'chat54043650','width=475,height=400,resizable=yes');return false;" ></a><script type='text/javascript'> var img=new Image();img.style.border='0';img.name='hcIcon';img.src='https://server.iad.liveperson.net/hc/54043650/?cmd=repstate&site=54043650&channel=web&&ver=1&imageUrl=https://server.iad.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/Consulting/3a'+'&d='+((new Date()).getTime());var par=document.getElementById('_lpChatBtn');if(par!=null){par.appendChild(img);}</script></td> </tr><tr><td>&nbsp;</td><td align='center'><div style="margin-top:5px;"><span style="font-size:10px; font-family:Arial, Helvetica, sans-serif;"><a href="http://solutions.liveperson.com/live-chat" style="text-decoration:none; color:#000" target="_blank"><b>Live Chat</b></a><span style="color:#000"> by </span><a href="http://www.liveperson.com/" style="text-decoration:none; color:#FF9900" target="_blank">LivePerson</a></span></div></td> </tr> <tr><td>&nbsp;</td><td align='center'><a href='http://solutions.liveperson.com/customer-service/?site=54043650&domain=server.iad.liveperson.net&origin=chatbutton' target='_blank'  onClick="javascript:window.open('http://solutions.liveperson.com/customer-service/?site=54043650&domain=server.iad.liveperson.net&origin=chatbutton&referrer='+escape(document.location));return false;" >
+<img src='https://server.iad.liveperson.net/hc/54043650/?cmd=rating&site=54043650&type=indicator' name='hcRating' alt='Customer Service Rating by LivePerson' border=0></a>
+</td></tr>
+</table></div>
+</td></tr>
+<tr bgcolor="#ffffff"><td valign="top">
+<a href="JavaScript:void(0);" OnClick="JavaScript:window.open('http://www.facebook.com/pages/DataVision-NYC/103805113024612','new','toolbar=yes, location=yes, resizable=yes, scrollbars=yes, width=1200,height=950');"><img src="/staticads/facebook.JPG" alt="Like_Facebook" border="0"></a>
+<a href="JavaScript:void(0);" OnClick="JavaScript:window.open('http://twitter.com/datavisionNYC','new','toolbar=yes, location=yes, resizable=yes, scrollbars=yes, width=650,height=450');"><img src="/staticads/twitter.jpg" alt="Go to datavis.com @ twitter.com" border="0"></a>
+<img src="/staticads/datavisiontextdeals1.jpg" alt="datavisiontextdeals" border="0">
+<a href="JavaScript:void(0);" OnClick="JavaScript:window.open('http://www.flipdocs.com/showbook.aspx?ID=10001540_280468','new','toolbar=yes, location=yes, resizable=yes, scrollbars=yes, width=650,height=450');"><img src="/staticads/flippingcatalog.gif" alt="Click to see the catalog!" border="0"></a>
+<a href="/AppUp.html"><img src="/staticads/appup_pulse_PC_175x100.jpg" alt="Angry_Intel" border="0"></a>
+</td></tr>
+<tr bgcolor="#ffffff"><td valign="top">
+<table bgcolor="#ffffff" width="175" cellspacing="0" cellpadding="0" border="0">
+<tr><td valign="top"><img height="3" alt="" src="/img/2000_1b.gif" width="3"></td>
+<td rowspan="2" class="head" align="left">&#187;&nbsp;Most Popular</td>
+<td valign="top"><img height="3" alt="" src="/img/2000_3b.gif" width="3"></td>
+</tr>
+<tr><td class="head" width="3" height="15"></td>
+<td class="head" width="3" height="15"></td>
+</tr>
+<tr><td background="/img/4a.gif" align="right" width="3"></td>
+<td>
+<table border="0" cellspacing="1" cellpadding="2" bgcolor"#ffffff" width="170">
+<tr bgcolor="#ffffff" width="170"><td><a href="/Apple-MacBook-Pro-13-3-Core-i5-2-4GHz-Dual-Core.html"><img src="/60/624679.jpg" alt="Apple MacBook Pro 13.3" Core i5 2.4GHz Dual-Core" width="60" height="60" border="0"></a></td>
+<td align="left"><b>MD313LL/A</b><br><font color="#444444">Apple MacBook Pro 13.3" Core i5 2.4GHz Dual-Core</font><br><font color="#ff0000"><b>$1169.99</b></font>&nbsp;&nbsp;<font class="link"><b>Add</b></font>&nbsp;&nbsp;<input type="checkbox" name="add" value="624679" OnClick="JavaScript:AddItem(624679);">
+</td></tr>
+<tr width="170" height="3"><td colspan="2" class="body"></td></tr>
+<tr width="170" height="1"><td colspan="2" bgcolor="e6e6e6"></td></tr>
+</table>
+</td>
+<td background=/img/5a.gif align="right" width="3"></td></tr>
+</tr>
+<tr>
+<td><img height="3" alt="" src="/img/6a.gif" width="3"></td>
+<td background=/img/7a.gif></td>
+<td><img height="3" alt="" src="/img/8a.gif" width="3"></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</td></tr></table>
+</td></tr>
+<tr><td align="center" height="20"></td></tr>
+<tr><td align="center"><hr align="left" width="100%" color="#cccccc" SIZE="1" NOSHADE></td></tr>
+<tr bgcolor="#ffffff"><td valign="top" align="center">
+<table border="0" cellspacing="1" cellpadding="2" bgcolor"#ffffff">
+<tr>
+<td class="linknormal" align="center"><img src="/images/sonyauthorizeddealer.jpg" border="0"><br>Sony authorized dealer!</td>
+<td align="center" class="linknormal"><img src="/images/samsung.jpg" border="0"><br>Samsung authorized dealer!</td>
+<td align="center" class="linknormal"><img src="/images/verisign.gif" border="0"><br>Secured by Verisign!</td>
+<td align="center" class="linknormal"><img src="/images/paypal.jpg" border="0" alt="Secure & Fast PayPal Payments!"><br>Fast, easy & secure online payments!</td>
+<td align="center" class="linknormal"><img border=0 src="/images/GoogleCheckOutLogo.gif" alt="Google Checkout Logo"></a></td>
+<td align="center" class="linknormal"><img border=0 src="/images/AmazonPayments.jpg" alt="Amazon Checkout Logo"></a></td>
+</tr>
+</table>
+</td></tr>
+<tr><td align="center"><hr align="left" width="100%" color="#cccccc" SIZE="1" NOSHADE></td></tr>
+<tr><td align="center">
+<table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0"><tr>
+<td align="left" width="145" valign="top">
+<table bgcolor="#ffffff" width="145" cellspacing="0" cellpadding="2" border="0">
+<tr><td bgcolor="#ffffff" class="link">Customer Service</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?merfnbr=2000&rerfnbr=3">Customer Support</a>
+</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?merfnbr=2000&rerfnbr=5">Terms & Conditions of Use</a>
+</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?merfnbr=2000&rerfnbr=6">Terms & Conditions of Sale</a>
+</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?merfnbr=2000&rerfnbr=1">Shipping Policy</a>
+</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?merfnbr=2000&rerfnbr=2">Privacy Policy</a>
+</td></tr>
+</table>
+</td>
+<td align="left" width="145" valign="top">
+<table bgcolor="#ffffff" width="145" cellspacing="0" cellpadding="2" border="0">
+<tr><td bgcolor="#ffffff" class="link">Shopping Help</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/rebates.cgi">Rebates & Coupons</a>
+</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/category.cgi?merfnbr=2000&cgrfnbr=212444">Top 10 Best Sellers</a>
+</td></tr>
+</table>
+</td>
+<td align="left" width="145" valign="top">
+<table bgcolor="#ffffff" width="145" cellspacing="0" cellpadding="2" border="0">
+<tr><td bgcolor="#ffffff" class="link">My Account</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/orderstatus.cgi">Order Status</a>
+</td></tr>
+</table>
+</td>
+<td align="left" width="145" valign="top">
+<table bgcolor="#ffffff" width="145" cellspacing="0" cellpadding="2" border="0">
+<tr><td bgcolor="#ffffff" class="link">Company Info</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?merfnbr=2000&rerfnbr=10">About Datavision</a>
+</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?url=/celebrityshoppers.html">Celebrity Shoppers</a>
+</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?merfnbr=2000&rerfnbr=13">Catalog Request</a>
+</td></tr>
+<tr><td align="left" width="145">
+<a class="linknormal" href="/cgi-bin/resource.cgi?merfnbr=2000&rerfnbr=12">Contact Us</a>
+</td></tr>
+</table>
+</td>
+</tr></table>
+</td></tr>
+</table>
+<script type="text/javascript">
+cssmenu.init("anchorclass")
+</script>
+</body></html>

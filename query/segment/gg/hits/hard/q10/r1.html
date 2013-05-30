@@ -1,0 +1,78 @@
+<!doctype html public "-//IETF//DTD HTML//EN">
+<!-- $Header: /home/johnl/web/abuse/RCS/relay.html,v 1.1 2008/08/29 02:03:09 johnl Exp johnl $ -->
+<HEAD><TITLE>Mail relay testing</TITLE></HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<IMG SRC=nac_ad.gif WIDTH=396 HEIGHT=27>
+<H1>
+Mail relay testing
+</H1>
+We offer an experimental mail relay testing service.
+It runs in two modes:
+<UL><LI>
+<I>Anonymous mode</I> sends commands to the server to be tested but
+doesn't actually send any mail.
+This can report false positives, hosts that appear to be open relays
+but actually aren't because they reject or discard a message after
+appearing to accept it.
+<LI>
+<I>Registered user mode</I> attempts to relay a message through the
+server to be tested.
+You must be a registered abuse.net user, and the relayed message will
+be addressed to you.
+If you're testing  a server that accepts mail for your e-mail address,
+abuse.net can generate a temporary alias in the abuse.net domain that
+will be forwarded to you.
+</UL>
+<P>
+To limit the likelihood of abuse, the relay tester limits the number of
+tests a single user can make to ten per hour.
+If an IP address has been tested recently, it will
+report the results of that test, rather than retesting.
+If a network owner asks that we refrain from testing, we won't test any
+address on that network at all.
+<P>
+All tests are logged, of course.
+<P>
+If you are a registered user, you have to identify yourself with your
+e-mail address and the registration password that abuse.net sent in the
+subject line of your welcome message.
+If you're not a registered user but would like to register, send e-mail
+to <tt>new&#64;abuse.net</tt> and respond to the
+welcome message it sends.
+<P>
+<FORM ACTION="http://verify.abuse.net/cgi-bin/relaytest" METHOD=POST> 
+<TABLE BORDER=3>
+<TR><TD>Address to test:<BR>
+(as host name or dotted quad)</TD>
+<TD><INPUT TYPE=TEXT NAME=ADDR SIZE=50 MAXLENGTH=80></TD></TR>
+<TR><TD>Your e-mail address:<BR>
+(leave blank for anonymous mode)</TD>
+<TD><INPUT TYPE=TEXT NAME=EMAIL SIZE=50 MAXLENGTH=80></TD></TR>
+<TR><TD>Your abuse.net password:<BR>
+(see below if you don't know it)</TD>
+<TD><INPUT TYPE=PASSWORD NAME=PW SIZE=10 MAXLENGTH=10></TD></TR>
+<TR><TD>
+Check this box if you're testing a server that
+normally receives mail for you.</TD>
+<TD><TABLE><TR><TD><INPUT TYPE=CHECKBOX NAME=ALIAS VALUE=YES></TD>
+<TD>Create an abuse.net address<BR>
+(Address valid for 24 hours only)</TD></TR></TABLE>
+</TD></TR>
+<TR><TD>Click this button to start testing</TD>
+<TD><INPUT TYPE=SUBMIT VALUE="Test for relay" NAME=TEST></TD></TR>
+<TR><TD>If you are a registered abuse.net user but don't have the
+abuse.net password from your welcome message, enter your e-mail
+address above and click this button to mail yourself your password.</TD>
+<TD><INPUT TYPE=SUBMIT VALUE="Mail my password" NAME=MAILME></TD></TR>
+</TABLE>
+</FORM>
+<HR>
+<A HREF="/index.phtml"><IMG SRC="/icons/back.gif" WIDTH=20 HEIGHT=22></A>Return
+to the
+<A HREF="/index.phtml">abuse.net home page</A>.
+<BR>
+<a href="http://www.abuse.net/slashandburn.php"><!-- tinny-silence --></a>
+&#169; 1999 I.E.C.C. 
+</BODY>
+</HTML>

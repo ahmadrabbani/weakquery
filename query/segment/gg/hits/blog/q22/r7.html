@@ -1,0 +1,2822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		
+
+
+<title>					American Idol		 | 			al.com</title>
+
+
+
+
+	<link rel="stylesheet" href="http://media.al.com/design/baseline/css/common.min.css" type="text/css" />
+
+<link rel="stylesheet" href="http://www.al.com/08design/css/footer.css" type="text/css" />
+<script type="text/javascript" src="http://media.al.com/design/baseline/js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="http://media.al.com/design/baseline/js/jquery-plugins.min.js"></script>
+<script type="text/javascript" src="http://www.al.com/08design/js/default.js"></script>
+
+	<link rel="stylesheet" href="http://media.al.com/design/baseline/css/community.min.css" type="text/css" />
+	<script type="text/javascript">
+		
+		/* <![CDATA[ */
+/* setting vars here; moved core js to media server in movabletype.js */
+var blogId = 0;
+var blogIdStr = "";
+var blogURL = "";
+var blogType = "profile";
+var blogLayout = "full";
+
+var advAffiliate = "bama";
+var advDomain = "al.com";
+var advEnvPrefix = "";
+var advVersion = "baseline";
+
+var mtAffiliate = "bama";
+var mtArmorValue = "";
+
+
+	/* search pagination, moved from profileHead.mtml */
+	var offset = 0;
+	var sLimit = 20;
+	var totalResults = 214;
+	var thisPage = 1;
+
+	function galleryDirection(nav) {
+		var newOffset;
+		if ((nav == 'next') && ((offset + sLimit) < totalResults)) {
+			newOffset = offset + sLimit;
+			document.write('<li class="next last"><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=' + newOffset + '">Next page &raquo;</a></li>');
+		}
+		if ((nav == 'previous') && ((offset - sLimit) >= 0)) {
+			newOffset = offset - sLimit;
+			document.write('<li class="first prev"><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=' + newOffset + '">&laquo; Previous page</a></li>');
+		}
+	}
+
+	function galleryPagination() {
+		if (totalResults > sLimit) {
+			document.write('<div class="content-pagination"><ul>');
+			galleryDirection('previous');
+			document.write('<li class="first">1<li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=20">2</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=40">3</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=60">4</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=80">5</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=100">6</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=120">7</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=140">8</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=160">9</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=180">10</a><li><a href="/cgi-bin/mte/mt-search.cgi?affiliate=bama&sfilter_affiliate=bama&tag=American%20Idol&limit=20&offset=200">11</a>');
+			galleryDirection('next');
+			document.write('</ul></div>');
+		}
+	}
+
+	function tagSearchPagination(ssfUrl) {
+		if (totalResults > sLimit) {
+			document.write('<div class="content-pagination"><ul>');
+			if ((offset - sLimit) >= 0) {
+				var prevStr = "";
+				if((thisPage) > 2) { prevStr = "-" + (thisPage - 1); }
+				document.write('<li class="first prev"><a href="' + ssfUrl + '/tag/American%20Idol/index' + prevStr + '.html">&laquo; Previous page</a></li>');
+			}
+			document.write('<li class="first">1<li><a href="' + ssfUrl + '/tag/American%20Idol/index-2.html">2</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-3.html">3</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-4.html">4</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-5.html">5</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-6.html">6</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-7.html">7</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-8.html">8</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-9.html">9</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-10.html">10</a><li><a href="' + ssfUrl + '/tag/American%20Idol/index-11.html">11</a>');
+			if ((offset + sLimit) < totalResults) {
+				document.write('<li class="next last"><a href="' + ssfUrl + '/tag/American%20Idol/index-' + (thisPage + 1) + '.html">Next page &raquo;</a></li>');
+			}
+			document.write('</ul></div>');
+		}
+	}
+
+
+/* ]]> */
+
+	</script>
+
+
+<script type="text/javascript" src="https://cdns.gigya.com/js/socialize.js?apiKey=2_iH8IhEn_gwBmnM4mWho_Fv8MUmWJBVQ5WRekpDXJgtW6O-rg_aeBZ4lvrJVwKL8q"></script>
+<script type="text/javascript">var gigyaConf = { APIKey: '2_iH8IhEn_gwBmnM4mWho_Fv8MUmWJBVQ5WRekpDXJgtW6O-rg_aeBZ4lvrJVwKL8q' };</script>
+
+	<script type="text/javascript" src="http://media.al.com/design/baseline/js/movabletype.min.js"></script>
+	<script type="text/javascript" src="http://media.al.com/design/baseline/js/advance.min.js"></script>
+	<script type="text/javascript" src="http://media.al.com/design/baseline/js/adv-tracker.min.js"></script>
+
+
+
+<script type="text/javascript" >
+/* <![CDATA[ */
+
+
+
+	m_context = "tag_search";
+	m_search_blog_type = "all";
+	m_search_url = window.location.href;
+	m_search_tag = "American Idol";
+
+/* ]]> */
+</script>
+
+
+
+	<link rel="stylesheet" href="http://www.al.com/static/common/css/global.min.css" type="text/css" />
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+		var extraPositions = '';
+		
+		
+		
+		
+			extraPositions += ',ImpactAd';
+		
+	/* ]]> */
+	</script>
+	
+		
+		<script type="text/javascript">
+/* <![CDATA[ */
+	
+		
+			OAS_listpos = 'Leaderboard,SiteSponsor,Rectangle';
+		
+	
+/* ]]> */
+</script>
+
+	
+
+
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			OASappendquery = '';
+			OAS_query = '';
+			namevalString = '';
+			
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="http://www.al.com/js/oas/mjx/oas_mjx.js"></script>
+
+
+
+
+	<link rel="stylesheet" href="http://www.al.com/css/toprail.css" type="text/css" />
+	<script type="text/javascript" src="http://www.al.com/js/toprail.js"></script>
+
+
+
+	
+		<meta name="google-site-verification" content="D5Wj0B_3Jx7j0rcVT7Sk9QadDMSWPGfjGMUbULcEffg" />
+	
+
+	</head>
+	<body>
+		<div id="FB_HiddenContainer" style="position: absolute; top: -10000px; left: -10000px; width: 0px; height: 0px;"></div>
+		<div id="MasterContainer">
+			<!-- Start Masthead -->
+			
+			<!-- ./templates/global/shared/nav/masthead.mtml start -->
+
+	
+
+		
+
+<div id="Toprail">
+	<div id="Masthead">
+		<div id="Toprail_Affiliate_Logo">
+			<a href="http://www.al.com" title="http://www.al.com"><img src="http://media.al.com/design/baseline/img/logo_bama.gif" alt="http://www.al.com" /></a>
+		<div id="ToprailSignin" style="display:none;">
+	<div id="logged_in_widget">
+		<img src="http://media.al.com/design/baseline/img/user_default_40.png" alt="" id="signin-user-icon" style="width:40px;height:40px;" />
+		<div id="signin-widget-content"></div>
+	</div>
+	<div id="logged_out_widget">
+		<a href="" class="jqModal" id="SigninLink" title="Sign in to al.com">Sign in</a> | <a href="" title="Register Now" id="toprail-register-link">Register for free</a>
+		<a class="fb_signin" id="toprail-fb-link" href=""><img src="http://media.al.com/design/baseline/img/buttons/fb_signin.gif" alt=""/></a>
+	</div>
+	<div id="SignInDialog" class="jqmWindow">
+		<div class="signin_box_top"><!--  --></div>
+		<div class="top">
+			<form id="ToprailSigninForm" name="ToprailSignInForm" method="post" action="" onsubmit="document.getElementById('login_return_url').value=document.location.href;return true;">
+			<input type="hidden" name="__mode" value="do_login" />
+			<input type="hidden" name="return_to" id="login_return_url" value="" />
+			<input type="hidden" name="affiliate" id="affiliate" value="" />
+			<input type="hidden" name="v" id="v" value="" />
+			<div>
+				<span class="right"><a href="" title="Click to close" class="jqmClose"><img src="http://media.al.com/design/baseline/img/tr_signin_dialog_x.gif" alt="Close"/></a></span>
+				<div class="title">Sign in to al.com</div>
+			</div>
+			<div>
+				<div class="left">
+					<label for="tr_login_author">Username</label>
+					<input type="text" id="tr_login_author" name="username" value="" class="field" size="30" />
+				</div>
+				<div class="f_space left">&nbsp;</div>
+				<div class="left">
+					<label for="tr_login_password">Password</label>
+					<input type="password" id="tr_login_password" name="password" value="" class="field" size="30" />
+				</div>
+			</div>
+			<div class="clear"><!-- --></div>
+			<div class="remember"><div class="left"><input type="checkbox" id="remember" /></div><div class="left"><label for="remember">Remember me</label></div></div>
+			<div class="signin"><input type="submit" class="btn_signin" value="" /></div>
+			<div class="forgot clear"><a href="#" title="Forgot password?" id="ForgotPassword">I forgot my username or password &raquo;</a></div>
+			</form>
+			<div class="clear"><!-- --></div>
+		</div>
+		<div class="bottom">
+			Don't have an account?
+			<p><a title="Register now!" id="toprail-login-register">Register now for free</a>, or sign in with any of these services:</p>
+			<br class="small_gap"/>
+			<span id="openIdLinks">
+				<a class="Facebook" id="TrSdFb" href=""><img src="http://media.al.com/design/baseline/img/buttons/fb_connect.gif" alt=""/></a>
+				<br/><br class="content_gap"/>
+				<a class="AIM icon_aim" href="">AIM</a>&nbsp;&nbsp;
+				<a class="Google icon_google" href="">Google</a>&nbsp;&nbsp;
+				<a class="OpenID icon_openid" href="">OpenID</a>
+			</span>
+		</div>
+		<div class="signin_box_bottom"><!-- --></div>
+	</div>
+</div>
+
+		</div>
+    		<div id="Toprail_Leaderboard">
+			<div class="Leaderboard"><script type="text/javascript">OAS_AD('Leaderboard');</script></div>
+		</div>
+		<div id="Topsearch">
+	<ul id="ToprailSearchTabs">
+		<li id="ToprailSearchTab1" class="search_tab_on">
+			<div id="ToprailSearchTab1Start" class="tab"></div>
+			<div class="text tab">Site Search</div>
+			<div id="ToprailSearchTab1End" class="tab"></div>
+		</li>
+		<li id="ToprailSearchTab2" class="">
+			<div id="ToprailSearchTab2Start" class=""></div>
+			<div class="text">Search Local Business Listings</div>
+			<div id="ToprailSearchTab2End" class=""></div>
+		</li>
+	</ul>
+	<div id="ToprailSearchForms">
+	<div class="vertical_line left"></div>
+	<form id="Toprail_Search" method="get" action="http://search.al.com/sp" onsubmit="checkSearchValues(this); return filterSiteSearch('http://www.al.com',this.Search_Field)">
+	<input type="hidden" value="100" name="aff" />
+	<input id="Search_Field" type="text" size="27" value="Search for keywords, people, locations, obituaries, Web ID and more..." onfocus="prepSiteSearch(this,true)" onblur="prepSiteSearch(this,false)" name="keywords" class="site_search_field" />
+	<input id="Search_Button" type="submit" value="" class="imageGo_toprail" title="Go" />
+	</form>
+	<form id="Toprail_BusinessSearch" method="get" action="http://businessfinder.al.com/BL/Listings.aspx" onsubmit="return checkSearchValues(this);">
+	<input id="Search_Field_Business1" type="text" value="Business name or category" onfocus="prepSiteSearch(this,true)" onblur="prepSiteSearch(this,false)" name="s"/>
+	<input id="Search_Field_Business2" type="text" value="City OR zip code" onfocus="prepSiteSearch(this,true)" onblur="prepSiteSearch(this,false)" name="locString" />
+	<input id="Search_Button_Business" type="submit" value="" class="imageGo_toprail" title="Go" />
+	</form>
+	<div class="vertical_line right"><!-- --></div>
+</div>
+
+	</div>
+	<div id="Sponsor_Ad">
+	         <div class="SiteSponsor"><script type="text/javascript">OAS_AD('SiteSponsor');</script></div>
+	</div>
+	</div> 
+	<div id="Topnav">
+		
+<table id="Level1"><tr>
+	<td id="First_Cell"><a id="home" href="http://www.al.com/" onclick="s.objectID='home';">Home</a></td>
+	<td><a id="news" href="http://www.al.com/news/" onclick="s.objectID='news';">News</a></td>
+	<td><a id="weather" href="http://www.al.com/weather/" onclick="s.objectID='weather';">Weather</a></td>
+	<td><a id="sports" href="http://www.al.com/sports/" onclick="s.objectID='sports';">Sports</a></td>
+	<td><a id="entertainment" href="http://www.al.com/entertainment/" onclick="s.objectID='entertainment';">Entertainment</a></td>
+	<td><a id="travel" href="http://www.al.com/travel/" onclick="s.objectID='travel';">Travel</a></td>
+	<td><a id="interact" href="http://www.al.com/interact/" onclick="s.objectID='interact';">Interact</a></td>
+	<td><a id="jobs" href="http://www.al.com/jobs/" onclick="s.objectID='jobs';">Jobs</a></td>
+	<td><a id="autos" href="http://www.al.com/autos/" onclick="s.objectID='autos';">Autos</a></td>
+	<td><a id="real-estate" href="http://www.al.com/realestate/" onclick="s.objectID='real-estate';">Real Estate</a></td>
+	<td><a id="rentals" href="http://realestate.al.com/for-rent" onclick="s.objectID='rentals';">Rentals</a></td>
+	<td><a id="classified-ads" href="http://classifieds.al.com/" onclick="s.objectID='classified-ads';">Classified Ads</a></td>
+	<td id="Last_Cell"><a id="shop" href="http://www.al.com/shopping/" onclick="s.objectID='shop';">Shop</a></td>
+
+</tr></table>
+
+		
+
+
+	</div>
+</div>
+
+<script type="text/javascript">updateLev1Links();</script>
+
+
+
+		
+		
+		<div class="ad_980x300" id="ImpactAd">
+			<script type="text/javascript">
+				/* <![CDATA[ */
+				OAS_AD('ImpactAd');
+				processAd("ImpactAd");
+				/* ]]> */
+			</script>
+		</div>
+	
+
+
+<div class="roundbox_overlay" id="InfoPopup">
+	<div class="roundbox_tl"> </div><div class="roundbox_tr"> </div>
+	<div class="roundbox_content" id="InfoData"></div>
+	<div class="roundbox_bl"> </div><div class="roundbox_br"> </div>
+	<div class="roundbox_arrow_down center"><img src="http://media.al.com/design/baseline/img/roundbox_arrow_down.gif" alt="" /></div>
+</div>
+
+<!-- ./templates/global/shared/nav/masthead.mtml end -->
+
+			<!-- End Masthead -->
+			<div id="PageContent">
+				<div id="MainColumn">
+					
+
+
+
+	
+		<div class="category_text">
+			<h1>Items  with tag &ldquo;American Idol&rdquo;</h1>
+			<br /><br />
+		</div>
+
+		<div class="mt_tabs">
+			<ul>
+				<li class="on"><a class="first" href="http://topics.al.com/tag/American%20Idol/index.html">All items</a></li>
+				<li class=""><a href="http://topics.al.com/tag/American%20Idol/posts.html">Posts</a></li>
+				<li class=""><a href="http://topics.al.com/tag/American%20Idol/photos.html">Photos</a></li>
+				<li class=""><a class="last" href="http://topics.al.com/tag/American%20Idol/videos.html">Videos</a></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			/* <![CDATA[ */
+			initTabs();
+			/* ]]> */
+		</script>
+	
+	
+		
+			<div class="category_text">
+				<h4>All items  tagged with "American Idol"
+				&nbsp;&nbsp;&nbsp; <span class="rss"><a href="http://topics.al.com/tag/American%20Idol/atom.xml" title="RSS feed">RSS</a></span></h4>
+			</div>
+
+
+			
+				<div class="page_sorting">
+					
+						Most recent items are shown first. <a href="http://topics.al.com/tag/American%20Idol/index-oldest.html">Show oldest items first</a>
+					
+				</div>
+			
+			<div class="page_control">
+				<script type="text/javascript">tagSearchPagination('');</script>
+			</div>
+			<div class="clear"><!----></div>
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/scenesource/2011/11/american_idol_winner_ruben_stu.html">"American Idol" winner Ruben Studdard and Zuri McCants ending their marriage</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/scenesource/2011/11/american_idol_winner_ruben_stu.html"><img src="http://media.al.com/entertainment_source/photo/8226272-small.jpg" width="155" alt="ruben_studdard.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/deltagirl91/index.html">
+	
+		
+	
+	
+	
+	
+	Chanda Temple -- The Birmingham News
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>November 16, 2011,  5:09PM</h5>
+			
+			<div>
+				Birmingham singer and wife have separated, attorney says&nbsp;<a href="http://blog.al.com/scenesource/2011/11/american_idol_winner_ruben_stu.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/scenesource/2011/11/american_idol_winner_ruben_stu.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/scenesource/2011/11/american_idol_winner_ruben_stu.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-7298400">2</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/entertainment-times/2011/11/american_idol_alum_bo_bice_to.html">American Idol alum Bo Bice to perform at new Decatur club Friday (video)</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/entertainment-times/2011/11/american_idol_alum_bo_bice_to.html"><img src="http://media.al.com/entertainment-times/photo/10261557-small.jpg" width="155" alt="Bo Bice" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/scure/index.html">
+	
+		
+	
+	
+	
+	
+	Sarah Cure, The Huntsville Times
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>November 16, 2011,  9:45AM</h5>
+			
+			<div>
+				Bice, a North Alabama native, has found a wealth of success in the music industry after the fourth season of "American Idol," including three albums with chart-topping singles.&nbsp;<a href="http://blog.al.com/entertainment-times/2011/11/american_idol_alum_bo_bice_to.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/entertainment-times/2011/11/american_idol_alum_bo_bice_to.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/entertainment-times/2011/11/american_idol_alum_bo_bice_to.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-7294555">1</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/mcolurso/2011/11/huntsvilles_paul_mcdonald_join.html">Huntsville's Paul McDonald joins wife Nikki Reed at 'Twilight: Breaking Dawn' premiere (video)</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/mcolurso/2011/11/huntsvilles_paul_mcdonald_join.html"><img src="http://media.al.com/mcolurso/photo/10259540-small.jpg" width="155" alt="Paul McDonald Nikki Reed 111511.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/mcolurso/index.html">
+	
+		
+	
+	
+	
+	
+	Mary Colurso -- The Birmingham News
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>November 15, 2011,  2:01PM</h5>
+			
+			<div>
+				The happy couple plugs a new duet, "Now That I've Found You," on the red carpet. You can listen to it here.&nbsp;<a href="http://blog.al.com/mcolurso/2011/11/huntsvilles_paul_mcdonald_join.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/mcolurso/2011/11/huntsvilles_paul_mcdonald_join.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/mcolurso/2011/11/huntsvilles_paul_mcdonald_join.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-7291575">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/entertainment-press-register/2011/11/kelly_clarkson_to_play_hard_ro.html">Kelly Clarkson to play Hard Rock Biloxi on Valentine's Day</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/entertainment-press-register/2011/11/kelly_clarkson_to_play_hard_ro.html"><img src="http://media.al.com/entertainment-press-register/photo/10256032-small.jpg" width="155" alt="Kelly Clarkson (11 3 11) small.JPG" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/lfspecke/index.html">
+	
+		
+	
+	
+	
+	
+	Lawrence F. Specker, Press-Register
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>November 14, 2011, 10:28AM</h5>
+			
+			<div>
+				It's never too early to start planning for Valentine's Day. Especially if your significant other likes Kelly Clarkson, who'll be hitting the Hard Rock Hotel and Casino Biloxi on Feb. 14. &nbsp;<a href="http://blog.al.com/entertainment-press-register/2011/11/kelly_clarkson_to_play_hard_ro.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/entertainment-press-register/2011/11/kelly_clarkson_to_play_hard_ro.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/entertainment-press-register/2011/11/kelly_clarkson_to_play_hard_ro.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-7286024">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/scenesource/2011/11/heavy_d_recorded_new_song_with.html">Heavy D recorded new song with Birmingham's Ruben Studdard (video) </a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/scenesource/2011/11/heavy_d_recorded_new_song_with.html"><img src="http://media.al.com/scenesource/photo/10243088-small.jpg" width="155" alt="rubenstuddard.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/deltagirl91/index.html">
+	
+		
+	
+	
+	
+	
+	Chanda Temple -- The Birmingham News
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>November 10, 2011,  6:28PM</h5>
+			
+			<div>
+				"Sexy Mother" will be on Ruben Studdard's new CD, set to be released in March.&nbsp;<a href="http://blog.al.com/scenesource/2011/11/heavy_d_recorded_new_song_with.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/scenesource/2011/11/heavy_d_recorded_new_song_with.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/scenesource/2011/11/heavy_d_recorded_new_song_with.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-7268522">2</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/breaking/2011/10/american_idols_paul_mcdonald_o.html">'American Idol' singer Paul McDonald of Huntsville, 'Twilight' star Nikki Reed wed in Malibu</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/breaking/2011/10/american_idols_paul_mcdonald_o.html"><img src="http://media.al.com/entertainment-times/photo/9462170-small.jpg" width="155" alt="Paul McDonald performs" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/cwelch/index.html">
+	
+		
+	
+	
+	
+	
+	Chris Welch, The Huntsville Times
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>October 17, 2011,  3:57PM</h5>
+			
+			<div>
+				Huntsville's Paul McDonald married "Twilight" star Nikki Reed Sunday at a private ranch in Malibu in front of 100 guests, including his parents Dave and Susan McDonald of Huntsville.      &nbsp;<a href="http://blog.al.com/breaking/2011/10/american_idols_paul_mcdonald_o.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/breaking/2011/10/american_idols_paul_mcdonald_o.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/breaking/2011/10/american_idols_paul_mcdonald_o.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-7140014">7</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/entertainment-times/2011/10/hollywood_gossip_website_says.html">American Idol star Paul McDonald to marry "Twilight" actress, says Perez Hilton</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/entertainment-times/2011/10/hollywood_gossip_website_says.html"><img src="http://media.al.com/entertainment-times/photo/9442950-small.jpg" width="155" alt="paul mcdonald square.JPG" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/shaskins/index.html">
+	
+		
+	
+	
+	
+	
+	Shelly Haskins, The Huntsville Times
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>October 15, 2011,  7:56PM</h5>
+			
+			<div>
+				The Hollywood gossip columnist reports that McDonald, a former Huntsville resident, will marry Nikki Reed Sunday in Malibu, Calif.&nbsp;<a href="http://blog.al.com/entertainment-times/2011/10/hollywood_gossip_website_says.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/entertainment-times/2011/10/hollywood_gossip_website_says.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/entertainment-times/2011/10/hollywood_gossip_website_says.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-7132947">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/entertainment-times/2011/07/american_idols_paul_mcdonald_t.html">'American Idol's' Paul McDonald to perform at Nashville's 'Idol' tour, fiancee Nikki Reed expected to be there</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/entertainment-times/2011/07/american_idols_paul_mcdonald_t.html"><img src="http://media.al.com/entertainment-times/photo/9480029-small.jpg" width="155" alt="Paul McDonald and paper" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/cwelch/index.html">
+	
+		
+	
+	
+	
+	
+	Chris Welch, The Huntsville Times
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>July 22, 2011,  2:14AM</h5>
+			
+			<div>
+				Huntsville's Paul McDonald is performing during the "American Idols Live" Tour July 30 at  Nashville's Bridgestone Arena&nbsp;<a href="http://blog.al.com/entertainment-times/2011/07/american_idols_paul_mcdonald_t.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/entertainment-times/2011/07/american_idols_paul_mcdonald_t.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/entertainment-times/2011/07/american_idols_paul_mcdonald_t.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6696556">1</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/entertainment-times/2011/07/2003_american_idol_ruben_studd.html">2003 'American Idol' Ruben Studdard performing at Huntsville's Sports Vision</a></h2>
+	<div class="container">
+		
+		
+	
+		<div class="text_container">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/cwelch/index.html">
+	
+		
+	
+	
+	
+	
+	Chris Welch, The Huntsville Times
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>July 22, 2011,  1:36AM</h5>
+			
+			<div>
+				Ruben Studdard, the 2003 "American Idol," attended Alabama A&M University and is returning here July 31 to do a benefit concert for storm victims.&nbsp;<a href="http://blog.al.com/entertainment-times/2011/07/2003_american_idol_ruben_studd.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/entertainment-times/2011/07/2003_american_idol_ruben_studd.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/entertainment-times/2011/07/2003_american_idol_ruben_studd.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6696541">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/entertainment-times/2011/07/american_idol_winner_ruben_stu.html">'American Idol' winner Ruben Studdard coming to Huntsville to perform disaster relief concert</a></h2>
+	<div class="container">
+		
+		
+	
+		<div class="text_container">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/cwelch/index.html">
+	
+		
+	
+	
+	
+	
+	Chris Welch, The Huntsville Times
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>July 08, 2011,  8:57AM</h5>
+			
+			<div>
+				2003 'American Idol' winner Ruben Studdard, who attended Alabama A&M, is performing at Sports Vision Restaurant in Huntsville on July 31 to help victims of the April 27 tornadoes&nbsp;<a href="http://blog.al.com/entertainment-times/2011/07/american_idol_winner_ruben_stu.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/entertainment-times/2011/07/american_idol_winner_ruben_stu.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/entertainment-times/2011/07/american_idol_winner_ruben_stu.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6626282">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/scenesource/2011/06/american_idols_ruben_studdard.html">American Idols Ruben Studdard, Taylor Hicks to perform tornado relief concert in Birmingham</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/scenesource/2011/06/american_idols_ruben_studdard.html"><img src="http://media.al.com/scenesource/photo/9678723-small.jpg" width="155" alt="Ruben Studdard May 2011.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/jdbryant/index.html">
+	
+		
+	
+	
+	
+	
+	Joseph D. Bryant -- The Birmingham News 
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>June 08, 2011,  1:38PM</h5>
+			
+			<div>
+				The show is free, but attendees are asked to bring canned goods to replenish food banks serving tornado victims.&nbsp;<a href="http://blog.al.com/scenesource/2011/06/american_idols_ruben_studdard.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/scenesource/2011/06/american_idols_ruben_studdard.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/scenesource/2011/06/american_idols_ruben_studdard.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6457467">3</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_bikes.html">Press-Register Sound Off: Bikes-road debate rages; Bigger turning lanes needed</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_bikes.html"><img src="http://media.al.com/press-register-commentary/photo/8240394-small.jpg" width="155" alt="soundoff.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/bamapressreg/index.html">
+	
+		
+	
+	
+	
+	
+	From the Press-Register
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>May 28, 2011,  4:45AM</h5>
+			
+			<div>
+				A collection of Press-Register reader Sound Off calls from Saturday, May 28, 2011, with callers expressing opinions on everything from bicycles on city streets, to inadequate turning lanes.&nbsp;<a href="http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_bikes.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_bikes.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_bikes.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6391941">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/mcolurso/2011/05/american_idol_the_voice_realit.html">'American Idol'? Passe. This season, 'The Voice' is in it to win it, baby! (video)</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/mcolurso/2011/05/american_idol_the_voice_realit.html"><img src="http://media.al.com/mcolurso/photo/9635275-small.jpg" width="155" alt="The Voice 052711.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/mcolurso/index.html">
+	
+		
+	
+	
+	
+	
+	Mary Colurso -- The Birmingham News
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>May 27, 2011,  7:30AM</h5>
+			
+			<div>
+				The NBC singing contest might not be perfect, but it's a darn sight fresher than the Fox reality series. &nbsp;<a href="http://blog.al.com/mcolurso/2011/05/american_idol_the_voice_realit.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/mcolurso/2011/05/american_idol_the_voice_realit.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/mcolurso/2011/05/american_idol_the_voice_realit.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6382234">2</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_tie_a.html">Press-Register Sound Off: Tie a yellow ribbon; No bikes on roads</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_tie_a.html"><img src="http://media.al.com/press-register-commentary/photo/8271958-small.jpg" width="155" alt="soundoff.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/bamapressreg/index.html">
+	
+		
+	
+	
+	
+	
+	From the Press-Register
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>May 27, 2011,  4:45AM</h5>
+			
+			<div>
+				A collection of Press-Register reader Sound Off calls from Friday, May 27, 2011, with callers expressing opinions on everything from showing support for the troops, to where bicycles belong.&nbsp;<a href="http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_tie_a.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_tie_a.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/press-register-commentary/2011/05/press-register_sound_off_tie_a.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6383947">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/wire/2011/05/scotty_mccreery_is_the_new_ame.html">Scotty McCreery is the new 'American Idol'</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/wire/2011/05/scotty_mccreery_is_the_new_ame.html"><img src="http://media.al.com/wire/photo/9631948-small.jpg" width="155" alt="scotty.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/bamaap/index.html">
+	
+		
+	
+	
+	
+	
+	The Associated Press
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>May 25, 2011,  9:07PM</h5>
+			
+			<div>
+				Scotty McCreery, a fresh-faced 17-year-old from Garner, N.C., received more viewer votes than Lauren Alaina.&nbsp;<a href="http://blog.al.com/wire/2011/05/scotty_mccreery_is_the_new_ame.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/wire/2011/05/scotty_mccreery_is_the_new_ame.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/wire/2011/05/scotty_mccreery_is_the_new_ame.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6376892">5</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/living/2011/05/on_this_day_morning_train_take.html">On This Day... Bouncy "Morning Train" takes 1981 workers to the office (and home again)</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/living/2011/05/on_this_day_morning_train_take.html"><img src="http://media.al.com/living/photo/9555685-small.jpg" width="155" alt="sheena-easton-silver-pants.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/MemoryRoad/index.html">
+	
+		
+	
+	
+	
+	
+	MemoryRoad.com
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>May 09, 2011,  6:30AM</h5>
+			
+			<div>
+				Thirty years ago, Sheena Easton rode the little pop engine that could to number one.&nbsp;<a href="http://blog.al.com/living/2011/05/on_this_day_morning_train_take.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/living/2011/05/on_this_day_morning_train_take.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/living/2011/05/on_this_day_morning_train_take.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6252071">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/bob-carlton/2011/05/american_idol_taylor_hicks_of.html">'American Idol' Taylor Hicks of Birmingham returns to his old haunt to open his new restaurant Ore</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/bob-carlton/2011/05/american_idol_taylor_hicks_of.html"><img src="http://media.al.com/bob-carlton/photo/9552712-small.jpg" width="155" alt="ore taylor.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/bcarlton/index.html">
+	
+		
+	
+	
+	
+	
+	Bob Carlton -- The Birmingham News
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>May 06, 2011,  9:00AM</h5>
+			
+			<div>
+				Neighborhood bar and grill celebrates city's iron and steel heritage.&nbsp;<a href="http://blog.al.com/bob-carlton/2011/05/american_idol_taylor_hicks_of.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/bob-carlton/2011/05/american_idol_taylor_hicks_of.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/bob-carlton/2011/05/american_idol_taylor_hicks_of.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6245058">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/entertainment_source/2011/04/american_idol_weekly_power_ran_2.html">'American Idol' Weekly Power Rankings: Jacob or Haley on the verge of heading home</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/entertainment_source/2011/04/american_idol_weekly_power_ran_2.html"><img src="http://media.al.com/scenesource/photo/8260922-small.jpg" width="155" alt="aMERICAN IDOL LOGO.JPG" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/bflanagan/index.html">
+	
+		
+	
+	
+	
+	
+	Ben Flanagan, al.com
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>April 28, 2011,  4:38PM</h5>
+			
+			<div>
+				Lauren, James and Scotty remain the favorites in this year's contest.&nbsp;<a href="http://blog.al.com/entertainment_source/2011/04/american_idol_weekly_power_ran_2.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/entertainment_source/2011/04/american_idol_weekly_power_ran_2.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/entertainment_source/2011/04/american_idol_weekly_power_ran_2.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6191686">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/entertainment-times/2011/04/shametown_looking_forward_to_o.html">Shametown looking forward to opening for Taylor Hicks Sunday at Panoply</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/entertainment-times/2011/04/shametown_looking_forward_to_o.html"><img src="http://media.al.com/entertainment-times/photo/9518705-small.jpg" width="155" alt="shametown" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/cwelch/index.html">
+	
+		
+	
+	
+	
+	
+	Chris Welch, The Huntsville Times
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>April 26, 2011,  3:04PM</h5>
+			
+			<div>
+				Shametown's David Schrimsher performed with former "American Idol" Taylor Hicks when they both attended Auburn&nbsp;<a href="http://blog.al.com/entertainment-times/2011/04/shametown_looking_forward_to_o.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/entertainment-times/2011/04/shametown_looking_forward_to_o.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/entertainment-times/2011/04/shametown_looking_forward_to_o.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6175722">0</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+	    
+		
+
+		<div class="action-stream action-stream-text">
+			
+			
+
+
+<div class="abstract">
+	
+	
+
+
+
+
+	
+		
+				
+					
+						
+					
+					
+				
+				
+		
+	
+
+
+	
+	
+	<h2><a href="http://blog.al.com/bob-carlton/2011/04/taylor_hicks_new_bar_and_grill.html">Taylor Hicks' new restaurant and bar, Ore, opens in Birmingham's Crestline Park</a></h2>
+	<div class="container">
+		
+		
+			<div class="img_container">
+				<a href="http://blog.al.com/bob-carlton/2011/04/taylor_hicks_new_bar_and_grill.html"><img src="http://media.al.com/bob-carlton/photo/9517904-small.jpg" width="155" alt="Taylor Hicks.jpg" /></a>
+			</div>
+		
+	
+		<div class="text_container text_container_p">
+			
+				<h3>
+					
+					
+
+
+
+	
+		By 
+	
+		
+			<span class="author vcard"><a class="fn" href="http://connect.al.com/user/bcarlton/index.html">
+	
+		
+	
+	
+	
+	
+	Bob Carlton -- The Birmingham News
+</a></span>
+		
+	
+<span style="display:none; visibility:hidden;" class="source-org vcard"><span class="org fn">al.com</span></span>
+	
+
+				</h3>
+				<h5>April 26, 2011, 11:10AM</h5>
+			
+			<div>
+				"American Idol" winner will drop in and play on occasion.&nbsp;<a href="http://blog.al.com/bob-carlton/2011/04/taylor_hicks_new_bar_and_grill.html">Full&nbsp;story&nbsp;&#187;</a>
+			</div>
+			
+				
+					
+					<div class="actions">
+	<div class="metric">
+		<fb:like href="http://blog.al.com/bob-carlton/2011/04/taylor_hicks_new_bar_and_grill.html" action="recommend" layout="button_count" show_faces="false" width="130" font="verdana"></fb:like>
+	</div>
+	
+		
+		
+			
+			<div class="metric_comment">
+				<span class="btn">
+					<input onclick="document.location.href='http://blog.al.com/bob-carlton/2011/04/taylor_hicks_new_bar_and_grill.html#comments'" type="button" class="btn" value=""/>
+				</span>
+				<span class="bubble">
+					<button type="button" class="bubble"><span id="comment-count-6173905">23</span></button>
+				</span>
+			</div>
+		
+		
+	
+</div>
+
+
+
+				
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		</div>
+
+		
+			<div class="page_control">
+				<script type="text/javascript">tagSearchPagination('');</script>
+			</div>
+		
+	    
+
+	
+
+				</div>
+				<div id="LastColumn">
+					
+					
+	<div id="right">
+		
+		
+
+		<!-- OAS AD 'Rectangle' begin -->
+		<div class="ad_300x250">
+			<script type="text/javaScript">
+			/* <![CDATA[ */
+			OAS_AD('Rectangle');
+			/* ]]> */
+			</script>
+		</div>
+		<!-- OAS AD 'Rectangle' end -->
+
+		
+
+		<!-- OAS AD 'RectangleBelow' begin -->
+		<div class="ad_300x250">
+			<script type="text/javaScript">
+			/* <![CDATA[ */
+			OAS_AD('RectangleBelow');
+			/* ]]> */
+			</script>
+		</div>
+		<!-- OAS AD 'RectangleBelow' end -->
+
+		
+		
+		<!-- OAS AD 'Tile5' begin -->
+<div id="Tile5" class="ad_300x100">
+	<script type="text/javaScript">
+	/* <![CDATA[ */
+	OAS_AD('Tile5');
+	processAd("Tile5");
+	/* ]]> */
+	</script>
+</div>
+<!-- OAS AD 'Tile5' end -->
+
+<div id="Module-From_Advertisers" class="widget_300 box_grayoutline ad_border">
+	<div>
+		<div class="box_top_left"><!-- --></div><div class="box_top_right"><!-- --></div><div class="box_top"><!-- --></div>
+	</div>
+	<div class="box_content">
+		<div class="module_links">
+			<div class="label">From Our Advertisers</div><br />
+			<br class="small_gap" />
+			<div class="TxtLink1">
+				<script type="text/javascript">
+				/* <![CDATA[ */
+				OAS_AD('TxtLink1');
+				/* ]]> */
+				</script>
+			</div>
+			<div class="TxtLink2">
+				<script type="text/javascript">
+				/* <![CDATA[ */
+				OAS_AD('TxtLink2');
+				/* ]]> */
+				</script>
+			</div>
+			<div class="TxtLink3">
+				<script type="text/javascript">
+				/* <![CDATA[ */
+				OAS_AD('TxtLink3');
+				/* ]]> */
+				</script>
+			</div>
+		</div>
+		<br class="small_gap" />
+		<div class="bottom_more_link"><a href="http://www.al.com/mediakit/">Advertise With Us &raquo;</a></div>
+	</div>
+	<div>
+		<div class="box_bottom_left"><!-- --></div><div class="box_bottom_right"><!-- --></div><div class="box_bottom"><!-- --></div>
+	</div>
+</div>
+
+<!-- OAS AD 'Marketing1' begin -->
+<div id="Marketing1" class="ad_300x100">
+	<script type="text/javaScript">
+	/* <![CDATA[ */
+	OAS_AD('Marketing1');
+	processAd("Marketing1");
+	/* ]]> */
+	</script>
+</div>
+<!-- OAS AD 'Marketing1' end -->
+	</div>
+
+				</div>
+			</div>
+			
+			<!-- ./templates/global/shared/nav/footer.mtml start -->
+<br />
+
+	<div id="Footer">
+  <div id="FooterLogos"><a href="http://www.advance.net" title="Advance Internet"><img src="http://www.al.com/08design/images/logo_footer_advanceinternet.gif" alt="Advance Internet" id="AdvanceLogo" /></a><a href="http://www.al.com" title="al.com"><img id="AffiliateLogo" src="http://www.al.com/08design/images/logo_footer_al.gif" alt="al.com]" /></a></div>
+
+  <div id="Footersearch">
+    <ul id="FooterSearchTabs">
+      <li id="FooterSearchTab1" class="search_tab_on">
+        <div id="FooterSearchTab1Start" class="tab"></div>
+        <div class="text tab">Site Search</div>
+        <div id="FooterSearchTab1End" class="tab"></div>
+      </li>
+      <li id="FooterSearchTab2" class="">
+
+        <div id="FooterSearchTab2Start" class=""></div>
+        <div class="text">Search Local Business Listings</div>
+        <div id="FooterSearchTab2End" class=""></div>
+      </li>
+    </ul>
+    <div id="FooterSearchForms">
+      <div class="vertical_line left"></div>
+        <form id="Footer_Search" method="get" action="http://search.al.com/sp" onsubmit="return filterSiteSearch('http://www.al.com',this.Search_Field)">
+
+          <input type="hidden" value="100" name="aff" />
+          <input id="Footer_SearchField_Keyword" class="site_search_field" type="text" size="27" value="Search by keyword, town name, Web ID and more..." onfocus="prepSiteSearch(this,true);" onblur="prepSiteSearch(this,false);" name="keywords" />
+          <input id="Footer_SearchButton" type="submit" value="" class="imageGo" title="Go" />
+        </form>
+      	<form id="Footer_BusinessSearch" method="get" action="http://businessfinder.al.com/BL/Listings.aspx">
+          <input id="Footer_SearchField_Name" class="footer_search_field" type="text" size="27" value="Business name or category" onfocus="prepSiteSearch(this,true);" onblur="prepSiteSearch(this,false);" name="name" />
+          <input id="Footer_SearchField_Zip" class="footer_search_field" type="text" size="27" value="City or zip code" onfocus="prepSiteSearch(this,true);" onblur="prepSiteSearch(this,false);" name="zip" />
+          <input id="Footer_SearchButton2" type="submit" value="" class="imageGo" title="Go" />
+        </form>
+
+      <div class="vertical_line right"></div>
+    </div>
+  </div>
+  <div id="FooterMiniLinks">
+  	<div id="MiniLinks_Top"><a href="http://www.al.com/siteindex" title="Site Map">Site Map</a> | <a href="http://www.al.com/advertise" title="Advertise">Advertise</a> | <a href="http://www.al.com/contactus" title="Contact Us">Contact us</a></div>
+
+    <div id="MiniLinks_Bottom"><img src="http://www.al.com/08design/images/green_arrow.gif" alt="" /> <a href="http://www.al.com/aboutus/index.ssf?affiliate_media/homepage.html" title="Make us your home page">Make us your home page</a></div>
+  </div>
+  <div class="clear"></div>
+  <div id="FooterMainLinks">
+  	<a href="http://www.al.com" title="Home">Home</a> | <a href="http://www.al.com/news" title="News">News</a> | <a href="http://www.al.com/weather" title="Weather">Weather</a> | <a href="http://www.al.com/sports" title="Sports">Sports</a> | <a href="http://www.al.com/entertainment" title="Entertainment">Entertainment</a> | <a href="http://www.al.com/travel" title="Travel">Travel</a> | <a href="http://www.al.com/interact" title="Interact">Interact</a> | <a href="http://www.al.com/jobs" title="Jobs">Jobs</a> | <a href="http://www.al.com/autos" title="Autos">Autos</a> | <a href="http://www.al.com/realestate">Real Estate</a> | <a href="http://realestate.al.com/for-rent/">Rentals</a> | <a href="http://classifieds.al.com">Classified Ads</a> | <a href="http://www.al.com/shopping">Shop</a> | <a href="http://www.al.com/placead">Place an Ad</a>
+
+  </div>
+  <div id="Footer_Zones">
+    <div id="Footer_Zone_A">
+      <ul class="footer_zone_columns">
+        <li><a href="http://photos.al.com/photogallery/">Your Photos</a></li>
+        <li><a href="http://videos.al.com/">Your Videos</a></li>
+        <li><a href="http://www.al.com/blogs">Blogs</a></li>
+
+        <li><a href="http://www.al.com/forums">Forums</a></li>
+        <li><a href="http://www.al.com/travel">Travel</a></li>
+        <li><a href="http://www.al.com/music">Music</a></li>
+      </ul>
+    </div>
+    <div id="Footer_Zone_B">
+      <ul class="footer_zone_columns">
+
+        <li><a href="http://www.al.com/jobs/products/">Post a Job</a></li>
+        <li><a href="http://www.al.com/classifieds/free/">Post a free classified ad</a></li>
+        <li><a href="http://www.al.com/placead">Sell your car</a></li>
+        <li><a href="http://www.al.com/placead">Sell/Rent your Home</a></li>
+        <li><a href="http://realestate.al.com/for-rent">Apartments &amp; Rentals</a></li>
+
+        <li><a href="http://businessfinder.al.com/">Claim your Business Listing for Free</a></li>
+      </ul>
+    </div>
+    <div id="Footer_Zone_C">
+      <ul class="footer_zone_columns">
+        <li><a href="http://www.al.com/business">Alabama Business News</a></li>
+        <li><a href="http://www.al.com/newsflash">US &amp; World News</a></li>
+
+        <li><a href="http://www.al.com/obituaries">Obits / Death Notices</a></li>
+        <li><a href="http://www.al.com/celebrations">Weddings & Celebrations</a></li>
+        <li><a href="http://www.al.com/living">Lifestyle News</a></li>
+        <li><a href="http://www.al.com/good-deals">Good Deals &amp; Frugal Living</a></li>
+      </ul>
+
+    </div>
+    <div id="Footer_Zone_X">
+    	<div class="bkgd_lightgray">
+        <div class="gray_top"><img height="7" width="7" alt="" class="gray_corner" src="http://www.al.com/08design/images/roundcorner_gray_topleft.gif"/></div>
+        <div class="gray_body">
+          <ul class="footer_zone_columns">
+            <li><span><img src="http://www.al.com/08design/images/icon_rss.gif" alt="RSS"/></span><a href="http://www.al.com/rss/">Subscribe to our content (RSS)</a></li>
+            <li><span><img src="http://www.al.com/08design/images/icon_email.gif" alt="Alerts" /></span><a href="http://www.al.com/newsletters/">Newsletters</a> | <a href="http://www.al.com/alerts/">Text alerts</a></li>
+
+            <li><span><img src="http://www.al.com/08design/images/icon_twitter.gif" alt="Twitter Feeds"/></span><a href="http://www.twitter.com/aldotcom/">Follow @aldotcom on Twitter</a></li>
+            <li><span><img src="http://www.al.com/08design/images/icon_facebook.gif" alt="Podcasts" /></span><a href="http://www.facebook.com/aldotcom">Friend al.com on Facebook</a></li>
+            <li><span><img src="http://www.al.com/08design/images/icon_mobile.gif" alt="Mobile"/></span><a href="http://mobile.al.com/">al.com mobile site</a></li>
+          </ul>
+        </div>
+        <div class="gray_bottom"><img height="7" width="7" alt="" class="gray_corner" src="http://www.al.com/08design/images/roundcorner_lightgray_bottomleft.gif"/></div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="FooterSubscribe_Multi">
+  	<div class="subscribe_logo">
+    	<img src="http://www.al.com/08design/images/footer_subscribe.gif" alt="Subscribe" />
+      <span>Special home delivery offers!</span>
+    </div>
+
+    <div id="FooterSubscribe_Newspapers">
+    	<a href="http://ads.advance.net/RealMedia/ads/click_lx.ads/www.al.com/////Click/ALABAMALIVE/AL_FOOTER/footer_bhm.html/" title="Subscribe to The Birmingham News">The Birmingham News</a> | <a href="http://ads.advance.net/RealMedia/ads/click_lx.ads/www.al.com/////Click/ALABAMALIVE/AL_FOOTER/footer_hsv.html/" title="Subscribe to the Huntsville Times">The Huntsville Times</a> | <a href="http://ads.advance.net/RealMedia/ads/click_lx.ads/www.al.com/////Click/ALABAMALIVE/AL_FOOTER/footer_mob.html/" title="Subscribe to the Mobile Press-Register">Mobile Press-Register</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div id="Copyright">&copy; 2011 Alabama Live LLC. All Rights Reserved. Use of this site constitutes acceptance of our <a href="http://www.al.com/useragreement" title="User Agreement">User Agreement</a>. Please read our <a href="http://www.al.com/privacypolicy" title="Privacy Policy">Privacy Policy</a>.<br /> <a href="http://www.al.com/aboutus/index.ssf?/forums/rules.html" title="Community Rules">Community Rules</a> apply to all content you upload or otherwise submit to this site. <a href="http://www.al.com/interactivity/" title="Contact interactivity management">Contact interactivity management</a>.</div>
+</div>
+
+	
+	
+
+
+
+
+	
+		<!-- GEOIP -->
+		<script type="text/javascript" src="http://geoip.al.com/media/js/geoip.js"></script>
+		<script type="text/javascript" >
+		/* <![CDATA[ */
+		GeoIP_Cookie();
+		/* ]]> */
+		</script>
+		<!-- GEOIP END -->
+	
+
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	var tcdacmd="dt";
+	/* ]]> */
+	</script>
+
+	<script type="text/javascript" src="http://an.tacoda.net/an/12326/slf.js"></script>
+
+	<!-- Start SiteCatalyst code -->
+	<script type="text/javascript" src="http://www.al.com/js/sitecatalyst/s_code.js"></script>
+<script type="text/javascript" src="http://www.al.com/js/sitecatalyst/s_code_utils.js"></script>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	/* You may give each page an identifying name, server, and channel on
+	the next lines. */
+	s.pageName=""
+	s.server=""
+	s.channel=""
+	s.pageType=""
+	s.prop1=""
+	s.prop2=""
+	/* Conversion Variables */
+	s.campaign=""
+	s.state=""
+	s.zip=""
+	s.events=""
+	s.products=""
+	s.purchaseID=""
+	s.eVar1=""
+	s.eVar2=""
+	/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+	var s_code=s.t();if(s_code)document.write(s_code)
+	/* ]]> */ 
+	</script>
+	<!-- End SiteCatalyst code version: H.17. -->
+
+	<!-- Begin comScore m:metrics code -->
+	<script type="text/javascript">
+	document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b")
+	+ ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript" src="http://www.al.com/js/comscore/comscore_beacon.js"></script>
+	<script type="text/javascript">getBeacon();</script>
+	<!-- End comScore m:metrics code --> 
+
+
+	
+		
+			<script language="JavaScript" type="text/javascript" src="http://www.al.com/js/microsofttag/action_tag.js"></script> 
+		
+	
+
+<!-- ./templates/global/shared/nav/footer.mtml end -->
+
+		</div>
+		
+		<!-- Quantcast Tag -->
+
+<script type="text/javascript">
+
+var _qevents = _qevents || [];
+
+(function() {
+
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+
+})();
+
+_qevents.push({
+
+qacct:"p-9axVJDmh4EHIM"
+
+});
+
+</script>
+<noscript>
+<div style="display:none;">
+<img src="http://pixel.quantserve.com/pixel/p-9axVJDmh4EHIM.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+
+<!-- End Quantcast tag -->
+		
+		<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script language="JavaScript" type="text/javascript" src="http://media.al.com/static/common/js/nielsen/nielsen.js"></script>
+<noscript>
+<div>
+<img src="http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-403537h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" />
+</div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+	</body>
+</html>

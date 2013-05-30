@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>NUMB3RS Season 2: Episodes--Wolfram Research Math Notes</title>
+<meta name="keywords" content="NUMB3RS,numb3rs,numbers,NUMBERS,CBS,cbs,television,mathematics,math,maths,math consultants,math consulting" />
+
+<meta name="verify-v1" content="Fy7gMTGvaz7ptcr2TFlfYb+Kac2OSI+yARihY/z/5JM=" />
+<meta name="y_key" content="9c1929b8421425a6" />
+<meta name="msvalidate.01" content="B3F425AD1F6A44C8BE6243317633A09D" />
+<script language="javascript" type="text/javascript">AC_FL_RunContent = 0;</script>
+<script language="javascript" type="text/javascript" src="/includes/AC_RunActiveContent.js"></script>
+<script language="javascript" type="text/javascript" src="/includes/wolframFlash.js"></script>
+<script language="JavaScript" type="text/javascript" src="/includes/common.js"></script>
+<script language="JavaScript" type="text/javascript" src="/includes/swfobject.js"></script>
+<script language="JavaScript" type="text/javascript" src="/common/javascript/jquery/core/1.2.6/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/common/javascript/menu.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	load_demos();
+}); 
+
+function load_demos(i) {
+  $('.demo_anim').each(function() {
+	id = $(this).attr('id');
+        demos = id.split('_');
+		demo = demos[2];
+        ep = demos[1];
+	if(demo) {
+		if(swfobject.hasFlashPlayerVersion("8.0.0")) {
+			swfobject.embedSWF('/includes/numbersFrontPageLoader.swf?basename=/'+ep+'/demos/'+demo, id, $(this).width(),$(this).height(),"8.0.0",false,{}, {scale: "noscale",align: "l", salign: "tl"},{});
+		} else {
+			$(this).html('<a href="http://demonstrations.wolfram.com/'+demo+'/"><img src="/'+ep+'/demos/'+demo+'.jpg" alt="'+demo+'" style="border: 0;" /></a>');
+		}
+		$(this).show();
+	};
+  });
+  
+  $('.main_anim').each(function() {
+	id = $(this).attr('id');
+        demos = id.split('_');
+        ep = demos[1];
+	if(ep) {
+		if(swfobject.hasFlashPlayerVersion("8.0.0")) {
+			swfobject.embedSWF('/includes/numbersMainAnimLoader.swf?basename=/'+ep+'/animations/anim', id, $(this).width(),$(this).height(),"8.0.0",false,{}, {wmode: "transparent",scale: "noscale",align: "l", salign: "tl"},{});
+		} else {
+			$(this).html('<img src="/'+ep+'/animations/anim.jpg" alt="'+demo+'" style="border: 0;" />');
+		}
+		$(this).show();
+	};
+  });
+}
+</script>
+<link rel="stylesheet" type="text/css" href="/includes/numbers.css" />
+</head>
+
+<body style="background:url('/images/bg7.jpg') no-repeat #000000;padding:0px;margin:0px;">
+<div id="top" style="margin-left:-60px;margin-top:15px;">
+<noscript>
+<a href="/"><img src="/images/MathBehindNumbers_Static.gif" alt="THE MATH behind NUMB3RS" title="THE MATH behind NUMB3RS" width="946" height="106" border="0" /></a>
+</noscript>
+<script language="JavaScript" type="text/javascript">
+<!--
+if(DetectFlashVer(8, 0, 0) && navigator.platform.indexOf('Linux') == -1) {
+	IncludeFlash(
+		'src', '/includes/NumbersAnimNew2', //do not include .swf extension
+		'width', '946',
+		'height', '106',
+		'id', 'numberTitleFinal',
+		'wmode','transparent',
+	    'scale', 'scale'
+		);
+	} else {
+		var alternateContent = '<a href="/"><img src="/images/MathBehindNumbers_Static.gif" alt="THE MATH behind NUMB3RS" title="THE MATH behind NUMB3RS" width="946" height="106" border="0" /></a>';
+		document.write(alternateContent); 
+	}
+// -->
+</script>
+</div>
+<div class="searchBoxContainer"><div class="red_outlineSearchBox"><div class="searchBox">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr><td>
+<form name="NavBarSearch" action="http://numb3rs.wolfram.com/search/" method="get" accept-charset="UTF-8" onsubmit="if (checkForDefaultInput('query_1', 'SEARCH NUMB3RS')) { return false; }">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="100%">
+    <table class="searchboxborder" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+       <td><input id="query_1" class="searchboxsub" name="query" type="text" value="SEARCH NUMB3RS" onfocus="initTextInput(this,'clear','SEARCH NUMB3RS')" onblur="initTextInput(this,'setDefault','SEARCH NUMB3RS')" /></td>
+      </tr>
+    </table>
+    </td>
+    <td bgcolor="#e8e8e8"><div align="right" style="border-left:1px solid #990000"><img src="/images/searchArrows.gif" width="18" height="19" alt=">>" title=">>" /></div></td>
+  </tr>
+</table>
+</form>
+</td></tr>
+</table>
+</div></div></div>
+<div class="folderlabel"><a href="/"><img src="/images/OriginalMathNotes.gif" alt="Original Math Notes" title="Original Math Notes" width="45" height="223" border="0" /></a></div>
+<div class="episodes"><a href="#" id="btn_analyses" style="outline-style:none; padding-bottom: 5px;"><img src="/images/otherSeasons.gif" width="126" height="22" border="0" alt="Other Seasons" title="Other Seasons" /></a></div>
+<script type="text/javascript" src="/includes/topicsmenu3.js"></script>
+<div style="position: absolute; z-index:111; display: none;" class="topics_menu_child" id="analyses_menu_child">
+  <div class="topics_menu_header" id="analyses_menu_header">
+  <div class="topics_menu_items" style="width:200px; background:url(/images/otherEpisodesBackground.jpg)">
+  <ul class="episodelisting">
+    <li onmouseover="menuItemOver(this);" onmouseout="menuItemOut(this);"><a href="/season1.html">Season 1</a></li>
+    <li onmouseover="menuItemOver(this);" onmouseout="menuItemOut(this);"><a href="/season2.html">Season 2</a></li>
+    <li onmouseover="menuItemOver(this);" onmouseout="menuItemOut(this);"><a href="/season3.html">Season 3</a></li>
+    <li onmouseover="menuItemOver(this);" onmouseout="menuItemOut(this);"><a href="/season4.html">Season 4</a></li>
+    <li onmouseover="menuItemOver(this);" onmouseout="menuItemOut(this);"><a href="/season5.html">Season 5</a></li>
+    <li onmouseover="menuItemOver(this);" onmouseout="menuItemOut(this);"><a href="/season6.html">Season 6</a></li>
+  </ul>
+  </div>
+  </div>
+</div>
+<script type="text/javascript" language="JavaScript">
+	topics_init("btn_analyses", "analyses_menu_child", "analyses_menu_header", 563, 143);
+</script>
+
+<div class="bodycontainer">
+<div class="bodycontainerpadding">
+<div class="bodydiv">
+<!-- end header -->
+
+<!-- End Standard Header ########################################################## -->
+
+<div class="EpisodeNav">
+<a href="/season1.html"><img src="/images/navigation/season_1.png" width="70" height="18" alt="Season 1" title="Season 1" border="0" /></a>
+<img src="images/navigation/divider.png" width="21" height="18" alt="" title="" border="0" />
+<a href="/season3.html"><img src="/images/navigation/season_3.png" width="74" height="18" alt="Season 3" title="Season 3" border="0" /></a>
+<img src="/images/navigation/divider.png" width="21" height="18" alt="" title="" border="0" />
+<a href="/season4.html"><img src="/images/navigation/season_4.png" width="74" height="18" alt="Season 4" title="Season 4" border="0" /></a>
+<img src="/images/navigation/divider.png" width="21" height="18" alt="" title="" border="0" />
+<a href="/season5.html"><img src="/images/navigation/season_5.png" width="74" height="18" alt="Season 5" title="Season 5" border="0" /></a>
+<img src="/images/navigation/divider.png" width="21" height="18" alt="" title="" border="0" />
+<a href="/season6.html"><img src="/images/navigation/season_6.png" width="74" height="18" alt="Season 6" title="Season 6" border="0" /></a>
+</div>
+
+<div style="padding-left:29px;"><div class="episodeIndexHeader"><img src="images/EpisodeIndex2.gif"  alt="Season 2: Episode Index" title="Season 2: Episode Index" /></div>
+<table border="0" cellspacing="0" cellpadding="6" style="margin-top:1px;">
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 201:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Judgment Call</span>
+      <div class="synopsis">Don and Charlie investigate the murder of a judge's wife who was gunned down in her garage. Since she was driving her husband's car, it's unclear whether she was the intended target or her husband, who is currently hearing a death-penalty case involving a local gang leader. As the probe intensifies, Don reconnects with an attractive prosecutor whose life may also be in danger.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/ScatterDiagram.html" target="_blank">scatter plot</a>, Bayesian spam filtering, <a href="http://mathworld.wolfram.com/ConditionalProbability.html" target="_blank">conditional probability</a>, dark matter, decision theory, <a href="http://mathworld.wolfram.com/Pi.html" target="_blank">pi</a>, quantum entanglement, <a href="http://mathworld.wolfram.com/Origami.html" target="_blank">origami</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 202:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Bettor or Worse</span>
+      <div class="synopsis">A woman gives a Beverly Hills jewelry-store owner a note informing him that his wife and daughter have been kidnapped and will die unless he hands over diamonds worth thousands of dollars. He gives them to her, but then she is gunned down by a security guard. The shooting gets Don involved in the case and he enlists Charlie's help in identifying the dead woman through her car's keyless remote.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/CellularAutomaton.html" target="_blank">cellular automata</a>, <a href="http://mathworld.wolfram.com/FareySequence.html" target="_blank">Farey sequence</a>, point spread, <a href="http://mathworld.wolfram.com/PseudorandomNumber.html" target="_blank">pseudorandom numbers</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 203:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Obsession</span>
+      <div class="synopsis">A stalker frightens a popular singer in her Hollywood Hills house, but doesn't harm her. The FBI becomes involved when she reveals a series of threatening letters she's received through the mail. Meanwhile, Charlie analyzes the handwriting from the letters and learns that they are from two different people. Later, a photographer is found dead near the singer's house, and Don believes the man was murdered and that his death is connected to the stalking case.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/Trigonometry.html" target="_blank">trigonometry</a>, curvelet analysis, forensic information system for handwriting (FISH), <a href="http://mathworld.wolfram.com/SphericalTrigonometry.html" target="_blank">spherical trigonometry</a>, <a href="http://mathworld.wolfram.com/ArtGalleryTheorem.html" target="_blank">art gallery problem</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 204:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Calculated Risk</span>
+      <div class="synopsis">The star witness in a federal stock-fraud case against the CEO of a now bankrupt major corporation is gunned down in her house before she can testify. The victim was the company's chief financial officer and her testimony was likely to bring down the CEO and other corporate executives. The only witness to the murder is the woman's 11-year-old son, who is in shock and is reluctant to talk.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/ConditionalProbability.html" target="_blank">conditional probability</a>, decision tree, <a href="http://mathworld.wolfram.com/CompoundInterest.html" target="_blank">compound interest</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 205:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Assassin</span>
+      <div class="synopsis">Don and Charlie try to unravel an assassination plot to be carried out on U.S. soil. They get wind of the plan after a forger is arrested and Charlie decodes a notebook found in the forger's apartment. The investigation leads to the son of a slain Colombian leader.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used: </span><br />transposition cipher, <a href="http://mathworld.wolfram.com/GameTheory.html" target="_blank">game theory</a>, paper plane</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+</table>
+
+</div>
+<div style="background-color:white;">
+<div style="padding-left:29px;">
+
+<table width="100" border="0" cellpadding="6" cellspacing="0">
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 206:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Soft Target</span>
+      <div class="synopsis">A toxic gas is released on a Los Angeles subway during an antiterrorism drill run by the Department of Homeland Security.  Don must determine whether it was an accident or a legitimate attack before more drills are carried out over the next few days in various locations across the U.S. Back at home, old wounds are reopened between Don and Charlie when they learn that a girl they fought over in high school is going to use their dad's house for her wedding.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/PercolationTheory.html" target="_blank">percolation theory</a>, diffusion, <a href="http://mathworld.wolfram.com/LinearDiscriminantAnalysis.html" target="_blank">linear discriminant analysis</a>, <a href="http://mathworld.wolfram.com/LatticePoint.html" target="_blank">lattice points</a>, Gaussian dispersion model, Faraday's law of induction</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 207:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Convergence</span>
+      <div class="synopsis">Don investigates a series of home invasions in which the thieves steal only high-end items from wealthy individuals. In the latest robbery, a father is killed trying to protect his family. Meanwhile, Charlie becomes upset when a rival theoretician challenges his most famous work and states that it is flawed. Back at home, Alan prepares to open his own consulting business.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/GroupTheory.html" target="_blank">group theory</a>, data mining, <a href="http://mathworld.wolfram.com/FourierSeries.html" target="_blank">Fourier analysis</a>, calendars, three-dimensional trilateration, <a href="http://mathworld.wolfram.com/SetTheory.html" target="_blank">set theory</a>, projectile motion</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 208:</span><br />
+      <span class="EpisodeTitle_ComingSoon">In Plain Sight</span>
+      <div class="synopsis">Megan feels responsible for an agent's death following an explosion at a house where methamphetamine is being illegally produced that the FBI targeted for a bust. While several men are arrested in the raid, the kingpin gets away and it's discovered that he may also be involved in child pornography. When Charlie learns this and sees a disturbing picture of a young girl at the raid site, he becomes obsessed with finding her.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        flock behavior, steganography, <a href="http://mathworld.wolfram.com/Matrix.html" target="_blank">matrices</a>, <a href="http://mathworld.wolfram.com/Error-CorrectingCode.html" target="_blank">error-correcting codes</a>, self-organizing systems</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 209:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Toxin</span>
+      <div class="synopsis">Don learns that someone is poisoning non-prescription drugs made by a leading pharmaceutical company after four people nearly die from the tampering. The perpetrator then publishes a manifesto in a local paper that leads Don to believe that the person may be a former employee of the drug company. Later, Larry shares his theory of the case with Megan and he discovers that he's attracted to her.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/InformationTheory.html" target="_blank">information theory</a>, <a href="http://mathworld.wolfram.com/Entropy.html" target="_blank">information entropy</a>, <a href="http://mathworld.wolfram.com/GraphTheory.html" target="_blank">graph theory</a>, <a href="http://mathworld.wolfram.com/KoenigsbergBridgeProblem.html" target="_blank">K&ouml;nigsberg&nbsp;bridge&nbsp;problem</a>, <a href="http://mathworld.wolfram.com/Bubble.html" target="_blank">soap bubble theory</a>, <a href="http://mathworld.wolfram.com/SteinerTree.html" target="_blank">Steiner tree</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 210:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Bones of Contention</span>
+      <div class="synopsis">A woman researcher who specializes in Native American antiquities is attacked and killed at the museum where she works. The museum is located on federal land, so the FBI is called in. Don's investigation reveals that the woman was working late at night on a secret project that involved the carbon dating of an object. Back at home, Don and Charlie become worried about their dad after they learn that he is still holding on to his late wife's clothes, which he supposedly gave away months ago.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/ExponentialDecay.html" target="_blank">exponential decay</a>, <a href="http://mathworld.wolfram.com/VoronoiDiagram.html" target="_blank">Voronoi diagram</a>, radiocarbon dating, liquid&nbsp;nitrogen&nbsp;ice&nbsp;cream</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 211:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Scorched</span>
+      <div class="synopsis">An arsonist believed to be part of an extremist environmental group sets a fire at a car dealership that kills a salesman. The group's name is spray painted at the scene. It's the fourth such fire, but the first to claim a life. The activist group denies setting the blazes, which leaves Don with the task of determining whether it or someone else is responsible.  Charlie tries to figure out if there is a pattern to the fires that would help provide a profile of the arsonist.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used: </span><br />combustion, <a href="http://mathworld.wolfram.com/Diffie-HellmanProtocol.html" target="_blank">Diffie-Hellman encryption</a>, Pascal's principle, principal&nbsp;components&nbsp;analysis</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 212:</span><br />
+      <span class="EpisodeTitle_ComingSoon">The O.G.</span>
+      <div class="synopsis">An FBI agent working undercover as a gang member is gunned down in a parking lot by a drive-by shooter. Don and Charlie try to determine whether the agent's cover was blown or if he was killed for another reason. Their investigation reveals that the shooting may be linked to other murders in the area. Back at home, Alan prepares to go out on a date and he asks his sons for advice.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br /> <a href="http://mathworld.wolfram.com/PoissonDistribution.html" target="_blank">Poisson distribution</a>, courtship modeling, Poisson clumping heuristic, <a href="http://mathworld.wolfram.com/SocialNetworkTheory.html" target="_blank">social&nbsp;network&nbsp;analysis</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 213:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Double Down</span>
+      <div class="synopsis">A Russian student at a local college is robbed and shot to death in the parking garage of a gambling club after winning big at blackjack. In the victim's car, Don discovers a notebook containing card-counting calculations. The investigation reveals that the dead man was part of a team that cheated at cards and that his teammates may be in danger. Later, Larry admits that he was once addicted to gambling.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br /> <a href="http://mathworld.wolfram.com/BallPicking.html" target="_blank">sampling without replacement</a>, <a href="http://mathworld.wolfram.com/TimeSeriesAnalysis.html" target="_blank">time series analysis</a>, randomization, fluid&nbsp;dynamics, card counting, shuffle tracking, constrained&nbsp;system&nbsp;dynamics, exploding soda bottle experiment</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 214:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Harvest</span>
+      <div class="synopsis">A southeast Asian teen is found in the blood-spattered basement of an old downtown hotel, where she was apparently being tortured. But the investigation soon reveals that the girl, along with three other missing women, are victims of a black-market organ-harvesting scheme. Don and Charlie try to find the remaining women before their organs are taken. Amita also helps out by communicating with the teen, who is from the same area of India where Amita's family once lived.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br /> <a href="http://mathworld.wolfram.com/MarkovChain.html" target="_blank">Markov chain</a>, <a href="http://mathworld.wolfram.com/Ellipse.html" target="_blank">ellipses</a>, surface tension, genetic variation</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 215:</span><br />
+      <span class="EpisodeTitle_ComingSoon">The Running Man</span>
+      <div class="synopsis">A DNA synthesizer that has the capability of customizing diseases is stolen from the campus where Charlie teaches. Don fears the thieves may be terrorists out to start or advance a bio-warfare program. He also believes the theft was an inside job and the chief suspect is one of Larry's top students. Back at home, Charlie discovers that his late mother was once a gifted musician.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br /> <a href="http://mathworld.wolfram.com/BenfordsLaw.html" target="_blank">Benford's law</a>, <a href="http://mathworld.wolfram.com/ContinuedFraction.html" target="_blank">continued fractions</a>, astronomy, phases of matter, LIGO, <a href="http://mathworld.wolfram.com/Probability.html" target="_blank">probability</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 216:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Protest</span>
+      <div class="synopsis">A pedestrian is killed when a homemade bomb explodes under a car outside of a downtown Army recruiting center. The investigation reveals that a similar bombing occurred exactly 35 years ago at an ROTC office that killed two people. The bomber was identified but never captured. A retired agent who worked the first crime is brought in to help with the new case, and Don must determine whether the original bomber has resurfaced or if a copycat is responsible.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br /> <a href="http://mathworld.wolfram.com/GraphTheory.html" target="_blank">graph theory</a>, <a href="http://mathworld.wolfram.com/RamseyNumber.html" target="_blank">Ramsey numbers</a>, <a href="http://mathworld.wolfram.com/RecursiveSequence.html" target="_blank">recursive sequences</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 217:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Mind Games</span>
+      <div class="synopsis">The bodies of three illegal-immigrant women are found on government-owned land in a wilderness area. Don investigates and learns that a psychic led the police to the crime scene after allegedly seeing visions of the bodies. The probe also reveals that the women were cut open and that religious artifacts were spread around their remains. When Charlie learns that a psychic is helping with the case, he is outraged and sets out to prove the man is a fraud.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        Fokker-Planck equation, <a href="http://mathworld.wolfram.com/BinomialTheorem.html" target="_blank">binomial theorem</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 218:</span><br />
+      <span class="EpisodeTitle_ComingSoon">All's Fair</span>
+      <div class="synopsis">An Iraqi woman visiting the U.S. to participate in a documentary about women's rights in Muslim countries is murdered outside of her cousin's apartment building. The investigation reveals that the killer wore U.S. Army boots and committed the crime with an Army knife. Also, Charlie's former girlfriend arrives from London on a book tour, and their relationship heats up faster than either one of them anticipated.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        density, <a href="http://mathworld.wolfram.com/Sudoku.html" target="_blank">sudoku</a>, logistic regression, <a href="http://mathworld.wolfram.com/GameTheory.html" target="_blank">game theory</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 219:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Dark Matter</span>
+      <div class="synopsis">Two gunmen kill 7 students and a teacher, and wound 12 other people during a shooting spree at a high school. One of the gunmen is a fellow student who is gunned down during the attack. During the investigation, Charlie uses a tracking system to pinpoint the shooters' movements and concludes that a third shooter may have been involved. Also, Larry asks Megan out to dinner, but their time is spent mostly talking about the shootings.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used: </span><br />RFID, <a href="http://mathworld.wolfram.com/OptimizationTheory.html" target="_blank">optimization theory</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 220:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Guns and Roses</span>
+      <div class="synopsis">A female federal agent who was once romantically involved with Don apparently commits suicide, but Don suspects she may have been murdered. Charlie joins the case and tries to determine the likelihood of the woman killing herself. The probe reveals that the victim was suffering from depression and that her marriage was in trouble. She had also been investigating a series of armed robberies that could possibly be linked to her death.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used: </span><br />echolocation, Holmes-Rahe scale, Doppler effect, biomathematics</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 221:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Rampage</span>
+      <div class="synopsis">A real-estate broker disarms an agent and goes on a shooting spree through FBI headquarters. During the rampage, two agents are wounded and a convicted sex offender, who was being questioned in the beating of a teenage girl, is killed. Also, Charlie is nearly hit with a bullet and later has difficulty shaking the experience. The investigation reveals that more than one person may be involved and that another shooting may be planned.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/Chaos.html" target="_blank">chaos theory</a>, Brownian motion, self-organized criticality, <a href="http://mathworld.wolfram.com/VennDiagram.html" target="_blank">Venn diagrams</a>, <a href="http://mathworld.wolfram.com/Tesseract.html" target="_blank">tesseract</a>, <a href="http://mathworld.wolfram.com/Hypercube.html" target="_blank">hypercube</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 222:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Backscatter</span>
+      <div class="synopsis">Don's checking and savings accounts are wiped out by computer hackers after he nabs part of a team involved in credit-card scams. The two arrested men claim they were forced to work for some Russian men who may be connected to the mob. It quickly becomes clear that the mobsters are after Don, which makes him fearful that Charlie and his dad may also become targets.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        explicit functions, <a href="http://mathworld.wolfram.com/ImplicitFunction.html" target="_blank">implicit functions</a>, <a href="http://mathworld.wolfram.com/GeometricProgression.html" target="_blank">geometric progression</a>, <a href="http://mathworld.wolfram.com/ExponentialGrowth.html" target="_blank">exponential&nbsp;growth</a>, <a href="http://mathworld.wolfram.com/IntegerSequence.html" target="_blank">integer sequences</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 223:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Undercurrents</span>
+      <div class="synopsis">The bodies of four Asian women wash up on shore following a storm, and a fifth woman is found alive floating in the water. An autopsy reveals that one of the victims has the bird-flu strain in her body, and Don worries there could be a pandemic if she came in contact with anyone else. Meanwhile, Charlie studies ocean currents in an attempt to determine where the girls may have fallen into the water, while Amita gives Charlie some surprising news.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br /> <a href="http://mathworld.wolfram.com/Encoding.html" target="_blank">encoding</a>, <a href="http://mathworld.wolfram.com/VectorField.html" target="_blank">vector fields</a>, kinematics, <a href="http://mathworld.wolfram.com/EuclideanSpace.html" target="_blank"><i>n</i>-dimensional space</a>, <a href="http://mathworld.wolfram.com/StrangeLoop.html" target="_blank">strange loop</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><div class="line"><img src="images/section_background.gif" alt="" title="" width="500" height="10" /></div></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="/images/thumbs/EpisodeComingSoon.jpg" width="126" height="139" alt="Coming Soon..." title="Coming Soon..." border="0" /></td>
+    <td valign="top" class="paddingLeft15px"><span class="EpisodeNumber">Episode 224:</span><br />
+      <span class="EpisodeTitle_ComingSoon">Hot Shot</span>
+      <div class="synopsis">Don investigates the murders of two young women found slumped over in their cars outside of their respective homes. The deaths were made to look like drug overdoses, but Don realizes that a serial killer is at work. Meanwhile, Charlie has bizarre dreams about his parents. In one of them, Charlie's deceased mother appears and tells him that he has a question to ask her, but he can't think what it could possibly be.</div>
+      <div class="MathUsed"><span class="MathUsedTitle">Math used:</span><br />
+        <a href="http://mathworld.wolfram.com/DirectedGraph.html" target="_blank">directed graph</a>, <a href="http://mathworld.wolfram.com/NetworkFlow.html" target="_blank">network flow</a>, parabolic equations, <a href="http://mathworld.wolfram.com/Probability.html" target="_blank">probability</a>, kernel&nbsp;density&nbsp;estimation, trajectory</div>
+    </td>
+  </tr>
+</table>
+
+
+<div class="Section3" style="margin-top:2px; margin-bottom:69px;line-height:1.8em;">
+<img src="images/additionalMaterial.gif" alt="Additional Material" title="Additional Material" width="188" height="17" vspace="7" /><br />
+<a href="http://www.wolfram.com" target="_blank">More about Wolfram Research</a><br />
+<a href="http://www.wolfram.com/products/mathematica/" target="_blank">More about <i>Mathematica</i></a><br />
+<a href="http://www.stephenwolfram.com" target="_blank">About Stephen Wolfram, founder of Wolfram Research</a><br />
+<a href="http://www.wolfram.com/webresources.html" target="_blank">Wolfram Web Resources</a></div></div>
+<!-- end body ########################################################## -->
+&nbsp;</div></div></div></div>
+<!-- Begin Sidebar ########################################################## -->
+<div class="cbslink"><a href="http://www.cbs.com/primetime/numb3rs/" target="_blank"><img src="/images/cbs_link.gif" alt="CBS: NUMB3RS | fridays 10pm et/pt" title="CBS: NUMB3RS | fridays 10pm et/pt" width="143" height="29" border="0" /></a></div>
+<div class="WolframCard">
+<a href="/wolfram.html"><img src="/images/WolframResearch_card.jpg" width="304" height="184" 
+  title="Wolfram Research: Creators of Mathematica, Leaders in Math &amp; Computation--The official math brain trust behind NUMB3RS"
+  alt="Wolfram Research: Creators of Mathematica, Leaders in Math &amp; Computation--The official math brain trust behind NUMB3RS" border="0" /></a></div>
+<div class="sidebar">
+<div style="margin:45px 0px 15px 1px;"><img src="/images/SideBarMenu.jpg" alt="Wolfram Demonstrations Project, Wolfram MathWorld, Wolfram Mathematica"
+  title="Wolfram Demonstrations Project, Wolfram MathWorld, Wolfram Mathematica" border="0" usemap="#Map" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+<area shape="rect" coords="5,8,208,65" href="http://demonstrations.wolfram.com/" target="_blank" alt="See the latest math in action--Wolfram Demonstrations Project" title="See the latest math in action--Wolfram Demonstrations Project" />
+<area shape="rect" coords="6,111,209,151" href="http://mathworld.wolfram.com/" target="_blank" alt="The world's #1 math information website--MathWorld" title="The world's #1 math information website--Wolfram MathWorld" />
+<area shape="rect" coords="12,204,225,243" href="http://www.wolfram.com/mathematica/" target="_blank" alt="The world's leading technical software system--Wolfram Mathematica" title="The world's leading technical software system--Wolfram Mathematica" />
+<area shape="rect" coords="84,243,223,257" href="http://www.wolfram.com/mathforstudents/" target="_blank" alt="&amp; Mathematica for Students" title="&amp; Mathematica for Students" />
+</map></div>
+</div>
+<!-- end sidebar -->
+<!-- begin foooter -->
+<div class="background_footer">
+<div class="pageimage"><img src="/images/page-footer-image.gif" width="614" height="27" alt="" title="" /></div>
+
+<div class="copyright">&copy; 2007-2010 <a href="http://www.wolfram.com" class="whitelink">Wolfram Research, Inc.</a><span class="greyText"> | </span>
+<a href="mailto:numb3rs@wolfram.com" class="whitelink">Contact the Wolfram NUMB3RS Team</a> <span class="greyText"> | </span>
+<a href="http://www.wolfram.com/company/terms.html" class="whitelink">Terms of Use</a><span class="greyText"> | </span>
+<a href="http://www.wolfram.com/company/privacypolicy.html" class="whitelink">Privacy Policy</a><br />
+
+<span class="greyText">Script segments &copy; 2007-2010 CBS Paramount Network Television</span></div>
+<div style="padding-top:80px;padding-bottom:20px;">&nbsp;</div>
+</div>
+</body>
+</html>

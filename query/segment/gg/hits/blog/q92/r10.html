@@ -1,0 +1,891 @@
+
+
+<!--script src="/ADL_script.js" language="javascript"></script-->
+
+<script language="JavaScript">
+	var offsetX = 0;
+	var offsetY = 0;
+	var selectedObj;
+	var frontObj;
+
+	document.onmousedown = engage;
+	document.onmouseup = release;
+
+	function bringToFront(obj) {
+		if (frontObj) {
+			frontObj.style.zIndex = 0
+		}
+		frontObj = obj
+		frontObj.style.zIndex = 1
+	}
+
+	function shiftTo(obj, x, y) {
+		obj.style.pixelLeft = x
+		obj.style.pixelTop = y
+	}
+
+	function setSelectedObj() {
+		var imgObj = window.event.srcElement
+		if (imgObj){
+		if (imgObj.id.indexOf("map") == 2) {
+			selectedObj = imgObj
+			return
+		}
+		selectedObj = null
+		}
+		return
+	}
+
+	function dragIt() {
+		if (selectedObj) {
+			shiftTo(selectedObj, (event.clientX - offsetX), (event.clientY - offsetY))
+			shiftTo(document.all["divWBC"], (event.clientX - offsetX), (event.clientY - offsetY))
+			return false
+		}
+	}
+
+	function engage() {
+		setSelectedObj()
+		if (selectedObj) {
+			document.onmousemove = dragIt
+			offsetX = window.event.offsetX - document.body.scrollLeft
+			offsetY = window.event.offsetY - document.body.scrollTop
+		}
+	}
+
+	function release() {
+		if (selectedObj) {
+			document.onmousemove = null
+			selectedObj = null
+		}
+	}
+
+	function showHand(){
+
+	}
+
+	function hideHand(){
+
+	}
+	
+	//function LoadPage( link ) {
+ 		//window.close();
+       //     	parent.window.opener.location = link;
+	//}
+
+
+	
+	
+		 //Revised by Patrick
+		function LoadPage( link ) 
+		{
+  		if (window.opener && !window.opener.closed)
+			{
+				//
+    			parent.window.opener.location = link;
+  				//window.close();
+				self.blur()
+				parent.window.opener.focus()
+ 		 	}
+  		else
+			{
+			document.location = link
+		}
+	}
+	
+	
+	
+	function timeOffset()
+	{
+	var offSet;
+	var localDate = new Date();
+	offSet = localDate.getTimezoneOffset() / 60;
+	return offSet;
+	}
+
+</script>
+
+
+
+
+<!-- returns offset of hours from GMT timezone -->
+
+
+
+
+<!--- DisplayBreakingNews2 Function with redesigned table layout --->
+
+
+
+
+
+<!------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<HEAD>
+
+<META name="publication_date" content="2010-10-11">
+<META HTTP-EQUIV='expires' CONTENT='0'>
+<META HTTP-EQUIV='Pragma' CONTENT='no-cache'>
+<meta name="DESCRIPTION" content="New York, NY, October 11, 2010  The Anti-Defamation League (ADL) today called on the government of Israel to extend a proposed amendment to the citizenship law to cover all immigrants seeking citizenship.">
+<meta name="KEYWORDS" content="israel, law of return, citizenship, immigrant, immigration, israeli, jewish, jewish state, jew, muslim, arab, citizen, netanyahu, israeli cabinet">
+<META Name='Category' Content='Press Release'>
+
+
+<TITLE id="strTitle">ADL Calls on Israeli Government to Extend Amendment to All Immigrants Seeking Citizenship</TITLE>
+	
+<link REL=stylesheet TYPE="text/css" HREF="/ADL_Main_new.css">
+<script src="/ADL_script.js" language="javascript"></script>
+
+<!-- Inserted by Content Management Server: BEGIN EmbedTmplHeadHook -->
+
+		<link rel="stylesheet"
+				href="/NR/System/WBC/Customizable/WBC.css">
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/WBCFuncPagesConfig/UIStringConstants/JavaScriptUIStrings.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/OptionsClient.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Dates.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Windows.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/CommonClient.js"
+				type="text/javascript"></script>
+	<META name="ROBOTS" content="FOLLOW,INDEX">
+
+<!-- Inserted by Content Management Server: END EmbedTmplHeadHook -->
+</head>
+
+<body bgcolor="#ffffff" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyBeginHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyBeginHook -->
+
+<font face="Arial, Helvetica, sans-serif" size="2">
+<!-- Start Table #1 -  Navigation Table -->
+ <!--Start Top SEction with Navigation -->
+<table cellspacing="0" cellpadding="0" width="750" border="0">  
+<tr>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" width="750" align="left" border="0" valign="top">
+<tr>
+<td colspan="6"><img src="/images/redesign/top_slogan_750.gif" alt="To stop the defamation of the Jewish people... to secure justice and fair treatment to all" height="29" width="750" style="margin-top: 15px; border: none;" />
+</td></tr>
+<tr>
+<td valign="top">
+<a href="http://www.adl.org/?s=topmenu"><img src="/images/redesign/logo_adl.gif" alt="Anti-Defamation League" border="0" ></a></td>
+<td valign="top"  align="right"><a href="http://www.adl.org/about.asp?s=topmenu"><img src="/images/redesign/about_adl_sm.gif" alt="ABOUT ADL" border="0" /></a></td>
+<td valign="top" align="right"><a href="http://regions.adl.org/?s=topmenu"><img src="/images/redesign/find_local_sm.gif" alt="FIND YOUR LOCAL ADL" border="0" /></a></td>
+<td valign="top"  align="right"><a href="http://www.adl.org/donations.asp?s=topmenu"><img src="/images/redesign/donate_sm.gif" alt="DONATE" border="0" /></a>
+</td>
+<td valign="top"  align="right"><a href="http://www.adl.org/contact_us.asp?s=topmenu"><img src="/images/redesign/contact_us_sm.gif" alt="CONTACT US" border="0" /></a>
+</td>
+<td valign="top" align="right"><a href="http://www.adl.org/press-center.asp?s=topmenu"><img src="/images/redesign/press_center_sm.gif" alt="PRESS CENTER" border="0" /></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td colspan="3">
+		
+
+<!-- Start Table #2 - Body Table -->
+<table width="750" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<!-- Spacer Gif -->
+<script language="JavaScript" type="text/javascript">
+		<!--
+        if ((navigator.appName == "Netscape") && (navigator.appVersion < "5")){
+		document.write('<td bgcolor="#e1e0a6"><img src="/images/spacer_tr.gif" width="2" height="1" border="0" alt=""></td>');
+		document.close();
+		}
+		// -->
+</script> 
+	 
+	 
+	 <script language="JavaScript">
+<!--
+function News_expandIt(whichEl){
+    whichEl.style.display = (whichEl.style.display == "none" ) ? "" : "none";
+	whichIm = event.srcElement;
+	whichIm.src = (whichEl.style.display == "none" ) ? "http://www.adl.org/images_cms/arrow_up.gif" : "http://www.adl.org/images_cms/arrow_down.gif";
+	}
+// --></script>
+	 
+	 
+	 
+<!-- Column #1 -- Start of Table of Contents -->	
+<td width="100" bgcolor="#f9f8d5" align="left" valign="top" class="yellowcol">
+
+	   
+</td>
+</TR>
+
+<TR><!-- Start column one -->
+<TD valign="top">
+
+
+ <!--Start Include -->
+
+
+ 
+
+<a href="/main_arab_world"></a>
+<a href="/main_anti_semitism_International"></a>
+<a href="/main_anti_semitism.asp"></a>
+<a href="/anti_semitism_domestic"></a>
+
+
+<a href="/civil_rights"></a>
+<a href="/civil_rights/ab"></a>
+
+<a href="/combating_hate"></a>
+<a href="/learn/hate_crimes_laws/map_frameset.html"></a>
+<a href="/hate_symbols/"></a>
+
+<a href="/education"></a>
+
+<a href="/a_world_of_difference"></a>
+<a href="/education/miller"></a>
+<a href="/education/default_campus.asp"></a>
+<a href="/bibliography"></a>
+<a href="/education/curriculum_connections/"></a>
+<a href="/education/combat/default_combat_as.asp"></a>
+<a href="/education/edu_holocaust/default_holocaust.asp"></a>
+<a href="/education/default_advocacy.asp"></a>
+
+<a href="/main_Extremism"></a>
+<a href="/main_Extremism"></a>
+<a href="/learn/ext_us/"></a>
+<a href="/nation_of_islam/"></a>
+<a href="/Terror/tu/tu_current.asp"></a>
+<a href="/learn/Events_2001/events_2003_flashmap.asp"></a>
+
+
+<a href="/holocaust"></a>
+<a href="/education/edu_holocaust/default_holocaust.asp"></a>
+<a href="http://www.echoesandreflections.org"></a>
+<a href="/dimensions/default.asp"></a>
+<a href="/education/edu_holocaust/courage_to_care.asp"></a>
+<a href="/hidden/default.asp"></a>
+
+<a href="/interfaith"></a>
+
+<a href="/international_affairs"></a>
+<a href="/international_affairs"></a>
+<a href="/osce/"></a>
+
+<a href="/internet_rumors"></a>
+
+<a href="/israel"></a>
+<a href="/israel"></a>
+<a href="/israel/advocacy/"></a>
+<a href="/Israel/israel_attacks.asp"></a>
+<a href="/main_israel/anti-israel-protests_2005.asp"></a>
+<a href="/adl_israel"></a>
+
+<a href="/learn"></a>
+<a href="/learn/adl_law_enforcement/default.htm?LEARN_Cat=Training&LEARN_SubCat=Training_News"></a>
+<a href="/learn/extremism_in_the_news/Learn_Breaking_News.htm?LEARN_Cat=Extremism&LEARN_SubCat=Extremism_in_the_News"></a>
+<a href="/learn/Events_2001/events_2003_flashmap.asp?LEARN_Cat=Extremism&LEARN_SubCat=Upcoming_Extremist_Events"></a>
+<a href="/learn/ext_us/default.asp?LEARN_Cat=Extremism&LEARN_SubCat=Extremism_in_America"></a>
+<a href="/learn/safety/"></a>
+
+
+<a href="/religious_freedom"></a>
+<a href="/issue_religious_freedom/religious_ac/accommodation_QA.asp"></a>
+<a href="/issue_education/december_dilemma2.asp"></a>
+<a href="/issue_religious_freedom/create/creationism2.asp"></a>
+<a href="/10comm/intro.asp"></a>
+
+<a href="/security"></a>
+
+
+
+<a href="/main_Terrorism"></a>
+<a href="/terrorism/symbols/default.asp"></a>
+<a href="/learn/default.htm"></a>
+<a href="/terrorism/terrorism_update_archive.asp"></a>
+<!-- End Include -->
+<div class="no_print">
+
+<table cellspacing="0" border="0" cellpadding="0" width="138">
+
+<tr>
+<td colspan="2" bgcolor="ffffff" ><img src="/redesign/main/images_new/elements/h_search.gif"></td></tr>
+<tr>				 
+<td width="2" bgcolor="cccccc"><img width="4" src="/redesign/main/images_new/elements/spacer.gif"></td>
+<td align="center" bgcolor="cccccc">
+<form name="gs" method="GET" action="http://search.adl.org/search">
+<!--form name="gs" method="GET" action="/search/search_google.asp" -->
+                  <table cellpadding="0" cellspacing="0">
+                     <tr>
+                        <td valign="middle" align="left"><font size="-1">
+						<INPUT TYPE="TEXT" NAME="q" id="q" VALUE="" SIZE="14" CLASS="adl_search_box" maxlength="100" onFocus="if(this.value=='SEARCH') {this.value='';}" onBlur="if(this.value==''){this.value='SEARCH';}">
+                            </font></td>
+                        <!--td valign="middle"><font size="-1">&nbsp;<input type="submit" name="btnG" value="G0!"></font></td-->
+<td valign="top" align="center" width="50"  bgcolor="cccccc"><input type="image" src="/redesign/main/images_new/Elements/b_search_go.gif"  border=0 alt=Search>
+                     </tr>
+                  </table>
+                  <input type="hidden" name="ie" value="">
+                  <input type="hidden" name="site" value="adl">
+                  <input type="hidden" name="output" value="xml_no_dtd">
+                  <input type="hidden" name="client" value="adl">
+                  <input type="hidden" name="lr" value="">
+                  <input type="hidden" name="proxystylesheet" value="adl">
+                  <input type="hidden" name="oe" value="">
+</form></td>
+</tr>			
+</table>
+
+</div>
+
+
+<div class="no_print">
+<table cellpadding="0" cellspacing="0" border="0" width="138">
+
+
+<tr>
+<td bgcolor="#ffffff" valign="top"><IMG height=3
+src="/redesign/main/images_new/Elements/spacer.gif" border="0" width=30></td>
+</tr>
+<!--<tr>
+<td bgcolor="#ffffff" align="center"><font color="#000000"><b>ADL <i>in</i> ACTION</b></font></td>
+</tr>-->
+</table>
+
+	</div>
+<SCRIPT type=text/javascript>
+function Go(){return}
+</SCRIPT>
+<SCRIPT src="/scripts/ADL_flyoutmenu_var_created_test7a.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="/scripts/ADL_flyoutmenu_com2.js" 
+type=text/javascript></SCRIPT>
+
+
+<IMG height=417 alt="" src="/redesign/main/images_new/Elements/spacer.gif" width=6 border=0><br />
+
+
+<!--table border="0" width="138" cellspacing="0" valign="top" cellpadding="0">
+
+<tr>
+<td valign="top">
+<a href="/immigrants"><img src="/images/nation_of_immigrants.jpg" alt=""  border="0"></a></td>
+</tr></table-->
+
+
+<!-- End Include -->
+
+<!--ADL Newsletter include -->
+<a href="http://support.adl.org/site/PageServer?pagename=quickreg"><img src="/images/redesign/banner_sign_up.gif" width="138" height="123" alt="Sign Up For One Of Our Newsletters"  border="0" vspace="12" /></a>
+
+<!--a href="http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=10657" target="_blank"><img src="/images/CN/charitynav_125x125.gif" width="125" height="125" border="0" hspace="6" alt="Four Star Charity" /></a-->	
+</td>  
+	  
+<!-- Column #2 - Body Section-->
+<td align="left" valign="top" width="475" bgcolor="#ffffff">		
+	<table border="0" cellspacing="0" cellpadding="0" align="center" width="100%">
+	<tr>
+	<!-- Spacer Gif -->
+	<script language="JavaScript" type="text/javascript">
+	<!--
+	if ((navigator.appName == "Netscape") && (navigator.appVersion < "5")){
+	document.write('<td bgcolor="#e1e0a6" rowspan="2"><img src="/spacer_tr.gif" width="2" height="1" border="0" alt=""></td>');
+	document.close();
+	}
+	// -->
+	</script>
+	</tr>
+			
+	<tr>
+	<td align="center">
+		
+		
+	
+		<TABLE WIDTH="400" CELLPADDING="5" CELLSPACING="0" BORDER="0">
+		<TR>
+		<TD class="bk12">Press Release</TD><TD ALIGN="RIGHT" class="bk12">Israel / Middle-East</TD>
+		</TR>
+		
+		<TR>
+		<TD COLSPAN="2"><IMG SRC="/pix_black.gif" WIDTH=390 HEIGHT=1 ALT="RULE" BORDER="0" VSPACE="0"></TD>
+		</TR>
+		
+		<TR>
+		<TD colspan="2" class="bk10">
+
+		<font size="5" color="#FF0000"></font>
+		
+		<span class="blue16b">ADL Calls on Israeli Government to Extend Amendment to All Immigrants Seeking Citizenship</span>
+		
+		<br><br>
+		
+		<P><FONT size=2 face=Arial>New York, NY, October 11, 2010  The Anti-Defamation League (ADL) today called on the government of Israel to extend a proposed amendment to the citizenship law to cover all immigrants seeking citizenship.</FONT></P>
+<P><FONT size=2 face=Arial>Under the 1952 Citizenship Law, naturalized immigrants currently declare:&nbsp; " I will be a loyal national of the State of Israel."&nbsp; A similar declaration is not required of those seeking citizenship under Israel's Law of Return.&nbsp; The amendment approved by the Cabinet adds the words:&nbsp; "as a Jewish and democratic state, and I promise to honor the laws of the state."</FONT></P>
+<P><FONT size=2 face=Arial>Abraham H. Foxman, ADL National Director, issued the following statement:</FONT></P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P><FONT size=2 face=Arial>In the spirit of Israel's founding principles of equality, we urge Israel's government to adopt further modifications to the proposed amendment to the citizenship law so it will apply to all immigrants to Israel, including those entering under the law of return.&nbsp; Many countries around the world, including the United States, require new citizens to take such oaths of allegiance to their new country.</FONT></P>
+<P><FONT size=2 face=Arial>If Israel revises its current law, it is appropriate that it apply to everyone seeking to become a citizen of Israel.</FONT></P></BLOCKQUOTE><br>
+		
+	
+<table width="100%" border="1" cellspacing="0" cellpadding="5" align="center" bordercolor="#efefef">
+<tr>
+<td align="center">
+<P align=center>Like what you read here? <BR><A href="http://support.adl.org/site/PageNavigator/Headlines_Signup"><FONT color=#000080>Sign up</FONT></A> to receive <EM>HeADLines</EM>, the League's weekly e-newsletter.</P>
+</td>
+</tr>
+</table>
+
+
+		
+		<!-- FOOTER -->
+		<p><I>The Anti-Defamation League, founded in 1913, is the world's leading organization fighting anti-Semitism through programs and services that counteract hatred, prejudice and bigotry.</I></p><br><br>
+		</font>
+		</TD>
+		</TR>
+		</TABLE>
+		<a name='Categories'></a><TABLE BORDER='0' CELLPADDING='5' CELLSPACING='0'  valign='top' WIDTH='95%'><TR><TD BGCOLOR='#efefef'><span class='bk12b'>Additional Press Release Categories</span></TD></TR></TABLE><br><table width='100%' cellspacing='0' cellpadding='0' align='left'><tr><td valign='top'><UL><LI><a href='/PresRele/ASaw_14/'>Anti-Semitism: Arab</a></LI><LI><a href='/PresRele/ASInt_13/'>Anti-Semitism: International</a></LI><LI><a href='/PresRele/ASUS_12/'>Anti-Semitism: USA</a></LI><LI><a href='/PresRele/BkJew_21/'>Black-Jewish Relations</a></LI><LI><a href='/PresRele/ChJew_31/'>Christian-Jewish Relations</a></LI><LI><a href='/PresRele/CvlRt_32/'>Civil Rights</a></LI><LI><a href='/PresRele/DiRaB_41/'>Discrimination / Racism / Bigotry</a></LI><LI><a href='/PresRele/Education_01/'>Education</a></LI><LI><a href='/PresRele/Extremism_72/'>Extremism</a></LI><LI><a href='/PresRele/HatCr_51/'>Hate Crimes</a></LI><LI><a href='/PresRele/HolNa_52/'>Holocaust / Nazis</a></LI><LI><a href='/PresRele/HolocaustDenial_83/'>Holocaust Denial</a></LI></UL></td><td valign='top'><UL><LI><a href='/PresRele/Internet_75/'>Internet</a></LI><LI><a href='/PresRele/IslEx_61/'>Islamic Extremist</a></LI><LI><a href='/PresRele/IslME_62/'>Israel / Middle-East</a></LI><LI><a href='/PresRele/Militi_71/'>Militias</a></LI><LI><a href='/PresRele/Mise_00/'>Miscellaneous</a></LI><LI><a href='/PresRele/NatIsl_81/'>Nation of Islam</a></LI><LI><a href='/PresRele/NeoSk_82/'>Neo-Nazi / Skinheads</a></LI><LI><a href='/PresRele/RelChStSep_90/'>Religious Freedom, Church-State</a></LI><LI><a href='/PresRele/SupremeCourt_33/'>Supreme Court</a></LI><LI><a href='/PresRele/Teror_92/'>Terrorism: Domestic</a></LI><LI><a href='/PresRele/TerrorismIntl_93/'>Terrorism: International</a></LI><LI><a href='/PresRele/UnitedNations_94/'>United Nations</a></LI><LI><a href='/PresRele/VaticanJewish_96/'>Vatican-Jewish Relations</a></LI></UL></td></tr></table>			
+	</td>
+	</tr>
+	</table>		
+</td>
+
+<!-- Spacer Gif -->
+<script language="JavaScript" type="text/javascript">
+		<!--
+        if ((navigator.appName == "Netscape") && (navigator.appVersion < "5")){
+		document.write('<td bgcolor="#e1e0a6"><img src="/images/spacer_tr.gif" width="2" height="1" border="0" alt=""></td>');
+		document.close();
+		}
+		// -->
+</script>
+
+<!-- Start Column #3 - Right Column -->
+<td valign="top" align="center" width="175">		
+
+<!-- Start Include -->
+
+
+	<table width="170" border="0" cellspacing="0" cellpadding="0" align="center">
+
+		
+
+		<tr>
+		<td colspan="2"><img src="/presrele/spacer.gif" height="7" width="1"></td></tr>
+		<tr>
+		<td  colspan="2" class="bk10b"><span class="adl_article_related">ADDITIONAL LINKS</span></td></tr>
+		<tr>
+		<td colspan="2"><img src="/presrele/spacer.gif" height="4" width="1"></td></tr>
+	
+		<!-- Print Version -->
+		<tr>
+		<td class="bk9" valign="top">&#149; &nbsp;</td>
+		<td class="bk10" valign="top"><a href='Javascript: var newWwin = window.open ("/NR/exeres/236E5107-5368-4F53-AD00-A86F7B882D58,0B1623CA-D5A4-465D-A369-DF6E8679CD9E,frameless.htm", "cat_win", "width=700, height=675, toolbar=yes, scrollbars=yes, resizable=no")'>Print This Page</a></td></tr>	
+<tr> 
+<td class="bk9" valign="top">&#149; &nbsp;</td>
+<td class="bk10" valign="top">
+<a href="javascript:openWindow_for_email(520,380);"><!-- <img height=18 alt="e-mail to friend" vspace=0 src="/icon_email.gif" width=24 align=left border=0>&nbsp; -->E-Mail This to A Friend</a><br><br>
+</td></tr>				
+		<tr>
+		<td colspan="2"><img src="/presrele/spacer.gif" height="4" width="1"></td></tr>
+		
+		
+
+	<!-- add a link to the Category Nav at the bottom of the page -->
+	<tr>
+	<td class="bk9" valign="top">&#149; &nbsp;</td>
+	<td class="bk10" valign="top"><a href="#Categories">Additional Press Releases</a></td></tr>
+	<tr>
+	<td colspan="2"><img src="/presrele/spacer.gif" height="4" width="1"></td></tr>
+
+	
+	
+	
+	
+	<tr>
+	<td colspan="2"><img src="/presrele/spacer.gif" height="4" width="1"></td></tr>
+	
+				<tr>
+				<td class="bk9" valign="top">&#149; &nbsp;</td>
+				<td class="bk10" valign="top"><a href="/PresRele/IslME_62/">Recent Israel / Middle-East Press Releases</a></td></tr>
+				<tr>
+				<td colspan="2"><img src="/presrele/spacer.gif" height="4" width="1"></td></tr>
+				
+					<tr>
+					<td class="bk9" valign="top">&#149; &nbsp;</td>
+					<td class="bk10" valign="top"><a href='Javascript: var newWwin = window.open ("/PresRele/IslME_62/Archive.htm", "cat_win", "width=500, height=475, scrollbars=yes, resizable=no")'>Israel / Middle-East Press Release Archive</a></td></tr>
+					<tr>
+					<td colspan="2"><img src="/presrele/spacer.gif" height="4" width="1"></td></tr>
+					
+	<!--
+		<tr>
+		<td class="bk9" valign="top">&#149; &nbsp;</td>
+		<td class="bk10" valign="top"><a href="">Create New Press Release</a></td></tr>
+		<tr>
+		<td colspan="2"><img src="/presrele/spacer.gif" height="4" width="1"></td></tr>
+	-->
+		
+	<tr>
+	<td colspan="2"><img src="/presrele/spacer.gif" height="10" width="1"></td></tr>
+	
+	
+		<!-- display the Edit Console 	-->
+		<tr>
+		<td  colspan="2" class="bk10b" align="left"><div id='divWBC' style='position: absolute; visibility:hidden; z-index:2; border: 1px solid #000000;'><table width='200' border=0 cellspacing=0 cellpadding=5 bgcolor='#FFFFFF'><tr><td class='WBCHeader'><table width='200' cellspacing='0' cellpadding='0' border='0'><tr><td class='WBCHeader' width='18'><IMG ID='drmap' SRC='/ADLWeb/images/drmap.gif' WIDTH='16' HEIGHT='16' BORDER='0'></td><td class='WBCHeader'> <font face="Verdana,Arial,sans-serif" size="3"><b></b></font></td></tr></table></td></tr></table></div></td></tr>
+		<tr>
+		<td colspan="2"><img src="/presrele/spacer.gif" height="4" width="1"></td></tr>
+		
+
+	</table>
+	
+
+<!-- Contact Info -->
+<!---- press release contact info ----->
+
+
+
+<table border="0" width="170" cellspacing="0" cellpadding="1" align="center">
+<tr>
+<td  width="100%" class="bk10" bgcolor="e6e6e6">
+
+<table border="0" width="168" cellspacing="0" cellpadding="4" bgcolor="ffffff" align="center">
+<tr>
+<td class="bk10b" width="100%" align="center">
+<span class="adl_article_related">Contact Information</span><br>
+</td></tr>
+
+<tr>
+<td  width="100%" align="center"><a class="bk10" href="mailto:adlmedia@adl.org">Press Inquiries</a></td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td ><img src="/presrele/spacer.gif" height="13" width="1"></td></tr>
+</table>
+<!---- END PR Contact Info ---->
+
+<!-- Callout Section -->
+
+<table border="0" width="170" cellspacing="0" cellpadding="1" align="center">
+	<tr>
+	<td  width="100%" class="bk10" bgcolor="ffffff">
+
+		<table border="0" width="168" cellspacing="0" cellpadding="4" bgcolor="ffffff" align="center">
+			<tr>
+			<td bgcolor="ffffff" width="100%" class="bk10b" colspan="2">
+				<span class="adl_article_related" align="center">RELATED ARTICLES</span>
+			</td></tr>
+			
+			
+				<tr>
+				<TD class='adl_Bullet_Small' valign='top'>&#149;</td>
+				<td class="bk10" width="100%">
+					<A href="javascript:LoadPage('/PresRele/IslME_62/5809_62.htm');"><FONT color=#163d6a size=2>ADL Statement on Proposed Conversion Bill to the Israeli Parliament</FONT></A><FONT size=2>&nbsp;<BR>(7/20/10)</FONT>
+				</td>
+				</tr>
+			
+
+		</table>
+	</td>
+	</tr>
+</table>
+
+<!-- End Callout Section -->
+
+
+<!-- Side Bar Image -->
+<table border="0" width="170" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td colspan="2"><img src="/presrele/spacer.gif" height="14" width="1"></td></tr>
+<tr>
+<td colspan="2">
+	
+</td>
+</tr>
+<tr>
+<td colspan="2"><img src="/presrele/spacer.gif" height="14" width="1"></td></tr>
+
+</table>
+<!-- End Side Bar Image -->
+
+<!-- End Include -->
+
+</td>
+		
+<!-- Spacer Gif -->
+<script language="JavaScript" type="text/javascript">
+		<!--
+		if ((navigator.appName == "Netscape") && (navigator.appVersion < "5")){
+		document.write('<td bgcolor="#e1e0a6"><img src="/images/spacer_tr.gif" width="2" height="1" border="0" alt=""></td>');
+		document.close();
+		}
+        // -->
+</script>
+</tr>
+</table>
+
+<!-- Start Table #3 - Bottom Table -->
+
+<table width="750"  border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td bgcolor="#ffffff"><IMG height=1 src="spacer.gif" width=1></td>
+</tr>
+  
+  
+<tr> 
+<td bgcolor="#ffffff">&nbsp;</td>
+</tr>
+
+
+
+<tr> 
+<td align="center" class="bk10"> 
+<a target="_top" HREF="/default.asp">Home </a>| 
+<a target="_top" href="/search/query.asp">Search</a> | 
+<a target="_top" href="/main_about_adl.asp">About ADL</a> | 
+<a target="_top" href="/main_contact.asp">Contact ADL</a> |
+<a href="/privacy.asp" target="_top">Privacy Policy</a>
+</td>
+</tr>
+</table>
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<p align="center" class="bk10b">© 2010 Anti-Defamation League</p>
+	<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright 2002 NetIQ Corporation -->
+<!-- V6.0a -->
+<!-- $DateTime: 2003/03/17 09:53:25 $ -->
+<!-- $Revision: #20 $ -->
+
+<SCRIPT LANGUAGE="Javascript1.1"><!--
+gVersion="1.1";
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript1.2"><!--
+gVersion="1.2";
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript1.3"><!--
+gVersion="1.3";
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript1.4"><!--
+gVersion="1.4";
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript1.5"><!--
+gVersion="1.5";
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+var gDomain="www.adl.org";
+var gDcsId="";
+if (gDcsId==""){
+        var gTagPath=gDomain;
+}
+else{
+        var gTagPath=gDomain+"/"+gDcsId;
+}
+
+// (c) 1999-2003 NetIQ Corporation. All rights reserved.
+// $DateTime: 2003/09/30 11:23:29 $
+// $Revision: #3 $
+
+function dcsMultiTrack(){
+        for (var i=0;i<arguments.length;i++){
+                if (arguments[i].indexOf('WT.')==0){
+                                WT[arguments[i].substring(3)]=arguments[i+1];
+                                i++;
+                }
+                if (arguments[i].indexOf('DCS.')==0){
+                                DCS[arguments[i].substring(4)]=arguments[i+1];
+                                i++;
+                }
+                if (arguments[i].indexOf('DCSext.')==0){
+                                DCSext[arguments[i].substring(7)]=arguments[i+1];
+                                i++;
+                }
+        }
+        var dCurrent=new Date();
+        DCS.dcsdat=dCurrent.getTime();
+        dcsTag();
+}
+
+function dcsVar(){
+        var dCurrent=new Date();
+        WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+        WT.bh=dCurrent.getHours();
+        WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+        if (typeof(screen)=="object"){
+                WT.cd=screen.colorDepth;
+                WT.sr=screen.width+"x"+screen.height;
+        }
+
+        if (typeof(navigator.javaEnabled())=="boolean"){
+                WT.jo=navigator.javaEnabled()?"Yes":"No";
+        }
+        WT.ti=document.title;
+        WT.js="Yes";
+        if (typeof(gVersion)!="undefined"){
+                WT.jv=gVersion;
+        }
+        WT.sp="";
+        DCS.dcsuri=window.location.pathname;
+        DCS.dcsqry=window.location.search;
+        if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+                if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+                        DCS.dcsref=window.document.referrer;
+                }
+        }
+        DCS.dcssip=window.location.hostname;
+        DCS.dcsdat=dCurrent.getTime();
+}
+
+function A(N,V){
+        return "&"+N+"="+escape(V);
+}
+
+function dcsCreateImage(dcsSrc){
+        if (document.images){
+                gImages[gIndex]=new Image;
+                gImages[gIndex].src=dcsSrc;
+                gIndex++;
+        }
+        else{
+                document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+        }
+}
+
+function dcsMeta(){
+        var myDocumentElements;
+        if (document.all){
+                myDocumentElements=document.all.tags("meta");
+        }
+        else if (document.documentElement){
+                myDocumentElements=document.getElementsByTagName("meta");
+        }
+        if (typeof(myDocumentElements)!="undefined"){
+                for (var i=1;i<=myDocumentElements.length;i++){
+                        myMeta=myDocumentElements.item(i-1);
+                        if (myMeta.name){
+                                if (myMeta.name.indexOf('WT.')==0){
+                                        WT[myMeta.name.substring(3)]=myMeta.content;
+                                }
+                                else if (myMeta.name.indexOf('DCSext.')==0){
+                                        DCSext[myMeta.name.substring(7)]=myMeta.content;
+                                }
+                                else if (myMeta.name.indexOf('DCS.')==0){
+                                        DCS[myMeta.name.substring(4)]=myMeta.content;
+                                }
+                        }
+                }
+        }
+}
+
+function dcsTag(TagImage){
+        var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+TagImage+"/dcs.gif?";
+        for (N in DCS){
+                if (DCS[N]) {
+                        P+=A(N,DCS[N]);
+                }
+        }
+        for (N in WT){
+                if (WT[N]) {
+                        P+=A("WT."+N,WT[N]);
+                }
+        }
+        for (N in DCSext){
+                if (DCSext[N]) {
+                        P+=A(N,DCSext[N]);
+                }
+        }
+
+        if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+                P=P.substring(0,2040)+"&WT.tu=1";
+        }
+        dcsCreateImage(P);
+}
+
+dcsVar();
+dcsMeta();
+dcsTag(gTagPath);
+
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://www.adl.org/njs.gif?dcsuri=/nojavascript&WT.js=No">
+</NOSCRIPT>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12242164-1");
+pageTracker._setDomainName(".adl.org");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Fireclick, Inc - COPYRIGHT 1999-2007 - Please do not modify this code-->
+<script type="text/javascript">
+<!--
+function handle(){return true;}
+window.onerror=handle;
+var fc_host='www.adl.org';
+document.write('<scr'+'ipt '
++'src="'+((location.protocol=='http:')?'http:':'https:')
++'//a248.e.akamai.net/f/248/5462/3h/hints.netflame.cc/service/sc'+'ript/'+fc_host+'"></scr'+'ipt>');
+function fcce(){if (typeof(fcnf)!="undefined") fcnf();}
+var fcfn=window.onload;
+function fcco(){window.setTimeout("fcce();", 100);fcfn();}
+window.onload= null==fcfn ? fcce:fcco;
+// -->
+</script>
+<!-- Fireclick, Inc - COPYRIGHT 1999-2007 - Please do not modify this code-->
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyEndHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyEndHook -->
+</body>
+</html>
+
+
+
+

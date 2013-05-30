@@ -1,0 +1,975 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>
+        October 2011 Feature JiffyLube - Free - ASTD
+    </title>
+    
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link rel="shortcut icon" href="/ASTD/favicon.ico" type="image/x-icon" />
+<!-- UntouchedCSS -->
+<link href="/ASTD/Styles/Ballon/balloon.css" type="text/css" rel="stylesheet" />
+<link href="/ASTD/Styles/jquery.ui/ui.all.css" rel="stylesheet" type="text/css" />
+<!-- UntouchedCSS -->
+<!-- BeginMinifier[CSS] -->
+
+<!-- EndMinifier[CSS] -->
+
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/base/jquery-ui.css"
+    rel="stylesheet" type="text/css" media="all" />
+<link href="/ASTD/Styles/merged_20110517-195551.css" rel="stylesheet" type="text/css" />
+
+<!--[if IE]>
+<style type="text/css">
+	body {behavior: url(/ASTD/Scripts/csshover.htc);}
+</style>
+<![endif]-->
+<!-- The above block calls the special .htc script that forces compliance in IE/win. -->
+
+<script language="javascript" type="text/javascript" src="/ASTD/Scripts/LeftNavigationMenu/leftNavMenuAdjust.js"></script>
+
+<script language="javascript" type="text/javascript" src="/ASTD/ShadowBox/js/shadowbox-base.js"></script>
+
+<script language="javascript" type="text/javascript" src="/ASTD/ShadowBox/js/shadowbox2.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+
+<script language="javascript" type="text/javascript" src="/ASTD/Scripts/jquery/plugins/NewsPlugin.js"></script>
+
+<script language="javascript" type="text/javascript" src="/ASTD/Scripts/jquery/plugins/tooltip/jquery.tools.min.js"></script>
+
+<script language="javascript" type="text/javascript" src="/ASTD/Scripts/jquery/plugins/urlEncode.js"></script>
+
+<script language="javascript" type="text/javascript" src="/ASTD/Scripts/jquery/plugins/AudioPlayer.js"></script>
+
+<script language="javascript" type="text/javascript" src="/ASTD/Scripts/jquery/plugins/date/jquery.dateFormat-1.0.js"></script>
+
+<script language="javascript" type="text/javascript" src="/ASTD/Scripts/jquery/plugins/template/jquery.tmpl.min.js"></script>
+
+<!--[if lt IE 7]><script defer type="text/javascript" src="/ASTD/Scripts/pngfix.js"></script><![endif]-->
+
+<script type="text/javascript">
+var isAstdMember = false;
+</script>
+
+<script type="text/javascript">  
+        $(document).ready(function(){
+            $("div[data-switch='member']").children("div").hide();
+           
+            if (isAstdMember){
+                $("div[data-switch='member']").children("div[data-case='true']").show();
+            }
+            else {
+                $("div[data-switch='member']").children("div[data-case='false']").show();
+            }
+        });
+</script>
+
+
+<script type="text/javascript">
+Shadowbox.loadSkin('classic', '/ASTD/ShadowBox/skin');
+Shadowbox.loadLanguage('en', '/ASTD/ShadowBox/lang');
+Shadowbox.loadPlayer(['iframe'], '/ASTD/ShadowBox/player');
+
+window.onload = function(){
+    Shadowbox.init();
+};
+
+</script>
+
+<script type="text/javascript">
+   
+  
+    function showDiv(divId)
+    {
+    var div;
+    div =  document.getElementById(divId);
+    div.style.display = "block";
+    }
+    
+    function hideDiv(divId)
+    {
+    var div;
+    div =  document.getElementById(divId);
+    div.style.display = "none";
+    }
+   
+   function printSelection(node){
+
+  var content=node.innerHTML
+  var pwin=window.open('','print_content','width=400,height=500,resizable=1,scrollbars=1,menubar=1,toolbar=1');
+
+  pwin.document.open();
+  pwin.document.write('<ht' + 'ml><bo' + 'dy onload="window.print()"><link href="http://www.astd.org/ASTD/Styles/merged_20110517-195551.css" type="text/css" rel="stylesheet">' + '<div id="tdInside'+ 'Section">' + content+'</div></b' + 'ody></ht' + 'ml>');
+
+}
+
+
+</script>
+
+<script type="text/javascript">
+   $(document).ready(function () {
+            $(".mp3").audioPlayer();
+        });
+</script>
+
+<script id="listingTemplate" type="text/x-jquery-tmpl">
+		 <div class="listing-row">
+				<p>
+				<a href="${webUrl}"><img class="product-image" src="http://store.astd.org/Products/ProductImages/${image}" style="border-width:0px;" /></a>
+					<a class="product-detail-link" href="${webUrl}">${title}</a>
+					<br />
+					<span class="subtitle">${subtitle} - ${subtitle2}</span>
+					<br />
+					<span class="description">${desc}</span>
+				</p>
+				<div style="clear: both">
+				</div>
+				<br />
+				<div id="search-product-prices">
+					<b>List Price: </b>${list}<br /><b>Member Price: </b>${member}<br />
+				</div>
+			</div>
+
+			<div style="clear: both">
+				<hr class="search-divider" />
+			</div>
+</script>
+
+<script id="productDetailTemplate" type="text/x-jquery-tmpl">
+	  <div class="product-detail-container">
+	  <div class="product-detail">
+		<div class="large-image-container x-image-shadow ">
+		<img class="large-image" src="http://store.astd.org/Products/ProductImages/${image}" style="border-width:0px;" />	
+		</div>
+		<div class="product-title">
+			<h1>
+				${title}
+			</h1>
+		</div>
+		<div class="product-long-description">
+			{{html desc}}
+		</div>
+		<div style="clear: both">
+		</div>
+		<br />
+		<div id="search-product-prices">
+			<b>List Price: </b>${list}<br />
+			<b>Member Price: </b>${member}<br />
+		</div>
+        <div style="clear: both">
+		</div>
+		<br />
+        <a href="http://store.astd.org/Default.aspx?TabId=167&ProductId=${pid}"><img border="0" src="/ASTD/images/Buy-Now.png" alt=""/></a>
+	</div>
+	</div>
+</script>
+
+
+<script type="text/javascript" src="/ASTD/Scripts/jquery.tools.min.js"></script>
+
+<script type="text/javascript" src="/ASTD/Scripts/lookahead20110131.js"></script>
+
+<style type="text/css">
+     <!--[if IE 6]>
+     #centerContent
+     {
+        display:table-cell;
+     }
+    <![endif]-->
+</style>
+
+<script type="text/javascript">
+var PersonifyCustomerNumber = 'anonymous';
+</script>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            var campaignQueryString = ('&CustomerNumber=' + PersonifyCustomerNumber);
+            $('a[href^="http://redirect.astd.org"]').each(function () {
+                $(this).attr('href', $(this).attr('href') + campaignQueryString);
+            });
+        });
+</script>
+
+</head>
+<body onload="Shadowbox.init();">
+    <form name="aspnetForm" method="post" action="td_inside_section.aspx?NRMODE=Published&amp;NRNODEGUID=%7b8F841B02-7A6A-4643-9E5A-388448951961%7d&amp;NRORIGINALURL=%2fTD%2fArchives%2f2011%2fOct%2fFree%2fOct11_Feature_JiffyLube.htm&amp;NRCACHEHINT=NoModifyGuest" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTA0MTEwODIyNg9kFgJmD2QWBAIBD2QWAmYPFgIeBFRleHQFLE9jdG9iZXIgMjAxMSBGZWF0dXJlIEppZmZ5THViZSAtIEZyZWUgLSBBU1REZAIFD2QWDAIBD2QWBGYPFgIeB1Zpc2libGVoZAICDxYCHwFoZAIDD2QWCGYPZBYCAgEPDxYCHgtOYXZpZ2F0ZVVybAUBL2RkAgIPFgIeA3NyYwWKAWh0dHA6Ly9sb2dpbi5hc3RkLm9yZy9JRnJhbWVMb2dpbi5hc3B4P2FkZHJlc3M9aHR0cCUzYSUyZiUyZnd3dy5hc3RkLm9yZyUyZlREJTJmQXJjaGl2ZXMlMmYyMDExJTJmT2N0JTJmRnJlZSUyZk9jdDExX0ZlYXR1cmVfSmlmZnlMdWJlLmh0bWQCBA8PFgIeCEltYWdlVXJsBSUvQVNURC9JbWFnZXMvSGVhZGVyTG9nby9IZWFkZXIvVEQuanBnZGQCBg8PFgIfBAUjL0FTVEQvSW1hZ2VzL0hlYWRlckxvZ28vTG9nby9URC5qcGdkZAIED2QWAmYPFgIfAWhkAgUPZBYKAgEPDxYCHwFoZGQCBw8PFgIfAgU8aHR0cDovL3N0b3JlLmFzdGQub3JnL0RlZmF1bHQuYXNweD90YWJpZD0xNjcmUHJvZHVjdElkPTIyNDIyZGQCCQ8PFgIfAWhkZAILDw8WAh8CBVVodHRwOi8vd3d3LmFzdGQub3JnL05SL3Jkb25seXJlcy85NUNEMDk5Qy03QkRELTQ3RDAtQTlFMy00NzM4ODYyQjI3NzUvMC93ZWxsb2lsZWQubXAzZGQCDQ8PFgIfAWhkZAIHDxYCHgVzdHlsZQUNZGlzcGxheTpub25lOxYCAgEPZBYCZg8WAh4KQ2FsbGJhY2tJRAUNY3RsMDAkUmF0aW5nMWQCDg9kFgICAQ8WAh8ABYICPGxpPjxhIGhyZWY9Jy9BU1REL2FkdmVydGlzaW5nLyc+QWR2ZXJ0aXNlIHdpdGggVXM8L2E+PC9saT48bGk+PGEgaHJlZj0nL0FTVEQvYWJvdXR1cy8nPkFib3V0IFVzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Jy9BU1REL2NvbnRhY3QvJz5Db250YWN0IFVzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Jy9BU1REL3Rlcm1zcHJpdmFjeS8nPlRlcm1zICYgUHJpdmFjeTwvYT48L2xpPjxsaT48YSBocmVmPScvQVNURC9qb2JzLyc+Sm9icyBhdCBBU1REPC9hPjwvbGk+ZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUsY3RsMDAkSGVhZGVyMSRIZWFkZXJfQmFzZTEkTmF2TWVudTEkUmFkTWVudTGXG+d8s+bG6stie52NJvGhTETzAQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/ASTD/WebResource.axd?d=jCSr41oTmPX02riQZCXy6Od0_sjuoI1d-Lrytm722x9bZPK-mPTMpXDrRhACccsIdjtAl-DsbXmM9Mvx0&amp;t=634542391321599003" type="text/javascript"></script>
+
+
+
+<!-- -------------------------google analytics code start--------------------------- -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2349531-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+ </script>
+<!-- -------------------------google analytics code end--------------------------- -->
+
+
+<script language="javascript" type="text/javascript">
+<!--
+   var __CMS_PostbackForm = theForm;
+   var __CMS_CurrentUrl = "/TD/Archives/2011/Oct/Free/Oct11_Feature_JiffyLube.htm";
+   __CMS_PostbackForm.action = __CMS_CurrentUrl;
+// -->
+</script>
+<link class='Telerik_stylesheet' type='text/css' rel='stylesheet' href='/ASTD/WebResource.axd?d=T8MoFLEwQ7xR9Bd9y5jpvE5ynwnB2tlY_7OXUbxzvJceOp7139ON7kFV1KB9LiLEiQwwmjHrRY80HHOqLLF7vuvjxDd_ZwhqUIs4WyTTz9BWvJC0Mi0i3u7NeZs1&amp;t=633868203800000000'></link>
+<script src="/ASTD/ScriptResource.axd?d=s3Z4R9r07JkDtzZMKEX40G18E0X-qfmb2GF60xe8yUlyPLEyCyvybRgiJB_e_sP6wFhgFtJ3nJSN7SE8AclENDywTO66l4DpyEhPuptrn6Vr7AYuCDvuWxyvxN3MALpUkLTROQ9OLCrBuDnw0&amp;t=634542391321599003" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=GGPpgj0Z5s-XX_43d7bEP4msBkV3uOyo_SvppadCiypUJI2EIqkS18D2FKIvOPn3-8QrPn35trlrM4wky7Zb9U-xsdD77QLIJy8zZj3hzuyKMcUmPpdTGu309THG58-fH_FAE28EiO3IU7Mfvlwqk_wrAQiPwhEhACEMtw2&amp;t=633496418817968750" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=6MxhvRBpHpi-jICc463jJxJp1IsF6oe9P2IsK6-VQxkQUVsszm42HcCrUN6O1oJYTByhTR3PoSyBm_tAZHpSRnjxu28c9QzYiaCWj8s-TfXh_kZ8vy0HGce-YKJO9dh1C0evgB5CjYdmmX6VeCLzEkAVektW9Qw6QLTB6nzbapDJdiGc0&amp;t=633496418817968750" type="text/javascript"></script>
+<script src="/ASTD/Scripts/CallWebServiceMethods.js" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=V6eRJwHO5_VOeUXhzMek3AfAdHHi_TL9O_JFfmjaw2zh1Q8G9tctKIaiqQCAbB0itaPjuWLRh3IO1S2GLG8E2goTCrXzhAHNypeKC0t0s1RzaDS3yV7eOBwAGhRAFczxASdbodSOFpmCdizgvK5twjTC3VI1&amp;t=633868203800000000" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=4VakG1Ad-zYUQU9I5x-KA2sZ-KJZt7Dg0YiroYB7vCHV9n15nrMror5v_6sl-X3l6a1UcTylIl9LMn1vRlvaoonTpYKxIONlM3q_6rZZQ6lvTOBcWPEovu_9byc1&amp;t=633868203800000000" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=YrtH1-w8I2J6E6bWWD9LAVCEg0rD03vX2rdzxxlVzjRPj7ZE7UCMyl29OP0zEZhG2sSqwzFO9vVZ3_X_fhHuHaQiCUBp6QHRtAqLFXvtD1hjBc1_rMWXmynia0jVrH2laQ3LBQ2&amp;t=633868203800000000" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=dW1O4h3ebr2RnqIoFcI5ryA-QxI_kskgSkT9lccn1Zzrde9Mda-v_FtzZk9pmWm96Ba7ysERBNZuHO-5XVhDnRErvTwPxLk988xvy01yYHvjKjoQAjcfj_ZaPKufgIqhyZ-VNw2&amp;t=633868203800000000" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=jA7v7ssWzsv-Ti4kqeagI33MdyDq6vO2wg2e5RacgtLi6mhT3A_CyHmf6HXjoByqqzdb_irtQgcnvzNftYlIGNPCr_8CgNg54lm9lTO57Ii9kmIXvEnIMYOV5VDvGTk-BQmQl8Rc-xpsuRnWa9QXBQoqxWs1&amp;t=633868203800000000" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=LtJ0cp8BxQQBG5n3Rx9Gu0fKrm_GOieHbsZrd7aEna2d-VJawAMh-ZjCqADfLzO2V2uc-mM7VDikDDZGcr8Ttts1Oai3uVNPgRfBYP1D9t-077GR4MjlqeD_YYSzkpoQ-0f2MQ2&amp;t=633868203800000000" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=54KKlr2SO8WS8R_9L_kQqoRjlG1MhlISOh1MW-ZhGrNr1iY1OTN_0xMqpWOlfMSbStP7g9SRlxGJ2Vr800b8odToyeMqL2Wunol6sj7_T5OR1Jwic6V9zeIkEMO3jXDrfiJ46QM50P2Dfkx3TRfv17CTcpA1&amp;t=633931193740455953" type="text/javascript"></script>
+<script src="/ASTD/ScriptResource.axd?d=eKzrPeNDtznrRrN8tGXgdcWqNQPiReovYxx6CqdbmE6ITPEePF9DYQVf19Vqh4yj1WtEFvEbs247pSayIeIX08SRbssF-VYda506ZSdcSlzcxTmrX9pN82W1VumUhT7QtUgsfMP8iXHef3LEEBvRRTRvJ8g1&amp;t=633931193740455953" type="text/javascript"></script>
+<script src="/ASTD/ClientService.asmx/jsdebug" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+        
+
+
+        <meta name="ROBOTS" content="FOLLOW,INDEX">
+<base href="http://www.astd.org/ASTD/Templates/td_inside_section.aspx?NRMODE=Published&NRNODEGUID=%7b8F841B02-7A6A-4643-9E5A-388448951961%7d&NRORIGINALURL=%2fTD%2fArchives%2f2011%2fOct%2fFree%2fOct11_Feature_JiffyLube%2ehtm&NRCACHEHINT=NoModifyGuest">
+
+        <div class="global_wrapper">
+            <div class="wrapper">
+                <div class="global_content_right">
+                    <div class="global_content_left">
+                        <div id="global_content" class="global_content">
+                            
+
+<script language="JavaScript" type="text/JavaScript" src="/ASTD/Scripts/main.js"></script>
+
+<table class="max" style="overflow: visible;">
+    <tr>
+        <td>
+            <div style="float: left; margin-left: 5px;padding-bottom:4px;">
+                <a id="ctl00_Header1_Header_Base1_lnkASTDscreenLogo" href="/"><img src="/ASTD/Images/logo_astd_rev.gif" style="border-width:0px;" /></a>
+            </div>
+        </td>
+        <td>
+            <div style="float: right; margin-right: 0px;" id="globalnav">
+                <table>
+                    <tr>
+                        <td style="width:179px;"></td>
+                        <td valign="middle" style="width:520px;">
+                            
+
+<div id="header_search_input_wrap">
+    <div style="float:right;width:45px;"><a href="#" onclick="return callHeaderSearch($('#header_search_input')[0]);"><img src="/ASTD/Images/arrowbutton.gif" border="0" id="search_btn" alt="Search" class="hdr_search_btn"/></a>
+    </div>
+    <div style="float:left;width:475px;height:24px;margin-top:1px;"><input type="text" id="header_search_input" style="width:467px; border: solid 1px #828282; padding:3px;" value=""/></div>
+</div>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height:16px;padding-left:20px; top:-8px;">
+                            
+
+<script type="text/javascript">
+    function OnMenuItemClickedHandler(sender, eventArgs)
+    {
+        _gaq.push(['_trackEvent', 'Global Navigation', 'Click', eventArgs.get_item().get_value()]);
+    }
+</script>
+
+<style type="text/css">
+#globalnav .rmText {cursor: pointer !important;font-size: }
+#globalnav .rmRootGroup {top: -6px;}
+</style>
+<div style="z-index: 10000">
+    <div id="ctl00_Header1_Header_Base1_NavMenu1_RadMenu1" class="RadMenu RadMenu_Default rmSized " style="width:684px;top: 0px; left: 0px">
+	<!-- 2009.2.826.20 --><ul class="rmHorizontal rmRootGroup">
+		<li class="rmItem rmFirst" style="width:88px;"><a href="http://www.astd.org/content/conferences/" class="rmLink" style="font-family:Arial;font-size:13px;font-weight:bold;"><span class="rmText">Conferences</span></a><div class="rmSlide">
+			<div class="rmScrollWrap rmGroup rmLevel1" style="width:668px;height:24px;">
+				<ul class="rmHorizontal">
+					<li class="rmItem rmFirst" style="width:192px;"><a href="http://www.astdconference.org" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">International Conference & Exposition</span></a></li><li class="rmItem" style="width:94px;"><a href="http://www.tk12.astd.org/tk12/public/enter.aspx" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">TechKnowledge®</span></a></li><li class="rmItem" style="width:106px;"><a href="http://www.astd.org/content/conferences/tellingAintTraining/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Telling Ain't Training</span></a></li><li class="rmItem" style="width:74px;"><a href="http://www.astd.org/content/conferences/otherevents.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Other Events</span></a></li><li class="rmItem rmLast" style="width:122px;"><a href="http://www.astd.org/ASTD/volunteer/speakingOpportunities/speakingOpportunities.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Speaking Opportunities</span></a></li>
+				</ul>
+			</div>
+		</div></li><li class="rmItem" style="width:68px;"><a href="http://www.astd.org/content/education/certificatePrograms/" class="rmLink" style="font-family:Arial;font-size:13px;font-weight:bold;"><span class="rmText">Education</span></a><div class="rmSlide">
+			<div class="rmScrollWrap rmGroup rmLevel1" style="width:476px;height:24px;">
+				<ul class="rmHorizontal">
+					<li class="rmItem rmFirst" style="width:112px;"><a href="http://www.astd.org/content/ASTDcertification/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Certification (CPLP®)</span></a></li><li class="rmItem" style="width:110px;"><a href="http://www.astd.org/content/education/certificatePrograms/certificates-workshops.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Certificate Programs</span></a></li><li class="rmItem" style="width:92px;"><a href="http://www.astd.org/content/education/certificatePrograms/online-programs/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Online Programs</span></a></li><li class="rmItem rmLast" style="width:98px;"><a href="http://www.astd.org/content/education/certificatePrograms/on-siteprograms.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">On-Site Programs</span></a></li>
+				</ul>
+			</div>
+		</div></li><li class="rmItem" style="width:84px;"><a href="http://www.astd.org/content/publications/" class="rmLink" style="font-family:Arial;font-size:13px;font-weight:bold;"><span class="rmText">Publications</span></a><div class="rmSlide">
+			<div class="rmScrollWrap rmGroup rmLevel1" style="width:578px;height:24px;">
+				<ul class="rmHorizontal">
+					<li class="rmItem rmFirst" style="width:78px;"><a href="http://www.astd.org/TD" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">T+D Magazine</span></a></li><li class="rmItem" style="width:40px;"><a href="http://www.astd.org/content/publications/ASTDPress/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Books </span></a></li><li class="rmItem" style="width:46px;"><a href="http://www.astd.org/content/publications/infoline/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Infoline</span></a></li><li class="rmItem" style="width:58px;"><a href="http://www.astd.org/content/research/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Research</span></a></li><li class="rmItem" style="width:68px;"><a href="http://www.astd.org/content/publications/newsletters_journals/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Newsletters</span></a></li><li class="rmItem" style="width:92px;"><a href="http://www.astd.org/LC/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Learning Circuits</span></a></li><li class="rmItem rmLast" style="width:72px;"><a href="http://www.astd.org/ASTD/Enterprise/Content+Licensing.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Licensing</span></a></li>
+				</ul>
+			</div>
+		</div></li><li class="rmItem" style="width:84px;"><a href="http://www.astd.org/membership/" class="rmLink" style="font-family:Arial;font-size:13px;font-weight:bold;"><span class="rmText">Membership</span></a><div class="rmSlide">
+			<div class="rmScrollWrap rmGroup rmLevel1" style="width:382px;height:24px;">
+				<ul class="rmHorizontal">
+					<li class="rmItem rmFirst" style="width:80px;"><a href="http://www.astd.org/membership/howtojoin.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Join or Renew</span></a></li><li class="rmItem" style="width:84px;"><a href="http://www.astd.org/membership/MemberCenter/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Member Center</span></a></li><li class="rmItem" style="width:80px;"><a href="http://www.astd.org/membership/chapters/AboutChapters.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Chapters</span></a></li><li class="rmItem rmLast" style="width:80px;"><a href="http://www.astd.org/ASTD/Enterprise/Group+Memberships.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Groups</span></a></li>
+				</ul>
+			</div>
+		</div></li><li class="rmItem" style="width:72px;"><a href="http://www.astd.org/resources/" class="rmLink" style="font-family:Arial;font-size:13px;font-weight:bold;"><span class="rmText">Resources</span></a><div class="rmSlide">
+			<div class="rmScrollWrap rmGroup rmLevel1" style="width:576px;height:24px;">
+				<ul class="rmHorizontal">
+					<li class="rmItem rmFirst" style="width:58px;"><a href="http://www.astd.org/TD/Advertising/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Advertise</span></a></li><li class="rmItem" style="width:82px;"><a href="http://www1.astd.org/virtualcatalog/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Build a Catalog</span></a></li><li class="rmItem" style="width:78px;"><a href="http://expo365.astd.org/bg/public/enter.aspx" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Buyer's Guide</span></a></li><li class="rmItem" style="width:78px;"><a href="http://www.astd.org/content/careers/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Career Center</span></a></li><li class="rmItem" style="width:58px;"><a href="http://www.astd.org/ASTD/Enterprise/Enterprise+Learning+Solutions.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Enterprise</span></a></li><li class="rmItem rmLast" style="width:100px;"><a href="http://www.astd.org/content/research/doYourOwn/doYourOwn.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Knowledge Center</span></a></li>
+				</ul>
+			</div>
+		</div></li><li class="rmItem" style="width:88px;"><a href="http://www.astd.org/communities/" class="rmLink" style="font-family:Arial;font-size:13px;font-weight:bold;"><span class="rmText">Communities</span></a><div class="rmSlide">
+			<div class="rmScrollWrap rmGroup rmLevel1" style="width:581px;height:24px;">
+				<ul class="rmHorizontal">
+					<li class="rmItem rmFirst" style="width:118px;"><a href="http://www.astd.org/communities/networks/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Learning Communities</span></a></li><li class="rmItem" style="width:98px;"><a href="http://www.astd.org/communities/networks/social-networking.htm" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Social Networking</span></a></li><li class="rmItem" style="width:78px;"><a href="http://www.astd.org/communities/salestraining/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Sales Training</span></a></li><li class="rmItem" style="width:70px;"><a href="http://www.astd.org/membership/international/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">International</span></a></li><li class="rmItem" style="width:47px;"><a href="http://www.astd.org/ASTD/Partners/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Partners</span></a></li><li class="rmItem rmLast" style="width:69px;"><a href="http://www.astd.org/ASTD/Government" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Government</span></a></li>
+				</ul>
+			</div>
+		</div></li><li class="rmItem" style="width:30px;"><a href="http://www.astd.org/Help/" class="rmLink" style="font-family:Arial;font-size:13px;font-weight:bold;"><span class="rmText">Help</span></a><div class="rmSlide">
+			<div class="rmScrollWrap rmGroup rmLevel1" style="width:146px;height:24px;">
+				<ul class="rmHorizontal">
+					<li class="rmItem rmFirst" style="width:62px;"><a href="http://www.astd.org/ASTD/contact/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Contact Us</span></a></li><li class="rmItem rmLast" style="width:52px;"><a href="http://www.astd.org/content/" class="rmLink" style="font-family:Arial;font-size:10px;font-weight:bold;"><span class="rmText">Site Map</span></a></li>
+				</ul>
+			</div>
+		</div></li><li class="rmItem rmLast" style="width:32px;"><a href="http://store.astd.org/" class="rmLink" style="font-family:Arial;font-size:13px;font-weight:bold;"><span class="rmText">Store</span></a></li>
+	</ul><input id="ctl00_Header1_Header_Base1_NavMenu1_RadMenu1_ClientState" name="ctl00_Header1_Header_Base1_NavMenu1_RadMenu1_ClientState" type="hidden" />
+</div>
+</div>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<table id="headerTable" cellspacing="0" cellpadding="0" width="100%" border="0" style="margin: 0;
+    padding: 0; border: 0;">
+    <tr>
+        <td style="width: 160px; vertical-align: top; border-right: solid 1px white">
+            <iframe id="ctl00_Header1_sso_frame" width="160" marginwidth="0" frameborder="0" height="95" marginheight="0" noresize="noresize" name="sso_frame" scrolling="no" style="border: 0; padding: 0; margin: 0;" border="0" src="http://login.astd.org/IFrameLogin.aspx?address=http%3a%2f%2fwww.astd.org%2fTD%2fArchives%2f2011%2fOct%2fFree%2fOct11_Feature_JiffyLube.htm"></iframe>
+        </td>
+        <td style="width: 100%; height: 95px;">
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tr>
+                    <td width="100%" style="text-align: center; background-image: url(/ASTD/Images/GreenBar/grnbar_1pxl.gif);
+                        background-repeat: repeat-x;">
+                        <img id="ctl00_Header1_headerImage" src="/ASTD/Images/HeaderLogo/Header/TD.jpg" style="border-width:0px;" />
+                    </td>
+                    <td>
+                        <img id="ctl00_Header1_logoImage" src="/ASTD/Images/HeaderLogo/Logo/TD.jpg" style="border-width:0px;" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- Begin Breadcrumb -->
+    <tr>
+        <td style="border-right: solid 1px #DFF4FF">
+            &nbsp;
+        </td>
+        <td align="left" style="padding-top: 5px; padding-bottom: 10px;">
+            <div class="breadcrumbs">
+                <span id="ctl00_Header1_ASTDBreadCrumbs"><a href='/'>Home</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href='/TD/'>T+D</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href='/TD/Archives/'>Archives</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href='/TD/Archives/2011/'>2011</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href='/TD/Archives/2011/Oct/'>Oct</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href='/TD/Archives/2011/Oct/Free/'>Free</a>&nbsp;&nbsp;>&nbsp;&nbsp;October 2011 Feature JiffyLube</span>
+            </div>
+        </td>
+    </tr>
+    <!-- End Breadcrumb -->
+</table>
+
+<script type="text/javascript">
+var checkIframes =function() {
+for (i=0; i<window.frames.length; i++)
+{
+try
+{
+if (window.frames[i].document.location.href !=
+window.frames[i].frameElement.src &&
+!(window.frames[i].document.location.href == document.location.href &&
+window.frames[i].frameElement.src == 'about:blank'))
+{
+window.frames[i].frameElement.src = window.frames[i].frameElement.src;
+}
+}
+catch(e) {}
+}
+};
+var userAgent = navigator.userAgent.toLowerCase();
+if (userAgent){
+var browserFirefox = /mozilla/.test( userAgent ) &&
+!/(compatible|webkit)/.test( userAgent );
+if (browserFirefox)
+{
+$(document).ready(checkIframes);
+}
+}
+</script>
+
+
+                            <div class="clear">
+                            </div>
+                            <div id="centerContent" style="margin: 0px; padding-bottom: 0; padding-left: 160px;
+                                padding-right: 130px; overflow-x: hidden;">
+                                <div style="position: relative; top: 0px; margin: 0; padding-left: 10px; border-left: solid 1px #DFF4FF;
+                                    padding-bottom: 100px;">
+                                    
+                                    
+
+    <script type="text/javascript">
+$(document).ready(function() {              
+    $('.bigTooltip').hide();
+    $('#learn_more').click(function() { 
+                                $('.bigTooltip').slideDown('slow') 
+                                });
+                                
+    $('#learn_more').attr('title', 'Click to Learn More');       
+                                
+});
+    </script>
+
+    <div id="tdInsideSection">
+        <div id="tdInsideSectionButtons" style="width: 100%; text-align: right; position: relative;">
+            <table border="0" cellpadding="0" cellspacing="0" style="text-align: center; float: right;">
+                <tr>
+                    <td style="width: 40px;">
+                        <div style="display: none">
+                            
+                            <img id="ctl00_content_imgEditionOff" title="E-Edition" src="/ASTD/Images/TDButtons/TD_edition_gray_30.gif" style="border-width:0px;" /></div>
+                    </td>
+                    <td style="width: 40px;">
+                        <img id="ctl00_content_imgEmail" title="Email to Friend" onmouseover="this.src = '/ASTD/Images/TDButtons/TD_email_roll_30.gif'" onmouseout="this.src = '/ASTD/Images/TDButtons/TD_email_30.gif'" onclick="showDiv('emailFriendBox')" src="/ASTD/Images/TDButtons/TD_email_30.gif" style="border-width:0px;cursor: pointer;" />
+                    </td>
+                    <td style="width: 40px;">
+                        <a id="ctl00_content_imgPdf" href="http://store.astd.org/Default.aspx?tabid=167&amp;ProductId=22422" target="_blank">
+                                                    <img  src="/ASTD/Images/TDButtons/TD_PDF_30.gif" border="0"
+                                                    onmouseover="this.src = '/ASTD/Images/TDButtons/TD_PDF_roll_30.gif'" onmouseout="this.src = '/ASTD/Images/TDButtons/TD_PDF_30.gif'"
+                                                    title="PDF" /></a>
+                        
+                    </td>
+                    <td style="width: 40px;">
+                        <a id="ctl00_content_imgPodcast" href="http://www.astd.org/NR/rdonlyres/95CD099C-7BDD-47D0-A9E3-4738862B2775/0/welloiled.mp3" target="_blank"><img src="/ASTD/Images/TDButtons/TD_podcast_30.png"
+                                                     onmouseover="this.src = '/ASTD/Images/TDButtons/TD_podcast_roll_30.png'"
+                                                        onmouseout="this.src = '/ASTD/Images/TDButtons/TD_podcast_30.png'"
+                                                        title="Podcast"
+                                                        border="0" /></a>
+                        
+                    </td>
+                    <td style="width: 40px;">
+                        <img id="ctl00_content_imgPrint" title="Print this article" onmouseover="this.src = '/ASTD/Images/TDButtons/TD_print_roll_30.gif'" onmouseout="this.src = '/ASTD/Images/TDButtons/TD_print_30.gif'" onclick="printSelection(document.getElementById('printableContent'));return false;" src="/ASTD/Images/TDButtons/TD_print_30.gif" style="border-width:0px;cursor: pointer;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-family: Verdana; font-size: 9px; color: gray; text-transform: lowercase;
+                            display: none;">E-dition</span>
+                    </td>
+                    <td>
+                        <span style="font-family: Verdana; font-size: 9px; color: gray; text-transform: lowercase">
+                            Email</span>
+                    </td>
+                    <td>
+                        <span style="font-family: Verdana; font-size: 9px; color: gray; text-transform: lowercase">
+                            PDF</span>
+                    </td>
+                    <td>
+                        <span style="font-family: Verdana; font-size: 9px; color: gray; text-transform: lowercase">
+                            Podcast</span>
+                    </td>
+                    <td>
+                        <span style="font-family: Verdana; font-size: 9px; color: gray; text-transform: lowercase">
+                            Print</span>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                
+<div id="emailFriendBox" class="feedbackBox" style="display: none; position: absolute;
+    top: 40px; right: 10px; height: 300px; width:350px; text-align: left;">
+    <span class="warningMessage" style="float: left">Email this page to a friend!</span><span
+        class="warningMessage" style="float: right; cursor: pointer;" onclick="hideDiv('emailFriendBox')">close</span>
+    <br />
+    <br />
+    <table>
+        <tr>
+            <td>
+                From:
+            </td>
+            <td>
+                <input name="ctl00$content$EmailPage1$txtFrom" type="text" id="ctl00_content_EmailPage1_txtFrom" style="border: solid 1px #dcdcdc" />
+                <span id="ctl00_content_EmailPage1_reqFrom" style="color:Red;display:none;">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                To :
+            </td>
+            <td>
+                <input name="ctl00$content$EmailPage1$txtTo" type="text" id="ctl00_content_EmailPage1_txtTo" style="border: solid 1px #dcdcdc" />
+                <span id="ctl00_content_EmailPage1_regexValidador" style="color:Red;display:none;">*</span><span id="ctl00_content_EmailPage1_reqTo" style="color:Red;display:none;">*</span></td>
+        </tr>
+    </table>
+    <br />
+    Message:
+    <textarea name="ctl00$content$EmailPage1$txtMessage" rows="2" cols="20" id="ctl00_content_EmailPage1_txtMessage" style="height:100px;width:100%;border: solid 1px #dcdcdc"></textarea>
+    <br />
+    <br />
+    <input type="submit" name="ctl00$content$EmailPage1$cmdSubmit" value="Send" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$content$EmailPage1$cmdSubmit&quot;, &quot;&quot;, true, &quot;EmailPage&quot;, &quot;&quot;, false, false))" id="ctl00_content_EmailPage1_cmdSubmit" />
+</div>
+
+            </div>
+        </div>
+        <div id="printableContent">
+            <span id="ctl00_content_AllTagsHtmlPlaceholderControl1"><DIV id=tdInsideSection>
+<P class=eyebrow>T+D OCTOBER 11 // BEST //</P>
+<TABLE width="100%" align=left valign="top">
+<TBODY>
+<TR>
+<TD style="PADDING-RIGHT: 10px" vAlign=top width="10%" align=left><IMG border=0 src="http://www1.astd.org/TDimages/2011/oct/JiffyLube.png" width=120 height=180> </TD>
+<TD bgColor=#ffffff vAlign=top width="90%" align=left>
+<P class=heading-1>Keeping Learning Well-Oiled</P>
+<P class=deck>Jiffy Lube University offers 10 certifications&#8212;including training courses on customer service, management, technical procedures, and service standards&#8212;to prepare 21,000 employees to serve 22 million customers each year.</P>
+<P class=by>By Jennifer J. Salopek</P>
+<DIV style="BORDER-BOTTOM: #000000 1px; POSITION: relative; BORDER-LEFT: #000000 1px; BACKGROUND-COLOR: #ffffff; BORDER-TOP: #000000 1px; BORDER-RIGHT: #000000 1px; layer-background-color: #FFFFFF"><A id=learn_more title="Learn More"><IMG src="http://www1.astd.org/TDimages/2009/general/Plus_20.png"></A> 
+<DIV id=tdInsideBubble class=bigTooltip><IMG style="PADDING-BOTTOM: 6px" border=0 align=top src="http://www1.astd.org/TDimages/2010/general/Plus_Inside.png"> 
+<P class=learn>+ <SPAN class=learn-white><B>From <I>T+D</I>: </B><I><A href="http://e-ditionsbyfry.com/Olive/ODE/TDM/Default.aspx?href=TDM/2011/09/01">What Does it Cost to Attain Certification?</A></I></SPAN> //</P>
+<P class=learn>+ <SPAN class=learn-white><B>From <I>T+D</I>: </B><I><A href="http://store.astd.org/Default.aspx?tabid=167&amp;ProductId=21714">Certificate or Certification? That is the Question</A></I></SPAN> // </P>
+<P class=learn>+ <SPAN class=learn-white><B>From <I>astd.org</I>: </B><I><A href="http://store.astd.org/Default.aspx?tabid=167&amp;ProductId=7450">How to Start a Training Program</A></I></SPAN> // </P></DIV></DIV></TD></TR></TBODY></TABLE>
+<DIV style="CLEAR: both">&nbsp;</DIV>
+<TABLE width="100%" align=left valign="top">
+<TBODY>
+<TR>
+<TD style="PADDING-RIGHT: 10px" vAlign=top width="100%" align=left>
+<P class=copy-intro>Most car owners know to have the oil in their cars changed every three months or 3,000 miles. Last year, Jiffy Lube International (JLI) served 22 million customers who did just that.</P>
+<P class=copy>Employee training and development plays a critical role in preparing 21,000 workers in more than 2,000 U.S. franchise locations to provide consistent, correct technical services with a strong focus on customer satisfaction. Although some of that training is required by the policies and procedures that govern the franchise, JLI, a wholly owned subsidiary of Shell Oil Corporation, doesn&#8217;t have to mandate much of it.</P>
+<P class=copy>&#8220;Training is not a hard sell,&#8221; explains Kenneth Barber, manager of learning and development for the past five years. &#8220;Franchisees are hungry for training, and just as engaged as we are. There&#8217;s no pushback.&#8221;</P>
+<P class=copy>Jiffy Lube University (JLU), branded as a corporate university in 2009, offers 10 certifications comprising 60 courses. Training courses on customer service, management, technical procedures, and service standards are based on procedures and best practices agreed to by franchisees and the business.</P>
+<P class=copy>All employees have training paths and must achieve certifications at certain milestones during their employment tenure. For example, all technicians must be certified in safety and product knowledge within 30 days after hire. They get a snapshot of their progress via the Roadmap, the learner portal in the learning management system. More than 150 hours of training are available during the employee&#8217;s first year. A gas gauge shows an employee&#8217;s progress, while store managers get color-coded LMS reports that show their location&#8217;s overall progress toward the requirements.</P>
+<P class=copy>More than 95 percent of training content is delivered online, on demand. Once a course is completed, employees take an online test to demonstrate knowledge mastery, and then managers provide on-the-job coaching to ensure learning transfer. They use Daily Training and Observation Guides created for each service. Learners must pass a proficiency exam to earn certification.</P>
+<P class=copy>&#8220;Although we have always had an extremely strong commitment to learning and development and its value proposition, that focus has become more precise over the past five years,&#8221; says Henry Flores, the organization&#8217;s chief learning officer. &#8220;We are making a significant effort to become world-class.&#8221;</P>
+<P class=copy>Barber oversees seven full-time staff members&#8212;one who manages the LMS and six trainers who travel 75 percent of the time. The six traveling trainers focus on advanced management training, which is available to assistant managers and managers in instructor-led training (ILT) classes throughout North America. These advanced management training classes last three days and include courses on leadership, goal setting, time management, finance, and people management.</P>
+<P class=copy>Initial supervisory training totals 51 hours of e-learning and classroom training. The e-learning skills are refreshed every two years, while classroom training is recertified every five years with 24 hours of training. District managers take an additional eight hours of professional skills training each year.</P>
+<P class=copy>&#8220;Our award-winning training program is an incentive for a new franchisee to join the business and is used aggressively to recruit new franchisees for the business,&#8221; says Stuart Crum, president of JLI.</P>
+<P class=copy>It also helps franchisees tackle one of their most pressing challenges: employee turnover. In retail businesses, annual employee turnover can exceed 100 percent. JLU&#8217;s web-based training reduces training costs and time, while metrics help store managers and owners identify and focus retention efforts on top performers. Progress through the Roadmap on the learner portal is an incentive to top performers to stay with JLI.</P>
+<P class=copy>&#8220;We have really begun to see increased awareness and ownership of employee training since deploying the new learner portal last December,&#8221; says Barber. &#8220;Employees can make choices on their own merit. It helps maintain interest when they can see the opportunities. We have seen a direct correlation between certification and retention.&#8221; In some locations, turnover has been reduced by more than 50 percent; it has declined system-wide each year for the past three years.</P>
+<P class=copy>Longer employee tenure facilitates integrated talent management at JLI, which counts compensation and rewards, engagement, recruitment, learning and training, and individual professional development among its practices. Each technical position has a competency structure that outlines skills and performance for associated duties and tasks. Employees and managers can assess and track progress against specific competencies that must be mastered on a defined time schedule; the learning objectives align with the competencies.</P>
+<P class=copy>&#8220;We&#8217;re very proud of JLU&#8217;s alignment with the business and with the franchise community,&#8221; says Barber, who meets with JLI&#8217;s leadership team on a regular basis and reports out to that group twice a year. To make decisions about learning and performance initiatives, the learning team works with the Franchisee Training Committee, which includes eight franchise representatives. They convene for two-day meetings twice a year, and Barber conducts monthly conference calls with the committee.</P>
+<P class=copy>The committee reviews current operational practices, makes recommendations for changes, and sets priorities based on the best use of resources. Committee members are involved in the design and development of training courses, providing subject matter experts who help define the content. Courses are reviewed by stakeholders at three points in the development process.</P>
+<P class=copy>&#8220;This joint ownership is really critical,&#8221; says Barber. &#8220;When a new course goes out on JLU, franchisees know that they have all helped to develop it.&#8221;</P>
+<P class=copy>Last year, Barber and his team performed a complete evaluation of the corporate university, including all e-learning and ILT courses. He cites this effort as his team&#8217;s most innovative learning initiative of the past 12 months. JLU tweaked everything, from its classroom PowerPoint slides to online course materials, as well as the standards to which learning team members perform. Feedback from employees and customers has been positive. Customer satisfaction surveys include a question about customers&#8217; perception of employee training; positive responses have improved from 87.9 percent in 2005 to 94 percent in 2010.</P>
+<P class=copy>&#8220;Our goal was to improve alignment with the organization, incorporate best practices in adult learning techniques, and increase training effectiveness for every learner,&#8221; he says. &#8220;We all tend to get too comfortable and to develop blind spots.&#8221;</P>
+<P class=copy>By the way, JLI no longer recommends oil changes every 3,000 miles for all cars. Rather, it has moved to a schedule based on manufacturer recommendations and the customer&#8217;s assessment of his driving conditions, from normal to severe. Training played an integral part in that culture shift because employees have been trained to guide customers through that assessment by offering choices and explaining them.</P>
+<P class=copy>&#8220;[The service] intervals have actually shortened,&#8221; says Barber. &#8220;Customers appreciate our honesty and are pleased that they are in control. It&#8217;s a leadership position that we have taken.&#8221;</P>
+<P class=bio><SPAN class=biochar>Jennifer J. Salopek</SPAN> is a freelance writer in McLean, Virginia; <A href="mailto:jjsalopek@cox.net">jjsalopek@cox.net</A>.</P></TD></TR></TBODY></TABLE></DIV></span>
+        </div>
+    </div>
+
+                                    <p>
+                                        <span id="ctl00_customXmlContent"></span>
+                                    </p>
+                                    <p>
+                                        &nbsp;</p>
+                                    <div style="clear: both">
+                                        &nbsp;</div>
+                                    <div>
+                                        <div id="ctl00_ratingDiv" style="display:none;">
+                                            <span style="font-size: 12px; color: Gray">In order to make your navigation better in
+                                                the future, please let us know if this page was useful. </span>
+                                            <div id="ctl00_Rating1">
+	<input type="hidden" name="ctl00$Rating1_RatingExtender_ClientState" id="ctl00_Rating1_RatingExtender_ClientState" />
+                                            <a href="#" id="ctl00_Rating1_A" title="0" style="text-decoration:none"><span id="ctl00_Rating1_Star_1" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span><span id="ctl00_Rating1_Star_2" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span><span id="ctl00_Rating1_Star_3" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span><span id="ctl00_Rating1_Star_4" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span><span id="ctl00_Rating1_Star_5" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span></a>
+</div>
+                                            <span class="grayText" id="lblResponse"></span>
+                                        </div>
+                                    </div>
+                                    <div style="clear: both">
+                                        &nbsp;</div>
+                                    <div style="position: relative;">
+                                        <div id="ctl00_feedbackBoxTrigger" style="position: relative; margin-top: 15px;
+                                            margin-bottom: 30px;">
+                                            <span id="ctl00_lbFeedback" class="warningMessage" onclick="showDiv('feedbackBox')" style="cursor: pointer;">Request more information or report issues with this page.</span>
+                                        </div>
+                                        <div style="position: relative">
+                                            
+    <span class="warningMessage">To add pages to your ASTD Favorites you must be logged in.</span>
+    
+
+                                        </div>
+                                        <div>
+                                            
+<div id="feedbackBox" class="feedbackBox" style="display: none; position: absolute;
+    top: -200px;">
+    <span class="warningMessage" style="float: left">Request more information or give feedback</span><span
+        class="warningMessage" style="float: right; cursor: pointer;" onclick="hideDiv('feedbackBox')">close</span>
+    <br />
+    <textarea name="ctl00$ContactWebmaster1$txtFeedbackMessage" rows="2" cols="20" id="ctl00_ContactWebmaster1_txtFeedbackMessage" style="height:100px;width:100%;border: solid 1px #dcdcdc"></textarea>
+    <br />
+    <br />
+    <input type="submit" name="ctl00$ContactWebmaster1$cmdSubmitFeedback" value="Send" id="ctl00_ContactWebmaster1_cmdSubmitFeedback" />
+</div>
+<div id="requestInformationBox" class="feedbackBox" style="display: none; position: absolute; top: -250px;width:350px; height:280px;">
+    <span class="warningMessage" style="float: left">Request Information</span><span
+        class="warningMessage" style="float: right; cursor: pointer;" onclick="hideDiv('requestInformationBox')">close</span>
+    <br />
+    <br />
+    <table>
+        <tr>
+            <td>
+               <span class="warningMessage">Name:</span> 
+            </td>
+            <td>
+                <input name="ctl00$ContactWebmaster1$txtName" type="text" id="ctl00_ContactWebmaster1_txtName" style="width:250px;border: solid 1px #dcdcdc" />
+                <span id="ctl00_ContactWebmaster1_rqName" style="color:Red;visibility:hidden;">*</span>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <span class="warningMessage">Email:</span>
+            </td>
+            <td>
+                <input name="ctl00$ContactWebmaster1$txtEmail" type="text" id="ctl00_ContactWebmaster1_txtEmail" style="width:150px;border: solid 1px #dcdcdc" />
+                <span id="ctl00_ContactWebmaster1_reqEmail" style="color:Red;visibility:hidden;">*</span>
+                <span id="ctl00_ContactWebmaster1_regexEmail" style="color:Red;visibility:hidden;">*</span>
+        
+            </td>
+        </tr>
+        <tr>
+        <td>
+        <span class="warningMessage">Comments:</span>
+        </td>
+        <td>
+        <textarea name="ctl00$ContactWebmaster1$txtCommentMessage" rows="2" cols="20" id="ctl00_ContactWebmaster1_txtCommentMessage" style="height:100px;width:250px;border: solid 1px #dcdcdc"></textarea>
+        </td>
+        </tr>
+    </table>
+    <br />
+    <input type="submit" name="ctl00$ContactWebmaster1$cmdSubmitInformationRequest" value="Send" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContactWebmaster1$cmdSubmitInformationRequest&quot;, &quot;&quot;, true, &quot;RequestInformation&quot;, &quot;&quot;, false, false))" id="ctl00_ContactWebmaster1_cmdSubmitInformationRequest" />
+</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div id="leftContent">
+                                
+                                        <div style="text-align: left; width: 160px;">
+                                            <a href="http://store.astd.org/Default.aspx?tabid=198">
+                                                <img src="/ASTD/images/joinNow_up.jpg" alt="Join Now!" onmouseover="this.src = '/ASTD/images/joinNow_down.jpg'"
+                                                    onmouseout="this.src = '/ASTD/images/joinNow_up.jpg'" border="0" /></a>
+                                        </div>
+                                    
+                                <div id="LeftNavControl" style="display: block;">
+                                    <span id="ctl00_LeftNav"><div class='leftNav'><ul><li><a href='http://www.astd.org/TD/'><span class='linkText'>T+D Home</span></a></li></a></li><li id='item0menuroot' onmouseover='PopupMenu("item0");'><a href='http://www.astd.org/TD/AboutTD/' class='channelWithChildren'><span class='linkText'>About T+D</span></a><ul id='item0menu' onmouseover='PopupMenu("item0");'><li><a href='http://www.astd.org/TD/AboutTD/awards.htm'>Awards</a></li><li><a href='http://www.astd.org/TD/AboutTD/editorialboard.htm'>Editorial Board</a></li></ul></a></li><li id='item1menuroot' onmouseover='PopupMenu("item1");'><a href='http://www.astd.org/TD/Advertising/' class='channelWithChildren'><span class='linkText'>Advertising</span></a><ul id='item1menu' onmouseover='PopupMenu("item1");'><li><a href='http://www.astd.org/TD/Advertising/buyersGuide.htm'>Buyer's Guide</a></li><li><a href='http://www.astd.org/TD/Advertising/advContacts.htm'>Sales Contacts</a></li></ul></a></li><li id='item2menuroot' onmouseover='PopupMenu("item2");'><a href='http://www.astd.org/TD/Archives/' class='channelWithChildren'><span class='linkText'>Archives</span></a><ul id='item2menu' onmouseover='PopupMenu("item2");'><li><a href='http://www.astd.org/TD/Archives/2007/'>2007</a></li><li><a href='http://www.astd.org/TD/Archives/2008/'>2008</a></li><li><a href='http://www.astd.org/TD/Archives/2009/'>2009</a></li><li><a href='http://www.astd.org/TD/Archives/2010/'>2010</a></li><li><a href='http://www.astd.org/TD/Archives/2011/'>2011</a></li></ul></a></li><li id='item3menuroot' onmouseover='PopupMenu("item3");'><a href='http://www.astd.org/TD/At-C-Level/' class='mainItemNoChildren'><span class='linkText'>At-C-Level</span></a><ul id='item3menu' onmouseover='PopupMenu("item3");'></ul></a></li><li><a href='http://www.astd.org/TD/Blog.htm' class='mainItemNoChildren'><span class='linkText'>Blog</span></a></li><li id='item4menuroot' onmouseover='PopupMenu("item4");'><a href='http://www.astd.org/TD/ContactUs/' class='channelWithChildren'><span class='linkText'>Contact Us</span></a><ul id='item4menu' onmouseover='PopupMenu("item4");'><li><a href='http://www.astd.org/TD/ContactUs/ContactUs.htm'>Contact Us</a></li><li><a href='http://www.astd.org/TD/ContactUs/FAQ.htm'>FAQ</a></li></ul></a></li><li><a href='http://www.astd.org/membership/member-only-content.htm?destinationPage=http%3a%2f%2fwww.astd.org%2fTD%2fE-ditions%2f' class='mainItemNoChildrenProtected'><span class='linkText'>E-ditions</span><!--[if IE 7]></a><![endif]--><table><tr><td><dl><dt>&nbsp;</dt><dd><span class='bubbleLinks'><a href='http://login.astd.org/Login.aspx?ReturnUrl=http://www.astd.org/TD/E-ditions/'><img src='/ASTD/images/astd_memberpopup_4.gif' border='0' /> Sign in to ASTD</a><a href='http://www.astd.org/membership/reasonsToJoin.htm'><img src='/ASTD/images/astd_memberpopup_4.gif' border='0' /> Learn more about<br />Member Benefits</a></span></dd></dl></td></tr></table><!--[if lte IE 6]></a><![endif]--></li><li id='item5menuroot' onmouseover='PopupMenu("item5");'><a href='http://www.astd.org/TD/Permissions/' class='mainItemNoChildren'><span class='linkText'>Permissions</span></a></a></li><li><a href='http://www.astd.org/TD/TDPodcasts.htm' class='mainItemNoChildren'><span class='linkText'>Podcasts</span></a></li><li id='item6menuroot' onmouseover='PopupMenu("item6");'><a href='http://www.astd.org/TD/Reprints/' class='channelWithChildren'><span class='linkText'>Reprints</span></a><ul id='item6menu' onmouseover='PopupMenu("item6");'><li><a href='http://www.astd.org/TD/Reprints/reprints_bulk.htm'>Bulk Reprints - Reprints - T+D Magazine</a></li><li><a href='http://www.astd.org/TD/Reprints/reprints_single.htm'>Single Reprints - Reprints - T+D Magazine</a></li></ul></a></li><li id='item7menuroot' onmouseover='PopupMenu("item7");'><a href='http://www.astd.org/TD/Submissions/' class='channelWithChildren'><span class='linkText'>Submissions</span></a><ul id='item7menu' onmouseover='PopupMenu("item7");'><li><a href='http://www.astd.org/TD/Submissions/2011_EdCal.htm'>2011 T+D Editorial Calendar</a></li><li><a href='http://www.astd.org/TD/Submissions/TDEditorialCalendar2012.htm'>2012 T+D Editorial Calendar</a></li><li><a href='http://www.astd.org/TD/Submissions/submissions_authorguideline.htm'>Author Guidelines</a></li><li><a href='http://www.astd.org/TD/Submissions/editorial_calendar.htm'>Editorial Calendar</a></li></ul></a></li><li><a href='http://www.astd.org/TD/Subscriptions/'><span class='linkText'>Subscriptions</span></a></li><li><a href='http://www.astd.org/TD/TDWebcasts.htm' class='mainItemNoChildren'><span class='linkText'>T+D Webcasts</span></a></li><li><a href='http://www.astd.org/TD/TheBestofTD.htm' class='mainItemNoChildren'><span class='linkText'>The Best of T+D</span></a></li></ul></div></span>
+                                </div>
+                            </div>
+                            <div id="rightContent">
+                                
+
+<div style="margin-bottom: 10px">
+    <a href="http://ipt.boisestate.edu" target="_blank" onclick="javascript: _gaq.push(['_trackEvent', 'Advertisements', 'Click', 'advertisements_boise_TD1']);"><img src="http://www1.astd.org/AdvertisementAdmin/adImages/0127d935-c0b5-4cdf-a2f3-147fa9885e22.jpg" height="240" width="120" alt="boise_TD1" border="0" /></a>
+</div>
+<br />
+<div style="margin-bottom: 10px">
+    <a href="https://bsi.learncentral.com/?track=UMASTD&amp;utm_source=ASTD&amp;utm_medium=webbanner&amp;utm_campaign=Training" target="_blank" onclick="javascript: _gaq.push(['_trackEvent', 'Advertisements', 'Click', 'advertisements_BSI_TD2']);"><img src="http://www1.astd.org/AdvertisementAdmin/adImages/4c4efac4-88b2-4c0b-850b-c07c03c81007.gif" height="240" width="120" alt="BSI_TD2" border="0" /></a>
+</div>
+<br />
+<div style="margin-bottom: 10px">
+    
+</div>
+<br />
+<div style="margin-bottom: 10px">
+    
+</div>
+<br />
+                            </div>
+                            <div id="footerDiv" style="display: table-cell;">
+                                
+<div id="footer" style="display: table-cell; width: 800px;">
+    American Society for Training & Development<br />
+    <li><a href='/ASTD/advertising/'>Advertise with Us</a></li><li><a href='/ASTD/aboutus/'>About Us</a></li><li><a href='/ASTD/contact/'>Contact Us</a></li><li><a href='/ASTD/termsprivacy/'>Terms & Privacy</a></li><li><a href='/ASTD/jobs/'>Jobs at ASTD</a></li><br />
+    <div id="footersub">
+        <ul>
+            <li>© 2010 ASTD&nbsp;&nbsp; All Rights Reserved
+                <li>1640 King Street, Box 1443
+                    <li>Alexandria, VA 22313-1443, USA
+                        <li>Phone: 703.683.8100
+                            <li>Fax: 703.683.8103 </li>
+        </ul>
+    </div>
+</div>
+<br />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+var isAstdMember = false;
+        </script>
+
+        <script type="text/javascript">  
+     
+            $("div[data-switch='member']").children("div").hide();
+           
+            if (isAstdMember){
+                $("div[data-switch='member']").children("div[data-case='true']").show();
+            }
+            else {
+                $("div[data-switch='member']").children("div[data-case='false']").show();
+            }
+       
+        </script>
+
+        <script type="text/javascript">  
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequest)
+        function EndRequest(sender, args)  { 
+          ResizeAjax(sender,args);
+        }
+        </script>
+
+        <script type="text/javascript">
+            Sys.Application.add_load(function() {
+            $find("RatingBehavior1").add_EndClientCallback( function(sender, e) {var a = $get('lblResponse'); a.innerHTML = e.get_CallbackResult();});});
+        </script>
+
+        <script type="text/javascript">  
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequest)
+        function EndRequest(sender, args)  { 
+          ResizeAjax(sender,args);
+        }
+        </script>
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_content_EmailPage1_reqFrom"), document.getElementById("ctl00_content_EmailPage1_regexValidador"), document.getElementById("ctl00_content_EmailPage1_reqTo"), document.getElementById("ctl00_ContactWebmaster1_rqName"), document.getElementById("ctl00_ContactWebmaster1_reqEmail"), document.getElementById("ctl00_ContactWebmaster1_regexEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_content_EmailPage1_reqFrom = document.all ? document.all["ctl00_content_EmailPage1_reqFrom"] : document.getElementById("ctl00_content_EmailPage1_reqFrom");
+ctl00_content_EmailPage1_reqFrom.controltovalidate = "ctl00_content_EmailPage1_txtFrom";
+ctl00_content_EmailPage1_reqFrom.errormessage = "*";
+ctl00_content_EmailPage1_reqFrom.display = "Dynamic";
+ctl00_content_EmailPage1_reqFrom.validationGroup = "EmailPage";
+ctl00_content_EmailPage1_reqFrom.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_content_EmailPage1_reqFrom.initialvalue = "";
+var ctl00_content_EmailPage1_regexValidador = document.all ? document.all["ctl00_content_EmailPage1_regexValidador"] : document.getElementById("ctl00_content_EmailPage1_regexValidador");
+ctl00_content_EmailPage1_regexValidador.controltovalidate = "ctl00_content_EmailPage1_txtTo";
+ctl00_content_EmailPage1_regexValidador.errormessage = "*";
+ctl00_content_EmailPage1_regexValidador.display = "Dynamic";
+ctl00_content_EmailPage1_regexValidador.validationGroup = "EmailPage";
+ctl00_content_EmailPage1_regexValidador.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_content_EmailPage1_regexValidador.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var ctl00_content_EmailPage1_reqTo = document.all ? document.all["ctl00_content_EmailPage1_reqTo"] : document.getElementById("ctl00_content_EmailPage1_reqTo");
+ctl00_content_EmailPage1_reqTo.controltovalidate = "ctl00_content_EmailPage1_txtTo";
+ctl00_content_EmailPage1_reqTo.errormessage = "*";
+ctl00_content_EmailPage1_reqTo.display = "Dynamic";
+ctl00_content_EmailPage1_reqTo.validationGroup = "EmailPage";
+ctl00_content_EmailPage1_reqTo.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_content_EmailPage1_reqTo.initialvalue = "";
+var ctl00_ContactWebmaster1_rqName = document.all ? document.all["ctl00_ContactWebmaster1_rqName"] : document.getElementById("ctl00_ContactWebmaster1_rqName");
+ctl00_ContactWebmaster1_rqName.controltovalidate = "ctl00_ContactWebmaster1_txtName";
+ctl00_ContactWebmaster1_rqName.errormessage = "*";
+ctl00_ContactWebmaster1_rqName.validationGroup = "RequestInformation";
+ctl00_ContactWebmaster1_rqName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContactWebmaster1_rqName.initialvalue = "";
+var ctl00_ContactWebmaster1_reqEmail = document.all ? document.all["ctl00_ContactWebmaster1_reqEmail"] : document.getElementById("ctl00_ContactWebmaster1_reqEmail");
+ctl00_ContactWebmaster1_reqEmail.controltovalidate = "ctl00_ContactWebmaster1_txtEmail";
+ctl00_ContactWebmaster1_reqEmail.errormessage = "*";
+ctl00_ContactWebmaster1_reqEmail.validationGroup = "RequestInformation";
+ctl00_ContactWebmaster1_reqEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContactWebmaster1_reqEmail.initialvalue = "";
+var ctl00_ContactWebmaster1_regexEmail = document.all ? document.all["ctl00_ContactWebmaster1_regexEmail"] : document.getElementById("ctl00_ContactWebmaster1_regexEmail");
+ctl00_ContactWebmaster1_regexEmail.controltovalidate = "ctl00_ContactWebmaster1_txtEmail";
+ctl00_ContactWebmaster1_regexEmail.errormessage = "*";
+ctl00_ContactWebmaster1_regexEmail.validationGroup = "RequestInformation";
+ctl00_ContactWebmaster1_regexEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_ContactWebmaster1_regexEmail.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+function EndRequestHandlerCMSFix(sender, args) { 
+   if (typeof (__CMS_CurrentUrl) != "undefined")
+   {
+       if(Sys.WebForms.PageRequestManager._instance._form._initialAction.indexOf("http://www.astd.org", 0) == -1)
+           Sys.WebForms.PageRequestManager._instance._form._initialAction = __CMS_CurrentUrl;
+       else
+           Sys.WebForms.PageRequestManager._instance._form._initialAction = "http://www.astd.org"+__CMS_CurrentUrl;
+   }
+}
+EndRequestHandlerCMSFix(null, null);
+Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandlerCMSFix);
+</script>
+
+<!-- Generated by Microsoft.ContentManagement.WebControls.Console to reset form.action -->
+<SCRIPT type="text/javascript">
+<!--
+
+    var __CMS_PostbackFormBeenReset = false;
+
+    function __cmsRestFormAction()
+    {
+        if ( !__CMS_PostbackFormBeenReset )
+        {
+            // set form postback Url to be current translated CMS Url
+            __CMS_PostbackForm.action = __CMS_CurrentUrl;
+        }
+    }
+
+    var __cmsResetFormCachedPostBack = null;
+    if( typeof window.__doPostBack != "undefined" )
+    {
+        __cmsResetFormCachedPostBack = __doPostBack;
+        __doPostBack = __cmsResetFormOverridePostBack;
+    }
+
+    var __cmsResetFormCachedOnSubmit = null;
+    if( typeof __CMS_PostbackForm.onsubmit != "undefined" )
+    {
+        __cmsResetFormCachedOnSubmit = __CMS_PostbackForm.onsubmit;
+        __CMS_PostbackForm.onsubmit = __cmsResetFormOverrideOnSubmit;
+    }
+    else
+    {
+        __cmsResetFormCachedOnSubmit = null;
+        __CMS_PostbackForm.onsubmit = __cmsResetFormOverrideOnSubmit;
+    }
+
+    function __cmsResetFormOverridePostBack( eventTarget, eventArgument )
+    {
+        __cmsRestFormAction();
+        __cmsResetFormCachedPostBack( eventTarget, eventArgument );
+    }
+
+    function __cmsResetFormOverrideOnSubmit()
+    {
+        __cmsRestFormAction();
+        if (__cmsResetFormCachedOnSubmit != null)
+            return __cmsResetFormCachedOnSubmit();
+        else
+            return true;
+    }
+// -->
+</SCRIPT>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_postBackReference":"__doPostBack(\u0027ctl00$Header1$Header_Base1$NavMenu1$RadMenu1\u0027,\u0027arguments\u0027)","_selectedValue":"","_skin":"Default","attributes":{},"clientStateFieldID":"ctl00_Header1_Header_Base1_NavMenu1_RadMenu1_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"groupSettings":{"flow":1,"width":"668px","height":"24px"},"items":[{"value":"Conferences - ICE","navigateUrl":"http://www.astdconference.org"},{"value":"Conferences - TechKnowledge","navigateUrl":"http://www.tk12.astd.org/tk12/public/enter.aspx"},{"value":"Conferences - Telling Ain\u0027t Training","navigateUrl":"http://www.astd.org/content/conferences/tellingAintTraining/"},{"value":"Conferences - Other Events","navigateUrl":"http://www.astd.org/content/conferences/otherevents.htm"},{"value":"Conferences - Speaking Opportunities","navigateUrl":"http://www.astd.org/ASTD/volunteer/speakingOpportunities/speakingOpportunities.htm"}],"value":"Conferences","navigateUrl":"http://www.astd.org/content/conferences/"},{"groupSettings":{"flow":1,"offsetX":-104,"width":"476px","height":"24px"},"items":[{"value":"Education - CPLP","navigateUrl":"http://www.astd.org/content/ASTDcertification/"},{"value":"Education - Certificate Programs","navigateUrl":"http://www.astd.org/content/education/certificatePrograms/certificates-workshops.htm"},{"value":"Education - Online Programs","navigateUrl":"http://www.astd.org/content/education/certificatePrograms/online-programs/"},{"value":"Education - Custom Programs","navigateUrl":"http://www.astd.org/content/education/certificatePrograms/on-siteprograms.htm"}],"value":"Education","navigateUrl":"http://www.astd.org/content/education/certificatePrograms/"},{"groupSettings":{"flow":1,"offsetX":-188,"width":"578px","height":"24px"},"items":[{"value":"Publications - T+D","navigateUrl":"http://www.astd.org/TD"},{"value":"Publications - ASTD Press","navigateUrl":"http://www.astd.org/content/publications/ASTDPress/"},{"value":"Publications - Infoline","navigateUrl":"http://www.astd.org/content/publications/infoline/"},{"value":"Publications - Research","navigateUrl":"http://www.astd.org/content/research/"},{"value":"Publications - Newsletters","navigateUrl":"http://www.astd.org/content/publications/newsletters_journals/"},{"value":"Publications - Learning Circuits","navigateUrl":"http://www.astd.org/LC/"},{"value":"Publications - Licensing","navigateUrl":"http://www.astd.org/ASTD/Enterprise/Content+Licensing.htm"}],"value":"Publications","navigateUrl":"http://www.astd.org/content/publications/"},{"groupSettings":{"flow":1,"offsetX":-96,"width":"382px","height":"24px"},"items":[{"value":"Membership - Join","navigateUrl":"http://www.astd.org/membership/howtojoin.htm"},{"value":"Membership - Member Center","navigateUrl":"http://www.astd.org/membership/MemberCenter/"},{"value":"/nav/chapter","navigateUrl":"http://www.astd.org/membership/chapters/AboutChapters.htm"},{"value":"Membership - Groups","navigateUrl":"http://www.astd.org/ASTD/Enterprise/Group+Memberships.htm"}],"value":"Membership","navigateUrl":"http://www.astd.org/membership/"},{"groupSettings":{"flow":1,"offsetX":-194,"width":"576px","height":"24px"},"items":[{"value":"Resources - Advertise","navigateUrl":"http://www.astd.org/TD/Advertising/"},{"value":"Resources - Virtual Catalog","navigateUrl":"http://www1.astd.org/virtualcatalog/"},{"value":"Resources - Buyer\u0027s Guide","navigateUrl":"http://expo365.astd.org/bg/public/enter.aspx"},{"value":"Resources - Career Center","navigateUrl":"http://www.astd.org/content/careers/"},{"value":"Resources - Enterprise","navigateUrl":"http://www.astd.org/ASTD/Enterprise/Enterprise+Learning+Solutions.htm"},{"value":"Resources - Knowledge Center","navigateUrl":"http://www.astd.org/content/research/doYourOwn/doYourOwn.htm"}],"value":"Resources","navigateUrl":"http://www.astd.org/resources/"},{"groupSettings":{"flow":1,"offsetX":-372,"width":"581px","height":"24px"},"items":[{"value":"Communities - Learning","navigateUrl":"http://www.astd.org/communities/networks/"},{"value":"Communities - Social Networking","navigateUrl":"http://www.astd.org/communities/networks/social-networking.htm"},{"value":"Communities - Sales Training","navigateUrl":"http://www.astd.org/communities/salestraining/"},{"value":"Communities - International","navigateUrl":"http://www.astd.org/membership/international/"},{"value":"Communities - Partners","navigateUrl":"http://www.astd.org/ASTD/Partners/"},{"value":"Communities - Government","navigateUrl":"http://www.astd.org/ASTD/Government"}],"value":"Communities","navigateUrl":"http://www.astd.org/communities/"},{"groupSettings":{"flow":1,"offsetX":-48,"width":"146px","height":"24px"},"items":[{"value":"Help - Contact Us","navigateUrl":"http://www.astd.org/ASTD/contact/"},{"value":"Help - Site Map","navigateUrl":"http://www.astd.org/content/"}],"value":"Help","navigateUrl":"http://www.astd.org/Help/"},{"value":"ASTD Store","navigateUrl":"http://store.astd.org/"}]}, {"itemClicked":OnMenuItemClickedHandler}, null, $get("ctl00_Header1_Header_Base1_NavMenu1_RadMenu1"));
+});
+
+document.getElementById('ctl00_content_EmailPage1_reqFrom').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_EmailPage1_reqFrom'));
+}
+
+document.getElementById('ctl00_content_EmailPage1_regexValidador').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_EmailPage1_regexValidador'));
+}
+
+document.getElementById('ctl00_content_EmailPage1_reqTo').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_EmailPage1_reqTo'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.RatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$Rating1","ClientStateFieldID":"ctl00_Rating1_RatingExtender_ClientState","EmptyStarCssClass":"emptyRatingStar","FilledStarCssClass":"filledRatingStar","StarCssClass":"ratingStar","WaitingStarCssClass":"savedRatingStar","id":"RatingBehavior1"}, null, null, $get("ctl00_Rating1"));
+});
+
+document.getElementById('ctl00_ContactWebmaster1_rqName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_ContactWebmaster1_rqName'));
+}
+
+document.getElementById('ctl00_ContactWebmaster1_reqEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_ContactWebmaster1_reqEmail'));
+}
+
+document.getElementById('ctl00_ContactWebmaster1_regexEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_ContactWebmaster1_regexEmail'));
+}
+//]]>
+</script>
+</form>
+    <!-- Start of HubSpot Logging Code  -->
+
+    <script type="text/javascript" language="javascript">
+var hs_portalid=29542; 
+var hs_salog_version = "2.00";
+var hs_ppa = "astd.app2.hubspot.com";
+document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <!-- End of HubSpot Logging Code -->
+</body>
+</html>

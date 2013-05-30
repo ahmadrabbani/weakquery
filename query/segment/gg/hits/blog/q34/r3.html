@@ -1,0 +1,616 @@
+<html>
+<head>
+<title>Demos and Interactive Tours | SAS</title>
+<!-- META INFO BEGINS -->
+<!-- META INFO ENDS -->
+
+
+<LINK REL="stylesheet" TYPE="text/css" HREF="/lib/sas.css">
+<style media="screen, print" type="text/css">@import "/css/globalnavigation.css";</style>
+
+<script language="Javascript" type="text/javascript">
+    // <![CDATA[
+    var prinav = "resources"
+    // ]]>
+</script>
+
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!-- HEADER BEGINS -->
+<script type="text/javascript" src="/lib/yui/2.8.1/build/yahoo-dom-event/yahoo-dom-event.js"> </script><link href="/profile/user/resources/css/loginwindowstyles.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="http://www.sas.com/profile/user/resources/user-profiles-min.js"> </script><script type="text/javascript">
+        var siteID = "Corp";
+        function addEvent(obj, evType, fn){ 
+            if (obj.addEventListener){ 
+                obj.addEventListener(evType, fn, false); 
+                return true; 
+            } else if (obj.attachEvent){ 
+                var r = obj.attachEvent("on"+evType, fn); 
+                return r; 
+            } else { 
+                return false; 
+            } 
+        }
+        function onWindowLoad() {
+			try {  
+  			document.getElementById(prinav).className = "active";
+ 			} catch (error) {}
+        }
+        addEvent(window,"load", onWindowLoad);
+	</script>
+<div id="header_include">
+<div id="sas_logo">
+<a href="/"><img alt="SAS | The Power To Know" src="/images/logos/SAS_TPTK_logo.gif"/></a>
+<p>Providing software solutions since 1976</p>
+</div>
+<div id="secondaryNav">
+<ul>
+<li id="news"><a href="/news/">News</a></li>
+<li id="events"><a href="/events/">Events</a></li>
+<li id="consulting"><a href="/consult/">Consulting</a></li>
+<li id="jobs"><a href="/jobs/">Careers</a></li>
+<li id="resources"><a href="/resources/">Resource Center</a></li>
+</ul>
+</div>
+<form id="searchBox" method="get" action="http://www.sas.com/search/searchquery.html">
+<span><input type="submit" value="Search" name="Find" id="searchButton" /></span>
+
+<input id="searchField" type="text" name="qt" />
+
+<input type="hidden" value="-url:/offices/" name="qs" />
+<input value="extsas" name="qc" type="hidden" />
+
+</form>
+<div id="nav">
+<ul>
+<li id="home"><p><a href="/">Home</a></p></li>
+<li id="software"><p><a href="/software/">Products & Solutions</a></p></li>
+<li id="success"><p><a href="/success/">Customer Success</a></p></li>
+<li id="partners"><p><a href="/partners/">Partners</a></p></li>
+<li id="corporate"><p><a href="/company/">Company</a></p></li>
+<li id="support"><p><a href="http://support.sas.com/">Support & Training</a></p></li>
+</ul>
+</div>
+</div>
+<!--stopindex--><ul id="mininav">
+<li class="first" id="login"><a href="javascript:showLoginScreen();">Log In</a></li><li class="first" id="logout" style="display:none"><a class="welcomeName" href="/profile/user/contact.htm">Welcome <span style="display: inline;" id="loginDisplayName"> </span><span class="profileedit">Click to edit your profile </span></a> 
+    			[<a class="profilelogout" href="javascript:processLogoutRequest();">Log out</a>]    				
+    		</li><li id="mn_ww">
+<!--BEGIN WWSITES CODE: /includes/wwsites/wwsites.inc-->
+<script src="http://www.sas.com/includes/wwsites/wwSites.js" type="text/javascript" language="javascript"></script> 
+<p class="selectorBar"><a onMouseOver="mopen('wwsites_box')" onMouseOut="mclosetime()"><script type="text/javascript" language="Javascript">wwIdentifySite();</script></a></p>
+<div id="wwsites_box" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()"> 
+  <div id="wwsites_list"> <script type="text/javascript" language="Javascript">wwBuildList();</script> 
+    <h4>Worldwide Contacts</h4>
+    <p>If you don't find your country in the list, see our worldwide contacts in:</p>
+    <p><a href="/offices/africa/index.html">Africa</a> | <a href="/offices/asiapacific/index.html">Asia/Pacific</a> | <a href="/offices/europe/index.html">Europe</a> | <a href="/offices/latinamerica/index.html">Latin America &amp; Caribbean</a> | <a href="/offices/me/me_offices.html">Middle East</a> | <a href="/offices/NA/index.html">North America</a></p>
+  </div>
+</div>
+<!--END WWSITES CODE-->
+</li>
+<li id="mn_contact"><a href="/contact/intro.html"><span>Contact Us</span></a></li>
+</ul>
+<!--startindex-->
+<!-- HEADER ENDS -->
+
+
+<!-- PAGE TITLE BEGINS -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left" height="40pt">
+    <td valign="middle" width="100%"><img src="/images/titles/header_resource.gif" alt=""></td>
+  </tr>
+</table>
+<!-- PAGE TITLE ENDS -->
+
+<!-- MAIN BODY BEGINS-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<!-- HORIZONTAL RULE INCLUDE BEGINS-->
+        <tr>
+          <td colspan="7" background="/images/main_dotted.gif"><img src="/images/spacer.gif" alt=""></td>
+        </tr>
+        <tr>
+          <td colspan="7">&nbsp;</td>
+        </tr>
+
+<!-- HORIZONTAL RULE INCLUDE ENDS -->
+
+
+    <tr>
+   <td> <img src="/images/spacer.gif" height="1" width="10" alt=""></td>
+
+
+   <!-- MIDDLE COLUMN BEGINS-->
+   
+   <td align="left" valign="top" width="900">
+
+<!-- beginning of feature table -->
+
+<table id="featureHolder" width="100%" cellspacing="0">
+<tr>
+<td id="feature" valign="top" style="background: #ffffff url(/images/features/highlight_analyticsITour.jpg) 5px 5px no-repeat">
+	<div class="featureBody">
+<h3><a class=whitePaperRecTitle href="/technologies/analytics/tour/webnet/tour.html" onClick="javascript: window.open('/technologies/analytics/tour/webnet/tour.html', 'AnalyticsiTour', 'width=955,height=600,left=0,top=0');  return false;">SAS&reg; Analytics Interactive Tour</a></h3>
+<p>
+Influence future outcomes through fact-based decision making. From data mining and text analytics to forecasting and operations research, your organization can grow with an analytics platform specifically designed to evolve your business and improve the bottom line. Take this interactive tour to find out more.
+	</div>
+</td>
+</tr>
+</table>
+
+<!-- end of feature table -->
+ <br>
+ 
+ 
+ <p class="blackhead">More Demos &amp; Interactive Tours
+ </p>
+	    
+  
+      <DIV class=whitePaperRecList>
+ 
+      <TABLE cellSpacing=0 cellPadding=12 width="100%" border=0 style="BORDER: #dddddd 1px solid">
+        <TBODY>
+		
+ 
+		
+<TR bgColor="#f7f7f4">		        
+			
+          <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/solutions/abm/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/abm/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/activity_based.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/solutions/abm/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/abm/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=450,left=0,top=0');  return false;">SAS&reg; Activity-Based Management Interactive Tour</A> 
+ 
+			<br>                
+SAS Activity-Based Management delivers the financial intelligence you need to maximize profits, reduce costs and improve operational efficiencies by determining the cost of processes and the profitability of products, customers and suppliers.			</TD>
+        </TR>
+		
+
+		<!--<TR bgColor="#f7f7f4">        				
+		
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/bi/tourext/amo_itour.html"><img src="/resources/images/add_in_for_microsoft_office.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/technologies/bi/tourext/amo_itour.html">SAS&reg; Add-In for Microsoft Office Demo</A> 
+			<br>                
+This provides a closer look at SAS Add-In for Microsoft Office through a screen demonstration. It is a detailed view of this BI client. You also have access to other SAS BI clients here. The full SAS Business Intelligence Interactive Tour is available here if you wish to explore it.			</TD>
+        </TR>-->
+		
+		        <TR bgColor="#f7f7f4">
+					
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/consult/tour/itour_flash.html"><img src="/resources/images/analytical_services.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/consult/tour/itour_flash.html">SAS&reg; Analytical Service Offerings Interactive Tour</A> 
+			<br>                
+SAS Analytical Service Offerings give you THE POWER TO KNOW<sup>&reg;</sup> how to transform raw data into vital enterprise intelligence by delivering the solutions and services you need.			</TD>
+        </TR>
+		
+        	<!--<TR bgColor="#f7f7f4">
+
+          <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/software/sas9/tour/itour.html"><img src="/resources/images/it_sas9.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/software/sas9/tour/itour.html">SAS<font size="-2">&reg;</font>9: Beyond Business Intelligence Interactive Tour</A> 
+			<br>                
+SAS<font size="-2">&reg;</font>9 takes you beyond business intelligence as you know it with a single, scalable platform for delivering proven predictive analytics and a consistent and rewarding user interface experience.			</TD>
+        </TR>-->
+		
+        <TR bgColor="#f7f7f4">	
+		
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/bi/tour/webnet/tour_fs.html" onClick="javascript: window.open('/technologies/bi/tour/webnet/tour_fs.html', 'BIiTour', 'width=955,height=600,left=0,top=0');  return false;"><img src="/resources/images/it_sasbi.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/technologies/bi/tour/webnet/tour_fs.html" onClick="javascript: window.open('/technologies/bi/tour/webnet/tour_fs.html', 'BIiTour', 'width=955,height=600,left=0,top=0');  return false;">SAS&reg; Business Intelligence Interactive Tour</A> 
+			<br>                
+SAS Business Intelligence gives you THE POWER TO KNOW<sup>&reg;</sup> how to leverage enterprise data to maximize value, minimize risk and optimize performance.			</TD>
+        </TR>
+		<TR bgColor="#f7f7f4">
+					
+          <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/govedu/edu/k12/curr_demos/itour.html"><img src="/resources/images/curriculum_pathways.jpg" border="" alt="Feature Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/govedu/edu/k12/curr_demos/itour.html">SAS&reg; Curriculum Pathways&reg; Feature Tour </A> 
+			<br>                
+SAS<sup>&reg;</sup> Curriculum Pathways is an online resource partner that provides a wealth of lessons, activities and learning tools in all the core disciplines  English, science, math, social studies and Spanish  for grades 8-12.			</TD>
+        </TR>		
+		
+		<TR bgColor="#f7f7f4">
+						
+          <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/solutions/crm/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/crm/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/it_crm.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/solutions/crm/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/crm/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Customer Intelligence Interactive Tour</A> 
+			<br>                
+SAS Customer Intelligence enables you to create a sustainable competitive advantage by developing a marketing-ready enterprise. This integrated suite of solutions gives you the knowledge to interact with the right customers at the right time, through the right channel.			</TD>
+        </TR>
+		
+	<TR bgColor="#f7f7f4">
+								
+          <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/technologies/dw/tour/webnet/tour_fs.html" onClick="javascript: window.open('/technologies/dw/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/di_itour.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/technologies/dw/tour/webnet/tour_fs.html" onClick="javascript: window.open('/technologies/dw/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Data Integration Interactive Tour</A> 
+			<br>                
+SAS Data Integration gives you the power to manage all of your organizations data using a universal solution that meets your needs today ... and tomorrow. With SAS Data Integration, youll gain more value from your data than ever before.			</TD>
+        </TR>
+
+
+				<TR bgColor="#f7f7f4">
+          <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/govedu/federal/defense/tour/webnet/tour_fs.html" onClick="javascript: window.open('/govedu/federal/defense/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/defense_logistics.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/govedu/federal/defense/tour/webnet/tour_fs.html" onClick="javascript: window.open('/govedu/federal/defense/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Defense Logistics Interactive Tour</A> 
+			<br>                
+Mission success for defense organizations depends on the efficient and cost-effective delivery of supplies and resources.  See how logistics planners can overcome traditional barriers to produce optimized logistics plans quickly using existing technology systems.			</TD>
+        </TR>
+		
+				
+				<!--<TR bgColor="#f7f7f4">
+          <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/industry/pharma/develop/tour/itour.html"><img src="/resources/images/drug_dev.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/industry/pharma/develop/tour/itour.html">SAS&reg; Drug Development Interactive Tour</A> 
+			<br>                
+SAS Drug Development enhances the ability of clinical and biostatistics researchers to make informed, confident, and accurate business decisions regarding their life sciences research programs.			</TD>
+        </TR> -->
+		
+		
+<TR bgColor="#f7f7f4">		        
+          <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/bi/tourext/eg_itour.html"><img src="/resources/images/enterprise_guide_demo.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/technologies/bi/tourext/eg_itour.html">SAS&reg; Enterprise Guide Demo</A> 
+			<br>                
+This provides a closer look at SAS Enterprise Guide through a screen demonstration. It is a detailed view of this BI client. You also have access to other SAS BI clients here. The full SAS Business Intelligence Interactive Tour is available here if you wish to explore it.			</TD>
+        </TR>
+		
+<TR bgColor="#f7f7f4">
+        
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/govedu/edu/egdemo/itour.html"><img src="/resources/images/eguide-edu.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/govedu/edu/egdemo/itour.html">SAS&reg; Enterprise Guide for Education Demo</A> 
+			<br>                
+SAS Enterprise Guide provides professors, students and researchers with a point-and-click interface to the power of SAS. The point and click environment helps you every step of the way - from bringing in the data, to analyzing the data, to producing output.			</TD>
+        </TR>		
+		
+		<TR bgColor="#f7f7f4">
+		       
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/technologies/bi/query_reporting/guide/tour/webnet/tour_fs.html" onClick="javascript: window.open('/technologies/bi/query_reporting/guide/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/enterprise_guide.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/technologies/bi/query_reporting/guide/tour/webnet/tour_fs.html" onClick="javascript: window.open('/technologies/bi/query_reporting/guide/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Enterprise Guide Interactive Tour</A> 
+			<br>                
+SAS Enterprise Guide is a powerful Microsoft Windows client application that provides a guided mechanism to exploit the power of SAS and publish dynamic results throughout the organization.			</TD>
+        </TR>
+		
+		
+				
+				 <TR bgColor="#f7f7f4">
+        
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/solutions/financial/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/financial/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/it_sas9fm.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/solutions/financial/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/financial/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Financial Intelligence Interactive Tour</A> 
+			<br>                
+SAS Financial Intelligence brings unprecedented focus to your finance department and creates a level of knowledge that empowers financial experts to become trusted advisors at every level of your enterprise.			</TD>
+        </TR>
+		
+		
+		
+		<TR bgColor="#f7f7f4">
+				
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/analytics/forecasting/tour/itour.html"><img src="/resources/images/forecasting_itour.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/technologies/analytics/forecasting/tour/itour.html">SAS&reg; Forecasting Solutions Interactive Tour</A> 
+			<br>                
+SAS Forecasting Solutions give you THE POWER TO KNOW<sup>&reg;</sup> how to make your large-scale forecasting process manageable and enable analysts in your organization to focus their time on the most important forecasts.			</TD>
+        </TR>
+		        	
+		<TR bgColor="#f7f7f4">
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/industry/healthcare/insurer/tour/itour.html"><img src="/resources/images/it_hls.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/industry/healthcare/insurer/tour/itour.html">SAS&reg; for Health Insurance Interactive Tour</A> 
+			<br>               
+SAS for Health Insurance enables you to transform data from member, employer, and provider interactions gathered via the transactional foundation systems you already have in-place into critical business knowledge. This interactive presentation provides information on how health insurers can use SAS to make solid business decisions and gain competitive advantage.			</TD>
+        </TR>
+
+		<TR bgColor="#f7f7f4">
+						
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/bi/tourext/idp_itour.html"><img src="/resources/images/information_delivery_portal.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/technologies/bi/tourext/idp_itour.html">SAS&reg; Information Delivery Portal Demo</A> 
+			<br>                
+This provides a closer look at SAS Information Delivery Portal through a screen demonstration. It is a detailed view of this BI client. You also have access to other SAS BI clients here. The full SAS Business Intelligence Interactive Tour is available here if you wish to explore it.			</TD>
+        </TR>
+
+       <TR bgColor="#f7f7f4">	
+
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/bi/tourext/infomap_itour.html"><img src="/resources/images/information_map_studio.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/technologies/bi/tourext/infomap_itour.html">SAS&reg; Information Map Studio Demo</A> 
+			<br>                
+This provides a closer look at SAS Information Map Studio through a screen demonstration. It is a detailed view of this BI client. You also have access to other SAS BI clients here. The full SAS Business Intelligence Interactive Tour is available here if you wish to explore it.			</TD>
+        </TR>
+		
+		<TR bgColor="#f7f7f4">
+
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/technologies/dw/intstorage/tour/webnet/tour_fs.html" onClick="javascript: window.open('/technologies/dw/intstorage/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/storage.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/technologies/dw/intstorage/tour/webnet/tour_fs.html" onClick="javascript: window.open('/technologies/dw/intstorage/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Intelligence Storage Interactive Tour</A> 
+			<br>                
+SAS Intelligence Storage offers a comprehensive storage solution that is fully integrated and designed from the beginning for your BI and analytic data storage needs, giving you the ability to meet your service level agreements at a lower cost.			</TD>
+        </TR>
+		
+		
+		<TR bgColor="#f7f7f4">
+
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/solutions/intmgmt/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/intmgmt/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/it_sasim.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/solutions/intmgmt/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/intmgmt/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Interaction Management Interactive Tour</A> 
+			<br>                
+SAS Interaction Management enables personalized customer interactions with real-time behavior tracking and event triggering to grow and retain customers for your business.			</TD>
+        </TR>
+		
+		<TR bgColor="#f7f7f4">						        
+
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/bi/tourext/mgmtcnsl_itour.html"><img src="/resources/images/management_console.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/technologies/bi/tourext/mgmtcnsl_itour.html">SAS&reg; Management Console Demo</A> 
+			<br>                
+This provides a closer look at SAS Management Console through a screen demonstration. It is a detailed view of this BI client. You also have access to other SAS BI clients here. The full SAS Business Intelligence Interactive Tour is available here if you wish to explore it.			</TD>
+        </TR>
+		        		
+				       		
+<TR bgColor="#f7f7f4">
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/bi/tourext/olapstudio_itour.html"><img src="/resources/images/olap_cube_studio.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/technologies/bi/tourext/olapstudio_itour.html">SAS&reg; Olap Cube Studio Demo</A> 
+			<br>                
+This provides a closer look at SAS OLAP Cube Studio through a screen demonstration. It is a detailed view of this BI client. You also have access to other SAS BI clients here. The full SAS Business Intelligence Interactive Tour is available here if you wish to explore it.			</TD>
+        </TR>
+		
+				<TR bgColor="#f7f7f4">
+
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/govedu/edu/k12/ondemand.html#section=4"><img src="/resources/images/sas_ondemand_k12.jpg" border="" alt="SAS OnDemand for K-12 Demos"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/govedu/edu/k12/ondemand.html#section=4">SAS&reg; OnDemand for K-12 Demos</A> 
+			<br>                
+Learn how administrators can use the SAS<sup>&reg;</sup> OnDemand for K-12 solution to report on discipline and attendance, make data comparisons across schools and much more.</TD>
+        </TR>
+		 <TR bgColor="#f7f7f4">
+       		
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/govedu/tour/pbb/itour.html"><img src="/resources/images/performance_based.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/govedu/tour/pbb/itour.html">SAS&reg; for Performance-Based Budgeting Interactive Tour</A> 
+			<br>                
+SAS for Performance-Based Budgeting gives you THE POWER TO KNOW<sup>&reg;</sup> how to leverage enterprise data to maximize value, minimize risk and optimize performance.			</TD>
+        </TR>		
+  
+	 <TR bgColor="#f7f7f4">
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/solutions/pm/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/pm/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/pm.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/solutions/pm/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/pm/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; for Performance Management Interactive Tour</A> 
+			<br>                
+SAS for Performance Management brings together the most advanced technologies available into a powerful coherent business vision.  Only SAS has performance management capabilities built into each of its solutions. With SAS for Performance Management, youll have the insight to all areas of your organization to move your business forward.			</TD>
+        </TR>
+		
+		<TR bgColor="#f7f7f4">
+        	
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/solutions/profitmgmt/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/profitmgmt/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/profmgmt_tour.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/solutions/profitmgmt/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/profitmgmt/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Profitability Management Interactive Tour</A> 
+			<br>                
+SAS&reg; Profitability Management provides accurate cost and profit calculations based on the rule-driven allocation of expenses and revenue down to the individual transaction.</TD>
+        </TR>
+		
+		<TR bgColor="#f7f7f4">
+        	
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/industry/mfg/spo/tour/itour.html"><img src="/resources/images/spo_itour.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/industry/mfg/spo/tour/itour.html">SAS&reg; Service Parts Optimization Interactive Tour</A> 
+			<br>                
+SAS Service Parts Optimization provides service organizations the ability to forecast short-term, new-part and lifecycle parts demand.			</TD>
+        </TR>
+	
+				
+
+			<TR bgColor="#f7f7f4">
+			        	
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/solutions/spm/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/spm/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;"><img src="/resources/images/it_sas9spm.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/solutions/spm/tour/webnet/tour_fs.html" onClick="javascript: window.open('/solutions/spm/tour/webnet/tour_fs.html', 'TMiTour', 'width=780,height=470,left=0,top=0');  return false;">SAS&reg; Strategic Performance Management Interactive Tour</A> 
+			<br>                
+SAS Strategic Performance Management facilitates the creation, communication and execution of strategy  &#8211; promoting focus, alignment and agility throughout the organization.			</TD>
+        </TR>
+		
+		
+		<TR bgColor="#f7f7f4">
+		  <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/solutions/sustainability/tour/tour.html" onClick="javascript: window.open('/solutions/sustainability/tour/tour.html', 'TMiTour', 'width=945,height=625,left=0,top=0');  return false;"><img src="/resources/images/sustainability_itour.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/solutions/sustainability/tour/tour.html" onClick="javascript: window.open('/solutions/sustainability/tour/tour.html', 'TMiTour', 'width=945,height=625,left=0,top=0');  return false;">SAS&reg;  for Sustainability Management</A><br>
+		  SAS for Sustainability Management enables an organization to measure, manage and report on the Triple Bottom Line  environmental, social and economic indicators  and determine business strategies that reduce risk and increase shareholder value.</TD>
+        </TR>
+		
+		
+		<TR bgColor="#f7f7f4">
+		  <TD style="BORDER-BOTTOM: #999 1px dashed"><a class="whitePaperRecTitle" href="/technologies/analytics/datamining/textminer/TextMinerDemo.html" onClick="javascript: window.open('/technologies/analytics/datamining/textminer/TextMinerDemo.html', 'TMiTour', 'width=810,height=705,left=0,top=0');  return false;"><img src="/resources/images/sasTextMinerDemo.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><a class="whitePaperRecTitle" href="/technologies/analytics/datamining/textminer/TextMinerDemo.html" onClick="javascript: window.open('/technologies/analytics/datamining/textminer/TextMinerDemo.html', 'TMiTour', 'width=810,height=705,left=0,top=0');  return false;">SAS&reg; Text Miner Demo</A><br>
+		  Starting from the SAS Enterprise Miner GUI, see how you can analyze text captured from telephone calls by utilizing voice mining capabilities.</TD>
+        </TR>
+				
+
+ 			
+		<TR bgColor="#f7f7f4">
+        
+                   <TD style="BORDER-BOTTOM: #999 1px dashed"><a href="/technologies/bi/tourext/olapviewer_itour.html"><img src="/resources/images/web_olap_viewer.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD style="BORDER-BOTTOM: #999 1px dashed" ><A class=whitePaperRecTitle href="/technologies/bi/tourext/olapviewer_itour.html">SAS&reg; Web OLAP Viewer Demo</A> 
+			<br>                
+This provides a closer look at SAS Web OLAP Viewer through a screen demonstration. It is a detailed view of this BI client. You also have access to other SAS BI clients here. The full SAS Business Intelligence Interactive Tour is available here if you wish to explore it.			</TD>
+        </TR>
+
+		<!--	<TR bgColor="#f7f7f4">
+				   
+                   <TD><a href="/technologies/bi/tourext/wrs_itour.html"><img src="/resources/images/web_report_studio.jpg" border="" alt="Interactive Tour"></a></TD>
+		  <TD><A class=whitePaperRecTitle href="/technologies/bi/tourext/wrs_itour.html">SAS&reg; Web Report Studio Demo</A> 
+			<br>                
+This provides a closer look at SAS Web Report Studio through a screen demonstration. It is a detailed view of this BI client. You also have access to other SAS BI clients here. The full SAS Business Intelligence Interactive Tour is available here if you wish to explore it.			</TD>
+        </TR>	-->		
+</TBODY></TABLE>
+      </DIV>
+ 
+</td>
+<!-- MIDDLE COLUMN ENDS -->
+
+<!-- SPACER IMAGE FOR SPACE BETWEEN MIDDLE AND RIGHT COLUMN BEGINS -->
+    <td width="15"><img src="/images/spacer.gif" alt="" width="15" height="1" align="middle">
+	</td>
+<!-- SPACER IMAGE FOR SPACE BETWEEN MIDDLE AND RIGHT COLUMN ENDS -->
+
+<!-- THIRD COLUMN BEGINS -->
+    <td valign="top" align="left" width="200">
+
+<!-- RIGHT NAVIGATION TABLE BEGINS -->
+
+<table width="200" border="0" cellspacing="0" cellpadding="0" >
+<tr>
+<td width="95%"> 
+<table width="95%" border="0" cellspacing="4" cellpadding="0">
+     
+<!--	 <tr>
+                   <td width="5%" valign="top"><img src="/images/diamond_table.gif" alt="" width="7" height="11" border="0"></td>
+                   
+                <td width="95%" valign="top"><a href="special_reports.html" class="rtnavprodsol">Special Reports</a>
+                                  <br><span class="rttext">
+Hear from industry experts, though leaders and SAS customers on a variety of industry and technology topics.
+</span></td>
+                 </tr>
+	--> 
+	 <tr>
+   <td width="5%" valign="top">
+   <img src="/images/diamond_table.gif" alt="" width="7" height="11" border="0"></td>
+   <td width="95%" valign="top"><a href="/news/analysts/index.html" class="rtnavprodsol">Analyst Viewpoints</a> 
+<br>
+<span class="rttext">Read what analysts are saying about BI software in general and learn how SAS stacks up against the competition.
+</span>
+</td>
+</tr>
+				  <TR><td colspan="2" height="6"><img src="/images/spacer.gif" height="6" alt=""></td></TR>
+<tr>
+   <td width="5%" valign="top" align="left">
+   <img src="/images/diamond_table.gif" alt="" width="7" height="11" border="0"></td>
+   <td width="95%" valign="top"><a href="/apps/webcast/index.jsp" class="rtnavprodsol">Webcasts</a>
+<br>
+<span class="rttext">
+Tune in for an upcoming Webcast or catch the ones you've missed. Webcasts cover everything from churn management to the ins and outs of data mining.
+</span>                         
+</td>
+</tr>                              
+                   				  <TR><td colspan="2" height="6"><img src="/images/spacer.gif" height="6" alt=""></td></TR>                                                               
+<tr>
+   <td width="5%" valign="top">
+   <img src="/images/diamond_table.gif" alt="" width="7" height="11" border="0"></td>
+   <td width="95%" valign="top"><a href="/success/index.html" class="rtnavprodsol">Success Stories</a>
+<br> 
+<span class="rttext">One of the best ways to learn how SAS can address your business pains is to see how our customers benefit from using our software. 
+<p></span>
+</td>
+</tr>
+            </table>       
+</td>
+        </tr>
+<p>
+<!-- CONTACT BOX INCLUDE BEGINS-->
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+// Set up the image files to be used.
+var theImages = new Array() // do not change this
+// To add more image files, continue with the
+// pattern below, adding to the array.
+
+theImages[0] = '/images/takeaction/person1.jpg'
+theImages[1] = '/images/takeaction/person2.jpg'
+theImages[2] = '/images/takeaction/person3.jpg'
+
+// do not edit anything below this line
+
+var j = 0
+var p = theImages.length;
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+var whichImage = Math.round(Math.random()*(p-1));
+document.write("<a href=\"/apps/formrouter/router.jsp\"><img src='" +theImages[whichImage]+ "'width=\"192\" height=\"104\" alt=\"\" border=\"0\"></a>")
+
+//  End -->
+</script>
+
+<!-- CONTACT BOX INCLUDE ENDS -->		
+</table>
+<p>
+
+
+         
+
+<!-- RIGHT NAVIGATION TABLE ENDS -->
+
+</td>
+
+
+<!-- THIRD COLUMN ENDS-->
+
+</table>        
+
+<!-- MAIN BODY ENDS-->
+
+
+<!-- FOOTER BEGINS-->
+<div id="prefooter">
+<ul>
+<li class="first"><a onMouseOut="mclosetime()" onMouseOver="mopen('share')" id="pfShare" href="javascript:showEmailForm();">Share</a><img src="/includes/share/images/sas-logo-thumb.jpg" width="130" height="110" border="0" style="position:absolute;left:-9999px;" />
+<script src="/includes/share/email/emailinclude3.js" type="text/javascript" language="javascript">
+</script>
+<script type="text/javascript" language="javascript">
+var text = escape(document.title);
+var url = (document.location.href);
+document.write("<ul id='share' style='visibility: hidden;' onMouseOver='mcancelclosetime()' onMouseOut='mclosetime()' ><li><a href='javascript:showEmailForm();' style='background: url(/images/globalnavigation/prefooter-icons.gif) no-repeat 5px -90px;'>Email</a><\/li><li><a href=\"http://del.icio.us/post?url="+url+"%3Futm_medium=share%26utm_source=delicious&title="+text+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/delicious\');\" style=\"background: url(\/images\/globalnavigation\/prefooter-icons.gif) no-repeat 5px -120px;\" target=\"_blank\">Del.icio.us<\/a><\/li><li><a href=\"http://digg.com/submit?phase=2&url="+url+"%3Futm_medium=share%26utm_source=digg&title="+text+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/digg\');\" style=\"background: url(\/images\/globalnavigation\/prefooter-icons.gif) no-repeat 5px -150px;\" target=\"_blank\">Digg<\/a><\/li><li><a href=\"http://www.facebook.com/sharer.php?u="+url+"%3Futm_medium=share%26utm_source=facebook&t="+text+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/facebook\');\" style=\"background: url(\/images\/globalnavigation\/prefooter-icons.gif) no-repeat 5px -180px;\" target=\"_blank\">Facebook<\/a><\/li><li><a href=\"http://www.linkedin.com/shareArticle?mini=true&url="+url+"%3Futm_medium=share%26utm_source=linkedin&title="+text+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/linkedin\');\" style=\"background: url(\/images\/globalnavigation\/prefooter-icons.gif) no-repeat 5px -270px;\" target=\"_blank\">LinkedIn<\/a><\/li><li><a href=\"http://reddit.com/submit?url="+url+"%3Futm_medium=share%26utm_source=reddit&title="+text+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/reddit\');\" style=\"background: url(\/images\/globalnavigation\/prefooter-icons.gif) no-repeat 5px -210px;\" target=\"_blank\">Reddit<\/a><\/li><li><a href=\"http://www.stumbleupon.com/submit?url="+url+"%3Futm_medium=share%26utm_source=stumbledupon&title="+text+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/stumbledupon\');\" style=\"background: url(\/images\/globalnavigation\/prefooter-icons.gif) no-repeat 5px -240px;\" target=\"_blank\">StumbleUpon<\/a><\/li><li><a href=\"http://technorati.com/faves?add="+url+"%3Futm_medium=share%26utm_source=technorati\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/technorati\');\" style=\"background: url(\/images\/globalnavigation\/prefooter-icons.gif) no-repeat 5px -300px;\" target=\"_blank\">Technorati<\/a><\/li><li><a href=\"http://twitter.com/intent/tweet?text="+text+"&url="+url+"%3Futm_medium=share%26utm_source=twitter\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/twitter\');\" style=\"background: url(\/images\/globalnavigation\/prefooter-icons.gif) no-repeat 5px -330px;\" target=\"_blank\">Twitter<\/a><\/li><\/ul>");
+</script>
+
+<div id="emailFormDiv" style="display: none;"> 
+  <div id="closeWidget"><a href="javascript:hideEmailForm();"><img src="/includes/share/email/close.png" alt="" width="31" height="30"></a></div>
+  <div class="hd"><h2>Email This Page</h2></div>
+  <div class="bd" id="bdform"> 
+    <form name="emailFriendForm" id="emailFriendForm" method="post" action="">
+      <label for="senderName">Your Name:<span class="required">*</span></label> 
+      <input type="textbox" id="senderName" name="senderName" value="" />
+      <br class="clear" />
+      <label for="fromEmailAddresss">Your E-mail:<span class="required">*</span></label> 
+      <input type="textbox" id="fromEmailAddress" name="fromEmailAddress" value="" />
+      <br class="clear" />
+      <label for="toEmailAddress">Recipient E-mail:<span class="required">*</span></label> 
+      <input type="textbox" id="toEmailAddress" name="toEmailAddress" value="" />
+      <br class="clear" />
+      <label for="ccSender">Send a copy to me</label> 
+      <input type="checkbox" id="ccSender" name="ccSender" />
+      <br class="clear" />
+      <label for="note">Personal Message:</label> <textarea id="note" name="note" rows=9></textarea> <br class="clear" />
+      <div id="instructions">* indicates a required field</div>
+      <input type="hidden" name="url" value="www.yahoo.com" />
+      <input type="hidden" name="virtualFolder" value="" />
+      <input type="hidden" name="template" value="" />
+      <span class="submitbutton">
+      <input type="button" value="Send E-mail" id="sendEmail" onclick="processEmailSubmit();" />
+      </span>
+    </form>
+  </div>
+  <div class="ft"><span>
+  <div id="serverResponse"></div>
+  </span>
+  <div class="br"></div>
+</div>
+</div></li>
+</ul>
+</div>
+<div id="footer">
+<ul>
+<li><a href="/contact/">Contact Us</a></li>
+<li><a href="/offices/intro.html">Worldwide Sites</a></li>
+<li><a href="/search/search.html">Search</a></li>
+<li><a href="/smap.html">Sitemap</a></li>
+<li><a href="/rss/">RSS Feeds</a></li>
+<li><a href="/Copyright.html">Terms of Use</a></li>
+<li><a href="/Privacy.html">Privacy Statement</a></li>
+</ul>
+<p><a href="/Copyright.html">Copyright &copy; SAS Institute Inc. All Rights Reserved</a></p>
+</div>
+<!--stopindex--><div onclick="hideLoginScreen();" style="display:none;" id="loginOverlay"> </div><div style="display:none;" id="loginFormOverlay"><div onclick="hideLoginScreen();" id="loginCloseButton"><a onclick="hideLoginScreen();" href="#">Close[X]</a></div><div id="loginLogo"><img alt="SAS Institute. The Power to Know" src="/images/global/saslogo.gif"/></div><div id="loginTitle">Profile Login</div><div id="loginMessage"> </div><form id="loginForm"><table><tr><td>E-mail:</td><td><input maxlength="60" size="35" value="" type="text" name="email" id="email"/></td></tr><tr><td>Password</td><td><input maxlength="60" size="35" value="" type="password" name="password" id="password"/></td></tr></table><div id="loginButtonDiv"><a href="javascript:processLoginRequest()" class="bbutton"><span>Login</span></a></div><div id="loginAdditionalLinks"><ul><li><a href="javascript:handleForgottenPWD();">Forgot Password?</a></li><li><a href="javascript:handleCreateProfile();">Create Profile</a></li></ul></div></form></div><!--startindex-->
+
+
+
+
+                    
+<!-- FOOTER ENDS -->
+
+
+
+</table><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script %3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1022528-1");
+pageTracker._setDomainName("sas.com");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<script src="/lib/liveperson/mtagconfig.js" type="text/javascript"></script>
+<script src="/lib/SASCXA.js" type="text/javascript"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,330 @@
+PERL PROGRAM LOG: /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl
+
+Starting test_wikiqrysgt_06.pl --- 15:16:37, 08-02-2011
+
+
+Starting Wikipedia database: en_20110526 connection15:16:37, 08-02-2011
+
+Infile  = free shopping cart cover patterns, 1
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:free shopping cart cover pattern
+
+
+Starting Google search --- 15:16:37, 08-02-2011
+
+Searching Google (q1=free shopping cart cover patterns)
+ -- extracting links & snippets
+    30 HTMLs found so far
+ -- fetch #1: http://www.sleepingbaby.net/jan/Baby/cart_cover.html
+ -- fetch #2: http://www.allcrafts.net/sewing.htm
+ -- fetch #3: http://sewing.about.com/od/childrenandinfantpattern/tp/Shopping-Cart-Seat-Cover-Sewing-Patterns.htm
+ -- fetch #4: http://www.makethemyourself.com/free.html
+ -- fetch #5: http://www.makethemyourself.com/cover.html
+ -- fetch #6: http://www.diaperswappers.com/forum/archive/index.php/t-3444.html
+ -- fetch #7: http://sewingchick.blogspot.com/2010/11/shopping-cart-cover-highchair-cover.html
+ -- fetch #8: http://www.ehow.com/how_5657893_sew-baby-shopping-cart-cover.html
+ -- fetch #9: http://britrisana.tk/free-shopping-cart-cover-patterns.html
+ -- fetch #10: http://www.dcsstudio.com/251-Free-Pattern-Shopping-Cart-Cover.html
+
+Starting query segmentation --- 15:16:44, 08-02-2011
+
+free shopping cart cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 355.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 358.
+cart cover
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+cart cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+free shopping
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+free shopping
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+free shopping
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+free shopping cart
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Shopping cart
+
+Starting query segmentation ranking --- 15:16:44, 08-02-2011
+
+original topic: free shopping cart cover patterns
+stem topic: free shopping cart cover pattern
+
+original context: 
+stem context: 
+
+free shopping cart cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: cover patterns
+stem topic: cover pattern
+
+original context: "shopping cart" free shopping cart
+stem context: free shopping cart shopping cart ,  shopping-cart shoppingcart
+
+cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: free shopping cart
+stem topic: free shopping cart
+
+original context: cover patterns
+stem context: cover pattern
+
+free shopping cart
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: free shopping cart cover
+stem topic: free shopping cart cover
+
+original context: patterns
+stem context: pattern
+
+free shopping cart cover
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: cart cover patterns
+stem topic: cart cover pattern
+
+original context: free shopping
+stem context: free shopping
+
+cart cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: shopping cart
+stem topic: shopping cart
+
+original context: free cover patterns
+stem context: free cover pattern
+
+Shopping cart
+Shopping cart
+original topic: shopping cart cover
+stem topic: shopping cart cover
+
+original context: free patterns
+stem context: free pattern
+
+shopping cart cover
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: free shopping
+stem topic: free shopping
+
+original context: cart cover patterns
+stem context: cart cover pattern
+
+free shopping
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: cart cover
+stem topic: cart cover
+
+original context: free shopping patterns
+stem context: free shopping pattern
+
+cart cover
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: shopping cart cover patterns
+stem topic: shopping cart cover pattern
+
+original context: free
+stem context: free
+
+shopping cart cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+ranked query topics: cover patterns cart cover shopping cart shopping cart cover cart cover patterns shopping cart cover patterns free shopping free shopping cart free shopping cart cover free shopping cart cover patterns
+
+Shopping
+Shopping
+Cart
+Cart
+free
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+free
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 711.
+Shopping
+Shopping
+Cart
+Cart
+cover patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+free
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+free
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 711.
+cover
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+cover
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 711.
+patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+patterns
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 711.
+Shopping cart
+
+Produce result --- 15:16:44, 08-02-2011
+
+Original query:free shopping cart cover patterns
+Segmented query:"cover patterns" "shopping:66080" "cart:180735" "free:22562196" "shopping:66080" "cart:180735" "shopping cart:187801" "free:22562196" "cover:22562196" "patterns:22562196" ::1
+
+Infile  = ford automobile service station, 2
+Outfile = /home/hz3/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/hz3/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/hz3/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:ford automobile service station
+
+
+Starting Google search --- 15:16:44, 08-02-2011
+
+Searching Google (q2=ford automobile service station)
+ -- extracting links & snippets
+    32 HTMLs found so far
+ -- fetch #1: http://automobiles.mapsofindia.com/automobile-companies-in-india/car-manufacturers/ford-india.html
+ -- fetch #2: http://www.investingdaily.com/id/18607/ford-motor-is-hitting-on-all-cylinders.html
+ -- fetch #3: http://www.fordification.com/timeline.htm
+ -- fetch #4: http://www.yellowbook.com/profile/fred-beans-ford-of-boyertown_1849599781.html
+ -- fetch #5: http://yellowpages.sulekha.com/delhi/automotive/car-service-stations/vasant-kunj/ford-dealers-harpreet-ford.htm
+ -- fetch #6: http://www.automotive-schools.us/ase.html
+ -- fetch #7: http://www.frederickmotor.com/dealership/news.htm
+ -- fetch #8: http://www.oldgas.com/search/Vendors_Vintage_Signs_Cans.html
+ -- fetch #9: http://www.ausbcomp.com/~bbott/cars/carhist.htm
+ -- fetch #10: http://www.mtfca.com/books/Course.htm
+
+Starting query segmentation --- 15:16:54, 08-02-2011
+
+ford automobile service station
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 355.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 358.
+service station
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+ford automobile
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+
+Starting query segmentation ranking --- 15:16:54, 08-02-2011
+
+original topic: ford automobile
+stem topic: ford automobile
+
+original context: "service station" service station
+stem context: service station service station ,  service-station servicestation
+
+ford automobile
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: ford automobile service station
+stem topic: ford automobile service station
+
+original context: 
+stem context: 
+
+ford automobile service station
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: automobile service
+stem topic: automobile service
+
+original context: ford station
+stem context: ford station
+
+automobile service
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: service station
+stem topic: service station
+
+original context: ford automobile
+stem context: ford automobile
+
+service station
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+service station
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 653.
+original topic: automobile service station
+stem topic: automobile service station
+
+original context: ford
+stem context: ford
+
+automobile service station
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+original topic: ford automobile service
+stem topic: ford automobile service
+
+original context: station
+stem context: station
+
+ford automobile service
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $mle_anchor in multiplication (*) at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 1067.
+ranked query topics: service station automobile service automobile service station ford automobile service station ford automobile ford automobile service
+
+ford
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+ford
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 711.
+Automobile
+Automobile
+service station
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+ford
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+ford
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 711.
+automobile service station
+Use of uninitialized value $page_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+Use of uninitialized value $an_to_id in length at /home/hz3/workspace/epic_prog/test_wikiqrysgt_06.pl line 429.
+
+Produce result --- 15:16:54, 08-02-2011
+
+Original query:ford automobile service station
+Segmented query:"service station:1384077" "ford:22562196" "automobile:13673345" "automobile service station" "ford:22562196" ::2
+
+
+Processed 3 queries
+
+
+Ending test_wikiqrysgt_06.pl --- 15:16:54, 08-02-2011
+
+  CPU seconds = 5.130 (UT),  0.060 (ST)
+  REAL TIME   = 0:0:17 (hh:mn:ss)
+

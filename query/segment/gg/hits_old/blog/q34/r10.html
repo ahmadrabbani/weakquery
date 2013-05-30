@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Business Intelligence Implementation for for USA based Non for Profit Organization | BI Case Study : ElegantJ BI </title>
+<meta name="description" content="Case study on how Elegant MicroWeb has implemented business intelligence solution for USA based non for profit organization."/>
+<meta name="Keywords" content="nonprofit organization, ElegantJ BI, USA, business intelligence implementation, business intelligence case study, BI"/>
+<meta name="Robots" content="ALL, INDEX, FOLLOW" />
+<meta http-equiv="content-language" content="en" />
+<meta name="GOOGLEBOT" content="INDEX, FOLLOW" />
+<meta name="author" content="Elegant MicroWeb" />
+<meta name="site_name" content="www.elegantjbi.com"/>
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+<meta http-equiv="PRAGMA" content="NO-CACHE" />
+<meta name="copyright" content="Copyright 2011, Elegant MicroWeb Technologies PVT LTD., All Rights Reserved." />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="revisit-after" content="5 days"/>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12315102-1']);
+  _gaq.push(['_setDomainName', '.elegantjbi.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../../css/stylebi.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../../css/superfish.css" media="screen"/>
+<!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="css/iestylebi.css" />
+<![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="../../js/curvycorners.src.js"></script>
+<script type="text/javascript" src="../../js/hoverIntent.js"></script>
+<script type="text/javascript" src="../../js/loopedslider.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/superfish.js"></script>
+<script type="text/javascript" src="../../js/supersubs.js"></script>
+<script language="javascript" src="../../js/PopBox.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+	/*var cornerSize="5px";
+	$("#pageCntHighlight").corner(cornerSize);
+	$("#innerbg").corner(cornerSize);
+     $("#cntInnerRightClm > div").corner(cornerSize);	
+	$(".customCnt2").corner(cornerSize); */
+	$(document).ready(function(){
+		$(".submenu").css("padding-top","7px");
+		$(".submenu").css("padding-bottom","7px");		
+		$('ul.sf-menu').supersubs({ minWidth: 10, maxWidth: 20, extraWidth: 1}).superfish({ delay:0, speed:'fast', dropShadows: false }).find('ul').bgIframe({opacity:false});
+		
+		$(".tab_content").hide(); 
+		$("ul.tabs li:first").addClass("active").show();
+		$(".tab_content:first").show();
+	
+		$("ul.tabs li").click(function() {
+			$("ul.tabs li").removeClass("active");
+			$(this).addClass("active");
+			$(".tab_content").hide();
+	
+			var activeTab = $(this).find("a").attr("href"); 
+			$(activeTab).fadeIn(); 
+			return false;
+		});
+		 	
+	});
+</script>
+<script type="text/javascript">
+
+                function removedefaultdata(textdata,ctlname)
+
+                {
+
+                                if(document.getElementById(ctlname).value==textdata)
+
+                                {
+
+                                                document.getElementById(ctlname).value="";
+
+                                }
+
+                }
+
+                function backdefaultdata(textdata,ctlname)
+
+                {
+
+                                if(document.getElementById(ctlname).value=="")
+
+                                {
+
+                                                document.getElementById(ctlname).value=textdata;
+
+                                }
+
+                }
+
+</script>
+
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+<div id="wrapper">
+	<div id="headerContainer">
+    	<div>
+        <!--div class="headerLeftBg"></div-->
+    	<div id="header">
+        <div id="header_wrap">
+        	<h1><a href="../../index.htm" title="ElegantJ BI - Simply Smarter!">ElegantJ BI - Simply Smarter!</a></h1>
+        	<div style="float:right;">
+            	<div id="quickLinks">				
+            	<div style="float:left;"><a href="http://support.elegantjbi.com" title="Support" target="_blank"><img style="padding-right:20px;" src="../../images/btn_support.jpg" alt="Support" title="Support" /></a></div>
+                <div style="float:left;"><script language="javascript" src="http://support.elegantmicroweb.com/elegantjbi/visitor/index.php?_m=livesupport&amp;_a=htmlcode&amp;departmentid=0" type="text/javascript"></script></div>
+                <div style="float:left; padding-left:20px;"><g:plusone></g:plusone></div>				
+			  </div>
+           	  <ul id="ulheader" style="clear:both;">
+            		<li><a href="../../index.htm" title="Home">Home</a></li>
+                	<li><a href="../../aboutus/index.htm" title="About Us">About Us</a></li>
+                	<li><a href="../../aboutus/news_bi.htm" title="News">News</a></li>
+                    <li><a href="../../aboutus/events.htm" title="Events">Events</a></li>
+                    <li><a href="../../aboutus/request_demo.htm" title="Request Demo">Request Demo</a></li>
+                	<li style="background:none; padding-right:0px;"><a href="../../aboutus/contact-us.htm" title="Contact Us">Contact Us</a></li>
+            	</ul>
+            </div>
+		
+	
+    	<div id="navigation1">     
+			
+    		<ul class="sf-menu" id="sf-menu" style="width:828px; float:right;">
+        		<li>
+					<a href="../../bi_suite/index.htm" class="topmenu" title="Business Intelligence" style="border-right:0;">Business Intelligence</a>					
+					<ul class="topmenu">
+						<li><a href="../../bi_suite/why_business-intelligence.htm" class="submenu" title="Why BI?">Why BI?</a></li>
+						<li><a href="../../bi_suite/business_intelligence_features.htm" class="submenu" title="Features">Features</a></li>
+						<li><a href="../../bi_suite/modules.htm" class="submenu" title="Modules" style="border-bottom:1px solid #fff;">Modules</a>
+							<ul>
+                      <li><a href="../../bi_suite/bi-dashboard.htm" title="Dashboards">Dashboards</a></li>
+                      <li><a href="../../bi_suite/key-performance-indicators-kpi.htm" title="Key Performance Indicators (KPI)">Key Performance Indicators (KPI)</a></li>
+                      <li><a href="../../bi_suite/business-intelligence-forecasting.htm" title="Forecasting (Predictive Analysis)">Forecasting (Predictive Analysis)</a></li>
+                      <li><a href="../../bi_suite/sensitivity-analysis.htm" title="What If Sensitivity Analysis">What If Sensitivity Analysis</a></li>
+                      <li><a href="../../bi_suite/modules_olap_analysis.htm" title="Cross Tab OLAP Analysis">Cross Tab OLAP Analysis</a></li>
+                      <li><a href="../../bi_suite/modules_graphical_olap.htm" title="Graphical OLAP">Graphical OLAP</a></li>
+                      <li><a href="../../bi_suite/modules_exception_reports_alerts.htm" title="Exception Reporting &amp; Alerts">Exception Reporting &amp; Alerts</a></li>
+                      <li><a href="../../bi_suite/modules_enterprise_reporting.htm" title="Reports">Reports</a></li>
+                      <li><a href="../../bi_suite/modules_publishing_delivery_agent.htm" title="Publishing and Delivery Agent">Publishing &amp; Delivery Agent</a></li>
+                      <li style="border-bottom:#fff 1px solid;"><a href="../../bi_suite/modules_data_extraction_transformation_cube_mgmnt.htm" title="Cube Management">Cube Management</a></li>
+                    </ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="../../performance-management/corporate-performance-management-balanced-scorecard.htm" class="topmenu" title="Performance Management" style="border-right:0;">Performance Management</a>
+					<ul>
+						<li><a href="../../performance-management/balanced-scorecard-benefits.htm" class="submenu" title="Balanced Scorecards Benefits">Balanced Scorecards Benefits</a></li>										
+						<li><a href="../../performance-management/features-of-balanced-scorecard.htm" class="submenu" title="Balanced Scorecard Features">Balanced Scorecard Features</a></li>										
+						<li><a href="../../performance-management/corporate-performance-management-balanced-scorecards-software.htm" class="submenu" title="Balanced Scorecard Highlights">Balanced Scorecard Highlights</a></li>										
+						<li><a href="../../performance-management/impact-and-sensitivity-analysis.htm" class="submenu" title="Impact &amp; Sensitivity Analysis" style="border-bottom:1px solid #fff;">Impact &amp; Sensitivity Analysis</a></li>										
+					</ul>
+				</li>
+              	<li><a href="../../solutions/index.htm" class="topmenu" title="Solutions" style="border-right:0;">Solutions</a>
+					<ul>
+						<li><a href="../../solutions/corporate-performance-management.htm" class="submenu" title="Performance Management">Performance Management</a></li>
+						<li><a href="../../solutions/forecasting-for-business.htm" class="submenu" title="Forecasting">Forecasting</a></li>
+						<li><a href="../../solutions/operational_business_intelligence.htm" class="submenu" title="Operational BI">Operational BI</a></li>
+						<li><a href="../../solutions/enterprise_data_management.htm" class="submenu" title="Enterprise Data Management">Enterprise Data Management</a></li>
+						<li><a href="../../solutions/bi-for-business-size.htm" class="submenu" title="For Your Size">For Your Size</a>
+						<ul>
+                        	<li><a href="../../solutions/small-business-bi.htm" title="Small Business">Small Business</a></li>
+                            <li><a href="../../solutions/medium-business-bi.htm" title="Medium Business">Medium Business</a></li>
+                            <li><a href="../../solutions/enterprise-bi.htm" title="Large Enterprise">Large Enterprise</a></li>
+                      
+                    </ul>
+							
+						</li>
+						<li><a href="../../solutions/bi-user-solutions.htm" class="submenu" title="For Your Users">For Your Users</a>
+							<ul>
+                            	<li><a href="../../solutions/strategic-user-bi.htm" title="Strategic Management">Strategic Management</a></li>
+                                <li><a href="../../solutions/business-consultants-bi.htm" title="Business Consultant">Business Consultant</a></li>
+                                <li><a href="../../solutions/bi-operational-manager.htm" title="Operational Manager">Operational Manager</a></li>
+                                <li><a href="../../solutions/it-manager-bi-solution.htm" title="IT Manager">IT Manager</a></li>
+                                <li><a href="../../solutions/bi-programmer-solution.htm" title="Programmer / Developer">Programmer / Developer</a></li>
+                                </ul>
+						</li>
+						<li><a href="../../solutions/bi-industry-solutions.htm" class="submenu" title="For Your Industry">For Your Industry</a>
+						<ul>
+							<li><a href="../../solutions/bi-manufacturing.htm" title="Manufacturing">Manufacturing</a></li>
+                            <li><a href="../../solutions/industry_bi_for_retail.htm" title="Retail">Retail</a></li>
+                            <li><a href="../../solutions/industry_bi_for_pharmaceutical.htm" title="Pharmaceuticals">Pharmaceuticals</a></li>
+                            <li><a href="../../solutions/industry_bi_for_healthcare.htm" title="Healthcare">Healthcare</a></li>
+                            <li><a href="../../solutions/industry_bi_for_life_science.htm" title="Life Science">Life Science</a></li>
+                            <li><a href="../../solutions/industry_bi_for_hospitality_entertainment.htm" title="Hospitality and Entertainment">Hospitality &amp; Entertainment</a></li>
+                            <li><a href="../../solutions/industry_bi_for_travel_transportation.htm" title="Transportation and Travel">Transportation &amp; Travel</a></li>
+                            <li><a href="../../solutions/industry_shipping.htm" title="Business Intelligence for Shipping">Shipping</a></li>
+                            <li><a href="../../solutions/infrastructure-construction-bi.htm" title="Infrastructure and Construction">Infrastructure &amp; Construction</a></li>
+                            <li><a href="../../solutions/trading-bi.htm" title="Trading">Trading</a></li>
+                            <li><a href="../../solutions/industry_banking_finance_services_insurance.htm" title="Banking, Financial services &amp; Insurance (BFSI)">Banking, Financial services &amp; Insurance (BFSI)</a></li>
+                            <li><a href="../../solutions/industry_bi_utilities.htm" title="Utilities">Utilities</a></li>
+                            <li><a href="../../solutions/industry_bi_for_telecommunication.htm" title="Telecom">Telecom</a></li>
+                            <li><a href="../../solutions/industry_bi_for_oil_gas_energy.htm" title="Oil, Gas and Energy">Oil, Gas &amp; Energy</a></li>
+                            <li><a href="../../solutions/industry_bi_for_education.htm" title="Education">Education</a></li>
+                            <li><a href="../../solutions/industry_consumer_packaged_goods.htm" title="Consumer Packaged Goods (FMCG)">Consumer Packaged Goods (FMCG)</a></li>
+                            <li><a href="../../solutions/industry_govt_public_sector.htm" title="Government &amp; Public Sector">Government &amp; Public Sector</a></li>
+                            </ul>
+						</li>
+						<li><a href="../../solutions/bi_for_business.htm" class="submenu" title="For Your Business Function" style="border-bottom:1px solid #fff;">For Your Business Function</a>
+						<ul>
+                        	<li><a href="../../solutions/pm-project-management-bi.htm" title="Project Management">Project Management</a></li>
+                            <li><a href="../../solutions/business_bi_finance_dept.htm" title="Finance">Finance</a></li>
+                            <li><a href="../../solutions/business_sales_distribution_marketing.htm" title="Sales, Distribution &amp; Marketing">Sales, Distribution &amp; Marketing</a></li>
+                            <li><a href="../../solutions/business_hr_bi.htm" title="Human Resource Management (HRM)">Human Resource Management (HRM)</a></li>
+                            <li><a href="../../solutions/business_bi_customer_profile.htm" title="Customer Profiling">Customer Profiling</a></li>
+                            <li><a href="../../solutions/business_bi_crm.htm" title="Customer Relationship Management">Customer Relationship Management</a></li>
+                            <li><a href="../../solutions/business_bi_sales_force.htm" title="Sales Team Management">Sales Team Management</a></li>
+                            <li><a href="../../solutions/business_bi_inventory.htm" title="Inventory">Inventory</a></li>
+                            <li><a href="../../solutions/business_production_planning_control.htm" title="Production Planning &amp; Control">Production Planning &amp; Control</a></li>
+                            <li><a href="../../solutions/business_supply_chain_management.htm" title="Supply Chain Management">Supply Chain Management</a></li>
+                        </ul>	
+						</li>						
+					</ul>
+				</li>
+                <li><a href="../../services/index.htm" class="topmenu" title="services" style="border-right:0;">Services</a>
+					<ul>
+						<li><a href="../../services/consulting.htm" class="submenu" title="Consulting">Consulting</a></li>
+						<li><a href="../../services/bi-training.htm" class="submenu" title="Training">Training</a></li>
+						<li><a href="../../services/bi_support.htm" class="submenu" title="Support" style="border-bottom:1px solid #fff;">Support</a></li>									
+					</ul>	
+				</li>				
+              	<li><a href="../../partners/partner_listing.htm" class="topmenu" title="Partners" style="border-right:0;">Partners</a>
+					<ul>
+						
+						<li><a href="../../partners/index.htm" class="submenu" title="Overview">Overview</a></li>
+						<li><a href="../../partners/elegantj-bi-partner-programs.htm" class="submenu" title="Partnership Program">Partnership Program </a></li>
+						<li><a href="../../partners/bi-for-third-party-application-vendors.htm " class="submenu" title="BI For Third Party Application Vendors">BI For Third Party Application Vendors</a></li>
+						<li><a href="../../partners/elegantj-bi-partnership-benefits.htm" class="submenu" title="Program Benefits">Program Benefits</a></li>
+						<li><a href="../../partners/partner_quotes.htm" class="submenu" title="Partner Quotes">Partner Quotes</a></li>
+						<li><a href="../../partners/join-bi-partnership-program.htm" class="submenu" title="Join Partner Program" style="border-bottom:1px solid #fff;">Join Partner Program</a></li>
+					</ul>
+				</li>   				
+				<li><a href="../index.htm" class="topmenu" title="Resources" style="border-right:0;">Resources</a>
+					<ul>
+						<li><a href="../video/bi-videos.htm" class="submenu" title="Video Tours">Video Tours</a>
+							
+						</li>
+						<li><a href="../bi-whitepapers/business-intelligence.htm" class="submenu" title="White Papers">White Papers</a></li>
+						<li><a href="business-intelligence.htm" class="submenu" title="Case Studies">Case Studies</a></li>
+						<li><a href="../research-report/business-intelligence.htm" class="submenu" title="Research Reports">Research Reports</a></li>
+						<li><a href="../newsletter.htm" class="submenu" title="Newsletters">Newsletters</a></li>
+						<li><a href="../glossary_a.htm" class="submenu" title="Glossary of BI Terms"  style="border-bottom:1px solid #fff;">Glossary of BI Terms</a></li>
+					</ul>
+				</li>													
+				
+                <li><a href="../../why-business-intelligence-better/modern-approach-to-business-intelligence.htm" class="topmenu" title="Why is it better">Why is it better</a>
+					<ul class="topmenu" style="margin-left:-112px;">
+						<li><a href="../../why-business-intelligence-better/modern-approach-to-business-intelligence.htm" class="submenu" title="Traditional Vs. Modern BI Approach">Traditional Vs. Modern BI Approach</a></li>
+						<li><a href="../../why-business-intelligence-better/business-intelligence-vs-report-writers.htm" class="submenu" title="Report Writers Vs. Business Intelligence">Report Writers Vs. Business Intelligence</a></li>
+						<li><a href="../../why-business-intelligence-better/business-intelligence-vs-spreadsheets.htm" class="submenu" title="Spreadsheets Vs. Business Intelligence">Spreadsheets Vs. Business Intelligence</a></li>
+						
+						<li><a href="../../why-business-intelligence-better/business-intelligence-success-story.htm" class="submenu" title="Mr. Smith&rsquo;s Success Story with BI">Mr. Smith&rsquo;s Success Story with BI</a></li>
+						<li><a href="../../why-business-intelligence-better/business-intelligence-architecture.htm" class="submenu" title="Architecture">Architecture</a></li>
+						<li><a href="../../why-business-intelligence-better/business-intelligence-advantage.htm" class="submenu" title="Advantage" style="border-bottom:1px solid #fff;">Advantage</a></li>
+					</ul>
+				</li>												
+        	</ul>			
+			
+			</div>
+   </div>
+    
+</div>  
+		 <div id="pageInfo">
+         <div id="banner_wrap">
+        	<p><a href="../../aboutus/request-evaluation-copy.htm" title="Get Free Trial"><img src="../../images/btn_get_free_trial_1.jpg" alt="Get Free Trial" title="Get Free Trial" /></a> <a href="../../aboutus/contact-us.htm" title="Get in Touch"><img src="../../images/btn_get_in_touch.jpg" alt="Get in Touch" title="Get in Touch" /></a></p>
+        	<h3>Business Intelligence</h3>
+            <h6>Simple, Practical &amp; Affordable</h6>            
+        </div>
+        </div>
+    </div>
+        <!-- InstanceBeginEditable name="container" -->
+        <div id="container">
+          <div id="cntInnerLeftClm">
+        	<span><a href="../../index.htm" title="Home">Home</a></span>  <img title="" alt="" src="../../images/bullete_small.gif"/>  		
+				<span><a href="../index.htm" title="Resources">Resources</a></span>  
+        	<div id="pageCntHighlight_top"></div>
+            <div id="pageCntHighlight" class="roundedBox">
+            	<h1>Business Intelligence Case Studies</h1>
+                <div class="spacer"></div>
+                <div class="innerbox_top"></div>
+                <div class="innerbox_middle">
+                <p style="width:70%;">ElegantJ BI Business Intelligence solutions are rich, robust and suitable for all businesses no matter how small or large, no matter the industry or business focus. Our BI products are simple to use and practical to implement. These solutions are simple, practical and affordable, and they are browser-based with a zero footprint and superior interoperability. They require less training and can be implemented &ndash; on premises or delivered via SaaS (Software as a Service). Implementation is completed in days or weeks, rather than months or years. </p>
+             
+                <div class="topimg"><img alt="Business Intelligence Resources" title="Business Intelligence Resources" src="../../images/resources-banner.jpg" /></div> 
+                </div>
+                <div class="innerbox_bottom"></div>
+                
+              
+                 
+              <ul style="float:left; padding:5px 0px 10px 5px; width:75%;">
+            	 	<li><b>[EJBIR1002CS] &ndash; ElegantJ BI Business Intelligence Implementation for a Non-for-Profit organization Working in USA</b></li>
+              </ul>
+              <div style="float:left; width:8%;"><a href="../business-intelligence-downloads.htm?type=view&amp;doctype=9" target="_blank"><img src="../../images/icon_view.gif" title="View" alt="View"/></a></div>
+              <div style="float:left;"><a href="../business-intelligence-downloads.htm?doctype=9" target="_blank"><img src="../../images/icon_download.gif" title="Download" alt="Download"/></a></div>
+              
+              <div class="spacer"></div>
+                <p>A non-profit organization &ndash; a leader in promoting urban sustainability in USA &ndash; has the mandate to monitor and recommend efficient energy and resource consumption by corporate entities across USA. The client was using spreadsheets to capture diverse data related to unit consumption, costs, research and analytics of Energy Usage Intensity for both Heating Degree Days &amp; Cooling Degree Days, and it was suffering from the drawbacks of using multiple non-standard spreadsheets. The key challenge of the company was to improve quality of data, time required to collect &amp; validate data, publish graphs &amp; analysis with periodic time series, and perform other ad hoc queries &amp; complex analysis. Client also wanted a BI solution that is simple to use, accessible from web, and requires minimal human resources to perform these periodic tasks.  ElegantJ BI Business Intelligence solution deployed with customized ETL solution has offered web based, simple to use, error-free analytic system to client, in short time span and small budget. Research coordinators at client side, now have complete picture of the energy usage patterns and trends in hours rather than days, and they spend more time doing other ad hoc research and data mining, rather than collecting, consolidating and validating data from large number of spreadsheets received from member organizations every month. This initiative is helping Client maintain its leadership position for a good cause of promoting sustainable urban communities in USA.</p>
+                
+                <div class="spacer"></div>                
+				<h3>Other Available Business Intelligence Case Studies</h3>
+                <div style="float: left; padding: 5px 0px; width: 100%;">
+        			<ul style="float: left; width: 19%;">
+			  			<li><a href="bi-implementation-for-heat-management-solutions-provider-company-in-usa.htm" title="Business Intelligence Solution for Implementation for a Smart Heat Management Solutions company in USA">[EJBIR1007CS] &ndash;</a></li>
+					</ul>
+        		<div style="width:78%; float:left;"><a href="bi-implementation-for-heat-management-solutions-provider-company-in-usa.htm" title="Business Intelligence Solution for Implementation for a Smart Heat Management Solutions company in USA">ElegantJ BI Business Intelligence &ndash; Implementation for a Smart Heat Management Solutions company in USA</a></div>
+               
+                </div>
+                
+                <div style="float: left; padding: 5px 0px; width: 100%;">
+        			<ul style="float: left; width: 19%;">
+			  			<li><a href="bi-implementation-for-financial-securities-firm-in-india.htm" title="Business Intelligence Solution for Implementation for a Share Broking &amp; Securities Trading Company in India">[EJBIR1006CS] &ndash;</a></li>
+					</ul>
+        		<div style="width:81%; float:left;"><a href="bi-implementation-for-financial-securities-firm-in-india.htm" title="Business Intelligence Solution for Implementation for a Share Broking &amp; Securities Trading Company in India">ElegantJ BI Business Intelligence &ndash; Implementation for a Share Broking &amp; Securities Trading Company in India</a></div>
+               
+                </div>
+                <div style="float: left; padding: 5px 0px; width: 100%;">
+        			<ul style="float: left; width: 19%;">
+			  			<li><a href="business-intelligence-solution-for-pharmaceuticals-company-India.htm" title="Business Intelligence Solution for Pharmaceuticals Company in India">[EJBIR1005CS] &ndash;</a></li>
+					</ul>
+        		<div style="width:81%; float:left;"><a href="business-intelligence-solution-for-pharmaceuticals-company-India.htm" title="Business Intelligence Solution for Pharmaceuticals Company in India">ElegantJ BI Business Intelligence Implementation for a leading Pharmaceuticals Company in India</a></div>
+               
+                </div>
+                
+                <div style="float: left; padding: 5px 0px; width: 100%;">
+        			<ul style="float: left; width: 19%;">
+			  			<li><a href="bi-implementation-for-construction-infrastructure-development-company.htm" title="ElegantJ BI Business Intelligence Implementation for a leading Construction and Infrastructure Development Company in India">[EJBIR1004CS] &ndash;</a></li>
+					</ul>
+        		<div style="width:81%; float:left;"><a href="business-intelligence-for-chemical-marketing-distribution-company-india.htm" title="ElegantJ BI Business Intelligence - Implementation for a leading Industrial Chemical Marketing &amp; Distribution Company in India">ElegantJ BI Business Intelligence &ndash; Implementation for a leading Industrial Chemical Marketing &amp; Distribution Company in India</a></div>
+                
+                </div>
+                
+                <div style="float: left; padding: 5px 0px; width: 100%;">
+        			<ul style="float: left; width: 19%;">
+			  			<li><a href="bi-implementation-for-construction-infrastructure-development-company.htm" title="ElegantJ BI Business Intelligence Implementation for a leading Construction and Infrastructure Development Company in India">[EJBIR1003CS] &ndash;</a></li>
+					</ul>
+        		<div style="width:81%; float:left;"><a href="bi-implementation-for-construction-infrastructure-development-company.htm" title="ElegantJ BI Business Intelligence Implementation for a leading Construction and Infrastructure Development Company in India">ElegantJ BI Business Intelligence Implementation for a leading Construction &amp; Infrastructure Development Company in India</a></div>
+                
+                </div>
+                
+                <div style="float: left; padding:5px 0px 15px 0px; width: 100%;">
+        			<ul style="float: left; width: 19%;">
+			  			<li><a href="bi-implementation-for-large-retail-chain-in-japan.htm" title="ElegantJ BI Business Intelligence Implementation for large Retail Chain in Japan">[EJBIR1001CS] &ndash;</a></li>
+					</ul>
+        		<div style="width:81%; float:left;"><a href="bi-implementation-for-large-retail-chain-in-japan.htm" title="ElegantJ BI Business Intelligence Implementation for large Retail Chain in Japan ">ElegantJ BI Business Intelligence Implementation for large Retail Chain in Japan</a></div>
+                
+                </div>
+                
+                
+                
+                                
+                
+            </div>
+            <div id="pageCntHighlight_bottom"></div>
+            
+            
+            <div id="relatedLinks">
+            	<h2>Explore ElegantJ BI Modules</h2>
+            
+             
+                	<div class="related_link_top"></div>
+					<div class="customCnt2">
+
+					<ul>
+					   <li><a href="../../bi_suite/modules_data_extraction_transformation_cube_mgmnt.htm" title="Data Extraction">Data Extraction</a></li>
+                       <li><a href="../../bi_suite/bi-dashboard.htm" title="BI Dashboard">BI Dashboard</a></li>
+                       <li><a href="../../bi_suite/key-performance-indicators-kpi.htm" title="Key Performance Indicators">Key Performance Indicators</a></li>
+                       <li><a href="../../performance-management/corporate-performance-management-balanced-scorecards-software.htm" title="Balanced Scorecard">Balanced Scorecard</a></li>
+                       <li><a href="../../bi_suite/business-intelligence-forecasting.htm" title="Forecasting, Predictive Analysis">Forecasting, Predictive Analysis</a></li>
+                       <li><a href="../../bi_suite/sensitivity-analysis.htm" title="What If, Sensitivity Analysis">What If, Sensitivity Analysis</a></li>
+                       <li><a href="../../bi_suite/modules_olap_analysis.htm" title="Cross-Tab OLAP">Cross-Tab OLAP</a></li>
+                       <li><a href="../../bi_suite/modules_graphical_olap.htm" title="Graphical OLAP">Graphical OLAP</a></li>
+                       <li><a href="../../bi_suite/modules_exception_reports_alerts.htm" title="Exception Reporting and Alerts">Exception Reporting and Alerts</a></li>
+                       <li><a href="../../bi_suite/modules_enterprise_reporting.htm" title="BI Reporting">BI Reporting</a></li>
+                       <li><a href="../../bi_suite/modules_publishing_delivery_agent.htm" title="Delivery and Publishing Agent">Delivery and Publishing Agent</a></li>
+                     </ul>
+                    </div>
+                	<div class="related_link_bottom" style="padding-bottom:10px;"></div>
+               </div>
+				
+					<div id="customCnt">
+                      <h2>Resources</h2>
+					  <div class="related_link_top"></div>
+					  <div class="customCnt2">
+                        <ul>
+                          <li style="width: 151px;"><a href="../video/bi-videos.htm" title="Business Intelligence Videos">BI Videos</a></li>
+                          <li style="width: 151px;"><a href="../bi-whitepapers/business-intelligence.htm" title="Business Intelligence White Papers">White Papers</a></li>
+                          <li style="width: 151px;"><a href="business-intelligence.htm" title="Business Intelligence Case Studies">BI Case Studies</a></li>
+                          <li style="width: 151px;"><a href="../research-report/business-intelligence.htm" title="Business Intelligence Research Reports">Research Reports</a></li>
+                        </ul>
+				      </div>
+					  <div class="related_link_bottom"></div>
+		    </div>
+            </div>
+          <div id="cntInnerRightClm">
+          	
+            <div id="subNavigation">
+              <ul class="customFonts">
+              	<li><a href="../video/bi-videos.htm" title="Video Tours">Video Tours</a></li>
+				<li><a href="../bi-whitepapers/business-intelligence.htm" title="White Papers">White Papers</a></li>
+				<li><a href="business-intelligence.htm" title="Case Studies" class="active">Case Studies</a></li>
+				<li><a href="../research-report/business-intelligence.htm" title="Research Reports">Research Reports</a></li>
+				<li><a href="../newsletter.htm" title="Newsletters">Newsletters</a></li>
+				<li><a href="../glossary_a.htm" title="Glossary of BI Terms" >Glossary of BI Terms</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="roundedBox" id="downloadBrochures1">
+              <h3>Dashboards</h3>
+              <div class="img-shadow"> <img id="imgBlueScoop" alt="Dashboard" src="../../images/dashboard_modified-big.jpg" style="width:192px; height:148px; margin-left:42px;" class="PopBoxImageSmall" title="Dashboard" onclick="Pop(this,50,'PopBoxImageLarge');" ondblclick="Revert(this,50,'PopBoxImageSmall');" /></div>
+              <p>Our dashboards provide a customized snapshot of operations, and help the user identify problems and the source of those problems, and they provide valuable, up-to-date information about financial results, sales and other critical information &ndash; all in one place! Users can customize views and analyze information at the strategic, tactical and operational level. </p>
+            </div>
+            
+            <iframe src="../../ASP/callme_back.asp"  frameborder="0" width="100%" style="height:216px;" scrolling='no'></iframe>
+            <div id="downloadBrochures" class="roundedBox">
+              <h3>DOWNLOAD BROCHURES</h3>
+              <img src="../../images/ejbi_brochures.jpg" alt="ElegantJ BI Brocures" />
+              <ul>
+                <li><a href="../../pdf/dwn_desfiles.asp?filename=EJBIR1001EB-ElegantJBI-Business-Intelligence-Suite.pdf" target="_blank" title="ElegantJ BI Product Brochure">ElegantJ BI Product Brochure</a></li>
+<li><a href="../../pdf/dwn_desfiles.asp?filename=EJBIR1002EB-ElegantJBI-Modules-Overview.pdf" target="_blank" title="ElegantJ BI Modules Overview">ElegantJ BI Modules Overview</a></li>
+                <li><a href="../../pdf/dwn_desfiles.asp?filename=EJBIR1003EB-ElegantJBI-Product-Flyer.pdf" target="_blank" title="ElegantJ BI Product Flyer">ElegantJ BI Product Flyer</a></li>
+              </ul>
+            </div>
+            <!--<div id="whatisBox" class="roundedBox">
+        	<h3>What is Business Intelligence?</h3>
+            <img src="images/what_is_bi.jpg" alt="What is Business Intelligence?" />
+            <p>Business Intelligence enables organisations and enterprise users accomplish goals faster by instantly providing the information they need. Together with a set of business applications and technologies for gathering, storing, analysing, and providing access to data from disparate data sources across the enterprise, it helps provide reliable, consistent and timely information and analysis to employees, customers, suppliers, and partners for more effective decision making.</p>
+        </div>-->
+          </div>
+        </div>
+        <!-- InstanceEndEditable -->
+      <div id="footerContainer">
+    	<div id="footer">
+        	<h6>&copy; Elegant MicroWeb. All Trademarks are duly acknowledged.<br/>
+            <a href="../../index.htm" title="Home">Home</a> &nbsp;|&nbsp; <a href="../../aboutus/contact-us.htm" title="Contact Us">Contact Us</a> &nbsp;|&nbsp;
+            <a href="../../aboutus/sitemap.htm" title="Sitemap">Sitemap</a> &nbsp;|&nbsp; <a href="http://support.elegantjbi.com" title="Support" target="_blank">Support</a> &nbsp;|&nbsp; Please read <a href="../../aboutus/disclaimer.htm" title="Disclaimer">Disclaimer</a> and <a href="../../aboutus/privacy_policy.htm" title="Privacy Policy">Privacy Policy</a></h6>
+            <div class="icon">
+            <p>
+						<a href="http://www.facebook.com/businessintelligenceindia" target="_blank" title="Facebook"><img src="../../images/ico_facebook.gif" alt="Facebook" /></a>
+			<a href="http://elegantjbi.tel" target="_blank"><img src="../../images/tel-logo.jpg" alt="Contact Us" /></a>
+			<a href="http://blog.elegantjbi.com" target="_blank" title="Blog"><img src="../../images/blue-s.jpg" title="Blog" alt="Blog"/></a>
+			<a href="http://twitter.com/elegantjbi" title="Twitter" target="_blank"><img src="../../images/ico_twitter.gif" alt="Twitter" /></a></p>
+           
+            
+            <p style="clear:both;"><img src="../../images/intel_logo.jpg" alt="Intel Software Partner" /><span>Our Technology Partner</span></p>
+            </div>
+          <div class="spacer"></div>
+        </div>
+    </div>
+</div>
+<div></div>
+</div>
+
+<img src="https://cts.vresp.com/s.gif?h=653ce646da" height="1" width="1" alt="" title=""/>
+
+</body>
+<!-- InstanceEnd --></html>

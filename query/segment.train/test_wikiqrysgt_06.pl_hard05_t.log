@@ -1,0 +1,1922 @@
+PERL PROGRAM LOG: /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl
+
+Starting test_wikiqrysgt_06.pl --- 22:09:09, 08-24-2011
+
+
+Starting Wikipedia database: en_20110526 connection22:09:09, 08-24-2011
+
+Infile  = Hubble Telescope Achievements, 1
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:hubble telescope achievement
+
+
+Starting query segmentation --- 22:09:09, 08-24-2011
+
+
+Starting Google search --- 22:09:09, 08-24-2011
+
+Searching Google (q1=Hubble Telescope Achievements)
+ -- extracting links & snippets
+    39 HTMLs found so far
+ -- fetch #1: http://www.nasa.gov/externalflash/hubble_gallery/index_noaccess.html
+ -- fetch #2: http://www.nasa.gov/mission_pages/hubble/main/accomplishments_index.html
+ -- fetch #3: http://www.best-telescope-guide.com/hubble-telescope.html
+ -- fetch #4: http://www.aerospaceguide.net/spacehistory/hubble-history.html
+ -- fetch #5: http://www.time.com/time/photogallery/0,29307,1897016,00.html
+ -- fetch #6: http://www.time.com/time/health/article/0,8599,1898174,00.html
+ -- fetch #7: http://science.howstuffworks.com/ten-nasa-achievements2.htm
+ -- fetch #8: http://www.whoinventedit.net/who-invented-the-hubble-telescope.html
+ -- fetch #9: http://library.thinkquest.org/28327/html/exploration/satellites/hubble.html
+ -- fetch #10: http://www.surfnetkids.com/hubble.htm
+
+Starting query segmentation ranking --- 22:09:16, 08-24-2011
+
+Enter calConditionalProb:8.0017247232697e-10 3 4041 2500
+
+Enter calConditionalProb:4.59353697615821e-08 35 3674 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:Hubble Telescope,Telescope Achievements,Hubble Telescope Achievements
+
+top topic:context:Hubble Telescope:Achievements
+
+top topic:context:Telescope Achievements:Hubble
+
+top topic:context:Hubble Telescope Achievements:
+
+
+Produce result --- 22:09:22, 08-24-2011
+
+Original query:Hubble Telescope Achievements
+Segmented query:"Hubble Telescope:40203" "Achievements:22562196" ||"Telescope Achievements" "Hubble:341663" ||"Hubble Telescope Achievements" ||::1
+
+Infile  = New Hydroelectric Projects, 2
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:new hydroelectric project
+
+
+Starting query segmentation --- 22:09:22, 08-24-2011
+
+
+Starting Google search --- 22:09:22, 08-24-2011
+
+Searching Google (q2=New Hydroelectric Projects)
+ -- extracting links & snippets
+    28 HTMLs found so far
+ -- fetch #1: http://english.peopledaily.com.cn/90001/90777/90852/7348812.html
+ -- fetch #2: http://www.bloomberg.com/news/2011-05-10/patagonia-hydroelectric-project-approval-spurs-violent-protests-in-chile.html
+ -- fetch #3: http://allafrica.com/stories/201102080902.html
+ -- fetch #4: http://www.hindu.com/2011/06/07/stories/2011060750390200.htm
+ -- fetch #5: http://www.fws.gov/northeast/nyfo/fwc/eprojects.htm
+ -- fetch #6: http://www.vnf.com/news-articles-57.html
+ -- fetch #7: http://lacrossetribune.com/vernonbroadcaster/news/opinion/editorial/columnists/article_c9f79b4c-ad58-11e0-8dfa-001cc4c002e0.html
+ -- fetch #8: http://www.physorg.com/news/2011-05-massive-hydroelectric-chile.html
+ -- fetch #9: http://www.nypa.gov/facilities/niagara.htm
+ -- fetch #10: http://www.humnews.com/humnews/2010/12/13/new-hydroelectric-project-to-provide-laos-with-huge-cash-inf.html
+
+Starting query segmentation ranking --- 22:09:34, 08-24-2011
+
+Enter calConditionalProb:1.58764379429954e-12 33 9315 2500
+
+Enter calConditionalProb:6.35125970185493e-17 0 0 2500
+
+Enter calConditionalProb:1.58764379429954e-12 9 9315 2500
+
+ranked query topics:Hydroelectric Projects,New Hydroelectric,New Hydroelectric Projects
+
+top topic:context:Hydroelectric Projects:New
+
+top topic:context:New Hydroelectric:Projects
+
+top topic:context:New Hydroelectric Projects:
+
+
+Produce result --- 22:09:34, 08-24-2011
+
+Original query:New Hydroelectric Projects
+Segmented query:"Hydroelectric Projects" "New:22562196" ||"New Hydroelectric" "Projects:22562196" ||"New Hydroelectric Projects" ||::2
+
+Infile  = Radio Waves and Brain Cancer, 3
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:radio wave brain cancer
+
+
+Starting query segmentation --- 22:09:34, 08-24-2011
+
+
+Starting Google search --- 22:09:35, 08-24-2011
+
+Searching Google (q3=Radio Waves and Brain Cancer)
+ -- extracting links & snippets
+    31 HTMLs found so far
+ -- fetch #1: http://www.consumeraffairs.com/news/cell_phone_cancer_link.htm
+ -- fetch #2: http://www.askmen.com/sports/health_60/72_mens_health.html
+ -- fetch #3: http://www.askmen.com/sports/health_150/187_mens_health.html
+ -- fetch #4: http://www.ninds.nih.gov/disorders/brainandspinaltumors/detail_brainandspinaltumors.htm
+ -- fetch #5: http://www.luckinlove.com/cellfone.htm
+ -- fetch #6: http://www.theuniversityhospital.com/braintumor/html/braintumortreatments/treatments.htm
+ -- fetch #7: http://www.macworld.com/article/160286/2011/06/cell_phone_cancer_who_analysis.html
+ -- fetch #8: http://www.bibliotecapleyades.net/scalar_tech/esp_scalartech_cellphonesmicrowave04.htm
+ -- fetch #9: http://www.internationalparentingassociation.org/BrainDevelopment/cellphones.html
+ -- fetch #10: http://tommytoy.typepad.com/tommy-toy-pbt-consultin/2010/10/scientists-say-cell-phones-emit-electro-magnetic-radio-waves-that-can-damage-your-brain-cause-tumors.html
+
+Starting query segmentation ranking --- 22:09:47, 08-24-2011
+
+Enter wikiDisambiguation:Waves  "Brain Cancer" Radio Brain Cancer
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter wikiDisambiguation:Radio Waves  "Brain Cancer" Brain Cancer
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1354.
+Enter calConditionalProb:1.28055197093971e-18 1 16069 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1354.
+Enter calConditionalProb:5.1227600034481e-23 0 0 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1354.
+Enter calConditionalProb:3.20103488973488e-14 3 16069 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1354.
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1354.
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1354.
+Enter calConditionalProb:1.28055197093971e-18 0 16069 2500
+
+Enter wikiDisambiguation:Radio Waves "Brain Cancer"  Brain Cancer
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+ranked query topics:Waves  Brain,Waves  Brain Cancer,Waves ,Radio Waves ,Brain Cancer,Radio Waves, Brain, Brain Cancer,Radio Waves  Brain,Radio Waves  Brain Cancer
+
+top topic:context:Waves  Brain:Radio Cancer
+
+top topic:context:Waves  Brain Cancer:Radio
+
+top topic:context:Waves :"Brain Cancer" Radio Brain Cancer
+
+
+Produce result --- 22:10:04, 08-24-2011
+
+Original query:Radio Waves  Brain Cancer
+Segmented query:"Waves  Brain" "Radio:15368428" "Cancer:105219" ||"Waves  Brain Cancer" "Radio:15368428" ||"Waves :180846" "Brain:3717" "Cancer:105219" "Radio:15368428" "Brain:3717" "Cancer:105219" ||::3
+
+Infile  = Marine Vegetation, 4
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:marine vegetation
+
+
+Starting query segmentation --- 22:10:04, 08-24-2011
+
+
+Starting Google search --- 22:10:04, 08-24-2011
+
+Searching Google (q4=Marine Vegetation)
+ -- extracting links & snippets
+    28 HTMLs found so far
+ -- fetch #1: http://www.oresundsvand.dk/English/html/marine_plants.html
+ -- fetch #2: http://www.crd.bc.ca/watersheds/protection/howtohelp/protectmarineplants.htm
+ -- fetch #3: http://www.biogeosciences-discuss.net/1/659/print-redirect.html
+ -- fetch #4: http://www.seasurveyor.com/Marine_Vegetation.htm
+ -- fetch #5: http://www.widecast.org/Conservation/Threats/Seagrass.html
+ -- fetch #6: http://www.dpi.qld.gov.au/28_5628.htm
+ -- fetch #7: http://www.clas.ufl.edu/users/pciesiel/gly3150/plant.html
+ -- fetch #8: http://www.marinebiochemists.com/Aquaticplantmngtplans.html
+ -- fetch #9: http://www.vegfunction.net/wg/57/57_Mesograzer.htm
+ -- fetch #10: http://www.enchantedlearning.com/subjects/ocean/Intertidal.shtml
+w1, w2: marine,vegetation
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+57 41
+
+
+Produce result --- 22:10:17, 08-24-2011
+
+Original query:Marine Vegetation
+Segmented query:"Marine Vegetation" ::4
+
+Infile  = International Art Crime, 5
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:international art crime
+
+
+Starting query segmentation --- 22:10:17, 08-24-2011
+
+
+Starting Google search --- 22:10:17, 08-24-2011
+
+Searching Google (q5=International Art Crime)
+ -- extracting links & snippets
+    27 HTMLs found so far
+ -- fetch #1: http://www.artcrime.info/education.htm
+ -- fetch #2: http://www.artcrime.info/staff.htm
+ -- fetch #3: http://www.artcrime.info/projects.htm
+ -- fetch #4: http://art-crime.blogspot.com/2011/07/arcas-international-art-crime.html
+ -- fetch #5: http://art-crime.blogspot.com/2011/07/arcas-2011-international-art-crime.html
+ -- fetch #6: http://art-crime.blogspot.com/2011/07/arcas-masters-certificate-in.html
+ -- fetch #7: http://art-crime.blogspot.com/2011/07/writers-of-art-crime-to-speak-at-arcas.html
+ -- fetch #8: http://www.nytimes.com/1995/11/20/arts/art-theft-is-booming-bringing-an-effort-to-respond.html
+ -- fetch #9: http://www.nytimes.com/2009/07/22/arts/design/22crime.html
+ -- fetch #10: http://www.pbs.org/independentlens/stolen/arttheft.html
+
+Starting query segmentation ranking --- 22:10:27, 08-24-2011
+
+Enter calConditionalProb:8.00178417021103e-10 40 8710 2500
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+Enter calConditionalProb:4.59353697615821e-08 188 8710 2500
+
+ranked query topics:Art Crime,International Art,International Art Crime
+
+top topic:context:Art Crime:International
+
+top topic:context:International Art:Crime
+
+top topic:context:International Art Crime:
+
+
+Produce result --- 22:10:27, 08-24-2011
+
+Original query:International Art Crime
+Segmented query:"Art Crime:12388799" "International:3741372" ||"International Art" "Crime:5785" ||"International Art Crime" ||::5
+
+Infile  = Cult Lifestyles, 6
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:cult lifestyle
+
+
+Starting query segmentation --- 22:10:27, 08-24-2011
+
+
+Starting Google search --- 22:10:28, 08-24-2011
+
+Searching Google (q6=Cult Lifestyles)
+ -- extracting links & snippets
+    36 HTMLs found so far
+ -- fetch #1: http://w3.cultdeadcow.com/cms/2002/12/lifestyles-of-t.html
+ -- fetch #2: http://iaslifestyles.blogspot.com/2011/07/wwe-raw-72511-review-cult-of.html
+ -- fetch #3: http://cultofruins.blogspot.com/2010/02/polvo-today-active-lifestyles.html
+ -- fetch #4: http://www.rickross.com/reference/general/general431.html
+ -- fetch #5: http://www.dailymail.co.uk/femail/article-401005/Bizzare-lifestyle-Children-God-cult.html
+ -- fetch #6: http://www.afo.net/filtercriteria.htm
+ -- fetch #7: http://www.cult-branding.com/cb101/seven-golden-rules-of-cult-branding.html
+ -- fetch #8: http://hbswk.hbs.edu/archive/3228.html
+ -- fetch #9: http://www.businessweek.com/magazine/content/05_46/b3959001.htm
+ -- fetch #10: http://www.deathreference.com/Gi-Ho/Heaven-s-Gate.html
+w1, w2: cult,lifestyle
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+215 27
+
+
+Produce result --- 22:10:37, 08-24-2011
+
+Original query:Cult Lifestyles
+Segmented query:"Cult Lifestyles" ::6
+
+Infile  = Iran-Iraq Cooperation, 7
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:iran iraq cooperation
+
+
+Starting query segmentation --- 22:10:37, 08-24-2011
+
+
+Starting Google search --- 22:10:37, 08-24-2011
+
+Searching Google (q7=Iran-Iraq Cooperation)
+ -- extracting links & snippets
+    23 HTMLs found so far
+ -- fetch #1: http://news.xinhuanet.com/english2010/world/2011-07/06/c_13969687.htm
+ -- fetch #2: http://www.ecasb.com/newsdetail-5242-en.html
+ -- fetch #3: http://www.ynetnews.com/articles/0,7340,L-3553415,00.html
+ -- fetch #4: http://www.southasiaanalysis.org/%5Cpapers15%5Cpaper1469.html
+ -- fetch #5: http://www.presstv.ir/detail/178404.html
+ -- fetch #6: http://www.presstv.ir/detail/19245.html
+ -- fetch #7: http://english.peopledaily.com.cn/90001/90777/90854/7432832.html
+ -- fetch #8: http://www.arabicnews.com/ansub/Daily/Day/070211/2007021102.html
+ -- fetch #9: http://www.china.org.cn/english/features/190692.htm
+ -- fetch #10: http://www.atimes.com/atimes/Middle_East/JF10Ak04.html
+w1, w2: iran,iraq
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+164 157
+
+
+Produce result --- 22:10:48, 08-24-2011
+
+Original query:Iran-Iraq Cooperation
+Segmented query:"Iran-Iraq Cooperation" ::7
+
+Infile  = Black Bear Attacks, 8
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:black bear attack
+
+
+Starting query segmentation --- 22:10:48, 08-24-2011
+
+
+Starting Google search --- 22:10:49, 08-24-2011
+
+Searching Google (q8=Black Bear Attacks)
+ -- extracting links & snippets
+    45 HTMLs found so far
+ -- fetch #1: http://www.mountainnature.com/wildlife/bears/bearencounters.htm
+ -- fetch #2: http://www.wftv.com/countybycounty/28966369/detail.html
+ -- fetch #3: http://ext.nrs.wsu.edu/publications/Blackbears1.htm
+ -- fetch #4: http://www.huffingtonpost.com/2011/08/04/bear-attack-new-jersey_n_918191.html
+ -- fetch #5: http://news.discovery.com/animals/black-bear-attacks-north-america-110511.html
+ -- fetch #6: http://www.southeasternoutdoors.com/wildlife/mammals/black-bear-attacks-fatal.html
+ -- fetch #7: http://www.covebear.com/BlackBearAttacks.htm
+ -- fetch #8: http://members.fortunecity.com/mtracey/christy.htm
+ -- fetch #9: http://www.sciencedaily.com/releases/2011/05/110511074807.htm
+ -- fetch #10: http://www.bearplanet.org/bear-attack.shtml
+
+Starting query segmentation ranking --- 22:11:02, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter wikiDisambiguation:Black Bear Attacks
+
+Enter calConditionalProb:4.59353697615821e-08 205 8873 2500
+
+Enter calConditionalProb:8.0017247232697e-10 116 8873 2500
+
+ranked query topics:Black Bear,Bear Attacks,Black Bear Attacks
+
+top topic:context:Black Bear:Attacks
+
+top topic:context:Bear Attacks:Black
+
+top topic:context:Black Bear Attacks:
+
+
+Produce result --- 22:11:02, 08-24-2011
+
+Original query:Black Bear Attacks
+Segmented query:"Black Bear:22562196" "Attacks:22562196" ||"Bear Attacks" "Black:4035" ||"Black Bear Attacks" ||::8
+
+Infile  = Airport Security, 9
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:airport security
+
+
+Starting query segmentation --- 22:11:02, 08-24-2011
+
+
+Produce result --- 22:11:02, 08-24-2011
+
+Original query:Airport Security
+Segmented query:"Airport Security:284770"::9
+
+Infile  = Abuses of E-Mail, 10
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:abuse mail
+
+
+Starting query segmentation --- 22:11:02, 08-24-2011
+
+
+Starting Google search --- 22:11:02, 08-24-2011
+
+Searching Google (q10=Abuses of E-Mail)
+ -- extracting links & snippets
+    28 HTMLs found so far
+ -- fetch #1: http://www.abuse.net/relay.html
+ -- fetch #2: http://www.abuse.net/users.phtml
+ -- fetch #3: http://www.mail-abuse.com/an_reptspamgdlines.html
+ -- fetch #4: http://www.mail-abuse.com/an_sec3rdparty.html
+ -- fetch #5: http://spamcop.net/fom-serve/cache/343.html
+ -- fetch #6: http://help.yahoo.com/l/us/yahoo/mail/yahoomail/abuse.html
+ -- fetch #7: http://www.virginia.edu/abuse/spamemail.html
+ -- fetch #8: http://tjsdaily.blogspot.com/2011/05/facebook-abuse-department-change.html
+ -- fetch #9: http://www.spyequipmentguide.com/email-abuse.html
+ -- fetch #10: http://fedex.com/us/security/prevent-fraud/index.html
+
+Starting query segmentation ranking --- 22:11:10, 08-24-2011
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1354.
+Enter calConditionalProb:1.58764379429954e-12 148 7821 2500
+
+Enter calConditionalProb:4.59353697615821e-08 77 7369 2500
+
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1408.
+Use of uninitialized value $topic2 in concatenation (.) or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1430.
+Use of uninitialized value $topic2 in substitution (s///) at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1354.
+Enter calConditionalProb:1.26017057576487e-19 0 0 2500
+
+ranked query topics: E-Mail,Abuses ,Abuses  E-Mail
+
+top topic:context: E-Mail:Abuses
+
+top topic:context:Abuses :E-Mail
+
+top topic:context:Abuses  E-Mail:
+
+
+Produce result --- 22:11:10, 08-24-2011
+
+Original query:Abuses  E-Mail
+Segmented query:" E-Mail" "Abuses:424739" ||"Abuses :424739" "E-Mail:9738" ||"Abuses  E-Mail" ||::10
+
+Infile  = Overseas Tobacco Sales, 11
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:oversea tobacco sale
+
+
+Starting query segmentation --- 22:11:10, 08-24-2011
+
+
+Starting Google search --- 22:11:10, 08-24-2011
+
+Searching Google (q11=Overseas Tobacco Sales)
+ -- extracting links & snippets
+    36 HTMLs found so far
+ -- fetch #1: http://www.discount-cigarettes.org/consumers.html
+ -- fetch #2: http://www.nytimes.com/1997/04/27/weekinreview/us-tobacco-grows-on-smokers-overseas.html
+ -- fetch #3: http://www.albionmonitor.com/9811a/copyright/tobaccoglobe.html
+ -- fetch #4: http://usgovinfo.about.com/b/2010/08/16/ban-on-mailing-tobacco-peeves-soldiers-overseas.htm
+ -- fetch #5: http://www.usatoday.com/money/economy/2007-08-29-3546268740_x.htm
+ -- fetch #6: http://cstl.syr.edu/fipse/pretests/psychtest/psych3.html
+ -- fetch #7: http://www.washingtonpost.com/wp-srv/national/longterm/tobacco/stories/asia.htm
+ -- fetch #8: http://www.prnewswire.com/news-releases/more-tobacco-companies-going-public-overseas-new-irrc-directory-finds-71524467.html
+ -- fetch #9: http://www.takingontobacco.org/addicted/main.html
+ -- fetch #10: http://www.takingontobacco.org/addicted/es.html
+
+Starting query segmentation ranking --- 22:11:21, 08-24-2011
+
+Enter calConditionalProb:8.00178417021103e-10 2 16759 2500
+
+Enter calConditionalProb:8.00178417021103e-10 7 17024 2500
+
+Enter calConditionalProb:3.20103495455492e-14 0 0 2500
+
+ranked query topics:Tobacco Sales,Overseas Tobacco,Overseas Tobacco Sales
+
+top topic:context:Tobacco Sales:Overseas
+
+top topic:context:Overseas Tobacco:Sales
+
+top topic:context:Overseas Tobacco Sales:
+
+
+Produce result --- 22:11:21, 08-24-2011
+
+Original query:Overseas Tobacco Sales
+Segmented query:"Tobacco Sales" "Overseas:23261921" ||"Overseas Tobacco" "Sales:155698" ||"Overseas Tobacco Sales" ||::11
+
+Infile  = Wildlife Extinction, 12
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:wildlife extinction
+
+
+Starting query segmentation --- 22:11:21, 08-24-2011
+
+
+Starting Google search --- 22:11:21, 08-24-2011
+
+Searching Google (q12=Wildlife Extinction)
+ -- extracting links & snippets
+    32 HTMLs found so far
+ -- fetch #1: http://www.equalearth.org/wildlifeextinction.htm
+ -- fetch #2: http://www.stopextinction.org/10athome.html
+ -- fetch #3: http://www.light-science.com/bio9.html
+ -- fetch #4: http://www.50birds.com/extan/gextanimals1.htm
+ -- fetch #5: http://www.naturenorth.com/YOTF/Overpopulation.html
+ -- fetch #6: http://www.independent.co.uk/environment/animal-extinction--the-greatest-threat-to-mankind-397939.html
+ -- fetch #7: http://www.englishforums.com/English/WildlifeExtinction/dbgnp/post.htm
+ -- fetch #8: http://www.tropical-rainforest-animals.com/Animal-Extinction.html
+ -- fetch #9: http://www.telegraph.co.uk/earth/wildlife/7011035/Giant-cattle-to-be-bred-back-from-extinction.html
+ -- fetch #10: http://animalrights.about.com/od/wildlife/g/Animal_Extinction.htm
+w1, w2: wildlife,extinction
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+116 102
+
+
+Produce result --- 22:11:32, 08-24-2011
+
+Original query:Wildlife Extinction
+Segmented query:"Wildlife Extinction" ::12
+
+Infile  = Antarctica exploration, 13
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:antarctica exploration
+
+
+Starting query segmentation --- 22:11:32, 08-24-2011
+
+
+Starting Google search --- 22:11:32, 08-24-2011
+
+Searching Google (q13=Antarctica exploration)
+ -- extracting links & snippets
+    39 HTMLs found so far
+ -- fetch #1: http://library.thinkquest.org/CR0215022/explorers.htm
+ -- fetch #2: http://library.thinkquest.org/26442/html/explore/index.html
+ -- fetch #3: http://www.enchantedlearning.com/explorers/antarctica.shtml
+ -- fetch #4: http://www.coolantarctica.com/Antarctica%20fact%20file/History/exploration%20and%20history.htm
+ -- fetch #5: http://www.coolantarctica.com/Antarctica%20fact%20file/History/The_heroic_age_of_Antarctic_exploration.htm
+ -- fetch #6: http://www.coolantarctica.com/Antarctica%20fact%20file/History/antarctic_ships/fram.htm
+ -- fetch #7: http://www.south-pole.com/homepage.html
+ -- fetch #8: http://www.south-pole.com/p0000101.htm
+ -- fetch #9: http://www.south-pole.com/p0000071.htm
+ -- fetch #10: http://www.south-pole.com/p0000097.htm
+w1, w2: antarctica,exploration
+
+78 46
+
+
+Produce result --- 22:11:38, 08-24-2011
+
+Original query:Antarctica exploration
+Segmented query:"Antarctica exploration" ::13
+
+Infile  = journalist risks, 14
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:journalist risk
+
+
+Starting query segmentation --- 22:11:38, 08-24-2011
+
+
+Starting Google search --- 22:11:38, 08-24-2011
+
+Searching Google (q14=journalist risks)
+ -- extracting links & snippets
+    27 HTMLs found so far
+ -- fetch #1: http://www.nytimes.com/2009/06/15/business/media/15guerrilla.html
+ -- fetch #2: http://www.smh.com.au/news/national/abc-journalist-risks-caning-and-jail-after-drugs-arrest/2008/07/18/1216163156800.html
+ -- fetch #3: http://www.pbs.org/newshour/bb/media/july-dec11/journalists_07-04.html
+ -- fetch #4: http://www.pbs.org/newshour/extra/features/july-dec99/journalism_12-2.html
+ -- fetch #5: http://www.mafhoum.com/press3/101S26.htm
+ -- fetch #6: http://www.time.com/time/world/article/0,8599,1906595,00.html
+ -- fetch #7: http://www.caribbean360.com/news/trinidad_tobago_news/474252.html
+ -- fetch #8: http://www.rferl.org/content/article/1054313.html
+ -- fetch #9: http://www.ehealthinformation.ca/knowledgebase/article/AA-00153/6/De-identification-Practices/What-is-the-relationship-between-prosecutor-journalist-and-marketer-risk-.html
+ -- fetch #10: http://www.huffingtonpost.com/nancy-doyle-palmer-/nuclear-journalists-asses_b_838471.html
+w1, w2: journalist,risk
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+133 60
+
+
+Produce result --- 22:11:50, 08-24-2011
+
+Original query:journalist risks
+Segmented query:"journalist risks" ::14
+
+Infile  = human smuggling, 15
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:human smuggling
+
+
+Starting query segmentation --- 22:11:50, 08-24-2011
+
+
+Produce result --- 22:11:50, 08-24-2011
+
+Original query:human smuggling
+Segmented query:"human smuggling:68714"::15
+
+Infile  = transportation tunnel disasters, 16
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:transportation tunnel disaster
+
+
+Starting query segmentation --- 22:11:50, 08-24-2011
+
+
+Starting Google search --- 22:11:50, 08-24-2011
+
+Searching Google (q16=transportation tunnel disasters)
+ -- extracting links & snippets
+    27 HTMLs found so far
+ -- fetch #1: http://seattletimes.nwsource.com/html/localnews/2014209560_99emergency13m.html
+ -- fetch #2: http://www.medbc.com/annals/review/vol_10/num_4/text/vol10n4p241.htm
+ -- fetch #3: http://www.lampholderpub.com/new_page_72.htm
+ -- fetch #4: http://www.earthmountainview.com/yucca/yucca.htm
+ -- fetch #5: http://baltimorechronicle.com/trainfire_aug01.html
+ -- fetch #6: http://www.landroverclub.net/Club/HTML/MontBlanc.htm
+ -- fetch #7: http://djkuba.tripod.com/index-5.html
+ -- fetch #8: http://www.aguanomics.com/2010/07/beyond-chinatown-guest-review.html
+ -- fetch #9: http://www.dhs.gov/files/programs/gc_1218480826191.shtm
+ -- fetch #10: http://www.boudillion.com/hoosac/hoosac.htm
+
+Starting query segmentation ranking --- 22:12:08, 08-24-2011
+
+Enter calConditionalProb:8.0017247232697e-10 2 37672 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 5 33592 2500
+
+ranked query topics:tunnel disasters,transportation tunnel,transportation tunnel disasters
+
+top topic:context:tunnel disasters:transportation
+
+top topic:context:transportation tunnel:disasters
+
+top topic:context:transportation tunnel disasters:
+
+
+Produce result --- 22:12:09, 08-24-2011
+
+Original query:transportation tunnel disasters
+Segmented query:"tunnel disasters" "transportation:22562196" ||"transportation tunnel" "disasters:22562196" ||"transportation tunnel disasters" ||::16
+
+Infile  = Native American casino, 17
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:native american casino
+
+
+Starting query segmentation --- 22:12:09, 08-24-2011
+
+
+Produce result --- 22:12:09, 08-24-2011
+
+Original query:Native American casino
+Segmented query:"Native American casino:58286"::17
+
+Infile  = Nobel prize winners, 18
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:nobel prize winner
+
+
+Starting query segmentation --- 22:12:09, 08-24-2011
+
+
+Produce result --- 22:12:09, 08-24-2011
+
+Original query:Nobel prize winners
+Segmented query:"Nobel prize winners:22562196"::18
+
+Infile  = hydrogen energy, 19
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:hydrogen energy
+
+
+Starting query segmentation --- 22:12:09, 08-24-2011
+
+
+Produce result --- 22:12:09, 08-24-2011
+
+Original query:hydrogen energy
+Segmented query:"hydrogen energy:22562196"::19
+
+Infile  = euro opposition, 20
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:euro opposition
+
+
+Starting query segmentation --- 22:12:09, 08-24-2011
+
+
+Starting Google search --- 22:12:09, 08-24-2011
+
+Searching Google (q20=euro opposition)
+ -- extracting links & snippets
+    29 HTMLs found so far
+ -- fetch #1: http://www.nytimes.com/2011/08/23/business/global/members-of-merkels-party-emphasize-opposition-to-euro-bonds.html
+ -- fetch #2: http://www.nytimes.com/2011/08/22/business/german-leaders-reiterate-opposition-to-euro-bonds.html
+ -- fetch #3: http://www.nytimes.com/2011/08/23/business/global/members-of-merkels-party-emphasize-opposition-to-euro-bonds.html
+ -- fetch #4: http://www.dailymail.co.uk/news/article-185449/Opposition-euro-hits-new-high.html
+ -- fetch #5: http://www.businessweek.com/news/2011-06-21/greece-debt-crisis-pushes-danish-euro-opposition-to-record.html
+ -- fetch #6: http://www.businessweek.com/news/2010-06-15/swedish-euro-opposition-grows-after-greek-crisis-poll-shows.html
+ -- fetch #7: http://www.bloomberg.com/news/2011-06-21/greece-debt-crisis-pushes-danish-euro-opposition.html
+ -- fetch #8: http://www.spiegel.de/international/germany/0,1518,736680,00.html
+ -- fetch #9: http://www.spiegel.de/international/europe/0,1518,775267,00.html
+ -- fetch #10: http://www.forex-news.co/germanys-opposition-christian-social-union-the-euro-bond-2.html
+w1, w2: euro,opposition
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+151 42
+
+
+Produce result --- 22:12:21, 08-24-2011
+
+Original query:euro opposition
+Segmented query:"euro opposition" ::20
+
+Infile  = mental illness drugs, 21
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mental illness drug
+
+
+Starting query segmentation --- 22:12:21, 08-24-2011
+
+
+Starting Google search --- 22:12:21, 08-24-2011
+
+Searching Google (q21=mental illness drugs)
+ -- extracting links & snippets
+    30 HTMLs found so far
+ -- fetch #1: http://www.justice.gov/ndic/pubs7/7343/index.htm
+ -- fetch #2: http://www.nimh.nih.gov/health/publications/mental-health-medications/complete-index.shtml
+ -- fetch #3: http://www.nida.nih.gov/DrugPages/comorbidity.html
+ -- fetch #4: http://www.schizophrenia.com/family/dualdiag.html
+ -- fetch #5: http://learn.genetics.utah.edu/content/addiction/issues/mentalillness.html
+ -- fetch #6: http://www.nami.org/Content/ContentGroups/Helpline1/Dual_Diagnosis_-_Substance_Abuse_and_Mental_Illness.htm
+ -- fetch #7: http://www.nami.org/helpline/dualdiagnosis.htm
+ -- fetch #8: http://www.nami.org/Content/ContentGroups/Helpline1/Prescription_Drug_Patient_Assistance_Programs.htm
+ -- fetch #9: http://www.athealth.com/consumer/mcabinet/m_mentalillness.html
+ -- fetch #10: http://www.helpguide.org/mental/dual_diagnosis.htm
+
+Starting query segmentation ranking --- 22:12:30, 08-24-2011
+
+Enter wikiDisambiguation:mental illness drugs
+
+Enter calConditionalProb:4.59353697615821e-08 113 13782 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 3 13782 2500
+
+ranked query topics:mental illness,illness drugs,mental illness drugs
+
+top topic:context:mental illness:drugs
+
+top topic:context:illness drugs:mental
+
+top topic:context:mental illness drugs:
+
+
+Produce result --- 22:12:30, 08-24-2011
+
+Original query:mental illness drugs
+Segmented query:"mental illness:22562196" "drugs:22562196" ||"illness drugs" "mental:22562196" ||"mental illness drugs" ||::21
+
+Infile  = illegal technology transfer, 22
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:illegal technology transfer
+
+
+Starting query segmentation --- 22:12:30, 08-24-2011
+
+
+Starting Google search --- 22:12:31, 08-24-2011
+
+Searching Google (q22=illegal technology transfer)
+ -- extracting links & snippets
+    35 HTMLs found so far
+ -- fetch #1: http://rf-web.tamu.edu/security/security%20guide/T1threat/Techtran.htm
+ -- fetch #2: http://www.dm.usda.gov/ocpm/Security%20Guide/T1threat/Techtran.htm
+ -- fetch #3: http://www.roytov.com/refugee/dow.htm
+ -- fetch #4: http://dpclo.defense.gov/privacy/SORNS/dod/DHRA03.html
+ -- fetch #5: http://goliath.ecnext.com/coms2/gi_0199-4766402/The-Dangers-Of-Illegal-Technology.html
+ -- fetch #6: http://www.jonathanpollard.org/1998/040798b.htm
+ -- fetch #7: http://rf-web.tamu.edu/security/security%20guide/Spystory/Poison.htm
+ -- fetch #8: http://vaticproject.blogspot.com/2010/11/illegal-transfer-of-missles-technology.html
+ -- fetch #9: http://whistleblowersupporter.typepad.com/my_weblog/2010/01/toshibas-illegal-transfer-of-us-technology.html
+ -- fetch #10: http://www.bis.doc.gov/news/2004/prattwhitney_june04.htm
+
+Starting query segmentation ranking --- 22:12:38, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:4.59353697615821e-08 21 7196 2500
+
+Enter calConditionalProb:8.0017247232697e-10 18 7196 2500
+
+ranked query topics:technology transfer,illegal technology,illegal technology transfer
+
+top topic:context:technology transfer:illegal
+
+top topic:context:illegal technology:transfer
+
+top topic:context:illegal technology transfer:
+
+
+Produce result --- 22:12:39, 08-24-2011
+
+Original query:illegal technology transfer
+Segmented query:"technology transfer:315952" "illegal:22562196" ||"illegal technology" "transfer:22562196" ||"illegal technology transfer" ||::22
+
+Infile  = mercy killing, 23
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:mercy killing
+
+
+Starting query segmentation --- 22:12:39, 08-24-2011
+
+
+Produce result --- 22:12:39, 08-24-2011
+
+Original query:mercy killing
+Segmented query:"mercy killing:22562196"::23
+
+Infile  = home schooling, 24
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:home schooling
+
+
+Starting query segmentation --- 22:12:39, 08-24-2011
+
+
+Produce result --- 22:12:39, 08-24-2011
+
+Original query:home schooling
+Segmented query:"home schooling:13603"::24
+
+Infile  = automobile recalls, 25
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:automobile recall
+
+
+Starting query segmentation --- 22:12:39, 08-24-2011
+
+
+Starting Google search --- 22:12:39, 08-24-2011
+
+Searching Google (q25=automobile recalls)
+ -- extracting links & snippets
+!!snippet for result 101 NOT FOUND!!
+    29 HTMLs found so far
+ -- fetch #1: http://www.consumeraffairs.com/recalls/arecalls_auto.htm
+ -- fetch #2: http://www.recalls.gov/nhtsa.html
+ -- fetch #3: http://www.autorecalls.us/aut-01/recalls/chevrolet/index.html
+ -- fetch #4: http://www.automobile-recalls.com/tires.html
+ -- fetch #5: http://www.ogletreeabbott.com/DOT_current_vehicle_recalls.html
+ -- fetch #6: http://www.automobilemag.com/auto_recalls/index.html
+ -- fetch #7: http://www.automobilemag.com/new_car_recalls/index.html
+ -- fetch #8: http://www.prweb.com/releases/south-carolina-attorney/product-liability-claims/prweb8188152.htm
+ -- fetch #9: http://www.car-accident-advice.com/car-recalls.html
+ -- fetch #10: http://auto.howstuffworks.com/automotive-recalls.htm
+w1, w2: automobile,recall
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+22 416
+
+
+Produce result --- 22:12:48, 08-24-2011
+
+Original query:automobile recalls
+Segmented query:"automobile recalls" ::25
+
+Infile  = oceanographic vessels, 26
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:oceanographic vessel
+
+
+Starting query segmentation --- 22:12:48, 08-24-2011
+
+
+Produce result --- 22:12:48, 08-24-2011
+
+Original query:oceanographic vessels
+Segmented query:"oceanographic vessels:1540172"::26
+
+Infile  = foreign minorities Germany, 27
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:foreign minority germany
+
+
+Starting query segmentation --- 22:12:48, 08-24-2011
+
+
+Starting Google search --- 22:12:49, 08-24-2011
+
+Searching Google (q27=foreign minorities Germany)
+ -- extracting links & snippets
+    28 HTMLs found so far
+ -- fetch #1: http://ideas.repec.org/p/diw/diwwpp/dp283.html
+ -- fetch #2: http://www.minorityrights.org/1751/germany/sorbs.html
+ -- fetch #3: http://www.spiegel.de/international/germany/0,1518,646733,00.html
+ -- fetch #4: http://www.spiegel.de/international/germany/0,1518,525957,00.html
+ -- fetch #5: http://www.unhcr.org/refworld/country,,MRGI,,DEU,,4954ce03c,0.html
+ -- fetch #6: http://www.unhcr.org/refworld/country,,MRGI,,DEU,,49749d1bc,0.html
+ -- fetch #7: http://www.dict.cc/english-german/%5Bpastoral+work+with+foreign+minorities%5D.html
+ -- fetch #8: http://www.bmeia.gv.at/en/foreign-ministry/foreign-policy/human-rights/main-human-rights-issues/rights-of-minorities.html
+ -- fetch #9: http://www.colby.edu/personal/r/rmscheck/GermanyB1.html
+ -- fetch #10: http://www.deutsche-kultur-international.de/en/org/organisations/verein-fuer-deutsche-kulturbeziehungen-im-ausland-ev-vda.html
+
+Starting query segmentation ranking --- 22:13:00, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 0 11545 2500
+
+Enter calConditionalProb:8.0017247232697e-10 3 11457 2500
+
+ranked query topics:foreign minorities,minorities Germany,foreign minorities Germany
+
+top topic:context:foreign minorities:Germany
+
+top topic:context:minorities Germany:foreign
+
+top topic:context:foreign minorities Germany:
+
+
+Produce result --- 22:13:00, 08-24-2011
+
+Original query:foreign minorities Germany
+Segmented query:"foreign minorities" "Germany:11867" ||"minorities Germany" "foreign:22562196" ||"foreign minorities Germany" ||::27
+
+Infile  = Ireland peace talks, 28
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:ireland peace talk
+
+
+Starting query segmentation --- 22:13:00, 08-24-2011
+
+
+Starting Google search --- 22:13:00, 08-24-2011
+
+Searching Google (q28=Ireland peace talks)
+ -- extracting links & snippets
+    37 HTMLs found so far
+ -- fetch #1: http://www.telegraph.co.uk/news/politics/tony-blair/7974270/Tony-Blair-lied-to-stop-Northern-Ireland-peace-talks-collapsing.html
+ -- fetch #2: http://www.telegraph.co.uk/news/politics/tony-blair/7974784/Tony-Blair-concealed-full-truth-to-save-Northern-Ireland-peace-talks.html
+ -- fetch #3: http://cain.ulst.ac.uk/events/peace/talks.htm
+ -- fetch #4: http://www.independent.co.uk/news/irish-peace-talks-irelands-hope-for-a-new-dawn-1155385.html
+ -- fetch #5: http://www.dailymail.co.uk/news/article-59268/Deadlock-Northern-Ireland-peace-talks.html
+ -- fetch #6: http://www.nytimes.com/2011/08/11/world/europe/11holkeri.html
+ -- fetch #7: http://www.nytimes.com/1998/02/11/world/new-killings-again-disrupt-peace-talks-in-northern-ireland.html
+ -- fetch #8: http://www.infoplease.com/ipa/A0197678.html
+ -- fetch #9: http://www.infoplease.com/spot/northireland1.html
+ -- fetch #10: http://www.pbs.org/newshour/forum/june96/ireland_6-14.html
+
+Starting query segmentation ranking --- 22:13:16, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter wikiDisambiguation:peace talks Ireland
+
+Enter calConditionalProb:4.59353697615821e-08 28 14671 2500
+
+Enter calConditionalProb:8.00178417021103e-10 15 14671 2500
+
+ranked query topics:peace talks,Ireland peace,Ireland peace talks
+
+top topic:context:peace talks:Ireland
+
+top topic:context:Ireland peace:talks
+
+top topic:context:Ireland peace talks:
+
+
+Produce result --- 22:13:17, 08-24-2011
+
+Original query:Ireland peace talks
+Segmented query:"peace talks:180846" "Ireland:147575" ||"Ireland peace" "talks:22562196" ||"Ireland peace talks" ||::28
+
+Infile  = tropical storms, 29
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:tropical storm
+
+
+Starting query segmentation --- 22:13:17, 08-24-2011
+
+
+Produce result --- 22:13:17, 08-24-2011
+
+Original query:tropical storms
+Segmented query:"tropical storms:8282374"::29
+
+Infile  = legal Pan Am 103, 30
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:legal pan
+
+
+Starting query segmentation --- 22:13:17, 08-24-2011
+
+
+Starting Google search --- 22:13:18, 08-24-2011
+
+Searching Google (q30=legal Pan Am 103)
+ -- extracting links & snippets
+    44 HTMLs found so far
+ -- fetch #1: http://plane-truth.com/Aoude/get2net/features.html
+ -- fetch #2: http://plane-truth.com/Aoude/geocities/latest.html
+ -- fetch #3: http://plane-truth.com/Aoude/geocities/victim.html
+ -- fetch #4: http://topics.nytimes.com/top/reference/timestopics/subjects/a/airplane_accidents_and_incidents/pan_am_flight_103/index.html
+ -- fetch #5: http://topics.nytimes.com/top/reference/timestopics/people/m/abdel_basset_ali_al_megrahi/index.html
+ -- fetch #6: http://americanradioworks.publicradio.org/features/lockerbie/story/printable_story.html
+ -- fetch #7: http://www.ashbrook.org/publicat/oped/tucker/01/verdict.html
+ -- fetch #8: http://www.ashbrook.org/publicat/oped/tucker/99/qadhafi.html
+ -- fetch #9: http://killinghope.org/bblum6/panam.htm
+ -- fetch #10: http://www.huffingtonpost.com/2007/09/10/thompson-provided-legal-c_n_63773.html
+
+Starting query segmentation ranking --- 22:13:31, 08-24-2011
+
+Enter calConditionalProb:1.28055197093971e-18 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 36522 18211 2500
+
+Enter calConditionalProb:8.0017247232697e-10 0 0 2500
+
+Enter calConditionalProb:4.59353697615821e-08 246 20910 2500
+
+Enter wikiDisambiguation:Pan Am legal 103
+
+Enter calConditionalProb:4.59353697615821e-08 246 20910 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:Am 103,Pan Am 103,Pan Am,legal Pan,legal Pan Am,legal Pan Am 103
+
+top topic:context:Am 103:legal Pan
+
+top topic:context:Pan Am 103:legal
+
+top topic:context:Pan Am:legal 103
+
+
+Produce result --- 22:13:31, 08-24-2011
+
+Original query:legal Pan Am 103
+Segmented query:"Am 103" "legal:22562196" "Pan:22562196" ||"Pan Am 103:5409919" "legal:22562196" ||"Pan Am:166784" "legal:22562196" "103:35355" ||::30
+
+Infile  = Three Gorges Project, 31
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:three gorge project
+
+
+Starting query segmentation --- 22:13:31, 08-24-2011
+
+
+Produce result --- 22:13:32, 08-24-2011
+
+Original query:Three Gorges Project
+Segmented query:"Three Gorges Project:65192"::31
+
+Infile  = recycle automobile tires, 32
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:recycle automobile tire
+
+
+Starting query segmentation --- 22:13:32, 08-24-2011
+
+
+Starting Google search --- 22:13:32, 08-24-2011
+
+Searching Google (q32=recycle automobile tires)
+ -- extracting links & snippets
+    33 HTMLs found so far
+ -- fetch #1: http://www.ehow.com/how_7261991_recycle-automobile-tires.html
+ -- fetch #2: http://www.ehow.com/how_7620899_reuse-automobile-tires.html
+ -- fetch #3: http://www.ehow.com/facts_7320719_automobile-tire-recycling-illinois.html
+ -- fetch #4: http://news.carjunky.com/automotive/recycle-car-tires-car23445.shtml
+ -- fetch #5: http://www.eng-forum.com/recycling/tire_recycling.htm
+ -- fetch #6: http://web.viapvt.sk/pminter/recycling.html
+ -- fetch #7: http://suhow.info/17048-how-to-recycle-automobile-tires.html
+ -- fetch #8: http://www.crumbrubber.ie/recycling.html
+ -- fetch #9: http://www.licenz.ru/eng/tech_tireline_new_en.html
+ -- fetch #10: http://www.mikrasna.narod.ru/english/en_ecology/ship.htm
+
+Starting query segmentation ranking --- 22:13:42, 08-24-2011
+
+Enter calConditionalProb:8.0017247232697e-10 51 2958 2500
+
+Enter calConditionalProb:8.0017247232697e-10 21 7395 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:automobile tires,recycle automobile,recycle automobile tires
+
+top topic:context:automobile tires:recycle
+
+top topic:context:recycle automobile:tires
+
+top topic:context:recycle automobile tires:
+
+
+Produce result --- 22:13:43, 08-24-2011
+
+Original query:recycle automobile tires
+Segmented query:"automobile tires" "recycle:22562196" ||"recycle automobile" "tires:22562196" ||"recycle automobile tires" ||::32
+
+Infile  = law enforcement dogs, 33
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:law enforcement dog
+
+
+Starting query segmentation --- 22:13:43, 08-24-2011
+
+
+Starting Google search --- 22:13:43, 08-24-2011
+
+Searching Google (q33=law enforcement dogs)
+ -- extracting links & snippets
+    40 HTMLs found so far
+ -- fetch #1: http://www.worldwidecanine.com/policedogs_wwc.htm
+ -- fetch #2: http://www.vetmed.ucdavis.edu/ccab/police.html
+ -- fetch #3: http://people.howstuffworks.com/police-dog.htm
+ -- fetch #4: http://www.lawdogsusa.org/home.html
+ -- fetch #5: http://www.tsa.gov/lawenforcement/programs/editorial_1886.shtm
+ -- fetch #6: http://rexcurry.net/drugdogsmain.html
+ -- fetch #7: http://www.outofthepits.org/lawdogs.html
+ -- fetch #8: http://www.english.illinois.edu/maps/poets/m_r/randall/birmingham.htm
+ -- fetch #9: http://news.yahoo.com/blogs/lookout/chicago-police-must-pay-330k-killing-dog-home-200148841.html
+ -- fetch #10: http://www.buythethreads.com/Law-Enforcement-Dogs-of-Maine_c4.htm
+
+Starting query segmentation ranking --- 22:13:54, 08-24-2011
+
+Enter wikiDisambiguation:law enforcement dogs
+
+Enter calConditionalProb:4.59353697615821e-08 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 0 11972 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:law enforcement,enforcement dogs,law enforcement dogs
+
+top topic:context:law enforcement:dogs
+
+top topic:context:enforcement dogs:law
+
+top topic:context:law enforcement dogs:
+
+
+Produce result --- 22:13:55, 08-24-2011
+
+Original query:law enforcement dogs
+Segmented query:"law enforcement:22562196" "dogs:22562196" ||"enforcement dogs" "law:18949668" ||"law enforcement dogs" ||::33
+
+Infile  = UV damage eyes, 34
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:damage eye UV
+
+
+Starting query segmentation --- 22:13:55, 08-24-2011
+
+
+Starting Google search --- 22:13:55, 08-24-2011
+
+Searching Google (q34=UV damage eyes)
+ -- extracting links & snippets
+    35 HTMLs found so far
+ -- fetch #1: http://www.epa.gov/sunwise/uvandhealth.html
+ -- fetch #2: http://www.allaboutvision.com/sunglasses/spf.htm
+ -- fetch #3: http://vision.about.com/od/eyeexaminations/a/sun_protection.htm
+ -- fetch #4: http://www.myflorida.com/dbs/topics/UV.shtml
+ -- fetch #5: http://130.94.235.115/safety/UVFAQ.html
+ -- fetch #6: http://www.sciencealert.com.au/news/20100308-21199.html
+ -- fetch #7: http://www.usatoday.com/news/health/painter/2007-07-08-cataracts-drug-storage_N.htm
+ -- fetch #8: http://www.elvex.com/facts11.htm
+ -- fetch #9: http://kxoradio.com/news/health/1250-protecting-eyes-from-uv-damage.html
+ -- fetch #10: http://kidshealth.org/parent/firstaid_safe/outdoor/sun_safety.html
+
+Starting query segmentation ranking --- 22:14:02, 08-24-2011
+
+Enter calConditionalProb:8.0017247232697e-10 0 6493 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 14 6493 2500
+
+ranked query topics:damage eyes,UV damage,UV damage eyes
+
+top topic:context:damage eyes:UV
+
+top topic:context:UV damage:eyes
+
+top topic:context:UV damage eyes:
+
+
+Produce result --- 22:14:03, 08-24-2011
+
+Original query:UV damage eyes
+Segmented query:"damage eyes" "UV:22562196" ||"UV damage" "eyes:22562196" ||"UV damage eyes" ||::34
+
+Infile  = Greek philosophy stoicism, 35
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:greek philosophy stoicism
+
+
+Starting query segmentation --- 22:14:03, 08-24-2011
+
+
+Starting Google search --- 22:14:03, 08-24-2011
+
+Searching Google (q35=Greek philosophy stoicism)
+ -- extracting links & snippets
+    48 HTMLs found so far
+ -- fetch #1: http://isaacmmcphee.suite101.com/stoicism-and-greek-philosophy-a45346.html
+!!Mech->get Exception: Error GETing http://www.suite101.com/isaacmmcphee: File Not Found at /home/huizhang/workspace/epic_prog/sub/spidersub_2010.pl line 55
+ -- fetch #2: http://ancienthistory.about.com/od/stoicism/g/122807Stoicism.htm
+ -- fetch #3: http://www.evolutionary-metaphysics.net/ancient_greek_philosophy.html
+ -- fetch #4: http://webspace.ship.edu/cgboer/latergreeks.html
+ -- fetch #5: http://www.crystalinks.com/zeno.html
+ -- fetch #6: http://n4bz.org/gsr4/gsr403.htm
+ -- fetch #7: http://www.historyforkids.org/learn/philosophy/stoics.htm
+ -- fetch #8: http://www.ourcivilisation.com/smartboard/shop/warnerr/stoicism.htm
+ -- fetch #9: http://www.ourcivilisation.com/smartboard/shop/warnerr/roman.htm
+ -- fetch #10: http://www.netplaces.com/philosophy/stoics-the-practical-philosophy/lives-of-the-stoics.htm
+
+Starting query segmentation ranking --- 22:14:10, 08-24-2011
+
+Enter calConditionalProb:6.35125970185493e-17 0 0 2500
+
+Enter wikiDisambiguation:Greek philosophy stoicism
+
+Enter calConditionalProb:4.59353697615821e-08 18 10849 2500
+
+Enter calConditionalProb:1.59358848843293e-12 5 10849 2500
+
+ranked query topics:Greek philosophy,philosophy stoicism,Greek philosophy stoicism
+
+top topic:context:Greek philosophy:stoicism
+
+top topic:context:philosophy stoicism:Greek
+
+top topic:context:Greek philosophy stoicism:
+
+
+Produce result --- 22:14:11, 08-24-2011
+
+Original query:Greek philosophy stoicism
+Segmented query:"Greek philosophy:37751" "stoicism:19224834" ||"philosophy stoicism" "Greek:22562196" ||"Greek philosophy stoicism" ||::35
+
+Infile  = curbing population growth, 36
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:curbing population growth
+
+
+Starting query segmentation --- 22:14:11, 08-24-2011
+
+
+Starting Google search --- 22:14:11, 08-24-2011
+
+Searching Google (q36=curbing population growth)
+ -- extracting links & snippets
+    29 HTMLs found so far
+ -- fetch #1: http://denisbider.blogspot.com/2007/11/is-curbing-population-growth-necessary.html
+ -- fetch #2: http://denisbider.blogspot.com/2007/11/cap-and-trade-system-to-curb-population.html
+ -- fetch #3: http://www.nature.com/news/2009/091118/full/news.2009.1096.html
+ -- fetch #4: http://www.thejakartapost.com/news/2008/05/26/young-scientists-research-ways-curb-population-growth.html
+ -- fetch #5: http://www.thejakartapost.com/news/2010/03/26/bali-pledges-curb-population-growth.html
+ -- fetch #6: http://english.peopledaily.com.cn/200408/04/eng20040804_151853.html
+ -- fetch #7: http://www.medindia.net/news/Experts-Propose-New-Ways-to-Curb-Population-Growth-in-Africa-61026-1.htm
+ -- fetch #8: http://www.china.org.cn/english/China/69549.htm
+ -- fetch #9: http://zeenews.india.com/news705161.html
+ -- fetch #10: http://www.worldservice.org/issues/augsep96/worldharmony.html
+
+Starting query segmentation ranking --- 22:14:25, 08-24-2011
+
+Enter calConditionalProb:4.59353697615821e-08 47 6894 2500
+
+Enter calConditionalProb:6.35125970185493e-17 0 0 2500
+
+Enter calConditionalProb:1.58764379429954e-12 14 10006 2500
+
+ranked query topics:population growth,curbing population,curbing population growth
+
+top topic:context:population growth:curbing
+
+top topic:context:curbing population:growth
+
+top topic:context:curbing population growth:
+
+
+Produce result --- 22:14:26, 08-24-2011
+
+Original query:curbing population growth
+Segmented query:"population growth:940606" "curbing:3600229" ||"curbing population" "growth:22562196" ||"curbing population growth" ||::36
+
+Infile  = railway accidents, 37
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:railway accident
+
+
+Starting query segmentation --- 22:14:26, 08-24-2011
+
+
+Produce result --- 22:14:26, 08-24-2011
+
+Original query:railway accidents
+Segmented query:"railway accidents:22562196"::37
+
+Infile  = inventions scientific discoveries, 38
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:invention scientific discovery
+
+
+Starting query segmentation --- 22:14:26, 08-24-2011
+
+
+Starting Google search --- 22:14:26, 08-24-2011
+
+Searching Google (q38=inventions scientific discoveries)
+ -- extracting links & snippets
+    45 HTMLs found so far
+ -- fetch #1: http://www.historylearningsite.co.uk/scientific_inventions_1900.htm
+ -- fetch #2: http://library.thinkquest.org/C005271F/first.html
+ -- fetch #3: http://science.discovery.com/brink/top-ten/accidental-inventions/inventions.html
+ -- fetch #4: http://www.southplainfield.lib.nj.us/homeworklinks/inventors.htm
+ -- fetch #5: http://www.infoplease.com/ipa/A0004636.html
+ -- fetch #6: http://www.infoplease.com/ipa/A0004637.html
+ -- fetch #7: http://www.enchantedlearning.com/inventors/science.shtml
+ -- fetch #8: http://homepages.cwi.nl/~paulk/patents/invention/node6.html
+ -- fetch #9: http://www.kerala.com/science/discover_2.htm
+ -- fetch #10: http://science.discovery.com/fansites/invention-nation/invention-nation.html
+
+Starting query segmentation ranking --- 22:14:36, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 4 12620 2500
+
+Enter wikiDisambiguation:scientific discoveries inventions
+
+Enter calConditionalProb:4.59353697615821e-08 4 12711 2500
+
+ranked query topics:inventions scientific,scientific discoveries,inventions scientific discoveries
+
+top topic:context:inventions scientific:discoveries
+
+top topic:context:scientific discoveries:inventions
+
+top topic:context:inventions scientific discoveries:
+
+
+Produce result --- 22:14:37, 08-24-2011
+
+Original query:inventions scientific discoveries
+Segmented query:"inventions scientific" "discoveries:22562196" ||"scientific discoveries:22562196" "inventions:22562196" ||"inventions scientific discoveries" ||::38
+
+Infile  = U.S. investment Africa, 39
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:investment africa US
+
+
+Starting query segmentation --- 22:14:37, 08-24-2011
+
+
+Starting Google search --- 22:14:37, 08-24-2011
+
+Searching Google (q39=U.S. investment Africa)
+ -- extracting links & snippets
+    22 HTMLs found so far
+ -- fetch #1: http://www.voanews.com/english/news/US-Secretary-of-State-Promotes-American-Investment-in-Zambia---123682679.html
+ -- fetch #2: http://www.voanews.com/english/news/economy-and-business/African-Business-Leaders-Want-More-US-Investments--123606859.html
+ -- fetch #3: http://iipdigital.usembassy.gov/st/english/article/2011/05/20110520160007nyrhtak0.5038874.html
+ -- fetch #4: http://www.usafricainvestment.com/summary.html
+ -- fetch #5: http://www.swtimes.com/columns/jc_watts/article_fe9ad382-8d06-11df-b620-001cc4c002e0.html
+ -- fetch #6: http://www.thedailybeast.com/newsweek/blogs/wealth-of-nations/2010/04/06/brics-investment-in-africa-takes-off.html
+ -- fetch #7: http://www.chinadaily.com.cn/business/2011-04/28/content_12413260.htm
+ -- fetch #8: http://allafrica.com/stories/200506220001.html
+ -- fetch #9: http://allafrica.com/stories/201105260313.html
+ -- fetch #10: http://www.un.org/ecosocdev/geninfo/afrec/subjindx/132inves.htm
+
+Starting query segmentation ranking --- 22:14:47, 08-24-2011
+
+Enter calConditionalProb:8.0017247232697e-10 0 7613 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:8.00178417021103e-10 25 7333 2500
+
+ranked query topics:investment Africa,U.S. investment,U.S. investment Africa
+
+top topic:context:investment Africa:U.S.
+
+top topic:context:U.S. investment:Africa
+
+top topic:context:U.S. investment Africa:
+
+
+Produce result --- 22:14:47, 08-24-2011
+
+Original query:U.S. investment Africa
+Segmented query:"investment Africa" "U.S.:22562196" ||"U.S. investment" "Africa:5334607" ||"U.S. investment Africa" ||::39
+
+Infile  = ship losses, 40
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:ship loss
+
+
+Starting query segmentation --- 22:14:47, 08-24-2011
+
+
+Starting Google search --- 22:14:48, 08-24-2011
+
+Searching Google (q40=ship losses)
+ -- extracting links & snippets
+    44 HTMLs found so far
+ -- fetch #1: http://www.cargolaw.com/gallery.html
+ -- fetch #2: http://www.cargolaw.com/presentations_cas.index.html
+ -- fetch #3: http://www.spartacus.schoolnet.co.uk/FWWworld.htm
+ -- fetch #4: http://www.uboat.net/allies/merchants/losses_year.html
+ -- fetch #5: http://www.marinetalk.com/articles-marine-companies/art/Cargo-Ship-Losses-and-Fatalities-ROY00691454IN.html
+ -- fetch #6: http://www.dutcheastindies.webs.com/allied_losses.html
+ -- fetch #7: http://www.dutcheastindies.webs.com/USN_losses.html
+ -- fetch #8: http://www.alaska.boemre.gov/ref/ships/walltime.htm
+ -- fetch #9: http://www.hms.org.uk/nelsonsnavylosses.htm
+ -- fetch #10: http://www.usmm.org/battleatlantic.html
+w1, w2: ship,loss
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+220 550
+
+
+Produce result --- 22:14:58, 08-24-2011
+
+Original query:ship losses
+Segmented query:"ship losses" ::40
+
+Infile  = price fixing, 41
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:price fixing
+
+
+Starting query segmentation --- 22:14:58, 08-24-2011
+
+
+Produce result --- 22:14:58, 08-24-2011
+
+Original query:price fixing
+Segmented query:"price fixing:92026"::41
+
+Infile  = arrests bombing WTC, 42
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:arrest bombing WTC
+
+
+Starting query segmentation --- 22:14:58, 08-24-2011
+
+
+Starting Google search --- 22:14:58, 08-24-2011
+
+Searching Google (q42=arrests bombing WTC)
+ -- extracting links & snippets
+    54 HTMLs found so far
+ -- fetch #1: http://whatreallyhappened.com/WRHARTICLES/fiveisraelis.html
+ -- fetch #2: http://whatreallyhappened.com/WRHARTICLES/mossad_wtc.html
+ -- fetch #3: http://www.solcomhouse.com/wtc1993.htm
+ -- fetch #4: http://www.fas.org/irp/world/iraq/956-tni.htm
+ -- fetch #5: http://www.nytimes.com/1993/03/24/nyregion/4th-arrest-made-in-the-bombing-at-trade-center.html
+ -- fetch #6: http://law.jrank.org/pages/3591/World-Trade-Center-Bombing-1993-94-1997.html
+ -- fetch #7: http://law.jrank.org/pages/3583/World-Trade-Center-Bombing-1993-94-1997-Van-Deposit-Leads-Arrests.html
+ -- fetch #8: http://takingaimradio.com/articles/wtc93.html
+ -- fetch #9: http://truthjihad.blogspot.com/2011/02/mossad-agent-mike-harari-implicated-in.html
+ -- fetch #10: http://blog.insidetheapple.net/2010/02/first-world-trade-center-bombing.html
+
+Starting query segmentation ranking --- 22:15:06, 08-24-2011
+
+Enter calConditionalProb:8.0017247232697e-10 0 3576 2500
+
+Enter calConditionalProb:8.0017247232697e-10 0 12150 2500
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+ranked query topics:arrests bombing,bombing WTC,arrests bombing WTC
+
+top topic:context:arrests bombing:WTC
+
+top topic:context:bombing WTC:arrests
+
+top topic:context:arrests bombing WTC:
+
+
+Produce result --- 22:15:07, 08-24-2011
+
+Original query:arrests bombing WTC
+Segmented query:"arrests bombing" "WTC:22562196" ||"bombing WTC" "arrests:22562196" ||"arrests bombing WTC" ||::42
+
+Infile  = wrongful convictions, 43
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:wrongful conviction
+
+
+Starting query segmentation --- 22:15:07, 08-24-2011
+
+
+Produce result --- 22:15:07, 08-24-2011
+
+Original query:wrongful convictions
+Segmented query:"wrongful convictions:21356022"::43
+
+Infile  = consumer on-line shopping, 44
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:consumer shopping on-line ,  online
+
+
+Starting query segmentation --- 22:15:07, 08-24-2011
+
+
+Starting Google search --- 22:15:07, 08-24-2011
+
+Searching Google (q44=consumer on-line shopping)
+ -- extracting links & snippets
+    18 HTMLs found so far
+ -- fetch #1: http://www.firstdata.com/en_us/insights/consumer-online-shopping-fears-study.html
+ -- fetch #2: http://www.ftc.gov/bcp/menus/consumer/tech/online.shtm
+ -- fetch #3: http://www.paymentsnews.com/2010/08/eight-out-of-ten-us-consumers-shop-online-at-least-once-a-week.html
+ -- fetch #4: http://www.marketwire.com/press-release/Eight-out-of-Ten-Consumers-Shop-Online-at-Least-Once-a-Week-1310629.htm
+ -- fetch #5: http://www.prweb.com/releases/Dassant/newcart/prweb8710964.htm
+ -- fetch #6: http://www.ocf.berkeley.edu/~jinnie/advantage.html
+ -- fetch #7: http://www.bizreport.com/2007/12/survey_89_of_consumers_prefer_online_shopping.html
+ -- fetch #8: http://docs.yahoo.com/docs/info/consumertips.html
+ -- fetch #9: http://canadaonline.about.com/od/consumerprotection/a/ecomguidelines.htm
+ -- fetch #10: http://www.telegraph.co.uk/finance/personalfinance/8525611/Online-shopping-your-consumer-rights.html
+
+Starting query segmentation ranking --- 22:15:17, 08-24-2011
+
+Enter calConditionalProb:0 0 5352 2500
+
+Enter calConditionalProb:0 0 0 2500
+
+Enter calConditionalProb:0 0 5352 2500
+
+ranked query topics:-line shopping,consumer -line shopping,consumer -line
+
+top topic:context:-line shopping:consumer
+
+top topic:context:consumer -line shopping:
+
+top topic:context:consumer -line:shopping
+
+
+Produce result --- 22:15:17, 08-24-2011
+
+Original query:consumer -line shopping
+Segmented query:"-line shopping" "consumer:7818" ||"consumer -line shopping" ||"consumer -line" "shopping:66080" ||::44
+
+Infile  = family leave law, 45
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:family leave law
+
+
+Starting query segmentation --- 22:15:17, 08-24-2011
+
+
+Starting Google search --- 22:15:17, 08-24-2011
+
+Searching Google (q45=family leave law)
+ -- extracting links & snippets
+    32 HTMLs found so far
+ -- fetch #1: http://www.dol.gov/dol/topic/benefits-leave/fmla.htm
+ -- fetch #2: http://www.dol.gov/compliance/laws/comp-fmla.htm
+ -- fetch #3: http://jobsearch.about.com/cs/employmentlaw/a/fmla.htm
+ -- fetch #4: http://www.nj.gov/lps/dcr/law.html
+ -- fetch #5: http://www.edd.ca.gov/disability/FAQs_for_Paid_Family_Leave.htm
+ -- fetch #6: http://lwd.dol.state.nj.us/labor/fli/content/fli_faq.html
+ -- fetch #7: http://www.nj.com/news/index.ssf/2008/05/corzine_signs_family_leave_act.html
+ -- fetch #8: http://clear.uhwo.hawaii.edu/HRS398.html
+ -- fetch #9: http://www.sacbee.com/2011/01/12/3317472/family-leave-law-not-a-job-killer.html
+ -- fetch #10: http://www.eeoc.gov/policy/docs/fmlaada.html
+
+Starting query segmentation ranking --- 22:15:28, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 11 12247 2500
+
+Enter wikiDisambiguation:family leave law
+
+Enter calConditionalProb:4.59353697615821e-08 259 12247 2500
+
+ranked query topics:family leave,leave law,family leave law
+
+top topic:context:family leave:law
+
+top topic:context:leave law:family
+
+top topic:context:family leave law:
+
+
+Produce result --- 22:15:28, 08-24-2011
+
+Original query:family leave law
+Segmented query:"family leave:180846" "law:18949668" ||"leave law" "family:10401954" ||"family leave law" ||::45
+
+Infile  = tax evasion indicted, 46
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:tax evasion indicted
+
+
+Starting query segmentation --- 22:15:28, 08-24-2011
+
+
+Starting Google search --- 22:15:28, 08-24-2011
+
+Searching Google (q46=tax evasion indicted)
+ -- extracting links & snippets
+!!snippet for result 101 NOT FOUND!!
+    32 HTMLs found so far
+ -- fetch #1: http://www.floridataxlawyerblog.com/2011/08/former-ubs-banker-charged-with.html
+ -- fetch #2: http://www.gazette.com/articles/-115928--.html
+ -- fetch #3: http://www.huffingtonpost.com/2011/08/02/us-indicts-ex-ubs-banker-tax-evasion_n_916341.html
+ -- fetch #4: http://www.huffingtonpost.com/2011/07/22/three-credit-suisse-banke_n_906494.html
+ -- fetch #5: http://www.startribune.com/business/128211893.html
+ -- fetch #6: http://www.bloomberg.com/news/2011-07-15/lawyer-indicted-offshore-accounts-groupon-data-breaches-compliance.html
+ -- fetch #7: http://www.businessweek.com/news/2011-07-15/lawyer-indicted-data-breaches-tax-evasion-compliance.html
+ -- fetch #8: http://www.miamiherald.com/2011/07/20/2323194/ex-broward-state-senator-charged.html
+ -- fetch #9: http://taxprof.typepad.com/taxprof_blog/2011/07/lawyer-charged.html
+ -- fetch #10: http://online.wsj.com/article/SB10001424052748704062604576106591181792266.html
+
+Starting query segmentation ranking --- 22:15:51, 08-24-2011
+
+Enter calConditionalProb:6.35125970185493e-17 0 0 2500
+
+Enter calConditionalProb:1.58764379429954e-12 0 15644 2500
+
+Enter wikiDisambiguation:tax evasion indicted
+
+Enter calConditionalProb:4.59353697615821e-08 79 14796 2500
+
+ranked query topics:tax evasion,evasion indicted,tax evasion indicted
+
+top topic:context:tax evasion:indicted
+
+top topic:context:evasion indicted:tax
+
+top topic:context:tax evasion indicted:
+
+
+Produce result --- 22:15:52, 08-24-2011
+
+Original query:tax evasion indicted
+Segmented query:"tax evasion:22562196" "indicted:14559" ||"evasion indicted" "tax:30297" ||"tax evasion indicted" ||::46
+
+Infile  = U.S. ethnic population, 47
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:ethnic population US
+
+
+Starting query segmentation --- 22:15:52, 08-24-2011
+
+
+Starting Google search --- 22:15:52, 08-24-2011
+
+Searching Google (q47=U.S. ethnic population)
+ -- extracting links & snippets
+    44 HTMLs found so far
+ -- fetch #1: http://www.censusscope.org/us/chart_race.html
+ -- fetch #2: http://www.censusscope.org/us/map_common_race.html
+ -- fetch #3: http://names.mongabay.com/ancestry/ancestry-population.html
+ -- fetch #4: http://names.mongabay.com/ancestry/region.html
+ -- fetch #5: http://www.census.gov/population/www/socdemo/race/black.html
+ -- fetch #6: http://www.census.gov/compendia/statab/cats/population/estimates_and_projections_by_age_sex_raceethnicity.html
+ -- fetch #7: http://www.indexmundi.com/united_states/ethnic_groups.html
+ -- fetch #8: http://www.valpo.edu/geomet/geo/courses/geo200/usa_maps.html
+ -- fetch #9: http://www.asian-nation.org/population.shtml
+ -- fetch #10: http://www.allied-media.com/MAILING%20LISTS/Mailing/ethnic_households.htm
+
+Starting query segmentation ranking --- 22:15:58, 08-24-2011
+
+Enter calConditionalProb:3.20103488973488e-14 0 0 2500
+
+Enter calConditionalProb:8.0017247232697e-10 0 5332 2500
+
+Enter calConditionalProb:8.0017247232697e-10 3 4966 2500
+
+ranked query topics:ethnic population,U.S. ethnic,U.S. ethnic population
+
+top topic:context:ethnic population:U.S.
+
+top topic:context:U.S. ethnic:population
+
+top topic:context:U.S. ethnic population:
+
+
+Produce result --- 22:15:58, 08-24-2011
+
+Original query:U.S. ethnic population
+Segmented query:"ethnic population" "U.S.:22562196" ||"U.S. ethnic" "population:22949" ||"U.S. ethnic population" ||::47
+
+Infile  = teenage pregnancy, 48
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:teenage pregnancy
+
+
+Starting query segmentation --- 22:15:58, 08-24-2011
+
+
+Produce result --- 22:15:58, 08-24-2011
+
+Original query:teenage pregnancy
+Segmented query:"teenage pregnancy:228824"::48
+
+Infile  = family-planning aid, 49
+Outfile = /home/huizhang/workspace/epic_prog/query/segment/gg/hits/rs$qn.htm, ti$qn, sn$qn, lk$qn
+          /home/huizhang/workspace/epic_prog/query/segment/gg/hits/q$qn/r$N.htm, r$N.txt
+
+			 /home/huizhang/workspace/epic_prog/query/segment/wk/hits
+Stemmed query:family planning aid
+
+
+Starting query segmentation --- 22:15:58, 08-24-2011
+
+
+Starting Google search --- 22:15:58, 08-24-2011
+
+Searching Google (q49=family-planning aid)
+ -- extracting links & snippets
+    28 HTMLs found so far
+ -- fetch #1: http://www.jsonline.com/business/123166483.html
+ -- fetch #2: http://www.theolympian.com/2011/04/27/1630513/bill-would-aid-states-family-planning.html
+ -- fetch #3: http://www.galtoninstitute.org.uk/Newsletters/GINL9709/ngos.htm
+ -- fetch #4: http://www.guttmacher.org/pubs/tgr/03/4/gr030409.html
+ -- fetch #5: http://www.nytimes.com/1988/09/05/us/foundations-expand-family-planning-aid-abroad.html
+ -- fetch #6: http://allafrica.com/stories/200902021519.html
+!!Mech->get Exception: Error GETing http://allafrica.com/stories/200902021519.html: Forbidden at /home/huizhang/workspace/epic_prog/sub/spidersub_2010.pl line 55
+ -- fetch #7: http://www.commondreams.org/headlines05/0406-09.htm
+ -- fetch #8: http://www.now.org/issues/global/071703unfpa.html
+ -- fetch #9: http://www.asiapacificalliance.org/donor-data-a-info/248-us-removes-restrictions-on-family-planning-aid.html
+ -- fetch #10: http://www.pressherald.com/opinion/family-planning-services-shouldnt-see-state-federal-aid-cut_2011-02-26.html
+w1, w2: family,planning
+
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+Use of uninitialized value in join or string at /home/huizhang/workspace/epic_prog/test_wikiqrysgt_06.pl line 1303.
+112 97
+
+
+Produce result --- 22:16:09, 08-24-2011
+
+Original query:family-planning aid
+Segmented query:"family-planning aid" ::49
+
+
+Processed 50 queries
+
+
+Ending test_wikiqrysgt_06.pl --- 22:16:09, 08-24-2011
+
+  CPU seconds = 106.640 (UT),  1.180 (ST)
+  REAL TIME   = 0:7:0 (hh:mn:ss)
+

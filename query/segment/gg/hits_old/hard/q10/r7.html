@@ -1,0 +1,519 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head><title>An Extensible Format for Email Abuse Reports</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="An Extensible Format for Email Abuse Reports">
+<meta name="keywords" content="spam, abuse">
+<meta name="generator" content="xml2rfc v1.28 (http://xml.resource.org/)">
+<style type='text/css'>
+<!--
+    body {
+        font-family: verdana, charcoal, helvetica, arial, sans-serif;
+        margin: 2em;
+        font-size: small ; color: #000000 ; background-color: #ffffff ; }
+    .title { color: #990000; font-size: x-large ;
+        font-weight: bold; text-align: right;
+        font-family: helvetica, monaco, "MS Sans Serif", arial, sans-serif;
+        background-color: transparent; }
+    .filename { color: #666666; font-size: 18px; line-height: 28px;
+        font-weight: bold; text-align: right;
+        font-family: helvetica, arial, sans-serif;
+        background-color: transparent; }
+    td.rfcbug { background-color: #000000 ; width: 30px ; height: 30px ; 
+        text-align: justify; vertical-align: middle ; padding-top: 2px ; }
+    td.rfcbug span.RFC { color: #666666; font-weight: bold; text-decoration: none;
+        background-color: #000000 ;
+        font-family: monaco, charcoal, geneva, "MS Sans Serif", helvetica, verdana, sans-serif;
+        font-size: x-small ; }
+    td.rfcbug span.hotText { color: #ffffff; font-weight: normal; text-decoration: none;
+        text-align: center ;
+        font-family: charcoal, monaco, geneva, "MS Sans Serif", helvetica, verdana, sans-serif;
+        font-size: x-small ; background-color: #000000; }
+/* info code from SantaKlauss at http://www.madaboutstyle.com/tooltip2.html */
+    div#counter{margin-top: 100px}
+
+    a.info{
+        position:relative; /*this is the key*/
+        z-index:24;
+        text-decoration:none}
+
+    a.info:hover{z-index:25; background-color:#990000 ; color: #ffffff ;}
+
+    a.info span{display: none}
+
+    a.info:hover span{ /*the span will display just on :hover state*/
+        display:block;
+        position:absolute;
+        font-size: smaller ;
+        top:2em; left:2em; width:15em;
+        padding: 2px ;
+        border:1px solid #333333;
+        background-color:#eeeeee; color:#990000;
+        text-align: left ;}
+
+     A { font-weight: bold; }
+     A:link { color: #990000; background-color: transparent ; }
+     A:visited { color: #333333; background-color: transparent ; }
+     A:active { color: #333333; background-color: transparent ; }
+
+    p { margin-left: 2em; margin-right: 2em; }
+    p.copyright { font-size: x-small ; }
+    p.toc { font-size: small ; font-weight: bold ; margin-left: 3em ;}
+
+    span.emph { font-style: italic; }
+    span.strong { font-weight: bold; }
+    span.verb, span.vbare { font-family: "Courier New", Courier, monospace ; }
+
+    span.vemph { font-style: italic; font-family: "Courier New", Courier, monospace ; }
+    span.vstrong { font-weight: bold; font-family: "Courier New", Courier, monospace ; }
+    span.vdeluxe { font-weight: bold; font-style: italic; font-family: "Courier New", Courier, monospace ; }
+
+    ol.text { margin-left: 2em; margin-right: 2em; }
+    ul.text { margin-left: 2em; margin-right: 2em; }
+    li { margin-left: 3em;  }
+
+    pre { margin-left: 3em; color: #333333;  background-color: transparent;
+        font-family: "Courier New", Courier, monospace ; font-size: small ;
+        }
+
+    h3 { color: #333333; font-size: medium ;
+        font-family: helvetica, arial, sans-serif ;
+        background-color: transparent; }
+    h4 { font-size: small; font-family: helvetica, arial, sans-serif ; }
+
+    table.bug { width: 30px ; height: 15px ; }
+    td.bug { color: #ffffff ; background-color: #990000 ;
+        text-align: center ; width: 30px ; height: 15px ;
+         }
+    td.bug A.link2 { color: #ffffff ; font-weight: bold;
+        text-decoration: none;
+        font-family: monaco, charcoal, geneva, "MS Sans Serif", helvetica, sans-serif;
+        font-size: x-small ; background-color: transparent }
+
+    td.header { color: #ffffff; font-size: x-small ;
+        font-family: arial, helvetica, sans-serif; vertical-align: top;
+        background-color: #666666 ; width: 33% ; }
+    td.author { font-weight: bold; margin-left: 4em; font-size: x-small ; }
+    td.author-text { font-size: x-small; }
+    table.data { vertical-align: top ; border-collapse: collapse ;
+        border-style: solid solid solid solid ;
+        border-color: black black black black ;
+        font-size: small ; text-align: center ; }
+    table.data th { font-weight: bold ;
+        border-style: solid solid solid solid ;
+        border-color: black black black black ; }
+    table.data td {
+        border-style: solid solid solid solid ;
+        border-color: #333333 #333333 #333333 #333333 ; }
+
+    hr { height: 1px }
+-->
+</style>
+</head>
+<body>
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<table summary="layout" width="66%" border="0" cellpadding="0" cellspacing="0"><tr><td><table summary="layout" width="100%" border="0" cellpadding="2" cellspacing="1">
+<tr><td class="header">Network Working Group</td><td class="header">Y. Shafranovich</td></tr>
+<tr><td class="header">Internet-Draft</td><td class="header">SolidMatrix Technologies, Inc.</td></tr>
+<tr><td class="header">Expires: September 30, 2005</td><td class="header">March 29, 2005</td></tr>
+</table></td></tr></table>
+<div align="right"><span class="title"><br />An Extensible Format for Email Abuse Reports</span></div>
+<div align="right"><span class="title"><br />draft-shafranovich-abuse-report-00.txt</span></div>
+
+<h3>Status of this Memo</h3>
+<p>
+This document is an Internet-Draft and is subject to all provisions
+of Section&nbsp;3 of RFC&nbsp;3667.
+By submitting this Internet-Draft,
+each author represents that any applicable patent or other IPR claims of which
+he or she is aware have been or will be disclosed,
+and any of which he or she become aware will be disclosed,
+in accordance with RFC&nbsp;3668.</p>
+<p>
+Internet-Drafts are working documents of the Internet Engineering
+Task Force (IETF), its areas, and its working groups.
+Note that other groups may also distribute working documents as
+Internet-Drafts.</p>
+<p>
+Internet-Drafts are draft documents valid for a maximum of six months
+and may be updated, replaced, or obsoleted by other documents at any time.
+It is inappropriate to use Internet-Drafts as reference material or to cite
+them other than as "work in progress."</p>
+<p>
+The list of current Internet-Drafts can be accessed at
+<a href='http://www.ietf.org/ietf/1id-abstracts.txt'>http://www.ietf.org/ietf/1id-abstracts.txt</a>.</p>
+<p>
+The list of Internet-Draft Shadow Directories can be accessed at
+<a href='http://www.ietf.org/shadow.html'>http://www.ietf.org/shadow.html</a>.</p>
+<p>
+This Internet-Draft will expire on September 30, 2005.</p>
+
+<h3>Copyright Notice</h3>
+<p>
+Copyright (C) The Internet Society (2005).</p>
+
+<h3>Abstract</h3>
+
+<p>This document defines an extensible format and MIME type that may be used by network operators to report
+		email abuse to other parties. This format is intended as a machine readable replacement for various existing
+		abuse report formats currently used in Internet email.
+</p><a name="toc"></a><br /><hr />
+<h3>Table of Contents</h3>
+<p class="toc">
+<a href="#anchor1">1.</a>&nbsp;
+Introduction<br />
+<a href="#anchor2">2.</a>&nbsp;
+Intent<br />
+<a href="#anchor3">3.</a>&nbsp;
+Requirements<br />
+<a href="#anchor4">4.</a>&nbsp;
+Format of Email Abuse Reports<br />
+<a href="#anchor5">5.</a>&nbsp;
+Format of 'message/abuse-report' Content Type<br />
+<a href="#anchor6">6.</a>&nbsp;
+MIME Type Registration of message/abuse-report<br />
+<a href="#anchor7">7.</a>&nbsp;
+IANA Considerations<br />
+<a href="#anchor8">8.</a>&nbsp;
+Security Considerations<br />
+<a href="#rfc.references1">9.</a>&nbsp;
+References<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#rfc.references1">9.1</a>&nbsp;
+Normative References<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#rfc.references2">9.2</a>&nbsp;
+Informative References<br />
+<a href="#rfc.authors">&#167;</a>&nbsp;
+Author's Address<br />
+<a href="#appendix">A.</a>&nbsp;
+Appendix A - An Sample Abuse Report<br />
+<a href="#rfc.copyright">&#167;</a>&nbsp;
+Intellectual Property and Copyright Statements<br />
+</p>
+<br clear="all" />
+
+<a name="anchor1"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.1"></a><h3>1.&nbsp;Introduction</h3>
+
+<p>As the spam problem has grown in the past few years, network operators have begun to exchange abuse reports
+	among themselves and other parties to combat this problem. However, different operators define their own formats
+	and the receivers are forced to write custom software to interpret the many types of them.
+	This memo seeks to define a standard extensible format and the "message/abuse-report" MIME type for abuse reports
+	in accordance with <a class="info" href="#RFC2048">RFC 2048<span>Freed, N., Klensin, J. and J. Postel, Multipurpose Internet Mail Extensions (MIME) Part Four: Registration Procedures, November 1996.</span></a>[4]. This format and content type is intended to be used within
+	the scope of the framework of the "multipart/report" content type defined in <a class="info" href="#RFC3462">RFC 3462<span>Vaudreuil, G., The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages, January 2003.</span></a>[1].
+	
+</p>
+<p>This document only defines the format and content type to be used for these reports. Determination of where
+	these reports should be sent is outside the scope of this document.
+	
+</p>
+<a name="anchor2"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.2"></a><h3>2.&nbsp;Intent</h3>
+
+<p>The abuse reports defined in this document are intended for several purposes:
+	</p>
+<blockquote class="text"><dl>
+<dt>a</dt>
+<dd>To inform ISPs about email abuse originating from their networks
+</dd>
+<dt>b</dt>
+<dd>To provide feedback to email service providers about abuse complaints
+</dd>
+</dl></blockquote>
+
+<p>Note that the abuse reports defined in this document are limited to reporting email abuse only.
+</p>
+<a name="anchor3"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.3"></a><h3>3.&nbsp;Requirements</h3>
+
+<p>The following requirements are necessary for abuse reports :
+	</p>
+<blockquote class="text"><dl>
+<dt>a</dt>
+<dd>They must be both human and machine readable
+</dd>
+<dt>b</dt>
+<dd>Copy of the original email message or email headers must be enclosed in order to allow the receiver
+		to properly handle the report.
+		
+</dd>
+</dl></blockquote>
+
+<a name="anchor4"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.4"></a><h3>4.&nbsp;Format of Email Abuse Reports</h3>
+
+<p>An email abuse report is a MIME message with a top level MIME content type of "multipart/report" (as defined
+	in <a class="info" href="#RFC3462">RFC 3462<span>Vaudreuil, G., The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages, January 2003.</span></a>[1]). The following apply:
+	</p>
+<blockquote class="text"><dl>
+<dt>a</dt>
+<dd>The "report-type" parameter of "multipart/report" type is set to "abuse-report".
+</dd>
+<dt>b</dt>
+<dd>The first MIME part of the message contains a human readable description of the report
+</dd>
+<dt>c</dt>
+<dd>The second MIME part of the message contains a machine readable abuse report with the content type
+		of "message/abuse-report" (defined later on in this document).
+		
+</dd>
+<dt>d</dt>
+<dd>The third MIME part of the message contains either a full copy of the original message with a MIME content type
+		of "message/rfc822" (as defined in <a class="info" href="#RFC3462">RFC 2046<span>Vaudreuil, G., The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages, January 2003.</span></a>[1]) OR a copy of
+		the headers from the original message with MIME content type of "text/rfc822-headers"
+		(as defined in <a class="info" href="#RFC3462">RFC 3462<span>Vaudreuil, G., The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages, January 2003.</span></a>[1]).
+		
+</dd>
+<dt>e</dt>
+<dd>Each abuse report should related to a single originating message.
+</dd>
+<dt>f</dt>
+<dd>The subject line of the abuse report should read as "Email Abuse Report for IP X.X.X.X" where "X.X.X.X" is the source
+		IP of the MTA from which the original message was received.
+		
+</dd>
+<dt>g</dt>
+<dd>Note that unlike the definition in <a class="info" href="#RFC3462">RFC 3462<span>Vaudreuil, G., The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages, January 2003.</span></a>[1], all three parts are required for abuse
+		reports.
+</dd>
+</dl></blockquote>
+
+<a name="anchor5"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.5"></a><h3>5.&nbsp;Format of 'message/abuse-report' Content Type</h3>
+
+<p>The message/abuse-report content type consists of several header fields as follows:
+	</p>
+<blockquote class="text"><dl>
+<dt>a</dt>
+<dd>"Source-IP:" - contains an IPv4 or IPv6 address of the MTA from which the original message was received.
+</dd>
+<dt>b</dt>
+<dd>"Received-Date:" - date the original message was received. This field is formatted in according to the definition
+		in section 3.3 of <a class="info" href="#RFC2822">RFC 2822<span>Resnick, P., Internet Message Format, April 2001.</span></a>[2]
+</dd>
+<dt>c</dt>
+<dd>"Original-Message-ID:" - contains the <a class="info" href="#RFC2822">RFC 2822<span>Resnick, P., Internet Message Format, April 2001.</span></a>[2] Message-ID of the original message
+</dd>
+</dl></blockquote>
+
+<a name="anchor6"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.6"></a><h3>6.&nbsp;MIME Type Registration of message/abuse-report</h3>
+
+<p>This section provides the media type registration application (as 
+	per <a class="info" href="#RFC2048">RFC 2048<span>Freed, N., Klensin, J. and J. Postel, Multipurpose Internet Mail Extensions (MIME) Part Four: Registration Procedures, November 1996.</span></a>[4], which will be submitted to IANA after IESG 
+	approval of this document.
+</p>
+<p>To: ietf-types@iana.org
+</p>
+<p>Subject: Registration of MIME media types message/abuse-report
+</p>
+<p>MIME media type name: message
+</p>
+<p>MIME subtype name: abuse-report
+</p>
+<p>Required parameters: none
+</p>
+<p>Optional parameters: none
+</p>
+<p>Encoding considerations:
+		</p>
+<blockquote class="text">
+<p>"7bit" encoding is sufficient and MUST be used to maintain readability when viewed
+			by non-MIME mail readers.
+			
+</p>
+</blockquote>
+
+<p>Security considerations:
+		</p>
+<blockquote class="text">
+<p>See section 3 of <a class="info" href="#RFC3462">RFC 3462<span>Vaudreuil, G., The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages, January 2003.</span></a>[1]
+</p>
+</blockquote>
+
+<p>Interoperability considerations: none
+</p>
+<p>Published specification: this document
+</p>
+<p>Applications which use this media type: Abuse helpdesk software for ISPs
+</p>
+<p>Additional information:
+		</p>
+<blockquote class="text">
+<p>Magic number(s): none
+</p>
+<p>File extension(s): none
+</p>
+<p>Macintosh File Type Code(s): none
+</p>
+</blockquote>
+
+<p>Person & email address to contact for further information:
+		</p>
+<blockquote class="text">
+<p>Yakov Shafranovich &lt;ietf@shaftek.org&gt;
+</p>
+</blockquote>
+
+<p>Intended usage: COMMON
+</p>
+<p>Author/Change controller: IESG
+</p>
+<a name="anchor7"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.7"></a><h3>7.&nbsp;IANA Considerations</h3>
+
+<p>After IESG approval, IANA is expected to register MIME type "message/abuse-report"
+	using the application provided in this document.
+</p>
+<a name="anchor8"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.8"></a><h3>8.&nbsp;Security Considerations</h3>
+
+<p>See section 3 of <a class="info" href="#RFC3462">RFC 3462<span>Vaudreuil, G., The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages, January 2003.</span></a>[1]
+</p>
+<a name="rfc.references"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.9"></a><h3>9.&nbsp;References</h3>
+
+<a name="rfc.references1"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<h3>9.1&nbsp;Normative References</h3>
+<table width="99%" border="0">
+<tr><td class="author-text" valign="top"><a name="RFC3462">[1]</a></td>
+<td class="author-text">Vaudreuil, G., "<a href="ftp://ftp.isi.edu/in-notes/rfc3462.txt">The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages</a>", RFC&nbsp;3462, January 2003.</td></tr>
+<tr><td class="author-text" valign="top"><a name="RFC2822">[2]</a></td>
+<td class="author-text">Resnick, P., "<a href="ftp://ftp.isi.edu/in-notes/rfc2822.txt">Internet Message Format</a>", RFC&nbsp;2822, April 2001.</td></tr>
+<tr><td class="author-text" valign="top"><a name="RFC2046">[3]</a></td>
+<td class="author-text"><a href="mailto:ned@innosoft.com">Freed, N.</a> and <a href="mailto:nsb@nsb.fv.com">N. Borenstein</a>, "<a href="ftp://ftp.isi.edu/in-notes/rfc2046.txt">Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types</a>", RFC&nbsp;2046, November 1996.</td></tr>
+</table>
+
+<a name="rfc.references2"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<h3>9.2&nbsp;Informative References</h3>
+<table width="99%" border="0">
+<tr><td class="author-text" valign="top"><a name="RFC2048">[4]</a></td>
+<td class="author-text"><a href="mailto:ned@innosoft.com">Freed, N.</a>, <a href="mailto:klensin@mci.net">Klensin, J.</a> and <a href="mailto:Postel@ISI.EDU">J. Postel</a>, "Multipurpose Internet Mail Extensions (MIME) Part Four: Registration Procedures", BCP&nbsp;13, RFC&nbsp;2048, November 1996 (<a href="ftp://ftp.isi.edu/in-notes/rfc2048.txt">TXT</a>, <a href="http://xml.resource.org/public/rfc/html/rfc2048.html">HTML</a>, <a href="http://xml.resource.org/public/rfc/xml/rfc2048.xml">XML</a>).</td></tr>
+</table>
+
+<a name="rfc.authors"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<h3>Author's Address</h3>
+<table width="99%" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="author-text">&nbsp;</td>
+<td class="author-text">Yakov Shafranovich</td></tr>
+<tr><td class="author-text">&nbsp;</td>
+<td class="author-text">SolidMatrix Technologies, Inc.</td></tr>
+<tr><td class="author" align="right">Email:&nbsp;</td>
+<td class="author-text"><a href="mailto:ietf@shaftek.org">ietf@shaftek.org</a></td></tr>
+<tr><td class="author" align="right">URI:&nbsp;</td>
+<td class="author-text"><a href="http://www.shaftek.org">http://www.shaftek.org</a></td></tr>
+</table>
+
+<a name="appendix"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<a name="rfc.section.A"></a><h3>Appendix A.&nbsp;Appendix A - An Sample Abuse Report</h3>
+
+<p></p>
+<pre>
+From: &lt;abusedesk@example.com&gt;
+Date: Thu, 8 Mar 2005 17:40:36 EDT
+Subject: Email Abuse Report for IP 10.67.41.167
+To: &lt;abuse@example.net&gt;
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=abuse-report; boundary="part1_13d.2e68ed54_boundary"
+
+--part1_13d.2e68ed54_boundary
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+
+This is an email abuse report for an email message received from IP 10.67.41.167 on Thu, 8 Mar 2005 14:00:00 EDT.
+
+
+--part1_13d.2e68ed54_boundary
+Content-Type: message/abuse-report
+
+Source-IP: 10.67.41.167
+Received-Date: Thu, 8 Mar 2005 14:00:00 EDT
+Original-Message-ID: 8787KJKJ3K4J3K4J3K4J3.mail@example.net
+
+
+--part1_13d.2e68ed54_boundary
+Content-Type: message/rfc822
+Content-Disposition: inline
+
+From: &lt;somespammer@example.netglt;
+Received: from mailserver.example.net (mailserver.example.net [10.67.41.167])
+	  by example.com with ESMTP id M63d4137594e46; Thu, 08 Mar 2005 14:00:00 -0400
+To: &lt;Undisclosed Recipients&gt;
+Subject: Earn money
+MIME-Version: 1.0
+Content-type: text/plain
+Message-ID: 8787KJKJ3K4J3K4J3K4J3.mail@example.net
+Date: Thu, 02 Sep 2004 12:31:03 -0500
+
+Spam Spam Spam
+Spam Spam Spam
+Spam Spam Spam
+Spam Spam Spam
+--part1_13d.2e68ed54_boundary--
+</pre>
+<p>
+
+</p><a name="rfc.copyright"></a><br /><hr />
+<table summary="layout" cellpadding="0" cellspacing="2" class="bug" align="right"><tr><td class="bug"><a href="#toc" class="link2">&nbsp;TOC&nbsp;</a></td></tr></table>
+<h3>Intellectual Property Statement</h3>
+<p class='copyright'>
+The IETF takes no position regarding the validity or scope of any
+Intellectual Property Rights or other rights that might be claimed
+to pertain to the implementation or use of the technology 
+described in this document or the extent to which any license 
+under such rights might or might not be available; nor does it
+represent that it has made any independent effort to identify any
+such rights.
+Information on the procedures with respect to
+rights in RFC documents can be found in BCP&nbsp;78 and BCP&nbsp;79.</p>
+<p class='copyright'>
+Copies of IPR disclosures made to the IETF Secretariat and any
+assurances of licenses to be made available,
+or the result of an attempt made to obtain a general license or
+permission for the use of such proprietary rights by implementers or
+users of this specification can be obtained from the IETF on-line IPR
+repository at http://www.ietf.org/ipr.</p>
+<p class='copyright'>
+The IETF invites any interested party to bring to its attention
+any copyrights,
+patents or patent applications,
+or other
+proprietary rights that may cover technology that may be required
+to implement this standard.
+Please address the information to the IETF at ietf-ipr@ietf.org.</p>
+<h3>Disclaimer of Validity</h3>
+<p class='copyright'>
+This document and the information contained herein are provided
+on an &quot;AS IS&quot; basis and THE CONTRIBUTOR,
+THE ORGANIZATION HE/SHE REPRESENTS OR IS SPONSORED BY (IF ANY),
+THE INTERNET SOCIETY AND THE INTERNET ENGINEERING TASK FORCE DISCLAIM
+ALL WARRANTIES, 
+EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE
+INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED
+WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</p>
+<h3>Copyright Statement</h3>
+<p class='copyright'>
+Copyright (C) The Internet Society (2005).
+This document is subject to the rights,
+licenses and restrictions contained in BCP&nbsp;78,
+and except as set forth therein,
+the authors retain all their rights.</p>
+<h3>Acknowledgment</h3>
+<p class='copyright'>
+Funding for the RFC Editor function is currently provided by the
+Internet Society.</p>
+</body></html>
+
